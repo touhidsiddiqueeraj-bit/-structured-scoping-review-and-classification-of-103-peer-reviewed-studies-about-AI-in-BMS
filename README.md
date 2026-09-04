@@ -6,7 +6,7 @@
 
 This repository is the complete, reproducible companion to the scoping review
 
-> **Hussain Touhid Siddiquee, Syeda Salsabil Islam Ariya, Jasimul Islam Chowdhury, Tareq Shikdar**
+> **Hussain Touhid Siddiquee, Syeda Salsabil Islam Ariya, Jasimul Islam Chowdhury**
 > *Machine learning in battery management systems: a structured scoping review and classification of 103 peer-reviewed studies, 2019–2026.*
 > Leading University, Sylhet, Bangladesh.
 
@@ -164,7 +164,7 @@ If this corpus or checklist is useful, please cite the manuscript:
   title  = {Machine learning in battery management systems: a structured scoping review
             and classification of 103 peer-reviewed studies, 2019--2026},
   author = {Siddiquee, Hussain Touhid and Ariya, Syeda Salsabil Islam and
-            Chowdhury, Jasimul Islam and Shikdar, Tareq},
+            Chowdhury, Jasimul Islam},
   year   = {2026},
   note   = {Manuscript and verified corpus; this repository}
 }

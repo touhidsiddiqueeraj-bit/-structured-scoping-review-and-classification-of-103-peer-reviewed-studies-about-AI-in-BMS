@@ -6,8 +6,7 @@ TITLE = "Machine learning in battery management systems: a structured scoping re
 
 AUTHOR_LINES = [("Hussain Touhid Siddiquee", "Leading University, Sylhet, Bangladesh"),
                 ("Syeda Salsabil Islam Ariya", "Leading University, Sylhet, Bangladesh"),
-                ("Jasimul Islam Chowdhury", "Leading University, Sylhet, Bangladesh"),
-                ("Tareq Shikdar", "Leading University, Sylhet, Bangladesh")]
+                ("Jasimul Islam Chowdhury", "Leading University, Sylhet, Bangladesh")]
 
 ABSTRACT = [
  "Machine learning (ML) has moved from a promising addition to battery research to a load-bearing component of modern battery management systems (BMS). This paper presents a structured scoping review of 103 peer-reviewed journal articles published between 2019 and 2026 that apply machine learning to battery management tasks, assembled from a Crossref-verified pool of peer-reviewed journal articles and classified uniformly by management function, method family, chemistry, data source, and validation practice. The corpus is classified by management function (state of charge, state of health, remaining useful life, charging control, thermal management, fault and safety, and cross-cutting themes), by method family, by battery chemistry, by data source, and by validation practice.",
