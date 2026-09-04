@@ -1,0 +1,884 @@
+doi,title,journal,year,cites,areas
+10.1038/s42256-021-00312-3,Machine learning pipeline for battery state-of-health estimation,Nature Machine Intelligence,2021,613,Second life
+10.1109/mie.2020.2964814,"Advanced Fault Diagnosis for Lithium-Ion Battery Systems: A Review of Fault Mechanisms, Fault Features, and Diagnosis Procedures",IEEE Industrial Electronics Magazine,2020,555,Fault & safety
+10.1109/access.2020.2980961,Machine Learning Applied to Electrified Vehicle Battery State of Charge and State of Health Estimation: State-of-the-Art,IEEE Access,2020,462,Second life
+10.1016/j.energy.2020.117664,State-of-charge estimation of lithium-ion batteries using LSTM and UKF,Energy,2020,441,State estimation (SOC)
+10.1016/j.energy.2019.116467,State of health estimation for Li-Ion battery using incremental capacity analysis and Gaussian process regression,Energy,2020,436,Health estimation (SOH)
+10.1016/j.energy.2020.118000,Data-driven state of charge estimation for lithium-ion battery packs based on Gaussian process regression,Energy,2020,395,Health estimation (SOH);Thermal management
+10.1016/j.apenergy.2021.117346,A review of non-probabilistic machine learning-based state of health estimation techniques for Lithium-ion battery,Applied Energy,2021,366,Health estimation (SOH);Second life;Transfer learning
+10.1016/j.est.2020.101741,A novel deep learning framework for state of health estimation of lithium-ion battery,Journal of Energy Storage,2020,361,Health estimation (SOH);State estimation (SOC);Transfer learning
+10.1109/tvt.2020.3014932,State-of-Health Estimation and Remaining-Useful-Life Prediction for Lithium-Ion Battery Using a Hybrid Data-Driven Method,IEEE Transactions on Vehicular Technology,2020,357,Thermal management
+10.1038/s41467-023-38458-w,Deep learning to estimate lithium-ion battery state of health without additional degradation experiments,Nature Communications,2023,355,Transfer learning
+10.1109/tpel.2021.3134701,Data-Driven Battery State of Health Estimation Based on Random Partial Charging Data,IEEE Transactions on Power Electronics,2022,353,Health estimation (SOH)
+10.1016/j.energy.2021.121236,A method for state-of-charge estimation of lithium-ion batteries based on PSO-LSTM,Energy,2021,350,State estimation (SOC)
+10.1016/j.rser.2021.111903,Machine learning in state of health and remaining useful life estimation: Theoretical and technological development in battery degradation modelling,Renewable and Sustainable Energy Reviews,2022,316,Benchmarks & data;Second life
+10.1016/j.energy.2020.118866,An Intelligent Fault Diagnosis Method for Lithium Battery Systems Based on Grid Search Support Vector Machine,Energy,2021,315,Fault & safety
+10.1016/j.est.2022.104215,State of health estimation of lithium-ion battery based on improved ant lion optimization and support vector regression,Journal of Energy Storage,2022,305,Health estimation (SOH)
+10.3390/wevj12010038,State of Charge Estimation of Lithium-Ion Battery for Electric Vehicles Using Machine Learning Algorithms,World Electric Vehicle Journal,2021,302,Digital twins;Health estimation (SOH);Second life;State estimation (SOC);Thermal management
+10.1016/j.energy.2021.120205,Early prediction of battery lifetime via a machine learning based framework,Energy,2021,278,Prognostics (RUL)
+10.1016/j.egyr.2023.01.108,A review of machine learning state-of-charge and state-of-health estimation algorithms for lithium-ion batteries,Energy Reports,2023,272,Health estimation (SOH);State estimation (SOC)
+10.1109/tie.2021.3071679,An Enhanced Equivalent Circuit Model With Real-Time Parameter Identification for Battery State-of-Charge Estimation,IEEE Transactions on Industrial Electronics,2022,267,Other
+10.1016/j.est.2022.104901,Lithium-ion battery capacity and remaining useful life prediction using board learning system and long short-term memory neural network,Journal of Energy Storage,2022,247,Prognostics (RUL)
+10.1016/j.etran.2023.100254,Challenges and outlook for lithium-ion battery fault diagnosis methods from the laboratory to real world applications,eTransportation,2023,245,Fault & safety
+10.1016/j.apenergy.2021.116897,A machine-learning prediction method of lithium-ion battery life based on charge process for different applications,Applied Energy,2021,240,Cell balancing & ECM;Digital twins;Fault & safety;Prognostics (RUL);State estimation (SOC);Thermal management
+10.1016/j.ensm.2022.06.053,Flexible battery state of health and state of charge estimation using partial charging data and deep learning,Energy Storage Materials,2022,235,Health estimation (SOH)
+10.1016/j.ensm.2022.05.007,Battery degradation prediction against uncertain future conditions with recurrent neural network enabled deep learning,Energy Storage Materials,2022,234,Graph networks
+10.3390/electronics10111309,Machine Learning-Based Data-Driven Fault Detection/Diagnosis of Lithium-Ion Battery: A Critical Review,Electronics,2021,229,Cell balancing & ECM;Cross-cutting;Digital twins;Fault & safety;Prognostics (RUL);Thermal management
+10.1016/j.jpowsour.2019.227275,A multi-fault diagnosis method based on modified Sample Entropy for lithium-ion battery strings,Journal of Power Sources,2020,227,Fault & safety
+10.1109/tie.2019.2899565,Online Fault Diagnosis of External Short Circuit for Lithium-Ion Battery Pack,IEEE Transactions on Industrial Electronics,2020,226,Fault & safety
+10.1016/j.jechem.2023.03.026,The development of machine learning-based remaining useful life prediction for lithium-ion batteries,Journal of Energy Chemistry,2023,223,Prognostics (RUL)
+10.1016/j.apenergy.2020.116410,Lithium-ion battery capacity estimation — A pruned convolutional neural network approach assisted with transfer learning,Applied Energy,2021,221,Physics-informed;Transfer learning
+10.1109/tte.2021.3074638,A Flexible State-of-Health Prediction Scheme for Lithium-Ion Battery Packs With Long Short-Term Memory Network and Transfer Learning,IEEE Transactions on Transportation Electrification,2021,217,Transfer learning
+10.1016/j.apenergy.2020.115074,Incremental capacity analysis based adaptive capacity estimation for lithium-ion battery considering charging condition,Applied Energy,2020,211,Charging control
+10.1109/access.2021.3068776,"Lithium-Ion Battery Pack Robust State of Charge Estimation, Cell Inconsistency, and Balancing: Review",IEEE Access,2021,210,Cell balancing & ECM;State estimation (SOC)
+10.3390/en13020375,SOH and RUL Prediction of Lithium-Ion Batteries Based on Gaussian Process Regression with Indirect Health Indicators,Energies,2020,209,Health estimation (SOH)
+10.1016/j.jpowsour.2021.230526,Hybrid physics-informed neural networks for lithium-ion battery modeling and prognosis,Journal of Power Sources,2021,207,Physics-informed
+10.1016/j.energy.2023.127033,Data-driven lithium-ion batteries capacity estimation based on deep transfer learning using partial segment of charging/discharging data,Energy,2023,205,Thermal management
+10.1016/j.isci.2020.101010,Toward a Safer Battery Management System: A Critical Review on Diagnosis and Prognosis of Battery Short Circuit,iScience,2020,204,Cross-cutting
+10.1109/tmech.2020.2986364,Health Prognosis for Electric Vehicle Battery Packs: A Data-Driven Approach,IEEE/ASME Transactions on Mechatronics,2020,196,Fault & safety
+10.1016/j.jpowsour.2019.227281,Deep Gaussian process regression for lithium-ion battery health prognosis and degradation mode diagnosis,Journal of Power Sources,2020,195,Health estimation (SOH)
+10.3390/batteries10070220,"Exploring Lithium-Ion Battery Degradation: A Concise Review of Critical Factors, Impacts, Data-Driven Degradation Estimation Techniques, and Sustainable Directions for Energy Storage Systems",Batteries,2024,190,Thermal management
+10.1109/tte.2020.3028784,Lithium Battery State-of-Health Estimation via Differential Thermal Voltammetry With Gaussian Process Regression,IEEE Transactions on Transportation Electrification,2021,187,Health estimation (SOH)
+10.1016/j.energy.2021.120451,State of charge estimation of lithium-ion battery using denoising autoencoder and gated recurrent unit recurrent neural network,Energy,2021,184,Physics-informed;State estimation (SOC)
+10.1016/j.est.2022.104664,A review of lithium-ion battery state of charge estimation based on deep learning: Directions for improvement and future trends,Journal of Energy Storage,2022,184,State estimation (SOC)
+10.1016/j.renene.2022.08.123,A hybrid neural network model with improved input for state of charge estimation of lithium-ion battery at low temperatures,Renewable Energy,2022,181,State estimation (SOC)
+10.1016/j.jpowsour.2021.229727,Performance analysis on liquid-cooled battery thermal management for electric vehicles based on machine learning,Journal of Power Sources,2021,181,Thermal management
+10.1016/j.energy.2023.128461,Battery SOC estimation from EIS data based on machine learning and equivalent circuit model,Energy,2023,178,Other;Second life
+10.1109/tpel.2020.2987383,Multiobjective Optimization of Data-Driven Model for Lithium-Ion Battery SOH Estimation With Short-Term Feature,IEEE Transactions on Power Electronics,2020,178,Thermal management
+10.3390/en14113284,Current Trends for State-of-Charge (SoC) Estimation in Lithium-Ion Battery Electric Vehicles,Energies,2021,175,State estimation (SOC)
+10.1016/j.renene.2019.08.077,Optimized charging of lithium-ion battery for electric vehicles: Adaptive multistage constant current–constant voltage charging strategy,Renewable Energy,2020,173,Charging control
+10.1016/j.applthermaleng.2023.120482,Temperature prediction of lithium-ion battery based on artificial neural network model,Applied Thermal Engineering,2023,168,Physics-informed
+10.1016/j.est.2022.104061,Lithium-ion battery State-of-Charge estimation based on an improved Coulomb-Counting algorithm and uncertainty evaluation,Journal of Energy Storage,2022,168,State estimation (SOC)
+10.1016/j.energy.2022.123178,Lithium-ion battery state-of-charge estimation for small target sample sets using the improved GRU-based transfer learning,Energy,2022,160,State estimation (SOC);Transfer learning
+10.1016/j.jpowsour.2020.229108,Data driven estimation of electric vehicle battery state-of-charge informed by automotive simulations and multi-physics modeling,Journal of Power Sources,2021,159,Fault & safety
+10.1016/j.jpowsour.2020.228964,Fault diagnosis and abnormality detection of lithium-ion battery packs based on statistical distribution,Journal of Power Sources,2021,158,Fault & safety
+10.1016/j.ress.2022.108947,Prediction of state of health and remaining useful life of lithium-ion battery using graph convolutional network with dual attention mechanisms,Reliability Engineering &amp; System Safety,2023,157,Prognostics (RUL)
+10.3390/batteries9060301,Hybrid Modeling of Lithium-Ion Battery: Physics-Informed Neural Network for Battery State Estimation,Batteries,2023,156,Graph networks;Physics-informed;State estimation (SOC)
+10.1016/j.jclepro.2021.128265,Early prediction of remaining useful life for Lithium-ion batteries based on a hybrid machine learning method,Journal of Cleaner Production,2021,155,Prognostics (RUL)
+10.1109/tpel.2022.3144504,Multistage State of Health Estimation of Lithium-Ion Battery With High Tolerance to Heavily Partial Charging,IEEE Transactions on Power Electronics,2022,155,Health estimation (SOH)
+10.1016/j.est.2023.107575,A multi-fault diagnosis method for lithium-ion battery pack using curvilinear Manhattan distance evaluation and voltage difference analysis,Journal of Energy Storage,2023,154,Fault & safety
+10.1016/j.est.2020.102122,On the feature selection for battery state of health estimation based on charging–discharging profiles,Journal of Energy Storage,2021,153,Health estimation (SOH)
+10.1016/j.ymssp.2022.109347,Battery health management using physics-informed machine learning: Online degradation modeling and remaining useful life prediction,Mechanical Systems and Signal Processing,2022,152,Benchmarks & data;Interpretability;Prognostics (RUL)
+10.1016/j.energy.2022.125872,A comparative study of different deep learning algorithms for lithium-ion batteries on state-of-charge estimation,Energy,2023,151,State estimation (SOC)
+10.1016/j.energy.2023.126855,Lithium-ion battery health estimation with real-world data for electric vehicles,Energy,2023,150,Thermal management
+10.1016/j.jechem.2022.11.036,Physics-informed neural network approach for heat generation rate estimation of lithium-ion battery under various driving conditions,Journal of Energy Chemistry,2023,143,Physics-informed
+10.1016/j.jpowsour.2020.228358,Multi-time-scale framework for prognostic health condition of lithium battery using modified Gaussian process regression and nonlinear regression,Journal of Power Sources,2020,142,Health estimation (SOH)
+10.1016/j.ensm.2023.102883,Deep Learning Framework for Lithium-ion Battery State of Charge Estimation: Recent Advances and Future Perspectives,Energy Storage Materials,2023,141,State estimation (SOC)
+10.1109/tpel.2021.3117788,State-of-Health Estimation for Lithium-Ion Batteries Using Domain Adversarial Transfer Learning,IEEE Transactions on Power Electronics,2022,141,Transfer learning
+10.1016/j.ijepes.2020.106369,State of charge estimation for lithium-ion battery based on Gaussian process regression with deep recurrent kernel,International Journal of Electrical Power &amp; Energy Systems,2021,140,Health estimation (SOH)
+10.1109/access.2020.3031340,State of Charge Estimation of Lithium-Ion Batteries Using LSTM and NARX Neural Networks,IEEE Access,2020,138,State estimation (SOC)
+10.1016/j.ress.2022.109046,Explainability-driven model improvement for SOH estimation of lithium-ion battery,Reliability Engineering &amp; System Safety,2023,133,Thermal management
+10.1016/j.enconman.2021.114103,A multi-objective predictive energy management strategy for residential grid-connected PV-battery hybrid systems based on machine learning technique,Energy Conversion and Management,2021,131,Cross-cutting
+10.1016/j.etran.2021.100137,Cycle life prediction of lithium-ion batteries based on data-driven methods,eTransportation,2021,131,Prognostics (RUL)
+10.1016/j.energy.2022.123233,A deep learning approach to state of charge estimation of lithium-ion batteries based on dual-stage attention mechanism,Energy,2022,131,State estimation (SOC)
+10.1016/j.energy.2023.127378,Data-driven state-of-health estimation for lithium-ion battery based on aging features,Energy,2023,131,Health estimation (SOH);Thermal management;Transfer learning
+10.1016/j.est.2023.106831,A hierarchical adaptive extended Kalman filter algorithm for lithium-ion battery state of charge estimation,Journal of Energy Storage,2023,129,State estimation (SOC)
+10.1109/tii.2021.3051048,Transfer Learning-Based State of Charge Estimation for Lithium-Ion Battery at Varying Ambient Temperatures,IEEE Transactions on Industrial Informatics,2021,128,State estimation (SOC);Transfer learning
+10.1016/j.energy.2022.125380,State of health estimation of lithium-ion battery with improved radial basis function neural network,Energy,2023,126,Health estimation (SOH);Physics-informed
+10.1016/j.energy.2022.124812,State of health estimation for lithium-ion battery based on energy features,Energy,2022,126,Health estimation (SOH);Transfer learning
+10.1109/tte.2022.3204843,"A Hybrid Battery Equivalent Circuit Model, Deep Learning, and Transfer Learning for Battery State Monitoring",IEEE Transactions on Transportation Electrification,2023,122,Other
+10.1016/j.neucom.2020.07.081,Remaining useful life prediction of lithium-ion battery with optimal input sequence selection and error compensation,Neurocomputing,2020,122,Prognostics (RUL)
+10.1016/j.est.2022.104512,State of health estimation based on modified Gaussian process regression for lithium-ion batteries,Journal of Energy Storage,2022,117,Health estimation (SOH)
+10.1109/jas.2023.123024,A Hybrid Ensemble Deep Learning Approach for Early Prediction of Battery Remaining Useful Life,IEEE/CAA Journal of Automatica Sinica,2023,116,Prognostics (RUL)
+10.1016/j.ensm.2023.02.035,Cloud-based in-situ battery life prediction and classification using machine learning,Energy Storage Materials,2023,115,Prognostics (RUL);Second life
+10.1016/j.patter.2021.100302,Recovering large-scale battery aging dataset with machine learning,Patterns,2021,114,Benchmarks & data
+10.1016/j.joule.2021.11.006,Predicting battery end of life from solar off-grid system field data using machine learning,Joule,2021,114,Cross-cutting
+10.1016/j.energy.2021.122716,A deep learning method for lithium-ion battery remaining useful life prediction based on sparse segment data via cloud computing system,Energy,2022,114,Prognostics (RUL)
+10.1016/j.ensm.2022.12.034,Machine learning-based fast charging of lithium-ion battery by perceiving and regulating internal microscopic states,Energy Storage Materials,2023,113,Charging control
+10.1109/access.2021.3115255,Machine Learning-Based Optimal Cell Balancing Mechanism for Electric Vehicle Battery Management System,IEEE Access,2021,112,Cell balancing & ECM;Cross-cutting;Interpretability;Thermal management
+10.1016/j.est.2022.104139,Optimal BP neural network algorithm for state of charge estimation of lithium-ion battery using PSO with Levy flight,Journal of Energy Storage,2022,110,State estimation (SOC)
+10.1016/j.microrel.2021.114405,A lithium-ion battery remaining useful life prediction method based on the incremental capacity analysis and Gaussian process regression,Microelectronics Reliability,2021,109,Health estimation (SOH)
+10.3390/batteries9010013,A Review of Modern Machine Learning Techniques in the Prediction of Remaining Useful Life of Lithium-Ion Batteries,Batteries,2022,108,Prognostics (RUL)
+10.1109/tte.2021.3129479,Offline and Online Blended Machine Learning for Lithium-Ion Battery Health State Estimation,IEEE Transactions on Transportation Electrification,2022,107,Health estimation (SOH);Second life;Transfer learning
+10.3390/en16145507,A Review on the Fault and Defect Diagnosis of Lithium-Ion Battery for Electric Vehicles,Energies,2023,106,Fault & safety
+10.1016/j.est.2023.106688,Machine learning assisted advanced battery thermal management system: A state-of-the-art review,Journal of Energy Storage,2023,106,Cross-cutting
+10.1016/j.energy.2023.128761,Remaining useful life prediction and state of health diagnosis for lithium-ion batteries based on improved grey wolf optimization algorithm-deep extreme learning machine algorithm,Energy,2023,106,Prognostics (RUL)
+10.1016/j.jclepro.2020.125159,Mass load prediction for lithium-ion battery electrode clean production: A machine learning approach,Journal of Cleaner Production,2021,106,Digital twins
+10.1016/j.apenergy.2022.119516,Fast capacity estimation for lithium-ion battery based on online identification of low-frequency electrochemical impedance spectroscopy and Gaussian process regression,Applied Energy,2022,105,Health estimation (SOH)
+10.1016/j.jpowsour.2020.228983,Data-driven analysis on thermal effects and temperature changes of lithium-ion battery,Journal of Power Sources,2021,105,Thermal management
+10.1016/j.ress.2022.108818,Multiple health indicators fusion-based health prognostic for lithium-ion battery using transfer learning and hybrid deep learning method,Reliability Engineering &amp; System Safety,2023,105,Transfer learning
+10.3390/wevj14040101,A Smart Battery Management System for Electric Vehicles Using Deep Learning-Based Sensor Fault Detection,World Electric Vehicle Journal,2023,104,Fault & safety;Thermal management
+10.1016/j.est.2022.106295,Accelerated state of health estimation of second life lithium-ion batteries via electrochemical impedance spectroscopy tests and machine learning techniques,Journal of Energy Storage,2023,104,Second life
+10.1016/j.apenergy.2023.121578,A novel lithium-ion battery state of charge estimation method based on the fusion of neural network and equivalent circuit models,Applied Energy,2023,104,State estimation (SOC)
+10.1016/j.microrel.2020.113857,Lithium-ion battery performance degradation evaluation in dynamic operating conditions based on a digital twin model,Microelectronics Reliability,2020,104,Digital twins
+10.1016/j.energy.2020.119078,Battery state-of-health estimation based on a metabolic extreme learning machine combining degradation state model and error compensation,Energy,2021,103,Benchmarks & data;Interpretability;Second life
+10.1016/j.est.2021.102372,A state-of-health estimation method of lithium-ion batteries based on multi-feature extracted from constant current charging curve,Journal of Energy Storage,2021,103,Health estimation (SOH)
+10.1016/j.energy.2019.116504,Fault diagnosis of voltage sensor and current sensor for lithium-ion battery pack using hybrid system modeling and unscented particle filter,Energy,2020,102,Fault & safety
+10.1016/j.energy.2020.118140,An optimized ensemble learning framework for lithium-ion Battery State of Health estimation in energy storage system,Energy,2020,102,Health estimation (SOH);Transfer learning
+10.1016/j.applthermaleng.2022.118503,Multi-objective optimization design and experimental investigation for a parallel liquid cooling-based Lithium-ion battery module under fast charging,Applied Thermal Engineering,2022,101,Charging control
+10.1016/j.energy.2021.121360,State-of-charge estimation of lithium-ion battery based on clockwork recurrent neural network,Energy,2021,101,Physics-informed;State estimation (SOC)
+10.1016/j.egyr.2022.12.093,State of health estimation for lithium battery random charging process based on CNN-GRU method,Energy Reports,2023,100,Health estimation (SOH)
+10.1002/er.6910,Multivariate gated recurrent unit for battery remaining useful life prediction: A deep learning approach,International Journal of Energy Research,2021,99,Prognostics (RUL)
+10.1016/j.jpowsour.2022.232466,State of health estimation of lithium-ion battery with automatic feature extraction and self-attention learning mechanism,Journal of Power Sources,2023,98,Health estimation (SOH);Transfer learning
+10.1016/j.est.2022.104560,State of health estimation for fast-charging lithium-ion battery based on incremental capacity analysis,Journal of Energy Storage,2022,96,Health estimation (SOH)
+10.1016/j.apenergy.2020.115232,Actively temperature controlled health-aware fast charging method for lithium-ion battery using nonlinear model predictive control,Applied Energy,2020,94,Charging control
+10.1016/j.energy.2020.119529,A compact and optimized neural network approach for battery state-of-charge estimation of energy storage system,Energy,2021,94,State estimation (SOC)
+10.1016/j.apenergy.2021.118244,Fast charging design for Lithium-ion batteries via Bayesian optimization,Applied Energy,2022,93,Charging control
+10.3390/batteries9060335,State of Charge and Temperature Joint Estimation Based on Ultrasonic Reflection Waves for Lithium-Ion Battery Applications,Batteries,2023,92,Thermal management
+10.1016/j.energy.2024.133418,State of health estimation of lithium-ion battery during fast charging process based on BiLSTM-Transformer,Energy,2024,89,Charging control;Health estimation (SOH)
+10.1109/tte.2021.3109636,Data-Driven Estimation of Remaining Useful Lifetime and State of Charge for Lithium-Ion Battery,IEEE Transactions on Transportation Electrification,2022,89,Thermal management
+10.1016/j.est.2022.104144,Early Quality Classification and Prediction of Battery Cycle Life in Production Using Machine Learning,Journal of Energy Storage,2022,88,Prognostics (RUL)
+10.1016/j.conengprac.2022.105202,Interpretable machine learning for battery capacities prediction and coating parameters analysis,Control Engineering Practice,2022,86,Interpretability
+10.1109/tvt.2021.3134312,Remaining Useful Life Prediction of Lithium-Ion Battery via a Sequence Decomposition and Deep Learning Integrated Approach,IEEE Transactions on Vehicular Technology,2022,86,Prognostics (RUL)
+10.1016/j.jclepro.2022.130358,Voltage-correlation based multi-fault diagnosis of lithium-ion battery packs considering inconsistency,Journal of Cleaner Production,2022,85,Fault & safety
+10.3390/en15134670,Lithium Battery State-of-Charge Estimation Based on a Bayesian Optimization Bidirectional Long Short-Term Memory Neural Network,Energies,2022,85,State estimation (SOC)
+10.1007/s42835-021-00954-8,State-of-Charge Estimation of Lithium-ion Batteries Using LSTM Deep Learning Method,Journal of Electrical Engineering &amp; Technology,2022,84,State estimation (SOC)
+10.1016/j.energy.2022.125003,"Lifecycle assessment of diesel, diesel-electric and hydrogen fuel cell transit buses with fuel cell degradation and battery aging using machine learning techniques",Energy,2022,83,Benchmarks & data
+10.1016/j.apenergy.2022.119030,Towards unified machine learning characterization of lithium-ion battery degradation across multiple levels: A critical review,Applied Energy,2022,82,Benchmarks & data;Digital twins;Fault & safety;Interpretability
+10.1016/j.jpowsour.2023.232737,High-efficient prediction of state of health for lithium-ion battery based on AC impedance feature tuned with Gaussian process regression,Journal of Power Sources,2023,81,Health estimation (SOH)
+10.3390/electronics10243126,Overview of Machine Learning Methods for Lithium-Ion Battery Remaining Useful Lifetime Prediction,Electronics,2021,80,Digital twins;Fault & safety;Prognostics (RUL)
+10.1016/j.energy.2021.122581,Remaining useful life prediction of lithium-ion battery using a novel particle filter framework with grey neural network,Energy,2022,80,Prognostics (RUL)
+10.1016/j.energy.2022.125514,State of health estimation for lithium-ion batteries using geometric impedance spectrum features and recurrent Gaussian process regression,Energy,2023,80,Health estimation (SOH)
+10.1016/j.apenergy.2022.119678,Multi-fault diagnosis for series-connected lithium-ion battery pack with reconstruction-based contribution based on parallel PCA-KPCA,Applied Energy,2022,79,Fault & safety
+10.1016/j.est.2023.106654,Modeling and prediction of lithium-ion battery thermal runaway via multiphysics-informed neural network,Journal of Energy Storage,2023,79,Physics-informed;Thermal management
+10.1016/j.est.2022.106486,Comprehensive review of battery state estimation strategies using machine learning for battery Management Systems of Aircraft Propulsion Batteries,Journal of Energy Storage,2023,79,Cross-cutting;Second life
+10.1016/j.egyai.2022.100188,Battery state-of-charge estimation using machine learning analysis of ultrasonic signatures,Energy and AI,2022,79,Second life
+10.3390/en15031185,A Convolutional Neural Network Approach for Estimation of Li-Ion Battery State of Health from Charge Profiles,Energies,2022,78,State estimation (SOC)
+10.1016/j.measurement.2023.112838,Physics-based model informed smooth particle filter for remaining useful life prediction of lithium-ion battery,Measurement,2023,77,Physics-informed;Prognostics (RUL)
+10.1016/j.est.2023.107380,A machine learning-based battery management system for state-of-charge prediction and state-of-health estimation for unmanned aerial vehicles,Journal of Energy Storage,2023,77,Cross-cutting;Second life
+10.1016/j.engappai.2021.104407,More intelligent and robust estimation of battery state-of-charge with an improved regularized extreme learning machine,Engineering Applications of Artificial Intelligence,2021,77,Second life
+10.1016/j.isci.2022.103988,Improved sparrow search algorithm optimization deep extreme learning machine for lithium-ion battery state-of-health prediction,iScience,2022,76,Charging control;Digital twins;Health estimation (SOH);Transfer learning
+10.1016/j.est.2021.102852,A novel entropy-based fault diagnosis and inconsistency evaluation approach for lithium-ion battery energy storage systems,Journal of Energy Storage,2021,76,Fault & safety
+10.1016/j.jechem.2023.01.036,Deep learning-based battery state of charge estimation: Enhancing estimation performance with unlabelled training samples,Journal of Energy Chemistry,2023,76,Second life
+10.1016/j.seta.2020.100752,A data-driven coulomb counting method for state of charge calibration and estimation of lithium-ion battery,Sustainable Energy Technologies and Assessments,2020,75,Thermal management
+10.1016/j.est.2023.107203,Digital twin-long short-term memory (LSTM) neural network based real-time temperature prediction and degradation model analysis for lithium-ion battery,Journal of Energy Storage,2023,75,Digital twins
+10.1109/access.2023.3305950,State-of-Charge Estimation Method for Lithium-Ion Batteries Using Extended Kalman Filter With Adaptive Battery Parameters,IEEE Access,2023,74,State estimation (SOC)
+10.1109/access.2022.3199652,A Physics-Informed Machine Learning Approach for Estimating Lithium-Ion Battery Temperature,IEEE Access,2022,73,Cell balancing & ECM;Digital twins;Fault & safety;Physics-informed
+10.1016/j.energy.2023.128782,A novel battery health indicator and PSO-LSSVR for LiFePO4 battery SOH estimation during constant current charging,Energy,2023,73,Health estimation (SOH)
+10.1016/j.energy.2020.119530,A novel data-driven method for predicting the circulating capacity of lithium-ion battery under random variable current,Energy,2021,73,Thermal management
+10.1016/j.est.2023.109185,State of health estimation of lithium-ion batteries using EIS measurement and transfer learning,Journal of Energy Storage,2023,73,Transfer learning
+10.1016/j.jechem.2023.06.036,Lithium-ion battery degradation trajectory early prediction with synthetic dataset and deep learning,Journal of Energy Chemistry,2023,72,Benchmarks & data
+10.1155/2022/9616124,Hybrid Methods Using Neural Network and Kalman Filter for the State of Charge Estimation of Lithium-Ion Battery,Mathematical Problems in Engineering,2022,72,State estimation (SOC)
+10.1109/jestpe.2021.3098836,State of Health Estimation of Lithium-Ion Battery Based on Constant-Voltage Charging Reconstruction,IEEE Journal of Emerging and Selected Topics in Power Electronics,2023,72,Health estimation (SOH)
+10.1038/s41598-023-33018-0,A framework for Li-ion battery prognosis based on hybrid Bayesian physics-informed neural networks,Scientific Reports,2023,71,Physics-informed
+10.3390/en14217206,Battery State-of-Health Estimation Using Machine Learning and Preprocessing with Relative State-of-Charge,Energies,2021,71,Health estimation (SOH);Second life;State estimation (SOC)
+10.1016/j.est.2020.101400,Comparative study of curve determination methods for incremental capacity analysis and state of health estimation of lithium-ion battery,Journal of Energy Storage,2020,71,Health estimation (SOH)
+10.1016/j.est.2021.103804,An encoder-decoder model based on deep learning for state of health estimation of lithium-ion battery,Journal of Energy Storage,2022,70,Health estimation (SOH);State estimation (SOC);Transfer learning
+10.1016/j.apenergy.2021.118114,Unlocking electrochemical model-based online power prediction for lithium-ion batteries via Gaussian process regression,Applied Energy,2022,70,Health estimation (SOH)
+10.1016/j.est.2021.102756,Fast charging for electric vehicles applications: Numerical optimization of a multi-stage charging protocol for lithium-ion battery and impact on cycle life,Journal of Energy Storage,2021,69,Charging control
+10.1016/j.ijplas.2021.103072,Recurrent neural network modeling of the large deformation of lithium-ion battery cells,International Journal of Plasticity,2021,69,Physics-informed
+10.1016/j.est.2023.106797,State of Health Assessment of Lithium-ion Batteries Based on Deep Gaussian Process Regression Considering Heterogeneous Features,Journal of Energy Storage,2023,69,Health estimation (SOH)
+10.1016/j.applthermaleng.2019.114816,Core temperature estimation of lithium-ion battery for EVs using Kalman filter,Applied Thermal Engineering,2020,69,Thermal management
+10.1093/ce/zkad054,Electric vehicle battery capacity degradation and health estimation using machine-learning techniques: a review,Clean Energy,2023,68,Benchmarks & data;Cross-cutting;Interpretability;Second life;Thermal management
+10.1016/j.est.2022.104980,Precise equivalent circuit model for Li-ion battery by experimental improvement and parameter optimization,Journal of Energy Storage,2022,68,Other
+10.1016/j.energy.2023.127890,Mechanics-based state of charge estimation for lithium-ion pouch battery using deep learning technique,Energy,2023,66,State estimation (SOC)
+10.1016/j.energy.2023.126726,State of health estimation for lithium-ion batteries on few-shot learning,Energy,2023,66,Health estimation (SOH)
+10.1016/j.energy.2022.123537,Adaptive online capacity prediction based on transfer learning for fast charging lithium-ion batteries,Energy,2022,65,Charging control
+10.3390/en14092634,Design of an Effective State of Charge Estimation Method for a Lithium-Ion Battery Pack Using Extended Kalman Filter and Artificial Neural Network,Energies,2021,65,State estimation (SOC)
+10.1016/j.jpowsour.2024.235015,Advancing battery safety: Integrating multiphysics and machine learning for thermal runaway prediction in lithium-ion battery module,Journal of Power Sources,2024,65,Thermal management
+10.1016/j.eswa.2023.120444,Digital twin for electric vehicle battery management with incremental learning,Expert Systems with Applications,2023,64,Thermal management
+10.3390/math10060888,Lithium-Ion Battery Estimation in Online Framework Using Extreme Gradient Boosting Machine Learning Approach,Mathematics,2022,63,Cell balancing & ECM;Digital twins;Fault & safety;Health estimation (SOH)
+10.3390/batteries9070358,State of Charge Estimation for Lithium-Ion Battery Based on Unscented Kalman Filter and Long Short-Term Memory Neural Network,Batteries,2023,63,Physics-informed;State estimation (SOC)
+10.1016/j.energy.2023.129061,State of health estimation of the lithium-ion power battery based on the principal component analysis-particle swarm optimization-back propagation neural network,Energy,2023,63,Physics-informed
+10.1016/j.est.2023.108043,Identification of fractional-order equivalent circuit model of lithium-ion battery for improving estimation of state of charge,Journal of Energy Storage,2023,62,Other
+10.1016/j.est.2021.102271,A voltage reconstruction model based on partial charging curve for state-of-health estimation of lithium-ion batteries,Journal of Energy Storage,2021,62,Health estimation (SOH)
+10.1016/j.est.2021.102466,Optimization of charging strategy for lithium-ion battery packs based on complete battery pack model,Journal of Energy Storage,2021,61,Charging control
+10.1016/j.asoc.2022.109615,Online state-of-health estimation of lithium-ion battery based on relevance vector machine with dynamic integration,Applied Soft Computing,2022,61,Health estimation (SOH)
+10.1109/access.2021.3092743,Lithium-Ion Battery Ageing Behavior Pattern Characterization and State-of-Health Estimation Using Data-Driven Method,IEEE Access,2021,61,Health estimation (SOH);Thermal management
+10.3390/forecast5030032,Data-Driven Methods for the State of Charge Estimation of Lithium-Ion Batteries: An Overview,Forecasting,2023,61,Thermal management
+10.1016/j.energy.2022.126109,Life prediction model for lithium-ion battery considering fast-charging protocol,Energy,2023,59,Charging control
+10.1016/j.est.2023.108034,Optimization of hybrid pulse power characterization profile for equivalent circuit model parameter identification of Li-ion battery based on Taguchi method,Journal of Energy Storage,2023,58,Other
+10.1038/s41524-023-01039-y,Detecting lithium plating dynamics in a solid-state battery with operando X-ray computed tomography using machine learning,npj Computational Materials,2023,58,Fault & safety
+10.1109/tmech.2023.3348519,Physics-Informed Neural Network for Spacecraft Lithium-Ion Battery Modeling and Health Diagnosis,IEEE/ASME Transactions on Mechatronics,2024,58,Physics-informed
+10.1177/00202940221103622,A hybrid CNN-BiLSTM approach for remaining useful life prediction of EVs lithium-Ion battery,Measurement and Control,2022,58,Prognostics (RUL)
+10.1016/j.apenergy.2024.124077,Refined lithium-ion battery state of health estimation with charging segment adjustment,Applied Energy,2024,58,Health estimation (SOH)
+10.1016/j.est.2022.106319,Lithium-ion battery state of health estimation using meta-heuristic optimization and Gaussian process regression,Journal of Energy Storage,2023,58,Health estimation (SOH)
+10.3390/en16103993,Lithium-Ion Battery Health State Prediction Based on VMD and DBO-SVR,Energies,2023,58,Health estimation (SOH);Transfer learning
+10.1016/j.etran.2024.100337,Prediction of thermal runaway for a lithium-ion battery through multiphysics-informed DeepONet with virtual data,eTransportation,2024,58,Thermal management
+10.1016/j.est.2024.113502,Graph neural network-based lithium-ion battery state of health estimation using partial discharging curve,Journal of Energy Storage,2024,57,Graph networks
+10.1016/j.energy.2023.128984,Remaining useful life prediction method of lithium-ion batteries is based on variational modal decomposition and deep learning integrated approach,Energy,2023,57,Prognostics (RUL)
+10.1109/jestpe.2022.3177451,State of Health Estimation for Lithium-Ion Battery via Recursive Feature Elimination on Partial Charging Curves,IEEE Journal of Emerging and Selected Topics in Power Electronics,2023,57,Health estimation (SOH)
+10.1016/j.energy.2023.126724,Time-efficient identification of lithium-ion battery temperature-dependent OCV-SOC curve using multi-output Gaussian process,Energy,2023,57,Health estimation (SOH)
+10.1016/j.apenergy.2023.121936,Thermal management with fast temperature convergence based on optimized fuzzy PID algorithm for electric vehicle battery,Applied Energy,2023,57,Thermal management
+10.1016/j.apenergy.2024.123995,Optimizing electric vehicle fleet integration in industrial demand response: Maximizing vehicle-to-grid benefits while compensating vehicle owners for battery degradation,Applied Energy,2024,56,Cloud & fleet
+10.1016/j.est.2020.101479,Data driven battery anomaly detection based on shape based clustering for the data centers class,Journal of Energy Storage,2020,56,Fault & safety
+10.1016/j.energy.2021.122879,Lithium-ion battery capacity estimation based on battery surface temperature change under constant-current charge scenario,Energy,2022,56,Thermal management
+10.1016/j.est.2023.109191,Data-driven state of health estimation for lithium-ion battery based on voltage variation curves,Journal of Energy Storage,2023,56,Thermal management
+10.1016/j.est.2022.105470,Fault diagnosis for lithium-ion battery energy storage systems based on local outlier factor,Journal of Energy Storage,2022,55,Fault & safety
+10.1016/j.applthermaleng.2024.123826,Machine learning assisted multi-objective design optimization for battery thermal management system,Applied Thermal Engineering,2024,55,Cross-cutting
+10.1109/tpel.2022.3205437,Adaptive Neural Network-Based Prescribed-Time Observer for Battery State-of-Charge Estimation,IEEE Transactions on Power Electronics,2023,55,State estimation (SOC)
+10.1016/j.est.2023.108390,State of health estimation for lithium-ion batteries using Gaussian process regression-based data reconstruction method during random charging process,Journal of Energy Storage,2023,55,Health estimation (SOH)
+10.3390/en15124399,A New Hybrid Neural Network Method for State-of-Health Estimation of Lithium-Ion Battery,Energies,2022,54,Health estimation (SOH);Physics-informed
+10.1016/j.apenergy.2025.125314,A generic physics-informed machine learning framework for battery remaining useful life prediction using small early-stage lifecycle data,Applied Energy,2025,54,Prognostics (RUL)
+10.1109/access.2020.3038182,State of Health Diagnosis and Remaining Useful Life Prediction for Lithium-ion Battery Based on Data Model Fusion Method,IEEE Access,2020,54,Prognostics (RUL)
+10.1016/j.geits.2023.100067,An improved neural network model for battery smarter state-of-charge estimation of energy-transportation system,Green Energy and Intelligent Transportation,2023,54,State estimation (SOC)
+10.1016/j.egyr.2021.10.095,Co-estimation of state of charge and capacity for lithium-ion battery based on recurrent neural network and support vector machine,Energy Reports,2021,54,State estimation (SOC)
+10.3390/batteries10120442,A Comprehensive Review of Multiple Physical and Data-Driven Model Fusion Methods for Accurate Lithium-Ion Battery Inner State Factor Estimation,Batteries,2024,54,Thermal management
+10.3390/math11234865,Smart Lithium-Ion Battery Monitoring in Electric Vehicles: An AI-Empowered Digital Twin Approach,Mathematics,2023,54,Digital twins
+10.1016/j.energy.2023.126665,Attention-based encoder-decoder networks for state of charge estimation of lithium-ion battery,Energy,2023,53,State estimation (SOC)
+10.1016/j.energy.2022.125503,State-of-health estimation for lithium-ion batteries with hierarchical feature construction and auto-configurable Gaussian process regression,Energy,2023,53,Health estimation (SOH)
+10.1007/s42979-024-03046-2,"Machine Learning in Lithium-Ion Battery: Applications, Challenges, and Future Trends",SN Computer Science,2024,52,Cell balancing & ECM;Digital twins;Fault & safety
+10.1016/j.procs.2022.12.383,A Remaining Useful Life Prediction Method for Lithium-ion Battery Based on Temporal Transformer Network,Procedia Computer Science,2023,52,Prognostics (RUL)
+10.1016/j.est.2023.109010,A state-of-health estimation method based on incremental capacity analysis for Li-ion battery considering charging/discharging rate,Journal of Energy Storage,2023,52,Health estimation (SOH)
+10.1109/tmech.2022.3201010,Transfer-Learning-Based State-of-Health Estimation for Lithium-Ion Battery With Cycle Synchronization,IEEE/ASME Transactions on Mechatronics,2023,52,Health estimation (SOH);Transfer learning
+10.3390/en14185960,A Comprehensive Review of Lithium-Ion Cell Temperature Estimation Techniques Applicable to Health-Conscious Fast Charging and Smart Battery Management Systems,Energies,2021,51,Charging control;Health estimation (SOH);Thermal management
+10.1016/j.energy.2023.127291,Connection fault diagnosis for lithium-ion battery packs in electric vehicles based on mechanical vibration signals and broad belief network,Energy,2023,51,Fault & safety
+10.1002/anie.202214037,Untangling Degradation Chemistries of Lithium‐Sulfur Batteries Through Interpretable Hybrid Machine Learning,Angewandte Chemie International Edition,2022,51,Interpretability
+10.1016/j.rser.2023.113807,Physics-informed deep learning for lithium-ion battery diagnostics using electrochemical impedance spectroscopy,Renewable and Sustainable Energy Reviews,2023,51,Physics-informed
+10.1016/j.est.2021.102741,Battery monitoring system using machine learning,Journal of Energy Storage,2021,51,Cross-cutting
+10.1016/j.apenergy.2024.124713,Lithium-ion battery remaining useful life prediction based on interpretable deep learning and network parameter optimization,Applied Energy,2025,51,Prognostics (RUL)
+10.1016/j.jpowsour.2022.232051,Machine learning predictions of lithium-ion battery state-of-health for eVTOL applications,Journal of Power Sources,2022,51,Digital twins;Health estimation (SOH);Transfer learning
+10.1109/access.2019.2961791,Supervised-Learning-Based Optimal Thermal Management in an Electric Vehicle,IEEE Access,2020,51,Thermal management
+10.1016/j.est.2023.107577,A novel smart feature selection strategy of lithium-ion battery degradation modelling for electric vehicles based on modern machine learning algorithms,Journal of Energy Storage,2023,50,Benchmarks & data;Digital twins;Interpretability
+10.1007/s00521-022-07291-5,A physics-informed dynamic deep autoencoder for accurate state-of-health prediction of lithium-ion battery,Neural Computing and Applications,2022,50,Physics-informed
+10.1109/access.2021.3086507,State of Charge Estimation for Lithium-Ion Battery Based on NARX Recurrent Neural Network and Moving Window Method,IEEE Access,2021,50,Physics-informed;State estimation (SOC)
+10.1016/j.geits.2024.100169,A data-fusion-model method for state of health estimation of Li-ion battery packs based on partial charging curve,Green Energy and Intelligent Transportation,2024,50,Health estimation (SOH)
+10.3390/en16176351,Estimating Energy Consumption of Battery Electric Vehicles Using Vehicle Sensor Data and Machine Learning Approaches,Energies,2023,50,Thermal management
+10.1016/j.firesaf.2022.103560,Prediction of the onset of thermal runaway and its thermal hazards in 18650 lithium-ion battery abused by external heating,Fire Safety Journal,2022,50,Thermal management
+10.3390/en13102548,A Method for the Combined Estimation of Battery State of Charge and State of Health Based on Artificial Neural Networks,Energies,2020,49,Health estimation (SOH);State estimation (SOC)
+10.1016/j.est.2023.108882,Optimized EKF algorithm using TSO-BP neural network for lithium battery state of charge estimation,Journal of Energy Storage,2023,49,State estimation (SOC)
+10.1016/j.est.2025.115345,Transfer learning to estimate lithium-ion battery state of health with electrochemical impedance spectroscopy,Journal of Energy Storage,2025,49,Transfer learning
+10.1016/j.est.2022.105670,An efficient data-driven optimal sizing framework for photovoltaics-battery-based electric vehicle charging microgrid,Journal of Energy Storage,2022,48,Fault & safety
+10.17775/cseejpes.2020.03260,On-board soft short circuit fault diagnosis of lithium-ion battery packs for electric vehicles using extended Kalman filter,CSEE Journal of Power and Energy Systems,2020,48,Fault & safety
+10.3390/batteries8040029,Online State-of-Health Estimation of Lithium-Ion Battery Based on Incremental Capacity Curve and BP Neural Network,Batteries,2022,48,Health estimation (SOH);Physics-informed
+10.1016/j.est.2023.108042,Equivalent circuit simulated deep network architecture and transfer learning for remaining useful life prediction of lithium-ion batteries,Journal of Energy Storage,2023,48,Prognostics (RUL)
+10.1109/access.2021.3130994,Analysis of Optimal Machine Learning Approach for Battery Life Estimation of Li-Ion Cell,IEEE Access,2021,48,Second life
+10.1016/j.est.2022.104996,Extreme learning machine model for state-of-charge estimation of lithium-ion battery using salp swarm algorithm,Journal of Energy Storage,2022,48,Health estimation (SOH);State estimation (SOC)
+10.1016/j.est.2023.107081,A novel hybrid machine learning coulomb counting technique for state of charge estimation of lithium-ion batteries,Journal of Energy Storage,2023,48,State estimation (SOC)
+10.1016/j.est.2024.113257,Estimation of lithium-ion battery electrochemical properties from equivalent circuit model parameters using machine learning,Journal of Energy Storage,2024,47,Other
+10.1016/j.energy.2023.128306,A global–local context embedding learning based sequence-free framework for state of health estimation of lithium-ion battery,Energy,2023,47,Health estimation (SOH);Transfer learning
+10.1109/tie.2022.3157980,Combining Reduced-Order Model With Data-Driven Model for Parameter Estimation of Lithium-Ion Battery,IEEE Transactions on Industrial Electronics,2023,47,Thermal management
+10.1016/j.xcrp.2021.100352,A machine learning framework for early detection of lithium plating combining multiple physics-based electrochemical signatures,Cell Reports Physical Science,2021,46,Fault & safety
+10.1109/jrfid.2022.3211841,Physics-Informed Recurrent Neural Network With Fractional-Order Gradients for State-of-Charge Estimation of Lithium-Ion Battery,IEEE Journal of Radio Frequency Identification,2022,46,Physics-informed
+10.1016/j.heliyon.2024.e35183,Efficient state of charge estimation of lithium-ion batteries in electric vehicles using evolutionary intelligence-assisted GLA–CNN–Bi-LSTM deep learning model,Heliyon,2024,46,State estimation (SOC)
+10.1016/j.est.2023.108413,Data-driven battery state-of-health estimation and prediction using IC based features and coupled model,Journal of Energy Storage,2023,46,Health estimation (SOH)
+10.1149/1945-7111/ab95c8,Prediction of Reversible Lithium Plating with a Pseudo-3D Lithium-Ion Battery Model,Journal of The Electrochemical Society,2020,45,Fault & safety
+10.3390/pr11082333,Remaining Useful Life Prediction for Lithium-Ion Batteries Based on a Hybrid Deep Learning Model,Processes,2023,45,Prognostics (RUL)
+10.1002/ente.202100235,Parameter and State of Charge Estimation Simultaneously for Lithium‐Ion Battery Based on Improved Open Circuit Voltage Estimation Method,Energy Technology,2021,45,State estimation (SOC)
+10.1002/est2.408,State of charge estimation of lithium‐ion battery based on extended Kalman filter and unscented Kalman filter techniques,Energy Storage,2022,45,State estimation (SOC)
+10.1016/j.energy.2023.128776,Multiple layer kernel extreme learning machine modeling and eugenics genetic sparrow search algorithm for the state of health estimation of lithium-ion batteries,Energy,2023,45,Health estimation (SOH)
+10.1109/tpel.2020.3024904,An Isolated Active Balancing and Monitoring System for Lithium Ion Battery Stacks Utilizing a Single Transformer Per Cell,IEEE Transactions on Power Electronics,2021,44,Cell balancing & ECM
+10.1016/j.est.2022.105796,State of charge estimation of lithium-ion battery based on multi-input extreme learning machine using online model parameter identification,Journal of Energy Storage,2022,44,Health estimation (SOH);Other;Second life;State estimation (SOC)
+10.1109/access.2021.3061478,Unified Univariate-Neural Network Models for Lithium-Ion Battery State-of-Charge Forecasting Using Minimized Akaike Information Criterion Algorithm,IEEE Access,2021,44,Physics-informed
+10.1016/j.dajour.2023.100255,A feedforward deep neural network for predicting the state-of-charge of lithium-ion battery in electric vehicles,Decision Analytics Journal,2023,44,Physics-informed
+10.1016/j.est.2022.104376,Early prediction of cycle life for lithium-ion batteries based on evolutionary computation and machine learning,Journal of Energy Storage,2022,44,Prognostics (RUL)
+10.1016/j.isci.2025.112235,Battery state of health estimation under fast charging via deep transfer learning,iScience,2025,44,Health estimation (SOH)
+10.1016/j.electacta.2025.146110,A method for estimating lithium-ion battery state of health based on physics-informed hybrid neural network,Electrochimica Acta,2025,43,Physics-informed
+10.3390/su152115283,Prediction of Battery Remaining Useful Life Using Machine Learning Algorithms,Sustainability,2023,43,Prognostics (RUL);Second life
+10.1016/j.apenergy.2024.123508,State of charge estimation of lithium-ion battery based on GA-LSTM and improved IAKF,Applied Energy,2024,43,State estimation (SOC)
+10.3389/fenrg.2021.702139,A Fault Diagnosis Method for Lithium-Ion Battery Packs Using Improved RBF Neural Network,Frontiers in Energy Research,2021,42,Fault & safety;Physics-informed
+10.1016/j.jpowsour.2024.235271,A physics-informed neural network approach to parameter estimation of lithium-ion battery electrochemical model,Journal of Power Sources,2024,42,Physics-informed
+10.1016/j.egyr.2023.10.030,Remaining useful life prediction of lithium-ion batteries via an EIS based deep learning approach,Energy Reports,2023,42,Prognostics (RUL)
+10.1016/j.est.2022.106457,Lithium-ion battery remaining useful life prediction using a two-phase degradation model with a dynamic change point,Journal of Energy Storage,2023,42,Prognostics (RUL)
+10.3390/en14020306,State-of-Charge Estimation of Lithium-Ion Batteries in the Battery Degradation Process Based on Recurrent Neural Network,Energies,2021,41,Graph networks;State estimation (SOC)
+10.1002/eom2.12213,Data‐driven battery degradation prediction: Forecasting voltage‐capacity curves using one‐cycle data,EcoMat,2022,41,Prognostics (RUL)
+10.1016/j.ress.2023.109361,A power model considering initial battery state for remaining useful life prediction of lithium-ion batteries,Reliability Engineering &amp; System Safety,2023,41,Prognostics (RUL)
+10.3390/su13095046,State of Charge Estimation of Lithium-Ion Battery Based on Improved Adaptive Unscented Kalman Filter,Sustainability,2021,41,State estimation (SOC)
+10.1016/j.apenergy.2024.125086,A general framework for lithium-ion battery state of health estimation: From laboratory tests to machine learning with transferability across domains,Applied Energy,2025,41,Health estimation (SOH)
+10.1016/j.jpowsour.2022.231441,Temperature characterization based state-of-charge estimation for pouch lithium-ion battery,Journal of Power Sources,2022,41,Thermal management
+10.3390/en15134753,Lithium-Ion Battery Health Prediction on Hybrid Vehicles Using Machine Learning Approach,Energies,2022,40,Cell balancing & ECM;Digital twins;Fault & safety;Health estimation (SOH);Thermal management;Transfer learning
+10.1109/access.2020.3012913,Experimental and Theoretical Analysis of the Fast Charging Polymer Lithium-Ion Battery Based on Cuckoo Optimization Algorithm (COA),IEEE Access,2020,40,Charging control
+10.1002/er.5784,Research on parameter identification and state of charge estimation of improved equivalent circuit model of Li‐ion battery based on temperature effects for battery thermal management,International Journal of Energy Research,2020,40,Other
+10.3390/batteries9020070,Data-Driven Thermal Anomaly Detection in Large Battery Packs,Batteries,2023,40,Fault & safety
+10.1016/j.est.2023.108590,Data-driven analysis of battery electric vehicle energy consumption under real-world temperature conditions,Journal of Energy Storage,2023,40,Fault & safety
+10.1002/cphc.202100829,Improved Battery Cycle Life Prediction Using a Hybrid Data‐Driven Model Incorporating Linear Support Vector Regression and Gaussian,ChemPhysChem,2022,40,Prognostics (RUL)
+10.3934/era.2023031,Remaining useful life prediction of the lithium-ion battery based on CNN-LSTM fusion model and grey relational analysis,Electronic Research Archive,2023,40,Prognostics (RUL)
+10.1016/j.jechem.2023.02.019,Robust state of charge estimation of lithium-ion battery via mixture kernel mean p-power error loss LSTM with heap-based-optimizer,Journal of Energy Chemistry,2023,40,State estimation (SOC)
+10.1109/tii.2022.3205942,A Transferable Multistage Model With Cycling Discrepancy Learning for Lithium-Ion Battery State of Health Estimation,IEEE Transactions on Industrial Informatics,2023,40,Health estimation (SOH)
+10.3390/app12052305,An Improved Gated Recurrent Unit Neural Network for State-of-Charge Estimation of Lithium-Ion Battery,Applied Sciences,2022,39,Physics-informed;State estimation (SOC)
+10.1016/j.energy.2021.122406,Noise immune state of charge estimation of li-ion battery via the extreme learning machine with mixture generalized maximum correntropy criterion,Energy,2022,39,Second life
+10.1016/j.jclepro.2023.137220,Capacity estimation for lithium-ion battery via a novel health indicator extracted from partial constant voltage charging curve,Journal of Cleaner Production,2023,39,Health estimation (SOH)
+10.1109/tim.2022.3199253,State of Charge Estimation by Joint Approach With Model-Based and Data-Driven Algorithm for Lithium-Ion Battery,IEEE Transactions on Instrumentation and Measurement,2022,39,Thermal management
+10.1016/j.energy.2022.126331,A module-level charging optimization method of lithium-ion battery considering temperature gradient effect of liquid cooling and charging time,Energy,2023,38,Charging control
+10.1002/cta.70128,Parameter Identification and Open‐Circuit Voltage Estimation of Lithium‐Ion Battery Circuit Model Based on Multi‐Innovation Theory,International Journal of Circuit Theory and Applications,2025,38,Other
+10.1109/jas.2023.123099,An Early Minor-Fault Diagnosis Method for Lithium-Ion Battery Packs Based on Unsupervised Learning,IEEE/CAA Journal of Automatica Sinica,2023,38,Fault & safety
+10.3390/su15021120,Electric Vehicle Lithium-Ion Battery Fault Diagnosis Based on Multi-Method Fusion of Big Data,Sustainability,2023,38,Fault & safety
+10.3390/app11104671,Solid-State Lithium Battery Cycle Life Prediction Using Machine Learning,Applied Sciences,2021,38,Prognostics (RUL);Second life
+10.3390/batteries9020120,Lithium-Ion Battery State of Health Estimation with Multi-Feature Collaborative Analysis and Deep Learning Method,Batteries,2023,38,Health estimation (SOH);State estimation (SOC);Transfer learning
+10.1002/er.6649,A novel framework for lithium‐ion battery state of charge estimation based on Kalman filter Gaussian process regression,International Journal of Energy Research,2021,38,Health estimation (SOH)
+10.3390/electrochem3010003,Application of Machine Learning in Battery: State of Charge Estimation Using Feed Forward Neural Network for Sodium-Ion Battery,Electrochem,2022,37,Benchmarks & data;Health estimation (SOH);Second life;State estimation (SOC)
+10.3390/en15165829,SOC Estimation of Lithium-Ion Battery Based on Equivalent Circuit Model with Variable Parameters,Energies,2022,37,Other
+10.4218/etrij.2022-0135,Anomaly detection of smart metering system for power management with battery storage system/electric vehicle,ETRI Journal,2022,37,Fault & safety
+10.1038/s41598-025-92262-8,A hybrid approach for lithium-ion battery remaining useful life prediction using signal decomposition and machine learning,Scientific Reports,2025,37,Prognostics (RUL)
+10.3390/electronics9081279,State of Health Estimation for Lithium-Ion Batteries Based on the Constant Current–Constant Voltage Charging Curve,Electronics,2020,37,Health estimation (SOH)
+10.3390/en13081982,A Multi-Agent Reinforcement Learning Framework for Lithium-ion Battery Scheduling Problems,Energies,2020,36,Charging control
+10.3390/a15110393,Lithium-Ion Battery Prognostics through Reinforcement Learning Based on Entropy Measures,Algorithms,2022,36,Charging control
+10.1016/j.epsr.2020.106356,Online reduced complexity parameter estimation technique for equivalent circuit model of lithium-ion battery,Electric Power Systems Research,2020,36,Other
+10.1016/j.energy.2024.133155,Comparative analysis of data-driven electric vehicle battery health models across different operating conditions,Energy,2024,36,Fault & safety
+10.3390/app15020516,Machine Learning-Based Lithium Battery State of Health Prediction Research,Applied Sciences,2025,36,Fault & safety
+10.1149/1945-7111/abd607,Optimal Fast Charging Method for a Large-Format Lithium-Ion Battery Based on Nonlinear Model Predictive Control and Reduced Order Electrochemical Model,Journal of The Electrochemical Society,2020,36,Foundation models
+10.1016/j.est.2022.105308,A novel deep neural network model for estimating the state of charge of lithium-ion battery,Journal of Energy Storage,2022,36,Physics-informed
+10.1109/tte.2022.3226683,Interpretable Battery Cycle Life Range Prediction Using Early Cell Degradation Data,IEEE Transactions on Transportation Electrification,2023,36,Prognostics (RUL)
+10.1016/j.energy.2022.125019,An electromechanical coupling model-based state of charge estimation method for lithium-ion pouch battery modules,Energy,2022,36,State estimation (SOC)
+10.1016/j.est.2023.107549,Data-driven battery capacity estimation based on partial discharging capacity curve for lithium-ion batteries,Journal of Energy Storage,2023,36,Thermal management
+10.1002/batt.202300046,Machine Learning in Lithium‐Ion Battery Cell Production: A Comprehensive Mapping Study,Batteries &amp; Supercaps,2023,35,Cell balancing & ECM;Digital twins
+10.1039/d2dd00067a,Uncertainty-aware and explainable machine learning for early prediction of battery degradation trajectory,Digital Discovery,2023,35,Benchmarks & data
+10.3390/batteries9100511,An Enhanced Single-Particle Model Using a Physics-Informed Neural Network Considering Electrolyte Dynamics for Lithium-Ion Batteries,Batteries,2023,35,Physics-informed
+10.1016/j.energy.2023.129503,Particle swarm optimization of Elman neural network applied to battery state of charge and state of health estimation,Energy,2023,35,State estimation (SOC)
+10.1016/j.psep.2023.05.088,Risk assessment of lithium-ion battery road transportation using the data-driven Bayesian network considering battery self-heating,Process Safety and Environmental Protection,2023,35,Thermal management
+10.1016/j.epsr.2023.109235,Battery-degradation-involved energy management strategy based on deep reinforcement learning for fuel cell/battery/ultracapacitor hybrid electric vehicle,Electric Power Systems Research,2023,34,Benchmarks & data;Cloud & fleet;Thermal management
+10.1016/j.est.2023.107704,Fast charging of lithium-ion battery using multistage charging and optimization with Grey relational analysis,Journal of Energy Storage,2023,34,Charging control
+10.1149/1945-7111/ac8a1a,Improved Particle Swarm Optimization-Extreme Learning Machine Modeling Strategies for the Accurate Lithium-ion Battery State of Health Estimation and High-adaptability Remaining Useful Life Prediction,Journal of The Electrochemical Society,2022,34,Second life
+10.1109/tte.2025.3533540,Transfer Learning-Based Lithium-Ion Battery State of Health Estimation With Electrochemical Impedance Spectroscopy,IEEE Transactions on Transportation Electrification,2025,34,Transfer learning
+10.1016/j.apenergy.2024.123248,Multi-source domain transfer learning with small sample learning for thermal runaway diagnosis of lithium-ion battery,Applied Energy,2024,33,Fault & safety;Thermal management
+10.1109/tvt.2023.3247722,A Novel Set-Valued Sensor Fault Diagnosis Method for Lithium-Ion Battery Packs in Electric Vehicles,IEEE Transactions on Vehicular Technology,2023,33,Fault & safety
+10.3390/batteries8120266,"Prediction of Battery Cycle Life Using Early-Cycle Data, Machine Learning and Data Management",Batteries,2022,33,Cross-cutting;Prognostics (RUL)
+10.1016/j.xcrp.2023.101720,Large-scale field data-based battery aging prediction driven by statistical features and machine learning,Cell Reports Physical Science,2023,33,Prognostics (RUL)
+10.3390/en16010313,Remaining Useful Life Prediction for Lithium-Ion Batteries Based on Improved Variational Mode Decomposition and Machine Learning Algorithm,Energies,2022,33,Prognostics (RUL)
+10.1016/j.microrel.2022.114625,An interpretable remaining useful life prediction scheme of lithium-ion battery considering capacity regeneration,Microelectronics Reliability,2022,33,Prognostics (RUL)
+10.1016/j.energy.2022.125637,Battery State-of-Health estimation based on multiple charge and discharge features,Energy,2023,33,Health estimation (SOH)
+10.1002/ente.202100910,Data‐Driven–Based Internal Temperature Estimation for Lithium‐Ion Battery Under Variant State‐of‐Charge via Electrochemical Impedance Spectroscopy,Energy Technology,2022,33,Thermal management
+10.3390/en14030723,Battery Stress Factor Ranking for Accelerated Degradation Test Planning Using Machine Learning,Energies,2021,32,Benchmarks & data;Interpretability
+10.1016/j.enconman.2025.120170,Charging strategies optimization for lithium-ion battery: Heterogeneous ensemble surrogate model-assisted advanced multi-objective optimization algorithm,Energy Conversion and Management,2025,32,Charging control
+10.3390/su15076261,Lithium-Ion Battery Remaining Useful Life Prediction Based on Hybrid Model,Sustainability,2023,32,Prognostics (RUL)
+10.1016/j.est.2023.107181,Indirect prediction of remaining useful life for lithium-ion batteries based on improved multiple kernel extreme learning machine,Journal of Energy Storage,2023,32,Prognostics (RUL)
+10.1016/j.est.2023.107754,State of health estimation of lithium-ion battery using energy accumulation-based feature extraction and improved relevance vector regression,Journal of Energy Storage,2023,32,Health estimation (SOH)
+10.3390/en16083393,State of Health Estimation of Lithium-Ion Battery Based on Electrochemical Impedance Spectroscopy,Energies,2023,32,Health estimation (SOH)
+10.1016/j.etran.2023.100266,Fast multilayer temperature distribution estimation for lithium-ion battery pack,eTransportation,2023,32,Thermal management
+10.3390/batteries8020008,Development of a Matlab/Simulink Model for Monitoring Cell State-of-Health and State-of-Charge via Impedance of Lithium-Ion Battery Cells,Batteries,2022,32,Transfer learning
+10.3389/fenrg.2022.891637,Multi-Fault Diagnosis of Lithium-Ion Battery Systems Based on Correlation Coefficient and Similarity Approaches,Frontiers in Energy Research,2022,31,Fault & safety
+10.1002/qre.2792,Remaining useful life prediction of lithium‐ion battery using a novel health indicator,Quality and Reliability Engineering International,2020,31,Prognostics (RUL)
+10.3390/en13225947,Estimation for Battery State of Charge Based on Temperature Effect and Fractional Extended Kalman Filter,Energies,2020,31,State estimation (SOC)
+10.1016/j.est.2023.108732,State-of-health estimation for lithium-ion battery using model-based feature optimization and deep extreme learning machine,Journal of Energy Storage,2023,30,Cell balancing & ECM;Digital twins;Health estimation (SOH);Second life;State estimation (SOC);Transfer learning
+10.1016/j.energy.2023.129126,A battery capacity estimation method based on the equivalent circuit model and quantile regression using vehicle real-world operation data,Energy,2023,30,Other
+10.3389/fenrg.2023.1059701,Accurate prediction of remaining useful life for lithium-ion battery using deep neural networks with memory features,Frontiers in Energy Research,2023,30,Prognostics (RUL)
+10.3390/s22103803,Remaining Useful Life Prediction of Lithium-Ion Batteries Using Neural Networks with Adaptive Bayesian Learning,Sensors,2022,30,Prognostics (RUL)
+10.1016/j.est.2024.111877,Improved deep learning based state of charge estimation of lithium ion battery for electrified transportation,Journal of Energy Storage,2024,30,State estimation (SOC)
+10.1016/j.apenergy.2022.119367,Li-ion battery individual electrode state of charge and degradation monitoring using battery casing through auto curve matching for standard CCCV charging profile,Applied Energy,2022,30,Health estimation (SOH)
+10.3390/batteries9010063,Towards High-Safety Lithium-Ion Battery Diagnosis Methods,Batteries,2023,29,Fault & safety
+10.1007/s42835-023-01564-2,State-of-Health Prediction for Li-ion Batteries for Efficient Battery Management System Using Hybrid Machine Learning Model,Journal of Electrical Engineering &amp; Technology,2023,29,Cross-cutting
+10.1002/er.5647,Li‐ion battery state of health estimation through Gaussian process regression with Thevenin model,International Journal of Energy Research,2020,29,Health estimation (SOH)
+10.3390/s22155762,A Data-Driven Approach to State of Health Estimation and Prediction for a Lithium-Ion Battery Pack of Electric Buses Based on Real-World Data,Sensors,2022,29,Thermal management
+10.1115/1.4048816,Electric Vehicle Battery Thermal and Cabin Climate Management Based on Model Predictive Control,Journal of Mechanical Design,2020,29,Thermal management
+10.3390/su16167180,Optimal Electric Vehicle Battery Management Using Q-learning for Sustainability,Sustainability,2024,29,Thermal management
+10.1109/access.2025.3530351,Lithium-Ion Battery State of Health Degradation Prediction Using Deep Learning Approaches,IEEE Access,2025,29,Transfer learning
+10.3390/en16176318,Synergizing Machine Learning and the Aviation Sector in Lithium-Ion Battery Applications: A Review,Energies,2023,28,Cell balancing & ECM;Cross-cutting;Digital twins;Fault & safety
+10.1016/j.jechem.2025.08.093,A generalizable physics-informed neural network for lithium-ion battery SOH estimation utilizing partial charging segments,Journal of Energy Chemistry,2026,28,Physics-informed
+10.1088/1742-6596/2325/1/012004,Battery Management System to Estimate Battery Aging using Deep Learning and Machine Learning Algorithms,Journal of Physics: Conference Series,2022,27,Benchmarks & data;Cross-cutting
+10.3390/en16207081,Remaining Useful Life Prediction of Lithium-Ion Battery Using ICC-CNN-LSTM Methodology,Energies,2023,27,Prognostics (RUL)
+10.3390/en15072448,Performance Comparison of Long Short-Term Memory and a Temporal Convolutional Network for State of Health Estimation of a Lithium-Ion Battery using Its Charging Characteristics,Energies,2022,27,Health estimation (SOH)
+10.1016/j.est.2022.105669,Bayesian information criterion based data-driven state of charge estimation for lithium-ion battery,Journal of Energy Storage,2022,27,Thermal management
+10.1016/j.energy.2022.125210,Machine learning based swift online capacity prediction of lithium-ion battery through whole cycle life,Energy,2022,26,Cell balancing & ECM;Digital twins;Fault & safety;Prognostics (RUL);Thermal management
+10.1016/j.jlp.2022.104783,Heat generation and surrogate model for large-capacity nickel-rich prismatic lithium-ion battery as against 18650 battery,Journal of Loss Prevention in the Process Industries,2022,26,Foundation models
+10.3390/batteries8100148,Physics-Informed Recurrent Neural Networks with Fractional-Order Constraints for the State Estimation of Lithium-Ion Batteries,Batteries,2022,26,Physics-informed
+10.3390/ma15248744,State of Charge Estimation and Evaluation of Lithium Battery Using Kalman Filter Algorithms,Materials,2022,26,State estimation (SOC)
+10.23919/saiee.2023.9962788,Electric Vehicle Lithium-ion Battery Ageing Analysis under Dynamic Condition: A Machine Learning Approach,SAIEE Africa Research Journal,2023,25,Cell balancing & ECM;Digital twins;Fault & safety
+10.1016/j.jpowsour.2023.233602,Multi-objective optimization for fast charging design of lithium-ion batteries using constrained Bayesian optimization,Journal of Power Sources,2023,25,Charging control
+10.3390/batteries9090448,Remaining Useful Life Prediction for Lithium-Ion Batteries Based on Iterative Transfer Learning and Mogrifier LSTM,Batteries,2023,25,Prognostics (RUL)
+10.3390/en14082243,Battery State of Health Estimation with Improved Generalization Using Parallel Layer Extreme Learning Machine,Energies,2021,25,Second life
+10.1016/j.ijhydene.2022.04.087,Estimation of maximum available capacity of lithium-ion battery based on multi-view features extracted from reconstructed charging curve,International Journal of Hydrogen Energy,2022,25,Health estimation (SOH)
+10.1016/j.egyr.2022.10.059,"Lithium-ion battery charging optimization based on electrical, thermal and aging mechanism models",Energy Reports,2022,24,Charging control
+10.1109/tte.2023.3311813,Data-Driven Fast Charging Optimization for Lithium-Ion Battery Using Bayesian Optimization With Fast Convergence,IEEE Transactions on Transportation Electrification,2024,24,Charging control
+10.3390/batteries9050274,Influence of Lithium-Ion-Battery Equivalent Circuit Model Parameter Dependencies and Architectures on the Predicted Heat Generation in Real-Life Drive Cycles,Batteries,2023,24,Other
+10.3390/wevj14060145,Research Progress on Data-Driven Methods for Battery States Estimation of Electric Buses,World Electric Vehicle Journal,2023,24,Fault & safety
+10.1016/j.energy.2025.136618,Real-time prediction of battery remaining useful life using hybrid-fusion deep neural networks,Energy,2025,24,Prognostics (RUL)
+10.1109/access.2023.3286307,A Data-Driven-Based Framework for Battery Remaining Useful Life Prediction,IEEE Access,2023,24,Prognostics (RUL)
+10.1016/j.est.2023.109308,Remaining useful life prediction of lithium-ion batteries based on peak interval features and deep learning,Journal of Energy Storage,2023,24,Prognostics (RUL)
+10.1016/j.egyai.2025.100585,Towards a smarter battery management system: A critical review on deep learning-based state of charge estimation of lithium-ion batteries,Energy and AI,2025,24,State estimation (SOC)
+10.1016/j.jpowsour.2024.235609,Novel state of charge estimation method of containerized Lithium–Ion battery energy storage system based on deep learning,Journal of Power Sources,2024,24,State estimation (SOC)
+10.1016/j.est.2023.108647,Li-ion battery state-of-health estimation based on the combination of statistical and geometric features of the constant-voltage charging stage,Journal of Energy Storage,2023,24,Health estimation (SOH)
+10.1080/15325008.2022.2145389,A Data-Driven Comparative Analysis of Lithium-Ion Battery State of Health and Capacity Estimation,Electric Power Components and Systems,2023,24,Thermal management
+10.3390/wevj16050279,Energy-Efficient Battery Thermal Management in Electric Vehicles Using Artificial-Neural-Network-Based Model Predictive Control,World Electric Vehicle Journal,2025,24,Thermal management
+10.1016/j.applthermaleng.2025.126460,An integration framework based on deep learning and CFD for early detection of lithium-ion battery thermal runaway,Applied Thermal Engineering,2025,24,Thermal management
+10.1109/jsyst.2023.3238287,Evaluating Machine-Learning-Based Methods for Modeling a Digital Twin of Battery Systems Providing Frequency Regulation,IEEE Systems Journal,2023,24,Digital twins
+10.1016/j.egyr.2023.03.091,Lithium-ion battery state of charge prediction based on machine learning approach,Energy Reports,2023,23,Cell balancing & ECM;Charging control;Digital twins;Fault & safety;Health estimation (SOH);Second life;State estimation (SOC);Thermal management;Transfer learning
+10.1109/lcsys.2021.3131269,Constrained Bayesian Optimization for Minimum-Time Charging of Lithium-Ion Batteries,IEEE Control Systems Letters,2022,23,Charging control
+10.3389/fenrg.2022.998002,An unscented kalman filtering method for estimation of state-of-charge of lithium-ion battery,Frontiers in Energy Research,2023,23,State estimation (SOC)
+10.3390/en16031083,Lithium-Ion Battery State-of-Charge Estimation from the Voltage Discharge Profile Using Gradient Vector and Support Vector Machine,Energies,2023,23,State estimation (SOC)
+10.1016/j.jpowsour.2025.236784,Battery health features extraction and state of health estimation based on real-time online vehicle driving data,Journal of Power Sources,2025,23,Health estimation (SOH)
+10.1016/j.microrel.2022.114500,A novel Bayesian multivariate linear regression model for online state-of-health estimation of Lithium-ion battery using multiple health indicators,Microelectronics Reliability,2022,23,Health estimation (SOH)
+10.3390/wevj16010010,Battery Prognostics and Health Management: AI and Big Data,World Electric Vehicle Journal,2024,22,Cloud & fleet
+10.3390/wevj16020107,Data-Driven Modeling of Electric Vehicle Charging Sessions Based on Machine Learning Techniques,World Electric Vehicle Journal,2025,22,Fault & safety
+10.3389/fenrg.2022.863285,Prediction of Remaining Useful Life of the Lithium-Ion Battery Based on Improved Particle Filtering,Frontiers in Energy Research,2022,22,Prognostics (RUL)
+10.20517/jmi.2024.84,Advancements in the estimation of the state of charge of lithium-ion battery: a comprehensive review of traditional and deep learning approaches,Journal of Materials Informatics,2025,22,State estimation (SOC)
+10.1016/j.est.2023.107733,Estimation of state-of-charge and state-of-health for lithium-ion battery based on improved firefly optimized particle filter,Journal of Energy Storage,2023,22,State estimation (SOC)
+10.1016/j.est.2022.104916,State of charge estimation of lithium-ion battery under time-varying noise based on Variational Bayesian Estimation Methods,Journal of Energy Storage,2022,22,State estimation (SOC)
+10.1016/j.est.2024.114281,State of charge estimation of lithium ion battery for electric vehicle using cutting edge machine learning algorithms: A review,Journal of Energy Storage,2024,22,State estimation (SOC)
+10.1007/s43236-022-00428-8,State-of-health estimation for lithium-ion batteries using differential thermal voltammetry and Gaussian process regression,Journal of Power Electronics,2022,22,Health estimation (SOH)
+10.1016/j.est.2022.106335,State-of-health estimation by virtual experiments using recurrent decoder–encoder based lithium-ion digital battery twins trained on unstructured battery data,Journal of Energy Storage,2023,22,Thermal management
+10.3390/wevj14020047,Proximal Policy Optimization Based Intelligent Energy Management for Plug-In Hybrid Electric Bus Considering Battery Thermal Characteristic,World Electric Vehicle Journal,2023,22,Thermal management
+10.1038/s41598-025-30602-4,Physics-informed hybrid reinforcement learning for estimating lithium-ion battery state of health,Scientific Reports,2025,21,Charging control;Transfer learning
+10.3390/act10090234,Remaining Useful Life Prediction of Lithium-Ion Batteries Based on Deep Learning and Soft Sensing,Actuators,2021,21,Prognostics (RUL)
+10.1016/j.ress.2025.111392,Remaining useful life prediction of lithium battery based on deep reinforcement learning fusion network,Reliability Engineering &amp; System Safety,2025,21,Prognostics (RUL)
+10.2478/pomr-2020-0051,State of Charge Estimation Method for Lithium-Ion Batteries in All-Electric Ships Based on LSTM Neural Network,Polish Maritime Research,2020,21,State estimation (SOC)
+10.1109/access.2024.3488596,Battery State of Charge and State of Health Estimation Using a New Hybrid Deep Neural Network Approach,IEEE Access,2025,21,State estimation (SOC)
+10.1016/j.energy.2024.132723,Enhanced multi-constraint dung beetle optimization-kernel extreme learning machine for lithium-ion battery state of health estimation with adaptive enhancement ability,Energy,2024,21,Health estimation (SOH)
+10.1177/14680874211029902,Numerical analysis of kinetic mechanisms for battery thermal runaway prediction in lithium-ion batteries,International Journal of Engine Research,2021,21,Thermal management
+10.1016/j.est.2023.106931,Rethinking lithium-ion battery management: Eliminating routine cell balancing enhances hazardous fault detection,Journal of Energy Storage,2023,20,Cell balancing & ECM
+10.1541/ieejjia.22004793,Machine Learning-based Remaining Useful Life Prediction Techniques for Lithium-ion Battery Management Systems: A Comprehensive Review,IEEJ Journal of Industry Applications,2023,20,Cell balancing & ECM;Cross-cutting;Digital twins;Prognostics (RUL)
+10.1016/j.est.2023.106965,A minor-fault diagnosis approach based on modified variance for lithium-ion battery strings,Journal of Energy Storage,2023,20,Fault & safety
+10.3390/en16237824,State of Charge Estimation of Lithium-Ion Battery Based on Back Propagation Neural Network and AdaBoost Algorithm,Energies,2023,20,Physics-informed;State estimation (SOC)
+10.1007/s00521-023-08471-7,State-of-health estimation of Lithium-ion battery based on back-propagation neural network with adaptive hidden layer,Neural Computing and Applications,2023,20,Physics-informed
+10.3390/batteries9080413,Predicting the Cycle Life of Lithium-Ion Batteries Using Data-Driven Machine Learning Based on Discharge Voltage Curves,Batteries,2023,20,Prognostics (RUL)
+10.1007/s11581-023-05204-7,An accurate denoising lithium-ion battery remaining useful life prediction model based on CNN and LSTM with self-attention,Ionics,2023,20,Prognostics (RUL)
+10.1016/j.jpowsour.2025.238036,Multi-task neural network combined with adaptive dual Kalman filter for joint estimation of battery state-of-charge and state-of-health,Journal of Power Sources,2025,20,State estimation (SOC)
+10.1016/j.energy.2025.135772,Lithium-ion battery health state estimation based on improved snow ablation optimization algorithm-deep hybrid kernel extreme learning machine,Energy,2025,20,Health estimation (SOH)
+10.26599/nre.2024.9120147,Transfer learning prediction on lithium-ion battery heat release under thermal runaway condition,Nano Research Energy,2024,20,Thermal management
+10.3389/fenrg.2023.1114263,Design and optimization of lithium-ion battery protector with auxetic honeycomb for in-plane impact using machine learning method,Frontiers in Energy Research,2023,19,Cell balancing & ECM;Charging control;Digital twins
+10.1109/lcsys.2020.3046378,Offline Multiobjective Optimization for Fast Charging and Reduced Degradation in Lithium-Ion Battery Cells Using Electrochemical Dynamics,IEEE Control Systems Letters,2021,19,Charging control
+10.1109/tte.2022.3192174,Lithium-Ion Battery Optimal Charging Using Moth-Flame Optimization Algorithm and Fractional-Order Model,IEEE Transactions on Transportation Electrification,2023,19,Charging control
+10.1002/aenm.202503067,Interpretable Machine Learning for Battery Prognosis: Retrospect and Prospect,Advanced Energy Materials,2025,19,Interpretability
+10.1016/j.est.2023.106697,Wavelet attention-powered neural network framework with hierarchical dynamic frequency learning for lithium-ion battery state of health prediction,Journal of Energy Storage,2023,19,Physics-informed;Transfer learning
+10.1016/j.csite.2024.105207,Structural optimization and battery temperature prediction of battery thermal management system based on machine learning,Case Studies in Thermal Engineering,2024,19,Cross-cutting
+10.1002/eom2.12345,Feature–target pairing in machine learning for battery health diagnosis and prognosis: A critical review,EcoMat,2023,19,Cross-cutting
+10.3390/app13084896,Battery-Free Pork Freshness Estimation Based on Colorimetric Sensors and Machine Learning,Applied Sciences,2023,19,Second life
+10.3390/wevj14010008,State of Charge Estimation for Power Battery Base on Improved Particle Filter,World Electric Vehicle Journal,2022,19,State estimation (SOC)
+10.3390/batteries9070362,Combined State of Charge and State of Energy Estimation for Echelon-Use Lithium-Ion Battery Based on Adaptive Extended Kalman Filter,Batteries,2023,19,State estimation (SOC)
+10.1016/j.energy.2023.128445,Lithium-ion battery state of health estimation based on multi-source health indicators extraction and sparse Bayesian learning,Energy,2023,19,Health estimation (SOH);Transfer learning
+10.3389/fenrg.2022.1032660,An improved deep extreme learning machine to predict the remaining useful life of lithium-ion battery,Frontiers in Energy Research,2022,18,Cell balancing & ECM;Digital twins;Fault & safety;Prognostics (RUL)
+10.1016/j.energy.2023.127233,Optimization on charging of the direct hybrid lithium-ion battery and supercapacitor for high power application through resistance balancing,Energy,2023,18,Cell balancing & ECM;Charging control
+10.1016/j.etran.2025.100418,A multi-scenario data-driven approach for anomaly detection in electric vehicle battery systems,eTransportation,2025,18,Fault & safety
+10.1002/ange.202214037,Untangling Degradation Chemistries of Lithium‐Sulfur Batteries Through Interpretable Hybrid Machine Learning,Angewandte Chemie,2022,18,Interpretability
+10.1016/j.egyr.2022.05.127,Long-short term memory neural network based life prediction of lithium-ion battery considering internal parameters,Energy Reports,2022,18,Physics-informed
+10.3390/s23052587,Prediction of State of Health of Lithium-Ion Battery Using Health Index Informed Attention Model,Sensors,2023,18,Health estimation (SOH);Physics-informed;Transfer learning
+10.1016/j.procs.2023.01.006,Energy efficient machine learning based SMART-A-BLE implemented Wireless Battery Management System for both Hybrid Electric Vehicles and Battery Electric Vehicles,Procedia Computer Science,2023,18,Cross-cutting;Thermal management
+10.3390/batteries8100192,Development of a Data-Driven Method for Online Battery Remaining-Useful-Life Prediction,Batteries,2022,18,Prognostics (RUL)
+10.3390/app14146240,Tiny Machine Learning Battery State-of-Charge Estimation Hardware Accelerated,Applied Sciences,2024,18,Second life
+10.1016/j.est.2025.118989,Intelligent domain-generalized second-life EV battery state-of-health estimation,Journal of Energy Storage,2025,18,Second life
+10.1016/j.ifacol.2023.12.050,Machine Learning-based Electric Vehicle Battery State of Charge Prediction and Driving Range Estimation for Rural Applications,IFAC-PapersOnLine,2023,18,Second life;Thermal management
+10.1016/j.fraope.2023.100053,Enhancing battery state of charge estimation through hybrid integration of barnacles mating optimizer with deep learning,Franklin Open,2023,18,Second life
+10.1080/15435075.2022.2136001,A state of health estimation method of lithium-ion batteries based on DT-IC-V health features extracted from partial charging segment,International Journal of Green Energy,2022,18,Health estimation (SOH)
+10.3390/batteries8100134,State of Health Trajectory Prediction Based on Multi-Output Gaussian Process Regression for Lithium-Ion Battery,Batteries,2022,18,Health estimation (SOH)
+10.1007/s10008-023-05650-3,Multi-kernel support vector regression optimization model and indirect health factor extraction strategy for the accurate lithium-ion battery remaining useful life prediction,Journal of Solid State Electrochemistry,2023,18,Health estimation (SOH)
+10.1016/j.est.2025.117601,Lithium-ion battery state-of-health estimation using intra-domain and cross-domain transfer learning: mitigating domain shift based on Wasserstein distance,Journal of Energy Storage,2025,18,Transfer learning
+10.3390/batteries9050280,Transfer Learning Based on Transferability Measures for State of Health Prediction of Lithium-Ion Batteries,Batteries,2023,18,Transfer learning
+10.3390/batteries9020129,Data-Driven Battery Aging Mechanism Analysis and Degradation Pathway Prediction,Batteries,2023,17,Interpretability
+10.1002/advs.202402608,Data‐Driven Cycle Life Prediction of Lithium Metal‐Based Rechargeable Battery Based on Discharge/Charge Capacity and Relaxation Features,Advanced Science,2024,17,Prognostics (RUL)
+10.3390/pr10112185,Deep Learning with Spatial Attention-Based CONV-LSTM for SOC Estimation of Lithium-Ion Batteries,Processes,2022,17,State estimation (SOC)
+10.3390/en15249654,Accurate State of Charge Estimation for Real-World Battery Systems Using a Novel Grid Search and Cross Validated Optimised LSTM Neural Network,Energies,2022,17,State estimation (SOC)
+10.3390/batteries10060198,State-of-Charge Estimation of Lithium-Ion Battery Based on Convolutional Neural Network Combined with Unscented Kalman Filter,Batteries,2024,17,State estimation (SOC)
+10.1063/5.0139376,State of charge estimation for lithium-ion battery based on whale optimization algorithm and multi-kernel relevance vector machine,The Journal of Chemical Physics,2023,17,State estimation (SOC)
+10.3390/batteries10090324,State of Health Estimation for Lithium-Ion Battery Using Partial Incremental Capacity Curve and Transfer Learning,Batteries,2024,17,Health estimation (SOH);Transfer learning
+10.23919/ien.2023.0034,Estimating battery state of health with 10-min relaxation voltage across various charging states of charge,iEnergy,2023,17,Health estimation (SOH)
+10.1115/1.4050798,Human-Knowledge-Augmented Gaussian Process Regression for State-of-Health Prediction of Lithium-Ion Batteries With Charging Curves,Journal of Electrochemical Energy Conversion and Storage,2021,17,Health estimation (SOH)
+10.1016/j.engappai.2024.109314,A weighted Gaussian process regression model based on improved local outlier factor and its application in state of health estimation of lithium-ion battery,Engineering Applications of Artificial Intelligence,2024,17,Health estimation (SOH)
+10.1016/j.fub.2025.100033,Data-driven state of health and state of safety estimation for alternative battery chemistries — A comparative review focusing on sodium-ion and LFP lithium-ion batteries,Future Batteries,2025,17,Thermal management
+10.3390/drones9040247,A Multi-Timescale Method for State of Charge Estimation for Lithium-Ion Batteries in Electric UAVs Based on Battery Model and Data-Driven Fusion,Drones,2025,17,Thermal management
+10.1016/j.applthermaleng.2023.120206,Online temperature distribution estimation of lithium-ion battery considering non-uniform heat generation characteristics under boundary cooling,Applied Thermal Engineering,2023,17,Thermal management
+10.1115/1.4052197,Optimization of Thermal Management in Modern Electric Vehicle Battery Cells Employing Genetic Algorithm,Journal of Heat Transfer,2021,17,Thermal management
+10.3390/batteries10110390,Thermal Runaway Warning of Lithium Battery Based on Electronic Nose and Machine Learning Algorithms,Batteries,2024,17,Thermal management
+10.1016/j.ifacol.2021.10.186,An Improved Particle Filter Method to Estimate State of Health of Lithium-Ion Battery,IFAC-PapersOnLine,2021,17,Transfer learning
+10.3390/en16093815,State-of-Health Prediction of Lithium-Ion Batteries Based on Diffusion Model with Transfer Learning,Energies,2023,17,Transfer learning
+10.3390/electronics12245038,Electrochemical Impedance Spectrum Equivalent Circuit Parameter Identification Using a Deep Learning Technique,Electronics,2023,16,Other
+10.3390/s24175628,Energy-Efficient Anomaly Detection and Chaoticity in Electric Vehicle Driving Behavior,Sensors,2024,16,Fault & safety
+10.1016/j.prime.2023.100362,An extended Kalman-Bucy filter for state of charge estimation of 2-RC network modelled Li-ion battery,"e-Prime - Advances in Electrical Engineering, Electronics and Energy",2023,16,State estimation (SOC)
+10.3390/batteries9100517,A Novel Battery State of Charge Estimation Based on Voltage Relaxation Curve,Batteries,2023,16,Health estimation (SOH)
+10.3390/su151511822,Optimizing Thermal Management System in Electric Vehicle Battery Packs for Sustainable Transportation,Sustainability,2023,16,Thermal management
+10.3390/en16135172,Experimental Investigation of the Thermal Runaway Propagation Characteristics and Thermal Failure Prediction Parameters of Six-Cell Lithium-Ion Battery Modules,Energies,2023,16,Thermal management
+10.1049/itr2.12064,Ensemble machine learning based driving range estimation for real‐world electric city buses by considering battery degradation levels,IET Intelligent Transport Systems,2021,15,Benchmarks & data
+10.1016/j.est.2024.111755,A fast balance optimization approach for charging enhancement of lithium-ion battery packs through deep reinforcement learning,Journal of Energy Storage,2024,15,Charging control
+10.1016/j.est.2024.112046,Optimization charging method of lithium-ion battery based on multi-objective BBO algorithm,Journal of Energy Storage,2024,15,Charging control
+10.1016/j.measurement.2025.118985,Lithium-ion battery state estimation based on adaptive physics-informed neural network of electrochemical model,Measurement,2026,15,Physics-informed
+10.1007/s11814-023-1476-1,Feature construction for on-board early prediction of electric vehicle battery cycle life,Korean Journal of Chemical Engineering,2023,15,Prognostics (RUL)
+10.1016/j.fub.2025.100099,A standardized comparative framework for machine learning techniques in lithium-ion battery state of health estimation,Future Batteries,2025,15,Health estimation (SOH);Second life;State estimation (SOC)
+10.1016/j.electacta.2025.147577,A deep learning method based on transfer learning and noise-resistant hybrid neural network for lithium-ion battery state of health and state of charge estimation,Electrochimica Acta,2025,15,State estimation (SOC);Transfer learning
+10.3390/batteries8110209,Reducing the Computational Cost for Artificial Intelligence-Based Battery State-of-Health Estimation in Charging Events,Batteries,2022,15,Health estimation (SOH)
+10.3390/en15197038,Fast Charging Optimization for Lithium-Ion Batteries Based on Improved Electro-Thermal Coupling Model,Energies,2022,14,Charging control
+10.1109/tte.2024.3462769,MPC-Guided Deep Reinforcement Learning for Optimal Charging of Lithium-Ion Battery With Uncertainty,IEEE Transactions on Transportation Electrification,2025,14,Charging control
+10.1016/j.est.2023.109497,A data-driven equivalent circuit model’s parameter estimation method applied to Lithium-Titanate battery,Journal of Energy Storage,2023,14,Other
+10.1016/j.est.2024.114267,Variational autoencoder-driven adversarial SVDD for power battery anomaly detection on real industrial data,Journal of Energy Storage,2024,14,Fault & safety
+10.1016/j.jechem.2025.04.025,Deep learning-driven detection of lithium-plating-type defects for battery manufacturing via formation and capacity grading data,Journal of Energy Chemistry,2025,14,Fault & safety
+10.1016/j.energy.2025.139753,Physical informed neural network for SOH estimation of lithium-ion battery with electrochemical mechanism,Energy,2026,14,Physics-informed
+10.1108/ijicc-09-2020-0131,Remaining useful life prediction of lithium-ion battery based on auto-regression and particle filter,International Journal of Intelligent Computing and Cybernetics,2021,14,Prognostics (RUL)
+10.3390/en16052313,State of Health Estimation and Remaining Useful Life Prediction for a Lithium-Ion Battery with a Two-Layer Stacking Regressor,Energies,2023,14,Prognostics (RUL)
+10.1002/er.8514,A beetle antennae search optimized recurrent extreme learning machine for battery state of charge estimation,International Journal of Energy Research,2022,14,Second life
+10.1002/est2.658,A study of different machine learning algorithms for state of charge estimation in lithium‐ion battery pack,Energy Storage,2024,14,Health estimation (SOH);State estimation (SOC)
+10.3390/electronics12214433,Estimation of Lithium-Ion Battery State of Charge Based on Genetic Algorithm Support Vector Regression under Multiple Temperatures,Electronics,2023,14,Health estimation (SOH);State estimation (SOC)
+10.1177/01423312221128526,A new state of charge estimation technique of lithium-ion battery using adaptive extended Kalman filter and artificial neural network,Transactions of the Institute of Measurement and Control,2022,14,State estimation (SOC)
+10.3390/ma15175933,A Dual-Input Neural Network for Online State-of-Charge Estimation of the Lithium-Ion Battery throughout Its Lifetime,Materials,2022,14,State estimation (SOC)
+10.1016/j.jpowsour.2025.236235,An estimation framework for battery pack state of health based on real vehicle charging and discharging features,Journal of Power Sources,2025,14,Health estimation (SOH)
+10.1002/ente.202200151,State‐of‐Health Estimation of Lithium‐Ion Batteries Based on Thermal Characteristics Mining and Multi‐Gaussian Process Regression Strategy,Energy Technology,2022,14,Health estimation (SOH)
+10.1002/est2.70262,Quantum Neural Network and Gaussian Process Framework for Lithium Battery State of Health Prediction,Energy Storage,2025,14,Health estimation (SOH)
+10.1115/1.4064026,Data-Driven Discovery of Lithium-Ion Battery State of Charge Dynamics,"Journal of Dynamic Systems, Measurement, and Control",2023,14,Thermal management
+10.3390/en15051619,Electric Vehicle Battery Storage Concentric Intelligent Home Energy Management System Using Real Life Data Sets,Energies,2022,13,Cloud & fleet
+10.3390/batteries9060294,A Plating-Free Charging Scheme for Battery Module Based on Anode Potential Estimation to Prevent Lithium Plating,Batteries,2023,13,Fault & safety
+10.3390/en16052155,State of Charge Estimation of Lithium Battery Based on Integrated Kalman Filter Framework and Machine Learning Algorithm,Energies,2023,13,Fault & safety;Health estimation (SOH);Second life;State estimation (SOC)
+10.3390/batteries9070364,Model-Based State-of-Charge and State-of-Health Estimation Algorithms Utilizing a New Free Lithium-Ion Battery Cell Dataset for Benchmarking Purposes,Batteries,2023,13,Health estimation (SOH);State estimation (SOC);Transfer learning
+10.3390/pr13113559,State of Charge Estimation for Lithium-Ion Batteries: An Online Method Combining Deep Neural Network and Adaptive Kalman Filter,Processes,2025,13,State estimation (SOC)
+10.1016/j.energy.2025.138070,Rapid battery pack state of health estimation for electric vehicles considering polarization features in multi-stage charging,Energy,2025,13,Health estimation (SOH)
+10.1016/j.est.2022.105908,Dual particle swarm optimization based data-driven state of health estimation method for lithium-ion battery,Journal of Energy Storage,2022,13,Thermal management
+10.3390/wevj14080202,Li-Ion Battery State of Charge Prediction for Electric Vehicles Based on Improved Regularized Extreme Learning Machine,World Electric Vehicle Journal,2023,13,Thermal management
+10.1016/j.est.2025.119450,A CNN-LSTM hybrid network with transfer learning for accurate lithium-ion battery state of health estimation,Journal of Energy Storage,2026,13,Transfer learning
+10.1016/j.est.2022.104679,Multistage fast charging optimization protocol for lithium-ion batteries based on the biogeography-based algorithm,Journal of Energy Storage,2022,12,Charging control
+10.1016/j.etran.2025.100460,Enhancing fast-charging protocols with section-based Bayesian optimization for lithium-ion batteries to prevent Li-plating,eTransportation,2025,12,Charging control
+10.1016/j.fub.2025.100088,Prediction of the SOH and cycle life of fast-charging lithium-ion batteries based on a machine learning framework,Future Batteries,2025,12,Charging control
+10.1109/jsen.2025.3585543,Generative-Enhanced Physics-Informed Neural Network for Lithium-Ion Battery State of Health Estimation,IEEE Sensors Journal,2025,12,Physics-informed
+10.1109/access.2020.2987426,Simulator Assessment Theory for Remaining Useful Life Prediction of Lithium-Ion Battery Under Multiple Uncertainties,IEEE Access,2020,12,Prognostics (RUL)
+10.1016/j.est.2025.118415,Remaining useful life prediction for lithium-ion battery based on hybrid machine learning with Wiener process,Journal of Energy Storage,2025,12,Prognostics (RUL)
+10.1007/s11227-024-06264-w,Enhancing EV lithium-ion battery management: automated machine learning for early remaining useful life prediction with innovative multi-health indicators,The Journal of Supercomputing,2024,12,Prognostics (RUL)
+10.3390/en16073244,Second-Life Battery Capacity Estimation and Method Comparison,Energies,2023,12,Second life
+10.3390/su122410451,A Study on State of Charge and State of Health Estimation in Consideration of Lithium-Ion Battery Aging,Sustainability,2020,12,Health estimation (SOH);State estimation (SOC);Transfer learning
+10.1016/j.etran.2023.100283,Data selection framework for battery state of health related parameter estimation under system uncertainties,eTransportation,2023,12,Health estimation (SOH)
+10.1007/s00521-020-05031-1,"Real-time state-of-health monitoring of lithium-ion battery with anomaly detection, Levenberg–Marquardt algorithm, and multiphase exponential regression model",Neural Computing and Applications,2020,12,Health estimation (SOH)
+10.1002/est2.70111,Machine Learning for Predicting Thermal Runaway in Lithium‐Ion Batteries With External Heat and Force,Energy Storage,2025,12,Thermal management
+10.3390/batteries9120585,A Novel Method for State of Health Estimation of Lithium-Ion Batteries Based on Deep Learning Neural Network and Transfer Learning,Batteries,2023,12,Transfer learning
+10.1016/j.procir.2022.09.093,Potential of a machine learning based cross-process control in lithium-ion battery production,Procedia CIRP,2022,11,Cell balancing & ECM;Digital twins;Fault & safety
+10.3390/en16041628,Practical Evaluation of Lithium-Ion Battery State-of-Charge Estimation Using Time-Series Machine Learning for Electric Vehicles,Energies,2023,11,Cell balancing & ECM;Digital twins;Fault & safety;Health estimation (SOH);Second life;State estimation (SOC)
+10.3390/batteries11050199,Fast-Charging Optimization Method for Lithium-Ion Battery Packs Based on Deep Deterministic Policy Gradient Algorithm,Batteries,2025,11,Charging control
+10.1038/s41598-025-17145-4,An intelligent fault detection (IFD) system for lithium-ion battery using machine learning approach,Scientific Reports,2025,11,Fault & safety
+10.1016/j.est.2024.113100,Improvement of local outlier factor algorithms for lithium-ion battery fault diagnosis,Journal of Energy Storage,2024,11,Fault & safety
+10.3390/ai6070149,Integrated Framework of LSTM and Physical-Informed Neural Network for Lithium-Ion Battery Degradation Modeling and Prediction,AI,2025,11,Graph networks
+10.3390/fractalfract6110640,Sensitivity of Fractional-Order Recurrent Neural Network with Encoded Physics-Informed Battery Knowledge,Fractal and Fractional,2022,11,Physics-informed
+10.1016/j.eswa.2021.116075,Remaining capacity prediction of lithium-ion battery based on the feature transformation process neural network,Expert Systems with Applications,2022,11,Physics-informed
+10.1109/tpel.2025.3531791,Ultra-Early Prediction of Lithium-Ion Battery Cycle Life Based on Visualized Single-Cycle Data,IEEE Transactions on Power Electronics,2025,11,Prognostics (RUL)
+10.37965/jdmd.2024.562,Industrial Battery State-of-Health Estimation with Incomplete Limited Data Towards Second-Life Applications,"Journal of Dynamics, Monitoring and Diagnostics",2024,11,Second life
+10.1063/5.0162519,An estimation method for the state-of-charge of lithium-ion battery based on PSO-LSTM,AIP Advances,2023,11,State estimation (SOC)
+10.1016/j.ifacol.2022.10.284,State of Charge Estimation for Lithium-ion Batteries using Extreme Learning Machine and Extended Kalman Filter,IFAC-PapersOnLine,2022,11,State estimation (SOC)
+10.1016/j.procir.2022.02.076,State of health estimation of retired battery for echelon utilization based on charging curve,Procedia CIRP,2022,11,Health estimation (SOH)
+10.3390/electronics12122647,An Improved LSTNet Approach for State-of-Health Estimation of Automotive Lithium-Ion Battery,Electronics,2023,11,Health estimation (SOH);Transfer learning
+10.23919/chain.2024.100002,Lithium Battery Digital Twin Model with Incremental Learning,CHAIN,2024,11,Digital twins
+10.55092/aias20230003,Machine learning driven digital twin model of Li-ion batteries in electric vehicles: a review,AI and Autonomous Systems,2023,11,Digital twins
+10.3390/electronicmat3020017,Multi-Objective Bayesian Optimization of Lithium-Ion Battery Cells for Electric Vehicle Operational Scenarios,Electronic Materials,2022,10,Charging control
+10.3390/electronics14112201,Deep Learning Approach for Equivalent Circuit Model Parameter Identification of Lithium-Ion Batteries,Electronics,2025,10,Other
+10.1016/j.jpowsour.2025.237497,Capacity degradation prediction of electric vehicle battery by integrating convolutional neural network with informer model,Journal of Power Sources,2025,10,Graph networks
+10.1016/j.electacta.2023.143148,Metal-solvent interaction contribution on voltage for metal ion battery: An interpretable machine learning approach,Electrochimica Acta,2023,10,Interpretability
+10.3390/en15103835,Design of a Non-Linear Observer for SOC of Lithium-Ion Battery Based on Neural Network,Energies,2022,10,Physics-informed
+10.1016/j.promfg.2020.02.191,Development and Utilization of a Framework for Data-Driven Life Cycle Management of Battery Cells,Procedia Manufacturing,2020,10,Prognostics (RUL)
+10.3390/vehicles5020030,Intelligent Deep Learning Estimators of a Lithium-Ion Battery State of Charge Design and MATLAB Implementation—A Case Study,Vehicles,2023,10,State estimation (SOC)
+10.3390/met12081369,A Novel Adaptive Back Propagation Neural Network-Unscented Kalman Filtering Algorithm for Accurate Lithium-Ion Battery State of Charge Estimation,Metals,2022,10,State estimation (SOC)
+10.3390/en14092612,A Method for Battery Health Estimation Based on Charging Time Segment,Energies,2021,10,Health estimation (SOH)
+10.3390/batteries9120565,State-of-Health Estimation of Lithium-Ion Battery Based on Constant Voltage Charging Duration,Batteries,2023,10,Health estimation (SOH)
+10.1016/j.apenergy.2025.126458,Combining electrochemistry and data-sparse Gaussian process regression for lithium-ion battery hybrid modeling,Applied Energy,2025,10,Health estimation (SOH)
+10.1016/j.energy.2023.129364,Predicting the discharge capacity of a lithium-ion battery after nail puncture using a Gaussian process regression with incremental capacity analysis,Energy,2023,10,Health estimation (SOH)
+10.1002/adts.202100602,Iterative Dynamic Programming Strategy for Electric Vehicle Battery Thermal Management Optimization,Advanced Theory and Simulations,2022,10,Thermal management
+10.3901/jme.2022.10.180,State-of-health Estimate for Lithium-ion Battery Using Information Entropy and PSO-LSTM,Journal of Mechanical Engineering,2022,10,Transfer learning
+10.1002/adts.202100350,Topological Quantum Cathode Materials for Fast Charging Li‐Ion Battery Identified by Machine Learning and First Principles Calculation,Advanced Theory and Simulations,2022,9,Charging control
+10.1016/j.enconman.2025.120119,Hierarchical model predictive control-based electric vehicle fleet charging management,Energy Conversion and Management,2025,9,Cloud & fleet
+10.1002/est2.218,Battery remaining useful life prediction using improved mutated particle filter,Energy Storage,2020,9,Prognostics (RUL)
+10.3901/jme.2021.14.141,Data-driven Comprehensive Evaluation of Lithium-ion Battery State of Health and Abnormal Battery Screening,Journal of Mechanical Engineering,2021,9,Health estimation (SOH);Thermal management;Transfer learning
+10.1016/j.jclepro.2023.138583,Active equalization for lithium-ion battery pack via data-driven residual charging capacity estimation,Journal of Cleaner Production,2023,9,Thermal management
+10.1088/1757-899x/782/3/032083,Health State Prediction of Lithium Ion Battery Based On Deep Learning Method,IOP Conference Series: Materials Science and Engineering,2020,9,Transfer learning
+10.3390/batteries10070242,Digital Twin-Enhanced Control for Fuel Cell and Lithium-Ion Battery Hybrid Vehicles,Batteries,2024,9,Digital twins
+10.1016/j.est.2020.101515,Lithium-ion whole-cell design and charging protocol optimization within safe operating conditions,Journal of Energy Storage,2020,8,Charging control
+10.3390/wevj12040204,Battery Pack State of Health Prediction Based on the Electric Vehicle Management Platform Data,World Electric Vehicle Journal,2021,8,Cloud & fleet;Fault & safety
+10.1016/j.est.2024.115116,Novel decomposed genetic algorithm for equivalent circuit model parameter optimization of lithium-ion battery,Journal of Energy Storage,2025,8,Other
+10.1016/j.segan.2025.101704,Regression based anomaly detection in electric vehicle state of charge fluctuations through analysis of electric vehicle charging infrastructure Data,"Sustainable Energy, Grids and Networks",2025,8,Fault & safety
+10.20964/2020.09.27,Lithium Plating as Limiting Phenomena for Estimating Safety during Lithium-Ion Battery Charging,International Journal of Electrochemical Science,2020,8,Fault & safety
+10.1007/s11581-026-06980-8,RFO-Optimized multi-branch CNN-attention architecture for lithium-ion battery remaining useful life prediction,Ionics,2026,8,Prognostics (RUL)
+10.3390/pr13010239,A Joint Prediction of the State of Health and Remaining Useful Life of Lithium-Ion Batteries Based on Gaussian Process Regression and Long Short-Term Memory,Processes,2025,8,Health estimation (SOH)
+10.1149/1945-7111/ac8ee0,A Polak-Ribière-Polyak Conjugate Gradient Algorithm Optimized Broad Learning System for Lithium-ion Battery State of Health Estimation,Journal of The Electrochemical Society,2022,8,Health estimation (SOH);Transfer learning
+10.1016/j.fraope.2025.100237,Lithium-ion battery state of health estimation using intelligent methods,Franklin Open,2025,8,Health estimation (SOH)
+10.1016/j.est.2025.117475,A dual dimensionality reduction and feature weighting integration transfer learning method for lithium-ion battery state of health estimation,Journal of Energy Storage,2025,8,Transfer learning
+10.3390/batteries9070346,A K-Value Dynamic Detection Method Based on Machine Learning for Lithium-Ion Battery Manufacturing,Batteries,2023,7,Cell balancing & ECM;Digital twins;Fault & safety
+10.1007/s11581-020-03636-z,Battery space optimization to limit heat transfer in a lithium-ion battery using adaptive elephant herding optimization,Ionics,2020,7,Charging control
+10.1149/1945-7111/acd8f8,Feature-Driven Closed-Loop Optimization for Battery Fast Charging Design with Machine Learning,Journal of The Electrochemical Society,2023,7,Charging control
+10.3390/wevj16060312,Optimization of Solar Generation and Battery Storage for Electric Vehicle Charging with Demand-Side Management Strategies,World Electric Vehicle Journal,2025,7,Cloud & fleet
+10.1016/j.est.2025.116780,Ensemble and deep learning based prediction of vanadium redox flow battery system power loss and a precision equivalent circuit model for parameter benchmarking,Journal of Energy Storage,2025,7,Other
+10.1016/j.applthermaleng.2026.131409,Data-driven diffusion framework for electric vehicle battery thermal management integrating probabilistic hotspot prediction and adaptive cooling control under aging dynamics,Applied Thermal Engineering,2026,7,Fault & safety
+10.1109/tte.2025.3582411,Domain Adaptation With Contrastive Learning for Lithium-Ion Battery Packs Fault Diagnosis,IEEE Transactions on Transportation Electrification,2025,7,Fault & safety
+10.1115/1.4052983,A Dispatch Optimization Model for Hybrid Renewable and Battery Systems Incorporating a Battery Degradation Model,Journal of Energy Resources Technology,2021,7,Foundation models
+10.1038/s41598-025-21605-2,"Smart battery management in EVs using IoT, blockchain, and machine learning",Scientific Reports,2025,7,Cross-cutting
+10.3389/fenrg.2022.1058999,An open access tool for exploring machine learning model choice for battery life cycle prediction,Frontiers in Energy Research,2022,7,Prognostics (RUL)
+10.3389/fenrg.2022.973487,Remaining useful cycle life prediction of lithium-ion battery based on TS fuzzy model,Frontiers in Energy Research,2022,7,Prognostics (RUL)
+10.5573/ieiespc.2021.10.6.496,Study of Battery State-of-charge Estimation with kNN Machine Learning Method,IEIE Transactions on Smart Processing &amp; Computing,2021,7,Second life
+10.1016/j.egyr.2022.10.367,Noise-resistant state of charge estimation of Li-ion battery using the outlier robust extreme learning machine,Energy Reports,2023,7,Second life;State estimation (SOC)
+10.1002/est2.290,Estimation of lithium‐ion battery state of charge for electric vehicles using a nonlinear state observer,Energy Storage,2021,7,State estimation (SOC)
+10.1080/03772063.2021.1908853,State of Health Estimation of Lithium-Ion Batteries based on the CC-CV Charging Curve and Neural Network,IETE Journal of Research,2021,7,Health estimation (SOH)
+10.1109/tte.2024.3509631,Online State of Health Estimation for Lithium-Ion Battery Based on Historical Charging Data Assisted Reconstruction of Partial Charging Curve,IEEE Transactions on Transportation Electrification,2025,7,Health estimation (SOH)
+10.3390/en16207066,Lithium-Ion Battery State of Health Estimation Using Simple Regression Model Based on Incremental Capacity Analysis Features,Energies,2023,7,Health estimation (SOH)
+10.1016/j.nxener.2023.100013,Transferring state of health estimation neural networks for different battery chemistries and charging protocols using renormalization and transfer learning,Next Energy,2023,7,Health estimation (SOH)
+10.1002/ente.202200437,Alternating Current Impedance Probing Capacity of Lithium‐Ion Battery by Gaussian Process Regression,Energy Technology,2022,7,Health estimation (SOH)
+10.3390/app13053032,Predictive Energy Management Strategy for Hybrid Electric Air-Ground Vehicle Considering Battery Thermal Dynamics,Applied Sciences,2023,7,Thermal management
+10.36001/phme.2022.v7i1.3312,State of Health Forecasting of Heterogeneous Lithium-ion Battery Types and Operation Enabled by Transfer Learning,PHM Society European Conference,2022,7,Transfer learning
+10.1088/1742-6596/2492/1/012026,A RUL Prediction Method of Lithium-ion Battery Based on Extreme Learning Machine,Journal of Physics: Conference Series,2023,6,Cell balancing & ECM;Digital twins
+10.1109/tte.2025.3539853,Fast-Charging Protocols Design of Lithium-Ion Battery: A Multiple-Objective Bayesian Optimization Perspective,IEEE Transactions on Transportation Electrification,2025,6,Charging control
+10.1016/j.ifacol.2023.10.1073,Bayesian Model Selection of Lithium-Ion Battery Models via Bayesian Quadrature,IFAC-PapersOnLine,2023,6,Charging control
+10.1016/j.electacta.2025.147608,Physics-constrained machine learning for real-time lithium-ion battery health estimation from constant voltage charging data,Electrochimica Acta,2025,6,Charging control;Health estimation (SOH)
+10.3390/wevj16080419,Empirical Energy Consumption Estimation and Battery Operation Analysis from Long-Term Monitoring of an Urban Electric Bus Fleet,World Electric Vehicle Journal,2025,6,Cloud & fleet
+10.1016/j.measurement.2025.116648,Few-shot fault diagnosis for lithium-ion battery packs based on a novel AVMDR-IDRSN model,Measurement,2025,6,Fault & safety
+10.1016/j.energy.2025.137565,Battery charging curve prediction via Fourier graph neural network fused prompt features,Energy,2025,6,Graph networks
+10.1016/j.ress.2026.112416,Domain-specific large language model-driven risk analysis of battery energy storage systems,Reliability Engineering &amp; System Safety,2026,6,Foundation models
+10.1109/tce.2025.3583409,Consumer IoV: A Hybrid Deep Learning Model for Remaining Useful Life Prediction of Vehicle Battery,IEEE Transactions on Consumer Electronics,2025,6,Prognostics (RUL)
+10.1016/j.apenergy.2021.118165,Sparse data machine learning for battery health estimation and optimal design incorporating material characteristics,Applied Energy,2022,6,Second life
+10.3390/wevj16030168,LSTM-Based State-of-Charge Estimation and User Interface Development for Lithium-Ion Battery Management,World Electric Vehicle Journal,2025,6,State estimation (SOC)
+10.1063/5.0172683,A deep reinforcement learning approach for state of charge and state of health estimation in lithium-ion batteries,AIP Advances,2023,6,State estimation (SOC)
+10.1115/1.4062385,Joint Estimation of State of Charge and State of Health of Lithium Ion Battery,Journal of Electrochemical Energy Conversion and Storage,2023,6,Health estimation (SOH);State estimation (SOC)
+10.3390/electronics12040808,Interacting Multiple Model for Lithium-Ion Battery State of Charge Estimation Based on the Electrochemical Impedance Spectroscopy,Electronics,2023,6,State estimation (SOC)
+10.3390/app131810547,State of Charge Estimation for Power Battery Using Improved Extended Kalman Filter Method Based on Neural Network,Applied Sciences,2023,6,State estimation (SOC)
+10.1115/1.4063431,High-Accuracy Battery State of Charge Estimation Strategy Based on Deep Belief Network Cascaded With Extended Kalman Filter,Journal of Electrochemical Energy Conversion and Storage,2023,6,State estimation (SOC)
+10.1007/s00202-025-02997-w,Hyperparameter-optimized machine learning model for real-time estimation of lithium-ion battery state-of-charge,Electrical Engineering,2025,6,State estimation (SOC)
+10.3390/electronics12214552,Fast Health State Estimation of Lead–Acid Batteries Based on Multi-Time Constant Current Charging Curve,Electronics,2023,6,Health estimation (SOH)
+10.1115/1.4066636,Combining Multi-Indirect Features Extraction and Optimized Gaussian Process Regression Algorithm for Online State of Health Estimation of Lithium-Ion Batteries,Journal of Electrochemical Energy Conversion and Storage,2024,6,Health estimation (SOH)
+10.1002/est2.70131,A Real‐Time Adaptive Machine Learning Charging and Neural Network Balancing Mechanism of Lithium‐Ion Battery Pack,Energy Storage,2025,5,Cell balancing & ECM;Charging control
+10.1007/s42154-025-00363-x,Optimization of Lithium-Ion Battery Charging Strategy Based on Aging State Scoring,Automotive Innovation,2025,5,Charging control
+10.1016/j.engappai.2025.110868,Parallel Bayesian optimization using satisficing Thompson sampling for fast charging design of lithium-ion batteries,Engineering Applications of Artificial Intelligence,2025,5,Charging control
+10.1002/ente.202500651,Deep Learning‐Based Surrogate Model for Lithium‐Ion Battery Behavior Prediction with Extreme Fast Charging Case Study,Energy Technology,2025,5,Charging control
+10.4018/ijose.2020010101,Electric Vehicle Fleet Management Using Ant Colony Optimisation,International Journal of Strategic Engineering,2020,5,Cloud & fleet
+10.3390/app13074448,Lithium-Ion Battery Aging Analysis of an Electric Vehicle Fleet Using a Tailored Neural Network Structure,Applied Sciences,2023,5,Cloud & fleet;Physics-informed
+10.1016/j.softx.2023.101534,Hybrid adaptive battery parameter estimation approach for equivalent circuit model toolbox,SoftwareX,2023,5,Other
+10.1016/j.ensm.2024.103877,Machine learning-based lifelong estimation of lithium plating potential: A path to health-aware fastest battery charging,Energy Storage Materials,2025,5,Fault & safety
+10.1371/journal.pone.0303933,Economic benefit analysis of lithium battery recycling based on machine learning algorithm,PLOS ONE,2024,5,Fault & safety
+10.1016/j.ifacol.2023.12.049,Li-S Battery Outlier Detection and Voltage Prediction using Machine Learning,IFAC-PapersOnLine,2023,5,Fault & safety
+10.1016/j.joule.2025.102131,Unlocking battery insights with interpretable machine learning,Joule,2025,5,Interpretability
+10.24425/bpasts.2025.155033,Interpretable machine learning for battery health insights: A LIME and SHAP-based study on EIS-derived features,Bulletin of the Polish Academy of Sciences Technical Sciences,2025,5,Interpretability
+10.5050/ksnve.2021.31.2.177,Physics-informed Neural Network for Estimation of Lithium-Ion Battery State-of-health,Transactions of the Korean Society for Noise and Vibration Engineering,2021,5,Physics-informed
+10.1088/1742-6596/2109/1/012005,State of Charge Estimation of Lithium-ion Battery Based on Improved Recurrent Neural Network,Journal of Physics: Conference Series,2021,5,Physics-informed;State estimation (SOC)
+10.1002/ente.202000031,Artificial Neural Network–Based Multisensor Monitoring System for Collision Damage Assessment of Lithium‐Ion Battery Cells,Energy Technology,2020,5,Physics-informed
+10.3390/batteries12040115,An Adaptive-Weight Physics-Informed Neural Network Optimized by Grey Wolf Optimizer for Lithium-Ion Battery State of Health Estimation,Batteries,2026,5,Physics-informed
+10.1016/j.est.2023.108842,Increasing the efficiency of li-ion battery cycle life testing with a partial-machine learning based end of life prediction,Journal of Energy Storage,2023,5,Prognostics (RUL)
+10.1016/j.fub.2025.100114,Battery-Insight-PSO: A machine learning model for accurate prediction of state of health and remaining useful life in lithium-ion batteries,Future Batteries,2025,5,Prognostics (RUL)
+10.1002/adts.202100552,Lithium‐Ion Battery State of Charge Estimation Using a New Extended Nonlinear State Observer,Advanced Theory and Simulations,2022,5,State estimation (SOC)
+10.1007/s43926-025-00148-y,Deep learning based state of charge estimation of lithium ion battery for electric vehicle application,Discover Internet of Things,2025,5,State estimation (SOC)
+10.3390/en18215677,IVCLNet: A Hybrid Deep Learning Framework Integrating Signal Decomposition and Attention-Enhanced CNN-LSTM for Lithium-Ion Battery SOH Prediction and RUL Estimation,Energies,2025,5,State estimation (SOC)
+10.1049/2023/8839034,Li‐Ion Battery State of Health Estimation Based on Short Random Charging Segment and Improved Long Short‐Term Memory,IET Signal Processing,2023,5,Health estimation (SOH)
+10.1016/j.compchemeng.2025.109246,A Novel Combined Multi-Task Gaussian Process Regression and Compensation Model for Prediction of Lithium-Ion Battery Degradation,Computers &amp; Chemical Engineering,2025,5,Health estimation (SOH)
+10.1016/j.compchemeng.2025.109406,Deep reinforcement learning-based thermal management of battery subpack in electric vehicle,Computers &amp; Chemical Engineering,2026,5,Thermal management
+10.3390/molecules31020347,A Review of Gas-Sensitive Materials for Lithium-Ion Battery Thermal Runaway Monitoring,Molecules,2026,5,Thermal management
+10.1016/j.isci.2025.114518,Lithium-ion power battery state of health evaluation for electric vehicles based on multi-source transfer learning,iScience,2026,5,Transfer learning
+10.3901/jme.2023.22.100,Online Lithium-ion Battery Capacity Estimation Based on Random Charging Data,Journal of Mechanical Engineering,2023,4,Charging control;Thermal management
+10.1016/j.est.2025.118569,Equivalent-circuit thermal aging model with parameter identification for battery temperature prediction,Journal of Energy Storage,2025,4,Other
+10.1016/j.est.2026.121685,Differentiable physics information neural network with equivalent circuit model constraints for lithium-ion battery parameter identification,Journal of Energy Storage,2026,4,Other
+10.1016/j.ifacol.2023.10.841,Anti-Windup Co-Estimation of Open Circuit Voltage and Equivalent Circuit Model Parameters for Lithium-Ion Battery Diagnostics,IFAC-PapersOnLine,2023,4,Other
+10.20508/ijrer.v13i2.13916.g8766,A Comprehensive Review on Advanced Fault Detection Techniques of Lithium-ion Battery Packs in Electric Vehicle Applications,International Journal of Renewable Energy Research,2023,4,Fault & safety
+10.2174/2212797616666230330103334,Soft Short-circuit Fault Diagnosis of the Lithium-ion Battery Pack Based on an Improved EKF Algorithm,Recent Patents on Mechanical Engineering,2023,4,Fault & safety
+10.1016/j.energy.2025.139417,LLM-MSIformer: A method for lithium-ion battery state of health estimation based on a large language model and multi-time scale interval transformer,Energy,2026,4,Foundation models
+10.1149/1945-7111/ad9cc9,Deep learning-based Remaining Useful Life Prediction of Lithium-ion Battery Considering Two-phase Aging Process,Journal of The Electrochemical Society,2024,4,Prognostics (RUL)
+10.1016/j.electacta.2025.147039,Feature-enhanced machine learning prediction of supercapacitor cycle life from limited early-cycle data,Electrochimica Acta,2025,4,Prognostics (RUL)
+10.2174/2666255813999201002152742,Remaining Useful Life Prediction of Lithium-ion Batteries Using Multiple Kernel Extreme Learning Machine,Recent Advances in Computer Science and Communications,2022,4,Prognostics (RUL)
+10.1016/j.jiixd.2025.08.001,Lithium-ion battery remaining useful life prediction based on CEEMDAN decomposition and frequency-division learning,Journal of Information and Intelligence,2025,4,Prognostics (RUL)
+10.3390/batteries11040161,Comparison of Kalman Filter and H-Infinity Filter for Battery State of Charge Estimation with a Detailed Validation Method,Batteries,2025,4,State estimation (SOC)
+10.1016/j.est.2025.117951,Adaptive neural network models for state of charge estimation under dynamic battery conditions,Journal of Energy Storage,2025,4,State estimation (SOC)
+10.1149/1945-7111/ac6bc4,An Online Estimation Method of State of Health for Lithium-Ion Batteries Based on Constant Current Charging Curve,Journal of The Electrochemical Society,2022,4,Health estimation (SOH)
+10.1016/j.ifacol.2021.08.315,State-of-Charge Dependent Battery Model Identification Using Gaussian Process Regression,IFAC-PapersOnLine,2021,4,Health estimation (SOH)
+10.3390/en17225671,Health State Prediction of Lithium-Ion Battery Based on Improved Sparrow Search Algorithm and Support Vector Regression,Energies,2024,4,Health estimation (SOH)
+10.1002/ente.202400996,State of Health Estimation of Lithium‐Ion Batteries Based on Differential Thermal Voltammetry and Improved Gray Wolf Optimizer Optimizing Gaussian Process Regression,Energy Technology,2024,4,Health estimation (SOH)
+10.3901/jme.2023.22.046,Lithium-ion Battery State of Health Estimation Based on Real-world Driving Data,Journal of Mechanical Engineering,2023,4,Health estimation (SOH);Thermal management;Transfer learning
+10.3390/en13153791,Multi-Level Model Reduction and Data-Driven Identification of the Lithium-Ion Battery,Energies,2020,4,Thermal management
+10.3390/batteries12020064,A Data-Driven Method Based on Feature Engineering and Physics-Constrained LSTM-EKF for Lithium-Ion Battery SOC Estimation,Batteries,2026,4,Thermal management
+10.7717/peerj-cs.3497,Lithium-ion battery state of health estimation using automated machine learning (AutoML): performance comparison,PeerJ Computer Science,2026,3,Cell balancing & ECM;Digital twins;Fault & safety;Health estimation (SOH);Second life;State estimation (SOC);Transfer learning
+10.1002/er.5915,Optimized fast charging protocol for cylindrical <scp>lithium‐ion</scp> battery based on constant incremental capacity algorithm,International Journal of Energy Research,2020,3,Charging control
+10.1016/j.est.2026.120395,Optimized fast-charging of lithium-ion battery packs via predictive-reinforcement hierarchical control framework,Journal of Energy Storage,2026,3,Charging control
+10.47738/jads.v5i3.236,Novel Battery Management with Fuzzy Tuned Low Voltage Chopper and Machine Learning Controlled Drive for Electric Vehicle Battery Management: A Pathway Towards SDG,Journal of Applied Data Sciences,2024,3,Cloud & fleet;Thermal management
+10.3390/wevj16050267,Data-Driven Battery Remaining Life Prediction Based on ResNet with GA Optimization,World Electric Vehicle Journal,2025,3,Fault & safety
+10.30939/ijastech..1295130,Modelling and fault diagnosis of lithium-ion battery for electric powertrain,International Journal of Automotive Science and Technology,2023,3,Fault & safety
+10.1109/access.2020.3048146,Improved Modeling of Lithium-Ion Battery Capacity Degradation Using an Individual-State Training Method and Recurrent Softplus Neural Network,IEEE Access,2021,3,Graph networks;Physics-informed
+10.3390/batteries11070241,Interpretable Deep Learning Using Temporal Transformers for Battery Degradation Prediction,Batteries,2025,3,Interpretability
+10.3390/sym18040652,A Physics-Informed Recurrent Neural Network with Fractional-Order Kinetics for Robust Lithium-Ion Battery State of Charge Estimation,Symmetry,2026,3,Physics-informed;State estimation (SOC)
+10.1149/1945-7111/ae1dd3,Physics-Informed Neural Network Estimation of Core and Surface Temperatures for Lithium-Ion Battery Safety Monitoring,Journal of The Electrochemical Society,2025,3,Physics-informed
+10.7717/peerj-cs.3478,Hybrid machine learning framework for battery remaining useful life prediction with time-series modelling and statistical validation,PeerJ Computer Science,2026,3,Prognostics (RUL)
+10.1088/2631-8695/ad8989,HyPELS: enhancing li-ion battery remaining useful life prediction with hybrid perspective ensemble learning strategy,Engineering Research Express,2024,3,Prognostics (RUL)
+10.36001/phmconf.2021.v13i1.3053,An End-to-End Learning Framework for Battery Capacity-Fade Trajectory Prediction Using Early Life Data,Annual Conference of the PHM Society,2021,3,Prognostics (RUL)
+10.1016/j.ifacol.2023.10.1545,Comparative Analysis of Battery Cycle Life Early Prediction Using Machine Learning Pipeline,IFAC-PapersOnLine,2023,3,Prognostics (RUL);Second life
+10.31590/ejosat.959630,Battery State of Health and Charge Estimation Using Machine Learning Methods,European Journal of Science and Technology,2021,3,Second life
+10.23940/ijpe.21.09.p9.825836,State-of-Health Estimation and End of Life Prediction for the Lithium-Ion Battery by Correlatable Feature-based Machine Learning Approach,International Journal of Performability Engineering,2021,3,Health estimation (SOH);Second life
+10.1115/1.4052535,Lithium-Ion Battery State of Health Estimation Based on Improved Deep Extreme Learning Machine,Journal of Electrochemical Energy Conversion and Storage,2021,3,Digital twins;Health estimation (SOH);Second life;State estimation (SOC);Transfer learning
+10.3390/batteries12050149,Physics-Informed and Explainable Machine Learning for State-of-Health Estimation of Second-Life Lithium-Ion Batteries Under Sparse Cycling,Batteries,2026,3,Second life
+10.1016/j.est.2026.123023,Battery state-of-power estimation: A machine learning battery model with numerical searching approach,Journal of Energy Storage,2026,3,Second life
+10.1088/1742-6596/2184/1/012024,Feature Extraction from Charging Profiles for State of Health Estimation of Lithium-ion Battery,Journal of Physics: Conference Series,2022,3,Health estimation (SOH)
+10.1016/j.xcrp.2025.102646,Sensitivity analysis for reliable state-of-health estimation based on battery partial charging,Cell Reports Physical Science,2025,3,Health estimation (SOH)
+10.3390/batteries11100347,State of Health Estimation of Lithium-Ion Battery Based on Novel Health Indicators and Improved Support Vector Regression,Batteries,2025,3,Health estimation (SOH)
+10.3390/wevj14060153,An Improved Gaussian Process Regression Based Aging Prediction Method for Lithium-Ion Battery,World Electric Vehicle Journal,2023,3,Health estimation (SOH)
+10.1049/icp.2022.1097,Lithium-ion battery state of health estimation with recurrent convolution neural networks,IET Conference Proceedings,2022,3,Health estimation (SOH)
+10.2339/politeknik.1161986,Lithium-Ion Battery Thermal Parameter Identification and Core Temperature Estimation,Politeknik Dergisi,2023,3,Thermal management
+10.1016/j.fraope.2025.100389,Early prediction of battery swelling via delta resistance features and optimized machine learning models to avoid thermal runaway,Franklin Open,2025,3,Thermal management
+10.1016/j.dib.2022.108698,Data on Machine Learning regenerated Lithium-ion battery impedance,Data in Brief,2022,2,Cell balancing & ECM;Digital twins;Fault & safety
+10.1007/s11581-025-06785-1,Multi-objective optimization of lithium-ion battery design via machine learning surrogate model: balancing energy density and capacity loss,Ionics,2025,2,Cell balancing & ECM
+10.1002/est2.70151,Performance Analysis of Optimized Active Cell Balancing Circuits in Lithium‐Ion Battery Pack,Energy Storage,2025,2,Cell balancing & ECM
+10.1051/e3sconf/202338501033,Review of machine learning method for safety management of lithium-ion battery energy storage,E3S Web of Conferences,2023,2,Cell balancing & ECM;Cross-cutting;Digital twins;Fault & safety
+10.1016/j.matt.2021.07.003,Assessing battery kinetics with machine learning,Matter,2021,2,Benchmarks & data
+10.1016/j.est.2024.115062,Predicting battery degradation profiles of IoT device usage modes through Machine Learning utilization models,Journal of Energy Storage,2025,2,Benchmarks & data
+10.3390/electrochem6030033,Estimation of Lead Acid Battery Degradation—A Model for the Optimization of Battery Energy Storage System Using Machine Learning,Electrochem,2025,2,Benchmarks & data
+10.1149/ma2022-012344mtgabs,Prediction of Reversible Lithium Plating during Fast Charging with a Pseudo-3D Lithium-Ion Battery Model,ECS Meeting Abstracts,2022,2,Charging control;Fault & safety
+10.1016/j.jpowsour.2025.238049,Benchmarking optimization methods for materials research: Gradient descent and Bayesian optimization for lithium-ion battery aging diagnostics,Journal of Power Sources,2025,2,Charging control
+10.62146/ijecbe.v2i2.54,An Implementation of Quasi-Newton Algorithm for Fast-charging Lithium-Ion Battery (LIB) Optimization in Electric Vehicle Application,"International Journal of Electrical, Computer, and Biomedical Engineering",2024,2,Charging control
+10.3901/jme.2022.22.069,Fast Charging Control for Lithium-ion Batteries Based on Deep Reinforcement Learning,Journal of Mechanical Engineering,2022,2,Charging control
+10.1007/s11581-025-06411-0,Safe and fast charging control strategy for lithium-ion batteries based on deep reinforcement learning,Ionics,2025,2,Charging control
+10.1109/tie.2025.3559969,Fast Charging Management of a Lithium-Ion Battery and Cooling System: A Stackelberg Game-Based Soft Actor Critic−Deep Reinforcement Learning Method,IEEE Transactions on Industrial Electronics,2025,2,Charging control
+10.37547/tajet/v7i11-301,Thermal Intelligence Big Data and AI for Sustainable Battery and Cabin Heat Management in Electric vehicle,The American Journal of Engineering and Technology,2025,2,Cloud & fleet;Thermal management
+10.1002/est2.294,An improved electrochemical‐based model to estimate battery equivalent circuit parameters for pulsed discharge scenarios,Energy Storage,2021,2,Other
+10.1016/j.ifacol.2025.07.016,Data-Driven Detection of Simultaneous Cyberphysical Faults in Connected Electric Vehicle Platoons,IFAC-PapersOnLine,2025,2,Fault & safety
+10.1016/j.est.2025.118750,Synergistic internal temperature estimation and fault diagnosis of lithium-ion batteries via online sequential extreme learning machine,Journal of Energy Storage,2025,2,Fault & safety
+10.1016/j.jechem.2022.12.003,Interpretable hybrid machine learning demystifies the degradation of practical lithium-sulfur batteries,Journal of Energy Chemistry,2023,2,Interpretability
+10.1016/j.ensm.2026.104983,HA-LLM: A domain knowledge-enhanced large language model for vehicle-cloud collaborative battery health awareness,Energy Storage Materials,2026,2,Foundation models
+10.1016/j.apenergy.2026.127394,Internal temperature sensing for lithium-ion battery under ultrahigh-rate discharge conditions using physics-informed neural network,Applied Energy,2026,2,Physics-informed
+10.1016/j.tsep.2025.104104,Machine learning-based predictive control of thermal management system in battery electric vehicles,Thermal Science and Engineering Progress,2025,2,Cross-cutting;Thermal management
+10.47760/ijcsmc.2023.v12i05.001,Battery Management System for Analysing Accurate Real Time Battery Condition using Machine Learning,International Journal of Computer Science and Mobile Computing,2023,2,Cross-cutting
+10.3390/batteries12040135,A Data-Driven Framework for Lithium-Ion Battery Remaining Useful Life Prediction Using CNN and Machine Learning Models,Batteries,2026,2,Prognostics (RUL)
+10.1007/s11581-025-06589-3,A hybrid data-driven method for lithium-ion battery capacity and remaining useful life early prediction,Ionics,2025,2,Prognostics (RUL)
+10.1016/j.ifacol.2023.10.1547,Early prediction of battery life by learning from both time-series and histogram data,IFAC-PapersOnLine,2023,2,Prognostics (RUL)
+10.1016/j.sctalk.2022.100100,Battery state of charge estimation using machine learning and electrochemical impedance spectroscopy measurements,Science Talks,2022,2,Second life
+10.3390/en16145548,Machine Learning Estimation of Battery Efficiency and Related Key Performance Indicators in Smart Energy Systems,Energies,2023,2,Second life
+10.1007/s11581-025-06519-3,Pressure-augmented physics-informed dynamic graph neural network and dual Kalman filter framework for robust battery state-of-charge estimation,Ionics,2025,2,State estimation (SOC)
+10.22266/ijies2025.0930.28,State of Charge Estimation in Lithium-ion Batteries Using Hybrid Optimized Deep Neural Network and Extended Kalman Filter,International Journal of Intelligent Engineering and Systems,2025,2,State estimation (SOC)
+10.1002/tee.70097,State‐of‐Charge Estimation of Lithium‐Ion Battery Using <scp>BP</scp> Neural Network and Adaptive Unscented Kalman Filter,IEEJ Transactions on Electrical and Electronic Engineering,2025,2,State estimation (SOC)
+10.3390/batteries12020077,Battery State-of-Health Estimation with Embedded Impedance Spectrum Features Under Multiple Battery Chemistry and Temperature Conditions,Batteries,2026,2,Health estimation (SOH)
+10.1088/1742-6596/1633/1/012090,State estimation of lithium-ion battery based on Gaussian process regression,Journal of Physics: Conference Series,2020,2,Health estimation (SOH)
+10.3901/jme.2023.22.069,Core Temperature Estimation Method for Lithium-ion Battery Based on Deep Learning Method with Particle Swarm Optimization,Journal of Mechanical Engineering,2023,2,Thermal management
+10.1016/j.psep.2026.108830,Safety-oriented pre-event severity prediction of lithium-ion battery thermal runaway using interpretable machine learning,Process Safety and Environmental Protection,2026,2,Thermal management
+10.3390/pr14121864,Real-Time Self-Learning Digital Twin for Lithium-Ion Battery Energy Storage Systems in Smart Grids,Processes,2026,2,Digital twins
+10.62441/nano-ntp.v20is7.7,Data-Driven Estimation of Lithium-Ion Battery State-of-Health Prediction Approach Using Machine Learning Algorithm for Enhanced Battery Management Systems,Nanotechnology Perceptions,2024,1,Cell balancing & ECM;Cross-cutting;Digital twins;Fault & safety;Health estimation (SOH);Prognostics (RUL);Second life;State estimation (SOC);Thermal management;Transfer learning
+10.3390/math14111879,Trustworthy Machine Learning and Mathematical Modelling for Lithium-Ion Battery State-of-Health Estimation,Mathematics,2026,1,Cell balancing & ECM;Digital twins;Health estimation (SOH);Second life;State estimation (SOC)
+10.2139/ssrn.3991083,Uncertainty-Aware and Explainable Machine Learning for Early Prediction of Battery Cell Degradation,SSRN Electronic Journal,2021,1,Benchmarks & data
+10.1149/ma2023-014848mtgabs,A Comparative Study on Physics-Informed Machine Learning for Battery Degradation Diagnostics,ECS Meeting Abstracts,2023,1,Benchmarks & data;Interpretability
+10.53555/kuey.v29i2.4230,Revolutionizing EV Sustainability: Machine Learning Approaches To Battery Maintenance Prediction,Educational Administration Theory and Practices,2023,1,Benchmarks & data
+10.3901/jme.2021.14.001,Capacity Estimation of Lithium Ion Battery Considering Hybrid Charging Data,Journal of Mechanical Engineering,2021,1,Charging control;Thermal management
+10.1016/j.est.2025.119348,Health-conscious charging of lithium-ion batteries using Bayesian optimization guided by a semi-empirical aging model,Journal of Energy Storage,2026,1,Charging control
+10.3390/wevj16100565,Optimized Charging Strategy for Lithium-Ion Battery Based on Improved MFO Algorithm and Multi-State Coupling Model,World Electric Vehicle Journal,2025,1,Charging control
+10.3390/electronics15102018,Data-Driven Analysis of Electric Powertrain Energy Flow and Traction Battery Behavior in a Modern Battery Electric Vehicle Using Real-World OBD Data,Electronics,2026,1,Cloud & fleet;Fault & safety
+10.2139/ssrn.4229575,Identification of Parameters for Equivalent Circuit Model of Li-Ion Battery Cell with Population Based Optimization Algorithms,SSRN Electronic Journal,2022,1,Other
+10.3390/vehicles8040081,"Autoencoder-Based Latent Representation Learning, SoH Estimation, and Anomaly Detection in Electric Vehicle Battery Energy Storage Systems",Vehicles,2026,1,Fault & safety
+10.1080/15435075.2025.2532723,Machine learning-driven diagnosis of lithium-ion battery performance in electric vehicles,International Journal of Green Energy,2025,1,Fault & safety
+10.1016/j.jpowsour.2026.239593,Real-time spatiotemporal temperature gradient estimation based on a graph convolutional neural network for battery cells,Journal of Power Sources,2026,1,Graph networks
+10.1002/bte2.70122,"Real‐Time, Interpretable Diagnostics for Solid‐State Batteries via Machine Learning on In Situ Impedance Spectra",Battery Energy,2026,1,Interpretability
+10.1016/j.etran.2026.100549,STL-LLM: A seasonal-trend decomposition-enhanced large language model for battery capacity aging trajectory prediction,eTransportation,2026,1,Foundation models
+10.1109/tec.2026.3651941,Li-Ion Battery Doctor: A Fine-Tuned and Explainable Large-Language Model for Health Prognosis,IEEE Transactions on Energy Conversion,2026,1,Foundation models
+10.13052/dgaej2156-3306.3833,Lithium-Ion Battery State of Charge Estimation Using Deep Neural Network,Distributed Generation &amp; Alternative Energy Journal,2023,1,Physics-informed;State estimation (SOC)
+10.1134/s0361768825700240,Machine Learning-Enabled Battery Management System on FPGA for Electric Vehicles,Programming and Computer Software,2025,1,Cross-cutting
+10.20517/jmi.2025.80,A hybrid deep learning model for robust and data-efficient lithium-ion battery remaining useful life prediction,Journal of Materials Informatics,2026,1,Prognostics (RUL)
+10.1155/er/8083561,Data‐Driven Machine Learning Model for Battery Life Prediction Across Electrode Materials,International Journal of Energy Research,2026,1,Prognostics (RUL)
+10.1016/j.est.2026.123079,Data-driven machine learning framework for accelerating lifetime prediction of LiS batteries using early-cycle electrochemical features,Journal of Energy Storage,2026,1,Prognostics (RUL)
+10.1049/icp.2025.0249,Sodium-ion battery cycle life prediction using machine learning,IET Conference Proceedings,2025,1,Prognostics (RUL)
+10.1149/ma2024-01532800mtgabs,Accurate Battery Life Prediction Using Early-Cycle Features,ECS Meeting Abstracts,2024,1,Prognostics (RUL)
+10.1109/access.2020.3009703,Correction to “Simulator Assessment Theory for Remaining Useful Life Prediction of Lithium-Ion Battery Under Multiple Uncertainties”,IEEE Access,2020,1,Prognostics (RUL)
+10.1149/ma2021-022239mtgabs,Application of Machine Learning in Battery: State of Charge Estimation Using Feed Forward Neural Network for Na-Ion Batteries,ECS Meeting Abstracts,2021,1,Second life;State estimation (SOC)
+10.3390/app15158164,A Unified Machine Learning Framework for Li-Ion Battery State Estimation and Prediction,Applied Sciences,2025,1,Second life
+10.1088/1742-6596/2661/1/012025,Estimation of Battery State of Charge Based on Electrochemical Impedance Spectroscopy and Machine Learning,Journal of Physics: Conference Series,2023,1,Second life
+10.32604/cmc.2022.030490,State-of-Charge Estimation of Lithium-Ion Battery for Electric Vehicles Using Deep Neural Network,"Computers, Materials &amp; Continua",2022,1,State estimation (SOC)
+10.37394/23202.2022.21.1,Applying Set Membership Strategy in State of Charge Estimation for Lithium-ion Battery,WSEAS TRANSACTIONS ON SYSTEMS,2022,1,State estimation (SOC)
+10.1016/j.jpowsour.2026.240053,GPINND: A deep-learning-based state of health estimation for lithium-ion battery,Journal of Power Sources,2026,1,Health estimation (SOH);State estimation (SOC)
+10.1088/1742-6596/2450/1/012091,Estimation of State of Charge and State of Health of Marine Lithium Battery based on BP Neural Network,Journal of Physics: Conference Series,2023,1,State estimation (SOC)
+10.1088/1742-6596/2418/1/012118,A State-of-Charge estimation method of Lithium battery based on BP neural network,Journal of Physics: Conference Series,2023,1,State estimation (SOC)
+10.17482/uumfd.1595646,ESTIMATION OF ELECTRIC VEHICLE MULTIPLE PACKAGE LITHIUM-ION BATTERY STATE OF CHARGE USING AN EXTENDED MACHINE LEARNING,Uludağ University Journal of The Faculty of Engineering,2025,1,State estimation (SOC)
+10.3390/machines12100738,State of Charge Estimation for Lithium-Ion Battery Based on Fractional-Order Kreisselmeier-Type Adaptive Observer,Machines,2024,1,State estimation (SOC)
+10.3390/en19020335,Dual-Modal Mixture-of-KAN Network for Lithium-Ion Battery State-of-Health Estimation Using Early Charging Data,Energies,2026,1,Health estimation (SOH)
+10.23919/ien.2023.0043,An accurate battery state of health estimation method easy to implement after charging,iEnergy,2023,1,Health estimation (SOH)
+10.12720/sgce.11.4.135-140,SOC estimation of lithium-ion battery at low temperature,International Journal of Smart Grid and Clean Energy,2022,1,Thermal management
+10.32604/ee.2025.071144,A Data-Driven Framework for Lithium-Ion Battery SOH Estimation Using VMD-GRU Hybrid Approach with Multi-Scale Feature Analysis,Energy Engineering,2026,1,Thermal management
+10.55162/mcet.04.115,Prediction of Electric Vehicle Energy Consumption by Combining Real Vehicle Data and Machine Learning Methods,Medicon Engineering Themes,2023,1,Thermal management
+10.1149/ma2020-012429mtgabs,Predicting Thermal Runaway in Li-Ion Battery Employing Machine Learning Framework,ECS Meeting Abstracts,2020,1,Thermal management
+10.32604/cmes.2025.073030,Multivariate Lithium-ion Battery State Prediction with Channel-Independent Informer and Particle Filter for Battery Digital Twin,Computer Modeling in Engineering &amp; Sciences,2025,1,Digital twins
+10.1149/ma2022-02261015mtgabs,Machine Learning Lithium-Ion Battery Safety Risk Level Classification,ECS Meeting Abstracts,2022,0,Cell balancing & ECM;Digital twins;Fault & safety
+10.1149/ma2020-01502748mtgabs,(Invited) Discovery and Design of Alloy Catalysts and Lithium-Ion Battery Materials through Machine Learning,ECS Meeting Abstracts,2020,0,Cell balancing & ECM;Digital twins;Fault & safety
+10.30726/esij/v7.i4.2020.74023,Charge and Health Status Estimation of a Lithium Ion Battery in an Electric Vehicle using Cell Balancing IOT Modeling Techniques,Engineering and Scientific International Journal,2021,0,Cell balancing & ECM
+10.47893/ijess.2022.1215,Capacity Estimation Of Lithium Ion Battery To Evaluate SOH Using Machine Learning Method.,International Journal of Electronics Signals and Systems,2022,0,Cell balancing & ECM;Digital twins;Fault & safety;Health estimation (SOH)
+10.2139/ssrn.4103270,Machine Learning Predictions of Lithium-Ion Battery State-of-Health for Evtol Applications,SSRN Electronic Journal,2022,0,Cell balancing & ECM;Digital twins;Fault & safety;Health estimation (SOH);Transfer learning
+10.4071/001c.129759,Applying Machine Learning to the Smart Welding of Cylindrical Lithium-ion Battery Cells within Battery Modules,IMAPSource Proceedings,2025,0,Cell balancing & ECM;Digital twins;Fault & safety
+10.62441/nano-ntp.v20is5.21,A Comparative Analysis of Machine Learning Approaches for State-of-Charge Forecasting for Enhancing Lithium-ion Battery Management in Electric Vehicles,Nanotechnology Perceptions,2024,0,Cell balancing & ECM;Digital twins;State estimation (SOC)
+10.36287/ijmsit.10.1.9,Cross-Battery State-of-Health Estimation of Lithium-Ion Batteries Using Leave-One-Battery-Out Validation and Machine Learning,International Journal of Multidisciplinary Studies and Innovative Technologies,2026,0,Cell balancing & ECM;Digital twins;Fault & safety;Health estimation (SOH);Second life;State estimation (SOC)
+10.18173/2354-1059.2026-0005,MACHINE LEARNING ACCELERATED PROPERTY PREDICTION AND SCREENING OF STABLE LITHIUM-BASED BATTERY MATERIALS,Journal of Science Natural Science,2026,0,Cell balancing & ECM;Fault & safety
+10.1149/ma2023-022261mtgabs,Machine Learning Based Identification of Lithium-Ion Battery Cell Chemistries,ECS Meeting Abstracts,2023,0,Cell balancing & ECM;Digital twins;Fault & safety
+10.3389/fenrg.2023.1228014,Corrigendum: An improved deep extreme learning machine to predict the remaining useful life of lithium-ion battery,Frontiers in Energy Research,2023,0,Cell balancing & ECM;Digital twins;Fault & safety;Prognostics (RUL)
+10.1149/ma2023-011397mtgabs,Lithium-Ion Battery Diagnostics Using Electrochemical Impedance Via Machine-Learning,ECS Meeting Abstracts,2023,0,Cell balancing & ECM;Digital twins;Fault & safety
+10.1016/j.est.2023.108753,"Corrigendum to “Rethinking lithium-ion battery management: Eliminating routine cell balancing enhances hazardous fault detection” [J. Energy Storage vol. 63, (July 2023), page 106931]",Journal of Energy Storage,2023,0,Cell balancing & ECM
+10.32628/ijsrset2310538,Lithium-Ion Battery Classification and Detection Using an Optimal Machine Learning Algorithm,"International Journal of Scientific Research in Science, Engineering and Technology",2023,0,Cell balancing & ECM;Digital twins;Fault & safety
+10.1149/ma2024-01150mtgabs,Battery Lifetime Prediction and Degradation Analysis with Machine Learning Method,ECS Meeting Abstracts,2024,0,Benchmarks & data
+10.61784/msme3016,HYBRID MODELING OF ELECTRIC VEHICLE BATTERY DEGRADATION USING PHYSICS-INFORMED MACHINE LEARNING,Journal of Manufacturing Science and Mechanical Engineering,2025,0,Benchmarks & data
+10.1007/s11227-026-08620-4,Multi-dataset battery health prediction model for sustainable electric vehicle systems using quantum machine learning,The Journal of Supercomputing,2026,0,Benchmarks & data
+10.1149/ma2026-016688mtgabs,Estimation of Lead Acid and Lithium-Ion Battery Degradation—a Model for the Optimization of Battery Energy Storage System Using Machine Learning,ECS Meeting Abstracts,2026,0,Benchmarks & data
+10.2139/ssrn.4269780,Optimization on Charging of the Direct Hybrid Lithium-Ion Battery and Supercapacitor for High Power Application Through Resistance Balancing,SSRN Electronic Journal,2022,0,Charging control
+10.1007/s00202-026-03634-w,Lithium-ion battery state of charge estimation based on modified charging protocol,Electrical Engineering,2026,0,Charging control
+10.1016/j.jechem.2026.07.006,Interpreting lithium-ion battery aging under fast-charging via data-driven physics and explainable machine learning,Journal of Energy Chemistry,2026,0,Charging control
+10.1109/tie.2026.3718187,Reinforcement Learning-Based Plating-Suppressive Fast Charging of Lithium-Ion Battery by Monitoring Strain Evolution,IEEE Transactions on Industrial Electronics,2026,0,Charging control;Fault & safety
+10.1016/j.ifacol.2023.10.364,Optimization-Free Fast Charging for Lithium-Ion Batteries Using Model Inversion Techniques,IFAC-PapersOnLine,2023,0,Charging control
+10.3390/cleantechnol4040078,A Comparison of the Use of Pontryagin’s Maximum Principle and Reinforcement Learning Techniques for the Optimal Charging of Lithium-Ion Batteries,Clean Technologies,2022,0,Charging control
+10.1002/ente.70567,Deep Reinforcement Learning‐Based Intelligent Battery Charging Strategy,Energy Technology,2026,0,Charging control
+10.3390/coatings16091039,A Reinforcement-Learning-Based Fuzzy PID Control Strategy for the Unwinding Tension System of a Lithium-Ion Battery Coating Machine,Coatings,2026,0,Charging control
+10.3390/batteries12090323,Physics-Informed Attention-Enhanced Reinforcement Learning for Safe and Explainable Fast Charging of Lithium-Ion Batteries,Batteries,2026,0,Charging control
+10.56975/ijcrt.v14i7.309891,Lifelong Reinforcement Learning for Health-Aware Fast Charging of Lithium-Ion Batteries: A Comprehensive Review,INTERNATIONAL JOURNAL OF CREATIVE RESEARCH THOUGHTS,2026,0,Charging control
+10.52152/803367,"Smart Local Governance Framework For Electric Vehicle Ecosystems Integrating IOT Battery Safety AI Fleet Optimization, and Blockchain Energy Management",Lex localis - Journal of Local Self-Government,2026,0,Cloud & fleet
+10.1115/1.4071800,Cloud-Integrated Hybrid Battery Management System With Hybrid State of Charge Estimation in On-Board Electric Vehicle Battery Packs,Journal of Electrochemical Energy Conversion and Storage,2026,0,Cloud & fleet
+10.12968/s1467-5560(23)60266-0,The Importance of Thermal Management in Optimizing Battery Performance,Electric and Hybrid Vehicle Technology International,2023,0,Cloud & fleet;Thermal management
+10.21275/mr23602163243,Electric Vehicle Battery Subsystem Optimization,International Journal of Science and Research (IJSR),2023,0,Cloud & fleet;Fault & safety
+10.12968/s1467-5560(23)60259-3,Battery Pack Optimization,Electric and Hybrid Vehicle Technology International,2023,0,Cloud & fleet;Fault & safety
+10.55041/ijsrem27663,Intelligent Electric Vehicle Battery Monitoring System,INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT,2023,0,Cloud & fleet
+10.12968/s1467-5560(23)60272-6,Predictable and Controllable Battery Production,Electric and Hybrid Vehicle Technology International,2023,0,Cloud & fleet;Fault & safety
+10.1016/j.rineng.2026.112070,Estimation of battery open-circuit voltage using pulse injection aided machine learning coupled with equivalent circuit model,Results in Engineering,2026,0,Other
+10.1016/j.est.2026.122024,An adaptive timescale decoupled parameter identification equivalent circuit model for lithium-ion battery capacity estimation,Journal of Energy Storage,2026,0,Other
+10.32620/reks.2025.3.16,Comparison of equivalent circuit and machine learning methods for CubeSat battery discharge modeling,Radioelectronic and Computer Systems,2025,0,Other
+10.1149/ma2020-02211598mtgabs,Data Driven Estimation of Electric Vehicle Battery State of Charge Informed By Multi-Physics Modeling,ECS Meeting Abstracts,2020,0,Fault & safety
+10.3390/electronics15122614,A Data-Driven Framework to Reduce Information Asymmetry in the Second-Hand Battery Electric Vehicle Market,Electronics,2026,0,Fault & safety
+10.3390/wevj17060304,Electric Vehicle User Behavior Forecasting via Data-Driven Techniques,World Electric Vehicle Journal,2026,0,Fault & safety
+10.1016/j.est.2026.124126,An integrated data-driven framework for stochastic battery electric vehicle charging prediction and physics-informed state-of-health monitoring of second-life battery systems,Journal of Energy Storage,2026,0,Fault & safety
+10.3901/jme.2022.22.056,Connection Fault Diagnosis of Lithium-ion Battery Pack Based on Mechanical Vibration Signals,Journal of Mechanical Engineering,2022,0,Fault & safety
+10.1177/01423312261466331,Machine learning-based fault diagnosis for lithium-ion battery systems,Transactions of the Institute of Measurement and Control,2026,0,Fault & safety
+10.13052/dgaej2156-3306.4043,Fault Diagnosis of Lithium-ion Battery Pack Based on Optimized Support Vector Machine Algorithm,Distributed Generation &amp; Alternative Energy Journal,2025,0,Fault & safety
+10.3901/jme.260188,Fault Diagnosis of Lithium-Ion battery External Short Circuit Based on Magnetic Field,Journal of Mechanical Engineering,2026,0,Fault & safety
+10.1063/5.0319496,Fault diagnosis method for lithium-ion battery cells based on information granularity and dynamic segmentation slope,AIP Advances,2026,0,Fault & safety
+10.1109/tie.2026.3702200,Three-Phase Continual Learning With Neuron Aging for Lithium-Ion Battery Energy Storage System Fault Diagnosis,IEEE Transactions on Industrial Electronics,2026,0,Fault & safety
+10.1149/ma2021-015274mtgabs,Early Detection of Lithium Plating in Lithium Ion Batteries: Using Multiple Physics-Based Electrochemical Signatures to Construct a Machine Learning Framework,ECS Meeting Abstracts,2021,0,Fault & safety
+10.1149/ma2021-0251967mtgabs,Measurement and Estimation of Heat Generation Rate of Lithium-Ion Battery Considering SEI Growth and Lithium Plating,ECS Meeting Abstracts,2021,0,Fault & safety
+10.61927/igmin346,Machine Learning-Driven Discovery of Novel Lithium-Based Battery Materials,IgMin Research,2026,0,Fault & safety
+10.1149/ma2023-023499mtgabs,Monitoring Lithium Metal Plating in Battery Modules: Insights from NMR and Electrochemical Analysis,ECS Meeting Abstracts,2023,0,Fault & safety
+10.1007/s11581-026-07316-2,Advanced battery state estimation in electric vehicles using graph neural network and evolutionary optimization,Ionics,2026,0,Graph networks
+10.1088/1361-6501/ae83d4,Taylor polynomial-constrained physics-informed neural network for battery degradation modeling and SOH estimation,Measurement Science and Technology,2026,0,Graph networks
+10.1109/access.2025.3608821,Graph Neural Network-Based Task Migration Strategy for Battery Run Time Optimization of Smart Medical Device Cluster,IEEE Access,2025,0,Graph networks
+10.1016/j.compchemeng.2026.109713,Physics-informed spatio-temporal graph convolutional network for battery capacity degradation prediction under real world operating conditions,Computers &amp; Chemical Engineering,2026,0,Graph networks
+10.1016/j.est.2026.123378,A multi-source thermally coupled graph neural network model for battery module temperature prediction,Journal of Energy Storage,2026,0,Graph networks
+10.1063/5.0326508,An interpretable transformer model for battery health prediction based on a multitask learning framework and cross-attention mechanism,AIP Advances,2026,0,Interpretability
+10.1016/j.apenergy.2026.128036,Interpretable noninvasive framework for lithium-ion battery degradation diagnosis: Joint prediction of capacity and power fade and mechanism-aware health index classification,Applied Energy,2026,0,Interpretability
+10.1002/batt.70396,Interpretable Machine Learning‐Driven Discovery of Sodium‐Ion Battery Cathode Materials With First‐Principles Validation,Batteries &amp; Supercaps,2026,0,Interpretability
+10.2139/ssrn.4164020,Admm Based Optimized Location Planning Model for Battery Swapping Stations in Battery Electric Bus Transit System,SSRN Electronic Journal,2022,0,Foundation models
+10.3390/app16104812,Multimodal Large Language Model-Based Shapley Interaction Quantification Analysis for Interpretation of Battery State-of-Charge Prediction in Electric Vehicles,Applied Sciences,2026,0,Foundation models
+10.1016/j.compchemeng.2026.109837,A knowledge graph-embedded large language model to strategize battery recycling technology selection,Computers &amp; Chemical Engineering,2026,0,Foundation models
+10.1016/j.est.2026.123069,Prompt-guided large language model for estimating the state of charge of containerized lithium-ion battery energy storage systems,Journal of Energy Storage,2026,0,Foundation models
+10.1016/j.est.2026.123824,A large language model approach with physics-guided data augmentation for early warning of battery thermal runaway,Journal of Energy Storage,2026,0,Foundation models
+10.1007/s11426-026-3431-x,Large language models unlock knowledge flow networks across battery chemistries,Science China Chemistry,2026,0,Foundation models
+10.1016/j.jechem.2026.06.071,PiT-LLM: A physics-informed time-series large language model for multi-horizon battery capacity aging prediction,Journal of Energy Chemistry,2026,0,Foundation models
+10.3390/batteries12080294,"SOH Estimation of Lithium-Ion Batteries Using a Residual Multilayer Perceptron-Based, Physics-Informed Neural Network for the Battery Management System",Batteries,2026,0,Physics-informed
+10.1088/1742-6596/3214/1/012032,A Physics-Informed Neural Network for Robust State of Charge Estimation of Lithium-Ion Battery,Journal of Physics: Conference Series,2026,0,Physics-informed
+10.1109/access.2026.3695274,Aging-Aware Hypernetwork LSTM With Multi-Constraint Physics-Informed Neural Network (AAH-LSTM-PINN) for Lithium-Ion Battery SOC Estimation,IEEE Access,2026,0,Physics-informed
+10.1007/s10008-026-06701-1,Physics-informed neural networks for thermodynamically consistent open-circuit potential modeling of lithium-ion battery electrodes,Journal of Solid State Electrochemistry,2026,0,Physics-informed
+10.1088/1742-6596/2591/1/012031,Lithium-ion battery state-of-charge estimation based on long-short-term memory neural network and square-root cubature Kalman filter,Journal of Physics: Conference Series,2023,0,Physics-informed;State estimation (SOC)
+10.55248/gengpi.06.1125.3854,Machine Learning for State of Charge Estimation in Battery Management System,International Journal of Research Publication and Reviews,2025,0,Cross-cutting;Second life;State estimation (SOC)
+10.64643/ijirtv10i11-163173-459,SMART BATTERY MANAGEMENT SYSTEM FOR PORTABLE DEVICES TO ENHANCE BATTERY LIFE BASED ON MACHINE LEARNING,International Journal of Innovative Research in Technology,2025,0,Cross-cutting
+10.56726/irjmets86537,Implementation of Machine Learning in Battery Management System of Electric Vehicles,International Research Journal of Modernization in Engineering Technology &amp; Science,2026,0,Cross-cutting
+10.1016/j.gloei.2026.06.006,A comprehensive review of machine learning-based battery management and solar electric vehicle charging systems for intelligent energy management,Global Energy Interconnection,2026,0,Cross-cutting;Thermal management
+10.56975/jetir.v12i9.569244,AI POWERED HYBRID MACHINE LEARNING AND RNN BASED PREDICTIVE BATTERY MANAGEMENT SYSTEM FOR ELECTRIC VEHICLES,Journal of Emerging Technologies and Innovative Research,2025,0,Cross-cutting
+10.58257/ijprems37102,Battery Life Indicator and Prediction using Machine Learning Algorithms,International Journal of Progressive Research in Engineering Management and Science,2024,0,Cross-cutting;Prognostics (RUL)
+10.1590/1517-7076-rmat-2025-0420,Battery and energy management system for BLDC motor driven electric vehicles with intelligent control and machine learning techniques,Matéria (Rio de Janeiro),2025,0,Cross-cutting
+10.29121/shodhkosh.v7.i1.2026.8830,OPTIMAL ENERGY MANAGEMENT IN GRID CONNECTED PV BATTERY ENERGY STORAGE SYSTEM WITH MACHINE LEARNING APPROACH,ShodhKosh: Journal of Visual and Performing Arts,2026,0,Cross-cutting
+10.30693/smj.2022.11.11.63,Data-Driven Approach for Lithium-Ion Battery Remaining Useful Life Prediction: A Literature Review,Korean Institute of Smart Media,2022,0,Prognostics (RUL);Thermal management
+10.1149/1945-7111/adf2e0,Two-Phase Deep Learning for Long-Term Lithium-Ion Battery Remaining Useful Life Prediction Considering Different Charging Periods,Journal of The Electrochemical Society,2025,0,Prognostics (RUL)
+10.37591/ijmdsa.v03i02.234490,Advanced Lithium-Ion Battery Prognostics: A Comprehensive Review of Machine Learning Approaches for Remaining Useful Life Prediction,International Journal of Mechanical Dynamics and Systems Analysis,2025,0,Prognostics (RUL)
+10.37591/ijemb.v04i01.238772,Multimodal Data Fusion with Hybrid Machine Learning for Enhanced Prediction of Li-Ion Battery Remaining Useful Life and State of Charge,International Journal of Electro-Mechanics and Material Behavior,2026,0,Prognostics (RUL)
+10.1049/icp.2026.2158,A deep multi-scale feature-attention transformer model for the prediction of lithium-ion battery remaining useful life,IET Conference Proceedings,2026,0,Prognostics (RUL)
+10.22214/ijraset.2025.68631,Lithium-Ion Battery Life Prediction with Early Cyclic Data Using Machine Learning,International Journal for Research in Applied Science and Engineering Technology,2025,0,Prognostics (RUL)
+10.2139/ssrn.3997554,Remaining Useful Cycle Life Prediction of Lithium-Ion Battery Based on Differential Voltage Analysis,SSRN Electronic Journal,2021,0,Prognostics (RUL)
+10.25236/ijfs.2021.031606,Review on Prediction Methods of Remaining Useful Life of Lithium Ion Batteries,International Journal of Frontiers in Sociology,2021,0,Prognostics (RUL)
+10.71411/ef.2025.v1i5.1380,&lt;b&gt;A Comparative Study of Machine Learning Methods for Lithium-ion Battery Remaining Useful Life Prediction&lt;/b&gt;,Engineering Frontiers,2026,0,Prognostics (RUL)
+10.3390/electronics15163687,A Lithium-Ion Battery Remaining Useful Life Prediction Framework Based on Mode Decomposition and CNN-TimeXer,Electronics,2026,0,Prognostics (RUL)
+10.1016/j.measurement.2026.122434,Signal-quality-aware adaptive prediction for lithium-ion battery remaining useful life under noisy and resource-constrained conditions,Measurement,2026,0,Prognostics (RUL)
+10.54254/2755-2721/2026.tj30413,Hybrid CNN-LSTM Framework for Lithium-Ion Battery Degradation and Remaining Useful Life Prediction,Applied and Computational Engineering,2025,0,Prognostics (RUL)
+10.31449/inf.v50i14.14144,A Remaining Useful Life Prediction of Lithium-Ion Batteries via Improved Dream Optimization Algorithm-Tuned LSTM Networks,Informatica,2026,0,Prognostics (RUL)
+10.3390/drones10070549,A Comparative Study of Machine Learning and Deep Learning Models for State of Charge and Remaining Useful Life Estimation on a Rotary-Wing UAV Battery,Drones,2026,0,Second life
+10.3390/su18010209,Comparative Battery State of Charge (SoC) Estimation Using Shallow and Deep Machine Learning Models,Sustainability,2025,0,Second life
+10.5954/icarob.2026.gs2-2,A Systematic Comparison of Machine Learning Models for State of Charge Estimation in CubeSat Lithium-ion Battery System,Proceedings of International Conference on Artificial Life and Robotics,2026,0,Second life;State estimation (SOC)
+10.2139/ssrn.4170502,A Comparative Study of Different Deep Learning Algorithms for Lithium-Ion Batteries on State-of-Charge Estimation,SSRN Electronic Journal,2022,0,State estimation (SOC)
+10.11648/j.sd.20251306.18,Lithium-ion Battery State of Charge (SOC) Estimation Based on HHO-LSTM,Science Discovery,2025,0,State estimation (SOC)
+10.1038/s41598-026-67204-7,An interpretable hybrid LSTM–transformer framework with temporal attention fusion for lithium-ion battery state-of-charge estimation,Scientific Reports,2026,0,State estimation (SOC)
+10.1002/ente.70530,A Hybrid Deep Learning Framework for Lithium‐Ion Battery State of Charge Estimation Combining an Attention‐Enhanced Gated Recurrent Unit with Residual Correction,Energy Technology,2026,0,State estimation (SOC)
+10.1002/est2.70362,Hybrid Recurrent Neural Network and Adaptive Linear Kalman Filter for Lithium‐Ion Battery State of Charge Estimation,Energy Storage,2026,0,State estimation (SOC)
+10.54097/9ervp336,Battery State of Charge Estimation Based on Improved Neural Network,Journal of Computer Science and Artificial Intelligence,2025,0,State estimation (SOC)
+10.1049/pel2.70243,Time‐Frequency Structured State‐Space Neural Network for Battery State‐of‐Charge Estimation,IET Power Electronics,2026,0,State estimation (SOC)
+10.1016/j.fuel.2026.140727,A hybrid extended kalman filter and feed-forward neural network architecture for robust state of charge estimation of lithium-ion batteries,Fuel,2027,0,State estimation (SOC)
+10.1016/j.est.2026.121415,Robust state of charge estimation in electric vehicle batteries using neural-network aided Kalman filter,Journal of Energy Storage,2026,0,State estimation (SOC)
+10.1149/ma2020-02201587mtgabs,State of Charge Estimation Method for Lithium-Ion Batteries Using Machine Learning Considering Thermal Variation,ECS Meeting Abstracts,2020,0,State estimation (SOC)
+10.1016/j.ensm.2026.105277,Towards sustainable battery management: Developing battery health estimation models from only incomplete charging curve,Energy Storage Materials,2026,0,Health estimation (SOH)
+10.17531/ein/220211,"Charging Phase Health Indicators for Battery State-of-Health Estimation: A Systematic Comparison of CC, CV, and Combined Approaches under Cross-Battery Validation",Eksploatacja i Niezawodność – Maintenance and Reliability,2026,0,Health estimation (SOH)
+10.1109/access.2026.3727788,Coupled Quantum Reservoir Features for Multi-Chemistry Battery State-of-Health Estimation,IEEE Access,2026,0,Health estimation (SOH)
+10.1049/icp.2022.3073,State of health estimation for Lithium-ion battery based on fusion features,IET Conference Proceedings,2023,0,Health estimation (SOH)
+10.1016/j.est.2026.123209,Early predicting state of health of lithium-ion battery based on dynamic dataset partitioning and optimized Gaussian process regression,Journal of Energy Storage,2026,0,Health estimation (SOH)
+10.1007/s11581-026-07181-z,State of health estimation of lithium-ion batteries based on gaussian process regression optimized by improved crested porcupine optimizer,Ionics,2026,0,Health estimation (SOH)
+10.1016/j.epsr.2026.113294,Hybrid support vector and Gaussian process regression approach for secondary-life state-of-health estimation of lithium-ion batteries,Electric Power Systems Research,2026,0,Health estimation (SOH)
+10.53759/7669/jmc202404102,State of Charge Estimation of Lithium-Ion Batteries for Electric Vehicle Application Using Gaussian Process Regression Approach,Journal of Machine and Computing,2024,0,Health estimation (SOH)
+10.1016/j.est.2026.124251,Probabilistic state of health estimation and environmentally optimized retirement threshold for lithium-ion batteries based on deep learning and Gaussian process regression,Journal of Energy Storage,2026,0,Health estimation (SOH)
+10.24425/aee.2023.146042,Modelling of Li-Ion battery state-of-health with Gaussian processes,Archives of Electrical Engineering,2023,0,Health estimation (SOH)
+10.1088/1742-6596/2483/1/012024,State of health estimation for lithium-ion battery based on improved support vector regression,Journal of Physics: Conference Series,2023,0,Health estimation (SOH)
+10.1016/j.egyr.2026.109600,Enhancing lithium-ion battery state of health estimation through strain signal integration and machine learning,Energy Reports,2026,0,Health estimation (SOH)
+10.1016/j.est.2026.122974,Lithium-ion battery state of health estimation based on multiple health stages characteristic frequencies of impedance spectroscopy and machine learning,Journal of Energy Storage,2026,0,Health estimation (SOH)
+10.1149/ma2022-023176mtgabs,Data Driven Model for Lithium-Ion Battery Electrode Microstructure Property Estimation,ECS Meeting Abstracts,2022,0,Thermal management
+10.3390/en14248492,A Data-Driven Framework to Predict Lithium-Ion Battery Cell Imbalance for Real-Time Battery Management Systems,Energies,2021,0,Thermal management
+10.1109/tte.2026.3725161,Robust Transfer Learning for Lithium-ion Battery Core Temperature Estimation with Limited Data,IEEE Transactions on Transportation Electrification,2026,0,Thermal management
+10.3390/batteries12080309,Lithium-Ion Battery Temperature Estimation Based on Electrochemical Impedance Spectroscopy,Batteries,2026,0,Thermal management
+10.1109/access.2026.3688969,State-of-Health Estimation for Lithium-Ion and Sodium-Ion Battery Cells Using Data-Driven Models and Cross-Chemistry Transfer Learning,IEEE Access,2026,0,Thermal management;Transfer learning
+10.1109/tte.2026.3683158,Multiscale Feature-Driven Temperature Estimation for Lithium-Ion Battery Under Driving Scenarios Using Physical-Enhanced Transfer Learning,IEEE Transactions on Transportation Electrification,2026,0,Thermal management
+10.3390/wevj17060310,Deep Koopman Observer for Lithium-Ion Battery Temperature Estimation,World Electric Vehicle Journal,2026,0,Thermal management
+10.1016/j.procs.2025.04.507,A Practical Analysis of Data Driven Lithium - Ion Battery Health Estimation,Procedia Computer Science,2025,0,Thermal management
+10.1515/cppm-2025-0120,Strategic assessment of lithium-ion battery degradation: a data-driven optimization approach,Chemical Product and Process Modeling,2025,0,Thermal management
+10.1088/1742-6596/3231/1/012080,A data-driven approach for lithium-ion battery temperature prediction,Journal of Physics: Conference Series,2026,0,Thermal management
+10.1016/j.mlwa.2025.100813,Estimation of the remaining charge retention time of an electric vehicle battery,Machine Learning with Applications,2026,0,Thermal management
+10.3390/wevj17060295,Optimizing Market Scenarios for Battery Electric Vehicles Through a Machine Learning-Based Manufacturer Agent,World Electric Vehicle Journal,2026,0,Thermal management
+10.3390/wevj17060311,Optimized Air-Conditioning Strategy Employing a Circular-Vent-Hole-Assisted Battery Thermal Management System for Electric Vehicles,World Electric Vehicle Journal,2026,0,Thermal management
+10.3390/fuels7030047,Prediction and Correction of LFL for Multicomponent Gases Relevant to Lithium-Ion Battery Thermal Runaway,Fuels,2026,0,Thermal management
+10.1149/ma2024-023385mtgabs,Data-Driven Prognosis of Lithium-Ion Batteries Thermal Runaway: A Novel Machine Learning Approach,ECS Meeting Abstracts,2024,0,Thermal management
+10.1002/bte2.70149,Prognostic Approaches for Early Detection of Thermal Runaway in Lithium‐Ion Batteries,Battery Energy,2026,0,Thermal management
+10.36001/phmap.2023.v4i1.3755,Multiphysics-informed DeepONet of a lithium-ion battery to predict thermal runaway,PHM Society Asia-Pacific Conference,2023,0,Thermal management
+10.1016/j.jprocont.2026.103706,A deep learning method combining wavelet transform and transfer learning for lithium-ion battery state of health estimation,Journal of Process Control,2026,0,Transfer learning
+10.1016/j.energy.2026.142213,Defending lithium-ion battery state of health estimation against transfer attacks using adversarial training and ensemble learning,Energy,2026,0,Transfer learning
+10.1149/ma2020-025993mtgabs,Digital Twin-Driven All-Solid-State Lithium-Ion Battery,ECS Meeting Abstracts,2020,0,Digital twins
+10.1088/1742-6596/1916/1/012437,Retraction: Lifetime Prediction of Lithium-Ion Battery Using Machine Learning For E-Vehicles (J. Phys.: Conf. Ser. 1916 012200),Journal of Physics: Conference Series,2021,0,Digital twins
+10.1149/ma2022-026618mtgabs,Chemometric and Machine Learning Analysis of Lithium Concentration and Solvation Behavior in Li-Ion Battery Electrolytes,ECS Meeting Abstracts,2022,0,Digital twins
+10.54691/c2xqn614,Lithium-ion Battery Energy Storage Digital Twin System and Applications,Scientific Journal of Technology,2026,0,Digital twins
+10.1149/ma2025-01271514mtgabs,Comprehensive Digital Twin for Lithium-Ion Battery Cell Behavior Modeling,ECS Meeting Abstracts,2025,0,Digital twins
+10.63282/3050-9262.ijaidsml-v6i3p124,[WITHDRAWN] Optimizing Battery Lifecycle Management through Digital Twin Simulation,"International Journal of Artificial Intelligence, Data Science, and Machine Learning",2025,0,Digital twins
+10.1002/inf2.70141,Digital twin quantifies spatial‐heterogeneity‐driven failure in fast‐charging lithium‐ion battery anodes,InfoMat,2026,0,Digital twins

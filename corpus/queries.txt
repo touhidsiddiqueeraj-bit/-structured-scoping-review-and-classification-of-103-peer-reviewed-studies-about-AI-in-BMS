@@ -1,0 +1,30 @@
+soc_ml	state of charge estimation lithium-ion battery machine learning
+soc_dl	state of charge estimation deep learning lithium-ion battery LSTM
+soc_hybrid	state of charge estimation neural network battery filter
+soh_ml	state of health estimation lithium-ion battery machine learning
+soh_feat	battery state of health estimation charging curve health features
+soh_gp	battery state of health Gaussian process regression lithium-ion
+rul_ml	remaining useful life prediction lithium-ion battery machine learning
+rul_dl	battery remaining useful life prediction deep learning
+rul_early	early prediction battery cycle life machine learning data-driven
+chg_ml	fast charging lithium-ion battery machine learning optimization
+chg_rl	reinforcement learning charging strategy lithium-ion battery
+chg_bayes	Bayesian optimization battery charging protocol lithium-ion
+thm_est	lithium-ion battery temperature estimation data-driven
+thm_mgr	thermal management electric vehicle battery machine learning
+thm_run	thermal runaway prediction lithium-ion battery machine learning
+flt_diag	lithium-ion battery fault diagnosis machine learning
+flt_anom	battery anomaly detection electric vehicle data-driven
+flt_plate	lithium plating detection machine learning battery
+bal	cell balancing lithium-ion battery machine learning
+ecm	equivalent circuit model parameter identification battery machine learning
+rev_bms	machine learning battery management system review
+pinn	physics-informed neural network lithium-ion battery
+tl	transfer learning battery state of health lithium-ion
+twin	digital twin lithium-ion battery machine learning
+llm	large language model battery
+gnn	graph neural network battery degradation
+bmk	battery degradation dataset benchmark machine learning
+interp	interpretable machine learning battery degradation mechanism
+cloud	cloud battery management electric vehicle fleet data
+second	second-life battery state of estimation machine learning

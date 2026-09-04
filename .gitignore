@@ -1,0 +1,12 @@
+# private / non-publishable
+Main-Re-Revised*.docx
+brutalreview*.txt
+*.log
+
+# regenerable intermediates
+render/
+__pycache__/
+out/
+.video_agent/
+*.pyc
+.zcode/

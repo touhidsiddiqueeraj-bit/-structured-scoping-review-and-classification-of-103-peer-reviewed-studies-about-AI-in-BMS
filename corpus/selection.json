@@ -1,0 +1,970 @@
+[
+ {
+  "doi": "10.1038/s42256-021-00312-3",
+  "title": "Machine learning pipeline for battery state-of-health estimation",
+  "journal": "Nature Machine Intelligence",
+  "year": 2021,
+  "cites": 613,
+  "areas": "Second life",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.energy.2020.117664",
+  "title": "State-of-charge estimation of lithium-ion batteries using LSTM and UKF",
+  "journal": "Energy",
+  "year": 2020,
+  "cites": 441,
+  "areas": "State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.heliyon.2024.e35183",
+  "title": "Efficient state of charge estimation of lithium-ion batteries in electric vehicles using evolutionary intelligence-assisted GLA\u2013CNN\u2013Bi-LSTM deep learning model",
+  "journal": "Heliyon",
+  "year": 2024,
+  "cites": 46,
+  "areas": "State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.est.2020.101741",
+  "title": "A novel deep learning framework for state of health estimation of lithium-ion battery",
+  "journal": "Journal of Energy Storage",
+  "year": 2020,
+  "cites": 361,
+  "areas": "Health estimation (SOH);State estimation (SOC);Transfer learning",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.apenergy.2024.123508",
+  "title": "State of charge estimation of lithium-ion battery based on GA-LSTM and improved IAKF",
+  "journal": "Applied Energy",
+  "year": 2024,
+  "cites": 43,
+  "areas": "State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.energy.2021.121236",
+  "title": "A method for state-of-charge estimation of lithium-ion batteries based on PSO-LSTM",
+  "journal": "Energy",
+  "year": 2021,
+  "cites": 350,
+  "areas": "State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.est.2024.111877",
+  "title": "Improved deep learning based state of charge estimation of lithium ion battery for electrified transportation",
+  "journal": "Journal of Energy Storage",
+  "year": 2024,
+  "cites": 30,
+  "areas": "State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.3390/wevj12010038",
+  "title": "State of Charge Estimation of Lithium-Ion Battery for Electric Vehicles Using Machine Learning Algorithms",
+  "journal": "World Electric Vehicle Journal",
+  "year": 2021,
+  "cites": 302,
+  "areas": "Digital twins;Health estimation (SOH);Second life;State estimation (SOC);Thermal management",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.egyai.2025.100585",
+  "title": "Towards a smarter battery management system: A critical review on deep learning-based state of charge estimation of lithium-ion batteries",
+  "journal": "Energy and AI",
+  "year": 2025,
+  "cites": 24,
+  "areas": "State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.egyr.2023.01.108",
+  "title": "A review of machine learning state-of-charge and state-of-health estimation algorithms for lithium-ion batteries",
+  "journal": "Energy Reports",
+  "year": 2023,
+  "cites": 272,
+  "areas": "Health estimation (SOH);State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.jpowsour.2024.235609",
+  "title": "Novel state of charge estimation method of containerized Lithium\u2013Ion battery energy storage system based on deep learning",
+  "journal": "Journal of Power Sources",
+  "year": 2024,
+  "cites": 24,
+  "areas": "State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.apenergy.2021.116897",
+  "title": "A machine-learning prediction method of lithium-ion battery life based on charge process for different applications",
+  "journal": "Applied Energy",
+  "year": 2021,
+  "cites": 240,
+  "areas": "Cell balancing & ECM;Digital twins;Fault & safety;Prognostics (RUL);State estimation (SOC);Thermal management",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.20517/jmi.2024.84",
+  "title": "Advancements in the estimation of the state of charge of lithium-ion battery: a comprehensive review of traditional and deep learning approaches",
+  "journal": "Journal of Materials Informatics",
+  "year": 2025,
+  "cites": 22,
+  "areas": "State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1109/access.2021.3068776",
+  "title": "Lithium-Ion Battery Pack Robust State of Charge Estimation, Cell Inconsistency, and Balancing: Review",
+  "journal": "IEEE Access",
+  "year": 2021,
+  "cites": 210,
+  "areas": "Cell balancing & ECM;State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.est.2024.114281",
+  "title": "State of charge estimation of lithium ion battery for electric vehicle using cutting edge machine learning algorithms: A review",
+  "journal": "Journal of Energy Storage",
+  "year": 2024,
+  "cites": 22,
+  "areas": "State estimation (SOC)",
+  "area": "State estimation (SOC)"
+ },
+ {
+  "doi": "10.1016/j.energy.2019.116467",
+  "title": "State of health estimation for Li-Ion battery using incremental capacity analysis and Gaussian process regression",
+  "journal": "Energy",
+  "year": 2020,
+  "cites": 436,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.energy.2024.133418",
+  "title": "State of health estimation of lithium-ion battery during fast charging process based on BiLSTM-Transformer",
+  "journal": "Energy",
+  "year": 2024,
+  "cites": 89,
+  "areas": "Charging control;Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.energy.2020.118000",
+  "title": "Data-driven state of charge estimation for lithium-ion battery packs based on Gaussian process regression",
+  "journal": "Energy",
+  "year": 2020,
+  "cites": 395,
+  "areas": "Health estimation (SOH);Thermal management",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.apenergy.2024.124077",
+  "title": "Refined lithium-ion battery state of health estimation with charging segment adjustment",
+  "journal": "Applied Energy",
+  "year": 2024,
+  "cites": 58,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.apenergy.2021.117346",
+  "title": "A review of non-probabilistic machine learning-based state of health estimation techniques for Lithium-ion battery",
+  "journal": "Applied Energy",
+  "year": 2021,
+  "cites": 366,
+  "areas": "Health estimation (SOH);Second life;Transfer learning",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.geits.2024.100169",
+  "title": "A data-fusion-model method for state of health estimation of Li-ion battery packs based on partial charging curve",
+  "journal": "Green Energy and Intelligent Transportation",
+  "year": 2024,
+  "cites": 50,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1109/tpel.2021.3134701",
+  "title": "Data-Driven Battery State of Health Estimation Based on Random Partial Charging Data",
+  "journal": "IEEE Transactions on Power Electronics",
+  "year": 2022,
+  "cites": 353,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.isci.2025.112235",
+  "title": "Battery state of health estimation under fast charging via deep transfer learning",
+  "journal": "iScience",
+  "year": 2025,
+  "cites": 44,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.est.2022.104215",
+  "title": "State of health estimation of lithium-ion battery based on improved ant lion optimization and support vector regression",
+  "journal": "Journal of Energy Storage",
+  "year": 2022,
+  "cites": 305,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.apenergy.2024.125086",
+  "title": "A general framework for lithium-ion battery state of health estimation: From laboratory tests to machine learning with transferability across domains",
+  "journal": "Applied Energy",
+  "year": 2025,
+  "cites": 41,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.ensm.2022.06.053",
+  "title": "Flexible battery state of health and state of charge estimation using partial charging data and deep learning",
+  "journal": "Energy Storage Materials",
+  "year": 2022,
+  "cites": 235,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.jpowsour.2025.236784",
+  "title": "Battery health features extraction and state of health estimation based on real-time online vehicle driving data",
+  "journal": "Journal of Power Sources",
+  "year": 2025,
+  "cites": 23,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.3390/en13020375",
+  "title": "SOH and RUL Prediction of Lithium-Ion Batteries Based on Gaussian Process Regression with Indirect Health Indicators",
+  "journal": "Energies",
+  "year": 2020,
+  "cites": 209,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.energy.2024.132723",
+  "title": "Enhanced multi-constraint dung beetle optimization-kernel extreme learning machine for lithium-ion battery state of health estimation with adaptive enhancement ability",
+  "journal": "Energy",
+  "year": 2024,
+  "cites": 21,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.jpowsour.2019.227281",
+  "title": "Deep Gaussian process regression for lithium-ion battery health prognosis and degradation mode diagnosis",
+  "journal": "Journal of Power Sources",
+  "year": 2020,
+  "cites": 195,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.energy.2025.135772",
+  "title": "Lithium-ion battery health state estimation based on improved snow ablation optimization algorithm-deep hybrid kernel extreme learning machine",
+  "journal": "Energy",
+  "year": 2025,
+  "cites": 20,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1109/tte.2020.3028784",
+  "title": "Lithium Battery State-of-Health Estimation via Differential Thermal Voltammetry With Gaussian Process Regression",
+  "journal": "IEEE Transactions on Transportation Electrification",
+  "year": 2021,
+  "cites": 187,
+  "areas": "Health estimation (SOH)",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.3390/batteries10090324",
+  "title": "State of Health Estimation for Lithium-Ion Battery Using Partial Incremental Capacity Curve and Transfer Learning",
+  "journal": "Batteries",
+  "year": 2024,
+  "cites": 17,
+  "areas": "Health estimation (SOH);Transfer learning",
+  "area": "Health estimation (SOH)"
+ },
+ {
+  "doi": "10.1016/j.energy.2021.120205",
+  "title": "Early prediction of battery lifetime via a machine learning based framework",
+  "journal": "Energy",
+  "year": 2021,
+  "cites": 278,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.apenergy.2025.125314",
+  "title": "A generic physics-informed machine learning framework for battery remaining useful life prediction using small early-stage lifecycle data",
+  "journal": "Applied Energy",
+  "year": 2025,
+  "cites": 54,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.est.2022.104901",
+  "title": "Lithium-ion battery capacity and remaining useful life prediction using board learning system and long short-term memory neural network",
+  "journal": "Journal of Energy Storage",
+  "year": 2022,
+  "cites": 247,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.apenergy.2024.124713",
+  "title": "Lithium-ion battery remaining useful life prediction based on interpretable deep learning and network parameter optimization",
+  "journal": "Applied Energy",
+  "year": 2025,
+  "cites": 51,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.3390/electronics10111309",
+  "title": "Machine Learning-Based Data-Driven Fault Detection/Diagnosis of Lithium-Ion Battery: A Critical Review",
+  "journal": "Electronics",
+  "year": 2021,
+  "cites": 229,
+  "areas": "Cell balancing & ECM;Cross-cutting;Digital twins;Fault & safety;Prognostics (RUL);Thermal management",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1038/s41598-025-92262-8",
+  "title": "A hybrid approach for lithium-ion battery remaining useful life prediction using signal decomposition and machine learning",
+  "journal": "Scientific Reports",
+  "year": 2025,
+  "cites": 37,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.jechem.2023.03.026",
+  "title": "The development of machine learning-based remaining useful life prediction for lithium-ion batteries",
+  "journal": "Journal of Energy Chemistry",
+  "year": 2023,
+  "cites": 223,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.energy.2025.136618",
+  "title": "Real-time prediction of battery remaining useful life using hybrid-fusion deep neural networks",
+  "journal": "Energy",
+  "year": 2025,
+  "cites": 24,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.ress.2022.108947",
+  "title": "Prediction of state of health and remaining useful life of lithium-ion battery using graph convolutional network with dual attention mechanisms",
+  "journal": "Reliability Engineering & System Safety",
+  "year": 2023,
+  "cites": 157,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.ress.2025.111392",
+  "title": "Remaining useful life prediction of lithium battery based on deep reinforcement learning fusion network",
+  "journal": "Reliability Engineering & System Safety",
+  "year": 2025,
+  "cites": 21,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.jclepro.2021.128265",
+  "title": "Early prediction of remaining useful life for Lithium-ion batteries based on a hybrid machine learning method",
+  "journal": "Journal of Cleaner Production",
+  "year": 2021,
+  "cites": 155,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1002/advs.202402608",
+  "title": "Data\u2010Driven Cycle Life Prediction of Lithium Metal\u2010Based Rechargeable Battery Based on Discharge/Charge Capacity and Relaxation Features",
+  "journal": "Advanced Science",
+  "year": 2024,
+  "cites": 17,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.ymssp.2022.109347",
+  "title": "Battery health management using physics-informed machine learning: Online degradation modeling and remaining useful life prediction",
+  "journal": "Mechanical Systems and Signal Processing",
+  "year": 2022,
+  "cites": 152,
+  "areas": "Benchmarks & data;Interpretability;Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.est.2025.118415",
+  "title": "Remaining useful life prediction for lithium-ion battery based on hybrid machine learning with Wiener process",
+  "journal": "Journal of Energy Storage",
+  "year": 2025,
+  "cites": 12,
+  "areas": "Prognostics (RUL)",
+  "area": "Prognostics (RUL)"
+ },
+ {
+  "doi": "10.1016/j.apenergy.2020.115074",
+  "title": "Incremental capacity analysis based adaptive capacity estimation for lithium-ion battery considering charging condition",
+  "journal": "Applied Energy",
+  "year": 2020,
+  "cites": 211,
+  "areas": "Charging control",
+  "area": "Charging control"
+ },
+ {
+  "doi": "10.1016/j.enconman.2025.120170",
+  "title": "Charging strategies optimization for lithium-ion battery: Heterogeneous ensemble surrogate model-assisted advanced multi-objective optimization algorithm",
+  "journal": "Energy Conversion and Management",
+  "year": 2025,
+  "cites": 32,
+  "areas": "Charging control",
+  "area": "Charging control"
+ },
+ {
+  "doi": "10.1016/j.renene.2019.08.077",
+  "title": "Optimized charging of lithium-ion battery for electric vehicles: Adaptive multistage constant current\u2013constant voltage charging strategy",
+  "journal": "Renewable Energy",
+  "year": 2020,
+  "cites": 173,
+  "areas": "Charging control",
+  "area": "Charging control"
+ },
+ {
+  "doi": "10.1109/tte.2023.3311813",
+  "title": "Data-Driven Fast Charging Optimization for Lithium-Ion Battery Using Bayesian Optimization With Fast Convergence",
+  "journal": "IEEE Transactions on Transportation Electrification",
+  "year": 2024,
+  "cites": 24,
+  "areas": "Charging control",
+  "area": "Charging control"
+ },
+ {
+  "doi": "10.1016/j.ensm.2022.12.034",
+  "title": "Machine learning-based fast charging of lithium-ion battery by perceiving and regulating internal microscopic states",
+  "journal": "Energy Storage Materials",
+  "year": 2023,
+  "cites": 113,
+  "areas": "Charging control",
+  "area": "Charging control"
+ },
+ {
+  "doi": "10.1038/s41598-025-30602-4",
+  "title": "Physics-informed hybrid reinforcement learning for estimating lithium-ion battery state of health",
+  "journal": "Scientific Reports",
+  "year": 2025,
+  "cites": 21,
+  "areas": "Charging control;Transfer learning",
+  "area": "Charging control"
+ },
+ {
+  "doi": "10.1016/j.applthermaleng.2022.118503",
+  "title": "Multi-objective optimization design and experimental investigation for a parallel liquid cooling-based Lithium-ion battery module under fast charging",
+  "journal": "Applied Thermal Engineering",
+  "year": 2022,
+  "cites": 101,
+  "areas": "Charging control",
+  "area": "Charging control"
+ },
+ {
+  "doi": "10.1016/j.est.2024.111755",
+  "title": "A fast balance optimization approach for charging enhancement of lithium-ion battery packs through deep reinforcement learning",
+  "journal": "Journal of Energy Storage",
+  "year": 2024,
+  "cites": 15,
+  "areas": "Charging control",
+  "area": "Charging control"
+ },
+ {
+  "doi": "10.1016/j.est.2024.112046",
+  "title": "Optimization charging method of lithium-ion battery based on multi-objective BBO algorithm",
+  "journal": "Journal of Energy Storage",
+  "year": 2024,
+  "cites": 15,
+  "areas": "Charging control",
+  "area": "Charging control"
+ },
+ {
+  "doi": "10.3390/batteries10070220",
+  "title": "Exploring Lithium-Ion Battery Degradation: A Concise Review of Critical Factors, Impacts, Data-Driven Degradation Estimation Techniques, and Sustainable Directions for Energy Storage Systems",
+  "journal": "Batteries",
+  "year": 2024,
+  "cites": 190,
+  "areas": "Thermal management",
+  "area": "Thermal management"
+ },
+ {
+  "doi": "10.1016/j.energy.2023.127033",
+  "title": "Data-driven lithium-ion batteries capacity estimation based on deep transfer learning using partial segment of charging/discharging data",
+  "journal": "Energy",
+  "year": 2023,
+  "cites": 205,
+  "areas": "Thermal management",
+  "area": "Thermal management"
+ },
+ {
+  "doi": "10.1016/j.jpowsour.2024.235015",
+  "title": "Advancing battery safety: Integrating multiphysics and machine learning for thermal runaway prediction in lithium-ion battery module",
+  "journal": "Journal of Power Sources",
+  "year": 2024,
+  "cites": 65,
+  "areas": "Thermal management",
+  "area": "Thermal management"
+ },
+ {
+  "doi": "10.1016/j.jpowsour.2021.229727",
+  "title": "Performance analysis on liquid-cooled battery thermal management for electric vehicles based on machine learning",
+  "journal": "Journal of Power Sources",
+  "year": 2021,
+  "cites": 181,
+  "areas": "Thermal management",
+  "area": "Thermal management"
+ },
+ {
+  "doi": "10.1016/j.etran.2024.100337",
+  "title": "Prediction of thermal runaway for a lithium-ion battery through multiphysics-informed DeepONet with virtual data",
+  "journal": "eTransportation",
+  "year": 2024,
+  "cites": 58,
+  "areas": "Thermal management",
+  "area": "Thermal management"
+ },
+ {
+  "doi": "10.3390/batteries10120442",
+  "title": "A Comprehensive Review of Multiple Physical and Data-Driven Model Fusion Methods for Accurate Lithium-Ion Battery Inner State Factor Estimation",
+  "journal": "Batteries",
+  "year": 2024,
+  "cites": 54,
+  "areas": "Thermal management",
+  "area": "Thermal management"
+ },
+ {
+  "doi": "10.1016/j.energy.2023.126855",
+  "title": "Lithium-ion battery health estimation with real-world data for electric vehicles",
+  "journal": "Energy",
+  "year": 2023,
+  "cites": 150,
+  "areas": "Thermal management",
+  "area": "Thermal management"
+ },
+ {
+  "doi": "10.1016/j.apenergy.2024.123248",
+  "title": "Multi-source domain transfer learning with small sample learning for thermal runaway diagnosis of lithium-ion battery",
+  "journal": "Applied Energy",
+  "year": 2024,
+  "cites": 33,
+  "areas": "Fault & safety;Thermal management",
+  "area": "Thermal management"
+ },
+ {
+  "doi": "10.1016/j.energy.2020.118866",
+  "title": "An Intelligent Fault Diagnosis Method for Lithium Battery Systems Based on Grid Search Support Vector Machine",
+  "journal": "Energy",
+  "year": 2021,
+  "cites": 315,
+  "areas": "Fault & safety",
+  "area": "Fault & safety"
+ },
+ {
+  "doi": "10.1016/j.etran.2023.100254",
+  "title": "Challenges and outlook for lithium-ion battery fault diagnosis methods from the laboratory to real world applications",
+  "journal": "eTransportation",
+  "year": 2023,
+  "cites": 245,
+  "areas": "Fault & safety",
+  "area": "Fault & safety"
+ },
+ {
+  "doi": "10.3390/app15020516",
+  "title": "Machine Learning-Based Lithium Battery State of Health Prediction Research",
+  "journal": "Applied Sciences",
+  "year": 2025,
+  "cites": 36,
+  "areas": "Fault & safety",
+  "area": "Fault & safety"
+ },
+ {
+  "doi": "10.3390/wevj16020107",
+  "title": "Data-Driven Modeling of Electric Vehicle Charging Sessions Based on Machine Learning Techniques",
+  "journal": "World Electric Vehicle Journal",
+  "year": 2025,
+  "cites": 22,
+  "areas": "Fault & safety",
+  "area": "Fault & safety"
+ },
+ {
+  "doi": "10.1016/j.etran.2025.100418",
+  "title": "A multi-scenario data-driven approach for anomaly detection in electric vehicle battery systems",
+  "journal": "eTransportation",
+  "year": 2025,
+  "cites": 18,
+  "areas": "Fault & safety",
+  "area": "Fault & safety"
+ },
+ {
+  "doi": "10.1016/j.jpowsour.2020.229108",
+  "title": "Data driven estimation of electric vehicle battery state-of-charge informed by automotive simulations and multi-physics modeling",
+  "journal": "Journal of Power Sources",
+  "year": 2021,
+  "cites": 159,
+  "areas": "Fault & safety",
+  "area": "Fault & safety"
+ },
+ {
+  "doi": "10.1016/j.jechem.2025.04.025",
+  "title": "Deep learning-driven detection of lithium-plating-type defects for battery manufacturing via formation and capacity grading data",
+  "journal": "Journal of Energy Chemistry",
+  "year": 2025,
+  "cites": 14,
+  "areas": "Fault & safety",
+  "area": "Fault & safety"
+ },
+ {
+  "doi": "10.1016/j.est.2023.107575",
+  "title": "A multi-fault diagnosis method for lithium-ion battery pack using curvilinear Manhattan distance evaluation and voltage difference analysis",
+  "journal": "Journal of Energy Storage",
+  "year": 2023,
+  "cites": 154,
+  "areas": "Fault & safety",
+  "area": "Fault & safety"
+ },
+ {
+  "doi": "10.1002/batt.202300046",
+  "title": "Machine Learning in Lithium\u2010Ion Battery Cell Production: A Comprehensive Mapping Study",
+  "journal": "Batteries & Supercaps",
+  "year": 2023,
+  "cites": 35,
+  "areas": "Cell balancing & ECM;Digital twins",
+  "area": "Cell balancing & ECM"
+ },
+ {
+  "doi": "10.1016/j.est.2023.106931",
+  "title": "Rethinking lithium-ion battery management: Eliminating routine cell balancing enhances hazardous fault detection",
+  "journal": "Journal of Energy Storage",
+  "year": 2023,
+  "cites": 20,
+  "areas": "Cell balancing & ECM",
+  "area": "Cell balancing & ECM"
+ },
+ {
+  "doi": "10.1016/j.est.2023.108753",
+  "title": "Corrigendum to \u201cRethinking lithium-ion battery management: Eliminating routine cell balancing enhances hazardous fault detection\u201d [J. Energy Storage vol. 63, (July 2023), page 106931]",
+  "journal": "Journal of Energy Storage",
+  "year": 2023,
+  "cites": 0,
+  "areas": "Cell balancing & ECM",
+  "area": "Cell balancing & ECM"
+ },
+ {
+  "doi": "10.1038/s41467-023-38458-w",
+  "title": "Deep learning to estimate lithium-ion battery state of health without additional degradation experiments",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "cites": 355,
+  "areas": "Transfer learning",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.rser.2021.111903",
+  "title": "Machine learning in state of health and remaining useful life estimation: Theoretical and technological development in battery degradation modelling",
+  "journal": "Renewable and Sustainable Energy Reviews",
+  "year": 2022,
+  "cites": 316,
+  "areas": "Benchmarks & data;Second life",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.ensm.2022.05.007",
+  "title": "Battery degradation prediction against uncertain future conditions with recurrent neural network enabled deep learning",
+  "journal": "Energy Storage Materials",
+  "year": 2022,
+  "cites": 234,
+  "areas": "Graph networks",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.energy.2023.128461",
+  "title": "Battery SOC estimation from EIS data based on machine learning and equivalent circuit model",
+  "journal": "Energy",
+  "year": 2023,
+  "cites": 178,
+  "areas": "Other;Second life",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.jechem.2025.08.093",
+  "title": "A generalizable physics-informed neural network for lithium-ion battery SOH estimation utilizing partial charging segments",
+  "journal": "Journal of Energy Chemistry",
+  "year": 2026,
+  "cites": 28,
+  "areas": "Physics-informed",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.applthermaleng.2023.120482",
+  "title": "Temperature prediction of lithium-ion battery based on artificial neural network model",
+  "journal": "Applied Thermal Engineering",
+  "year": 2023,
+  "cites": 168,
+  "areas": "Physics-informed",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.jechem.2022.11.036",
+  "title": "Physics-informed neural network approach for heat generation rate estimation of lithium-ion battery under various driving conditions",
+  "journal": "Journal of Energy Chemistry",
+  "year": 2023,
+  "cites": 143,
+  "areas": "Physics-informed",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1109/tpel.2021.3117788",
+  "title": "State-of-Health Estimation for Lithium-Ion Batteries Using Domain Adversarial Transfer Learning",
+  "journal": "IEEE Transactions on Power Electronics",
+  "year": 2022,
+  "cites": 141,
+  "areas": "Transfer learning",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.est.2023.106688",
+  "title": "Machine learning assisted advanced battery thermal management system: A state-of-the-art review",
+  "journal": "Journal of Energy Storage",
+  "year": 2023,
+  "cites": 106,
+  "areas": "Cross-cutting",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.measurement.2025.118985",
+  "title": "Lithium-ion battery state estimation based on adaptive physics-informed neural network of electrochemical model",
+  "journal": "Measurement",
+  "year": 2026,
+  "cites": 15,
+  "areas": "Physics-informed",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.energy.2025.139753",
+  "title": "Physical informed neural network for SOH estimation of lithium-ion battery with electrochemical mechanism",
+  "journal": "Energy",
+  "year": 2026,
+  "cites": 14,
+  "areas": "Physics-informed",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.ress.2022.108818",
+  "title": "Multiple health indicators fusion-based health prognostic for lithium-ion battery using transfer learning and hybrid deep learning method",
+  "journal": "Reliability Engineering & System Safety",
+  "year": 2023,
+  "cites": 105,
+  "areas": "Transfer learning",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.est.2025.119450",
+  "title": "A CNN-LSTM hybrid network with transfer learning for accurate lithium-ion battery state of health estimation",
+  "journal": "Journal of Energy Storage",
+  "year": 2026,
+  "cites": 13,
+  "areas": "Transfer learning",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.conengprac.2022.105202",
+  "title": "Interpretable machine learning for battery capacities prediction and coating parameters analysis",
+  "journal": "Control Engineering Practice",
+  "year": 2022,
+  "cites": 86,
+  "areas": "Interpretability",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.energy.2022.125003",
+  "title": "Lifecycle assessment of diesel, diesel-electric and hydrogen fuel cell transit buses with fuel cell degradation and battery aging using machine learning techniques",
+  "journal": "Energy",
+  "year": 2022,
+  "cites": 83,
+  "areas": "Benchmarks & data",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.egyai.2022.100188",
+  "title": "Battery state-of-charge estimation using machine learning analysis of ultrasonic signatures",
+  "journal": "Energy and AI",
+  "year": 2022,
+  "cites": 79,
+  "areas": "Second life",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.ress.2026.112416",
+  "title": "Domain-specific large language model-driven risk analysis of battery energy storage systems",
+  "journal": "Reliability Engineering & System Safety",
+  "year": 2026,
+  "cites": 6,
+  "areas": "Foundation models",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.3390/batteries12040115",
+  "title": "An Adaptive-Weight Physics-Informed Neural Network Optimized by Grey Wolf Optimizer for Lithium-Ion Battery State of Health Estimation",
+  "journal": "Batteries",
+  "year": 2026,
+  "cites": 5,
+  "areas": "Physics-informed",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.isci.2025.114518",
+  "title": "Lithium-ion power battery state of health evaluation for electric vehicles based on multi-source transfer learning",
+  "journal": "iScience",
+  "year": 2026,
+  "cites": 5,
+  "areas": "Transfer learning",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.energy.2025.139417",
+  "title": "LLM-MSIformer: A method for lithium-ion battery state of health estimation based on a large language model and multi-time scale interval transformer",
+  "journal": "Energy",
+  "year": 2026,
+  "cites": 4,
+  "areas": "Foundation models",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1002/anie.202214037",
+  "title": "Untangling Degradation Chemistries of Lithium\u2010Sulfur Batteries Through Interpretable Hybrid Machine Learning",
+  "journal": "Angewandte Chemie International Edition",
+  "year": 2022,
+  "cites": 51,
+  "areas": "Interpretability",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.3390/batteries12050149",
+  "title": "Physics-Informed and Explainable Machine Learning for State-of-Health Estimation of Second-Life Lithium-Ion Batteries Under Sparse Cycling",
+  "journal": "Batteries",
+  "year": 2026,
+  "cites": 3,
+  "areas": "Second life",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.est.2026.123023",
+  "title": "Battery state-of-power estimation: A machine learning battery model with numerical searching approach",
+  "journal": "Journal of Energy Storage",
+  "year": 2026,
+  "cites": 3,
+  "areas": "Second life",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1007/s00521-022-07291-5",
+  "title": "A physics-informed dynamic deep autoencoder for accurate state-of-health prediction of lithium-ion battery",
+  "journal": "Neural Computing and Applications",
+  "year": 2022,
+  "cites": 50,
+  "areas": "Physics-informed",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1109/jrfid.2022.3211841",
+  "title": "Physics-Informed Recurrent Neural Network With Fractional-Order Gradients for State-of-Charge Estimation of Lithium-Ion Battery",
+  "journal": "IEEE Journal of Radio Frequency Identification",
+  "year": 2022,
+  "cites": 46,
+  "areas": "Physics-informed",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.ensm.2026.104983",
+  "title": "HA-LLM: A domain knowledge-enhanced large language model for vehicle-cloud collaborative battery health awareness",
+  "journal": "Energy Storage Materials",
+  "year": 2026,
+  "cites": 2,
+  "areas": "Foundation models",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1016/j.apenergy.2026.127394",
+  "title": "Internal temperature sensing for lithium-ion battery under ultrahigh-rate discharge conditions using physics-informed neural network",
+  "journal": "Applied Energy",
+  "year": 2026,
+  "cites": 2,
+  "areas": "Physics-informed",
+  "area": "Cross-cutting"
+ },
+ {
+  "doi": "10.1038/s41560-019-0356-8",
+  "title": "Data-driven prediction of battery cycle life before capacity degradation",
+  "journal": "Nature Energy",
+  "year": 2019,
+  "cites": 3002,
+  "areas": "seed",
+  "area": "Prognostics (RUL)",
+  "seed": true
+ },
+ {
+  "doi": "10.1038/s41586-020-1994-5",
+  "title": "Closed-loop optimization of fast-charging protocols for batteries with machine learning",
+  "journal": "Nature",
+  "year": 2020,
+  "cites": 1078,
+  "areas": "seed",
+  "area": "Charging control",
+  "seed": true
+ },
+ {
+  "doi": "10.1038/s41467-020-15235-7",
+  "title": "Identifying degradation patterns of lithium ion batteries from impedance spectroscopy using machine learning",
+  "journal": "Nature Communications",
+  "year": 2020,
+  "cites": 703,
+  "areas": "seed",
+  "area": "Health estimation (SOH)",
+  "seed": true
+ },
+ {
+  "doi": "10.1038/s42256-020-0156-7",
+  "title": "Predicting the state of charge and health of batteries using data-driven machine learning",
+  "journal": "Nature Machine Intelligence",
+  "year": 2020,
+  "cites": 719,
+  "areas": "seed",
+  "area": "Cross-cutting",
+  "seed": true
+ },
+ {
+  "doi": "10.1016/j.joule.2019.11.018",
+  "title": "Battery Lifetime Prognostics",
+  "journal": "Joule",
+  "year": 2020,
+  "cites": 1239,
+  "areas": "seed",
+  "area": "Cross-cutting",
+  "seed": true
+ }
+]

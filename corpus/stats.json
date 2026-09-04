@@ -1,0 +1,220 @@
+{
+ "n": 103,
+ "by_year": {
+  "2019": 1,
+  "2020": 9,
+  "2021": 13,
+  "2022": 13,
+  "2023": 22,
+  "2024": 20,
+  "2025": 18,
+  "2026": 7
+ },
+ "by_area": {
+  "Cell balancing & ECM": 2,
+  "Charging control": 8,
+  "Cross-cutting": 24,
+  "Fault & safety": 9,
+  "Health estimation (SOH)": 20,
+  "Prognostics (RUL)": 15,
+  "State estimation (SOC)": 17,
+  "Thermal management": 8
+ },
+ "by_method": {
+  "Shallow ML": 29,
+  "Deep learning": 18,
+  "Physics-informed": 12,
+  "Review / perspective": 12,
+  "Hybrid physics+ML": 9,
+  "Optimization-augmented control": 6,
+  "Transfer learning": 5,
+  "Bayesian optimization": 3,
+  "Filter-based hybrid": 3,
+  "Foundation model / LLM": 2,
+  "Meta-heuristic-optimized DL": 2,
+  "Graph neural network": 1,
+  "Reinforcement learning": 1
+ },
+ "by_chem": {
+  "NMC": 54,
+  "various": 17,
+  "LFP": 15,
+  "mixed": 14,
+  "Li-S": 1,
+  "LCO": 1,
+  "Li-metal": 1
+ },
+ "by_data": {
+  "self-lab": 36,
+  "review": 15,
+  "simulation": 12,
+  "Severson-MATR": 11,
+  "real-vehicle": 10,
+  "EIS-lab": 6,
+  "NASA": 6,
+  "CALCE": 6,
+  "mixed": 1
+ },
+ "by_valid": {
+  "cross-cell holdout": 24,
+  "experimental hardware": 19,
+  "review synthesis": 15,
+  "within-cell split": 12,
+  "online/real-vehicle": 9,
+  "cross-chemistry holdout": 7,
+  "cross-validation": 5,
+  "simulation": 4,
+  "simulation plus hardware spot-check": 4,
+  "cross-domain holdout": 3,
+  "case study": 1
+ },
+ "by_journal": {
+  "Journal of Energy Storage": 15,
+  "Energy": 13,
+  "Applied Energy": 9,
+  "Journal of Power Sources": 6,
+  "Energy Storage Materials": 5,
+  "Reliability Engineering & System Safety": 4,
+  "Journal of Energy Chemistry": 4,
+  "IEEE Transactions on Transportation Electrification": 3,
+  "eTransportation": 3,
+  "Applied Thermal Engineering": 3,
+  "Nature Communications": 2,
+  "Energy and AI": 2
+ },
+ "method_group_by_year": {
+  "2019": {
+   "Classical ML": 1
+  },
+  "2020": {
+   "Optimization-augmented learning": 2,
+   "Classical ML": 4,
+   "Review / perspective": 2,
+   "Physics-informed / hybrid": 1
+  },
+  "2021": {
+   "Review / perspective": 2,
+   "Classical ML": 7,
+   "Physics-informed / hybrid": 2,
+   "Optimization-augmented learning": 1,
+   "Deep learning": 1
+  },
+  "2022": {
+   "Classical ML": 4,
+   "Deep learning": 3,
+   "Physics-informed / hybrid": 3,
+   "Transfer / domain adaptation": 1,
+   "Review / perspective": 1,
+   "Optimization-augmented learning": 1
+  },
+  "2023": {
+   "Classical ML": 7,
+   "Optimization-augmented learning": 1,
+   "Deep learning": 6,
+   "Physics-informed / hybrid": 4,
+   "Review / perspective": 3,
+   "Transfer / domain adaptation": 1
+  },
+  "2024": {
+   "Classical ML": 4,
+   "Optimization-augmented learning": 5,
+   "Review / perspective": 1,
+   "Physics-informed / hybrid": 5,
+   "Deep learning": 4,
+   "Transfer / domain adaptation": 1
+  },
+  "2025": {
+   "Optimization-augmented learning": 1,
+   "Review / perspective": 3,
+   "Transfer / domain adaptation": 2,
+   "Deep learning": 5,
+   "Classical ML": 2,
+   "Physics-informed / hybrid": 4,
+   "Reinforcement / control learning": 1
+  },
+  "2026": {
+   "Foundation models / LLM": 2,
+   "Physics-informed / hybrid": 5
+  }
+ },
+ "group_of": {
+  "Shallow ML": "Classical ML",
+  "Deep learning": "Deep learning",
+  "Physics-informed": "Physics-informed / hybrid",
+  "Hybrid physics+ML": "Physics-informed / hybrid",
+  "Filter-based hybrid": "Physics-informed / hybrid",
+  "Meta-heuristic-optimized DL": "Optimization-augmented learning",
+  "Optimization-augmented control": "Optimization-augmented learning",
+  "Bayesian optimization": "Optimization-augmented learning",
+  "Reinforcement learning": "Reinforcement / control learning",
+  "Transfer learning": "Transfer / domain adaptation",
+  "Graph neural network": "Deep learning",
+  "Foundation model / LLM": "Foundation models / LLM",
+  "Review / perspective": "Review / perspective"
+ },
+ "area_by_year": {
+  "Cell balancing & ECM": {
+   "2023": 1,
+   "2024": 1
+  },
+  "Charging control": {
+   "2020": 2,
+   "2023": 2,
+   "2024": 3,
+   "2025": 1
+  },
+  "Cross-cutting": {
+   "2020": 1,
+   "2022": 6,
+   "2023": 8,
+   "2024": 3,
+   "2025": 2,
+   "2026": 4
+  },
+  "Fault & safety": {
+   "2021": 2,
+   "2023": 2,
+   "2024": 3,
+   "2025": 2
+  },
+  "Health estimation (SOH)": {
+   "2020": 2,
+   "2021": 3,
+   "2022": 2,
+   "2023": 4,
+   "2024": 3,
+   "2025": 4,
+   "2026": 2
+  },
+  "Prognostics (RUL)": {
+   "2019": 1,
+   "2020": 1,
+   "2021": 3,
+   "2022": 2,
+   "2023": 1,
+   "2024": 1,
+   "2025": 6
+  },
+  "State estimation (SOC)": {
+   "2020": 3,
+   "2021": 4,
+   "2022": 2,
+   "2023": 1,
+   "2024": 5,
+   "2025": 2
+  },
+  "Thermal management": {
+   "2021": 1,
+   "2022": 1,
+   "2023": 3,
+   "2024": 1,
+   "2025": 1,
+   "2026": 1
+  }
+ },
+ "records_retrieved": 3000,
+ "records_after_dedupe": 1550,
+ "on_topic_after_gate": 883,
+ "after_venue_screen": 113,
+ "final_corpus": 103
+}

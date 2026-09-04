@@ -1,0 +1,143 @@
+[
+ {
+  "doi": "10.1109/itec.2019.8790543",
+  "title": "Li-ion Battery State of Charge Estimation Using Long Short-Term Memory Recurrent Neural Network with Transfer Learning",
+  "year": 2019,
+  "venue": "IEEE Transportation Electrification Conference and Expo",
+  "abstract": "To develop more efficient, reliable and affordable electrified vehicles, it is very desirable to improve the accuracy of the battery state of charge (SOC) estimation. However, due to the nonlinear, temperature and state of charge dependent behaviour of Li-ion batteries, SOC estimation is still a significant engineering challenge. Traditional methods such as the Kalman filter require significant characterization testing, model development, and filter design and tuning efforts which must be tailored to each battery type. To help solve this problem, this work proposes a novel method to address SOC estimation using a deep neural network (DNN) with Transfer Learning (TL). Transfer learning is a method that uses the learnable parameters from a trained DNN to help train another DNN. Transfer learning has the potential to improve SOC estimation as well as reduce DNN training time and data required. Results show up to 64% better accuracy and similar or better accuracy with a reduced amount of training data.",
+  "val_tags": [
+   "not stated in abstract"
+  ]
+ },
+ {
+  "doi": "10.1109/vppc53923.2021.9699273",
+  "title": "State of Health Estimation using Machine Learning for Li-ion battery on Electric Vehicles",
+  "year": 2021,
+  "venue": "Vehicle Power and Propulsion Conference",
+  "abstract": "Prognostics in State of Health (SoH) of lithium-ion batteries (LIBs) holds high importance in ensuring the reliability and safe electrification of battery systems such as in mobile electronic devices, electric vehicles (EVs), and grid battery energy storage systems (BESS). However, due to reasons such as the SoH dependency on a chain of historical data, both internal and external to the battery systems, the SoH estimation is not directly measured. Indirectly, several electrochemical in-situ measurement methods are employed as non-destructive determination of SoH such as ICA, DVA, and EIS, yet forming more post-mortem type of analysis. Alternatively, the machine learning (ML) techniques in data mining for predictions shown high caliber in unambiguously identifying the multi-scale, multi-factorial and complex degradation patterns of LIBs. This work investigates a couple of ML techniques, FNN and LSTM models, to train on a dataset on LIB degradation profiles and improve them for SoH predictions on new battery aging cycles. Here, a publicly available dataset at NASA website has used to train the models. Further, it is expected to explore the performance and the reliability of the LSTM for SoH predictions and plans to extend the solution for other types of batteries.",
+  "val_tags": [
+   "public dataset"
+  ]
+ },
+ {
+  "doi": "10.1109/itec53557.2022.9813961",
+  "title": "Battery Dual Extended Kalman Filter State of Charge and Health Estimation Strategy for Traction Applications",
+  "year": 2022,
+  "venue": "IEEE Transportation Electrification Conference and Expo",
+  "abstract": "The growing market of electrified vehicles requires efforts from car manufacturers to build robust systems to deal with all types of situations their products will face in customers\u2019 hands. A major system of electrified vehicles is the energy storage unit. The complexity of batteries lies in their nonlinear behaviour that is highly dependent on external factors such as temperature and load dynamics. To handle these conditions, the battery management system relies on algorithms that estimate the state of the storage unit. State of charge (SOC) estimation, which is widely studied in industry and academia, is commonly considered one of the most significant functions of a battery management system (BMS). State of health (SOH) estimation is likewise important as it is necessary to support more consistent SOC and state of power (SOP) estimation. In this paper, a dual Extended Kalman Filter (DEKF) model is proposed to estimate the battery state of charge and capacity state of health across the battery lifespan. The DEKF model is demonstrated to accurately estimate SOC as the battery ages, with an average RMS error of 1.0% for SOH varying from 100% to 80%. The model is also shown to be robust against initial SOC and sensor error, demonstrating its applicability to real world conditions.",
+  "val_tags": [
+   "not stated in abstract"
+  ]
+ },
+ {
+  "doi": "10.23919/acc55779.2023.10156326",
+  "title": "State of Charge and State of Health estimation in large lithium-ion battery packs",
+  "year": 2023,
+  "venue": "American Control Conference",
+  "abstract": "Accurate, real-time state of charge (SoC) and state of health (SoH) estimation is essential for lithium-ion battery management systems to ensure safe and extended life of battery packs. For the large battery packs associated with battery electric locomotives and grid applications, computational efficiency is critical, especially for onboard implementation. This paper presents real-time SoC and batch least squares SoH and current sensor bias estimation using measured cell voltage and current from large battery packs. An online gradient-based SoH estimator, coupled with the online SoC estimator, provides real-time onboard health monitoring. The online and offline SoC-SoH algorithms are tested using data from a battery electric locomotive. The SoC-SoH estimation results show tightly clustered capacity, resistance, and current sensor bias estimates for an 11-cell module. The batch and online capacity estimates match to within 5% after the startup transients decay.",
+  "val_tags": [
+   "not stated in abstract"
+  ]
+ },
+ {
+  "doi": "10.23919/acc50511.2021.9482734",
+  "title": "Online State of Charge Estimation of Lithium-ion Battery Cells: A Multiple Model Adaptive Estimation Approach",
+  "year": 2021,
+  "venue": "American Control Conference",
+  "abstract": "Accurate state of charge (SOC) estimation of Lithium-ion battery cells is critical since they are commonly used in a variety of applications. However, the complex chemical reactions inside the cell makes its model nonlinear, which increases the difficulty of the SOC estimation. An accurate online estimation technique to determine the SOC estimate can improve the safety of Lithium-ion cells. More importantly, cell performance and life cycle can also be improved. In this work, the nonlinear state estimation problem of determining SOC is converted to a linear estimation problem solved in a parallel fashion. Multiple model adaptive estimation (MMAE) technique based on a bank of Kalman filters is used to adaptively estimate the SOC. Simulation results for a LiFePO4 Lithium-ion battery cell demonstrate that this technique provides smaller estimation error compared to the Extended Kalman filter.",
+  "val_tags": [
+   "simulation"
+  ]
+ },
+ {
+  "doi": "10.1109/itec55900.2023.10187012",
+  "title": "Lithium-ion Battery State-of-Health Estimation via Histogram Data, Principal Component Analysis, and Machine Learning",
+  "year": 2023,
+  "venue": "IEEE Transportation Electrification Conference and Expo",
+  "abstract": "Lithium-ion batteries are widely used in electric vehicle powertrain systems. As batteries age, their state of health (SOH), indicated by their usable capacity and power capability, decreases. For reliable battery operation, accurate estimation and prediction of SOH are essential. This paper proposes an algorithm for estimating battery capacity SOH from an open-source fast charging dataset with many different charge profile types. Histogram data is created from the measured time domain data and fed into a feedforward neural network (FNN). To capture the impact of different charge profiles on aging, current and state of charge (SOC) are multiplied together to create an additional synthetic input to the estimator. To reduce the number of inputs to the FNN to only those that contain valuable information, we use principal component analysis to reduce the total number of inputs by 80%. An SOH algorithm is proposed that can estimate capacity throughout the battery's life with a 1.03% root mean square percentage error (RMSPE) and 0.68% mean absolute percentage error (MAPE).",
+  "val_tags": [
+   "not stated in abstract"
+  ]
+ },
+ {
+  "doi": "10.1109/apec43580.2023.10131605",
+  "title": "Overview of Machine Learning-Enabled Battery State Estimation Methods",
+  "year": 2023,
+  "venue": "Applied Power Electronics Conference",
+  "abstract": "To ensure safe usage and robust performance of energy storage batteries, accurate state-of-charge (SOC) and state-of-health (SOH) estimations are required. Due to recent breakthroughs in machine learning and artificial intelligence methods, data-driven methods have attracted increased attention. This paper reports state-of-the-art research progress in machine learning-enabled methods for SOC and SOH estimations. Comprehensive comparisons are made in terms of the dataset, estimation accuracy, and battery type to provide a clear picture for SOC and SOH estimation. Moreover, the challenges and research opportunities on future SOC and SOH estimation are disclosed.",
+  "val_tags": [
+   "not stated in abstract"
+  ]
+ },
+ {
+  "doi": "10.23919/ecc54610.2021.9655199",
+  "title": "Battery State of Health Estimation via Reinforcement Learning",
+  "year": 2021,
+  "venue": "European Control Conference",
+  "abstract": "The state of health of a battery characterizes its performance in terms of loss of capacity compared to the beginning of its life. This paper proposes a reinforcement learning algorithm for identifying the capacity of lithium-ion batteries. The training phase of the algorithm is based on data derived from constant current and constant voltage charging operations. The technique exploits a state observer based on a dynamic model of the battery and on the capacity estimation obtained with the reinforcement learning technique. The reward is defined as the error between the estimated and measured battery voltage. The effectiveness of the proposed solution is validated by considering different C-rates battery charging.",
+  "val_tags": [
+   "not stated in abstract"
+  ]
+ },
+ {
+  "doi": "10.1109/ccdc55256.2022.10033695",
+  "title": "State-of-health estimation of lithium-ion battery based on feature transfer learning",
+  "year": 2022,
+  "venue": "Chinese Control and Decision Conference",
+  "abstract": "For overcoming the data scarcity faced in state-of-health (SOH) estimation of lithium-ion batteries, this paper proposes a novel, hybrid, deep-transfer learning strategy called CNN-BiLSTM-MMD. Combining convolutional neural network (CNN) with bidirectional long short-term memory (BiLSTM) neural network, a CNN-BiLSTM is created to be the base model of CNN-BiLSTM-MMD. The knowledge learned from relevant battery data is transferred into the CNN-BiLSTM through feature transfer learning based on the maximum mean difference (MMD). Our method can make up for the lack of information caused by the insufficient training dataset, and realize high-precision lithium-ion battery health monitoring based on limited historical measurements. Compared to some existing data-driven methods and parameter-based transfer learning, the experiments carried on the NASA dataset demonstrate our approach hits lower average root mean square error(ARMSE), 0.01469, in the case of the limited training dataset.",
+  "val_tags": [
+   "hardware/experimental",
+   "public dataset"
+  ]
+ },
+ {
+  "doi": "10.1109/vppc46532.2019.8952458",
+  "title": "State of Charge Estimation of LiFePO4 Battery Used in Electric Vehicles Using Support Vector Regression, PCA and DP Battery Model",
+  "year": 2019,
+  "venue": "Vehicle Power and Propulsion Conference",
+  "abstract": "This paper presents a new methodology for Stateof- Charge (SoC) estimation based on Support Vector Regression (SVR), Principal component Analysis (PCA) and the Dual Polarization (DP) battery model. The proposed methodology considers several factors that are significant for the prediction of battery current in Electric Vehicles (EVs) such as: speed, acceleration, voltage, pedal position; this information is then used as input to the DP battery model. Battery parameters were estimated using the Nonlinear Least Square (NLS) algorithm.",
+  "val_tags": [
+   "not stated in abstract"
+  ]
+ },
+ {
+  "doi": "10.23919/acc60939.2024.10644628",
+  "title": "Weaknesses and Improvements of the Extended Kalman Filter for Battery State-of-Charge and State-of-Health Estimation",
+  "year": 2024,
+  "venue": "American Control Conference",
+  "abstract": "Battery management systems (BMS) are essential for ensuring battery performance and safety. Accurate estimation of the State of Charge (SOC) and State of Health (SOH), for example, are critical. However, utilizing the conventional Extended Kalman Filter (EKF) for SOC and SOH co-estimation is often challenging due to problems such as overconfident covariance estimation, overly simplistic assumptions about pro-cess noise and measurement noise covariance matrices, and the shift of the open circuit voltage (OCV) curve as the cell ages. To address these issues, this paper introduces an improved EKF design for co-estimating the SOC and SOH. The proposed approach incorporates innovative strategies to counteract covariance pitfalls, calculates the optimal covariance matrix configuration objectively, and incorporates OCV shifts from aging. Comparative simulations underscore the superiority of our method against traditional EKF and Unscented Kalman Filter (UKF) techniques. The code is available at https://github.com/Shida-Jiang/EKF_UKF_SOCSOH_estimation.",
+  "val_tags": [
+   "simulation"
+  ]
+ },
+ {
+  "doi": "10.1109/vppc55846.2022.10003444",
+  "title": "Machine Learning Applied to Battery Prognostics based on Advanced State of Health Estimation",
+  "year": 2022,
+  "venue": "Vehicle Power and Propulsion Conference",
+  "abstract": "Lithium Ion batteries are very attractive technology in the field of electric energy-storage devices with high energy and power densities. Knowledge of lithium-ion lifetime and aging acceleration factors is a crucial aspect for fruitful market introduction, including automotive and embedded applications. The degradation of batteries through various mechanisms over time is due to several factors, such as: temperature, voltage, time for calendar aging, Depth Of Discharge (DOD), State Of Charge (SOC), range and current rate. That\u2019s why it is extremely important to get an accurate prediction of the factors that cause battery degradation. This paper analyzes the extent to which these factors cause battery degradation. Our approach has been tested on the Massachusetts Institute of Technology (MIT) datasets, and the experimental results show the effectiveness of the proposed approach.",
+  "val_tags": [
+   "hardware/experimental"
+  ]
+ },
+ {
+  "doi": "10.1109/vppc46532.2019.8952284",
+  "title": "Real-Time State of Charge Estimation of Electrochemical Model for Lithium-Ion Battery",
+  "year": 2019,
+  "venue": "Vehicle Power and Propulsion Conference",
+  "abstract": "This paper proposes the real-time Kalman filter based observer for Lithium-ion concentration estimation for the electrochemical battery model. Since the computation limitation of real-time battery management system (BMS) micro-processor, the battery model which is utilized in observer has been further simplified. In this paper, the Kalman filter based observer is applied on a reduced order model of single particle model to reduce computational burden for real-time applications. Both solid phase surface lithium concentration and battery state of charge (SoC) can be estimated with real-time capability. Software simulation results and the availability comparison of observers in different Hardware-in- the-loop simulation setups demonstrate the performance of the proposed method in state estimation and real-time application.",
+  "val_tags": [
+   "simulation"
+  ]
+ },
+ {
+  "doi": "10.1109/vppc53923.2021.9699201",
+  "title": "Li-ion battery State-of-Charge estimation using computationally efficient neural network models",
+  "year": 2021,
+  "venue": "Vehicle Power and Propulsion Conference",
+  "abstract": "Li-ion battery State-of-Charge (SOC) estimation is a complex challenge for battery management systems designers, due to the battery's non-linear behaviour at different operating conditions and ageing levels. As a possible solution, multiple machine learning models have been proposed for SOC estimation throughout the years. These provide an advantage over model-based methods, as they do not require a deep knowledge and study of the battery's internal behaviour. However, many of these proposed models could not be considered due to their complexity. The high number of required stored parameters and/or elevated memory consumption during estimation may pose challenges to the application of these methods. Therefore, in this paper, several feedforward neural network models are proposed for SOC estimation, with an efficient method for online input preprocessing and low parameter requirement in storage. These models are simulated and validated using battery data, taken at different temperatures with several driving cycles and charge cycles, achieving lowest estimation Root Mean Squared Error (RMSE) of 1.096% over the whole validation dataset.",
+  "val_tags": [
+   "simulation"
+  ]
+ }
+]
