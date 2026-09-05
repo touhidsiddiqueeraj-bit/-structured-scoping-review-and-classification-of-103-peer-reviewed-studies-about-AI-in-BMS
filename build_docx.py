@@ -48,7 +48,7 @@ for kind, *rest in BLOCKS:
         for m in CITE_RE.finditer(rest[0]):
             note(m.group(1))
     elif kind == 'fig':
-        caption = rest[2] if len(rest) > 2 else (rest[1] if len(rest) == 2 else '')
+        caption = rest[1]
         for m in CITE_RE.finditer(caption):
             note(m.group(1))
     elif kind == 'tbl':
@@ -271,12 +271,13 @@ for kind, *rest in BLOCKS:
         rich_cite(p, rest[0])
     elif kind == 'fig':
         path, caption = rest[0], rest[1]
+        fig_w = float(rest[2]) if len(rest) > 2 else 4.9
         fig_count += 1
         p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
         p.paragraph_format.space_after = Pt(4)
         p.paragraph_format.keep_with_next = True
         run = p.add_run()
-        run.add_picture('/home/touhid/Documents/reviewpaper/' + path, width=Inches(4.9))
+        run.add_picture('/home/touhid/Documents/reviewpaper/' + path, width=Inches(fig_w))
         cp = doc.add_paragraph(); cp.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         cp.paragraph_format.space_after = Pt(10)
         cp.paragraph_format.keep_together = True

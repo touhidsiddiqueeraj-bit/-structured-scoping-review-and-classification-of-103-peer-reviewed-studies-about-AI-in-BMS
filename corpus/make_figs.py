@@ -63,12 +63,16 @@ plt.close(fig)
 areas = sorted(stats['by_area'].items(), key=lambda kv: kv[1])
 names = [a[0] for a in areas]
 vals = [a[1] for a in areas]
-fig, ax = plt.subplots(figsize=(4.8, 2.7))
-bars = ax.barh(names, vals, color='#3b6ea5')
+fig, ax = plt.subplots(figsize=(5.6, 2.9), constrained_layout=True)
+bars = ax.barh(names, vals, color='#3b6ea5', height=0.62)
 for b, v in zip(bars, vals):
-    ax.text(v + 0.3, b.get_y() + b.get_height() / 2, str(v), va='center', fontsize=8)
+    inside = v > max(vals) * 0.82
+    ax.text(v - 0.45 if inside else v + 0.35, b.get_y() + b.get_height() / 2, str(v),
+            va='center', ha='right' if inside else 'left', fontsize=8.5,
+            color='white' if inside else '#37352F')
+ax.set_xlim(0, max(vals) * 1.04)
+ax.tick_params(axis='y', labelsize=9)
 ax.set_xlabel('Papers in corpus')
-fig.tight_layout()
 fig.savefig(OUT + 'fig4_area_distribution.png', dpi=300)
 plt.close(fig)
 
@@ -101,11 +105,11 @@ fig.savefig(OUT + 'fig5_data_validation.png', dpi=300)
 plt.close(fig)
 
 # ---------- Fig 6: five-year capability timeline (conceptual roadmap) ----------
-fig, ax = plt.subplots(figsize=(6.6, 3.0))
+fig, ax = plt.subplots(figsize=(6.5, 2.9))
 milestones = [
-    (2019.3, 2.6, 'Severson et al.\nearly-life cycle prediction'),
+    (2019.3, 2.95, 'Severson et al.\nearly-life cycle prediction'),
     (2020.3, 2.2, 'Attia et al.\nBayesian closed-loop\nfast charging'),
-    (2021.2, 1.8, 'SOH pipelines at\nfleet scale'),
+    (2021.2, 1.45, 'SOH pipelines at\nfleet scale'),
     (2022.2, 2.4, 'PINN & physics-\nhybrid wave'),
     (2023.2, 1.6, 'Cross-domain SOH &\ncloud BMS'),
     (2024.3, 2.3, 'Optimization-augmented\n& transfer learning'),
@@ -115,13 +119,14 @@ milestones = [
 ax.hlines(1.0, 2018.9, 2026.75, color='#666666', lw=1.4)
 for x, y, txt in milestones:
     ax.plot(x, 1.0, 'o', ms=5, color='#c44e52', zorder=3)
-    ax.annotate(txt, (x, 1.0), xytext=(x, y), ha='center', fontsize=6.6,
+    ax.annotate(txt, (x, 1.0), xytext=(x, y), ha='center', fontsize=7.8,
                 arrowprops=dict(arrowstyle='-', lw=0.6, color='#999999'))
-ax.set_ylim(0.4, 3.1)
+ax.set_ylim(0.4, 3.6)
 ax.set_xlim(2018.9, 2026.75)
 ax.set_yticks([])
 ax.set_xticks(list(range(2019, 2027)))
-ax.set_xlabel('Year')
+ax.set_xlabel('Year', fontsize=10)
+ax.tick_params(axis='x', labelsize=9.5)
 ax.spines[['top', 'right', 'left']].set_visible(False)
 fig.tight_layout()
 fig.savefig(OUT + 'fig6_timeline.png', dpi=300)

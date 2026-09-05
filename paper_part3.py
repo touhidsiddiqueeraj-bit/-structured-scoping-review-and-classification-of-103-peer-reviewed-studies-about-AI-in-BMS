@@ -94,7 +94,7 @@ BLOCKS = [
 
 ('tbl', 'TABLE_CHECKLIST'),
 
-('fig', 'figures/fig6_timeline.png', 'Fig. 8 Milestones of machine learning in battery management, 2019\u20132026, drawn from the corpus: early-life cycle prediction [[10.1038/s41560-019-0356-8]], closed-loop Bayesian fast charging [[10.1038/s41586-020-1994-5]], fleet-scale SOH pipelines [[10.1038/s42256-021-00312-3]], the physics-informed wave [[10.1016/j.jechem.2022.11.036]], cross-domain health estimation and cloud BMS [[10.1016/j.energy.2023.127033]][[10.1016/j.ensm.2023.02.035]], optimization-augmented and transfer learning [[10.1016/j.apenergy.2024.123248]], deep-RL prognostics [[10.1016/j.ress.2025.111392]], and the first foundation-model studies [[10.1016/j.ensm.2026.104983]].'),
+('fig', 'figures/fig6_timeline.png', 'Fig. 8 Milestones of machine learning in battery management, 2019\u20132026, drawn from the corpus: early-life cycle prediction [[10.1038/s41560-019-0356-8]], closed-loop Bayesian fast charging [[10.1038/s41586-020-1994-5]], fleet-scale SOH pipelines [[10.1038/s42256-021-00312-3]], the physics-informed wave [[10.1016/j.jechem.2022.11.036]], cross-domain health estimation and cloud BMS [[10.1016/j.energy.2023.127033]][[10.1016/j.ensm.2023.02.035]], optimization-augmented and transfer learning [[10.1016/j.apenergy.2024.123248]], deep-RL prognostics [[10.1016/j.ress.2025.111392]], and the first foundation-model studies [[10.1016/j.ensm.2026.104983]].', 6.4),
 
 ('h1', '10. Conclusion'),
 ('p',
