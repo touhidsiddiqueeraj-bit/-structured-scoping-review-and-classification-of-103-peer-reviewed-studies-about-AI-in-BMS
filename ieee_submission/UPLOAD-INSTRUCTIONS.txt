@@ -1,0 +1,27 @@
+IEEE TRANSACTIONS SUBMISSION PACKAGE
+=====================================
+Manuscript: "Machine learning in battery management systems: a structured
+scoping review and classification of 103 peer-reviewed studies, 2019-2026"
+Authors: H.T. Siddiquee, S.S.I. Ariya, J.I. Chowdhury (Leading University, Sylhet)
+
+SCHOLARONE UPLOAD ORDER
+-----------------------
+1. Main Document ......... tex/mlbms.pdf  (compiled IEEEtran double-column PDF)
+2. Manuscript source ..... tex/mlbms.tex + tex/figs/* + tex/IEEEtran.cls
+                           (zip these as mlbms-source.zip if the system asks
+                            for a single source file)
+3. Figures ............... figures/Fig1..Fig8 (300 dpi PNG; regenerate as
+                           EPS/PDF on acceptance if requested)
+4. Cover letter .......... cover_letter.pdf
+5. Supplementary ......... Supplementary_ML-BMS-Corpus.xlsx
+                           (103-paper corpus + conference sensitivity set +
+                            summary sheets; also public on GitHub)
+6. Suggested reviewers ... see below
+
+NOTES
+-----
+- The public repository (URL in the manuscript's Data and Code Availability
+  section) hosts the complete verified corpus and reproduction pipeline.
+- Corresponding author: Hussain Touhid Siddiquee
+  (Leading University, Sylhet, Bangladesh).
+- Figures regenerate via: python3 corpus/make_figs.py (see repository README).
