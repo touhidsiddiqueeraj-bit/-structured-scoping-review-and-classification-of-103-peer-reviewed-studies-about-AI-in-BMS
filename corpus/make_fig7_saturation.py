@@ -18,7 +18,7 @@ BENCH = [('Severson-MATR', '#3b6ea5', 'Severson/Toyota (MATR)'),
          ('NASA', '#c44e52', 'NASA PCoE'),
          ('CALCE', '#ddae57', 'CALCE')]
 per = {k: Counter(r['year'] for r in C if r['data'] == k) for k, _, _ in BENCH}
-tot = Counter(r['year'] for r in C if r['data'] != 'review')
+tot = Counter(r['year'] for r in C)
 
 fig, ax = plt.subplots(figsize=(5.2, 2.9))
 bottom = np.zeros(len(years))

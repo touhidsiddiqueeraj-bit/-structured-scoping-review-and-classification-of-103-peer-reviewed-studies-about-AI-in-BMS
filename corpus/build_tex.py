@@ -109,21 +109,45 @@ def caption_text(c):
 
 def ref_text_latex(doi):
     r = BY_DOI[doi]
-    auth = (r['authors'] or 'Anonymous').replace(';', ',').replace(', et al.', ' et al.')
+    raw = (r['authors'] or 'Anonymous').replace(', et al.', '')
+    parts = []
+    for a in [x.strip() for x in raw.split(';') if x.strip()]:
+        if ',' in a:
+            fam, giv = a.split(',', 1)
+            parts.append(giv.strip() + ' ' + fam.strip())
+        else:
+            parts.append(a)
+    if len(parts) > 6:
+        auth = ', '.join(parts[:6]) + ' et al.'
+    else:
+        auth = ', '.join(parts)
     t = r['title_cr'].replace('&amp;', '&').rstrip('.')
     jr = (r['journal'] or '').replace('&amp;', '&')
-    vol = r.get('volume', '')
-    pg = r.get('page') or (f"Art. no. {r['article_number']}" if r.get('article_number') else '')
+    vol = str(r.get('volume', '') or '')
+    issue = str(r.get('issue', '') or '')
+    pg = str(r.get('page', '') or '')
+    art = str(r.get('article_number', '') or '')
     yr = r['year']
-    s = f"{esc(auth)}, ``{esc(t)},'' {esc(jr)}"
-    if vol: s += f", vol. {esc(str(vol))}"
-    if pg: s += f", {esc(str(pg))}"
+    s = f"{auth}, ``{esc(t)},'' \\emph{{{esc(jr)}}}"
+    if vol:
+        s += f", vol. {esc(vol)}"
+        if issue:
+            s += f", no. {esc(issue)}"
+    if pg:
+        pg = pg.replace('\\u2013', '--')
+        if '--' in pg:
+            s += f", pp. {esc(pg)}"
+        else:
+            s += f", p. {esc(pg)}"
+    elif art:
+        s += f", Art. no. {esc(art)}"
     s += f", {yr}. doi: {doi}."
     return s
 
 # ---------- table -> LaTeX ----------
 def table_latex(key):
     spec = TABLES[key]
+    single = spec.get('single_col', False)
     rows = spec['rows']
     if rows == 'AUTO_AREA_YEAR':
         stats = json.load(open(f'{ROOT}/corpus/stats.json'))
@@ -149,13 +173,13 @@ def table_latex(key):
         weights.append(min(max(w, 3), 80))
     tot_w = sum(weights)
     # width budget: 7.0 in total for table*, minus ~0.15in per col padding
-    usable = 7.0 - 0.12 * ncol
+    usable = (3.4 if single else 7.0) - 0.12 * ncol
     widths = [max(usable * w / tot_w, 0.38) for w in weights]
     scale = usable / sum(widths)
     widths = [w * scale for w in widths]
 
     L = []
-    L.append('\\begin{table*}[!t]')
+    L.append('\\begin{table}[!t]' if single else '\\begin{table*}[!t]')
     L.append('\\caption{' + caption_text(spec['caption']) + '}')
     L.append('\\label{tab:' + key + '}')
     L.append('\\centering')
@@ -173,11 +197,11 @@ def table_latex(key):
             L.append('\\hline')
     L.append('\\hline')
     L.append('\\end{tabular}')
-    L.append('\\end{table*}')
+    L.append('\\end{table}' if single else '\\end{table*}')
     return '\n'.join(L)
 
 FIG_W = {  # LaTeX graphic widths (inches), from design size
-    'fig1_function_method_map.png': 5.45, 'fig2_prisma.png': 4.9,
+    'fig1_function_method_map.png': 5.3, 'fig2_prisma.png': 4.9,
     'fig2_year_trend.png': 3.35, 'fig3_method_evolution.png': 4.4,
     'fig4_area_distribution.png': 5.5, 'fig5_data_validation.png': 6.8,
     'fig7_dataset_saturation.png': 4.2, 'fig6_timeline.png': 6.4,
@@ -191,11 +215,11 @@ def fig_latex(path, caption):
     cap = caption_text(caption)
     w = FIG_W.get(fname, 4.9)
     if fname in SINGLE_COL:
-        return ('\\begin{figure}[!t]\n\\caption{' + cap + '}\n\\centering\n'
-                '\\includegraphics[width=\\columnwidth]{figs/' + fname + '}\n'
+        return ('\\begin{figure}[!t]\n\\centering\n'
+                '\\includegraphics[width=\\columnwidth]{figs/' + fname + '}\n\\caption{' + cap + '}\n'
                 '\\label{fig:' + fname + '}\n\\end{figure}')
-    return (f'\\begin{{figure*}}[!t]\n\\caption{{{cap}}}\n\\centering\n'
-            f'\\includegraphics[width={w}in]{{figs/{fname}}}\n'
+    return (f'\\begin{{figure*}}[!t]\n\\centering\n'
+            f'\\includegraphics[width={w}in]{{figs/{fname}}}\n\\caption{{{cap}}}\n'
             f'\\label{{fig:{fname}}}\n\\end{{figure*}}')
 
 # ---------- assemble body ----------
@@ -214,6 +238,7 @@ for kind, *rest in BLOCKS:
     elif kind == 'tbl':
         body.append(table_latex(rest[0]))
     elif kind == 'decl':
+        body.append('\\balance')
         body.append('\\section*{Data and Code Availability}')
         body.append('The classified and Crossref-verified corpus of 103 studies is released as a machine-readable '
                     'supplementary dataset (papers.csv), including per-paper citation counts and the screening statistics. '
@@ -280,7 +305,6 @@ the conference sensitivity set, and the complete analysis pipeline are publicly 
 
 ''' + '\n\n'.join(body) + '\n\n' + '\n'.join(bib_lines) + r'''
 
-\balance
 \end{document}
 '''
 
