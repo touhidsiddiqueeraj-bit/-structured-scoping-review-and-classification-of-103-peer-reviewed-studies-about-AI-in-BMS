@@ -4,7 +4,13 @@ paper_part{1,2,3}.py blocks used for the DOCX (single source of truth)."""
 import json, re, sys, os
 
 sys.path.insert(0, '/home/touhid/Documents/reviewpaper')
-import paper_part1, paper_part2, paper_part3
+SHORT = '--short' in sys.argv
+if SHORT:
+    import paper_short_part1 as paper_part1
+    import paper_short_part2 as paper_part2
+    import paper_short_part3 as paper_part3
+else:
+    import paper_part1, paper_part2, paper_part3
 
 ROOT = '/home/touhid/Documents/reviewpaper'
 OUT_TEX = f'{ROOT}/ieee_submission/tex/mlbms.tex'
@@ -15,12 +21,15 @@ CONF = json.load(open(f'{ROOT}/corpus/conference_verified.json'))
 BY_DOI = {r['doi']: r for r in CORPUS}
 BY_DOI.update({r['doi']: r for r in CONF})
 
-TABLES = {'table1': paper_part3.TABLE1, 'TABLE2': paper_part3.TABLE2,
-          'TABLE3': paper_part3.TABLE3, 'TABLE_METH': paper_part3.TABLE_METH,
-          'TABLE_DATASETS': paper_part3.TABLE_DATASETS, 'TABLE_VALID': paper_part3.TABLE_VALID,
-          'TABLE_GAPS': paper_part3.TABLE_GAPS, 'TABLE_FLEET': paper_part3.TABLE_FLEET,
-          'TABLE_CONF': paper_part3.TABLE_CONF, 'TABLE_LLM': paper_part3.TABLE_LLM,
-          'TABLE_CHECKLIST': paper_part3.TABLE_CHECKLIST}
+if SHORT:
+    TABLES = paper_part3.TABLES
+else:
+    TABLES = {'table1': paper_part3.TABLE1, 'TABLE2': paper_part3.TABLE2,
+              'TABLE3': paper_part3.TABLE3, 'TABLE_METH': paper_part3.TABLE_METH,
+              'TABLE_DATASETS': paper_part3.TABLE_DATASETS, 'TABLE_VALID': paper_part3.TABLE_VALID,
+              'TABLE_GAPS': paper_part3.TABLE_GAPS, 'TABLE_FLEET': paper_part3.TABLE_FLEET,
+              'TABLE_CONF': paper_part3.TABLE_CONF, 'TABLE_LLM': paper_part3.TABLE_LLM,
+              'TABLE_CHECKLIST': paper_part3.TABLE_CHECKLIST}
 
 BLOCKS = paper_part1.BLOCKS + paper_part2.BLOCKS + paper_part3.BLOCKS
 TITLE = paper_part1.TITLE
@@ -168,10 +177,10 @@ def table_latex(key):
     return '\n'.join(L)
 
 FIG_W = {  # LaTeX graphic widths (inches), from design size
-    'fig1_function_method_map.png': 6.9, 'fig2_prisma.png': 5.9,
-    'fig2_year_trend.png': 3.35, 'fig3_method_evolution.png': 5.0,
+    'fig1_function_method_map.png': 5.45, 'fig2_prisma.png': 4.9,
+    'fig2_year_trend.png': 3.35, 'fig3_method_evolution.png': 4.4,
     'fig4_area_distribution.png': 5.5, 'fig5_data_validation.png': 6.8,
-    'fig7_dataset_saturation.png': 5.1, 'fig6_timeline.png': 6.4,
+    'fig7_dataset_saturation.png': 4.2, 'fig6_timeline.png': 6.4,
 }
 SINGLE_COL = {'fig2_year_trend.png'}
 
@@ -246,6 +255,7 @@ tex = r'''\documentclass[journal]{IEEEtran}
 \usepackage{cite}
 \usepackage{amsmath,amssymb}
 \usepackage{balance}
+\def\IEEEbibitemsep{0pt plus .3pt}
 \begin{document}
 
 \title{''' + esc(TITLE).replace('--', '--') + r'''}

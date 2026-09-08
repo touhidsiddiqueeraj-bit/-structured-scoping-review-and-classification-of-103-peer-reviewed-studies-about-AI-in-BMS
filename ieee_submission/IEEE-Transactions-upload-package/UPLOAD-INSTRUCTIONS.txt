@@ -1,14 +1,8 @@
-IEEE TRANSACTIONS ON TRANSPORTATION ELECTRIFICATION (TTE) SUBMISSION PACKAGE
+IEEE TRANSACTIONS SUBMISSION PACKAGE
 =====================================
 Manuscript: "Machine learning in battery management systems: a structured
 scoping review and classification of 103 peer-reviewed studies, 2019-2026"
 Authors: H.T. Siddiquee, S.S.I. Ariya, J.I. Chowdhury (Leading University, Sylhet)
-
-VENUE COMPLIANCE
-----------------
-Review Paper: 12-page limit including references and appendix (current PDF: 12 pages).
-Overlength charges apply from page 9 per IEEE policy.
-Portal: ieee.atyponrex.com/journal/tte-ieee
 
 SCHOLARONE UPLOAD ORDER
 -----------------------
