@@ -8,12 +8,12 @@ B,vs_gold,area,80.0,kappa,0.771
 B,vs_gold,method,66.7,kappa,0.592
 B,vs_gold,chem,26.7,kappa,0.143
 B,vs_gold,data,56.7,kappa,0.461
-B,vs_gold,valid,40.0,kappa,0.307
+B,vs_gold,valid,40.0,kappa,0.303
 C,vs_gold,area,76.7,kappa,0.731
 C,vs_gold,method,66.7,kappa,0.594
 C,vs_gold,chem,23.3,kappa,0.102
 C,vs_gold,data,50.0,kappa,0.398
-C,vs_gold,valid,36.7,kappa,0.299
+C,vs_gold,valid,36.7,kappa,0.295
 AB,pair,area,0.0,kappa,0.0
 AB,pair,method,0.0,kappa,0.0
 AB,pair,chem,0.0,kappa,0.0

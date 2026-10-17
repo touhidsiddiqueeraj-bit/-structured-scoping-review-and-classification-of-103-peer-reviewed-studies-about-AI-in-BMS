@@ -88,12 +88,29 @@ One sentence each, from the abstract + full text: the headline quantitative or
 binary finding; the principal stated or evident limitation. Coded verbatim from
 the paper, no editorializing.
 
-## Reliability plan
-One author codes; co-authors correctively review. No inter-rater statistic is
-claimed for the released labels. To upgrade them: pick a random 30-paper sample
-(stratified by function and year), re-code blind with this codebook, report
-per-field percent agreement and Krippendorff's α (nominal) or Cohen's κ per
-field, and publish the conflict-resolved table as a dataset patch.
+## Reliability plan -> executed outcome
+
+**Executed 2026** (coder 2 + coder 3, blind, per `coding_protocol.md`): the
+30-paper stratified sample was independently re-coded. Blind inter-coder
+agreement: `area` κ = 0.92 / α = 0.92, `method` κ = 0.88 / α = 0.88, `data`
+κ = 0.88 / α = 0.88 (pass); `chem` κ = 0.55, `valid` κ = 0.48 (fail — both
+below the 0.66 threshold). The `chem`/`valid` failures trace to evidence
+access (23 and 28 of 30 sample papers coded from abstracts only; split
+protocols and chemistry are rarely stated there) rather than random
+disagreement: on the strong-protocol/non-strong bucket that corpus counts
+rest on, the two coders agree 25/30 (83%). Per the protocol, both
+below-threshold fields trigger these v1.1 patch candidates (not applied to
+released labels):
+
+1. `method`: explicit not-ML code for physics-only estimators.
+2. `area`: production/quality function for manufacturing-QC papers.
+3. `data`: vehicle vs stationary field split; self-lab/EIS-lab tie-break.
+4. `valid`: a dedicated `not reported` code instead of weak-code fallback.
+5. Reviews: fixed reading for cross-function reviews before κ on
+   `area`/`method` is interpreted for review-type papers.
+
+Full sheets, the itemized disagreement table (`dispute_items.csv`), and the
+hash-tracked log are released in `corpus/reliability/`.
 
 ## Boundary examples (abridged)
 - PSO-tuned LSTM SOC with UKF wrapper → `Filter-based hybrid` (not meta-heuristic).

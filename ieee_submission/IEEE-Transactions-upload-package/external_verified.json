@@ -10,5 +10,17 @@
   "article_number": "141",
   "authors": "Prasanna, R.; Kumar, R. S.; Bhuvaneswari, N. S.; Karthik, C.",
   "external": true
+ },
+ {
+  "doi": "10.1109/tec.2025.3548400",
+  "title_cr": "Data-Driven Estimation of Li-Ion Battery Health: Integrating GPT-4 With Distilled Lifelong Learning",
+  "journal": "IEEE Transactions on Energy Conversion",
+  "year": 2025,
+  "volume": "40",
+  "issue": "2",
+  "page": "1682-1685",
+  "article_number": "",
+  "authors": "Poh, W. Q. T.; Xu, Y.; Tan, R. T. P.",
+  "external": true
  }
 ]

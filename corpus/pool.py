@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Pool CrossRef raw query results into a deduplicated candidate pool."""
+import os
 import json, glob, csv, re
 
 AREA_OF_KEY = {
@@ -23,7 +24,7 @@ def dedup():
     """Deduplicate all raw query results (before the title gate)."""
     import glob as _g
     rows = {}
-    files = sorted(_g.glob('/home/touhid/Documents/reviewpaper/corpus/raw/*.json'))
+    files = sorted(_g.glob(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/raw/*.json')))
     for f in files:
         key = f.split('/')[-1].replace('.json', '')
         try:
@@ -95,7 +96,7 @@ for doi, r in rows.items():
     out.append(r)
 out.sort(key=lambda r: -r['cites'])
 print(f'dropped as off-topic: {dropped}')
-with open('/home/touhid/Documents/reviewpaper/corpus/pool.csv', 'w', newline='') as fh:
+with open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/pool.csv'), 'w', newline='') as fh:
     w = csv.DictWriter(fh, fieldnames=['doi', 'title', 'journal', 'year', 'cites', 'areas'])
     w.writeheader()
     w.writerows(out)

@@ -12,13 +12,13 @@ The manuscript links every BMS machine-learning function to the requirement an e
 
 ## What the evidence base is
 
-A rule-based eligible corpus of 799 peer-reviewed journal articles (2019–2026) carries the measured bibliometrics; a curated 103-study classified subset carries the in-depth coding, with a 30-paper blind inter-coder reliability study, a protocol audit, and a label-noise sensitivity analysis. All screening provenance and analysis code are released in a Zenodo deposit (DOI: 10.5281/zenodo.23436202); every count in the paper can be regenerated from the deposit.
+A rule-based eligible corpus of 799 peer-reviewed journal articles (2020–2026) carries the measured bibliometrics; a curated 103-study classified subset carries the in-depth coding, with a 30-paper blind inter-coder reliability study, a protocol audit, and a label-noise sensitivity analysis. All screening provenance and analysis code are released in a Zenodo deposit (DOI: 10.5281/zenodo.23436202); every count in the paper can be regenerated from the deposit.
 
 ## Statement on scope and claims
 
 All validation-practice rates and reliability statistics are reported for the classified subset and are not generalized to the field; caveats about the capped Crossref retrieval (including a documented January–May 2024 retrieval hole and publisher-tilt toward energy-storage venues), the curated subset, and the non-significance of the physics-informed validation contrast are stated in the manuscript rather than left to the reader. The review was not prospectively registered; this is stated explicitly.
 
-The authors have no conflicts of interest to declare. No generative-AI tool was used to write the manuscript prose.
+The authors have no conflicts of interest to declare. Writing-support tools (ChatGPT, Grammarly, QuillBot) were used for grammar, readability, and sentence-restructuring support only; no generative-AI tool wrote manuscript prose.
 
 Respectfully,
 Hussain Touhid Siddiquee (corresponding), Syeda Salsabil Islam Ariya, Jasimul Islam Chowdhury

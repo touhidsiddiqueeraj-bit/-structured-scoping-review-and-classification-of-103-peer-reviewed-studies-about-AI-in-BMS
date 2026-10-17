@@ -215,6 +215,6 @@
  "records_retrieved": 3000,
  "records_after_dedupe": 1550,
  "on_topic_after_gate": 883,
- "after_venue_screen": 113,
- "final_corpus": 103
+ "tier1_eligible": 799,
+ "tier2_classified": 103
 }

@@ -91,7 +91,7 @@ doi,area,method_family,data_source,validation_coded,strong_protocol_only,strong_
 10.1016/j.heliyon.2024.e35183,State estimation (SOC),Meta-heuristic-optimized DL,self-lab,experimental hardware,no,yes,primary
 10.1016/j.est.2024.111877,State estimation (SOC),Deep learning,self-lab,experimental hardware,no,yes,primary
 10.1016/j.est.2024.114281,State estimation (SOC),Shallow ML,self-lab,experimental hardware,no,yes,primary
-10.1016/j.jpowsour.2024.235609,State estimation (SOC),Deep learning,self-lab,online/real-vehicle,yes,yes,primary
+10.1016/j.jpowsour.2024.235609,State estimation (SOC),Deep learning,self-lab,experimental hardware,no,yes,primary
 10.1016/j.egyai.2025.100585,State estimation (SOC),Review / perspective,review,review synthesis,no,no,--
 10.20517/jmi.2024.84,State estimation (SOC),Review / perspective,review,review synthesis,no,no,--
 10.1016/j.jpowsour.2021.229727,Thermal management,Deep learning,simulation,simulation plus hardware spot-check,no,no,primary

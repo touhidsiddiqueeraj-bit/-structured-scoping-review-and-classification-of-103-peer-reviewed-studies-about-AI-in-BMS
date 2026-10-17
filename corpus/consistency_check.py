@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Single source of truth: recompute every in-text statistic from papers_final.json."""
+import os
 import json
 from collections import Counter, defaultdict
 
-C = json.load(open('/home/touhid/Documents/reviewpaper/corpus/papers_final.json'))
+C = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/papers_final.json')))
 n = len(C)
 print('corpus size:', n)
 
@@ -34,7 +35,7 @@ print('  online-validated but data not real-vehicle:', [(r['doi'], r['data']) fo
 print('  real-vehicle data but not online-validated:', [(r['doi'], r['valid']) for r in rv_not_onl])
 
 # 4. physics-informed/hybrid by year (primary-application papers only)
-G = json.load(open('/home/touhid/Documents/reviewpaper/corpus/stats.json'))['group_of']
+G = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/stats.json')))['group_of']
 P88 = [r for r in C if r['method'] != 'Review / perspective' and r['valid'] != 'review synthesis']
 pi = Counter(r['year'] for r in P88 if G[r['method']] == 'Physics-informed / hybrid')
 print('\nPI/hybrid by year (primary):', dict(sorted(pi.items())), 'total', sum(pi.values()))
@@ -57,7 +58,7 @@ print('\ntotal cites:', sum(r['cites'] for r in C))
 import json as _json
 from math import sqrt as _sqrt, exp as _exp, log as _log
 
-E = _json.load(open('/home/touhid/Documents/reviewpaper/corpus/eligible_corpus.json'))
+E = _json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/eligible_corpus.json')))
 print('\n-- two-tier checks')
 print('tier1 n:', E['n'], '| tier2 n:', n, '| subset <= eligible?')
 assert E['n'] >= n

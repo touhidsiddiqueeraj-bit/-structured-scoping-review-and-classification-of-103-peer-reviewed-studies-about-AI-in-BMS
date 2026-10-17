@@ -114,3 +114,15 @@ Outcomes, per protocol §5:
   (s41467-023-38458-w coded cross-domain holdout vs abstract's "cross-validation";
   tte.2025.3533540 fine-tuning target labels unstated) — patch candidate.
 
+
+## Post-hoc label correction note (2026-10-17)
+
+After the dispute session, one full-text re-check recoded a laboratory-data paper
+whose "online" claim was a desktop demonstration from `online/real-vehicle` to
+`experimental hardware` (the absorbing-rule correction documented in the
+manuscript's fleet cross-tabulation). The recode alters no B-C agreement value
+(both locked sheets are untouched), but it shifts the coder-vs-gold `valid`
+kappa slightly when recomputed against the corrected released labels:
+B-vs-gold 0.307 -> 0.303 and C-vs-gold 0.299 -> 0.295. No threshold verdict
+changes. `agreement_report.csv` in this deposit is the recomputed version;
+the values quoted in the table above are the pre-correction ones from lock time.

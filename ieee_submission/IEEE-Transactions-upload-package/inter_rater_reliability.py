@@ -7,10 +7,11 @@ Writes: corpus/reliability/agreement_report.csv
 Reports per coder vs gold: percent agreement + Cohen's kappa per field;
 cross-coder pair agreement; Krippendorff's alpha (nominal) across coders.
 No scipy required."""
+import os
 import csv, json, itertools, os, sys
 from collections import Counter, defaultdict
 
-ROOT = '/home/touhid/Documents/reviewpaper'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIELDS = ['area', 'method', 'chem', 'data', 'valid']
 OUTDIR = f'{ROOT}/corpus/reliability'
 

@@ -6,23 +6,26 @@
 \begin{document}
 
 \noindent
-September 5, 2026
+September 2026
 
 \vspace{10pt}
 \noindent
 Dear Editor-in-Chief,
 
 \vspace{6pt}
-We are pleased to submit our manuscript entitled \textbf{``Machine learning in battery management systems: a structured scoping review and classification of 103 peer-reviewed studies, 2019--2026''} for consideration as a Review Paper in \textit{IEEE Transactions on Transportation Electrification} (12-page limit including references, per the TTE information for authors).
+We are pleased to submit our manuscript entitled \textbf{``Machine learning in battery management systems: a two-tier scoping review of 799 eligible studies with in-depth classification and validation audit''} for consideration as a Review Paper in \textit{IEEE Transactions on Transportation Electrification} (12-page limit including references, per the TTE information for authors).
 
 \vspace{6pt}
-Machine learning has moved from a promising addition to battery research to a load-bearing component of modern battery management systems (BMS), yet the literature's self-image rests on validation practices that have never been systematically measured. This manuscript provides that measurement. Based on a Crossref-verified corpus of 103 peer-reviewed journal articles (plus a 14-paper conference sensitivity set from ACC, ECC, CCDC, APEC, VPPC, and ITEC), we classify every study by management function, method family, chemistry, data source, and validation practice, and we quantify how the field has evolved since 2019: from classical feature-based learners through deep sequence models to physics-informed hybrids, optimization-augmented learning, and the first foundation-model studies.
+The manuscript links every BMS machine-learning function to the requirement an electric-vehicle safety standard actually places on it --- UN GTR~20's thermal-propagation early-warning window (Amendment~1, endorsed for WP.29 adoption in late 2026), GB~38031-2025's no-fire/no-explosion thermal-diffusion tests (effective July 2026, superseding GB~38031-2020), and ISO~26262:2018 extended to learned components by ISO/PAS~8800:2024, with ISO~21448 (SOTIF) reasoning for capability limitations. The review's measured finding is that the classified literature rests predominantly at cell level and in the laboratory (36 of 88 primary papers on the authors' own cells; real-vehicle data in 10; online validation in 8), one integration level below the pack- and vehicle-level questions these standards pose. That gap --- and the reporting checklist proposed to close it --- is written for the reader deciding how ML fits into a certifiable EV traction system.
 
 \vspace{6pt}
-The review offers four contributions that we believe fit the Transactions' readership: (i)~a verified, publicly released corpus and reproducible search pipeline; (ii)~a quantified validation-gap analysis (only 9 of 103 studies demonstrate online or fleet-level operation; 23 rest on a single public benchmark); (iii)~an evidence-backed ``physics-informed validation paradox'' (54\% vs.\ 73\% strong-protocol share), challenging the assumption that physics priors substitute for out-of-distribution testing; and (iv)~two community tools: a safety-and-verification taxonomy for foundation-model components in the BMS stack, and the BMS-ML-RC, a twelve-item CONSORT-style reporting checklist for future machine-learning BMS studies.
+The evidence base is two-tier. A rule-based eligible corpus of 799 peer-reviewed journal articles (2020--2026) carries the measured bibliometrics; a curated 103-study classified subset carries the in-depth coding, with a 30-paper blind inter-coder reliability study, a per-paper protocol audit, and a label-noise sensitivity analysis. Within the subset, only 8 of the 88 primary-application papers demonstrate online or fleet-level operation, 17 rely on within-cell or k-fold splits, and 23 rest on three public benchmarks while 36 rest on private laboratory cells; the physics-informed validation contrast is directionally consistent under both reported definitions but not statistically significant (36\% vs.\ 52\%, $p=0.32$; 59\% vs.\ 74\%, $p=0.19$). All screening provenance and analysis code are released in a Zenodo deposit (DOI: 10.5281/zenodo.23436202); every count in the paper can be regenerated from the deposit.
 
 \vspace{6pt}
-We confirm that this manuscript is original, has not been published previously, and is not under consideration by any other journal. All authors have approved the submission and declare no conflicts of interest. Writing-support tools (ChatGPT, Grammarly, QuillBot) were used for language editing only; all technical content, analysis, and interpretations are the authors' own. The complete classified corpus, the conference sensitivity set, and all analysis scripts are publicly available at \url{https://github.com/touhidsiddiqueeraj-bit/-structured-scoping-review-and-classification-of-103-peer-reviewed-studies-about-AI-in-BMS}.
+All validation-practice rates and reliability statistics are reported for the classified subset and are not generalized to the field; caveats about the capped Crossref retrieval (including a documented January--May 2024 retrieval hole and publisher tilt toward energy-storage venues), the curated subset, and the non-significance of the physics-informed contrast are stated in the manuscript rather than left to the reader. The review was not prospectively registered; this is stated explicitly.
+
+\vspace{6pt}
+We confirm that this manuscript is original, has not been published previously, and is not under consideration by any other journal. All authors have approved the submission and declare no conflicts of interest. Writing-support tools (ChatGPT, Grammarly, QuillBot) were used for grammar, readability, and sentence-restructuring support only; no generative-AI tool wrote manuscript prose, and all technical content, analysis, and interpretations are the authors' own. The complete classified corpus, the screening provenance, and all analysis scripts are publicly available at \url{https://github.com/touhidsiddiqueeraj-bit/-structured-scoping-review-and-classification-of-103-peer-reviewed-studies-about-AI-in-BMS}.
 
 \vspace{6pt}
 Thank you for your consideration.

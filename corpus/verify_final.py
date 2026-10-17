@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Add cross-cutting round-out papers, then verify every final DOI against CrossRef,
 saving full metadata as the verification audit trail."""
+import os
 import csv, json, subprocess, time, sys
 
-SEL = '/home/touhid/Documents/reviewpaper/corpus/final_papers.json'
-POOL = '/home/touhid/Documents/reviewpaper/corpus/pool.csv'
-VER = '/home/touhid/Documents/reviewpaper/corpus/verified.json'
+SEL = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/final_papers.json')
+POOL = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/pool.csv')
+VER = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/verified.json')
 
 ADD = {
     '10.1016/j.ress.2022.109046': ('Cross-cutting', 'XAI/interpretability'),

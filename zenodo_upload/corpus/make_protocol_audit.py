@@ -2,10 +2,11 @@
 """Per-paper validation-protocol audit table (TTE R1 #2 fix):
 every classified paper mapped to its protocol class and strong flags,
 so the 43-of-91 strong-protocol arithmetic is checkable row by row."""
+import os
 import csv, json
 
-C = json.load(open('corpus/papers_final.json'))
-OUT = 'corpus/protocol_audit.csv'
+C = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/papers_final.json')))
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/protocol_audit.csv')
 
 PROTO_STRONG = ('cross-cell holdout', 'cross-chemistry holdout',
                 'cross-domain holdout', 'online/real-vehicle')

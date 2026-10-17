@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """New Fig 1: corpus heatmap — management function x method family."""
+import os
 import json
 import matplotlib
 matplotlib.use('Agg')
@@ -14,8 +15,8 @@ plt.rcParams.update({
     'figure.dpi': 300,
 })
 
-corpus = json.load(open('corpus/papers_final.json'))
-stats = json.load(open('corpus/stats.json'))
+corpus = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/papers_final.json')))
+stats = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/stats.json')))
 GROUP = stats['group_of']
 
 FUNCS = ['State estimation (SOC)', 'Health estimation (SOH)', 'Prognostics (RUL)',
@@ -71,6 +72,6 @@ ax.set_yticks(np.arange(-0.5, len(FUNCS), 1), minor=True)
 ax.grid(which='minor', color='white', linewidth=1.2)
 ax.tick_params(which='minor', length=0)
 fig.tight_layout()
-fig.savefig('figures/fig1_function_method_map.png', dpi=300)
+fig.savefig(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'figures/fig1_function_method_map.png'), dpi=300)
 print('heatmap done; totals:', {f: int(M[i].sum()) for i, f in enumerate(FUNCS)},
       '| primary papers:', int(M.sum()))

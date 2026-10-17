@@ -2,6 +2,7 @@
 """Build the review paper DOCX from paper_part{1,2,3}.py blocks.
 Citation placeholders [[doi]] resolve to numbered [n] refs in first-appearance order;
 consecutive citations merge into ranges [n-n2]."""
+import os
 import re, json, sys
 from collections import Counter
 from docx import Document
@@ -11,13 +12,16 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
-sys.path.insert(0, '/home/touhid/Documents/reviewpaper')
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import paper_part1, paper_part2, paper_part3
 
-CORPUS = json.load(open('/home/touhid/Documents/reviewpaper/corpus/papers_final.json'))
-CONF = json.load(open('/home/touhid/Documents/reviewpaper/corpus/conference_verified.json'))
+CORPUS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corpus/papers_final.json')))
+CONF = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corpus/conference_verified.json')))
+EXT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corpus/external_verified.json')))
 BY_DOI = {r['doi']: r for r in CORPUS}
 BY_DOI.update({r['doi']: r for r in CONF})
+BY_DOI.update({r['doi']: r for r in EXT})
 
 BLOCKS = (paper_part1.BLOCKS + paper_part2.BLOCKS + paper_part3.BLOCKS)
 TABLES = {'table1': paper_part3.TABLE1, 'TABLE2': paper_part3.TABLE2,
@@ -179,10 +183,10 @@ def add_table(spec):
     cap.paragraph_format.keep_with_next = True
     rows = spec['rows']
     if rows == 'AUTO_AREA_YEAR':
-        stats = json.load(open('/home/touhid/Documents/reviewpaper/corpus/stats.json'))
+        stats = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corpus/stats.json')))
         ay = stats['area_by_year']
         years = ['2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026']
-        rev = Counter(r['area'] for r in CORPUS if r['method'] == 'Review / perspective')
+        rev = Counter(r['area'] for r in CORPUS if r['method'] == 'Review / perspective' or r['valid'] == 'review synthesis')
         rows = []
         for a, m in sorted(ay.items()):
             tot = sum(m.values())
@@ -277,7 +281,7 @@ for kind, *rest in BLOCKS:
         p.paragraph_format.space_after = Pt(4)
         p.paragraph_format.keep_with_next = True
         run = p.add_run()
-        run.add_picture('/home/touhid/Documents/reviewpaper/' + path, width=Inches(fig_w))
+        run.add_picture(os.path.join(os.path.dirname(os.path.abspath(__file__)), path), width=Inches(fig_w))
         cp = doc.add_paragraph(); cp.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         cp.paragraph_format.space_after = Pt(10)
         cp.paragraph_format.keep_together = True
@@ -290,12 +294,12 @@ for kind, *rest in BLOCKS:
         decl = [
          ('Funding', 'The authors received no specific funding for this work.'),
          ('Conflicts of interest', 'The authors declare no competing interests.'),
-         ('Author contributions', 'H.T.S. conceived the study, designed and executed the search, screening, and verification pipeline, performed the classification and analysis, and drafted the manuscript. S.S.I.A. and J.I.C. contributed to corpus curation, verification of classifications and counts, and manuscript revision. All authors read and approved the final manuscript.'),
-         ('Data availability', 'The classified and Crossref-verified corpus of 103 studies is released as a machine-readable supplementary dataset (papers.csv), including per-paper citation counts and the screening statistics; together with the full analysis pipeline it is publicly available at https://github.com/touhidsiddiqueeraj-bit/-structured-scoping-review-and-classification-of-103-peer-reviewed-studies-about-AI-in-BMS.'),
-         ('Code availability', 'The complete search, screening, verification, and figure-generation scripts are publicly available at https://github.com/touhidsiddiqueeraj-bit/-structured-scoping-review-and-classification-of-103-peer-reviewed-studies-about-AI-in-BMS, so that every figure and count in Section 3 can be regenerated from the released dataset.'),
+         ('Author contributions', 'H.T.S. conceived the study, designed and executed the search, screening, and verification pipeline, performed the full-text classification and analysis, coded the released labels, and drafted the manuscript. S.S.I.A. and J.I.C. performed the blind 30-paper re-coding of the reliability study (coders B and C, Section 2.5) before any verification work, and contributed to corpus curation, verification of classifications and counts, and manuscript revision. All authors read and approved the final manuscript.'),
+         ('Data availability', 'The complete evidence base is deposited at Zenodo, DOI 10.5281/zenodo.23436202 (deposit of record; the GitHub repository of the same name is a development mirror). The deposit includes: the classified 103-study dataset (papers.csv, papers_final.json) with per-paper citation counts; the 799-record rule-based eligible pool (eligible_corpus.json, pool.csv) with per-record query-theme tags; the record-level screening log (screening_log.csv); the per-paper validation-protocol audit (protocol_audit.csv); the codebook and coding protocol (codebook.md, coding_protocol.md); the locked blind coder sheets, agreement report, itemized disagreements, and hash-tracked reliability log (corpus/reliability/); the conference sensitivity set with all 14 retrieved papers and the pre-stated inclusion rule (conference_sensitivity.csv); the withheld released labels for the reliability sample (gold_labels_30.csv); the label-noise sensitivity script and outputs (sensitivity_label_noise.py/.json); the Crossref verification audit trail (final_audit.json, external_verified.json, conference_verified.json); the seed-study register (seeds.json); and the screening statistics (stats.json).'),
+         ('Code availability', 'All search, screening, selection, verification, classification, reliability, sensitivity, statistics, figure-generation, and manuscript-build scripts are included in the same Zenodo deposit (DOI 10.5281/zenodo.23436202), so that every figure and every count in Sections 3 and 3.5 can be regenerated deterministically from the released data.'),
          ('Ethics approval', 'Not applicable. This study did not involve human participants or animals.'),
          ('Consent to participate / for publication', 'Not applicable.'),
-         ('Use of artificial intelligence', 'During the preparation of this manuscript, the authors used an AI-assisted language model to support literature-pooling code, drafting, and language editing. All included references were independently verified against the Crossref registry by DOI resolution, all counts and figures were regenerated programmatically from the released dataset, and the authors reviewed and take full responsibility for the content of the published article.'),
+         ('Use of artificial intelligence', 'During the preparation of this manuscript the authors used the following tools, each for a stated purpose: an AI language model (GLM, Z.ai) assisted in drafting and adapting the literature-pooling, analysis, and figure-generation scripts; OpenAI ChatGPT, Grammarly, and QuillBot were used for language editing (grammar, readability, and sentence restructuring). No AI tool decided study inclusion, and no AI tool assigned or altered any classification label: all screening decisions and all released labels were made by the authors (Section 2.5 documents who coded what, and the reliability files release the coding evidence). All included references were verified against the Crossref registry by direct DOI resolution, all counts and figures were regenerated programmatically from the released dataset, and the authors reviewed and take full responsibility for the content of the published article.'),
         ]
         for h, b in decl:
             p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
@@ -304,15 +308,8 @@ for kind, *rest in BLOCKS:
             r = p.add_run(b); r.font.size = Pt(10); r.font.name = 'Times New Roman'
 
 # ---------- acknowledgment ----------
-para('Acknowledgment', size=10, bold=True, align=WD_ALIGN_PARAGRAPH.LEFT, space_after=6)
-p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-p.paragraph_format.space_after = Pt(8)
-r = p.add_run('The authors would like to acknowledge the use of writing-support and language-enhancement tools, '
-              'including OpenAI ChatGPT, Grammarly, and QuillBot, during the preparation of this manuscript. '
-              'These tools were used to assist with grammar correction, readability improvement, language refinement, '
-              'and sentence restructuring. All technical content, analysis, interpretations, and research contributions '
-              'are from the authors themselves.')
-r.font.size = Pt(10); r.font.name = 'Times New Roman'
+# Tool-use acknowledgments are consolidated in the single 'Use of artificial intelligence'
+# declaration above (merged per review); no separate acknowledgment section is carried.
 
 # ---------- references ----------
 para('References', size=10, bold=True, align=WD_ALIGN_PARAGRAPH.LEFT, space_after=6)
@@ -324,7 +321,7 @@ for i, doi in enumerate(order, 1):
     r = p.add_run(f'{i}. '); r.font.size = Pt(9); r.font.name = 'Times New Roman'
     r = p.add_run(ref_text(doi)); r.font.size = Pt(9); r.font.name = 'Times New Roman'
 
-out = '/home/touhid/Documents/reviewpaper/ML-BMS-Review.docx'
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ML-BMS-Review.docx')
 doc.save(out)
 print('saved', out)
 print('figures:', fig_count, '| references:', len(order), '| corpus size:', len(CORPUS))

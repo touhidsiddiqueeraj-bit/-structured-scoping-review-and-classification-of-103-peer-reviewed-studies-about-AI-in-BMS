@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""Fig 7: benchmark-dataset saturation — reuse of the three dominant public
-benchmarks per year against total corpus output per year."""
+"""Fig 4/7: benchmark reuse — papers on the three dominant public benchmarks
+per year against classified-subset output per year (both series are the
+curated 103-study subset, not the eligible corpus)."""
 import json
+import os
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -12,7 +14,7 @@ plt.rcParams.update({
     'font.family': 'serif', 'font.serif': ['DejaVu Serif', 'Liberation Serif'],
     'font.size': 9, 'figure.dpi': 300,
 })
-C = json.load(open('corpus/papers_final.json'))
+C = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/papers_final.json')))
 years = list(range(2019, 2027))
 BENCH = [('Severson-MATR', '#3b6ea5', 'Severson/Toyota (MATR)'),
          ('NASA', '#c44e52', 'NASA PCoE'),
@@ -20,7 +22,7 @@ BENCH = [('Severson-MATR', '#3b6ea5', 'Severson/Toyota (MATR)'),
 per = {k: Counter(r['year'] for r in C if r['data'] == k) for k, _, _ in BENCH}
 tot = Counter(r['year'] for r in C)
 
-fig, ax = plt.subplots(figsize=(5.2, 2.9))
+fig, ax = plt.subplots(figsize=(5.2, 3.2), constrained_layout=True)
 bottom = np.zeros(len(years))
 for k, color, label in BENCH:
     vals = np.array([per[k].get(y, 0) for y in years], dtype=float)
@@ -30,17 +32,16 @@ ax2 = ax.twinx()
 tot_line = [tot.get(y, 0) for y in years]
 ax2.plot(years, tot_line, color='#37352F', marker='o', ms=3.5, lw=1.2,
          label='All classified-subset papers (right axis)')
-ax.set_ylabel('Papers using the three dominant benchmarks')
+ax.set_ylabel('Papers on the three benchmarks')
 ax2.set_ylabel('Classified-subset papers')
 ax.set_xticks(years)
 ax.set_ylim(0, 8)
 ax2.set_ylim(0, max(tot_line) * 1.18)
 h1, l1 = ax.get_legend_handles_labels()
 h2, l2 = ax2.get_legend_handles_labels()
-ax.legend(h1 + h2, l1 + l2, loc='upper left', fontsize=6.8, frameon=True,
-          framealpha=0.9, facecolor='white', edgecolor='#cccccc')
-fig.tight_layout()
-fig.savefig('figures/fig7_dataset_saturation.png', dpi=300)
+ax.legend(h1 + h2, l1 + l2, loc='upper left', bbox_to_anchor=(0.0, -0.14),
+          fontsize=6.8, frameon=True, ncol=2, framealpha=0.9, facecolor='white', edgecolor='#cccccc')
+fig.savefig(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'figures/fig7_dataset_saturation.png'), dpi=300)
 print('fig7 done; benchmark papers/year:', {y: int(bottom[i]) for i, y in enumerate(years)})
 print('totals/year:', tot_line)
 print('benchmark total:', sum(int(bottom[i]) for i in range(len(years))))

@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Re-classify selection entries by title rules, drop misfits, backfill from pool."""
+import os
 import csv, json, re
 from collections import defaultdict
 
-POOL = '/home/touhid/Documents/reviewpaper/corpus/pool.csv'
-SEL = '/home/touhid/Documents/reviewpaper/corpus/selection.json'
-OUT = '/home/touhid/Documents/reviewpaper/corpus/selection2.json'
+POOL = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/pool.csv')
+SEL = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/selection.json')
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/selection2.json')
 
 QUOTA = {
     'State estimation (SOC)': 14,

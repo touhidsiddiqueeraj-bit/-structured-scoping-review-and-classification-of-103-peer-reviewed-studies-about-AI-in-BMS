@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Build final papers.csv, compute meta-analysis stats, save stats.json."""
+import os
 import json, csv
 from collections import Counter, defaultdict
 
-ver = json.load(open('corpus/papers_final.json'))
+ver = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/papers_final.json')))
 ver.sort(key=lambda r: (r['area'], r['year'], r['journal']))
 
 def pages_str(r):
@@ -15,7 +16,7 @@ def pages_str(r):
 
 cols = ['doi', 'title', 'authors', 'journal', 'year', 'volume', 'issue',
         'pages', 'area', 'method', 'chem', 'data', 'valid', 'finding', 'limit', 'cites']
-with open('corpus/papers.csv', 'w', newline='') as f:
+with open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/papers.csv'), 'w', newline='') as f:
     w = csv.DictWriter(f, fieldnames=cols)
     w.writeheader()
     for r in ver:
@@ -69,7 +70,7 @@ stats['area_by_year'] = {a: dict(sorted(m.items())) for a, m in sorted(ay.items(
 # total records identified (for PRISMA): raw files item counts
 import glob
 total_raw = 0
-for f in glob.glob('corpus/raw/*.json'):
+for f in glob.glob(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/raw/*.json')):
     try:
         d = json.load(open(f))
         items = d if isinstance(d, list) else (d.get('message', {}) or {}).get('items', [])
@@ -79,9 +80,10 @@ for f in glob.glob('corpus/raw/*.json'):
 stats['records_retrieved'] = total_raw
 stats['records_after_dedupe'] = 1550
 stats['on_topic_after_gate'] = 883
-stats['after_venue_screen'] = 107 + 9 - 3  # selection + additions - drops
-stats['final_corpus'] = len(ver)
-json.dump(stats, open('corpus/stats.json', 'w'), indent=1)
+# Two-tier funnel (verified against screening_log.csv and eligible_corpus.json):
+stats['tier1_eligible'] = 799   # venue-screened eligible records (rule-based, no quotas)
+stats['tier2_classified'] = len(ver)  # curated full-text-classified subset
+json.dump(stats, open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/stats.json'), 'w'), indent=1)
 print(json.dumps({k: v for k, v in stats.items() if not isinstance(v, dict)}, indent=1))
 print('by_year:', stats['by_year'])
 print('method_group_by_year:', json.dumps(stats['method_group_by_year'], indent=1))

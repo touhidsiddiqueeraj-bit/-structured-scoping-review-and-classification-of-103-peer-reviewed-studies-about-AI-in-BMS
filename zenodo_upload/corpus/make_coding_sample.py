@@ -3,12 +3,14 @@
 
 Draws a stratified random 30-paper sample (seed 20261017) from papers_final,
 strips ALL released labels, and writes corpus/reliability/coder_{A,B,C}_30.csv
-with only identifiers + blank coding columns. Gold labels are withheld to a
-file that the reliability script reads only after locks (not shipped)."""
+with only identifiers + blank coding columns. Gold labels are withheld from
+the coders and written to out/gold_labels_30.csv, which ships in the deposit
+and is read by the reliability script only after locks."""
+import os
 import csv, json, random, os
 from collections import defaultdict
 
-ROOT = '/home/touhid/Documents/reviewpaper'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 C = json.load(open(f'{ROOT}/corpus/papers_final.json'))
 OUTDIR = f'{ROOT}/corpus/reliability'
 os.makedirs(OUTDIR, exist_ok=True)

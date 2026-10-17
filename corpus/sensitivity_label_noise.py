@@ -14,10 +14,11 @@ contrast. Seeded and reproducible.
 Outputs corpus/sensitivity_label_noise.json. Run from repo root:
     python3 corpus/sensitivity_label_noise.py
 """
+import os
 import csv, json, random
 from scipy.stats import fisher_exact
 
-ROOT = '/home/touhid/Documents/reviewpaper'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROTO = ('cross-cell holdout', 'cross-chemistry holdout', 'cross-domain holdout', 'online/real-vehicle')
 
 C = json.load(open(f'{ROOT}/corpus/papers_final.json'))

@@ -2,13 +2,14 @@
 """Record-level screening provenance: one row per record retrieved (883+ refs),
 with stage statuses, function tags, and exclusion reasons. Reviewer fix:
 makes the selection process verifiable (TTE R3: 'record-level screening table')."""
+import os
 import csv, json
 import pool
 
-POOL = 'corpus/pool.csv'
-FINAL = 'corpus/eligible_corpus.json'
-SUBSET = 'corpus/papers_final.json'
-OUT = 'corpus/screening_log.csv'
+POOL = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/pool.csv')
+FINAL = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/eligible_corpus.json')
+SUBSET = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/papers_final.json')
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/screening_log.csv')
 
 EXCLUDE_VENUES = [
     'ECS Meeting Abstracts', 'SSRN', 'Journal of Physics: Conference Series',
@@ -111,5 +112,5 @@ json.dump({'battery_terms': pool.BATTERY_TERMS, 'ml_terms': pool.ML_TERMS,
            'gate_rule': 'title lowercased; must contain >=1 battery term and >=1 ML term',
            'function_tag_source': 'function tags come from the Crossref query-key prefix map (AREA_OF_KEY in pool.py), i.e. the queries a record matched; they are not derived from the title-gate term lists',
            'function_tag_map': {k: v for k, v in pool.AREA_OF_KEY.items()}},
-          open('corpus/tagging_terms.json', 'w'), indent=1)
+          open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/tagging_terms.json'), 'w'), indent=1)
 print('tagging_terms.json written')

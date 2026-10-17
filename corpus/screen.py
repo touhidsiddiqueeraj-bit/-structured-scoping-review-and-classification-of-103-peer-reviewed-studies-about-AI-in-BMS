@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Screen candidate pool to ~100 corpus papers with area quotas, year balance,
 reputable-journal constraint, and duplicate rejection."""
+import os
 import csv, json, re
 from collections import defaultdict
 
-POOL = '/home/touhid/Documents/reviewpaper/corpus/pool.csv'
-SEEDS = '/home/touhid/Documents/reviewpaper/corpus/seeds.json'
-OUT = '/home/touhid/Documents/reviewpaper/corpus/selection.json'
+POOL = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/pool.csv')
+SEEDS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/seeds.json')
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/selection.json')
 
 # Journals excluded: abstract/preview venues, preprint servers, conference series
 EXCLUDE_VENUES = [

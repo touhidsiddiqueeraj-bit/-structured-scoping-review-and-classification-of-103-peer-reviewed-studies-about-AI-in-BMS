@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Final corpus curation: explicit DOI-level reassignments, SOH trim, additions."""
+import os
 import csv, json
 from collections import defaultdict
 
-SEL2 = '/home/touhid/Documents/reviewpaper/corpus/selection2.json'
-POOL = '/home/touhid/Documents/reviewpaper/corpus/pool.csv'
-OUT = '/home/touhid/Documents/reviewpaper/corpus/final_papers.json'
+SEL2 = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/selection2.json')
+POOL = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/pool.csv')
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/final_papers.json')
 
 sel = json.load(open(SEL2))
 by_doi = {r['doi']: r for r in sel}

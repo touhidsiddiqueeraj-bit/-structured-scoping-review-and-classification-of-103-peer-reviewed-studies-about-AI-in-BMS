@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Generate all paper figures (template-matched: Times-like serif, 300 dpi)."""
+import os
 import json
 import matplotlib
 matplotlib.use('Agg')
@@ -15,41 +16,66 @@ plt.rcParams.update({
     'axes.labelsize': 9,
     'figure.dpi': 300,
 })
-OUT = 'figures/'
-stats = json.load(open('corpus/stats.json'))
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'figures/')
+stats = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/stats.json')))
 
 # ---------- Fig 3: two-panel — measured eligible-corpus trend + classified-subset method families ----------
-elig = json.load(open('corpus/eligible_corpus.json'))
-fig, (axL, axR) = plt.subplots(1, 2, figsize=(7.0, 2.9), constrained_layout=True)
+elig = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/eligible_corpus.json')))
+fig, (axL, axR) = plt.subplots(1, 2, figsize=(7.2, 3.1), constrained_layout=True)
+# 2027 is a single Crossref early-access metadata stamp; shown years are 2020-2026
 ey = sorted(int(y) for y in elig['by_year'] if 2020 <= int(y) <= 2026)
 ec = [elig['by_year'].get(str(y), 0) for y in ey]
 axL.bar(ey, ec, color='#3b6ea5', width=0.72)
 axL.set_ylabel('Eligible records per year')
 axL.set_xlabel('Publication year')
-axL.set_title('Tier 1: eligible corpus (measured, n = 799)', fontsize=9)
+axL.set_title('Tier 1: eligible corpus, 2020\u20132026 (n = 799)', fontsize=9)
 for x, c in zip(ey, ec):
     axL.text(x, c + max(ec) * 0.015, str(c), ha='center', fontsize=7.2, color='#37352F')
-plt.rcParams['axes.titleweight'] = 'normal'
+axL.text(0.035, 0.97, 'one further record is\ndate-stamped 2027 by\nCrossref (not shown)',
+         transform=axL.transAxes, ha='left', va='top', fontsize=6.4, color='#666666',
+         bbox=dict(boxstyle='round,pad=0.3', fc='white', ec='#cccccc', lw=0.5))
 groups = ['Classical ML', 'Deep learning', 'Physics-informed / hybrid',
           'Optimization-augmented learning', 'Transfer / domain adaptation',
-          'Reinforcement / control learning', 'Foundation models / LLM']
-colors = ['#7f9fc4', '#3b6ea5', '#c44e52', '#ddae57', '#55a868', '#8172b2', '#333333']
+          'Reinforcement / control learning', 'Foundation models / LLM',
+          'Review / perspective']
+colors = ['#7f9fc4', '#3b6ea5', '#c44e52', '#ddae57', '#55a868', '#8172b2', '#333333', '#b0b0b0']
 mgy = stats['method_group_by_year']
-years2 = list(range(2020, 2027))
+years2 = list(range(2019, 2027))
 data = np.zeros((len(groups), len(years2)))
 for gi, g in enumerate(groups):
     for yi, y in enumerate(years2):
         data[gi, yi] = mgy.get(str(y), {}).get(g, 0)
-share = data  # counts, not shares (caption and axis agree on papers)
-axR.stackplot(years2, share, labels=groups, colors=colors, alpha=0.92)
+axR.stackplot(years2, data, labels=groups, colors=colors, alpha=0.92)
 axR.set_ylabel('Classified-subset papers')
 axR.set_xlabel('Publication year')
 axR.set_ylim(0, data.sum(axis=0).max() * 1.25)
 axR.set_xticks(years2)
+axR.set_xticklabels([str(y) for y in years2], fontsize=6.8)
 axR.set_title('Tier 2: classified subset (n = 103)', fontsize=9)
 axR.legend(loc='upper left', bbox_to_anchor=(0, -0.22), fontsize=6, frameon=False, ncol=2)
-fig.subplots_adjust(bottom=0.28)
 fig.savefig(OUT + 'fig3_method_evolution.png', dpi=300)
+plt.close(fig)
+
+# ---------- Fig 2b (extended Fig 3): subset composition by year + cumulative ----------
+years3 = list(range(2019, 2027))
+by_year = stats['by_year']
+counts3 = [by_year.get(str(y), by_year.get(y, 0)) for y in years3]
+cum = np.cumsum(counts3)
+fig, ax = plt.subplots(figsize=(4.4, 2.7), constrained_layout=True)
+ax.bar(years3, counts3, color='#3b6ea5', width=0.7, label='Papers per year')
+for x, c in zip(years3, counts3):
+    ax.text(x, c + max(counts3) * 0.02, str(c), ha='center', fontsize=7.2, color='#37352F')
+ax.set_ylabel('Classified-subset papers')
+ax.set_xlabel('Publication year')
+ax.set_ylim(0, max(counts3) * 1.3)
+ax2 = ax.twinx()
+ax2.plot(years3, cum, color='#c44e52', marker='o', ms=3.5, lw=1.3, label='Cumulative')
+ax2.set_ylabel('Cumulative total')
+ax2.set_ylim(0, max(cum) * 1.12)
+h1, l1 = ax.get_legend_handles_labels()
+h2, l2 = ax2.get_legend_handles_labels()
+ax.legend(h1 + h2, l1 + l2, loc='upper left', fontsize=7, frameon=False)
+fig.savefig(OUT + 'fig2_year_trend.png', dpi=300)
 plt.close(fig)
 
 # ---------- Fig 4: application-area distribution ----------

@@ -4,7 +4,7 @@
 BASE="https://api.crossref.org/works"
 MAILTO="review.study%40example.org"
 SELECT="DOI,title,container-title,issued,is-referenced-by-count,author,type,published-print,published-online"
-OUT=/home/touhid/Documents/reviewpaper/corpus/raw
+OUT=$(cd "$(dirname "$0")/.." && pwd)/corpus/raw
 
 declare -A QUERIES
 QUERIES[soc_ml]="state of charge estimation lithium-ion battery machine learning"

@@ -6,12 +6,13 @@ released script runs unmodified from the extracted zip: absolute paths are
 rewritten to CWD-relative ones. Includes Zenodo API metadata, deposit README,
 license, and zip. The only manual step afterwards: upload + get DOI.
 """
+import os
 import json, os, shutil, zipfile, time
 
-ROOT = '/home/touhid/Documents/reviewpaper'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = f'{ROOT}/zenodo_upload'
 ZIP = f'{ROOT}/zenodo_upload.zip'
-ABS = '/home/touhid/Documents/reviewpaper/'
+ABS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TITLE = ('Machine learning in battery management systems: a two-tier scoping '
          'review of 799 eligible studies with in-depth classification and validation audit')
@@ -96,11 +97,11 @@ def main():
     abstract = (
         'Machine learning (ML) has become a load-bearing component of modern battery '
         'management systems (BMS), yet the validation practices behind the literature\'s '
-        'accuracy claims have never been systematically measured. This deposit contains '
+        'accuracy claims are rarely examined at corpus scale. This deposit contains '
         'the complete evidence base and analysis pipeline of a two-tier structured scoping '
         'review: a rule-based eligible corpus of 799 peer-reviewed journal articles '
-        '(2019-2026) with record-level screening provenance (corpus/screening_log.csv, '
-        'n = 883 inspected records), an in-depth classified subset of 103 studies '
+        '(2020-2026) with record-level screening provenance (corpus/screening_log.csv, '
+        'all 1,550 title-gate decisions plus 5 forced-seed entries), an in-depth classified subset of 103 studies '
         '(corpus/papers.csv) with a per-paper validation-protocol audit '
         '(corpus/protocol_audit.csv), a conference descriptive set, the classification '
         'codebook (corpus/codebook.md), and a blind 30-paper inter-coder reliability '

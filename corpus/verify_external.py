@@ -3,6 +3,7 @@
 These are references used for positioning/standards discussion that are NOT
 part of the 103-study classified subset or the 799-record eligible corpus,
 so they live in a separate file to keep the dataset counts clean."""
+import os
 import json, subprocess, time
 
 def author_str(authors):
@@ -43,4 +44,4 @@ for doi in EXTERNAL:
     out.append(rec)
     print('verified', doi, '->', rec['journal'], rec['year'])
     time.sleep(0.4)
-json.dump(out, open('/home/touhid/Documents/reviewpaper/corpus/external_verified.json', 'w'), indent=1)
+json.dump(out, open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/external_verified.json'), 'w'), indent=1)

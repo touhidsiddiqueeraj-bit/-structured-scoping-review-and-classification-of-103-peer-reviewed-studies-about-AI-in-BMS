@@ -3,7 +3,8 @@
 paper_part{1,2,3}.py blocks used for the DOCX (single source of truth)."""
 import json, re, sys, os
 
-sys.path.insert(0, '/home/touhid/Documents/reviewpaper')
+import os as _os
+sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
 SHORT = '--short' in sys.argv
 if SHORT:
     import paper_short_part1 as paper_part1
@@ -12,7 +13,7 @@ if SHORT:
 else:
     import paper_part1, paper_part2, paper_part3
 
-ROOT = '/home/touhid/Documents/reviewpaper'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_TEX = f'{ROOT}/ieee_submission/tex/mlbms.tex'
 FIGDIR = f'{ROOT}/ieee_submission/tex/figs'
 
@@ -266,7 +267,7 @@ for kind, *rest in BLOCKS:
                     'are from the authors themselves. This work received no specific funding.')
 
 # ---------- bibliography ----------
-bib = ['\\begin{thebibliography}{120}']
+bib = ['\\begin{thebibliography}{%d}' % len(order)]
 for i, doi in enumerate(order, 1):
     bib.append('\\bibitem{r%d}' % i)
     bib.append(ref_text_latex(doi))
@@ -276,7 +277,7 @@ bib.append('\\end{thebibliography}')
 names = ', '.join(esc(n) for n, _ in AUTHORS[:-1])
 authors_tex = (names + ', and ' + esc(AUTHORS[-1][0])).replace(' ', '~')
 
-bib_lines = ['\\begin{thebibliography}{120}']
+bib_lines = ['\\begin{thebibliography}{%d}' % len(order)]
 for i, doi in enumerate(order, 1):
     bib_lines.append('\\bibitem{r%d}' % i)
     bib_lines.append(ref_text_latex(doi))

@@ -15,11 +15,12 @@ No quotas, no year caps, no citation thresholds. Everything below is measured
 from the eligible set, not selected into it.
 Output: corpus/eligible_corpus.json with one row per study.
 """
+import os
 import csv, json
 from collections import Counter, defaultdict
 
-POOL = 'corpus/pool.csv'
-OUT = 'corpus/eligible_corpus.json'
+POOL = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/pool.csv')
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'corpus/eligible_corpus.json')
 
 EXCLUDE_VENUES = [
     'ECS Meeting Abstracts', 'SSRN', 'Journal of Physics: Conference Series',

@@ -9,8 +9,8 @@ TABLES = {
     'TABLE_REP': FULL.TABLE3,
     'TABLE_LLM': FULL.TABLE_LLM,
     'TABLE_STD': {
- 'caption': "Mapping BMS functions to requirements in UN GTR 20 (Amendment 1 thermal-propagation provisions), GB 38031-2020/2025, ISO 26262:2018 with ISO/PAS 8800:2024, and ISO 21448 (SOTIF): what deployed ML components must be able to evidence. The mapping is this review's synthesis at requirement level (not clause-level legal citation); \u201ccorpus status\u201d gives the corresponding classified-subset primary-paper counts from Section III-C.",
- 'header': ['BMS function', 'What the standard demands of a deployed function', 'Current corpus status'],
+ 'caption': "Mapping BMS functions to requirements in UN GTR 20 (Amendment 1 thermal-propagation provisions), GB 38031-2020/2025, ISO 26262:2018 with ISO/PAS 8800:2024, and ISO 21448 (SOTIF): what deployed ML components must be able to evidence. The mapping is this review's synthesis at requirement level (not clause-level legal citation); \u201csubset status\u201d gives the corresponding classified-subset primary-paper counts from Section III-C.",
+ 'header': ['BMS function', 'What the standard demands of a deployed function', 'Current subset status'],
  'widths': [1.0, 2.1, 1.9],
  'rows': [
   ['SOC estimation',
@@ -18,7 +18,7 @@ TABLES = {
    '3 of 13 SOC primary papers use a strong isolation protocol; none validate on real-vehicle data; 12 rest on laboratory-scale data'],
   ['SOH / RUL prognosis',
    'Capacity and power fade margins underpin thermal-propagation early warning and end-of-service decisions; degradation assumptions must hold across chemistry, duty, and environment (ISO 26262 hazard analysis; ISO 21448 for performance limitations)',
-   '20 of 32 SOH/RUL primary papers use a strong protocol; 4 use real-vehicle data; accuracy claims rest mostly on three public benchmarks (23 papers corpus-wide)'],
+   '20 of 32 SOH/RUL primary papers use a strong protocol; 4 use real-vehicle data; accuracy claims rest mostly on three public benchmarks (23 primary papers in the subset)'],
   ['Fault detection',
    'Thermal-propagation early warning must provide the escape window: GB 38031-2025 requires the warning signal but no fire/explosion beyond the triggered cell (superseding the GB 38031-2020 5-min criterion); the GTR 20 amendment proposes a \u22655-min advance warning before cabin hazards, via test or risk-management compliance path; coverage must be argued and audited (ISO/PAS 8800 assurance argument)',
    '2 of 7 fault/safety primary papers validate online on fleet data; detection-latency and false-alarm distributions are rarely reported'],
@@ -35,7 +35,7 @@ TABLES = {
  'header': ['Axis', 'This review', 'Prior cross-functional / powertrain reviews'],
  'widths': [0.9, 1.95, 2.15],
  'rows': [
-  ['Corpus', 'Two-tier: 799 rule-based eligible records + 103 classified subset', 'Fixed study lists (e.g., 95 studies), no record-level selection provenance'],
+  ['Corpus', 'Two-tier: 799 rule-based eligible records + 103 classified subset', 'Fixed study lists without record-level selection provenance'],
   ['Validation analysis', 'Protocol classes defined, per-paper assignments released, method-family contrast tested with sensitivity ranges; within-corpus measurement, not a field census', 'Narrative remarks on data scarcity; protocol strength not quantified'],
   ['Standards linkage', 'Function-to-requirement mapping vs. UN GTR 20, GB 38031-2020/2025, ISO 26262:2018, ISO/PAS 8800:2024', 'Not addressed or addressed qualitatively'],
   ['Recommendations', 'Twelve-item reporting checklist (BMS-ML-RC) + six research directions', 'General future-work statements'],
@@ -70,11 +70,12 @@ BLOCKS = [
 
 ('h2', '8.1 Physics-informed learning, interpretability, and uncertainty'),
 ('p',
- "Physics-informed and hybrid model\u2013data learning is the corpus's largest methodological theme (22 primary-application papers across all "
- "functions; Table I) \u2014 in state estimation [[10.1109/jrfid.2022.3211841]][[10.1016/j.measurement.2025.118985]], heat-generation estimation "
- "[[10.1016/j.jechem.2022.11.036]], prognostics [[10.1016/j.ymssp.2022.109347]], and impedance-based diagnostics "
- "[[10.1016/j.rser.2023.113807]], with physics-constrained autoencoders improving health prediction over purely learned counterparts "
- "[[10.1007/s00521-022-07291-5]] and a physical-plus-data-driven fusion literature for internal-state estimation [[10.3390/batteries10120442]]. "
+ "Physics-informed and hybrid model\u2013data learning is the classified subset's fastest-growing methodological theme (22 primary-application "
+ "papers across all functions; Table I) \u2014 in state estimation [[10.1109/jrfid.2022.3211841]][[10.1016/j.measurement.2025.118985]], heat-generation estimation "
+ "[[10.1016/j.jechem.2022.11.036]], prognostics [[10.1016/j.ymssp.2022.109347]], and impedance-based diagnostics \u2014 consolidated by a physics-informed EIS-diagnostics review "
+ "[[10.1016/j.rser.2023.113807]] \u2014 with physics-constrained autoencoders improving health prediction over purely learned counterparts "
+ "[[10.1007/s00521-022-07291-5]] and a reviewed physical-plus-data-driven fusion literature for internal-state estimation "
+ "[[10.3390/batteries10120442]]. "
  "The caution is that most physics-informed studies embed simplified physics \u2014 equivalent-circuit or reduced electrochemical models \u2014 so the "
  "hybrid inherits model bias even as it gains structure, and its validation is no stronger than that of purely data-driven peers (Section III-C). "
  "A smaller but consequential cluster makes learning systems inspectable: explainability-driven feature selection improves estimator robustness "
@@ -93,12 +94,12 @@ BLOCKS = [
  "channel orthogonal to voltage sensing [[10.1016/j.egyai.2022.100188]] \u2014 and ML mappings from equivalent-circuit parameters to "
  "electrochemical properties give classical BMS models a physically interpretable learned layer [[10.1016/j.est.2024.113257]]. These settings "
  "differ in latency budgets, error tolerance, and update cadence, and the field is beginning to design for those differences. Production-side "
- "mapping [[10.1002/batt.202300046]], coating interpretability [[10.1016/j.conengprac.2022.105202]], and defect detection "
+ "mapping review [[10.1002/batt.202300046]], coating interpretability [[10.1016/j.conengprac.2022.105202]], and defect detection "
  "[[10.1016/j.jechem.2025.04.025]] complete the picture: cell quality is itself a BMS input."),
 
 ('h2', '8.3 Foundation models and LLM-based management'),
 ('p',
- "The corpus's youngest theme is generative, and it arrives with a prior-art caveat: LLM-based battery state estimation already exists outside "
+ "The classified subset's youngest theme is generative, and it arrives with a prior-art caveat: LLM-based battery state estimation already exists outside "
  "the screened venues \u2014 preprint and conference work from 2024 and a 2025 journal letter [[10.1109/tec.2025.3548400]] \u2014 so no study in "
  "this corpus can claim to be the first of its kind. Within the subset the published studies are of two distinct kinds: a domain-specific LLM "
  "for risk analysis of battery *energy-storage-system* incidents \u2014 station-side rather than onboard technology \u2014 "
@@ -114,8 +115,8 @@ BLOCKS = [
 ('h1', '9. Research Gaps, Reporting Standards, and Future Directions'),
 ('p',
  "Cross-referencing the bibliometric analysis of Section III with the function-level reviews yields six structural gaps. (1) Validation "
- "practice: 17 of the 88 primary papers use within-cell or unsupervised k-fold validation, and only 8 of all 103 demonstrate online or fleet "
- "use; standardized cross-cell, cross-chemistry, and lab-to-fleet transfer protocols should become reporting norms, as already practiced by the "
+ "practice: 17 of the 88 primary papers use within-cell or unsupervised k-fold validation, and only 8 of the 88 primary papers (every online "
+ "demonstration in the subset is a primary application) evaluate online or on fleets; standardized cross-cell, cross-chemistry, and lab-to-fleet transfer protocols should become reporting norms, as already practiced by the "
  "transfer-learning and general-framework studies [[10.1016/j.apenergy.2024.125086]][[10.1109/tte.2025.3533540]]. (2) Two-pole data "
  "fragmentation: the three public benchmarks sustain 23 primary papers and 36 rest on private laboratory cells that are rarely released; "
  "federated learning over fleets, anonymized fleet-data releases, and multi-institution cycling campaigns \u2014 in the spirit of the 179-cell "
@@ -133,7 +134,7 @@ BLOCKS = [
  "of gap 4 as much as new algorithms. Two follow-on subsections turn these gaps outward \u2014 first to what the automotive safety standards "
  "actually demand of these functions, then to how the emerging 2027\u20132030 research directions map onto them."),
 
-('h2', '9.1 From corpus gaps to safety-standard requirements'),
+('h2', '9.1 From corpus gaps to safety-standard requirements'),  # heading kept; body text uses subset wording
 ('p',
  "The standards invoked in Section I \u2014 UN GTR 20 (electric-vehicle safety; Amendment 1, endorsed for WP.29 adoption in late 2026 at this "
  "review's retrieval date, adds thermal-propagation provisions with two compliance paths: a physical test, or a risk-management approach "
@@ -142,9 +143,13 @@ BLOCKS = [
  "impact and fast-charge-cycle tests), ISO 26262:2018 (functional safety of road-vehicle E/E systems), ISO/PAS 8800:2024 (safety and "
  "artificial intelligence \u2014 the road-vehicle extension of ISO 26262 and ISO 21448 to learned components), and ISO 21448 (SOTIF) \u2014 do "
  "not prescribe estimation algorithms, but they define what a deployed estimator or controller must be able to evidence, and Table VI "
- "translates the corpus gaps into those terms. The mapping is this review's synthesis at requirement level rather than clause level, and it "
+ "translates the subset's gaps into those terms. The mapping is this review's synthesis at requirement level rather than clause level, and it "
  "is stated so that it can be checked against the standards texts themselves: the point is not legal advice but that a validation protocol "
- "reported in a paper corresponds, or does not, to evidence a safety case can use. Three consequences stand out for automotive deployment. "
+ "reported in a paper corresponds, or does not, to evidence a safety case can use. The inference rule behind every ``supports a standards "
+ "argument'' statement in this section is explicit: a paper's evidence can support such an argument only if it demonstrates performance on "
+ "at least one held-out integration unit (a cross-cell holdout or stronger isolation protocol) and reports the environment in which that "
+ "evidence was obtained; by construction, within-cell and k-fold evidence cannot support the argument, because the safety case is about "
+ "unseen cells and unseen duty. Three consequences stand out for automotive deployment. "
  "Within-cell and k-fold validation (17 primary papers) cannot support an ISO 26262 argument, because the safety case is about unseen cells "
  "and unseen duty and the protocol never tests an unseen unit; a standards argument must therefore be *argued* from the isolation evidence, "
  "not *asserted* from headline accuracy. Thermal-propagation early-warning latency is a timing requirement, so fault-detection papers "
@@ -157,7 +162,7 @@ BLOCKS = [
 
 ('h2', '9.2 Position relative to prior reviews'),
 ('p',
- "The closest published competitor is a 2026 performance-centric review of ML for EV powertrains with BMS and charging scope "
+ "The closest in scope among recent reviews is a 2026 performance-centric review of ML for EV powertrains with BMS and charging scope "
  "[[10.1007/s44163-025-00721-y]]; adjacent cross-functional surveys exist for degradation and estimation methods. This review is distinguished "
  "by what those studies do not attempt, and Table VII states the comparison: a pooled two-tier corpus with record-level screening provenance, "
  "a within-corpus measurement of validation protocol strength across functions, a standards-grounded gap analysis, and a released, re-run-able "
@@ -180,7 +185,7 @@ BLOCKS = [
  "capability limitations, making certifiable charging and thermal control reachable; and (f) *honest foundation-model integration*: "
  "retrieval-grounded LLM agents with published latency and calibration budgets, capable of the coordination role while estimation authority "
  "stays with calibrated numeric models \u2014 extending, not contradicting, the corpus's LLM estimator [[10.1016/j.ensm.2026.104983]]. A "
- "corpus-level guardrail on all six: the BMS-ML-RC checklist below is designed to be attached to a paper at submission, so the next revision "
+ "guardrail on all six directions: the BMS-ML-RC checklist below is designed to be attached to a paper at submission, so the next revision "
  "cycle of this literature arrives auditable by construction."),
 
 ('h2', '9.4 A reporting checklist for machine-learning BMS studies'),
@@ -194,7 +199,7 @@ BLOCKS = [
  "validated instrument \u2014 no Delphi or expert-consensus process was run for it, only three items are score-measured in this corpus, and it "
  "has not been applied as an audit to all 103 studies. The review's own reporting follows the PRISMA-ScR flow structure (Fig. 2), but the "
  "protocol was not prospectively registered; where this section says a practice *should* be reported, that is a recommendation supported by "
- "the corpus evidence above, and we suggest journals consider it as a submission checklist."),
+ "the evidence above, and we suggest journals consider it as a submission checklist."),
 ('tbl', 'TABLE_CHECKLIST'),
 
 
@@ -206,9 +211,10 @@ BLOCKS = [
  "ranges. Three conclusions stand out. First, within the classified subset, method families have shifted from classical feature-based "
  "learners to deep sequence models and now physics-informed hybrids, with LLM-based studies appearing from 2025\u20132026 \u2014 though "
  "LLM-based battery estimation began in other venues. Second, the center of gravity is estimation at cell level: measured as shares of the "
- "eligible corpus, the SOC\u2013SOH\u2013prognostics union covers about half of function-tagged records, whereas vehicle- and pack-level "
- "practice remains thin \u2014 precisely the level at which UN GTR 20, GB 38031, and ISO 26262 pose their requirements. Third, published "
- "accuracy progress is not matched by validation progress: only 8 of 103 classified studies demonstrate online or fleet operation, 17 of 88 "
+ "eligible corpus, the SOC\u2013SOH\u2013prognostics union covers about half of eligible records, whereas vehicle- and pack-level "
+ "practice remains thin \u2014 precisely the level at which UN GTR 20, GB 38031, and ISO 26262 pose their requirements. Third, the "
+ "proliferation of published accuracy claims is not matched by validation progress: only 8 of the 88 primary papers (8 of the 103 "
+ "classified studies) demonstrate online or fleet operation, 17 of 88 "
  "primary papers use isolation-weakened splits, and 23 rest on three public benchmarks while 36 rest on private laboratory cells; the "
  "physics-informed validation contrast is directionally consistent under both reported definitions but not statistically established "
  "(protocol-only 36% versus 52%, p = 0.32; including-hardware 59% versus 74%, p = 0.19), so it should be treated as an untested hypothesis "
