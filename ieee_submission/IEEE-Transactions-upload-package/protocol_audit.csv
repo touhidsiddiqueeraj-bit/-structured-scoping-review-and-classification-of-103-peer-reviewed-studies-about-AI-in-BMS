@@ -1,0 +1,104 @@
+doi,area,method_family,data_source,validation_coded,strong_protocol_only,strong_incl_hardware,primary_or_review
+10.1016/j.est.2023.106931,Cell balancing & ECM,Shallow ML,self-lab,experimental hardware,no,yes,primary
+10.1016/j.est.2024.113257,Cell balancing & ECM,Shallow ML,self-lab,cross-cell holdout,yes,yes,primary
+10.1038/s41586-020-1994-5,Charging control,Bayesian optimization,self-lab,experimental hardware,no,yes,primary
+10.1016/j.renene.2019.08.077,Charging control,Optimization-augmented control,self-lab,experimental hardware,no,yes,primary
+10.1016/j.energy.2022.126331,Charging control,Optimization-augmented control,simulation,simulation,no,no,primary
+10.1016/j.ensm.2022.12.034,Charging control,Deep learning,self-lab,experimental hardware,no,yes,primary
+10.1109/tte.2023.3311813,Charging control,Bayesian optimization,simulation,simulation plus hardware spot-check,no,no,primary
+10.1016/j.est.2024.111755,Charging control,Optimization-augmented control,simulation,simulation,no,no,primary
+10.1016/j.est.2024.112046,Charging control,Optimization-augmented control,simulation,simulation,no,no,primary
+10.1016/j.enconman.2025.120170,Charging control,Bayesian optimization,self-lab,experimental hardware,no,yes,primary
+10.1038/s41467-020-15235-7,Cross-cutting,Shallow ML,EIS-lab,cross-cell holdout,yes,yes,primary
+10.1002/anie.202214037,Cross-cutting,Shallow ML,self-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.conengprac.2022.105202,Cross-cutting,Shallow ML,self-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.ensm.2022.05.007,Cross-cutting,Deep learning,Severson-MATR,cross-chemistry holdout,yes,yes,primary
+10.1016/j.egyai.2022.100188,Cross-cutting,Shallow ML,self-lab,cross-cell holdout,yes,yes,primary
+10.1109/jrfid.2022.3211841,Cross-cutting,Physics-informed,NASA,within-cell split,no,no,primary
+10.1007/s00521-022-07291-5,Cross-cutting,Physics-informed,CALCE,within-cell split,no,no,primary
+10.1002/batt.202300046,Cross-cutting,Shallow ML,review,review synthesis,no,no,primary
+10.1039/d2dd00067a,Cross-cutting,Shallow ML,Severson-MATR,cross-cell holdout,yes,yes,primary
+10.1016/j.ensm.2023.02.035,Cross-cutting,Deep learning,Severson-MATR,cross-cell holdout,yes,yes,primary
+10.1016/j.eswa.2023.120444,Cross-cutting,Deep learning,real-vehicle,online/real-vehicle,yes,yes,primary
+10.1016/j.est.2022.106295,Cross-cutting,Shallow ML,EIS-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.est.2023.107203,Cross-cutting,Hybrid physics+ML,self-lab,experimental hardware,no,yes,primary
+10.1016/j.ress.2022.109046,Cross-cutting,Shallow ML,CALCE,within-cell split,no,no,primary
+10.1016/j.rser.2023.113807,Cross-cutting,Physics-informed,review,review synthesis,no,no,primary
+10.3390/batteries10070220,Cross-cutting,Review / perspective,review,review synthesis,no,no,--
+10.3390/batteries10120442,Cross-cutting,Physics-informed,review,review synthesis,no,no,primary
+10.1016/j.est.2024.113502,Cross-cutting,Graph neural network,Severson-MATR,cross-cell holdout,yes,yes,primary
+10.1002/aenm.202503067,Cross-cutting,Review / perspective,review,review synthesis,no,no,--
+10.1109/tte.2025.3533540,Cross-cutting,Transfer learning,EIS-lab,cross-chemistry holdout,yes,yes,primary
+10.1016/j.ensm.2026.104983,Cross-cutting,Foundation model / LLM,real-vehicle,online/real-vehicle,yes,yes,primary
+10.1016/j.est.2026.123023,Cross-cutting,Hybrid physics+ML,self-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.measurement.2025.118985,Cross-cutting,Physics-informed,self-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.ress.2026.112416,Cross-cutting,Foundation model / LLM,real-vehicle,case study,no,no,primary
+10.3390/electronics10111309,Fault & safety,Review / perspective,review,review synthesis,no,no,--
+10.1016/j.energy.2020.118866,Fault & safety,Shallow ML,self-lab,experimental hardware,no,yes,primary
+10.1016/j.est.2023.107575,Fault & safety,Shallow ML,real-vehicle,online/real-vehicle,yes,yes,primary
+10.1016/j.etran.2023.100254,Fault & safety,Review / perspective,review,review synthesis,no,no,--
+10.1016/j.apenergy.2024.123248,Fault & safety,Transfer learning,real-vehicle,cross-domain holdout,yes,yes,primary
+10.1016/j.jpowsour.2024.235015,Fault & safety,Hybrid physics+ML,simulation,simulation plus hardware spot-check,no,no,primary
+10.1016/j.etran.2024.100337,Fault & safety,Physics-informed,simulation,cross-validation,no,no,primary
+10.1016/j.jechem.2025.04.025,Fault & safety,Deep learning,self-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.etran.2025.100418,Fault & safety,Deep learning,real-vehicle,online/real-vehicle,yes,yes,primary
+10.1016/j.energy.2019.116467,Health estimation (SOH),Shallow ML,CALCE,within-cell split,no,no,primary
+10.1016/j.jpowsour.2019.227281,Health estimation (SOH),Shallow ML,CALCE,within-cell split,no,no,primary
+10.1016/j.apenergy.2021.117346,Health estimation (SOH),Review / perspective,review,review synthesis,no,no,--
+10.1109/tte.2020.3028784,Health estimation (SOH),Shallow ML,EIS-lab,cross-cell holdout,yes,yes,primary
+10.1038/s42256-021-00312-3,Health estimation (SOH),Shallow ML,self-lab,cross-cell holdout,yes,yes,primary
+10.1109/tpel.2021.3134701,Health estimation (SOH),Shallow ML,self-lab,cross-cell holdout,yes,yes,primary
+10.1109/tpel.2021.3117788,Health estimation (SOH),Transfer learning,self-lab,cross-domain holdout,yes,yes,primary
+10.1016/j.energy.2023.127033,Health estimation (SOH),Transfer learning,Severson-MATR,cross-chemistry holdout,yes,yes,primary
+10.1016/j.energy.2023.126855,Health estimation (SOH),Deep learning,real-vehicle,online/real-vehicle,yes,yes,primary
+10.1038/s41467-023-38458-w,Health estimation (SOH),Deep learning,Severson-MATR,cross-chemistry holdout,yes,yes,primary
+10.1016/j.ress.2022.108947,Health estimation (SOH),Deep learning,NASA,within-cell split,no,no,primary
+10.1016/j.apenergy.2024.124077,Health estimation (SOH),Shallow ML,real-vehicle,online/real-vehicle,yes,yes,primary
+10.1016/j.energy.2024.133418,Health estimation (SOH),Deep learning,self-lab,experimental hardware,no,yes,primary
+10.1016/j.geits.2024.100169,Health estimation (SOH),Hybrid physics+ML,real-vehicle,online/real-vehicle,yes,yes,primary
+10.1016/j.apenergy.2024.125086,Health estimation (SOH),Shallow ML,self-lab,cross-domain holdout,yes,yes,primary
+10.1016/j.jpowsour.2025.236784,Health estimation (SOH),Shallow ML,real-vehicle,online/real-vehicle,yes,yes,primary
+10.1038/s41598-025-30602-4,Health estimation (SOH),Physics-informed,CALCE,within-cell split,no,no,primary
+10.1016/j.isci.2025.112235,Health estimation (SOH),Transfer learning,Severson-MATR,cross-chemistry holdout,yes,yes,primary
+10.1016/j.energy.2025.139753,Health estimation (SOH),Physics-informed,EIS-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.jechem.2025.08.093,Health estimation (SOH),Physics-informed,Severson-MATR,cross-chemistry holdout,yes,yes,primary
+10.1038/s41560-019-0356-8,Prognostics (RUL),Shallow ML,Severson-MATR,cross-cell holdout,yes,yes,primary
+10.1016/j.joule.2019.11.018,Prognostics (RUL),Review / perspective,review,review synthesis,no,no,--
+10.1016/j.apenergy.2021.116897,Prognostics (RUL),Shallow ML,Severson-MATR,cross-cell holdout,yes,yes,primary
+10.1016/j.energy.2021.120205,Prognostics (RUL),Shallow ML,self-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.jclepro.2021.128265,Prognostics (RUL),Hybrid physics+ML,NASA,within-cell split,no,no,primary
+10.1016/j.est.2022.104901,Prognostics (RUL),Deep learning,self-lab,experimental hardware,no,yes,primary
+10.1016/j.ymssp.2022.109347,Prognostics (RUL),Physics-informed,self-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.jechem.2023.03.026,Prognostics (RUL),Review / perspective,review,review synthesis,no,no,--
+10.1002/advs.202402608,Prognostics (RUL),Shallow ML,self-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.apenergy.2025.125314,Prognostics (RUL),Physics-informed,Severson-MATR,cross-chemistry holdout,yes,yes,primary
+10.1016/j.apenergy.2024.124713,Prognostics (RUL),Deep learning,NASA,within-cell split,no,no,primary
+10.1016/j.energy.2025.136618,Prognostics (RUL),Deep learning,NASA,within-cell split,no,no,primary
+10.1016/j.est.2025.118415,Prognostics (RUL),Hybrid physics+ML,mixed,cross-validation,no,no,primary
+10.1016/j.ress.2025.111392,Prognostics (RUL),Reinforcement learning,NASA,within-cell split,no,no,primary
+10.1038/s41598-025-92262-8,Prognostics (RUL),Hybrid physics+ML,CALCE,within-cell split,no,no,primary
+10.1016/j.energy.2020.117664,State estimation (SOC),Filter-based hybrid,self-lab,experimental hardware,no,yes,primary
+10.1016/j.energy.2020.118000,State estimation (SOC),Shallow ML,self-lab,cross-cell holdout,yes,yes,primary
+10.1038/s42256-020-0156-7,State estimation (SOC),Review / perspective,review,review synthesis,no,no,--
+10.1016/j.energy.2021.121236,State estimation (SOC),Meta-heuristic-optimized DL,self-lab,experimental hardware,no,yes,primary
+10.1109/access.2021.3068776,State estimation (SOC),Filter-based hybrid,self-lab,experimental hardware,no,yes,primary
+10.1016/j.jpowsour.2020.229108,State estimation (SOC),Shallow ML,simulation,simulation plus hardware spot-check,no,no,primary
+10.3390/wevj12010038,State estimation (SOC),Shallow ML,self-lab,experimental hardware,no,yes,primary
+10.1016/j.ensm.2022.06.053,State estimation (SOC),Deep learning,self-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.est.2022.104664,State estimation (SOC),Review / perspective,review,review synthesis,no,no,--
+10.1016/j.energy.2023.128461,State estimation (SOC),Hybrid physics+ML,EIS-lab,cross-cell holdout,yes,yes,primary
+10.1016/j.apenergy.2024.123508,State estimation (SOC),Filter-based hybrid,self-lab,experimental hardware,no,yes,primary
+10.1016/j.heliyon.2024.e35183,State estimation (SOC),Meta-heuristic-optimized DL,self-lab,experimental hardware,no,yes,primary
+10.1016/j.est.2024.111877,State estimation (SOC),Deep learning,self-lab,experimental hardware,no,yes,primary
+10.1016/j.est.2024.114281,State estimation (SOC),Shallow ML,self-lab,experimental hardware,no,yes,primary
+10.1016/j.jpowsour.2024.235609,State estimation (SOC),Deep learning,self-lab,online/real-vehicle,yes,yes,primary
+10.1016/j.egyai.2025.100585,State estimation (SOC),Review / perspective,review,review synthesis,no,no,--
+10.20517/jmi.2024.84,State estimation (SOC),Review / perspective,review,review synthesis,no,no,--
+10.1016/j.jpowsour.2021.229727,Thermal management,Deep learning,simulation,simulation plus hardware spot-check,no,no,primary
+10.1016/j.applthermaleng.2022.118503,Thermal management,Optimization-augmented control,simulation,experimental hardware,no,yes,primary
+10.1016/j.applthermaleng.2023.120482,Thermal management,Shallow ML,self-lab,cross-validation,no,no,primary
+10.1016/j.jechem.2022.11.036,Thermal management,Physics-informed,simulation,cross-validation,no,no,primary
+10.1016/j.est.2023.106688,Thermal management,Review / perspective,review,review synthesis,no,no,--
+10.1016/j.applthermaleng.2024.123826,Thermal management,Optimization-augmented control,simulation,cross-validation,no,no,primary
+10.3390/wevj16050279,Thermal management,Deep learning,simulation,simulation,no,no,primary
+10.1016/j.apenergy.2026.127394,Thermal management,Hybrid physics+ML,self-lab,experimental hardware,no,yes,primary

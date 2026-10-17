@@ -1,0 +1,51 @@
+[
+ {
+  "doi": "10.1038/s41560-019-0356-8",
+  "title": "Data-driven prediction of battery cycle life before capacity degradation",
+  "journal": "Nature Energy",
+  "year": 2019,
+  "cites": 3002
+ },
+ {
+  "doi": "10.1038/s41586-020-1994-5",
+  "title": "Closed-loop optimization of fast-charging protocols for batteries with machine learning",
+  "journal": "Nature",
+  "year": 2020,
+  "cites": 1078
+ },
+ {
+  "doi": "10.1038/s42256-021-00312-3",
+  "title": "Machine learning pipeline for battery state-of-health estimation",
+  "journal": "Nature Machine Intelligence",
+  "year": 2021,
+  "cites": 613
+ },
+ {
+  "doi": "10.1038/s41467-020-15235-7",
+  "title": "Identifying degradation patterns of lithium ion batteries from impedance spectroscopy using machine learning",
+  "journal": "Nature Communications",
+  "year": 2020,
+  "cites": 703
+ },
+ {
+  "doi": "10.1038/s42256-020-0156-7",
+  "title": "Predicting the state of charge and health of batteries using data-driven machine learning",
+  "journal": "Nature Machine Intelligence",
+  "year": 2020,
+  "cites": 719
+ },
+ {
+  "doi": "10.1016/j.joule.2019.11.018",
+  "title": "Battery Lifetime Prognostics",
+  "journal": "Joule",
+  "year": 2020,
+  "cites": 1239
+ },
+ {
+  "doi": "10.1109/access.2019.2927778",
+  "title": "Smart Furniture as a Component of a Smart City\u2014Definition Based on Key Technologies Specification",
+  "journal": "IEEE Access",
+  "year": 2019,
+  "cites": 47
+ }
+]

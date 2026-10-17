@@ -44,7 +44,7 @@ BLOCKS = [
  "The corpus\u2019s youngest theme is generative: domain-specific large language models perform risk analysis of battery energy-storage incidents by synthesizing heterogeneous incident reports [[10.1016/j.ress.2026.112416]], and domain-knowledge-enhanced LLM agents orchestrate vehicle-cloud collaborative battery management [[10.1016/j.ensm.2026.104983]]. These first studies position LLMs as reasoning and coordination layers above numerical estimators rather than as estimators themselves \u2014 a sensible division given that hallucination risk is intolerable in safety-critical state estimation. Their appearance in mainstream energy journals in 2025\u20132026 nonetheless marks a new phase: the management stack is beginning to absorb foundation-model components, and the corpus\u2019s method-evolution data (Fig. 4) suggest the field expects this line to grow."),
 
 ('p',
- "Because BMS software is safety-critical, this review positions foundation models not as better estimators but as orchestration layers, and it is worth making the division of labor explicit. Table 9 contrasts established practice for classical and deep learning estimators with what the first LLM studies actually demonstrate, and states the guardrails this review regards as mandatory before any LLM component touches a safety-relevant path. The right-hand column is normative guidance proposed here, not claims about the published studies; the published LLM work to date is confined to risk analysis and coordination, which is exactly where it belongs at this stage."),
+ "Because BMS software is safety-critical, this review positions foundation models not as better estimators but as orchestration layers, and it is worth making the division of labor explicit. Table 9 contrasts established practice for classical and deep learning estimators with what the corpus's LLM studies actually demonstrate, and states the guardrails this review regards as mandatory before any LLM component touches a safety-relevant path. The right-hand column is normative guidance proposed here, not claims about the published studies; the published LLM work to date is confined to risk analysis and coordination, which is exactly where it belongs at this stage."),
 
 ('tbl', 'TABLE_LLM'),
 
@@ -80,7 +80,7 @@ BLOCKS = [
 
 ('h2', '9.5 Foundation-model integration'),
 ('p',
- "The first LLM-based management studies [[10.1016/j.ress.2026.112416]][[10.1016/j.ensm.2026.104983]] suggest a division of labor worth formalizing: foundation models as reasoning, orchestration, and human-interface layers; conventional ML as calibrated estimators; physics models as safety envelopes. Research is needed on grounding (preventing hallucinated battery knowledge), latency, and the division of safety authority between learned and non-learned components. Battery-domain foundation models pretrained on cycling corpora are a plausible medium-term development."),
+ "The corpus's first LLM-based management studies (2025-2026, and with LLM-based estimation prior art outside the screened venues) [[10.1016/j.ress.2026.112416]][[10.1016/j.ensm.2026.104983]] suggest a division of labor worth formalizing: foundation models as reasoning, orchestration, and human-interface layers; conventional ML as calibrated estimators; physics models as safety envelopes. Research is needed on grounding (preventing hallucinated battery knowledge), latency, and the division of safety authority between learned and non-learned components. Battery-domain foundation models pretrained on cycling corpora are a plausible medium-term development."),
 
 ('h2', '9.6 Under-served functions'),
 ('p',
@@ -94,7 +94,7 @@ BLOCKS = [
 
 ('tbl', 'TABLE_CHECKLIST'),
 
-('fig', 'figures/fig6_timeline.png', 'Fig. 8 Milestones of machine learning in battery management, 2019\u20132026, drawn from the corpus: early-life cycle prediction [[10.1038/s41560-019-0356-8]], closed-loop Bayesian fast charging [[10.1038/s41586-020-1994-5]], fleet-scale SOH pipelines [[10.1038/s42256-021-00312-3]], the physics-informed wave [[10.1016/j.jechem.2022.11.036]], cross-domain health estimation and cloud BMS [[10.1016/j.energy.2023.127033]][[10.1016/j.ensm.2023.02.035]], optimization-augmented and transfer learning [[10.1016/j.apenergy.2024.123248]], deep-RL prognostics [[10.1016/j.ress.2025.111392]], and the first foundation-model studies [[10.1016/j.ensm.2026.104983]].', 6.4),
+('fig', 'figures/fig6_timeline.png', 'Fig. 8 Milestones of machine learning in battery management, 2019\u20132026, drawn from the corpus: early-life cycle prediction [[10.1038/s41560-019-0356-8]], closed-loop Bayesian fast charging [[10.1038/s41586-020-1994-5]], fleet-scale SOH pipelines [[10.1038/s42256-021-00312-3]], the physics-informed wave [[10.1016/j.jechem.2022.11.036]], cross-domain health estimation and cloud BMS [[10.1016/j.energy.2023.127033]][[10.1016/j.ensm.2023.02.035]], optimization-augmented and transfer learning [[10.1016/j.apenergy.2024.123248]], deep-RL prognostics [[10.1016/j.ress.2025.111392]], and the first corpus foundation-model studies [[10.1016/j.ensm.2026.104983]].', 6.4),
 
 ('h1', '10. Conclusion'),
 ('p',
@@ -122,7 +122,7 @@ TABLE1 = {
 }
 
 TABLE2 = {
- 'caption': 'Table 3 Corpus composition: management function by publication year. The Reviews column counts the 12 method-family reviews; Primary = Total \u2212 Reviews gives the primary-application counts used in Fig. 1.',
+ 'caption': 'Table 3 Corpus composition: management function by publication year. The Reviews column counts the 12 method-family reviews plus the 3 review-type syntheses coded under their dominant method family; Primary = Total \u2212 Reviews is the 88-paper primary-application count used in Fig. 1.',
  'header': ['Function', "'19", "'20", "'21", "'22", "'23", "'24", "'25", "'26", 'Total', 'Reviews', 'Primary'],
  'widths': [1.5, 0.36, 0.36, 0.36, 0.36, 0.36, 0.36, 0.36, 0.36, 0.45, 0.72, 0.68],
  'rows': 'AUTO_AREA_YEAR',
@@ -139,13 +139,13 @@ TABLE3 = {
   ['Prognostics (RUL)', 'Classical ML; physics-informed; RL',
    'Early-life cycle prediction (public MATR dataset; about 9% median test error) [[10.1038/s41560-019-0356-8]]; physics-informed early-cycle RUL (multiple datasets; small-data prognosis) [[10.1016/j.apenergy.2025.125314]]; deep-RL prognostic model fusion (public NASA dataset; adaptive model selection) [[10.1016/j.ress.2025.111392]]'],
   ['Charging control', 'Bayesian optimization; mechanism-aware control',
-   'Closed-loop Bayesian protocol optimization (hardware prototype; 2.5 versus 18 months to a protocol) [[10.1038/s41586-020-1994-5]]; plating-perceiving fast charging (hardware prototype; plating-free protocols) [[10.1016/j.ensm.2022.12.034]]; ensemble-surrogate charging optimization (laboratory cells; multi-objective strategies) [[10.1016/j.enconman.2025.120170]]'],
+   'Closed-loop Bayesian protocol optimization (hardware prototype; 224 candidates in 16 days vs >500 days of exhaustive search) [[10.1038/s41586-020-1994-5]]; plating-perceiving fast charging (hardware prototype; plating-free protocols) [[10.1016/j.ensm.2022.12.034]]; ensemble-surrogate charging optimization (laboratory cells; multi-objective strategies) [[10.1016/j.enconman.2025.120170]]'],
   ['Thermal management', 'ANN surrogate; physics-informed; optimization',
    'ANN temperature prediction (laboratory cells; low-error thermal model) [[10.1016/j.applthermaleng.2023.120482]]; PINN heat-generation estimation (simulation; embedded thermal physics) [[10.1016/j.jechem.2022.11.036]]; ML-assisted BTMS design (simulation; multi-objective cooling design) [[10.1016/j.applthermaleng.2024.123826]]'],
   ['Fault & safety', 'Shallow ML; multiphysics + ML; transfer learning',
    'SVM fault diagnosis (hardware prototype; sensor and connection faults) [[10.1016/j.energy.2020.118866]]; multiphysics-ML runaway prediction (simulation and hardware; module-level hazard) [[10.1016/j.jpowsour.2024.235015]]; cross-fleet runaway-diagnosis transfer (fleet data; small-sample diagnosis) [[10.1016/j.apenergy.2024.123248]]'],
   ['Cross-cutting', 'Physics-informed; XAI; digital twin; LLM',
-   'EIS diagnostics PINN review (multiple studies; paradigm synthesis) [[10.1016/j.rser.2023.113807]]; uncertainty-aware early-life prediction (public MATR dataset; calibrated forecasts) [[10.1039/d2dd00067a]]; LLM vehicle-cloud management (fleet data; orchestration layer) [[10.1016/j.ensm.2026.104983]]'],
+   'EIS diagnostics PINN review (multiple studies; paradigm synthesis) [[10.1016/j.rser.2023.113807]]; uncertainty-aware early-life prediction (public MATR dataset; calibrated forecasts) [[10.1039/d2dd00067a]]; LLM-based SOH estimation with uncertainty-aware field-vehicle control (field data; corpus\u2019s earliest LLM estimator; earlier LLM-based estimation exists outside the screened venues [[10.1109/tec.2025.3548400]]) [[10.1016/j.ensm.2026.104983]]'],
  ],
 }
 
@@ -171,27 +171,27 @@ TABLE_GAPS = {
  'header': ['Gap', 'Evidence in corpus', 'Future direction'],
  'widths': [1.15, 2.55, 2.7],
  'rows': [
-  ['Validation practice', '17 primary studies use within-cell or k-fold validation; 9/103 demonstrate online or fleet use', 'Standardized cross-cell, cross-chemistry, lab-to-fleet transfer protocols as reporting norms'],
-  ['Benchmark monoculture', 'Single public dataset underlies 11 studies; NASA/CALCE sustain much of the rest', 'Federated learning, anonymized fleet-data releases, multi-institution cycling campaigns'],
+  ['Validation practice', '17 of 88 primary papers use within-cell or k-fold validation; 8 of 103 demonstrate online or fleet use', 'Standardized cross-cell, cross-chemistry, lab-to-fleet transfer protocols as reporting norms'],
+  ['Two-pole data fragmentation', '23 primary papers on three public benchmarks; 36 on rarely released private laboratory cells', 'Federated learning, anonymized fleet-data releases, multi-institution cycling campaigns'],
   ['Onboard deployment', 'Few studies treat compute/memory/latency as design constraints', 'Quantization-aware training, resource-constrained NAS, cloud\u2013edge hybrid estimation'],
   ['Trust and certification', 'Interpretability mostly post-hoc; uncertainty rarely calibrated', 'Calibrated uncertainty, analytically specified hybrid architectures, safety-case methodology'],
   ['Foundation-model integration', 'First two LLM-based studies appear 2025\u20132026', 'Grounded LLM orchestration layers; domain foundation models; division of safety authority'],
-  ['Under-served functions', 'Balancing (2 papers), charging control (8), thermal (8)', 'Certifiable adaptive control with mechanism-aware safety envelopes'],
+  ['Under-served functions', 'Balancing (2 papers), charging control (8), thermal (7)', 'Certifiable adaptive control with mechanism-aware safety envelopes'],
  ],
 }
 
 
 TABLE_METH = {
- 'caption': 'Table 2 Method families in the corpus: representative techniques, strengths, and limitations',
+ 'caption': 'Table 2 Method families: representative techniques, strengths, and limitations. Counts are the 88 primary-application papers; the three review-type syntheses coded under a method family plus the 12 method-family reviews are accounted for in Table II.',
  'header': ['Method family', 'Papers', 'Representative techniques', 'Strengths', 'Limitations'],
  'widths': [1.15, 0.5, 1.8, 1.55, 1.5],
  'rows': [
-  ['Classical ML', '29', 'Gaussian process regression, SVM/SVR, ensembles, shallow networks on engineered features', 'Calibrated uncertainty; small-data friendly; cheap to embed', 'Feature engineering is manual; ceilings under complex dynamics'],
+  ['Classical ML', '28', 'Gaussian process regression, SVM/SVR, ensembles, shallow networks on engineered features', 'Calibrated uncertainty; small-data friendly; cheap to embed', 'Feature engineering is manual; ceilings under complex dynamics'],
   ['Deep learning', '19', 'LSTM/GRU, CNN, attention/Transformer, autoencoders, graph networks', 'Learns features from raw curves; strong trajectory modeling', 'Data-hungry; weak extrapolation; opaque'],
-  ['Physics-informed / hybrid', '24', 'PINNs, physics-constrained autoencoders, filter-embedded networks, multiphysics fusion', 'Structure aids extrapolation; reduced data demand', 'Inherits simplified-model bias; harder to train'],
+  ['Physics-informed / hybrid', '22', 'PINNs, physics-constrained autoencoders, filter-embedded networks, multiphysics fusion', 'Structure aids extrapolation; reduced data demand', 'Inherits simplified-model bias; harder to train'],
   ['Optimization-augmented', '11', 'Bayesian optimization, surrogate-assisted multi-objective design, meta-heuristic-tuned networks', 'Sample-efficient protocol discovery; explicit trade-off handling', 'Offline tuning cost; surrogate bias'],
   ['Transfer / domain adaptation', '5', 'Domain-adversarial training, fine-tuning across chemistry/protocol', 'Directly targets the generalization gap', 'Negative transfer; needs shared protocols'],
-  ['Reinforcement / control learning', '1', 'Deep-RL prognostic model selection', 'Adaptive decision-making along trajectories', 'Training stability; scarce hardware validation'],
+  ['Reinforcement / control learning', '1', 'Deep-RL prognostic model selection (also an embedded component in further studies)', 'Adaptive decision-making along trajectories', 'Training stability; scarce hardware validation'],
   ['Foundation models / LLM', '2', 'Domain-tuned LLM agents for risk analysis and orchestration', 'Reasoning over heterogeneous text/system context', 'Hallucination risk; latency and cost'],
   ['Review / perspective', '12', 'Narrative and systematic syntheses', 'Maps the field; identifies shared gaps', 'No primary validation'],
  ],
@@ -203,10 +203,10 @@ TABLE_VALID = {
  'widths': [1.9, 0.6, 3.9],
  'rows': [
   ['Cross-cell holdout', '24', 'Strongest common laboratory protocol; unseen sibling cells'],
-  ['Experimental hardware', '19', 'Physical validation of estimator or controller behavior'],
+  ['Experimental hardware', '20', 'Physical validation of estimator or controller behavior'],
   ['Review synthesis', '15', 'No primary validation applicable'],
   ['Within-cell split', '12', 'Optimistic; trajectory leakage between train and test'],
-  ['Online / real-vehicle', '9', 'Deployment-relevant evidence; rarest strong protocol'],
+  ['Online / real-vehicle', '8', 'Deployment-relevant evidence; rarest strong protocol'],
   ['Cross-chemistry holdout', '7', 'Strictest generalization demand in corpus'],
   ['k-fold cross-validation', '5', 'Optimistic without cell-level isolation'],
   ['Simulation (+ hardware spot-check)', '8', 'Model-fidelity dependent; strongest when hardware-checked'],
@@ -217,32 +217,29 @@ TABLE_VALID = {
 
 
 TABLE_FLEET = {
- 'caption': 'Table 7 Cross-tabulation of fleet-data use against online validation (103 papers). Fleet-data use describes the primary data source; online validation describes the validation protocol; their overlap is 8 of 10 fleet-data papers. The right-hand column pools the validation categories of Table 5.',
+ 'caption': 'Table 6 Cross-tabulation of fleet-data use against online validation (103 classified papers). Fleet-data use describes the primary data source; online validation describes the validation protocol; their overlap is 8 of 10 fleet-data papers. A laboratory-data online demonstration was recoded to experimental hardware after full-text re-check (Section II-C). The right-hand column pools the environment-only validation categories (Section III-C).',
  'header': ['', 'Online / real-vehicle validation', 'All other validation protocols (Table 5)', 'Total papers'],
  'rows': [
-  ['Real-vehicle / fleet data', '8', '2 (transfer; case study)', '10'],
-  ['Other data sources', '1 (laboratory-data demonstration)', '92', '93'],
-  ['Total', '9', '94', '103'],
+  ['Real-vehicle / fleet data', '8', '2 (cross-domain holdout; case study)', '10'],
+  ['Other data sources', '0', '93', '93'],
+  ['Total', '8', '95', '103'],
  ],
 }
 
 
 TABLE_CONF = {
- 'caption': 'Table 6 Conference sensitivity set: 14 machine-learning battery papers from control and transportation-electrification venues (2019\u20132025), Crossref-verified, with validation evidence stated in their indexed abstracts.',
+ 'caption': 'Table 7 Conference-path descriptive set: 11 machine-learning battery papers from control and transportation-electrification venues (2019\u20132025), Crossref-verified, with validation evidence stated in their indexed abstracts.',
  'header': ['Venue (year)', 'Function', 'Method family (short)', 'Validation evidence stated in indexed abstract'],
  'widths': [1.3, 0.9, 2.0, 2.3],
  'rows': [
   ['ITEC 2019', 'SOC', 'LSTM recurrent network [[10.1109/itec.2019.8790543]]', 'Not stated'],
   ['VPPC 2021', 'SOH', 'ML ensemble [[10.1109/vppc53923.2021.9699273]]', 'Public dataset'],
-  ['ITEC 2022', 'SOC+SOH', 'Dual extended Kalman filter [[10.1109/itec53557.2022.9813961]]', 'Not stated'],
-  ['ACC 2023', 'SOC+SOH', 'Real-time estimator + batch least squares [[10.23919/acc55779.2023.10156326]]', 'Not stated'],
   ['ACC 2021', 'SOC', 'Multiple-model adaptive estimation [[10.23919/acc50511.2021.9482734]]', 'Simulation-level'],
   ['ITEC 2023', 'SOH', 'Histogram data + PCA + regression [[10.1109/itec55900.2023.10187012]]', 'Public dataset'],
   ['APEC 2023', 'Overview', 'Review of ML-enabled estimation [[10.1109/apec43580.2023.10131605]]', 'Not applicable'],
   ['ECC 2021', 'SOH', 'Reinforcement learning + observer [[10.23919/ecc54610.2021.9655199]]', 'Not stated'],
   ['CCDC 2022', 'SOH', 'CNN-BiLSTM transfer learning [[10.1109/ccdc55256.2022.10033695]]', 'Hardware (stated); public data'],
   ['VPPC 2019', 'SOC', 'SVR + PCA with dual-polarization model [[10.1109/vppc46532.2019.8952458]]', 'Not stated'],
-  ['ACC 2024', 'SOC+SOH', 'EKF critique and improvement [[10.23919/acc60939.2024.10644628]]', 'Simulation-level'],
   ['VPPC 2022', 'Prognostics', 'ML on aging data [[10.1109/vppc55846.2022.10003444]]', 'Hardware (stated)'],
   ['VPPC 2019', 'SOC', 'Kalman filter on reduced electrochemical model [[10.1109/vppc46532.2019.8952284]]', 'Simulation-level'],
   ['VPPC 2021', 'SOC', 'Computationally efficient neural network [[10.1109/vppc53923.2021.9699201]]', 'Simulation-level'],
@@ -254,10 +251,10 @@ TABLE_LLM = {
  'header': ['Dimension', 'Classical / deep ML estimators (established practice)', 'Published LLM studies (2025\u20132026)', 'Required guardrail (this review)'],
  'widths': [1.0, 1.9, 1.8, 1.8],
  'rows': [
-  ['Role in the stack', 'Calibrated numeric estimation and detection', 'Incident risk analysis [[10.1016/j.ress.2026.112416]]; vehicle-cloud orchestration [[10.1016/j.ensm.2026.104983]]', 'Estimation stays with calibrated ML; LLM coordinates, summarizes, explains'],
+  ['Role in the stack', 'Calibrated numeric estimation and detection', 'Stationary-BESS incident risk analysis [[10.1016/j.ress.2026.112416]]; LLM-based SOH estimation with uncertainty-aware control on field vehicle data [[10.1016/j.ensm.2026.104983]]', 'Estimation should belong to calibrated ML; the LLM SOH estimator of [[10.1016/j.ensm.2026.104983]] is the earliest in the screened subset \u2014 LLM-based battery estimation exists earlier outside these venues [[10.1109/tec.2025.3548400]] \u2014 and must show calibrated intervals before any actuation-adjacent role'],
   ['Grounding', 'Trained on domain cycling data', 'Domain-tuned corpora and knowledge-enhanced prompting', 'Retrieval over verified corpora with source citations; no ungrounded recall'],
   ['Dominant failure mode', 'Bounded numeric error under distribution shift', 'Open-ended hallucinated text', 'Outputs restricted to structured, checkable forms; never free text into protection logic'],
-  ['Uncertainty', 'Gaussian-process / conformal intervals in a subset of studies', 'Not quantified in published studies', 'Calibrated intervals mandatory before any actuation-adjacent role'],
+  ['Uncertainty', 'Gaussian-process / conformal intervals in a subset of studies', 'Not reported for incident risk analysis [[10.1016/j.ress.2026.112416]]; uncertainty-aware weighting demonstrated in the SOH estimator [[10.1016/j.ensm.2026.104983]]', 'Calibrated intervals mandatory before any actuation-adjacent role'],
   ['Latency and compute', 'Millisecond-class, onboard', 'Second-class, cloud-dependent', 'Offline analysis and planning only unless real-time evidence is shown'],
   ['Safety authority', 'Bounded by physics envelopes and thresholds', 'Undefined in published studies', 'LLM components must never hold direct cell-level protection authority'],
  ],

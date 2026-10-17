@@ -18,43 +18,48 @@ def area_of(key):
     return 'Other'
 
 rows = {}
-files = sorted(glob.glob('/home/touhid/Documents/reviewpaper/corpus/raw/*.json'))
-print(f'{len(files)} raw files')
-for f in files:
-    key = f.split('/')[-1].replace('.json', '')
-    try:
-        data = json.load(open(f))
-    except Exception as e:
-        print(f'BAD JSON {f}: {e}')
-        continue
-    if isinstance(data, list):
-        items = data
-    elif isinstance(data, dict):
-        items = data.get('message', {}).get('items', []) if isinstance(data.get('message'), dict) else []
-    else:
-        items = []
-    for it in items:
-        doi = it.get('DOI', '').lower()
-        if not doi or it.get('type') != 'journal-article':
+
+def dedup():
+    """Deduplicate all raw query results (before the title gate)."""
+    import glob as _g
+    rows = {}
+    files = sorted(_g.glob('/home/touhid/Documents/reviewpaper/corpus/raw/*.json'))
+    for f in files:
+        key = f.split('/')[-1].replace('.json', '')
+        try:
+            data = json.load(open(f))
+        except Exception as e:
+            print(f'BAD JSON {f}: {e}')
             continue
-        title = (it.get('title') or [''])[0]
-        if not title or len(title) < 25:
-            continue
-        year = None
-        for dp in (it.get('issued', {}).get('date-parts') or [[None]]):
-            if dp and dp[0]:
-                year = dp[0]
-                break
-        if not year or year < 2020:
-            continue
-        jr = (it.get('container-title') or [''])[0]
-        cites = it.get('is-referenced-by-count', 0)
-        r = rows.setdefault(doi, {
-            'doi': doi, 'title': re.sub(r'\s+', ' ', title).strip(),
-            'journal': jr, 'year': year, 'cites': cites, 'areas': set(),
-        })
-        r['areas'].add(area_of(key))
-        r['cites'] = max(r['cites'], cites)
+        if isinstance(data, list):
+            items = data
+        elif isinstance(data, dict):
+            items = data.get('message', {}).get('items', []) if isinstance(data.get('message'), dict) else []
+        else:
+            items = []
+        for it in items:
+            doi = it.get('DOI', '').lower()
+            if not doi or it.get('type') != 'journal-article':
+                continue
+            title = (it.get('title') or [''])[0]
+            if not title or len(title) < 25:
+                continue
+            year = None
+            for dp in (it.get('issued', {}).get('date-parts') or [[None]]):
+                if dp and dp[0]:
+                    year = dp[0]
+                    break
+            if not year or year < 2020:
+                continue
+            jr = (it.get('container-title') or [''])[0]
+            cites = it.get('is-referenced-by-count', 0)
+            r = rows.setdefault(doi, {
+                'doi': doi, 'title': re.sub(r'\s+', ' ', title).strip(),
+                'journal': jr, 'year': year, 'cites': cites, 'areas': set(),
+            })
+            r['areas'].add(area_of(key))
+            r['cites'] = max(r['cites'], cites)
+    return rows
 
 # Relevance gate: title must mention a battery/EV term AND an ML/data-driven term
 BATTERY_TERMS = [
@@ -78,6 +83,8 @@ def is_battery_related(title):
     t = ' ' + title.lower() + ' '
     return any(term in t for term in BATTERY_TERMS) and any(term in t for term in ML_TERMS)
 
+rows = dedup()
+print(f'{len(rows)} deduplicated records')
 out = []
 dropped = 0
 for doi, r in rows.items():

@@ -18,44 +18,37 @@ plt.rcParams.update({
 OUT = '/home/touhid/Documents/reviewpaper/figures/'
 stats = json.load(open('/home/touhid/Documents/reviewpaper/corpus/stats.json'))
 
-# ---------- Fig 2: publications per year ----------
-years = list(range(2020, 2027))
-counts = [stats['by_year'].get(str(y), 0) for y in years]
-cum = np.cumsum(counts)
-fig, ax = plt.subplots(figsize=(4.6, 2.6))
-ax.bar(years, counts, color='#3b6ea5', label='papers per year')
-ax2 = ax.twinx()
-ax2.plot(years, cum, color='#c44e52', marker='o', ms=3, lw=1.2, label='cumulative')
-ax.set_xlabel('Publication year')
-ax.set_ylabel('Papers per year')
-ax2.set_ylabel('Cumulative')
-ax.set_xticks(years)
-h1, l1 = ax.get_legend_handles_labels()
-h2, l2 = ax2.get_legend_handles_labels()
-ax.legend(h1 + h2, l1 + l2, loc='upper left', fontsize=7.5, frameon=False)
-fig.tight_layout()
-fig.savefig(OUT + 'fig2_year_trend.png', dpi=300)
-plt.close(fig)
-
-# ---------- Fig 3: method-family evolution (stacked area share) ----------
+# ---------- Fig 3: two-panel — measured eligible-corpus trend + classified-subset method families ----------
+elig = json.load(open('/home/touhid/Documents/reviewpaper/corpus/eligible_corpus.json'))
+fig, (axL, axR) = plt.subplots(1, 2, figsize=(7.0, 2.9), constrained_layout=True)
+ey = sorted(int(y) for y in elig['by_year'] if 2020 <= int(y) <= 2026)
+ec = [elig['by_year'].get(str(y), 0) for y in ey]
+axL.bar(ey, ec, color='#3b6ea5', width=0.72)
+axL.set_ylabel('Eligible records per year')
+axL.set_xlabel('Publication year')
+axL.set_title('Tier 1: eligible corpus (measured, n = 799)', fontsize=9)
+for x, c in zip(ey, ec):
+    axL.text(x, c + max(ec) * 0.015, str(c), ha='center', fontsize=7.2, color='#37352F')
+plt.rcParams['axes.titleweight'] = 'normal'
 groups = ['Classical ML', 'Deep learning', 'Physics-informed / hybrid',
           'Optimization-augmented learning', 'Transfer / domain adaptation',
           'Reinforcement / control learning', 'Foundation models / LLM']
 colors = ['#7f9fc4', '#3b6ea5', '#c44e52', '#ddae57', '#55a868', '#8172b2', '#333333']
 mgy = stats['method_group_by_year']
-data = np.zeros((len(groups), len(years)))
+years2 = list(range(2020, 2027))
+data = np.zeros((len(groups), len(years2)))
 for gi, g in enumerate(groups):
-    for yi, y in enumerate(years):
+    for yi, y in enumerate(years2):
         data[gi, yi] = mgy.get(str(y), {}).get(g, 0)
-share = data / data.sum(axis=0) * 100
-fig, ax = plt.subplots(figsize=(5.2, 2.9))
-ax.stackplot(years, share, labels=groups, colors=colors, alpha=0.92)
-ax.set_ylabel('Share of corpus (%)')
-ax.set_xlabel('Publication year')
-ax.set_ylim(0, 100)
-ax.set_xticks(years)
-ax.legend(loc='lower left', fontsize=6.4, frameon=True, framealpha=0.85, facecolor='white', edgecolor='#cccccc', ncol=2)
-fig.tight_layout()
+share = data  # counts, not shares (caption and axis agree on papers)
+axR.stackplot(years2, share, labels=groups, colors=colors, alpha=0.92)
+axR.set_ylabel('Classified-subset papers')
+axR.set_xlabel('Publication year')
+axR.set_ylim(0, data.sum(axis=0).max() * 1.25)
+axR.set_xticks(years2)
+axR.set_title('Tier 2: classified subset (n = 103)', fontsize=9)
+axR.legend(loc='upper left', bbox_to_anchor=(0, -0.22), fontsize=6, frameon=False, ncol=2)
+fig.subplots_adjust(bottom=0.28)
 fig.savefig(OUT + 'fig3_method_evolution.png', dpi=300)
 plt.close(fig)
 

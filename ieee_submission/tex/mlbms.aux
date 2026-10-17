@@ -25,35 +25,41 @@
 \citation{r24}
 \citation{r25}
 \citation{r26}
+\citation{r27}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {I-A}}The battery management problem}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {I-B}}Existing reviews and the literature gap}{1}{}\protected@file@percent }
 \citation{r3}
 \citation{r2}
-\citation{r14}
-\citation{r15}
+\citation{r4}
+\citation{r28}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {I-B}}Existing reviews and the literature gap}{2}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {I-C}}Contribution of this paper}{2}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {II}Review Methodology}{2}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Search strategy}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Screening and selection}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Classification framework and limitations}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {III}Corpus Overview and Five-Year Evolution}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Publication trend and method-family evolution}{2}{}\protected@file@percent }
-\citation{r27}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The corpus mapped across battery-management functions and method families (91 primary-application papers; the 12 corpus reviews are excluded). The ``of which reviews'' column of Table II states the reconciliation directly; no excluded review belongs to the physics-informed family, so that column's corpus total of 24 (Table I) is unchanged.}}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Screening and rule-based selection}{2}{}\protected@file@percent }
+\citation{r10}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The classified subset mapped across battery-management functions and method families (the 88 primary-application papers). The remaining 15 classified papers are 12 method-coded reviews (``Review / perspective'') plus 3 review-type syntheses coded under their dominant method family --- two of which sit in the physics-informed column of Table I and are labeled in Table II. Rates that use the primary denominator are 88, not 103.}}{3}{}\protected@file@percent }
 \newlabel{fig:fig1_function_method_map.png}{{1}{3}{}{figure.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Study-selection flowchart. Records were retrieved from the Crossref REST API on 4--5 September 2026, deduplicated, screened at title level for battery and machine-learning relevance, screened at venue and document-type level, and curated to the final 103-study corpus.}}{3}{}\protected@file@percent }
-\newlabel{fig:fig2_prisma.png}{{2}{3}{}{figure.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Evolution of method-family shares in the corpus by publication year. The 2019 seed (classical ML) is omitted for scale.}}{4}{}\protected@file@percent }
-\newlabel{fig:fig3_method_evolution.png}{{3}{4}{}{figure.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Method families in the corpus: representative techniques, strengths, and limitations}}{4}{}\protected@file@percent }
-\newlabel{tab:TABLE_METH}{{I}{4}{}{table.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Application-area distribution}{4}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Data landscape and validation practice}{4}{}\protected@file@percent }
-\citation{r28}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Classification framework, validation definitions, and limitations}{3}{}\protected@file@percent }
+\citation{r13}
 \citation{r29}
+\citation{r14}
+\citation{r15}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Study-selection flowchart with the two-tier design. Records were retrieved from the Crossref REST API on 4--5 September 2026 (five passes; January--May 2024 retrieval hole documented in Section II-A), deduplicated, screened at title level by a released mechanical keyword rule (883 retained, 667 excluded), then at venue and document-type level. Tier 1 includes every eligible record (799, rule-based, no quotas); Tier 2 carries a curated full-text-classified subset of 103 with six landmark studies included deliberately and five force-included individually from outside the pool. Record-level provenance is released as screening\_log.csv (all 1,550 decisions) and tagging\_terms.json.}}{4}{}\protected@file@percent }
+\newlabel{fig:fig2_prisma.png}{{2}{4}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Corpus Overview and Five-Year Evolution}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Publication trend and method-family evolution}{4}{}\protected@file@percent }
 \citation{r30}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Measured application areas, the transportation-electrification cut, and venues}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Data landscape and validation practice}{5}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Two-tier trend evidence. Left: Tier 1 eligible-corpus records per year across the capped retrieval (the 2024 dip is the documented January--May 2024 retrieval hole, not a decline in the field). Right: Tier 2 classified-subset method-family papers by year (curated subset; wide sampling error in small years; the 2019 seed is omitted for scale).}}{6}{}\protected@file@percent }
+\newlabel{fig:fig3_method_evolution.png}{{3}{6}{}{figure.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Method families: representative techniques, strengths, and limitations. Counts are the 88 primary-application papers; the three review-type syntheses coded under a method family plus the 12 method-family reviews are accounted for in Table II.}}{6}{}\protected@file@percent }
+\newlabel{tab:TABLE_METH}{{I}{6}{}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Corpus composition: management function by publication year. The Reviews column counts the 12 method-family reviews plus the 3 review-type syntheses coded under their dominant method family; Primary = Total $-$ Reviews is the 88-paper primary-application count used in Fig. 1.}}{6}{}\protected@file@percent }
+\newlabel{tab:TABLE2}{{II}{6}{}{table.2}{}}
 \citation{r31}
+\citation{r5}
 \citation{r32}
 \citation{r33}
 \citation{r34}
@@ -65,171 +71,171 @@
 \citation{r40}
 \citation{r41}
 \citation{r42}
-\citation{r5}
+\citation{r10}
+\citation{r38}
+\citation{r20}
+\citation{r17}
 \citation{r43}
 \citation{r44}
 \citation{r45}
 \citation{r46}
 \citation{r47}
 \citation{r48}
+\citation{r28}
+\citation{r7}
 \citation{r49}
+\citation{r8}
 \citation{r50}
 \citation{r51}
+\citation{r6}
 \citation{r52}
 \citation{r53}
-\citation{r10}
-\citation{r49}
-\citation{r20}
-\citation{r17}
-\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Corpus composition: management function by publication year. The Reviews column counts the 12 method-family reviews; Primary = Total $-$ Reviews gives the primary-application counts used in Fig. 1.}}{5}{}\protected@file@percent }
-\newlabel{tab:TABLE2}{{II}{5}{}{table.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Sensitivity analysis: does the journal-only corpus understate validation practice?}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {IV}Machine Learning for Battery State Estimation}{5}{}\protected@file@percent }
+\citation{r3}
 \citation{r54}
 \citation{r55}
 \citation{r56}
 \citation{r57}
 \citation{r58}
 \citation{r59}
+\citation{r29}
 \citation{r60}
-\citation{r7}
 \citation{r61}
-\citation{r8}
 \citation{r62}
 \citation{r63}
-\citation{r6}
 \citation{r64}
 \citation{r65}
-\citation{r3}
+\citation{r11}
+\citation{r12}
 \citation{r66}
 \citation{r67}
 \citation{r68}
+\citation{r2}
+\citation{r19}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Cross-tabulation of fleet-data use against online validation (103 classified papers). Fleet-data use describes the primary data source; online validation describes the validation protocol; their overlap is 8 of 10 fleet-data papers. A laboratory-data online demonstration was recoded to experimental hardware after full-text re-check (Section II-C). The right-hand column pools the environment-only validation categories (Section III-C).}}{7}{}\protected@file@percent }
+\newlabel{tab:TABLE_FLEET}{{III}{7}{}{table.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Machine Learning for Battery State Estimation}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Machine Learning for Health Estimation and Prognostics}{7}{}\protected@file@percent }
+\citation{r5}
+\citation{r32}
+\citation{r41}
+\citation{r28}
+\citation{r53}
+\citation{r6}
+\citation{r3}
+\citation{r62}
+\citation{r13}
+\citation{r4}
 \citation{r69}
 \citation{r70}
 \citation{r71}
+\citation{r9}
 \citation{r72}
 \citation{r73}
 \citation{r74}
 \citation{r75}
+\citation{r21}
 \citation{r76}
 \citation{r77}
+\citation{r15}
+\citation{r4}
+\citation{r70}
 \citation{r78}
-\citation{r11}
-\citation{r12}
+\citation{r69}
 \citation{r79}
 \citation{r80}
 \citation{r81}
-\citation{r2}
-\citation{r19}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Benchmark saturation. Papers using the three dominant public benchmarks per year (stacked bars, left axis) against total corpus output per year (line, right axis).}}{6}{}\protected@file@percent }
-\newlabel{fig:fig7_dataset_saturation.png}{{4}{6}{}{figure.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Conference sensitivity set: 14 machine-learning battery papers from control and transportation-electrification venues (2019--2025), Crossref-verified, with validation evidence stated in their indexed abstracts.}}{6}{}\protected@file@percent }
-\newlabel{tab:TABLE_CONF}{{III}{6}{}{table.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Machine Learning for Health Estimation and Prognostics}{6}{}\protected@file@percent }
-\citation{r5}
-\citation{r43}
-\citation{r52}
-\citation{r60}
-\citation{r65}
-\citation{r6}
-\citation{r3}
-\citation{r75}
-\citation{r13}
-\citation{r4}
 \citation{r82}
+\citation{r69}
+\citation{r71}
 \citation{r83}
 \citation{r84}
-\citation{r9}
+\citation{r72}
 \citation{r85}
 \citation{r86}
+\citation{r9}
+\citation{r25}
+\citation{r73}
 \citation{r87}
 \citation{r88}
-\citation{r21}
 \citation{r89}
-\citation{r15}
-\citation{r4}
-\citation{r83}
+\citation{r74}
 \citation{r90}
-\citation{r82}
+\citation{r75}
+\citation{r24}
+\citation{r23}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Benchmark reuse versus classified-subset output. Papers in the classified subset using the three dominant public benchmarks per year (stacked bars) against classified-subset papers per year (line). Both quantities describe the curated 103-study subset, not the eligible corpus.}}{8}{}\protected@file@percent }
+\newlabel{fig:fig7_dataset_saturation.png}{{4}{8}{}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Machine Learning for Charging Control and Optimization}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Machine Learning for Thermal Management, Faults and Safety}{8}{}\protected@file@percent }
+\citation{r10}
 \citation{r91}
+\citation{r9}
+\citation{r59}
+\citation{r21}
 \citation{r92}
 \citation{r93}
 \citation{r94}
-\citation{r82}
-\citation{r84}
 \citation{r95}
 \citation{r96}
-\citation{r85}
+\citation{r76}
 \citation{r97}
 \citation{r98}
-\citation{r9}
-\citation{r25}
-\citation{r86}
 \citation{r99}
 \citation{r100}
 \citation{r101}
-\citation{r87}
 \citation{r102}
-\citation{r88}
-\citation{r24}
-\citation{r23}
-\citation{r10}
 \citation{r103}
-\citation{r9}
-\citation{r71}
-\citation{r21}
 \citation{r104}
+\citation{r95}
+\citation{r89}
+\citation{r77}
+\citation{r14}
+\citation{r15}
+\citation{r15}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Representative corpus studies by management function and method family. Entries gloss each study as: study summary (data basis; headline contribution). References in brackets refer to the numbered list.}}{9}{}\protected@file@percent }
+\newlabel{tab:TABLE_REP}{{IV}{9}{}{table.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Cross-Cutting Directions}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-A}}Physics-informed learning, interpretability, and uncertainty}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-B}}Digital twins, cloud BMS, and new sensing}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-C}}Foundation models and LLM-based management}{9}{}\protected@file@percent }
+\citation{r14}
+\citation{r15}
+\citation{r15}
+\citation{r77}
+\citation{r14}
+\citation{r15}
+\citation{r68}
+\citation{r67}
+\citation{r28}
+\citation{r58}
 \citation{r105}
-\citation{r106}
-\citation{r107}
-\citation{r108}
-\citation{r89}
-\citation{r109}
-\citation{r110}
-\citation{r111}
-\citation{r112}
-\citation{r113}
-\citation{r114}
-\citation{r115}
-\citation{r116}
-\citation{r107}
-\citation{r101}
-\@writefile{toc}{\contentsline {section}{\numberline {VI}Machine Learning for Charging Control and Optimization}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Machine Learning for Thermal Management, Faults and Safety}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {VIII}Cross-Cutting Directions}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-A}}Physics-informed learning, interpretability, and uncertainty}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-B}}Digital twins, cloud BMS, and new sensing}{7}{}\protected@file@percent }
-\citation{r14}
+\citation{r76}
 \citation{r15}
 \citation{r14}
-\citation{r15}
-\citation{r81}
-\citation{r80}
-\citation{r60}
-\citation{r70}
-\citation{r117}
-\citation{r89}
-\citation{r14}
-\citation{r15}
-\citation{r27}
+\citation{r30}
 \citation{r25}
-\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Representative corpus studies by management function and method family. Entries gloss each study as: study summary (data basis; headline contribution). References in brackets refer to the numbered list.}}{8}{}\protected@file@percent }
-\newlabel{tab:TABLE_REP}{{IV}{8}{}{table.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-C}}Foundation models and LLM-based management}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {IX}Research Gaps, Reporting Standards, and Future Directions}{8}{}\protected@file@percent }
+\citation{r27}
+\citation{r15}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Research Gaps, Reporting Standards, and Future Directions}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IX-A}}From corpus gaps to safety-standard requirements}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IX-B}}Position relative to prior reviews}{10}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Safety and verification taxonomy for foundation-model components in the BMS stack. The right-hand column is normative guidance proposed by this review, not claims about the published studies.}}{11}{}\protected@file@percent }
+\newlabel{tab:TABLE_LLM}{{V}{11}{}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Mapping BMS functions to requirements in UN GTR 20 (Amendment 1 thermal-propagation provisions), GB 38031-2020/2025, ISO 26262:2018 with ISO/PAS 8800:2024, and ISO 21448 (SOTIF): what deployed ML components must be able to evidence. The mapping is this review's synthesis at requirement level (not clause-level legal citation); ``corpus status'' gives the corresponding classified-subset primary-paper counts from Section III-C.}}{11}{}\protected@file@percent }
+\newlabel{tab:TABLE_STD}{{VI}{11}{}{table.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Position relative to prior reviews. ``Prasanna 2026'' denotes a 2026 performance-centric ML review of EV powertrains with BMS and charging scope; function- and method-specific reviews are summarized collectively. This review differs most in the validation measurement (within a curated subset), standards linkage, and released record-level artifacts.}}{11}{}\protected@file@percent }
+\newlabel{tab:TABLE_POSITION}{{VII}{11}{}{table.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IX-C}}Outlook: what the next revision cycle of this literature should produce}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IX-D}}A reporting checklist for machine-learning BMS studies}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {X}Conclusion}{12}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces Proposed BMS-ML reporting checklist (BMS-ML-RC), modeled on CONSORT/PRISMA reporting standards. Items 4, 5, and 11 derive from the validation-protocol classes defined in Section II-C and measured in the classified subset; item 12 is the artifact-availability norm this paper itself follows. The checklist as a whole has not been score-audited across all 103 classified papers --- it is a proposal, not a survey result.}}{12}{}\protected@file@percent }
+\newlabel{tab:TABLE_CHECKLIST}{{VIII}{12}{}{table.8}{}}
 \bibcite{r1}{1}
 \bibcite{r2}{2}
 \bibcite{r3}{3}
 \bibcite{r4}{4}
 \bibcite{r5}{5}
 \bibcite{r6}{6}
-\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Safety and verification taxonomy for foundation-model components in the BMS stack. The right-hand column is normative guidance proposed by this review, not claims about the published studies.}}{9}{}\protected@file@percent }
-\newlabel{tab:TABLE_LLM}{{V}{9}{}{table.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Proposed BMS-ML reporting checklist (BMS-ML-RC), modeled on CONSORT/PRISMA reporting standards.}}{9}{}\protected@file@percent }
-\newlabel{tab:TABLE_CHECKLIST}{{VI}{9}{}{table.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IX-A}}A reporting checklist for machine-learning BMS studies}{9}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {X}Conclusion}{9}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{References}{9}{}\protected@file@percent }
 \bibcite{r7}{7}
 \bibcite{r8}{8}
 \bibcite{r9}{9}
@@ -253,6 +259,7 @@
 \bibcite{r27}{27}
 \bibcite{r28}{28}
 \bibcite{r29}{29}
+\@writefile{toc}{\contentsline {section}{References}{13}{}\protected@file@percent }
 \bibcite{r30}{30}
 \bibcite{r31}{31}
 \bibcite{r32}{32}
@@ -329,16 +336,4 @@
 \bibcite{r103}{103}
 \bibcite{r104}{104}
 \bibcite{r105}{105}
-\bibcite{r106}{106}
-\bibcite{r107}{107}
-\bibcite{r108}{108}
-\bibcite{r109}{109}
-\bibcite{r110}{110}
-\bibcite{r111}{111}
-\bibcite{r112}{112}
-\bibcite{r113}{113}
-\bibcite{r114}{114}
-\bibcite{r115}{115}
-\bibcite{r116}{116}
-\bibcite{r117}{117}
-\gdef \@abspage@last{12}
+\gdef \@abspage@last{16}

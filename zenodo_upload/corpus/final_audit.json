@@ -1,0 +1,517 @@
+[
+ {
+  "n": "1",
+  "doi": "10.1038/s42256-020-0156-7.",
+  "verified": false
+ },
+ {
+  "n": "2",
+  "doi": "10.1016/j.joule.2019.11.018.",
+  "verified": false
+ },
+ {
+  "n": "3",
+  "doi": "10.1038/s41560-019-0356-8.",
+  "verified": false
+ },
+ {
+  "n": "4",
+  "doi": "10.1038/s41586-020-1994-5.",
+  "verified": false
+ },
+ {
+  "n": "5",
+  "doi": "10.1016/j.energy.2020.117664.",
+  "verified": false
+ },
+ {
+  "n": "6",
+  "doi": "10.1016/j.energy.2023.126855.",
+  "verified": false
+ },
+ {
+  "n": "7",
+  "doi": "10.1016/j.ress.2022.108947.",
+  "verified": false
+ },
+ {
+  "n": "8",
+  "doi": "10.1016/j.energy.2024.133418.",
+  "verified": false
+ },
+ {
+  "n": "9",
+  "doi": "10.1016/j.jechem.2022.11.036.",
+  "verified": false
+ },
+ {
+  "n": "10",
+  "doi": "10.1109/jrfid.2022.3211841.",
+  "verified": false
+ },
+ {
+  "n": "11",
+  "doi": "10.1109/tpel.2021.3117788.",
+  "verified": false
+ },
+ {
+  "n": "12",
+  "doi": "10.1016/j.energy.2023.127033.",
+  "verified": false
+ },
+ {
+  "n": "13",
+  "doi": "10.1016/j.ress.2025.111392.",
+  "verified": false
+ },
+ {
+  "n": "14",
+  "doi": "10.1016/j.ress.2026.112416.",
+  "verified": false
+ },
+ {
+  "n": "15",
+  "doi": "10.1016/j.ensm.2026.104983.",
+  "verified": false
+ },
+ {
+  "n": "16",
+  "doi": "10.1016/j.est.2022.104664.",
+  "verified": false
+ },
+ {
+  "n": "17",
+  "doi": "10.20517/jmi.2024.84.",
+  "verified": false
+ },
+ {
+  "n": "18",
+  "doi": "10.1016/j.apenergy.2021.117346.",
+  "verified": false
+ },
+ {
+  "n": "19",
+  "doi": "10.1016/j.jechem.2023.03.026.",
+  "verified": false
+ },
+ {
+  "n": "20",
+  "doi": "10.1016/j.egyai.2025.100585.",
+  "verified": false
+ },
+ {
+  "n": "21",
+  "doi": "10.1016/j.rser.2023.113807.",
+  "verified": false
+ },
+ {
+  "n": "22",
+  "doi": "10.1002/aenm.202503067.",
+  "verified": false
+ },
+ {
+  "n": "23",
+  "doi": "10.3390/electronics10111309.",
+  "verified": false
+ },
+ {
+  "n": "24",
+  "doi": "10.1016/j.etran.2023.100254.",
+  "verified": false
+ },
+ {
+  "n": "25",
+  "doi": "10.1016/j.est.2023.106688.",
+  "verified": false
+ },
+ {
+  "n": "26",
+  "doi": "10.3390/batteries10070220.",
+  "verified": false
+ },
+ {
+  "n": "27",
+  "doi": "10.1016/j.est.2023.106931.",
+  "verified": false
+ },
+ {
+  "n": "28",
+  "doi": "10.1016/j.energy.2020.118000.",
+  "verified": false
+ },
+ {
+  "n": "29",
+  "doi": "10.3390/wevj12010038.",
+  "verified": false
+ },
+ {
+  "n": "30",
+  "doi": "10.1016/j.jpowsour.2020.229108.",
+  "verified": false
+ },
+ {
+  "n": "31",
+  "doi": "10.1016/j.energy.2021.121236.",
+  "verified": false
+ },
+ {
+  "n": "32",
+  "doi": "10.1016/j.heliyon.2024.e35183.",
+  "verified": false
+ },
+ {
+  "n": "33",
+  "doi": "10.1109/access.2021.3068776.",
+  "verified": false
+ },
+ {
+  "n": "34",
+  "doi": "10.1016/j.jpowsour.2024.235609.",
+  "verified": false
+ },
+ {
+  "n": "35",
+  "doi": "10.1016/j.ensm.2022.06.053.",
+  "verified": false
+ },
+ {
+  "n": "36",
+  "doi": "10.1016/j.est.2024.114281.",
+  "verified": false
+ },
+ {
+  "n": "37",
+  "doi": "10.1016/j.est.2024.111877.",
+  "verified": false
+ },
+ {
+  "n": "38",
+  "doi": "10.1016/j.apenergy.2024.123508.",
+  "verified": false
+ },
+ {
+  "n": "39",
+  "doi": "10.1016/j.energy.2023.128461.",
+  "verified": false
+ },
+ {
+  "n": "40",
+  "doi": "10.1016/j.egyai.2022.100188.",
+  "verified": false
+ },
+ {
+  "n": "41",
+  "doi": "10.1016/j.energy.2019.116467.",
+  "verified": false
+ },
+ {
+  "n": "42",
+  "doi": "10.1109/tte.2020.3028784.",
+  "verified": false
+ },
+ {
+  "n": "43",
+  "doi": "10.1016/j.jpowsour.2019.227281.",
+  "verified": false
+ },
+ {
+  "n": "44",
+  "doi": "10.1109/tpel.2021.3134701.",
+  "verified": false
+ },
+ {
+  "n": "45",
+  "doi": "10.1016/j.apenergy.2024.124077.",
+  "verified": false
+ },
+ {
+  "n": "46",
+  "doi": "10.1038/s42256-021-00312-3.",
+  "verified": false
+ },
+ {
+  "n": "47",
+  "doi": "10.1016/j.energy.2025.136618.",
+  "verified": false
+ },
+ {
+  "n": "48",
+  "doi": "10.1016/j.est.2024.113502.",
+  "verified": false
+ },
+ {
+  "n": "49",
+  "doi": "10.1016/j.apenergy.2024.124713.",
+  "verified": false
+ },
+ {
+  "n": "50",
+  "doi": "10.1016/j.geits.2024.100169.",
+  "verified": false
+ },
+ {
+  "n": "51",
+  "doi": "10.1038/s41467-023-38458-w.",
+  "verified": false
+ },
+ {
+  "n": "52",
+  "doi": "10.1016/j.apenergy.2021.116897.",
+  "verified": false
+ },
+ {
+  "n": "53",
+  "doi": "10.1016/j.energy.2021.120205.",
+  "verified": false
+ },
+ {
+  "n": "54",
+  "doi": "10.1016/j.jclepro.2021.128265.",
+  "verified": false
+ },
+ {
+  "n": "55",
+  "doi": "10.1002/advs.202402608.",
+  "verified": false
+ },
+ {
+  "n": "56",
+  "doi": "10.1016/j.est.2022.104901.",
+  "verified": false
+ },
+ {
+  "n": "57",
+  "doi": "10.1016/j.ymssp.2022.109347.",
+  "verified": false
+ },
+ {
+  "n": "58",
+  "doi": "10.1038/s41598-025-30602-4.",
+  "verified": false
+ },
+ {
+  "n": "59",
+  "doi": "10.1016/j.jechem.2025.08.093.",
+  "verified": false
+ },
+ {
+  "n": "60",
+  "doi": "10.1016/j.energy.2025.139753.",
+  "verified": false
+ },
+ {
+  "n": "61",
+  "doi": "10.1016/j.apenergy.2025.125314.",
+  "verified": false
+ },
+ {
+  "n": "62",
+  "doi": "10.1016/j.est.2025.118415.",
+  "verified": false
+ },
+ {
+  "n": "63",
+  "doi": "10.1038/s41598-025-92262-8.",
+  "verified": false
+ },
+ {
+  "n": "64",
+  "doi": "10.1016/j.isci.2025.112235.",
+  "verified": false
+ },
+ {
+  "n": "65",
+  "doi": "10.1109/tte.2025.3533540.",
+  "verified": false
+ },
+ {
+  "n": "66",
+  "doi": "10.1016/j.apenergy.2024.125086.",
+  "verified": false
+ },
+ {
+  "n": "67",
+  "doi": "10.1016/j.jpowsour.2025.236784.",
+  "verified": false
+ },
+ {
+  "n": "68",
+  "doi": "10.1016/j.enconman.2025.120170.",
+  "verified": false
+ },
+ {
+  "n": "69",
+  "doi": "10.1109/tte.2023.3311813.",
+  "verified": false
+ },
+ {
+  "n": "70",
+  "doi": "10.1016/j.ensm.2022.12.034.",
+  "verified": false
+ },
+ {
+  "n": "71",
+  "doi": "10.1016/j.renene.2019.08.077.",
+  "verified": false
+ },
+ {
+  "n": "72",
+  "doi": "10.1016/j.energy.2022.126331.",
+  "verified": false
+ },
+ {
+  "n": "73",
+  "doi": "10.1016/j.est.2024.111755.",
+  "verified": false
+ },
+ {
+  "n": "74",
+  "doi": "10.1016/j.est.2024.112046.",
+  "verified": false
+ },
+ {
+  "n": "75",
+  "doi": "10.1016/j.applthermaleng.2023.120482.",
+  "verified": false
+ },
+ {
+  "n": "76",
+  "doi": "10.1016/j.applthermaleng.2024.123826.",
+  "verified": false
+ },
+ {
+  "n": "77",
+  "doi": "10.1016/j.energy.2020.118866.",
+  "verified": false
+ },
+ {
+  "n": "78",
+  "doi": "10.1016/j.jpowsour.2024.235015.",
+  "verified": false
+ },
+ {
+  "n": "79",
+  "doi": "10.1016/j.apenergy.2024.123248.",
+  "verified": false
+ },
+ {
+  "n": "80",
+  "doi": "10.1039/d2dd00067a.",
+  "verified": false
+ },
+ {
+  "n": "81",
+  "doi": "10.1016/j.apenergy.2026.127394.",
+  "verified": false
+ },
+ {
+  "n": "82",
+  "doi": "10.1016/j.jpowsour.2021.229727.",
+  "verified": false
+ },
+ {
+  "n": "83",
+  "doi": "10.1016/j.applthermaleng.2022.118503.",
+  "verified": false
+ },
+ {
+  "n": "84",
+  "doi": "10.3390/wevj16050279.",
+  "verified": false
+ },
+ {
+  "n": "85",
+  "doi": "10.1016/j.est.2023.107575.",
+  "verified": false
+ },
+ {
+  "n": "86",
+  "doi": "10.1016/j.etran.2025.100418.",
+  "verified": false
+ },
+ {
+  "n": "87",
+  "doi": "10.1016/j.jechem.2025.04.025.",
+  "verified": false
+ },
+ {
+  "n": "88",
+  "doi": "10.1016/j.etran.2024.100337.",
+  "verified": false
+ },
+ {
+  "n": "89",
+  "doi": "10.1016/j.measurement.2025.118985.",
+  "verified": false
+ },
+ {
+  "n": "90",
+  "doi": "10.1007/s00521-022-07291-5.",
+  "verified": false
+ },
+ {
+  "n": "91",
+  "doi": "10.1016/j.ensm.2022.05.007.",
+  "verified": false
+ },
+ {
+  "n": "92",
+  "doi": "10.3390/batteries10120442.",
+  "verified": false
+ },
+ {
+  "n": "93",
+  "doi": "10.1016/j.ress.2022.109046.",
+  "verified": false
+ },
+ {
+  "n": "94",
+  "doi": "10.1016/j.conengprac.2022.105202.",
+  "verified": false
+ },
+ {
+  "n": "95",
+  "doi": "10.1002/anie.202214037.",
+  "verified": false
+ },
+ {
+  "n": "96",
+  "doi": "10.1016/j.eswa.2023.120444.",
+  "verified": false
+ },
+ {
+  "n": "97",
+  "doi": "10.1016/j.est.2023.107203.",
+  "verified": false
+ },
+ {
+  "n": "98",
+  "doi": "10.1016/j.ensm.2023.02.035.",
+  "verified": false
+ },
+ {
+  "n": "99",
+  "doi": "10.1016/j.est.2022.106295.",
+  "verified": false
+ },
+ {
+  "n": "100",
+  "doi": "10.1038/s41467-020-15235-7.",
+  "verified": false
+ },
+ {
+  "n": "101",
+  "doi": "10.1016/j.est.2026.123023.",
+  "verified": false
+ },
+ {
+  "n": "102",
+  "doi": "10.1002/batt.202300046.",
+  "verified": false
+ },
+ {
+  "n": "103",
+  "doi": "10.1016/j.est.2024.113257.",
+  "verified": false
+ }
+]

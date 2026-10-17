@@ -18,8 +18,14 @@ FIGDIR = f'{ROOT}/ieee_submission/tex/figs'
 
 CORPUS = json.load(open(f'{ROOT}/corpus/papers_final.json'))
 CONF = json.load(open(f'{ROOT}/corpus/conference_verified.json'))
+EXT = json.load(open(f'{ROOT}/corpus/external_verified.json'))
 BY_DOI = {r['doi']: r for r in CORPUS}
 BY_DOI.update({r['doi']: r for r in CONF})
+BY_DOI.update({r['doi']: r for r in EXT})
+
+# Zenodo deposit DOI for the released dataset: set once, used wherever the
+# artifact is cited. Placeholder until the deposit is published.
+ZENODO_DOI = '10.5281/zenodo.23436202'
 
 if SHORT:
     TABLES = paper_part3.TABLES
@@ -65,7 +71,8 @@ for kind, *rest in BLOCKS:
 UNI = [('\u2014', '---'), ('\u2013', '--'), ('\u2212', '$-$'), ('\u00d7', '$\\times$'),
        ('\u2248', '$\\approx$'), ('\u2264', '$\\le$'), ('\u2265', '$\\ge$'),
        ('\u00b1', '$\\pm$'), ('\u00b0', '$^\\circ$'), ('\u201c', '``'), ('\u201d', "''"),
-       ('\u2018', '`'), ('\u2019', "'"), ('\u2026', '...'), ('\u2192', '$\\to$')]
+       ('\u2018', '`'), ('\u2019', "'"), ('\u2026', '...'), ('\u2192', '$\\to$'),
+       ('\u03ba', '$\\kappa$'), ('\u03b1', '$\\alpha$'), ('\u22642', '$\\le$2')]
 
 def esc(t):
     t = t.replace('&amp;', '&').replace('fast-chaging', 'fast-charging')
@@ -154,7 +161,7 @@ def table_latex(key):
         ay = stats['area_by_year']
         rev = {}
         for r in CORPUS:
-            if r['method'] == 'Review / perspective':
+            if r['method'] == 'Review / perspective' or r['valid'] == 'review synthesis':
                 rev[r['area']] = rev.get(r['area'], 0) + 1
         years = ['2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026']
         rows = []
@@ -240,11 +247,17 @@ for kind, *rest in BLOCKS:
     elif kind == 'decl':
         body.append('\\balance')
         body.append('\\section*{Data and Code Availability}')
-        body.append('The classified and Crossref-verified corpus of 103 studies is released as a machine-readable '
-                    'supplementary dataset (papers.csv), including per-paper citation counts and the screening statistics. '
-                    'The complete search, screening, verification, and figure-generation scripts are publicly available at '
-                    '\\url{' + 'https://github.com/touhidsiddiqueeraj-bit/-structured-scoping-review-and-classification-of-103-peer-reviewed-studies-about-AI-in-BMS' + '}, '
-                    'so that every figure and count in Section III can be regenerated from the released dataset.')
+        body.append('The complete evidentiary record of this review is released as a Zenodo deposit '
+                    '(DOI: \\url{https://doi.org/' + ZENODO_DOI + '}): the classified corpus of 103 studies '
+                    '(papers.csv) with per-paper citation counts, the 799-record eligible corpus and its '
+                    'record-level screening provenance (screening\\_log.csv, all 1{,}550 screening '
+                    'decisions plus five forced-seed entries), the released title-gate and tagging term lists '
+                    '(tagging\\_terms.json), the per-paper validation-protocol audit (protocol\\_audit.csv), the '
+                    'classification codebook, the blind 30-paper inter-coder reliability study (locked coding '
+                    'sheets, agreement report, itemized disagreement table), and the label-noise sensitivity '
+                    'analysis over headline counts. The complete search, screening, verification, and '
+                    'figure-generation scripts ship inside the same deposit and regenerate every figure '
+                    'and count in Section III; a development-form mirror is kept on GitHub.')
         body.append('\\section*{Acknowledgment}')
         body.append('The authors would like to acknowledge the use of writing-support and language-enhancement tools, '
                     'including OpenAI ChatGPT, Grammarly, and QuillBot, during the preparation of this manuscript. '
@@ -287,11 +300,14 @@ tex = r'''\documentclass[journal]{IEEEtran}
 
 \author{''' + authors_tex + r'''%
 \thanks{Manuscript received September 2026. (Corresponding author: Hussain Touhid Siddiquee.)}%
-\thanks{The authors are with Leading University, Sylhet, Bangladesh. The classified corpus,
-the conference sensitivity set, and the complete analysis pipeline are publicly available at
-\texttt{github.com/touhidsiddiqueeraj-bit}.}}
+\thanks{The authors are with Leading University, Sylhet, Bangladesh. The complete evidentiary
+record of this review---classified corpus, screening provenance log, protocol audit, codebook,
+and the blind inter-coder reliability study, together with the full analysis pipeline---is
+released as a Zenodo deposit, DOI: ''' + ZENODO_DOI + r'''; see Data and Code
+Availability. Item 12 of the reporting checklist this paper proposes makes such a DOI-backed
+deposit the reporting norm.}}
 
-\markboth{IEEE Transactions Submission, September 2026}{Siddiquee et al.: Machine Learning in Battery Management Systems}
+\markboth{IEEE Transactions on Transportation Electrification}{Siddiquee et al.: Machine Learning in Battery Management Systems}
 
 \maketitle
 

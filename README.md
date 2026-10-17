@@ -1,7 +1,7 @@
-# Machine learning in battery management systems: a structured scoping review and classification of 103 peer-reviewed studies, 2019–2026
+# Machine learning in battery management systems: a two-tier scoping review of 799 eligible studies with in-depth classification and validation audit
 
 [![Paper](https://img.shields.io/badge/manuscript-ML--BMS--Review.pdf-blue)](ML-BMS-Review.pdf)
-[![Corpus](https://img.shields.io/badge/dataset-103%20%2B%2014%20verified%20papers-green)](ML-BMS-Corpus.xlsx)
+[![Corpus](https://img.shields.io/badge/dataset-799%20eligible%20%2B%20103%20classified-green)](ML-BMS-Corpus.xlsx)
 [![Verification](https://img.shields.io/badge/metadata-Crossref%20DOI--resolved-orange)](#verification-methodology)
 
 This repository is the complete, reproducible companion to the scoping review
@@ -10,7 +10,7 @@ This repository is the complete, reproducible companion to the scoping review
 > *Machine learning in battery management systems: a structured scoping review and classification of 103 peer-reviewed studies, 2019–2026.*
 > Leading University, Sylhet, Bangladesh.
 
-Every one of the **103 corpus papers** and the **14 conference sensitivity-set papers** cited in the manuscript was verified against the [Crossref registry](https://api.crossref.org) by direct DOI resolution, and every number, figure, and table in the paper can be regenerated from the released dataset with the released code.
+Every DOI in the **103-study classified subset** and the **conference descriptive set** was resolved directly against the [Crossref registry](https://api.crossref.org); the **799-record eligible corpus** is assembled entirely from Crossref-registered records with the mapping listed per record in `screening_log.csv`. Every number, figure, and table in the paper can be regenerated from the released datasets with the released code.
 
 ---
 
@@ -21,7 +21,17 @@ Every one of the **103 corpus papers** and the **14 conference sensitivity-set p
 | [`ML-BMS-Review.pdf`](ML-BMS-Review.pdf) / [`.docx`](ML-BMS-Review.docx) | The manuscript (32 pp., 10 sections, 8 figures, 11 tables, 117 Crossref-verified references) |
 | [`ML-BMS-Corpus.xlsx`](ML-BMS-Corpus.xlsx) | Human-readable workbook: **Papers** (103, clickable DOI links), **Summary** (corpus counts), **Conference sensitivity** (14, clickable DOI links) |
 | [`corpus/papers.csv`](corpus/papers.csv) | The 103-paper classified corpus (machine-readable; one row per study, 16 fields) |
-| [`corpus/conference_sensitivity.csv`](corpus/conference_sensitivity.csv) | The 14-paper conference sensitivity set used in Section 3.5 |
+| [`corpus/eligible_corpus.json`](corpus/eligible_corpus.json) | The 799-record rule-based eligible corpus (Tier 1; measured bibliometrics source) |
+| [`corpus/screening_log.csv`](corpus/screening_log.csv) | Record-level screening provenance: status + reason for every decision — 1,550 pool records (883 retained at the title gate, 667 gate exclusions, 84 venue exclusions) plus 5 forced-seed entries |
+| [`corpus/tagging_terms.json`](corpus/tagging_terms.json) | Released title-gate term lists (battery terms, ML terms) and the query-key → function-tag map |
+| [`corpus/sensitivity_label_noise.json`](corpus/sensitivity_label_noise.json) | Label-noise scenario sensitivity of the headline validation counts (`sensitivity_label_noise.py`, seeded) |
+| [`corpus/per_year_denominators.json`](corpus/per_year_denominators.json) | Crossref per-year result totals for the 30 queries (tested as trend denominators; documented as unusable — see manuscript §III-A) |
+| [`corpus/protocol_audit.csv`](corpus/protocol_audit.csv) | Per-paper validation-protocol audit (strong flags under both definitions) |
+| [`corpus/codebook.md`](corpus/codebook.md) | Classification codebook: field definitions, thresholds, absorbing rules |
+| [`corpus/coding_protocol.md`](corpus/coding_protocol.md) | Independent re-coding protocol for coders 2–3 (blinding, dispute resolution, agreement thresholds) |
+| [`corpus/reliability/coder_*_30.csv`](corpus/reliability) | Blind 30-paper coding sheets (stratified random draw, seed 20261017) |
+| [`zenodo_upload.zip`](zenodo_upload.zip) | Ready-to-upload Zenodo deposit (data + codebook + reliability evidence + regeneration scripts; run from the extracted zip, verified) |
+| [`corpus/conference_sensitivity.csv`](corpus/conference_sensitivity.csv) | The 14-paper conference set behind the 11-paper ML descriptive set |
 | [`corpus/`](corpus) | Full pipeline: search, screening, verification, statistics, figures, document build |
 | [`figures/`](figures) | All manuscript figures as 300-dpi PNGs |
 
@@ -29,40 +39,36 @@ Every one of the **103 corpus papers** and the **14 conference sensitivity-set p
 
 ![Method-family evolution](figures/fig3_method_evolution.png)
 
-*Share of method families per publication year (Fig. 4 of the paper). Classical ML gives way to deep learning, then to physics-informed/hybrid approaches — with the first LLM-based studies appearing in 2025–2026.*
+*Tier trend figure (Fig. 3 of the paper).* Left: measured eligible-corpus publications per year (capped retrieval; the 2024 dip is the documented retrieval hole). Right: classified-subset method-family papers by year — classical ML gives way to deep learning, then to physics-informed/hybrid approaches, with LLM-based studies appearing in 2025–2026.
 
 ## Headline findings
 
-- **Five-year method evolution.** Classical feature-based learners (11 of 23 papers through 2021) gave way to deep sequence models (2022–23), then to physics-informed/hybrid learning (24 papers; the modal family by 2024–26) and optimization-augmented learning.
-- **Estimation succeeded; control lags.** SOH/RUL estimation dominates the literature (35 papers), but the control functions (charging, thermal, balancing) remain demonstrably transformable and under-evidenced for deployment.
-- **The validation gap, quantified.** Only 9 of 103 studies demonstrate a system online or on fleet data; 17 use within-cell or unsupervised k-fold splits that leak trajectory information; 23 papers rest on a single public benchmark (MATR/NASA/CALCE).
-- **The physics-informed validation paradox.** Physics-informed/hybrid papers are strong-protocol-validated *less* often than purely data-driven peers (54% vs 73%). Physics priors reduce data demand but do not substitute for rigorous out-of-distribution testing.
-- **Conference-path sensitivity.** A 14-paper curated set from ACC/ECC/CCDC/APEC/VPPC/ITEC shows no better abstract-level validation transparency than journals (14% vs 21% hardware-stated) — the journal-only corpus is representative.
-- **Foundation-model guardrails.** LLMs are positioned as orchestration layers, never estimators: Table 9 maps grounding, hallucination, uncertainty, latency, and safety-authority requirements, including that LLM components must never hold direct cell-level protection authority.
+- **Two-tier evidence base.** Field-level bibliometrics are *measured* on a rule-based eligible corpus (799 records, no function quotas); in-depth classification and the validation audit live on the curated 103-study subset, with reconciliation checks between tiers (`consistency_check.py`).
+- **Validation gap, quantified and tested.** Strong protocols (cross-cell / cross-chemistry / cross-domain holdout, online or fleet) cover 42 of 88 primary-application papers (48%; label-noise scenarios span 40–59%); 17 use within-cell or unsupervised k-fold splits that leak trajectory information; 23 papers rest on three public benchmarks (MATR/NASA/CALCE) and 36 on private laboratory cells.
+- **Inter-coder reliability, measured.** Two independent coders blind-re-coded a 30-paper stratified sample: κ = 0.92 (function), 0.88 (method), 0.88 (data) pass; chemistry κ = 0.55 and validation κ = 0.48 fail the ≥ 0.66 threshold — traced to abstract-only evidence access (both resolved unreported splits toward weak codes); on the count-bearing strong/non-strong bucket the two coders agree 25/30 (83%). Sheets, `dispute_items.csv`, and the hash-tracked log are released; the two failing fields trigger v1.1 codebook patch candidates.
+- **Physics-informed validation gap is exploratory, not settled.** 36% vs 52% strong-protocol share (Fisher p = 0.32); under the broader definition 59% vs 74%, OR 0.50, 95% CI 0.19–1.36, p = 0.19 — non-significant under both definitions, unadjusted confounding declared, and the family contrast stays non-significant in 95% of label-noise scenario draws.
+- **Transportation-electrification cut + standards mapping.** Measured shares for vehicle/fleet-level work (≈2% of eligible records), a BMS-function-to-requirement map for UN GTR 20 / GB 38031 / ISO 26262, and a positioning table against prior reviews.
+- **Foundation-model guardrails.** An LLM-based SOH **estimator** among the corpus's 2025–2026 entries is analyzed with its prior-art caveat stated (LLM-based battery estimation exists earlier outside the screened venues); Table 9 maps grounding, hallucination, uncertainty, latency, and safety-authority requirements — LLM components must never hold direct cell-level protection authority.
 - **A reporting checklist.** Section 9.7 proposes **BMS-ML-RC**, a 12-item CONSORT/PRISMA-style reporting checklist (Table 11) for future machine-learning BMS studies.
 
 ## Figures
 
 | Figure | Content |
 |---|---|
-| ![Fig. 1](figures/fig1_function_method_map.png) | **Fig. 1** — Corpus map: management function × method family (91 primary-application papers) |
-| ![Fig. 2](figures/fig2_prisma.png) | **Fig. 2** — Study-selection flowchart (3,000 → 1,550 → 883 → 799 → 113 candidates → 103 included) |
-| ![Fig. 3](figures/fig2_year_trend.png) | **Fig. 3** — Publications per year and cumulative total |
-| ![Fig. 4](figures/fig3_method_evolution.png) | **Fig. 4** — Method-family shares by year |
-| ![Fig. 5](figures/fig4_area_distribution.png) | **Fig. 5** — Application-area distribution |
-| ![Fig. 6](figures/fig5_data_validation.png) | **Fig. 6** — Data sources and validation practices |
-| ![Fig. 7](figures/fig7_dataset_saturation.png) | **Fig. 7** — Benchmark saturation: reuse of MATR/NASA/CALCE vs total output |
-| ![Fig. 8](figures/fig6_timeline.png) | **Fig. 8** — Milestones 2019–2026 |
+| Fig. 1 | Corpus map: management function × method family (88 primary-application papers) |
+| Fig. 2 | Study-selection flowchart with the two-tier design (3,000 → 1,550 → 883 → 799 Tier-1 eligible → 103 classified subset) |
+| Fig. 3 | Two-panel: eligible-corpus publications per year + classified-subset method families (`fig3_method_evolution.png`) |
+| Fig. 4 | Benchmark saturation: reuse of MATR/NASA/CALCE vs total output (`fig7_dataset_saturation.png`) |
+| Fig. 5 | Milestones timeline (`fig6_timeline.png`) |
 
 ## Verification methodology
 
 1. **Retrieval.** 30 bibliographic query strings × 4 date/sort passes against the Crossref REST API on **4–5 September 2026** → 3,000 records.
 2. **Deduplication.** DOI-based → 1,550 unique records (1,450 duplicates removed).
-3. **Relevance screening.** Title must contain battery-related **and** ML-related terms → 883 (−667).
+3. **Relevance screening.** Title must contain battery-related **and** ML-related terms → 883 (−667); all 1,550 title-gate decisions are logged in `screening_log.csv`, and the term lists are released in `tagging_terms.json`.
 4. **Venue/document-type screening.** Journal articles only; conference abstracts, preprints, non-scholarly venues excluded → 799 (−84).
-5. **Function-quota selection + landmark seeds.** 107 candidates (balanced across 8 BMS functions and years) + 6 landmark seeds (1 already captured, 5 injected) = 113.
-6. **Full-text curation.** 19 exclusions offset by 15 targeted additions → **103 included**.
-7. **Verification.** Every DOI resolved directly against `api.crossref.org`; registry metadata compared to the record; per-paper citation counts (is-referenced-by-count, retrieved 5 September 2026) shipped in the dataset.
+5. **Rule-based two-tier selection.** Tier 1: venue-screened 799 eligible records, included in full without function quotas (`corpus/eligible_corpus.json`); Tier 2: curated full-text-classified 103-study subset (quota-era design replaced after the TTE review; record-level provenance in `corpus/screening_log.csv`, per-paper protocol audit in `corpus/protocol_audit.csv`, coding definitions in `corpus/codebook.md`).
+6. **Verification.** Every DOI resolved directly against `api.crossref.org`; registry metadata compared to the record; per-paper citation counts (is-referenced-by-count, retrieved 5 September 2026) shipped in the dataset. External citations verified separately (`corpus/verify_external.py` → `corpus/external_verified.json`).
 
 Full details: manuscript Section 2; screening funnel in `figures/fig2_prisma.png`.
 
@@ -97,6 +103,8 @@ python3 corpus/verify_final.py
 # 5. Statistics + consistency (every in-text number regenerates from here)
 python3 corpus/build_stats.py
 python3 corpus/consistency_check.py
+python3 corpus/sensitivity_label_noise.py   # label-noise scenarios -> sensitivity_label_noise.json
+python3 corpus/make_screening_log.py        # screening_log.csv (1,550 pool decisions) + tagging_terms.json
 
 # 6. Figures (Figs. 1-8 as PNG, 300 dpi)
 python3 corpus/make_fig1_heatmap.py   # Fig. 1 heatmap

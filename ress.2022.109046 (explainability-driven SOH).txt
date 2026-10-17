@@ -1,0 +1,57 @@
+Explainability-driven model improvement for SOH estimation of lithium-ion battery
+
+Fujin Wang
+, Zhibin Zhao
+, Zhi Zhai, 
+Zuogang Shang
+, Ruqiang Yan, Xuefeng Chen
+Show more
+
+Cite
+
+Add to Mendeley
+
+Share
+10.1016/j.ress.2022.109046
+Purchase PDF
+Explainability-driven model improvement for SOH estimation of lithium-ion battery
+Article preview
+Recommended articles
+Cited by (137)
+Metrics
+Article preview
+Abstract
+Introduction
+Section snippets
+References (56)
+Highlights
+•
+We propose an explainability-driven model improvement framework for SOH estimation.
+•
+The explanation was used to guide model training.
+•
+The trained model is inherently explainable.
+•
+The effectiveness was verified on different datasets and backbones.
+Abstract
+Deep neural networks have been widely used in battery health management, including state-of-health (SOH) estimation and remaining useful life (RUL) prediction, with great success. However, traditional neural networks still lack transparency in terms of explainability due to their “black-box” nature. Although a number of explanation methods have been reported, there is still a gap in research efforts towards improving the model benefiting from explanations. To bridge this gap, we propose an explainability-driven model improvement framework for lithium-ion battery SOH estimation. To be specific, the post-hoc explanation technique is used to explain the model. Beyond explaining, we feed the insights back to model to guide model training. Thus, the trained model is inherently explainable, and the performance of the model can be improved. The superiority and effectiveness of the proposed framework are validated on different datasets and different models. The experimental results show that the proposed framework can not only explain the decision of the model, but also improve the model’s performance. Our code is open source and available at: https://github.com/wang-fujin/Explainability-driven_SOH.
+Keywords
+Lithium-ion battery; State-of-health (SOH); Estimation; Explainability-driven; Layer-wise relevance propagation (LRP)
+Previous article in this issue
+Next article in this issue
+Introduction
+Lithium-ion batteries are widely used in various fields due to their high energy density and low self-discharge rate [1]. They play an important role in everything from portable electronics [2] to energy storage stations [3], and from electric vehicles [4] to satellite [5]. However, as lithium-ion battery charges and discharges, its performance degrades and eventually fails. In the field of battery prognostics and health management (PHM), state-of-health (SOH) and remaining useful life (RUL) are closely linked, and they can both be used to describe battery degradation [6]. Therefore, it is significant to accurately estimate SOH of the battery. It can provide recommendations on the predictive maintenance of lithium-ion batteries and whether they need to be replaced, which is an important guarantee for the reliability and safety of battery energy storage systems.
+As a system that manages and controls battery operation, the battery management system (BMS) must be able to monitor the safety, state-of-charge (SOC), SOH, and RUL of batteries [7]. However, since only voltage, current, and temperature are usually measurable, using BMS to estimate the internal state of a battery becomes an urgent issue to ensure the safe and reliable operation of batteries [8]. The battery’s SOH is defined as the ratio of the capacity of the current cycle to the initial capacity [9]. When the capacity of a battery drops to 80% of the initial capacity, it indicates that the battery has reached the end-of-life (EOL).
+In recent years, various SOH estimation methods have been developed. These methods can be divided into three categories: direct measurement methods, model-based methods, and data-driven methods. The direct measurement methods usually obtain the battery’s capacity through ampere-hour counting. It is an open-loop way and generally needs to be performed in a constant current (CC) and constant voltage (CV) charging mode, whose performance is affected by sampling noise and accumulated errors [10]. Model-based [11], [12] methods usually use voltage models to establish the connection between voltage and SOC. These methods often require expert knowledge as well as battery design parameters, which limit their widespread applications.
+Data-driven methods can be divided into shallow machine learning (ML) methods and deep learning methods. Shallow machine learning methods [13], [14] require experts to extract hand-crafted features, and the performance of the model is highly dependent on these hand-crafted features. What is more, these hand-crafted features are generally dataset-specific, i.e., various features need to be extracted in different datasets. Deep learning methods [9], [15], which have the ability to automatically extract features from large amounts of data, are becoming increasingly popular for battery SOH estimation. However, the features extracted by deep learning models are often unexplainable due to the model’s “black-box” nature, and we have no way of knowing why the models make such predictions. In some risk-sensitive domains, once the battery system fails, it would lead to a heavy loss. For example, a failure of the satellite power subsystem will cause the mission to fail [16]. Battery failure can cause an electric vehicle battery system to catch fire in some extreme conditions, posing a threat to human life [17]. Therefore, such deep learning models are not easily deployed in these risk-sensitive scenarios.
+Recently, Rauf et al. [18] reviewed the application of ML techniques in SOH research over the past decade, and illustrated the advantages of various ML methods in terms of accuracy and computation. Zhang et al. [9] summarized the deep learning methods commonly used in lithium-ion battery PHM, including autoencoder, deep neural network, deep belief network, convolutional neural network (CNN), recurrent neural network (RNN), and generative adversarial network. They pointed out that the interpretability of deep learning methods is an important research direction in the future. Wei et al. [19] introduced the workflow of ML and summarized the application of ML in battery state prediction. He also noted that the “black-box” nature of the model is a major obstacle to current research. Improving model interpretability is important to guide future ML research in battery PHM. To sum up, it is important to understand why the models make such decisions, which can help researchers design and improve models.
+The explanation of “black-box” models becomes particularly important. The current explanations generally fall into two categories: ad hoc explanation and post-hoc explanation. The ad hoc explanation methods, such as physical-informed neural network (PINN) [20], [21], can guide the design of a model and solve specific tasks, but the generality is not strong and the model is complex. The post-hoc explanation methods (e.g, DeepSHAP [22], Grad-CAM [23], Layer-wise Relevance Propagation (LRP) [24], [25], etc.) are model-agnostic. However, most of all these post-hoc explanation methods are rarely for purposes other than visualization.
+In fact, most of the research on post-hoc explanation seems to stop there: various techniques are used to explain the “black-box” models, with little feedback from various insights to the model [26]. The reasons for model’s reasoning are explained, and the reasons for wrong decisions may be found. But these obtained insights are rarely used to improve the model. That is, there is still a gap in research efforts towards improving the model benefitting from post-hoc explanations. For the battery SOH estimation task, knowing the reasons why a model made such a prediction, is it possible to improve the SOH estimation accuracy based on these insights?
+To bridge this gap, we propose an explainability-driven model improvement framework for lithium-ion battery SOH estimation. Specifically, we use a post-hoc explanation method to explain the model’s decisions and feed the insights back to the model to improve the model’s performance. In detail, according to the estimation results of SOH, the LRP technique is used to calculate relevance scores of the intermediate feature map. Then, these relevance scores are embedded into optimization procedure to guide model training. The model is encouraged to focus on features with high relevance scores and ignore those with low relevance scores. Driven by explainability, the trained model is inherently explainable, and model’s performance can be improved. The experimental results show that the proposed method achieves improvement and obtains competitive results on different backbones and datasets. It is worth noting that our proposed framework can also be used in other scenarios and not limited to lithium-ion battery SOH estimation. Our contributions are as follows:
+1.
+We proposed an end-to-end explainability-driven model improvement framework for lithium-ion battery SOH estimation. Beyond post-hoc explanation, we feed back explanation to guide the model’s training for better model improvement and feature explainability. The core idea is to embed features importance generated by post-hoc explanations into the optimization procedure.
+2.
+To concretely implement this framework, we use LRP to generate the importance of features as the weight, called LRP-driven weights. LRP-driven weights can encourage a model to enhance relevant features and suppress irrelevant one during the training phase.
+3.
+Experimental results on different datasets and backbones show that our proposed framework can improve the prediction accuracy of the model as well as enhance feature explainability while keeping the model parameters and structure unchanged.
+The reminder of this paper is organized as follows. Section 2 reviews related works. Section 3 presents the proposed framework. Section 4 presents the designed experiments and comparative validation methods. Experimental results and discussions are given in Section 5. Finally, conclusions are drawn in Section 6.

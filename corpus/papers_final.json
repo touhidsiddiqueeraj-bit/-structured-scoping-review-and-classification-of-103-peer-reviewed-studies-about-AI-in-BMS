@@ -202,7 +202,7 @@
   "method": "Deep learning",
   "chem": "LFP",
   "data": "self-lab",
-  "valid": "online/real-vehicle",
+  "valid": "experimental hardware",
   "finding": "containerized ESS SOC estimation handles large strings with relaxed sensing",
   "limit": "stationary duty focus"
  },

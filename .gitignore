@@ -10,3 +10,6 @@ out/
 .video_agent/
 *.pyc
 .zcode/
+
+# publisher full-text PDFs (copyrighted)
+10.1016/

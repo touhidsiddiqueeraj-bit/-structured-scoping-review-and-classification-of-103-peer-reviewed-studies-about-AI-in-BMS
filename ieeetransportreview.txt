@@ -1,0 +1,98 @@
+17-Oct-2026
+
+Dear Mr. Siddiquee:
+
+I write you in regards to manuscript # TTE-Reg-2026-09-3162 entitled "Machine learning in battery management systems: a structured scoping review and classification of 103 peer-reviewed studies, 2019–2026" which you submitted to the IEEE Transactions on Transportation Electrification.
+
+In view of the feedback of the associate editor (AE) and reviewer(s) found at the bottom of this letter, your manuscript has been rejected for publication in the IEEE Transactions on Transportation Electrification.
+
+Thank you for considering the IEEE Transactions on Transportation Electrification for the publication of your research.  We hope the outcome of this specific submission will not discourage you from the submission of future manuscripts.
+
+Sincerely,
+Prof. Fei Gao
+Editor-in-Chief, IEEE Transactions on Transportation Electrification
+fei.gao@utbm.fr
+
+
+AE's Comments to Author:
+
+Area Editor: 1
+Comments to the Author:
+Please refer to comments and concerns by reviewer and the AE. As a review paper, this work does not cover sufficient directions of research or domains of applications. It also lacks sufficient outlook and insights into future research topics.
+
+Associate Editor: 2
+Comments to the Author:
+In its current form, the review manuscript does not demonstrate the level of technical depth, critical synthesis, and comprehensive state-of-the-art assessment expected for publication in an IEEE journal. The reviewers have also identified several additional concerns, as detailed in the accompanying comments.
+
+
+Reviewer(s)' Comments to Author:
+
+Reviewer: 1
+
+Comments to Author (Required or else review is ignored). Please give a thorough and technical detailed review to the author. What is done well? What needs improvement?
+This paper reports a scoping review of 103 journal articles on machine learning for battery management.
+
+1. The corpus is a curated reading list, not a systematic sample, and the paper's counts should be read that way. Section II-B screens 799 eligible records, then draws 107 by a manual function quota, then removes 19 (including what the text calls quota-driven trimming of over-represented clusters) and adds 15 targeted records. Every distribution in Section III, the functional shares, the method-family shares and the benchmark concentration, is therefore partly written in by the quota rule rather than measured. Section II-A and II-C acknowledge a recall floor, citation bias and the absence of a reliability statistic, but not this one. Either replace the quota step with a rule-based inclusion criterion applied to all 799 eligible records, or restate the Section III numbers as descriptive of this curated corpus and remove the field-level readings that the abstract and conclusion currently draw from them.
+2. The central finding is not reproducible from the numbers as given, and several counts do not agree. The 54% versus 73% comparison turns on what counts as one of the strong protocols, and that category is never defined; the per-protocol counts in Section III-C (cross-cell holdout 24, cross-chemistry or cross-domain 10, within-cell 12, k-fold 5, online or fleet 9) cannot be combined to yield the 62 papers that the stated 68% share implies. The same paragraph reports 10 cross-chemistry or cross-domain studies and then 7 validated across chemistries without relating the two. Section III-C also states that 15 corpus papers are reviews or perspectives, while Table II totals 12 and Section II-B caps reviews at 12. A single audited table mapping each paper to one protocol class, plus an interval or a test on the 13-of-24 against 49-of-67 contrast, would settle all of this; as written, a difference resting on a handful of papers carries an abstract-level claim.
+3. For this journal the scope is not yet transportation electrification. The corpus is concentrated in general energy-systems journals, IEEE transportation-electrification sources are thin, and no analysis axis separates cell-level laboratory work from pack, vehicle or fleet-level practice. UN GTR 20, GB 38031 and ISO 26262 appear in the introduction as motivation and then never return, although a review claiming that estimation is a safety-relevant automotive function is exactly where a mapping from BMS function to safety-standard requirement would belong. A dedicated cut of the corpus along vehicle duty cycles, pack-level constraints and automotive qualification would make the contribution fit the readership.
+4. The verification claim promises more than DOI resolution delivers. Resolving a DOI confirms that a record exists, not that its metadata or subject are right, and reference [10] shows the gap: a physics-informed recurrent network for battery state of charge is attributed to a radio-frequency-identification journal. The artifact link points at a GitHub user account rather than a repository or a DOI-backed deposit, which is the practice item 12 of Table VI asks of others. Classification was done by one coder with a corrective second pass, which the paper states plainly; given that the conclusions are cross-tabulations of those codes, a blind double-coding of a random subset with a reported agreement statistic would cost little and change how much weight the counts can carry.
+
+Reviewer: 2
+
+Comments to Author (Required or else review is ignored). Please give a thorough and technical detailed review to the author. What is done well? What needs improvement?
+1. The corpus is not a representative sample of the field. Function quotas, year balancing, targeted additions, and quota-based exclusions directly shaped the final 103 papers. Therefore, publication trends, application shares, and method-family growth cannot be interpreted as field-wide trends. These results should be stated strictly as patterns within the curated corpus unless the sampling strategy is redesigned.
+
+2. The classification procedure is too subjective for the quantitative conclusions. One author coded all papers, while the co-author review was corrective rather than independent. Several variables, including method family, validation strength, and principal limitation, require judgement. Without independent double coding and an agreement measure, it is unclear how much of the reported pattern reflects the literature and how much reflects coder decisions.
+
+3. The paper does not actually demonstrate that within-cell or k-fold validation overstates model accuracy. It identifies these validation protocols as weaker, but does not compare reported errors between weak and strong validation groups. The review therefore shows a methodological risk, not direct evidence of inflated accuracy. Claims linking validation type to optimistic performance should either be supported quantitatively or stated more cautiously.
+
+4. The claim that physics-informed methods are validated less rigorously than other approaches is stronger than the evidence supports. The comparison is based on 13/24 versus 49/67 studies, with no confidence interval, significance test, or adjustment for application area, year, or data source. The observed difference may reflect corpus composition rather than method family. This result should be treated as exploratory unless supported by a more rigorous statistical analysis.
+
+5. The conference sensitivity analysis does not provide a valid comparison with the journal corpus. Conference papers were classified mainly from indexed abstracts, whereas journal papers were evaluated using fuller evidence. A missing validation statement in an abstract does not mean that validation was absent from the paper. The small, citation-ranked conference set adds further selection bias. Full-text coding under the same protocol is needed before drawing conclusions about venue effects.
+
+Reviewer: 3
+
+Comments to Author (Required or else review is ignored). Please give a thorough and technical detailed review to the author. What is done well? What needs improvement?
+This paper reviews 103 journal studies published between 2019 and 2026 on machine learning for battery management systems, with 14 conference papers used for sensitivity analysis. It classifies applications, algorithms, datasets, and validation methods, emphasizing health estimation, physics-informed approaches, limited fleet testing, benchmark reuse, and weak generalization protocols. It proposes safety guidance and a twelve-item reporting checklist for future research.
+
+•The function-quota selection introduces substantial selection bias. The authors carefully balance the eight application categories and publication years before analyzing their relative frequencies. Consequently, the resulting proportions cannot establish which battery-management functions or learning methods dominate the actual research literature. The paper recognizes that its sample is curated, but some conclusions still read as field-wide trends. These claims should be restricted consistently to the selected corpus.
+
+•The selection process is difficult to examine. Figure 2 reports 107 candidates, 19 exclusions, and 15 later additions, including unspecified quota-driven trimming. These numbers reach 103, but they do not explain which studies were removed for substantive ineligibility and which were removed to achieve balance. A supplementary record-level screening table, with reasons for every exclusion and addition, would make the study-selection process verifiable.
+
+•The conduct of reviews seems internally inconsistent. Section II-B says review-only studies were admitted only to the cross-cutting cluster, yet Table II assigns reviews to SOC, SOH, prognostics, thermal management, and fault/safety categories. Table I reports 12 reviews, while Section III-C mentions 15 reviews or perspectives under data sources. The authors should resolve these definitions, labels, and counts before interpreting the tables.
+
+•The coding process lacks an independent reliability check. Section II-C explains that one author classified the papers and a co-author made a corrective review, without blind double coding or an agreement measure. A second independent coding of a manageable subset, together with a clear codebook and dispute-resolution rules, would help establish whether subjective labels such as dominant method and strong validation are reproducible.
+
+•The method-evolution analysis is weakened by uneven sampling across years. The corpus has one deliberately included 2019 landmark and only seven papers from 2026, with searches ending in early September. Figure 3 displays percentages despite these small, differently selected yearly denominators. Statements that deep learning was displaced by physics-informed methods should be expressed as patterns within the curated sample.
+
+•Cross-cell holdout, cross-domain transfer, laboratory hardware, and fleet operation test different properties, and the coding rules for borderline or overlapping cases are unclear. Since this classification underlies the central 54% versus 73% comparison, the paper should specify each threshold, provide study-level assignments, and distinguish generalization evidence from deployment evidence.
+
+•The conference sensitivity analysis cannot establish representativeness. Its 14 papers were citation-selected, validation was inferred mainly from indexed abstracts, and Table III includes conventional estimation or control papers such as [30], [31], and [38] whose machine-learning role is unclear. Comparing whether abstracts mention hardware with journal studies assessed more fully mixes reporting completeness with validation quality. This small set is useful as a descriptive check, but not a convincing test of venue-selection bias.
+
+•The discussion of large language models does not fully match its cited evidence. Reference [15] develops an LLM-based battery SOH estimator using field data and uncertainty-aware controls, rather than merely a vehicle-cloud orchestration layer. Reference [14] concerns risk analysis of stationary battery-energy-storage incidents, not onboard EV battery control. Table V should distinguish what these studies actually demonstrate from the authors’ practical but proposed safety restrictions.
+
+•The novelty of the paper appears limited, as a 2026 systematic review has already classified 95 studies across battery-management applications and computational methods, while earlier reviews have examined similar machine-learning approaches. Although this paper introduces a broader classification framework and quantitative validation analysis, its contributions are not clearly distinguished from existing studies. A more direct comparison with previous reviews is needed to establish the originality, significance, and added value of the work.
+
+
+
+Reviewer: 4
+
+Comments to Author (Required or else review is ignored). Please give a thorough and technical detailed review to the author. What is done well? What needs improvement?
+A thorough review, however, it remains incremental in nature. Numerous reviews are available, to cite one:
+
+Prasanna, R., Kumar, R. S., Bhuvaneswari, N. S., & Karthik, C. (2026). Performance centric review of machine learning techniques for electric vehicle powertrain with battery management and charging systems. Discover Artificial Intelligence, 6(1), 141.
+
+
+Research Contribution Assessment:
+
+Reviewer: 1
+Research Contribution Assessment: This paper reports a scoping review of 103 journal articles on machine learning for battery management.
+
+Reviewer: 2
+Research Contribution Assessment: This manuscript gives me the strong impression that it was generated almost entirely with AI. I also see very little scientific value in its current form. The review methodology is weak, the selection process is heavily biased, and several key conclusions are not supported by the analysis. These are fundamental problems and raise serious concerns about the authors’ scientific judgement and understanding of review methodology.
+
+Reviewer: 3
+Research Contribution Assessment: This paper reviews 103 journal studies published between 2019 and 2026 on machine learning for battery management systems, with 14 conference papers used for sensitivity analysis. It classifies applications, algorithms, datasets, and validation methods, emphasizing health estimation, physics-informed approaches, limited fleet testing, benchmark reuse, and weak generalization protocols. It proposes safety guidance and a twelve-item reporting checklist for future research.
+
+Reviewer: 4
+Research Contribution Assessment: A thorough review, however, it remains incremental in nature.

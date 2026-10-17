@@ -1,0 +1,54 @@
+Novel state of charge estimation method of containerized Lithium–Ion battery energy storage system based on deep learning
+
+Mi Zou a
+, 
+Jianglin Wang b
+, 
+Dong Yan a
+, 
+Yanjun Li c
+, Xianlun Tang a
+Show more
+
+Cite
+
+Add to Mendeley
+
+Share
+10.1016/j.jpowsour.2024.235609
+Purchase PDF
+Novel state of charge estimation method of containerized Lithium–Ion battery energy storage system based on deep learning
+Article preview
+Recommended articles
+Cited by (27)
+Metrics
+Article preview
+Abstract
+Introduction
+Section snippets
+References (28)
+Highlights
+•
+The novel A–CNN–LSTM model is proposed for SOC estimation.
+•
+The proposed model shows enhanced stability and accuracy compared to other models.
+•
+The new scenario involving containerized energy storage system is studied.
+Abstract
+State of charge (SOC) is a critical indicator for lithium–ion battery energy storage system. However, model-driven SOC estimation is challenging due to the coupling of internal charging and discharging processes, ion diffusion, and chemical reactions in the electrode materials. These factors result in frequent changes in their internal characteristics. Therefore, we devise a novel deep learning SOC estimation method based on the attention mechanism (A) and convolutional neural networks-long short term memory (CNN–LSTM) network model. The CNN layers are employed to extract the critical features of the battery dataset. The LSTM layers are utilized to capture the long-term dependencies in the time series data. The attention mechanism can assign attention weights to different features within the output of the convolution layer. The A–CNN–LSTM method not only amplifies the positive influence of critical knowledge but also provides a global reference. The comparative experiments of three datasets and ablation study are carried out. The root mean square error, mean absolute error, and mean absolute percentage error obtained from the A–CNN–LSTM model decreased by 32.75 %, 45.88 %, and 53.36 %, respectively, compared with the best results obtained from the existing CNN, LSTM, gate recurrent unit (GRU), CNN–LSTM, and CNN–GRU models. The proposed model demonstrates greater stability and consistency than other models, underscoring its efficacy in SOC estimation.
+Keywords
+Energy storage system; Lithium–ion battery; State of charge; Deep learning; A–CNN–LSTM
+Previous article in this issue
+Next article in this issue
+Introduction
+The crucial role of Battery Energy Storage Systems (BESS) lies in ensuring a stable and seamless transmission of electricity from renewable sources to the primary grid [1]. As a novel model of energy storage device, the containerized lithium–ion battery energy storage system is widely used because of its high energy density, rapid response, long life, lightness, and strong environmental adaptability [2,3]. The batteries in containerized BESS can suffer from thermal runaway due to overcharging, aging, and consistency decay [4,5]. The State of Charge (SOC) signifies the current battery power level and stands as a critical parameter within the battery management system [6]. Nevertheless, existing sensors face limitations in directly measuring SOC in real-time operating conditions [7]. Thus, accurate SOC estimation using measurable voltage, current, temperature, and power is important to ensure the longevity and safety of the BESS [8].
+In a broader sense, existing studies on SOC estimation can be classified into four groups as follows: (i) direct calculation methods [9], (ii) Kalman filter (KF) based methods [10], (iii) nonlinear observers [11], and (iv) intelligent learning algorithms [12]. The direct calculation methods are grounded on the different relationships between SOC and measurable electrical quantities such as open-circuit voltage (OCV) [13], internal impedance [14], etc. These approaches, however, are not applicable for real time implementation. The KF based methods are feasible for their good accuracy and ability to handle KF nonlinear variables [15]. Despite of that, the KF based methods are limited for their over-dependency on the accuracy of the established equivalent battery model and its low robustness [16]. The nonlinear observers have good results in terms of accuracy as well as convergence speed while being less computationally cost. However, these methods fail to find a proper gain matrix to reduce the error [17]. The intelligent learning algorithms, say fuzzy logic [18], supporting vector machine (SVM) [19], and neural network (NN) [20], are attracting growing attention for SOC estimations owing to their ability to effectively extract nonlinear features of the battery charging process based on the good training process [21,22]. In this category, the learning algorithms, such as CNN-GRU [23], will learn the nonlinear relationship between the battery voltage, current, temperature, etc. in the input data and the output quantity SOC will be learned. Nonetheless, the method still has some unknown challenges in selecting the neural network activation function, the number of neurons and setting the learning rate.
+In addition, the existing researches on the battery SOC estimation mainly focus on the electric vehicle industry, where batteries are typically subjected to full charge/discharge cycles. The power batteries must provide high energy density and low power fast charging capability. In contrast, the battery of containerized energy storage systems is subjected to partial charge and discharge strategies. Extended cycle life and minimal self-discharge rates are required in battery energy storage systems [24]. Therefore, the SOC estimation techniques with high accuracy in the electric vehicle industry are not applicable in battery energy storage systems applications [25]. In the existing limited approaches of SOC estimation for the BESS, the excellent performance of the LSTM contributes to the solution of time series problems [26]. Nevertheless, LSTM falls short in comprehensively capturing the dynamic physical or electrochemical traits of the battery owing to the unidirectional correlation between the recorded battery data and SOC. The Bi-LSTM network are proposed to capture battery time information in both the front and back directions and summarize the output by fusing the long-term dependencies between past and future contexts [27]. However, those models ignore the spatial characteristics of the data. Hence, the proposition of the CNN-LSTM model aims to unveil the time-series features embedded within the spatial feature sequences. Nevertheless, CNN–LSTM gives rise to the loss of sequence information when inputting a long time series without considering the local important battery information [28].
+Based on the above mentioned issues, the SOC estimation for batteries in containerized energy storage systems is proposed. The main contributions are as follows.
+(1)
+The proposed model categorizes the input data into previous data and current data for parallel processing. The historical data segment is then utilized to correct the current output to ensure the inclusion of crucial historical trend information.
+(2)
+Excessive redundant dimensions lead to model over-fitting after pooling layer 1. The proposed network is constructed by an adding CNN layer. The generalization of the SOC estimation model is enhanced through the compression of redundant dimensions.
+(3)
+The new scenario of SOC estimation is applied. This study shifts the focus from the electric vehicle industry to containerized energy storage systems.
+The rest of the paper is organized as follows. The actual energy storage plant is described in Section 2. The SOC estimation strategy is described in Section 3. The network layers and hyperparameter settings are explained in Section 4. Experimental tests and results are provided in Section 5 and Appendix. The conclusions are presented in Section 6.

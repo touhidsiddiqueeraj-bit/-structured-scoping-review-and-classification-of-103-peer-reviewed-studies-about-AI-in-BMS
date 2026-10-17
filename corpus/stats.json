@@ -57,10 +57,10 @@
  },
  "by_valid": {
   "cross-cell holdout": 24,
-  "experimental hardware": 19,
+  "experimental hardware": 20,
   "review synthesis": 15,
   "within-cell split": 12,
-  "online/real-vehicle": 9,
+  "online/real-vehicle": 8,
   "cross-chemistry holdout": 7,
   "cross-validation": 5,
   "simulation": 4,

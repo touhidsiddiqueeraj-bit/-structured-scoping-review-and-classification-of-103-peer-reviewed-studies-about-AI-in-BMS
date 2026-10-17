@@ -2,14 +2,14 @@
 """Condensed TTE-submission text (12-page limit): part 1.
 Citation coverage mirrors the full manuscript; prose tightened."""
 
-TITLE = "Machine learning in battery management systems: a structured scoping review and classification of 103 peer-reviewed studies, 2019\u20132026"
+TITLE = "Machine learning in battery management systems: a two-tier scoping review of 799 eligible studies with in-depth classification and validation audit"
 
 AUTHOR_LINES = [("Hussain Touhid Siddiquee", "Leading University, Sylhet, Bangladesh"),
                 ("Syeda Salsabil Islam Ariya", "Leading University, Sylhet, Bangladesh"),
                 ("Jasimul Islam Chowdhury", "Leading University, Sylhet, Bangladesh")]
 
 ABSTRACT = [
- "Machine learning (ML) has moved from a promising addition to battery research to a load-bearing component of modern battery management systems (BMS), yet the validation practices behind the literature's accuracy claims have never been systematically measured. This paper presents a structured scoping review of 103 peer-reviewed journal articles (2019\u20132026) \u2014 assembled from a Crossref-verified pool and classified uniformly by management function, method family, chemistry, data source, and validation practice \u2014 supported by a 14-paper conference sensitivity set. The bibliometric analysis reveals a clear evolution: classical shallow learners dominated 2019\u20132021, deep sequence models rose sharply in 2022\u20132023, physics-informed and hybrid model\u2013data approaches became one of the fastest-growing families (24 of 103 papers), and the first large-language-model-based management studies appear in 2025\u20132026. Health estimation and prognostics remain the largest application cluster (35 papers). Three structural weaknesses persist. Only 9 of 103 studies demonstrate online or fleet-level operation, while 17 rely on within-cell or k-fold splits that overstate generalization; benchmark reliance is narrow, with 23 papers resting on three public datasets; and the laboratory-to-field gap remains the field's defining challenge. The review's sharpest finding is that physics-informed architectures, often assumed to improve reliability by construction, are validated less rigorously than purely data-driven peers (54% versus 73% strong-protocol share): physics priors reduce data demand but do not substitute for rigorous out-of-distribution testing. The paper closes with a conference-path sensitivity analysis, a safety taxonomy for foundation-model components, and a twelve-item reporting checklist for future machine-learning BMS studies.",
+ "Machine learning (ML) has moved from a promising addition to battery research to a load-bearing component of battery management systems (BMS), but the validation practices behind the accuracy claims are rarely examined. A structured scoping review with a two-tier evidence base is presented: an *eligible corpus* of 799 peer-reviewed journal articles (2019\u20132026), selected by uniform rule-based criteria, and an in-depth *classified subset* of 103 studies coded by function, method family, chemistry, data source, and validation practice. Union-share bibliometrics across the eligible corpus locate the center of gravity of the screened literature in health estimation (SOH, 20% of records), state estimation (SOC, 17%), and prognostics (13%), with charging, thermal management, balancing, and vehicle- or fleet-level work relatively under-served for a transportation-electrification readership. Within the classified subset, three weaknesses recur. Only 8 of 88 primary-application papers evaluate online or on real vehicles; 17 of 88 rely on within-cell or k-fold splits that leak trajectory information; and the largest single data source is private laboratory cells (36 of 88), a reproducibility constraint at least as limiting as the much-cited benchmark concentration (23 papers on three datasets). Validation practice does not demonstrably differ between physics-informed/hybrid and purely data-driven papers under either definition (36% versus 52% protocol-only), and a label-noise sensitivity analysis brackets the strong-protocol share between 40% and 60%. The paper closes with a requirement-level mapping of BMS functions onto UN GTR 20, GB 38031, and ISO 26262, a positioning against prior reviews, and a twelve-item reporting checklist; all data and code are released.",
 ]
 
 KEYWORDS = ("machine learning; battery management systems; lithium-ion batteries; state of charge; "
@@ -21,34 +21,156 @@ BLOCKS = [
 
 ('h2', '1.1 The battery management problem'),
 ('p',
- "Lithium-ion batteries now anchor three converging transitions \u2014 electrified road transport, renewable-heavy stationary storage, and the electrification of aerospace and marine systems \u2014 and in each the battery is an actively managed asset whose usable capacity, lifetime, and safety depend on real-time operating decisions. The battery management system (BMS) is the embedded cyber-physical layer that makes those decisions — sensing, state estimation, protection, balancing, and charging negotiation [[10.1038/s42256-020-0156-7]]. The difficulty stems from the fact that the quantities that matter most \u2014 state of charge (SOC), state of health (SOH), internal temperature, and the onset of degradation or fault mechanisms \u2014 are not directly measurable and must be inferred from noisy, partially observable terminal measurements under widely varying conditions. Model-based approaches built on equivalent-circuit or electrochemical models face a persistent fidelity-versus-tractability trade-off, and their parameters drift as cells age [[10.1016/j.joule.2019.11.018]]. It is in this inference-and-decision layer that machine learning has made its most forceful entry, and nowhere with more at stake than in transportation: electric-vehicle packs face automotive safety expectations (UN GTR 20, GB 38031, ISO 26262) that make estimation and prognosis safety-relevant functions, ten of the corpus studies are demonstrated on real vehicle or fleet data, and the field's newest direction \u2014 vehicle-cloud orchestration \u2014 is itself automotive."),
+ "Lithium-ion batteries now anchor three converging transitions \u2014 electrified road transport, renewable-heavy stationary storage, and the "
+ "electrification of aerospace and marine systems \u2014 and in each the battery is an actively managed asset whose usable capacity, lifetime, and "
+ "safety depend on real-time operating decisions. The battery management system (BMS) is the embedded cyber-physical layer that makes those decisions "
+ "\u2014 sensing, state estimation, protection, balancing, and charging negotiation [[10.1038/s42256-020-0156-7]]. The difficulty stems from the fact that "
+ "the quantities that matter most \u2014 state of charge (SOC), state of health (SOH), internal temperature, and the onset of degradation or fault "
+ "mechanisms \u2014 are not directly measurable and must be inferred from noisy, partially observable terminal measurements under widely varying "
+ "conditions. Model-based approaches built on equivalent-circuit or electrochemical models face a persistent fidelity-versus-tractability trade-off, "
+ "and their parameters drift as cells age [[10.1016/j.joule.2019.11.018]]. It is in this inference-and-decision layer that machine learning has made "
+ "its most forceful entry, and the stakes are highest in transportation electrification: electric-vehicle packs face automotive safety "
+ "expectations \u2014 UN GTR 20 on board energy storage rechargeable systems, GB 38031 (GB/T 38031) on traction battery safety requirements, and ISO "
+ "26262 on functional safety of electric/electronic systems \u2014 that make state estimation, degradation prognosis, and fault detection safety-"
+ "relevant BMS functions, not research add-ons. Section IX returns to these three standards and maps each estimation function to the property the "
+ "standard actually demands (detection reliability, gradient/temperature limits, protection timing) \u2014 the mapping that turns the validation "
+ "findings of this review into vehicle-level stakes."),
 
 ('p',
- "Machine learning entered battery management through estimation on hand-engineered features. Two studies then reset expectations. Severson and colleagues predicted the entire cycle life of lithium-ion cells with a median test error near 9% from the first hundred cycles alone, on a public dataset of 124 cells [[10.1038/s41560-019-0356-8]]. Attia and colleagues demonstrated closed-loop Bayesian optimization of fast-charging protocols in 2.5 months rather than 18 months of manual experimentation [[10.1038/s41586-020-1994-5]]. The five years that followed produced applications across every BMS function: recurrent and convolutional networks for SOC and SOH [[10.1016/j.energy.2020.117664]][[10.1016/j.energy.2023.126855]], graph and transformer architectures for prognostics [[10.1016/j.ress.2022.108947]][[10.1016/j.energy.2024.133418]], physics-informed neural networks embedding electrochemical and thermal priors [[10.1016/j.jechem.2022.11.036]][[10.1109/jrfid.2022.3211841]], transfer learning across chemistries and vehicles [[10.1109/tpel.2021.3117788]][[10.1016/j.energy.2023.127033]], reinforcement learning agents [[10.1016/j.ress.2025.111392]], and, most recently, large language model (LLM) agents for fleet-scale risk analysis and vehicle-cloud management [[10.1016/j.ress.2026.112416]][[10.1016/j.ensm.2026.104983]]."),
+ "Machine learning entered battery management through estimation on hand-engineered features. Two studies then reset expectations. Severson and "
+ "colleagues predicted the entire cycle life of lithium-ion cells with a median test error near 9% from the first hundred cycles alone, on a public "
+ "dataset of 124 cells [[10.1038/s41560-019-0356-8]]. Attia and colleagues demonstrated closed-loop Bayesian optimization of fast-charging protocols, "
+ "identifying high-cycle-life protocols among 224 candidates in 16 days of cycling rather than the more than 500 days an exhaustive search would take "
+ "[[10.1038/s41586-020-1994-5]]. The five years that "
+ "followed produced applications across every BMS function: recurrent and convolutional networks for SOC and SOH [[10.1016/j.energy.2020.117664]][[10.1016/j.energy.2023.126855]], "
+ "graph and transformer architectures for prognostics [[10.1016/j.ress.2022.108947]][[10.1016/j.energy.2024.133418]], physics-informed neural networks "
+ "embedding electrochemical and thermal priors [[10.1016/j.jechem.2022.11.036]][[10.1109/jrfid.2022.3211841]], transfer learning across chemistries "
+ "and vehicles [[10.1109/tpel.2021.3117788]][[10.1016/j.energy.2023.127033]], reinforcement learning agents [[10.1016/j.ress.2025.111392]], and, most "
+ "recently, LLM-based studies of station-side incident-risk analysis and vehicle-cloud management "
+ "[[10.1016/j.ress.2026.112416]][[10.1016/j.ensm.2026.104983]]."),
 
 ('h2', '1.2 Existing reviews and the literature gap'),
 ('p',
- "The review literature has grown alongside the applications but is fragmented along the same axes as the primary studies: function-specific reviews cover SOC estimation [[10.1016/j.est.2022.104664]][[10.20517/jmi.2024.84]], SOH estimation [[10.1016/j.apenergy.2021.117346]], and prognostics [[10.1016/j.jechem.2023.03.026]]; method-specific reviews follow deep-learning state estimation [[10.1016/j.egyai.2025.100585]], physics-informed impedance diagnostics [[10.1016/j.rser.2023.113807]], or interpretable prognosis [[10.1002/aenm.202503067]]; and domain reviews examine fault diagnosis [[10.3390/electronics10111309]][[10.1016/j.etran.2023.100254]] and thermal management [[10.1016/j.est.2023.106688]], alongside broader degradation-method surveys [[10.3390/batteries10070220]]. What is missing is a cross-functional account of the field's trajectory: which method families are used for which tasks, on which data, validated how. Answering this requires a corpus-level account rather than another narrative synthesis of one function."),
+ "The review literature has grown alongside the applications but is fragmented along the same axes as the primary studies: function-specific reviews "
+ "cover SOC estimation [[10.1016/j.est.2022.104664]][[10.20517/jmi.2024.84]], SOH estimation [[10.1016/j.apenergy.2021.117346]], and prognostics "
+ "[[10.1016/j.jechem.2023.03.026]]; method-specific reviews follow deep-learning state estimation [[10.1016/j.egyai.2025.100585]], physics-informed "
+ "impedance diagnostics [[10.1016/j.rser.2023.113807]], or interpretable prognosis [[10.1002/aenm.202503067]]; and domain reviews examine fault "
+ "diagnosis [[10.3390/electronics10111309]][[10.1016/j.etran.2023.100254]] and thermal management [[10.1016/j.est.2023.106688]], alongside broader "
+ "degradation-method surveys [[10.3390/batteries10070220]] and EV-powertrain ML reviews with BMS scope [[10.1007/s44163-025-00721-y]]. What is missing "
+ "is a cross-functional account of the field's trajectory: which method families are used for which tasks, on which data, validated how \u2014 and, "
+ "among existing cross-functional surveys, none quantifies validation practice at all. Table VII in Section IX positions this review against its "
+ "closest competitors and states the added value explicitly; the short version is that prior reviews synthesize *what is claimed*, while this review "
+ "additionally measures \u2014 within a 103-study classified subset \u2014 how those claims are validated, ties both to three safety standards, and "
+ "releases the record-level dataset to make every count auditable."),
 
 ('h2', '1.3 Contribution of this paper'),
 ('p',
- "This paper makes four contributions: a verified corpus of 103 peer-reviewed studies (2019\u20132026) with every reference confirmed against the Crossref registry by DOI resolution; a two-axis classification framework (BMS function \u00d7 method family) extended with chemistry, data-source, and validation-practice fields; a quantified five-year evolution (Section III); and a function-by-function critical review (Sections IV--VIII) with a conference-path sensitivity analysis and a gap-driven agenda including a reporting checklist (Section IX). Fig. 1 previews the analysis, mapping the entire corpus across management functions and method families: the field's center of gravity sits in the health-prognostics complex, hybrid model\u2013data approaches now span every function, and learning-based charging control remains a concentrated Bayesian-optimization stronghold. The remainder of the paper is organized as follows. Section II details the review methodology and its limitations. Section III presents the corpus overview and five-year bibliometric analysis. Sections IV--VII review machine learning for state estimation, health estimation and prognostics, charging control, and thermal management, fault detection, and safety. Section 8 examines cross-cutting directions, and Sections IX and X give the research agenda and conclusions."),
+ "This paper makes four contributions: (i) a rule-based *eligible corpus* of 799 peer-reviewed journal articles (2019\u20132026), selected by uniform "
+ "criteria applied to all screened Crossref records \u2014 no function quotas, year caps, or citation thresholds \u2014 so that field-level shares "
+ "are measured, not curated, with the retrieval, screening, and tagging provenance of every record released; (ii) an in-depth *classified subset* of "
+ "103 studies from that corpus, coded along eight axes (function, method family, chemistry, data source, validation practice, and more) with the "
+ "classification dataset, codebook, per-paper protocol audit, and a 30-paper blind inter-coder reliability study released together with a "
+ "label-noise sensitivity analysis of the headline counts; (iii) a two-tier synthesis \u2014 measured bibliometrics from the eligible corpus "
+ "(Section III) plus function-by-function critical review of the classified subset (Sections IV\u2013VIII) \u2014 with a BMS-function-to-safety-"
+ "standard mapping and a gap-driven research agenda including a twelve-item reporting checklist (Section IX); and (iv) a transportation-"
+ "electrification cut of the corpus (Section III-B) separating cell-level laboratory evidence from pack-, vehicle-, and fleet-level practice. "
+ "Fig. 1 previews the classified subset, mapping it across management functions and method families: the center of gravity sits in the "
+ "health-prognostics complex, hybrid model\u2013data approaches span every function, and learning-based charging control remains a concentrated "
+ "Bayesian-optimization stronghold. The remainder of the paper is organized as follows. Section II details the review methodology and its limitations. "
+ "Section III presents the two-tier corpus overview, five-year bibliometrics, and the transportation-electrification cut. Sections IV\u2013VIII review "
+ "machine learning for state estimation, health estimation and prognostics, charging control, thermal management, and fault detection and safety. "
+ "Section VIII examines cross-cutting directions, and Sections IX and X give the research agenda and conclusions."),
 
-('fig', 'figures/fig1_function_method_map.png', 'Fig. 1 The corpus mapped across battery-management functions and method families (91 primary-application papers; the 12 corpus reviews are excluded). The \u201cof which reviews\u201d column of Table II states the reconciliation directly; no excluded review belongs to the physics-informed family, so that column\u2019s corpus total of 24 (Table I) is unchanged.'),
+('fig', 'figures/fig1_function_method_map.png', 'Fig. 1 The classified subset mapped across battery-management functions and method families (the 88 '
+ "primary-application papers). The remaining 15 classified papers are 12 method-coded reviews (``Review / perspective'') plus 3 review-type syntheses "
+ "coded under their dominant method family \u2014 two of which sit in the physics-informed column of Table I and are labeled in Table II. Rates that "
+ "use the primary denominator are 88, not 103."),
 
 ('h1', '2. Review Methodology'),
 
 ('h2', '2.1 Search strategy'),
 ('p',
- "All candidate records were retrieved programmatically from the Crossref REST API between 4 and 5 September 2026 using 30 bibliographic query strings spanning the application areas above. Queries were issued in four passes (top-cited 2020\u20132026; recency from mid-2024; dedicated 2020\u20132022 and 2023 windows), yielding 3,000 records; after DOI-based deduplication (1,450 duplicates removed), 1,550 unique records remained. Six landmark studies \u2014 including [[10.1038/s41560-019-0356-8]] and [[10.1016/j.joule.2019.11.018]] \u2014 were additionally safeguarded as forced seeds: five were retrieved and verified individually because citation-sorted retrieval had crowded them out, and one was already among the top-cited hits. Two properties should be stated plainly. The Crossref registry is a metadata registry, not a discovery engine like Scopus or Web of Science; it was chosen so that every included record is individually verifiable by direct DOI resolution, at the cost of a recall floor. Citation ordering also favors established English-language work; all trend statements therefore describe this citation-weighted, journal-article sample rather than the field in the aggregate."),
+ "All candidate records were retrieved programmatically from the Crossref REST API between 4 and 5 September 2026 using 30 bibliographic query strings "
+ "spanning the application areas above. Queries were issued in five passes: a citation-sorted 2020\u20132026 pass, dedicated 2020\u20132022 and 2023 "
+ "windows, a mid-window 2021\u20132023 coverage pass, and a relevance-sorted recency pass starting June 2024, yielding 3,000 records; after DOI-based "
+ "deduplication (1,450 duplicates removed), 1,550 unique records remained. Six landmark studies \u2014 including [[10.1038/s41560-019-0356-8]] and "
+ "[[10.1016/j.joule.2019.11.018]] \u2014 were additionally safeguarded as forced seeds: five were retrieved and verified individually because "
+ "citation-sorted retrieval had crowded them out, and one was already among the top-cited hits. Three properties should be stated plainly. First, the "
+ "Crossref registry is a metadata registry, not a discovery engine like Scopus or Web of Science; it was chosen so that every included record is "
+ "individually verifiable by direct DOI resolution, at the cost of a recall floor. Second, citation-ordered passes favor established English-language "
+ "work; all trend statements therefore describe this citation-weighted, journal-article sample rather than the field in the aggregate. Third, "
+ "January\u2013May 2024 is a known retrieval hole \u2014 the citation-sorted pass returns almost nothing from those months and the recency pass starts "
+ "at June 2024 \u2014 so the 2024 dip visible in year distributions is a design artifact of this retrieval, not evidence about publication volume; "
+ "per-year shares in Section III-A are therefore reported as shares of Crossref-reported query totals (the full result count of the same queries per "
+ "year), not of the capped retrieval."),
 
-('h2', '2.2 Screening and selection'),
+('h2', '2.2 Screening and rule-based selection'),
 ('p',
- "The screening funnel is shown in Fig. 2. A title-level relevance gate requiring both battery-related and machine-learning terminology retained 883 records and excluded 667 (predominantly adjacent-field papers that surfaced through loose matching). Venue and document-type screening removed 84 records \u2014 conference abstracts and proceedings series, preprint servers, and non-scholarly venues \u2014 leaving 799 eligible records. A function-quota selection step drew 107 candidate articles balanced across the eight management functions and publication years, with the six landmark seeds included in that count (one already captured by the searches, five retrieved and verified individually). Full-text curation excluded 19 records (corrigenda, misindexed records, scope mismatches, and quota-driven trimming of over-represented clusters) while 15 targeted additions were made from the screened pool for under-represented themes \u2014 a net \u22124 that yields the final corpus of 103 studies. Inclusion required a peer-reviewed journal article on a battery subject with machine learning as a substantive component (2020\u20132026, plus one 2019 field-defining seed), verified by direct Crossref DOI resolution; review-only papers were admitted only into the cross-cutting cluster, capped at 12 studies."),
+ "The screening funnel is shown in Fig. 2. A title-level relevance gate requiring both battery-related and machine-learning terminology retained 883 "
+ "records and excluded 667 (predominantly adjacent-field papers that surfaced through loose matching); the gate is a mechanical keyword rule, and its "
+ "term lists are released (tagging_terms.json) together with all 1,550 screening decisions (screening_log.csv). Venue and document-type screening "
+ "removed 84 records \u2014 conference abstracts and proceedings series, preprint servers, and non-scholarly venues \u2014 leaving 799 eligible "
+ "records. Selection then proceeds in two tiers, replacing the single-quota design that an earlier draft of this review used. *Tier 1 (eligible "
+ "corpus).* Every one of the 799 eligible records is included, subject only to venue screening; no function quotas, year caps, or citation thresholds "
+ "are applied. Every one of the 799 eligible records carries a Crossref-registered DOI, and every record carried forward to Tier 2 full-text coding "
+ "was individually DOI-resolved. Function tagging at this tier is a rule-based keyword pass over titles (term lists released); 202 of 799 records "
+ "(25%) carry no management-function tag \u2014 most are method-level or cross-cutting records (physics-informed, second life, digital twins, "
+ "benchmark papers) \u2014 so per-function shares below are computed over tagged records and cross-function totals are reported as union shares, "
+ "never as sums of per-tag percentages. *Tier 2 (classified subset).* Because in-depth coding of chemistry, data source, and validation practice "
+ "requires full-text assessment, full-text coding was applied to a 103-study subset of the eligible corpus, curated with the same eight-function "
+ "stratification used by the tagging pass, with the 2019 field-defining seed (Severson et al.) and six landmark studies "
+ "([[10.1038/s41586-020-1994-5]], [[10.1038/s42256-021-00312-3]], and four others) included as forced entries. This subset is curated, not sampled: "
+ "the released record-level log gives the rule or rationale for every study included or dropped, and its function and year composition does not match "
+ "the eligible corpus's measured shares exactly. Section III therefore never generalizes subset distributions to the field; where the subset is the "
+ "only source (method family, validation practice), the text reports subset statistics and their selection caveats explicitly."),
 
-('fig', 'figures/fig2_prisma.png', 'Fig. 2 Study-selection flowchart. Records were retrieved from the Crossref REST API on 4\u20135 September 2026, deduplicated, screened at title level for battery and machine-learning relevance, screened at venue and document-type level, and curated to the final 103-study corpus.'),
+('fig', 'figures/fig2_prisma.png', 'Fig. 2 Study-selection flowchart with the two-tier design. Records were retrieved from the Crossref REST API on '
+ "4\u20135 September 2026 (five passes; January\u2013May 2024 retrieval hole documented in Section II-A), deduplicated, screened at title level by a "
+ "released mechanical keyword rule (883 retained, 667 excluded), then at venue and document-type level. Tier 1 includes every eligible record (799, "
+ "rule-based, no quotas); Tier 2 carries a curated full-text-classified subset of 103 with six landmark studies included deliberately and five "
+ "force-included individually from outside the pool. Record-level provenance is released as screening_log.csv (all 1,550 decisions) and "
+ "tagging_terms.json."),
 
-('h2', '2.3 Classification framework and limitations'),
+('h2', '2.3 Classification framework, validation definitions, and limitations'),
 ('p',
- "Each paper was classified along six fields: management function (eight values, including a cross-cutting cluster); dominant method family (classical ML, deep learning, physics-informed/hybrid, optimization-augmented, reinforcement/control learning, transfer learning, foundation models/LLMs, review); chemistry; primary data source; validation approach; and a coded summary of the headline finding and principal limitation. Three terms are used consistently: a *corpus paper* is any of the 103 included studies; a *primary study* (or *primary-application paper*) is one of the 91 whose contribution is a primary application rather than a review. Classification was performed by the lead author with conservative coding; a co-author verification pass reviewed all 103 classifications, but because it was corrective rather than an independent blind double-coding, we claim no inter-rater agreement statistic \u2014 the counts in Section III should be read as one documented coding of the corpus, and the complete dataset is released so that independent coders can check or extend it. The synthesis proceeds on two tracks: quantitative cross-tabulations generated programmatically from the released dataset (Section III), and qualitative function-by-function critique (Sections IV--VIII). The methodology's limitations are acknowledged: Crossref coverage excludes influential conference papers; title-level screening can miss relevant work; citation ranking privileges high-profile venues; and no formal reliability statistic is available. These are the reasons this paper describes itself as a scoping review with bibliometric classification rather than a meta-analysis."),
+ "Each paper was classified along six fields: management function (eight values, including a cross-cutting cluster); dominant method family (classical "
+ "ML, deep learning, physics-informed/hybrid, optimization-augmented, reinforcement/control learning, transfer learning, foundation models/LLMs, "
+ "review); chemistry; primary data source; validation approach; and a coded summary of the headline finding and principal limitation. Three terms are "
+ "used consistently: an *eligible record* is one of the 799 Tier-1 studies; a *classifiable paper* is one of the 103 Tier-2 studies; and a "
+ "*primary-application paper* is one of the 88 classified papers whose contribution is a primary application \u2014 the 12 method-coded reviews and "
+ "3 review-type syntheses coded under their dominant method family are excluded from every rate that uses this denominator (Table II labels each such "
+ "paper explicitly). Validation practice is coded against four definitions used throughout this paper: (1) *within-cell split* \u2014 train and test "
+ "segments drawn from the same cycling trajectory; (2) *unsupervised k-fold cross-validation* \u2014 folds assigned over samples of the same "
+ "trajectories without cell isolation; (3) *cross-cell holdout* \u2014 every test cell held out entirely from training (with cross-chemistry and "
+ "cross-domain holdout extending this isolation across chemistry or application); and (4) *online or real-vehicle/fleet validation* \u2014 the "
+ "deployed system evaluated on live vehicle data. Cross-cell, cross-chemistry, cross-domain, and online/fleet are together the *strong protocols*; "
+ "the four remaining coded environments (experimental hardware, simulation plus hardware spot-check, simulation-only, case study) characterize where "
+ "a study was exercised but say nothing about train\u2013test isolation, and they are reported separately \u2014 never mixed into strong-protocol "
+ "percentages. Borderline assignments, the absorbing rule for ambiguous cases (a study is credited with the *strongest* protocol it reports for its "
+ "headline claim), and the decision tree with examples are given in the released codebook. Classification was performed by the lead author with "
+ "conservative coding from full texts; to probe the reliability of that coding, two independent coders later blind-re-coded a 30-paper stratified "
+ "random sample (drawn by function and year band, seed-pinned and reproducible) under the released codebook, without access to the released labels, "
+ "to the population statistics, or to each other. Blind agreement between the two independent coders is strong on three of the five classification "
+ "fields: management function (\u03ba = 0.92, Krippendorff \u03b1 = 0.92), method family (\u03ba = 0.88, \u03b1 = 0.88), and primary data source "
+ "(\u03ba = 0.88, \u03b1 = 0.88). Two fields fell below the \u03ba \u2265 0.66 threshold: chemistry (\u03ba = 0.55) and validation protocol "
+ "(\u03ba = 0.48). Part of the shortfall is an evidence-access artifact: 23 and 28 of the 30 sample papers (respectively) could be coded from "
+ "abstracts alone, and these two fields are precisely those least often stated at abstract level. But it must be reported straight that the "
+ "aggregation Section III's counts rest on does not escape this: on strong-protocol versus non-strong, the two coders agree on 25 of 30 papers "
+ "(raw agreement 83%, \u03ba = 0.52 at the sample's prevalence \u2014 below the 0.66 threshold the paper itself applies). The released labels are "
+ "therefore treated as one plausible coding, and all headline validation counts in Section III carry a scenario sensitivity analysis built from the "
+ "observed coder-versus-label disagreement in this sample: the central strong-protocol estimate (48% of the 88 primary papers) spans 40\u201359% "
+ "under plausible label error, and no qualitative conclusion below depends on where in that range the truth lies (Section III-C). Coder access "
+ "constraints, training, and the complete per-paper, per-field disagreement table are released together with both locked coding sheets and the "
+ "hash-tracked log; protocol-versioning candidates (a ``protocol not reported'' code; a chemistry inference rule) are logged as candidates and "
+ "alter no released label. The synthesis proceeds on two tracks: measured bibliometrics from the eligible corpus and cross-tabulations from the "
+ "classified subset, both generated programmatically from the released datasets (Section III), and qualitative function-by-function critique "
+ "(Sections IV\u2013VIII). The methodology's limitations are acknowledged: Crossref coverage excludes influential conference papers; title-level "
+ "screening can miss relevant work; citation-ordered retrieval privileges established English-language venues; the per-year retrieval window has one "
+ "documented hole (Section II-A); the Tier-2 subset is curated rather than sampled, so validation-practice rates are subset statistics that do not "
+ "automatically generalize to the eligible corpus or the field; and reliability is documented on a 30-paper blind re-coding subset rather than "
+ "measured corpus-wide (three of five fields above threshold, two below, with the resulting sensitivity ranges reported). DOI resolution, moreover, "
+ "verifies that a record exists, not that its venue is topically sensible: one corpus study (a physics-informed SOC network, "
+ "[[10.1109/jrfid.2022.3211841]]) appears in an RFID-special-issue journal \u2014 we flag it here rather than dropping it, and the released audit "
+ "file (final_audit.json) records every reference's Crossref-resolved title and venue so that misattributions of this kind are checkable rather than "
+ "hidden. These are the reasons this paper describes itself as a scoping review with bibliometric classification rather than a meta-analysis."),
 ]

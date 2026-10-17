@@ -29,9 +29,9 @@ for k, color, label in BENCH:
 ax2 = ax.twinx()
 tot_line = [tot.get(y, 0) for y in years]
 ax2.plot(years, tot_line, color='#37352F', marker='o', ms=3.5, lw=1.2,
-         label='All corpus papers (right axis)')
+         label='All classified-subset papers (right axis)')
 ax.set_ylabel('Papers using the three dominant benchmarks')
-ax2.set_ylabel('All corpus papers')
+ax2.set_ylabel('Classified-subset papers')
 ax.set_xticks(years)
 ax.set_ylim(0, 8)
 ax2.set_ylim(0, max(tot_line) * 1.18)

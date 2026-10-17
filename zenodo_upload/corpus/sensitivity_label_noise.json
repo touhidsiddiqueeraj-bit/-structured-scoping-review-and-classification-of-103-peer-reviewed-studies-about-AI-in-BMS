@@ -1,0 +1,23 @@
+{
+ "model": "label-noise scenarios: flip rate drawn as Normal(mean=observed coder-vs-label bucket error rate, sd=0.02), clipped at 0; 4000 draws; seed 7",
+ "n_primary": 88,
+ "observed_coder_vs_label_error_rates": [
+  0.4,
+  0.3
+ ],
+ "point_estimate_strong": 42,
+ "strong_count_range_95pct": [
+  35,
+  52
+ ],
+ "strong_share_range_95pct": [
+  0.398,
+  0.591
+ ],
+ "strong_share_median": 0.489,
+ "fisher_p_range": [
+  0.0,
+  1.0
+ ],
+ "fisher_p_below_0.05_frac": 0.051
+}

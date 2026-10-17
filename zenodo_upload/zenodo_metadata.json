@@ -1,0 +1,42 @@
+{
+  "title": "Machine learning in battery management systems: a two-tier scoping review of 799 eligible studies with in-depth classification and validation audit",
+  "upload_type": {
+    "publication_type": "article",
+    "main_type": "publication"
+  },
+  "publication_date": "2026-10-17",
+  "creators": [
+    {
+      "name": "Siddiquee, Hussain Touhid",
+      "affiliation": "Leading University, Sylhet, Bangladesh"
+    },
+    {
+      "name": "Islam Ariya, Syeda Salsabil",
+      "affiliation": "Leading University, Sylhet, Bangladesh"
+    },
+    {
+      "name": "Chowdhury, Jasimul Islam",
+      "affiliation": "Leading University, Sylhet, Bangladesh"
+    }
+  ],
+  "description": "Machine learning (ML) has become a load-bearing component of modern battery management systems (BMS), yet the validation practices behind the literature's accuracy claims have never been systematically measured. This deposit contains the complete evidence base and analysis pipeline of a two-tier structured scoping review: a rule-based eligible corpus of 799 peer-reviewed journal articles (2019-2026) with record-level screening provenance (corpus/screening_log.csv, n = 883 inspected records), an in-depth classified subset of 103 studies (corpus/papers.csv) with a per-paper validation-protocol audit (corpus/protocol_audit.csv), a conference descriptive set, the classification codebook (corpus/codebook.md), and a blind 30-paper inter-coder reliability study (locked coding sheets, per-field Cohen's kappa and Krippendorff's alpha, itemized disagreement table, corpus/reliability/). Every count, figure, and cross-tabulation in the manuscript regenerates from this deposit: extract it, enter the top directory, and run the commands in README.md. CC-BY-4.0.",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "battery management systems",
+    "machine learning",
+    "scoping review",
+    "validation practice",
+    "electric vehicles",
+    "reliability study"
+  ],
+  "doi": "10.5281/zenodo.23436202",
+  "notes": "Companion GitHub repository hosts the same artifacts in development form.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/touhidsiddiqueeraj-bit/-structured-scoping-review-and-classification-of-103-peer-reviewed-studies-about-AI-in-BMS",
+      "relation": "isSupplementedBy",
+      "resource_type": null
+    }
+  ]
+}

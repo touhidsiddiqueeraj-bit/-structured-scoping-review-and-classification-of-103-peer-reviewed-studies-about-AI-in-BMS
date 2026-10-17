@@ -1,0 +1,1257 @@
+- generic [ref=f52e1]:
+  - generic [ref=f52e2]:
+    - link "Skip to Content" [ref=f52e3] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=f52e4]:
+      - status [ref=f52e2678]:
+        - generic [ref=f52e2684]:
+          - text: You are currently on the new version of our website. Access the old version
+          - button "here" [ref=f52e2685] [cursor=pointer]
+          - text: .
+        - button "Close" [ref=f52e2686] [cursor=pointer]
+      - generic [ref=f52e5]:
+        - banner [ref=f52e6]:
+          - generic [ref=f52e7]:
+            - link [ref=f52e9] [cursor=pointer]:
+              - /url: /
+              - img "MDPI" [ref=f52e10]
+            - generic [ref=f52e11]:
+              - button "Search" [ref=f52e13] [cursor=pointer]
+              - navigation "Header actions" [ref=f52e17]:
+                - button "Sign in" [ref=f52e18] [cursor=pointer]
+              - button "Open mobile navigation" [ref=f52e20] [cursor=pointer]
+        - button "Scroll to top" [ref=f52e24] [cursor=pointer]
+        - main [ref=f52e27]:
+          - generic [ref=f52e29]:
+            - navigation "Breadcrumbs" [ref=f52e2690]:
+              - list [ref=f52e2691]:
+                - listitem [ref=f52e2692]:
+                  - link [ref=f52e2693] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=f52e2698]:
+                  - link "Journals" [ref=f52e2699] [cursor=pointer]:
+                    - /url: /about/journals
+                - listitem [ref=f52e2703]:
+                  - link "WEVJ" [ref=f52e2704] [cursor=pointer]:
+                    - /url: /journal/wevj
+                - listitem [ref=f52e2708]:
+                  - link "Volume 16" [ref=f52e2709] [cursor=pointer]:
+                    - /url: /2032-6653/16
+                - listitem [ref=f52e2713]:
+                  - link "Issue 5" [ref=f52e2714] [cursor=pointer]:
+                    - /url: /2032-6653/16/5
+                - listitem [ref=f52e2718]:
+                  - link "https://doi.org/10.3390/wevj16050279" [ref=f52e2719] [cursor=pointer]:
+                    - /url: /2032-6653/16/5/279
+            - generic [ref=f52e37]:
+              - link "World Electric Vehicle Journal" [ref=f52e38] [cursor=pointer]:
+                - /url: /journal/wevj
+              - generic [ref=f52e40]:
+                - generic [ref=f52e41]:
+                  - button "Cite" [ref=f52e43] [cursor=pointer]
+                  - button "Share" [ref=f52e49] [cursor=pointer]
+                - button "Get Alerted" [ref=f52e55] [cursor=pointer]
+                - link "PDF" [ref=f52e62] [cursor=pointer]:
+                  - /url: /2032-6653/16/5/279/pdf
+            - generic [ref=f52e67]:
+              - generic [ref=f52e68]:
+                - generic [ref=f52e69]:
+                  - generic [ref=f52e70]:
+                    - generic [ref=f52e71]:
+                      - generic [ref=f52e72]:
+                        - list [ref=f52e73]:
+                          - listitem [ref=f52e74]:
+                            - generic [ref=f52e75]: Editor’s Choice
+                          - listitem [ref=f52e77]:
+                            - generic [ref=f52e78]: Article
+                          - listitem [ref=f52e80]:
+                            - img "Open Access" [ref=f52e83]
+                        - paragraph [ref=f52e84]: 17 May 2025
+                      - generic [ref=f52e85]: 16 Pages
+                    - heading "Energy-Efficient Battery Thermal Management in Electric Vehicles Using Artificial-Neural-Network-Based Model Predictive Control" [level=1] [ref=f52e86]
+                  - generic [ref=f52e87]:
+                    - generic [ref=f52e89]:
+                      - generic [ref=f52e90]:
+                        - button "Kiheon Nam" [ref=f52e91] [cursor=pointer]
+                        - generic [ref=f52e94]: and
+                      - button [ref=f52e96] [cursor=pointer]:
+                        - generic [ref=f52e98]:
+                          - text: Changsun Ahn
+                          - superscript [ref=f52e99]: "*"
+                    - generic [ref=f52e101]:
+                      - generic [ref=f52e102]: School of Mechanical Engineering, Pusan National University, Busan 46241, Republic of Korea
+                      - generic [ref=f52e104]:
+                        - superscript [ref=f52e106]: "*"
+                        - generic [ref=f52e107]: Author to whom correspondence should be addressed.
+                    - generic [ref=f52e109]:
+                      - link "World Electr. Veh. J." [ref=f52e110] [cursor=pointer]:
+                        - /url: /journal/wevj
+                      - generic [ref=f52e111]:
+                        - strong [ref=f52e112]: "2025"
+                        - text: ","
+                        - emphasis [ref=f52e113]: "16"
+                        - text: (5), 279;
+                      - link "https://doi.org/10.3390/wevj16050279" [ref=f52e114] [cursor=pointer]:
+                        - /url: https://doi.org/10.3390/wevj16050279
+                    - generic [ref=f52e115]:
+                      - button "More formats" [ref=f52e2722] [cursor=pointer]
+                      - link "Version Notes" [ref=f52e119] [cursor=pointer]:
+                        - /url: /2032-6653/16/5/279/notes
+                      - link "Order Reprints" [ref=f52e125] [cursor=pointer]:
+                        - /url: /2032-6653/16/5/279/reprints
+                - complementary "right-aside" [ref=f52e129]:
+                  - generic [ref=f52e130]:
+                    - generic [ref=f52e2727]:
+                      - generic [ref=f52e2728]: Article Metrics
+                      - generic [ref=f52e2729]:
+                        - link "Citations 25" [ref=f52e2730] [cursor=pointer]:
+                          - /url: "#article-metrics-citations"
+                          - generic [ref=f52e2731]: Citations
+                          - generic [ref=f52e2734]: "25"
+                        - link "Article Views 6965" [ref=f52e2735] [cursor=pointer]:
+                          - /url: "#article-metrics-statistics-views"
+                          - generic [ref=f52e2736]: Article Views
+                          - generic [ref=f52e2739]: "6965"
+                    - generic [ref=f52e2741]:
+                      - button "Academic Editor" [expanded] [ref=f52e2742] [cursor=pointer]
+                      - region "Academic Editor" [ref=f52e2748]:
+                        - button "Vladimir Katic Vladimir Katic" [ref=f52e2753] [cursor=pointer]:
+                          - generic [ref=f52e2754]:
+                            - generic [ref=f52e2755]: Vladimir Katic
+                            - generic [ref=f52e2757]: Vladimir Katic
+                    - generic [ref=f52e2759]:
+                      - button "Publication History" [expanded] [ref=f52e2760] [cursor=pointer]
+                      - region "Academic Editor" [ref=f52e2766]:
+                        - list [ref=f52e2769]:
+                          - listitem [ref=f52e2770]:
+                            - text: "Received:"
+                            - generic [ref=f52e2771]: 27 February 2025
+                          - listitem [ref=f52e2772]:
+                            - text: "Revised:"
+                            - generic [ref=f52e2773]: 14 May 2025
+                          - listitem [ref=f52e2774]:
+                            - text: "Accepted:"
+                            - generic [ref=f52e2775]: 15 May 2025
+                          - listitem [ref=f52e2776]:
+                            - text: "Published:"
+                            - generic [ref=f52e2777]: 17 May 2025
+                    - button "Article Figures (15)" [ref=f52e2780] [cursor=pointer]
+                    - button "Related Articles" [ref=f52e2788] [cursor=pointer]
+                - article [ref=f52e139]:
+                  - generic [ref=f52e142]:
+                    - generic [ref=f52e144]:
+                      - heading "Abstract" [level=2] [ref=f52e145]
+                      - generic [ref=f52e146]: This study presents a Model Predictive Control (MPC) strategy for the Battery Thermal Management System (BTMS) in electric vehicles (EVs) to optimize energy efficiency while maintaining battery temperature within the optimal range. Due to the complexity of BTMS dynamics, a high-fidelity model was developed using MATLAB/Simscape (2021a), and an artificial neural network (ANN)-based model was designed to achieve high accuracy with reduced computational load. To mitigate oscillatory control inputs observed in conventional MPC, an infinity-horizon MPC framework was introduced, incorporating a value function that accounts for system behavior beyond the prediction horizon. The proposed controller was evaluated using a simulation environment against a conventional rule-based controller under varying ambient temperatures. Results demonstrated significant energy savings, including a 78.9% reduction in low-temperature conditions, a 36% reduction in moderate temperatures, and a 27.8% reduction in high-temperature environments. Additionally, the controller effectively stabilized actuator operation, improving system longevity. These findings highlight the potential of ANN-assisted MPC for enhancing BTMS performance while minimizing energy consumption in EVs.
+                    - generic [ref=f52e148]:
+                      - generic [ref=f52e149]: "Keywords:"
+                      - link "electric vehicle" [ref=f52e150] [cursor=pointer]:
+                        - /url: /search?q=electric+vehicle
+                      - text: ;
+                      - link "battery thermal management system" [ref=f52e151] [cursor=pointer]:
+                        - /url: /search?q=battery+thermal+management+system
+                      - text: ;
+                      - link "modeling" [ref=f52e152] [cursor=pointer]:
+                        - /url: /search?q=modeling
+                      - text: ;
+                      - link "artificial neural network" [ref=f52e153] [cursor=pointer]:
+                        - /url: /search?q=artificial+neural+network
+                      - text: ;
+                      - link "model predictive control" [ref=f52e154] [cursor=pointer]:
+                        - /url: /search?q=model+predictive+control
+                    - generic [ref=f52e156]:
+                      - heading "1. Introduction" [level=2] [ref=f52e157]
+                      - generic [ref=f52e158]:
+                        - text: The growing electrification of vehicles and the tightening of environmental regulations have significantly increased interest in electric vehicles (EVs) [
+                        - link "Reference 1" [ref=f52e159] [cursor=pointer]: "1"
+                        - text: ","
+                        - link "Reference 2" [ref=f52e160] [cursor=pointer]: "2"
+                        - text: "]. However, concerns regarding driving range limitations and safety remain major challenges. Both issues are closely linked to the thermal management of electric and electronic components, particularly the battery. Lithium-ion batteries, widely used in EVs, operate optimally within a temperature range of 15 °C to 35 °C. Operating a battery outside of its optimal temperature range can significantly affect its performance and safety. At low temperatures, increased internal resistance and lithium plating on the anode can degrade performance. At high temperatures, accelerated electrochemical reactions at both electrodes compromise stability and reduce battery life. Moreover, excessive heat can lead to critical safety risks, such as thermal runaway or explosion ["
+                        - link "Reference 3" [ref=f52e161] [cursor=pointer]: "3"
+                        - text: ","
+                        - link "Reference 4" [ref=f52e162] [cursor=pointer]: "4"
+                        - text: ","
+                        - link "Reference 5" [ref=f52e163] [cursor=pointer]: "5"
+                        - text: ","
+                        - link "Reference 6" [ref=f52e164] [cursor=pointer]: "6"
+                        - text: ","
+                        - link "Reference 7" [ref=f52e165] [cursor=pointer]: "7"
+                        - text: "]. In particular, thermal runaway in lithium-ion batteries typically begins near 65 °C with the decomposition of the SEI, making battery thermal management essential. Consequently, extensive studies have been conducted to enable efficient battery cooling within the battery pack to prevent thermal runaway. Various approaches have been proposed, including the integration of PCM with micro-channel plate cooling systems, hybrid PCM–metal foam and immersion cooling technologies, and the use of nanofluids with superior thermal conductivity ["
+                        - link "Reference 8" [ref=f52e166] [cursor=pointer]: "8"
+                        - text: ","
+                        - link "Reference 9" [ref=f52e167] [cursor=pointer]: "9"
+                        - text: ","
+                        - link "Reference 10" [ref=f52e168] [cursor=pointer]: "10"
+                        - text: ","
+                        - link "Reference 11" [ref=f52e169] [cursor=pointer]: "11"
+                        - text: "]."
+                      - generic [ref=f52e170]: To maintain battery temperature within the optimal range, EVs are equipped with Battery Thermal Management Systems (BTMSs). Various BTMS configurations have been developed, with the most common being air cooling, liquid cooling, and phase change material (PCM)-based systems.
+                      - generic [ref=f52e171]:
+                        - text: Air cooling systems utilize ambient air to directly cool the battery modules. This method offers a simple structure and low cost; however, it suffers from low heat transfer efficiency and limited performance under high ambient temperatures. Liquid cooling systems, on the other hand, use a circulating coolant to absorb heat from the battery and release it through a radiator. While this method provides significantly improved thermal performance compared to air cooling, it comes with increased system complexity and higher implementation costs [
+                        - link "Reference 12" [ref=f52e172] [cursor=pointer]: "12"
+                        - text: ","
+                        - link "Reference 13" [ref=f52e173] [cursor=pointer]: "13"
+                        - text: "]."
+                      - generic [ref=f52e174]:
+                        - text: "PCM-based thermal management has emerged as an alternative approach and is typically classified into two main types: direct and secondary loop systems. In the direct method, the PCM is in direct contact with the battery cells, offering the highest cooling performance due to efficient heat absorption during phase transition. However, this configuration is sensitive to PCM leakage, which poses reliability concerns ["
+                        - link "Reference 14" [ref=f52e175] [cursor=pointer]: "14"
+                        - text: "]."
+                      - generic [ref=f52e176]:
+                        - text: The secondary loop approach addresses this issue by thermally decoupling the PCM from the battery. In this configuration, the PCM regulates the temperature of a coolant loop, which then indirectly cools the battery pack. Although the thermal efficiency is somewhat reduced and the system becomes more complex, this method eliminates the risk of PCM leakage and enables greater flexibility in system design. Specifically, the coolant loop can be extended to cool additional components, such as electric motors and inverters, allowing for integrated thermal management [
+                        - link "Reference 15" [ref=f52e177] [cursor=pointer]: "15"
+                        - text: "]."
+                      - generic [ref=f52e178]: Due to these advantages, recent electric vehicles have adopted the PCM-based secondary loop BTMS. Accordingly, this study focuses on a BTMS that employs a PCM-based secondary loop configuration as its core cooling strategy.
+                      - generic [ref=f52e179]:
+                        - text: However, operating BTMS components, such as the refrigeration cycle and coolant loop, consumes significant energy. Studies indicate that heating and cooling operations in EVs can reduce driving range by up to 50% [
+                        - link "Reference 16" [ref=f52e180] [cursor=pointer]: "16"
+                        - text: "]. Therefore, an effective control strategy is essential to minimize energy consumption while ensuring battery temperature remains within the optimal range."
+                      - generic [ref=f52e181]:
+                        - text: Existing BTMS control strategies primarily rely on rule-based controllers, proportional–integral–derivative (PID) controllers [
+                        - link "Reference 17" [ref=f52e182] [cursor=pointer]: "17"
+                        - text: ","
+                        - link "Reference 18" [ref=f52e183] [cursor=pointer]: "18"
+                        - text: "], and fuzzy logic controllers ["
+                        - link "Reference 19" [ref=f52e184] [cursor=pointer]: "19"
+                        - text: ","
+                        - link "Reference 20" [ref=f52e185] [cursor=pointer]: "20"
+                        - text: "]. These control strategies offer the advantage of ease of implementation and minimal computational burden, as complex mathematical models are not required. However, incorporating system constraints and adapting to dynamic driving conditions and external disturbances are challenging, making it difficult to derive optimal control inputs and ensure minimal energy consumption ["
+                        - link "Reference 21" [ref=f52e186] [cursor=pointer]: "21"
+                        - text: ","
+                        - link "Reference 22" [ref=f52e187] [cursor=pointer]: "22"
+                        - text: "]. To address this limitation, optimal control-based approaches, such as Model Predictive Control (MPC), have been explored ["
+                        - link "Reference 23" [ref=f52e188] [cursor=pointer]: "23"
+                        - text: ","
+                        - link "Reference 24" [ref=f52e189] [cursor=pointer]: "24"
+                        - text: ","
+                        - link "Reference 25" [ref=f52e190] [cursor=pointer]: "25"
+                        - text: "]. MPC predicts the future states of a system using a mathematical model and determines future control inputs by optimizing a cost function to achieve control objectives. In the case of a BTMS, MPC can predict future battery heat generation and regulate battery temperature while improving energy efficiency by designing a cost function that considers both battery temperature and energy consumption. However, its effectiveness depends on the accuracy of the control model and the length of the prediction horizon. Due to computational constraints, many BTMS studies employ simplified models, often at the cost of reduced accuracy."
+                      - generic [ref=f52e191]:
+                        - text: Another promising approach is Stochastic Dynamic Programming (SDP) [
+                        - link "Reference 26" [ref=f52e192] [cursor=pointer]: "26"
+                        - text: "], which determines optimal control inputs for stochastic systems. In BTMS applications, SDP predicts probabilistic future heat generation based on vehicle driving conditions and adjusts control inputs accordingly. However, similarly to MPC, SDP’s performance depends on the accuracy of state transition probabilities. Although detailed models provide higher accuracy, they inherently increase the number of system states. In conventional optimization problems, computational complexity tends to grow proportionally to the cube of the number of states, making real-time operation challenging ["
+                        - link "Reference 27" [ref=f52e193] [cursor=pointer]: "27"
+                        - text: "]."
+                      - generic [ref=f52e194]: This study proposes an MPC-based control strategy utilizing a BTMS model designed to balance accuracy and computational efficiency. BTMS involves complex phenomena, such as fluid flow, two-phase heat transfer, and heat exchange, making numerical models computationally demanding and unsuitable for real-time control. To overcome this challenge, an artificial neural network (ANN) is employed to develop a high-accuracy, computationally efficient, optimization-oriented model. Using this ANN-based control model, an MPC framework is designed to minimize BTMS energy consumption while maintaining battery temperature within the optimal range. Furthermore, this study introduces an infinity-horizon MPC to mitigate control input oscillations, a common issue in conventional MPC implementations.
+                      - generic [ref=f52e195]:
+                        - text: The remainder of this paper is organized as follows.
+                        - link "Section 2" [ref=f52e196] [cursor=pointer]:
+                          - /url: "#sec2-wevj-16-00279"
+                        - text: presents the optimization-oriented model design.
+                        - link "Section 3" [ref=f52e197] [cursor=pointer]:
+                          - /url: "#sec3-wevj-16-00279"
+                        - text: details the controller design.
+                        - link "Section 4" [ref=f52e198] [cursor=pointer]:
+                          - /url: "#sec4-wevj-16-00279"
+                        - text: validates the proposed controller. Finally,
+                        - link "Section 5" [ref=f52e199] [cursor=pointer]:
+                          - /url: "#sec5-wevj-16-00279"
+                        - text: concludes the study.
+                    - generic [ref=f52e201]:
+                      - heading "2. BTMS Control Model" [level=2] [ref=f52e202]
+                      - generic [ref=f52e203]:
+                        - heading "2.1. BTMS Operation" [level=3] [ref=f52e204]
+                        - generic [ref=f52e205]:
+                          - text: The BTMS in EVs consists of a coolant loop that regulates battery temperature and a refrigeration cycle that controls the coolant temperature, as illustrated in
+                          - link "Figure 1" [ref=f52e206] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f001"
+                          - text: . The system operates in two modes depending on how the coolant temperature is managed.
+                        - generic [ref=f52e207]:
+                          - button [aria-hidden] [ref=f52e208] [cursor=pointer]
+                          - button "View figure 1" [ref=f52e213] [cursor=pointer]
+                          - generic [ref=f52e214]: Figure 1. Thermal management system of an electric vehicle.
+                        - generic [ref=f52e215]:
+                          - text: The first mode is the refrigeration cycle mode, shown schematically in
+                          - link "Figure 2" [ref=f52e216] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f002"
+                          - text: a. In this mode, the coolant temperature is reduced through heat exchange with a low-temperature refrigerant in the coolant chiller. This mode provides high cooling performance, making it suitable for scenarios where ambient temperatures are excessively high or the battery generates substantial heat. However, it requires significant energy consumption due to the operation of the refrigeration cycle. A previous study reported experimental results, with a significant driving range reduction up to 16.7% due to use of the refrigeration cycle for cooling [
+                          - link "Reference 16" [ref=f52e217] [cursor=pointer]: "16"
+                          - text: "]."
+                        - generic [ref=f52e218]:
+                          - button [aria-hidden] [ref=f52e219] [cursor=pointer]
+                          - button "View figure 2" [ref=f52e224] [cursor=pointer]
+                          - generic [ref=f52e225]: Figure 2. Schematic diagram of the thermal management system of an electric vehicle. (a) Refrigeration mode. (b) Radiator mode.
+                        - generic [ref=f52e226]:
+                          - text: The second mode is the radiator mode, depicted in
+                          - link "Figure 2" [ref=f52e227] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f002"
+                          - text: b. Here, the coolant temperature is controlled by ambient air through a radiator. While this mode offers lower cooling performance than the refrigeration cycle, it significantly reduces energy consumption.
+                      - generic [ref=f52e228]:
+                        - heading "2.2. Model Structure" [level=3] [ref=f52e229]
+                        - generic [ref=f52e230]:
+                          - text: The BTMS is typically modeled by considering compressible and incompressible fluid flows, phase changes in two-phase fluids, and heat exchange processes within heat exchangers.
+                          - link "Figure 3" [ref=f52e231] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f003"
+                          - text: presents the input/output signals and the internal computational functions associated with the BTMS control model. Notably, the gray-shaded regions in
+                          - link "Figure 3" [ref=f52e232] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f003"
+                          - text: a,b encapsulate the majority of the complex and nonlinear computational procedures inherent to the BTMS, as mentioned above. Obtaining numerical solutions within these regions requires iterative computations until convergence is achieved [
+                          - link "Reference 28" [ref=f52e233] [cursor=pointer]: "28"
+                          - text: "]. Moreover, due to the large number of parameters involved in this computation process, numerous assumptions are typically required, which can significantly compromise both the real-time performance and the overall accuracy of the control system."
+                        - generic [ref=f52e234]:
+                          - button [aria-hidden] [ref=f52e235] [cursor=pointer]
+                          - button "View figure 3" [ref=f52e240] [cursor=pointer]
+                          - generic [ref=f52e241]: Figure 3. Input/output signals and required internal functions for (a) Refrigeration cycle mode and (b) Radiator mode.
+                        - generic [ref=f52e242]:
+                          - text: To address these challenges, this study employs an artificial neural network (ANN)-based data-driven approach to model the BTMS. An ANN provides advantages, such as high-speed information processing, mapping capabilities, and fault tolerance [
+                          - link "Reference 29" [ref=f52e243] [cursor=pointer]: "29"
+                          - text: ","
+                          - link "Reference 30" [ref=f52e244] [cursor=pointer]: "30"
+                          - text: ","
+                          - link "Reference 31" [ref=f52e245] [cursor=pointer]: "31"
+                          - text: "]. To address this, the complex heat transfer and energy equations illustrated in the gray-shaded regions of"
+                          - link "Figure 3" [ref=f52e246] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f003"
+                          - text: were modeled using an ANN, as shown in the corresponding gray-shaded areas in
+                          - link "Figure 4" [ref=f52e247] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f004"
+                          - text: a,b. Additionally, other components, such as pump power, compressor power, and battery thermal dynamics, are modeled using mathematical equations with lookup tables, as shown in the light-blue-shaded region in
+                          - link "Figure 4" [ref=f52e248] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f004"
+                          - text: . To perform this calculation for the compressor, the compressor’s mass flow rate, isentropic efficiency, and power conversion efficiency are required. These parameters are provided in the form of lookup tables based on compressor speed, the pressure ratio, and torque, as illustrated in
+                          - link "Figure 5" [ref=f52e249] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f005"
+                          - text: . Similarly, for the pump, the coolant mass flow rate and mechanical power are given as functions of pump RPM, while the pump’s power conversion efficiency is represented as a function of pump RPM and torque, as shown in
+                          - link "Figure 6" [ref=f52e250] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f006"
+                          - text: .
+                        - generic [ref=f52e251]:
+                          - button [aria-hidden] [ref=f52e252] [cursor=pointer]
+                          - button "View figure 4" [ref=f52e257] [cursor=pointer]
+                          - generic [ref=f52e258]: Figure 4. ANN-based modeling approach for (a) Refrigeration cycle mode and (b) Radiator mode.
+                        - generic [ref=f52e259]:
+                          - button [aria-hidden] [ref=f52e260] [cursor=pointer]
+                          - button "View figure 5" [ref=f52e265] [cursor=pointer]
+                          - generic [ref=f52e266]: Figure 5. Compressor performance characteristics, (a) mass flow rate, (b) overall compressor efficiency, and (c) power conversion efficiency of compressor motor.
+                        - generic [ref=f52e267]:
+                          - button [aria-hidden] [ref=f52e268] [cursor=pointer]
+                          - button "View figure 6" [ref=f52e273] [cursor=pointer]
+                          - generic [ref=f52e274]: Figure 6. Pump performance characteristics, (a) mass flow rate, (b) mechanical power of pump, and (c) power conversion efficiency of pump motor.
+                      - generic [ref=f52e275]:
+                        - heading "2.3. Model for the Refrigeration Cycle with the Coolant Cycle" [level=3] [ref=f52e276]
+                        - generic [ref=f52e277]:
+                          - text: In refrigeration mode, an ANN is developed to approximate the refrigeration cycle’s characteristics, including heat exchange in the condenser, the battery chiller, and the battery, as shown in
+                          - link "Figure 4" [ref=f52e278] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f004"
+                          - text: a. The input signals of the ANN are the compressor speed, pump speed, battery temperature, and ambient temperature. The output signals of the ANN include the pressure and specific enthalpy at the compressor inlet/outlet and the temperature increase of the coolant passing through the battery. The ANN structure consists of two hidden layers with eight nodes each, using the ReLU activation function to balance computational efficiency and accuracy.
+                      - generic [ref=f52e279]:
+                        - heading "2.4. Model for the Coolant Cycle" [level=3] [ref=f52e280]
+                        - generic [ref=f52e281]:
+                          - text: In radiator mode, an ANN approximates heat exchange in the radiator and the battery, as indicated in
+                          - link "Figure 4" [ref=f52e282] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f004"
+                          - text: b. The input signals of the ANN are the battery temperature, ambient temperature, and pump speed. The output signal of the ANN is the coolant temperature increase at the battery inlet/outlet. The ANN structure mirrors that of the refrigeration cycle mode for consistency in computational efficiency and accuracy.
+                      - generic [ref=f52e283]:
+                        - heading "2.5. Battery Thermal Model" [level=3] [ref=f52e284]
+                        - generic [ref=f52e285]:
+                          - text: "The battery thermal dynamics are expressed as follows:"
+                          - generic [ref=f52e286]: (1)
+                          - text: where is the rate of battery temperature change, is the battery’s heat generation, is the cooling rate,
+                          - generic [ref=f52e383]:
+                            - text: m
+                            - subscript [ref=f52e384]: batt
+                          - text: is the battery’s thermal mass, and
+                          - generic [ref=f52e385]:
+                            - text: C
+                            - subscript [ref=f52e386]: batt
+                          - text: is the battery’s specific heat capacity. The battery’s heat generation is given by
+                          - generic [ref=f52e403]: (2)
+                          - text: where
+                          - generic [ref=f52e476]:
+                            - text: I
+                            - subscript [ref=f52e477]: batt
+                          - text: is the battery’s current,
+                          - generic [ref=f52e478]:
+                            - text: R
+                            - subscript [ref=f52e479]: batt
+                          - text: is the internal resistance of the battery, and
+                          - generic [ref=f52e480]:
+                            - text: U
+                            - subscript [ref=f52e481]: ocv
+                          - text: is the open circuit voltage of the battery. The cooling rate is expressed as
+                          - generic [ref=f52e494]: (3)
+                          - text: where is the coolant mass flow rate,
+                          - generic [ref=f52e552]:
+                            - text: C
+                            - subscript [ref=f52e553]: clnt
+                          - text: is the coolant specific heat capacity, and Δ
+                          - generic [ref=f52e554]:
+                            - text: T
+                            - subscript [ref=f52e555]: clnt,batt
+                          - text: represents the temperature increase of the coolant passing through the heated battery, which is one of the output signals from the ANN model in
+                          - link "Figure 4" [ref=f52e556] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f004"
+                          - text: a.
+                      - generic [ref=f52e557]:
+                        - heading "2.6. Compressor Power Model" [level=3] [ref=f52e558]
+                        - generic [ref=f52e559]:
+                          - text: The electric power consumption of the compressor,
+                          - generic [ref=f52e560]:
+                            - text: P
+                            - subscript [ref=f52e561]: comp
+                          - text: ", is given by"
+                          - generic [ref=f52e562]: (4)
+                          - text: where
+                          - generic [ref=f52e631]:
+                            - text: h
+                            - subscript [ref=f52e632]: comp,in
+                          - text: and
+                          - generic [ref=f52e633]:
+                            - text: h
+                            - subscript [ref=f52e634]: comp,out
+                          - text: are the specific enthalpy values at the compressor inlet and outlet, respectively, which are also output signals of the ANN model in
+                          - link "Figure 4" [ref=f52e635] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f004"
+                          - text: a. is the refrigerant mass flow rate, determined as a function of the pressure ratio and the compressor speed (
+                          - link "Figure 5" [ref=f52e647] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f005"
+                          - text: a). The overall compressor efficiency
+                          - generic [ref=f52e648]:
+                            - text: η
+                            - subscript [ref=f52e649]: comp
+                          - text: is the product of isentropic and volumetric efficiencies (
+                          - link "Figure 5" [ref=f52e650] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f005"
+                          - text: b), and
+                          - generic [ref=f52e651]:
+                            - text: η
+                            - subscript [ref=f52e652]: mot,com
+                          - text: is the power conversion efficiency of the compressor motor (
+                          - link "Figure 5" [ref=f52e653] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f005"
+                          - text: c).
+                      - generic [ref=f52e654]:
+                        - heading "2.7. Pump Power Model" [level=3] [ref=f52e655]
+                        - generic [ref=f52e656]:
+                          - text: The electric power consumption of the pump,
+                          - generic [ref=f52e657]:
+                            - text: P
+                            - subscript [ref=f52e658]: pump
+                          - text: ", is given by"
+                          - generic [ref=f52e659]: (5)
+                          - text: where
+                          - generic [ref=f52e701]:
+                            - text: P
+                            - subscript [ref=f52e702]: pump,mech
+                          - text: represents the mechanical power of the pump, which is approximated as a function of the pump’s speed, as shown in
+                          - link "Figure 6" [ref=f52e703] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f006"
+                          - text: b. The pump motor’s efficiency,
+                          - generic [ref=f52e704]:
+                            - text: η
+                            - subscript [ref=f52e705]: mot,pump
+                          - text: ", is shown in"
+                          - link "Figure 6" [ref=f52e706] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f006"
+                          - text: c. Additionally, the coolant mass flow rate, , used in Equation (3), is also dependent on pump speed, as illustrated in
+                          - link "Figure 6" [ref=f52e719] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f006"
+                          - text: a. The mechanical power varies across different operational modes due to variations in component configurations and fluid path lengths.
+                      - generic [ref=f52e720]:
+                        - heading "2.8. Model Training and Validation" [level=3] [ref=f52e721]
+                        - generic [ref=f52e722]:
+                          - text: A high-fidelity MATLAB/Simscape model (
+                          - link "Figure 7" [ref=f52e723] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f007"
+                          - text: ) was developed for data collection using R-134a as the refrigerant and a 50–50 mixture of water and ethylene glycol as the coolant. Mode transitions were assumed to be ideally controlled by valves. Training data were generated from steady-state outputs by varying outdoor temperature, battery temperature, compressor speed, and pump speed.
+                        - generic [ref=f52e724]:
+                          - button [aria-hidden] [ref=f52e725] [cursor=pointer]
+                          - button "View figure 7" [ref=f52e730] [cursor=pointer]
+                          - generic [ref=f52e731]:
+                            - text: Figure 7. Simulation model of electric vehicle thermal management system, implemented in MATLAB/Simscape [
+                            - link "Reference 32" [ref=f52e732] [cursor=pointer]: "32"
+                            - text: "]."
+                        - generic [ref=f52e733]: Model validation involved comparing ANN-based model outputs with results from simulations. In refrigeration mode, validation was performed using a pressure–enthalpy diagram and by comparing coolant temperature differences at the battery inlet and outlet. Battery temperature predictions from the ANN-based model were also compared to MATLAB/Simscape results. In radiator mode, validation followed the same methodology.
+                        - generic [ref=f52e734]:
+                          - link "Figure 8" [ref=f52e735] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f008"
+                          - text: and
+                          - link "Figure 9" [ref=f52e736] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f009"
+                          - text: show validation results for both modes, where blue lines represent MATLAB/Simscape results and red lines denote ANN-based model results. In both modes, the battery temperatures predicted by the ANN model and those obtained from the MATLAB/Simscape simulations exhibited high accuracy, with RMSE values of 0.2150 for the refrigeration cycle mode and 0.0554 for radiator mode. Due to the greater complexity of the refrigeration cycle compared to the radiator cycle, the ANN model exhibited slightly higher prediction error in the former. Nevertheless, the accuracy achieved in both modes is sufficient for control applications. Moreover, the ANN-based models required only 0.004% of a single simulation step, confirming their suitability for model-based controller design in terms of accuracy and computational efficiency.
+                        - generic [ref=f52e737]:
+                          - button [aria-hidden] [ref=f52e738] [cursor=pointer]
+                          - button "View figure 8" [ref=f52e743] [cursor=pointer]
+                          - generic [ref=f52e744]: "Figure 8. Validation results of refrigeration cycle mode: (a) pressure and enthalpy, (b) coolant temperature, (c) battery temperature."
+                        - generic [ref=f52e745]:
+                          - button [aria-hidden] [ref=f52e746] [cursor=pointer]
+                          - button "View figure 9" [ref=f52e751] [cursor=pointer]
+                          - generic [ref=f52e752]: "Figure 9. Validation results of refrigeration cycle mode: (a) pump mechanical power comparison result, (b) pump torque comparison result."
+                    - generic [ref=f52e754]:
+                      - heading "3. Controller Design" [level=2] [ref=f52e755]
+                      - generic [ref=f52e756]:
+                        - text: For MPC formulation, control model is expressed as
+                        - generic [ref=f52e757]: (6)
+                        - text: "where x represents the state, u is the control input, and w denotes the system disturbance. The system states include battery temperature and the speeds of the pump and compressor from the previous time step. The control inputs consist of the mode change command and the time derivatives of the compressor and pump speeds. The disturbance is battery heat generation. The mathematical representations of the state, control input, and disturbance are as follows:"
+                        - generic [ref=f52e787]: (7)
+                      - generic [ref=f52e916]: The choice of time derivatives of compressor and pump speeds as control variables is motivated by the need to mitigate excessive speed fluctuations. By regulating acceleration rather than directly controlling speed, abrupt variations can be effectively attenuated, leading to smoother system operation.
+                      - generic [ref=f52e917]:
+                        - heading "3.1. Conventional MPC" [level=3] [ref=f52e918]
+                        - generic [ref=f52e919]:
+                          - text: "A conventional MPC formulation for a dynamic system, such as (6), is defined by the following cost function J:"
+                          - generic [ref=f52e920]: (8)
+                          - text: "where C(·) represents the instantaneous cost, J is the total cost over the prediction horizon, and is the set of control inputs from time step k to k + n − 1. The objective is to determine the optimal sequence of control inputs that minimizes J. By employing a receding horizon approach, the optimal control sequence is obtained at each time step by solving the following optimization problem:"
+                          - generic [ref=f52e1031]: (9)
+                        - generic [ref=f52e1117]:
+                          - text: "In this study, the control objective for BTMS is to maintain battery temperature within the optimal operating range while minimizing energy consumption. Consequently, the cost function comprises three components: the power consumption cost, the temperature cost, and the mode change cost. The BTMS operates in two distinct cooling modes—refrigeration cycle mode and radiator mode—where mode transitions involve compressor activation. Frequent mode switching can negatively impact system longevity; thus, the cost function incorporates a penalty for mode changes as follows:"
+                          - generic [ref=f52e1118]: (10)
+                          - text: where α, β, and γ are the weighting factors.
+                        - generic [ref=f52e1171]:
+                          - text: The power consumption cost,
+                          - generic [ref=f52e1172]:
+                            - text: C
+                            - subscript [ref=f52e1173]: P
+                          - text: "(k), represents the sum of electric power consumed by the compressor and the pump:"
+                          - generic [ref=f52e1174]: (11)
+                        - generic [ref=f52e1209]:
+                          - text: The temperature cost,
+                          - generic [ref=f52e1210]:
+                            - text: C
+                            - subscript [ref=f52e1211]: T
+                          - text: (k), is expressed as
+                          - generic [ref=f52e1212]: (12)
+                          - text: where ζ is a design parameter. Based on previous studies [
+                          - link "Reference 33" [ref=f52e1326] [cursor=pointer]: "33"
+                          - text: "] and current industry practices, which typically regulate battery temperature around 30 °C, this study defines the optimal operating range as 27 °C and 33 °C. The mode change cost,"
+                          - generic [ref=f52e1327]:
+                            - text: C
+                            - subscript [ref=f52e1328]: mode
+                          - text: (k), is defined as 0 when the mode remains unchanged from the previous step and 1 otherwise. The weighting factor β penalizes frequent mode transitions within the prediction horizon. The speed variation cost is represented by
+                          - generic [ref=f52e1329]:
+                            - text: C
+                            - subscript [ref=f52e1330]: spd rate
+                          - text: "(k) and formulated as follows:"
+                          - generic [ref=f52e1331]: (13)
+                      - generic [ref=f52e1382]:
+                        - heading "3.2. Mode Change Sensitivity in Conventional MPC" [level=3] [ref=f52e1383]
+                        - generic [ref=f52e1384]:
+                          - text: The prediction horizon cannot be arbitrarily extended due to computational complexity and the diminishing accuracy of long-term predictions. In this study, the prediction horizon is set to 60 s. Given that mode switching events are relatively infrequent over this duration, the penalty term β for excessive switching fails to effectively regulate mode transitions.
+                          - link "Figure 10" [ref=f52e1385] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f010"
+                          - text: illustrates the mode change behavior of conventional MPC for different values. The results indicate excessive sensitivity of mode change behavior to the weighting factor β, making it challenging to fine-tune the cost function. To address this issue, this study proposes an infinite-horizon MPC framework, which accounts for mode transitions over an extended horizon, improving stability and robustness.
+                        - generic [ref=f52e1386]:
+                          - button [aria-hidden] [ref=f52e1387] [cursor=pointer]
+                          - button "View figure 10" [ref=f52e1392] [cursor=pointer]
+                          - generic [ref=f52e1393]: "Figure 10. Mode change behavior of conventional MPC: (a) result with β = 30.5, (b) result with β = 30.7, (c) result with β = 30.9."
+                      - generic [ref=f52e1394]:
+                        - heading "3.3. Infinity-Horizon MPC" [level=3] [ref=f52e1395]
+                        - generic [ref=f52e1396]: The excessive sensitivity of mode change behavior in conventional MPC to control parameters arises from the low probability of a mode transition occurring within the prediction horizon. To mitigate the issue of overly frequent mode changes, we aim to design an MPC framework with an infinite horizon while maintaining minimal computational load.
+                        - generic [ref=f52e1397]:
+                          - text: "The cost function for infinite-horizon MPC is defined as follows:"
+                          - generic [ref=f52e1398]: (14)
+                          - text: where C(k) is the cost function defined in (10) and μ is a discount factor that stabilizes the optimization by preventing the cost from increasing indefinitely.
+                        - generic [ref=f52e1477]:
+                          - text: "The optimal cost and corresponding optimal control inputs are computed as follows:"
+                          - generic [ref=f52e1478]: (15)
+                        - generic [ref=f52e1836]:
+                          - text: "In this formulation, the first term in the bracket can be computed similarly to conventional MPC. However, the second term cannot be evaluated using the conventional approach. If statistical information about disturbances and system dynamics is available, the most probable value of the second term can be estimated in a statistical sense, i.e., as an expected value. This allows us to approximate the second term as follows:"
+                          - generic [ref=f52e1837]: (16)
+                        - generic [ref=f52e1906]:
+                          - text: This function represents the minimum expected cost from the current state x
+                          - subscript [ref=f52e1907]: "0"
+                          - text: to an infinite time horizon, commonly referred to as the value function. The value function can be precomputed over the state space through a stochastic optimization process. One effective approach to such optimization is Stochastic Dynamic Programming (SDP). Within the SDP framework, the value function V(x) and the corresponding optimal policy are reformulated as
+                          - generic [ref=f52e1908]: (17)
+                          - generic [ref=f52e1965]: (18)
+                          - text: where x′ denotes the next state, X is the admissible state space, and p
+                          - subscript [ref=f52e2023]: xu,x′
+                          - text: is the state transition probability from a state x to another state x′ under the control input u. The optimal policy can be obtained through the value iteration algorithm, as shown in Algorithm 1.
+                          - table [ref=f52e2025]:
+                            - rowgroup [ref=f52e2026]:
+                              - row [ref=f52e2027]:
+                                - cell "Algorithm 1 Value iteration" [ref=f52e2028]
+                              - row [ref=f52e2029]:
+                                - cell [ref=f52e2030]
+                        - generic [ref=f52e2213]:
+                          - text: An example of a value function obtained via SDP is illustrated in
+                          - link "Figure 11" [ref=f52e2214] [cursor=pointer]:
+                            - /url: "#wevj-16-00279-f011"
+                          - text: . A more detailed explanation of this process can be found in the authors’ previous study [
+                          - link "Reference 34" [ref=f52e2215] [cursor=pointer]: "34"
+                          - text: "]. Eventually, the optimal control problem can be expressed with a tractable function V(·) as follows:"
+                          - generic [ref=f52e2216]: (19)
+                        - generic [ref=f52e2297]:
+                          - button [aria-hidden] [ref=f52e2298] [cursor=pointer]
+                          - button "View figure 11" [ref=f52e2303] [cursor=pointer]
+                          - generic [ref=f52e2304]: Figure 11. Example of value function.
+                    - generic [ref=f52e2306]:
+                      - heading "4. Controller Validation" [level=2] [ref=f52e2307]
+                      - generic [ref=f52e2308]: To validate the performance of the proposed MPC, a comparative analysis was conducted against a conventional rule-based controller for the BTMS. The rule-based controller was configured to operate both actuators at maximum speed when the battery temperature exceeded the upper limit of the desired temperature range and to deactivate both actuators when the battery temperature dropped below the lower limit. Additionally, a minimum operating speed of 20% of the maximum speed was set for each actuator. The rule-based controller used for validation was designed as a hypothetical construct for the purpose of comparison.
+                      - generic [ref=f52e2309]:
+                        - text: For the simulation, a combined driving cycle consisting of US06, SC03, and UDDS cycles was used. The corresponding vehicle speed profile is depicted in the first graph of
+                        - link "Figure 12" [ref=f52e2310] [cursor=pointer]:
+                          - /url: "#wevj-16-00279-f012"
+                        - text: . The second and third plots in
+                        - link "Figure 12" [ref=f52e2311] [cursor=pointer]:
+                          - /url: "#wevj-16-00279-f012"
+                        - text: depict the battery current and the heat generation of the battery under the given driving cycle. The control time step was set to 1 s and the prediction horizon for the proposed MPC was set to 60 s. Additionally, the disturbance or battery heat generation during prediction horizon was estimated using a zero-order-hold model.
+                      - generic [ref=f52e2312]:
+                        - button [aria-hidden] [ref=f52e2313] [cursor=pointer]
+                        - button "View figure 12" [ref=f52e2318] [cursor=pointer]
+                        - generic [ref=f52e2319]: Figure 12. US06-SC03-UDDS combined driving cycle and corresponding battery current input and battery heat generation.
+                      - generic [ref=f52e2320]:
+                        - link "Figure 13" [ref=f52e2321] [cursor=pointer]:
+                          - /url: "#wevj-16-00279-f013"
+                        - text: presents the results for ambient temperatures of 25 °C, 30 °C, and 35 °C, respectively. In each figure, the red lines represent the results of the proposed controller, while the blue lines represent the results of the rule-based controller.
+                      - generic [ref=f52e2322]:
+                        - button [aria-hidden] [ref=f52e2323] [cursor=pointer]
+                        - button "View figure 13" [ref=f52e2328] [cursor=pointer]
+                        - generic [ref=f52e2329]: Figure 13. Controller validation results when (a) the ambient temperature is 25 °C, (b) the ambient temperature is 30 °C, and (c) the ambient temperature is 35 °C.
+                      - generic [ref=f52e2330]: When the ambient temperature was 25 °C, the proposed controller actively utilized the radiator mode while avoiding the use of the refrigeration cycle mode. As a result, the proposed controller significantly reduced energy consumption compared to the rule-based controller while maintaining the battery temperature within the desired operating range.
+                      - generic [ref=f52e2331]: When the ambient temperature was 30 °C, the proposed controller switched between the refrigeration cycle mode and the radiator mode based on battery heat generation and temperature conditions. This adaptive control strategy allowed the proposed controller to maintain the battery temperature within the desired operating range while reducing energy consumption by approximately 42.52% compared to the rule-based controller.
+                      - generic [ref=f52e2332]:
+                        - text: When the ambient temperature was 35 °C, neither the proposed controller nor the rule-based controller utilized the radiator mode due to the high ambient temperature. However, the optimized actuators in the proposed controller operated in more efficient regions compared to the rule-based controller. This is because the cost function of the proposed controller incorporates the power consumption characteristics of the actuators, allowing it to reflect and exploit their optimal efficiency ranges. As illustrated in
+                        - link "Figure 14" [ref=f52e2333] [cursor=pointer]:
+                          - /url: "#wevj-16-00279-f014"
+                        - text: ", the proposed control strategy achieves an average COP of 4.23 for the refrigeration cycle, whereas the rule-based control approach yields a COP of 3.33. This indicates that the proposed strategy operates the actuators within more energy-efficient regions of the cycle, thereby also reducing overall energy consumption. As a result, the proposed controller achieved a 30.05% reduction in energy consumption compared to the rule-based controller."
+                      - generic [ref=f52e2334]:
+                        - button [aria-hidden] [ref=f52e2335] [cursor=pointer]
+                        - button "View figure 14" [ref=f52e2340] [cursor=pointer]
+                        - generic [ref=f52e2341]: Figure 14. Energy consumption and refrigeration cycle COP under ambient temperature 35 °C condition.
+                      - generic [ref=f52e2342]:
+                        - text: Additionally, a comparison of energy consumption with other studies employing different control strategies is presented in
+                        - link "Table 1" [ref=f52e2343] [cursor=pointer]:
+                          - /url: "#wevj-16-00279-t001"
+                        - text: . Although a completely fair comparison is not possible due to differences in system specifications and simulation conditions, the effectiveness of the proposed method is evaluated by comparing the energy consumption reduction achieved under conditions as similar as possible. In particular, under the ambient temperature condition of 25 °C, the proposed control strategy effectively utilizes the radiator mode, which is not employed in other studies, resulting in a substantial reduction in BTMS energy consumption.
+                      - generic [ref=f52e2344]:
+                        - button [aria-hidden] [ref=f52e2345] [cursor=pointer]
+                        - button "View table 1" [ref=f52e2350] [cursor=pointer]
+                        - generic [ref=f52e2351]:
+                          - generic [ref=f52e2352]: Table 1.
+                          - text: Control strategy comparison.
+                      - generic [ref=f52e2353]:
+                        - link "Figure 15" [ref=f52e2354] [cursor=pointer]:
+                          - /url: "#wevj-16-00279-f015"
+                        - text: summarizes the validation results in terms of battery temperature regulation performance and energy consumption reduction. MPC regulates battery temperature in a tighter range while using less energy. Additionally, the third row of
+                        - link "Figure 13" [ref=f52e2355] [cursor=pointer]:
+                          - /url: "#wevj-16-00279-f013"
+                        - text: illustrates the mode change behavior of the EV BTMS under different ambient conditions. Compared to the mode change behavior of the conventional MPC shown in
+                        - link "Figure 10" [ref=f52e2356] [cursor=pointer]:
+                          - /url: "#wevj-16-00279-f010"
+                        - text: ", the proposed controller successfully suppressed unnecessary fluctuations in mode transitions. By reducing excessive mode changes, the proposed controller enhanced system stability and extended the lifespan of the BTMS components."
+                      - generic [ref=f52e2357]:
+                        - button [aria-hidden] [ref=f52e2358] [cursor=pointer]
+                        - button "View figure 15" [ref=f52e2363] [cursor=pointer]
+                        - generic [ref=f52e2364]: Figure 15. (a) Battery temperature regulation performance; (b) energy consumption reduction performance.
+                    - generic [ref=f52e2366]:
+                      - heading "5. Conclusions" [level=2] [ref=f52e2367]
+                      - generic [ref=f52e2368]: In this study, a Model Predictive Control (MPC) strategy for the Electric Vehicle Battery Thermal Management System (EV BTMS) was proposed to maintain the battery temperature within the optimal operating range while minimizing energy consumption. To ensure real-time performance and reliability, a high-fidelity model of the EV BTMS was developed using MATLAB/Simscape. Additionally, an artificial neural network (ANN)-based model was designed using data from the high-fidelity model. The ANN-based model was verified to accurately approximate the characteristics of the EV BTMS while maintaining a low computational load.
+                      - generic [ref=f52e2369]: To address the issue of oscillatory control inputs observed in conventional MPC, a modified MPC framework was introduced. This framework incorporated a value function that captures the system’s characteristics beyond the prediction horizon, extending to an infinite time horizon.
+                      - generic [ref=f52e2370]: The proposed controller was evaluated by comparing its performance with that of a conventional rule-based controller. The results demonstrated that under sufficiently low ambient temperatures, the proposed controller effectively utilized the radiator mode, leading to a 78.42% reduction in energy consumption compared to the rule-based controller. In scenarios where the ambient temperature was close to the battery temperature, the system dynamically adjusted its mode based on the battery’s heat generation and current temperature, resulting in a 42.52% reduction in energy consumption. Under high ambient temperatures, the proposed controller optimized actuator usage more efficiently than the rule-based controller, achieving a 30.05% reduction in energy consumption.
+                      - generic [ref=f52e2371]: In all tested conditions, the proposed controller successfully maintained the battery temperature within the desired operating range. Additionally, the controller effectively suppressed unnecessary fluctuations in actuator operation, enhancing system stability and longevity.
+                      - generic [ref=f52e2372]: This study aimed to achieve real-time operation by designing the controller with a reduced number of states while maintaining an acceptable level of model accuracy. For future work, we intend to improve control performance by incorporating a greater number of states into the MPC’s future cost by transitioning from an SDP-based value function to a learning-based value approximation approach.
+                    - generic [ref=f52e2374]:
+                      - heading "Author Contributions" [level=2] [ref=f52e2375]
+                      - generic [ref=f52e2376]: Conceptualization, K.N. and C.A.; methodology, C.A.; software, K.N.; validation, K.N.; formal analysis, K.N.; data curation, K.N.; writing—original draft preparation, K.N.; writing—review and editing, C.A.; visualization, K.N.; supervision, C.A.; project administration, C.A. All authors have read and agreed to the published version of the manuscript.
+                    - generic [ref=f52e2378]:
+                      - heading "Funding" [level=2] [ref=f52e2379]
+                      - generic [ref=f52e2380]: This research received no external funding.
+                    - generic [ref=f52e2382]:
+                      - heading "Data Availability Statement" [level=2] [ref=f52e2383]
+                      - generic [ref=f52e2384]: The raw data supporting the conclusions of this article will be made available by the authors upon request.
+                    - generic [ref=f52e2386]:
+                      - heading "Conflicts of Interest" [level=2] [ref=f52e2387]
+                      - generic [ref=f52e2388]: The authors declare no conflicts of interest.
+                    - generic [ref=f52e2390]:
+                      - heading "References" [level=2] [ref=f52e2391]
+                      - list [ref=f52e2392]:
+                        - listitem [ref=f52e2393]:
+                          - text: Millo, F.; Rolando, L.; Fuso, R.; Mallamo, F. Real CO
+                          - subscript [ref=f52e2394]: "2"
+                          - text: emissions benefits and end user’s operating costs of a plug-in Hybrid Electric Vehicle. Appl. Energy 2014, 114, 563–571. [
+                          - link "Google Scholar" [ref=f52e2395] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Real+CO2+emissions+benefits+and+end+user%E2%80%99s+operating+costs+of+a+plug-in+Hybrid+Electric+Vehicle&author=Millo,+F.&author=Rolando,+L.&author=Fuso,+R.&author=Mallamo,+F.&publication_year=2014&journal=Appl.+Energy&volume=114&pages=563%E2%80%93571&doi=10.1016/j.apenergy.2013.09.014
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2396] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.apenergy.2013.09.014
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2397] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/9009dddcb631dcf71343be3eb1fd8dd8
+                          - text: "]"
+                        - listitem [ref=f52e2398]:
+                          - text: Kim, J.; Oh, J.; Lee, H. Review on battery thermal management system for electric vehicles. Appl. Therm. Eng. 2019, 149, 192–212. [
+                          - link "Google Scholar" [ref=f52e2399] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Review+on+battery+thermal+management+system+for+electric+vehicles&author=Kim,+J.&author=Oh,+J.&author=Lee,+H.&publication_year=2019&journal=Appl.+Therm.+Eng.&volume=149&pages=192%E2%80%93212&doi=10.1016/j.applthermaleng.2018.12.020
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2400] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.applthermaleng.2018.12.020
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2401] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/55cd0c153afe96df871a69bfac9dbab2
+                          - text: "]"
+                        - listitem [ref=f52e2402]:
+                          - text: "Pesaran, A.A. Battery thermal management in EV and HEVs: Issues and solutions. Battery Man 2001, 43, 34–49. ["
+                          - link "Google Scholar" [ref=f52e2403] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Battery+thermal+management+in+EV+and+HEVs:+Issues+and+solutions&author=Pesaran,+A.A.&publication_year=2001&journal=Battery+Man&volume=43&pages=34%E2%80%9349
+                          - text: "]"
+                        - listitem [ref=f52e2404]:
+                          - text: Arora, S.; Kapoor, A.; Shen, W. A novel thermal management system for improving discharge/charge performance of Li-ion battery packs under abuse. J. Power Sources 2018, 378, 759–775. [
+                          - link "Google Scholar" [ref=f52e2405] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=A+novel+thermal+management+system+for+improving+discharge/charge+performance+of+Li-ion+battery+packs+under+abuse&author=Arora,+S.&author=Kapoor,+A.&author=Shen,+W.&publication_year=2018&journal=J.+Power+Sources&volume=378&pages=759%E2%80%93775&doi=10.1016/j.jpowsour.2017.12.030
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2406] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.jpowsour.2017.12.030
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2407] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/a931c29675f2b85876f0175105aa2202
+                          - text: "]"
+                        - listitem [ref=f52e2408]:
+                          - text: Lei, Z.; Zhang, Y.; Lei, X. Improving temperature uniformity of a lithium-ion battery by intermittent heating method in cold climate. Int. J. Heat Mass Transf. 2018, 121, 275–281. [
+                          - link "Google Scholar" [ref=f52e2409] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Improving+temperature+uniformity+of+a+lithium-ion+battery+by+intermittent+heating+method+in+cold+climate&author=Lei,+Z.&author=Zhang,+Y.&author=Lei,+X.&publication_year=2018&journal=Int.+J.+Heat+Mass+Transf.&volume=121&pages=275%E2%80%93281&doi=10.1016/j.ijheatmasstransfer.2017.12.159
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2410] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.ijheatmasstransfer.2017.12.159
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2411] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/fdc8fe366aaa3ccee34f0bc7558e1d55
+                          - text: "]"
+                        - listitem [ref=f52e2412]:
+                          - text: Lu, M.; Zhang, X.; Ji, J.; Xu, X.; Zhang, Y. Research progress on power battery cooling technology for electric vehicles. J. Energy Storage 2020, 27, 101–155. [
+                          - link "Google Scholar" [ref=f52e2413] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Research+progress+on+power+battery+cooling+technology+for+electric+vehicles&author=Lu,+M.&author=Zhang,+X.&author=Ji,+J.&author=Xu,+X.&author=Zhang,+Y.&publication_year=2020&journal=J.+Energy+Storage&volume=27&pages=101%E2%80%93155&doi=10.1016/j.est.2019.101155
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2414] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.est.2019.101155
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2415] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/128f38d3fd4b88191d6a2e5cf6d80333
+                          - text: "]"
+                        - listitem [ref=f52e2416]:
+                          - text: "Xu, J.M.; Zhang, C.Z.; Wan, Z.M.; Chen, X.; Chan, S.H.; Tu, Z.K. Progress and perspectives of integrated thermal management systems in PEM fuel cell vehicles: A review. Renew. Sustain. Energy Rev. 2022, 155, 111908. ["
+                          - link "Google Scholar" [ref=f52e2417] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Progress+and+perspectives+of+integrated+thermal+management+systems+in+PEM+fuel+cell+vehicles:+A+review&author=Xu,+J.M.&author=Zhang,+C.Z.&author=Wan,+Z.M.&author=Chen,+X.&author=Chan,+S.H.&author=Tu,+Z.K.&publication_year=2022&journal=Renew.+Sustain.+Energy+Rev.&volume=155&pages=111908&doi=10.1016/j.rser.2021.111908
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2418] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.rser.2021.111908
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2419] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/c52320f30450a2bd35ab2fa0876d4b1e
+                          - text: "]"
+                        - listitem [ref=f52e2420]:
+                          - text: "Feng, X.; Ouyang, M.; Liu, X.; Lu, L.; Xia, Y.; He, X. Thermal runaway mechanism of lithium ion battery for electric vehicles: A review. Energy Storage Mater. 2018, 10, 246–267. ["
+                          - link "Google Scholar" [ref=f52e2421] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Thermal+runaway+mechanism+of+lithium+ion+battery+for+electric+vehicles:+A+review&author=Feng,+X.&author=Ouyang,+M.&author=Liu,+X.&author=Lu,+L.&author=Xia,+Y.&author=He,+X.&publication_year=2018&journal=Energy+Storage+Mater.&volume=10&pages=246%E2%80%93267&doi=10.1016/j.ensm.2017.05.013
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2422] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.ensm.2017.05.013
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2423] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/338e28b3b94000c0749b46f1b89353a0
+                          - text: "]"
+                        - listitem [ref=f52e2424]:
+                          - text: Kshetrimayum, K.S.; Yoon, Y.-G.; Gye, H.-R.; Lee, C.-J. Preventing heat propagation and thermal runaway in electric vehicle battery modules using integrated PCM and micro-channel plate cooling system. Appl. Therm. Eng. 2019, 159, 113797. [
+                          - link "Google Scholar" [ref=f52e2425] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Preventing+heat+propagation+and+thermal+runaway+in+electric+vehicle+battery+modules+using+integrated+PCM+and+micro-channel+plate+cooling+system&author=Kshetrimayum,+K.S.&author=Yoon,+Y.-G.&author=Gye,+H.-R.&author=Lee,+C.-J.&publication_year=2019&journal=Appl.+Therm.+Eng.&volume=159&pages=113797&doi=10.1016/j.applthermaleng.2019.113797
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2426] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.applthermaleng.2019.113797
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2427] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/668904eb746bd71925634567e1472a70
+                          - text: "]"
+                        - listitem [ref=f52e2428]:
+                          - text: "Chavan, S.; Venkateswarlu, B.; Prabakaran, R.; Salman, M.; Joo, S.W.; Choi, G.S.; Kim, S.C. Thermal runaway and mitigation strategies for electric vehicle lithium-ion batteries using battery cooling approach: A review of the current status and challenges. J. Energy Storage 2023, 72, 108569. ["
+                          - link "Google Scholar" [ref=f52e2429] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Thermal+runaway+and+mitigation+strategies+for+electric+vehicle+lithium-ion+batteries+using+battery+cooling+approach:+A+review+of+the+current+status+and+challenges&author=Chavan,+S.&author=Venkateswarlu,+B.&author=Prabakaran,+R.&author=Salman,+M.&author=Joo,+S.W.&author=Choi,+G.S.&author=Kim,+S.C.&publication_year=2023&journal=J.+Energy+Storage&volume=72&pages=108569&doi=10.1016/j.est.2023.108569
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2430] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.est.2023.108569
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2431] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/3e91b4514337d4f2e8e574d411e54e4c
+                          - text: "]"
+                        - listitem [ref=f52e2432]:
+                          - text: "Suresh, C.; Awasthi, A.; Kumar, B.; Im, S.-k.; Jeon, Y. Advances in battery thermal management for electric vehicles: A comprehensive review of hybrid PCM-metal foam and immersion cooling technologies. Renew. Sustain. Energy Rev. 2025, 208, 115021. ["
+                          - link "Google Scholar" [ref=f52e2433] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Advances+in+battery+thermal+management+for+electric+vehicles:+A+comprehensive+review+of+hybrid+PCM-metal+foam+and+immersion+cooling+technologies&author=Suresh,+C.&author=Awasthi,+A.&author=Kumar,+B.&author=Im,+S.-k.&author=Jeon,+Y.&publication_year=2025&journal=Renew.+Sustain.+Energy+Rev.&volume=208&pages=115021&doi=10.1016/j.rser.2024.115021
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2434] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.rser.2024.115021
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2435] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/c7c89062ed6e0650039071a0ed624d73
+                          - text: "]"
+                        - listitem [ref=f52e2436]:
+                          - text: "Akinlabi, A.A.H.; Solyali, D. Configuration, design, and optimization of air-cooled battery thermal management system for electric vehicles: A review. Renew. Sustain. Energy Rev. 2020, 125, 109815. ["
+                          - link "Google Scholar" [ref=f52e2437] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Configuration,+design,+and+optimization+of+air-cooled+battery+thermal+management+system+for+electric+vehicles:+A+review&author=Akinlabi,+A.A.H.&author=Solyali,+D.&publication_year=2020&journal=Renew.+Sustain.+Energy+Rev.&volume=125&pages=109815&doi=10.1016/j.rser.2020.109815
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2438] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.rser.2020.109815
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2439] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/879b7bdb236e3abb2fd289acd4e1daf1
+                          - text: "]"
+                        - listitem [ref=f52e2440]:
+                          - text: Xu, J.; Guo, Z.; Xu, Z.; Zhou, X.; Mei, X. A systematic review and comparison of liquid-based cooling system for lithium-ion batteries. eTransportation 2023, 17, 100242. [
+                          - link "Google Scholar" [ref=f52e2441] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=A+systematic+review+and+comparison+of+liquid-based+cooling+system+for+lithium-ion+batteries&author=Xu,+J.&author=Guo,+Z.&author=Xu,+Z.&author=Zhou,+X.&author=Mei,+X.&publication_year=2023&journal=eTransportation&volume=17&pages=100242&doi=10.1016/j.etran.2023.100242
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2442] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.etran.2023.100242
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2443] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/ea45ac3172bd94a7eb77a3e958e09545
+                          - text: "]"
+                        - listitem [ref=f52e2444]:
+                          - text: "Luo, J.; Zou, D.; Wang, Y.; Wang, S.; Huang, L. Battery thermal management systems (BTMs) based on phase change material (PCM): A comprehensive review. Chem. Eng. J. 2022, 430, 132741. ["
+                          - link "Google Scholar" [ref=f52e2445] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Battery+thermal+management+systems+(BTMs)+based+on+phase+change+material+(PCM):+A+comprehensive+review&author=Luo,+J.&author=Zou,+D.&author=Wang,+Y.&author=Wang,+S.&author=Huang,+L.&publication_year=2022&journal=Chem.+Eng.+J.&volume=430&pages=132741&doi=10.1016/j.cej.2021.132741
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2446] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.cej.2021.132741
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2447] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/4d996d91549756ae32e6fa564f0e5f56
+                          - text: "]"
+                        - listitem [ref=f52e2448]:
+                          - text: Gharehghani, A.; Rabiei, M.; Mehranfar, S.; Saeedipour, S.; Mahmoudzadeh Andwari, A.; García, A.; Reche, C.M. Progress in battery thermal management systems technologies for electric vehicles. Renew. Sustain. Energy Rev. 2024, 202, 114654. [
+                          - link "Google Scholar" [ref=f52e2449] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Progress+in+battery+thermal+management+systems+technologies+for+electric+vehicles&author=Gharehghani,+A.&author=Rabiei,+M.&author=Mehranfar,+S.&author=Saeedipour,+S.&author=Mahmoudzadeh+Andwari,+A.&author=Garc%C3%ADa,+A.&author=Reche,+C.M.&publication_year=2024&journal=Renew.+Sustain.+Energy+Rev.&volume=202&pages=114654&doi=10.1016/j.rser.2024.114654
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2450] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.rser.2024.114654
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2451] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/53e4c157c36b0d4afda18aa6018d1ed0
+                          - text: "]"
+                        - listitem [ref=f52e2452]:
+                          - text: Lee, J.T.; Kwon, S.; Lim, Y.; Chon, M.S.; Kim, D. Effect of air-conditioning on driving range of electric vehicle for various driving modes; SAE Technical Paper 2013-01-0040. In Proceedings of the Asia Pacific Automotive Engineering Conference, Bangkok, Thailand, 1–3 April 2013. [
+                          - link "Google Scholar" [ref=f52e2453] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Effect+of+air-conditioning+on+driving+range+of+electric+vehicle+for+various+driving+modes;+SAE+Technical+Paper+2013-01-0040&conference=Proceedings+of+the+Asia+Pacific+Automotive+Engineering+Conference&author=Lee,+J.T.&author=Kwon,+S.&author=Lim,+Y.&author=Chon,+M.S.&author=Kim,+D.&publication_year=2013&doi=10.4271/2013-01-0040
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2454] [cursor=pointer]:
+                            - /url: https://doi.org/10.4271/2013-01-0040
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2455] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/8b8f99ab9abbc701603066e21173cdae
+                          - text: "]"
+                        - listitem [ref=f52e2456]:
+                          - text: Huang, G.; Wang, S.; Xu, X. A robust model predictive control strategy for improving the control performance of air-conditioning systems. Energy Convers. Manag. 2009, 50, 2650–2658. [
+                          - link "Google Scholar" [ref=f52e2457] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=A+robust+model+predictive+control+strategy+for+improving+the+control+performance+of+air-conditioning+systems&author=Huang,+G.&author=Wang,+S.&author=Xu,+X.&publication_year=2009&journal=Energy+Convers.+Manag.&volume=50&pages=2650%E2%80%932658&doi=10.1016/j.enconman.2009.06.014
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2458] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.enconman.2009.06.014
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2459] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/cbc1ae77a17e8282bc1445d09e17c415
+                          - text: "]"
+                        - listitem [ref=f52e2460]:
+                          - text: Cen, J.; Jiang, F. Li-ion power battery temperature control by a battery thermal management and vehicle cabin air conditioning integrated system. Energy Sustain. Dev. 2020, 57, 141–148. [
+                          - link "Google Scholar" [ref=f52e2461] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Li-ion+power+battery+temperature+control+by+a+battery+thermal+management+and+vehicle+cabin+air+conditioning+integrated+system&author=Cen,+J.&author=Jiang,+F.&publication_year=2020&journal=Energy+Sustain.+Dev.&volume=57&pages=141%E2%80%93148&doi=10.1016/j.esd.2020.06.004
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2462] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.esd.2020.06.004
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2463] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/f86a5b5e337ec785eb99a1dc51385ef6
+                          - text: "]"
+                        - listitem [ref=f52e2464]:
+                          - text: Aprea, C.; Mastrullo, R.; Renno, C. Fuzzy control of the compressor speed in a refrigeration plant. Int. J. Refrig. 2004, 27, 639–648. [
+                          - link "Google Scholar" [ref=f52e2465] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Fuzzy+control+of+the+compressor+speed+in+a+refrigeration+plant&author=Aprea,+C.&author=Mastrullo,+R.&author=Renno,+C.&publication_year=2004&journal=Int.+J.+Refrig.&volume=27&pages=639%E2%80%93648&doi=10.1016/j.ijrefrig.2004.02.004
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2466] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.ijrefrig.2004.02.004
+                          - text: "]"
+                        - listitem [ref=f52e2467]:
+                          - text: Ma, Y.; Duan, P.; Sun, Y.; Chen, H. Equalization of Lithium-Ion Battery Pack Based on Fuzzy Logic Control in Electric Vehicle. IEEE Trans. Ind. Electron. 2018, 65, 6762–6771. [
+                          - link "Google Scholar" [ref=f52e2468] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Equalization+of+Lithium-Ion+Battery+Pack+Based+on+Fuzzy+Logic+Control+in+Electric+Vehicle&author=Ma,+Y.&author=Duan,+P.&author=Sun,+Y.&author=Chen,+H.&publication_year=2018&journal=IEEE+Trans.+Ind.+Electron.&volume=65&pages=6762%E2%80%936771&doi=10.1109/TIE.2018.2795578
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2469] [cursor=pointer]:
+                            - /url: https://doi.org/10.1109/TIE.2018.2795578
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2470] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/58c38e547b31cc847ec0c10ed75b84da
+                          - text: "]"
+                        - listitem [ref=f52e2471]:
+                          - text: Zhou, H.; Jia, F.; Jing, H.; Liu, Z.; Güvenç, L. Coordinated Longitudinal and Lateral Motion Control for Four Wheel Independent Motor-Drive Electric Vehicle. IEEE Trans. Veh. Technol. 2018, 67, 3782–3790. [
+                          - link "Google Scholar" [ref=f52e2472] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Coordinated+Longitudinal+and+Lateral+Motion+Control+for+Four+Wheel+Independent+Motor-Drive+Electric+Vehicle&author=Zhou,+H.&author=Jia,+F.&author=Jing,+H.&author=Liu,+Z.&author=G%C3%BCven%C3%A7,+L.&publication_year=2018&journal=IEEE+Trans.+Veh.+Technol.&volume=67&pages=3782%E2%80%933790&doi=10.1109/TVT.2018.2816936
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2473] [cursor=pointer]:
+                            - /url: https://doi.org/10.1109/TVT.2018.2816936
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2474] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/da6089101262321810559bfa295b9f71
+                          - text: "]"
+                        - listitem [ref=f52e2475]:
+                          - text: Behrooz, F.; Mariun, N.; Marhaban, M.H.; Mohd Radzi, M.A.; Ramli, A.R. Review of Control Techniques for HVAC Systems—Nonlinearity Approaches Based on Fuzzy Cognitive Maps. Energies 2018, 11, 495. [
+                          - link "Google Scholar" [ref=f52e2476] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Review+of+Control+Techniques+for+HVAC+Systems%E2%80%94Nonlinearity+Approaches+Based+on+Fuzzy+Cognitive+Maps&author=Behrooz,+F.&author=Mariun,+N.&author=Marhaban,+M.H.&author=Mohd+Radzi,+M.A.&author=Ramli,+A.R.&publication_year=2018&journal=Energies&volume=11&pages=495&doi=10.3390/en11030495
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2477] [cursor=pointer]:
+                            - /url: https://doi.org/10.3390/en11030495
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2478] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/656f7c9c4327a366bcec5419c4373b2e
+                          - text: "]"
+                        - listitem [ref=f52e2479]:
+                          - text: Liu, Y.; Zhang, J. Self-adapting J-type air-based battery thermal management system via model predictive control. Appl. Energy 2020, 263, 114640. [
+                          - link "Google Scholar" [ref=f52e2480] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Self-adapting+J-type+air-based+battery+thermal+management+system+via+model+predictive+control&author=Liu,+Y.&author=Zhang,+J.&publication_year=2020&journal=Appl.+Energy&volume=263&pages=114640&doi=10.1016/j.apenergy.2020.114640
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2481] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.apenergy.2020.114640
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2482] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/db1fc9aa4e5a00e57bdcda143414d1c4
+                          - text: "]"
+                        - listitem [ref=f52e2483]:
+                          - text: Ma, Y.; Ding, H.; Mou, H.; Gao, J. Battery thermal management strategy for electric vehicles based on nonlinear model predictive control. Measurement 2021, 186, 110115. [
+                          - link "Google Scholar" [ref=f52e2484] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Battery+thermal+management+strategy+for+electric+vehicles+based+on+nonlinear+model+predictive+control&author=Ma,+Y.&author=Ding,+H.&author=Mou,+H.&author=Gao,+J.&publication_year=2021&journal=Measurement&volume=186&pages=110115&doi=10.1016/j.measurement.2021.110115
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2485] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.measurement.2021.110115
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2486] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/646164349f3efc679a3ef19e62b64e98
+                          - text: "]"
+                        - listitem [ref=f52e2487]:
+                          - text: Park, S.; Ahn, C. Computationally Efficient Stochastic Model Predictive Controller for Battery Thermal Management of Electric Vehicle. IEEE Trans. Veh. Technol. 2020, 69, 8407–8419. [
+                          - link "Google Scholar" [ref=f52e2488] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Computationally+Efficient+Stochastic+Model+Predictive+Controller+for+Battery+Thermal+Management+of+Electric+Vehicle&author=Park,+S.&author=Ahn,+C.&publication_year=2020&journal=IEEE+Trans.+Veh.+Technol.&volume=69&pages=8407%E2%80%938419&doi=10.1109/TVT.2020.2999939
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2489] [cursor=pointer]:
+                            - /url: https://doi.org/10.1109/TVT.2020.2999939
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2490] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/0601699646775b123ea608af643c4730
+                          - text: "]"
+                        - listitem [ref=f52e2491]:
+                          - text: He, H.; Jia, H.; Huo, W.; Yan, M. Stochastic Dynamic Programming of Air Conditioning System for Electric Vehicles. Energy Procedia 2017, 105, 2518–2524. [
+                          - link "Google Scholar" [ref=f52e2492] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Stochastic+Dynamic+Programming+of+Air+Conditioning+System+for+Electric+Vehicles&author=He,+H.&author=Jia,+H.&author=Huo,+W.&author=Yan,+M.&publication_year=2017&journal=Energy+Procedia&volume=105&pages=2518%E2%80%932524&doi=10.1016/j.egypro.2017.03.724
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2493] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.egypro.2017.03.724
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2494] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/55589acfe635c761bbc677b90f2a177c
+                          - text: "]"
+                        - listitem [ref=f52e2495]:
+                          - text: "Tang, W.; Zhang, Y.J. A Model Predictive Control Approach for Low-Complexity Electric Vehicle Charging Scheduling: Optimality and Scalability. IEEE Trans. Power Syst. 2017, 32, 1050–1063. ["
+                          - link "Google Scholar" [ref=f52e2496] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=A+Model+Predictive+Control+Approach+for+Low-Complexity+Electric+Vehicle+Charging+Scheduling:+Optimality+and+Scalability&author=Tang,+W.&author=Zhang,+Y.J.&publication_year=2017&journal=IEEE+Trans.+Power+Syst.&volume=32&pages=1050%E2%80%931063&doi=10.1109/TPWRS.2016.2585202
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2497] [cursor=pointer]:
+                            - /url: https://doi.org/10.1109/TPWRS.2016.2585202
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2498] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/c15332cdd564bae46bc9aaa22ddf2592
+                          - text: "]"
+                        - listitem [ref=f52e2499]:
+                          - text: Tian, Z.; Gan, W.; Zhang, X.L.; Gu, B.; Yang, L. Investigation on an integrated thermal management system with battery cooling and motor waste heat recovery for electric vehicle. Appl. Therm. Eng. 2018, 136, 16–27. [
+                          - link "Google Scholar" [ref=f52e2500] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Investigation+on+an+integrated+thermal+management+system+with+battery+cooling+and+motor+waste+heat+recovery+for+electric+vehicle&author=Tian,+Z.&author=Gan,+W.&author=Zhang,+X.L.&author=Gu,+B.&author=Yang,+L.&publication_year=2018&journal=Appl.+Therm.+Eng.&volume=136&pages=16%E2%80%9327&doi=10.1016/j.applthermaleng.2018.02.093
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2501] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.applthermaleng.2018.02.093
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2502] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/7e734985aef9bc85b32ebb0cd4f2dddd
+                          - text: "]"
+                        - listitem [ref=f52e2503]:
+                          - text: Jani, D.B.; Mishra, M.; Sahoo, P.K. Application of artificial neural network for predicting performance of solid desiccant cooling systems—A review. Renew. Sustain. Energy Rev. 2017, 80, 352–366. [
+                          - link "Google Scholar" [ref=f52e2504] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Application+of+artificial+neural+network+for+predicting+performance+of+solid+desiccant+cooling+systems%E2%80%94A+review&author=Jani,+D.B.&author=Mishra,+M.&author=Sahoo,+P.K.&publication_year=2017&journal=Renew.+Sustain.+Energy+Rev.&volume=80&pages=352%E2%80%93366&doi=10.1016/j.rser.2017.05.169
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2505] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.rser.2017.05.169
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2506] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/b0e1085729ecdd897d2333234df48f0c
+                          - text: "]"
+                        - listitem [ref=f52e2507]:
+                          - text: Al-Waeli, A.H.A.; Sopian, K.; Yousif, J.H.; Kazem, H.A.; Boland, J.; Chaichan, M.T. Artificial neural network modeling and analysis of photovoltaic/thermal system based on the experimental study. Energy Convers. Manag. 2019, 186, 368–379. [
+                          - link "Google Scholar" [ref=f52e2508] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Artificial+neural+network+modeling+and+analysis+of+photovoltaic/thermal+system+based+on+the+experimental+study&author=Al-Waeli,+A.H.A.&author=Sopian,+K.&author=Yousif,+J.H.&author=Kazem,+H.A.&author=Boland,+J.&author=Chaichan,+M.T.&publication_year=2019&journal=Energy+Convers.+Manag.&volume=186&pages=368%E2%80%93379&doi=10.1016/j.enconman.2019.02.066
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2509] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.enconman.2019.02.066
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2510] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/a488aedc41f9c0e3478febeef3a173b0
+                          - text: "]"
+                        - listitem [ref=f52e2511]:
+                          - text: "Elsheikh, A.H.; Sharshir, S.W.; Abd Elaziz, M.; Kabeel, A.E.; Wang, G.; Zhang, H. Modeling of solar energy systems using artificial neural network: A comprehensive review. Sol. Energy 2019, 180, 622–639. ["
+                          - link "Google Scholar" [ref=f52e2512] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Modeling+of+solar+energy+systems+using+artificial+neural+network:+A+comprehensive+review&author=Elsheikh,+A.H.&author=Sharshir,+S.W.&author=Abd+Elaziz,+M.&author=Kabeel,+A.E.&author=Wang,+G.&author=Zhang,+H.&publication_year=2019&journal=Sol.+Energy&volume=180&pages=622%E2%80%93639&doi=10.1016/j.solener.2019.01.037
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2513] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.solener.2019.01.037
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2514] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/27a7892d44d5cff20eeb1debef896e0e
+                          - text: "]"
+                        - listitem [ref=f52e2515]:
+                          - text: "The Mathworks Inc. Electric Vehicle Thermal Management. 2021. Available online:"
+                          - link "https://www.mathworks.com/help/hydro/ug/sscfluids_ev_thermal_management.html" [ref=f52e2516] [cursor=pointer]:
+                            - /url: https://www.mathworks.com/help/hydro/ug/sscfluids_ev_thermal_management.html
+                          - text: (accessed on 9 April 2020).
+                        - listitem [ref=f52e2517]:
+                          - text: Xia, G.D.; Cao, L.; Bi, G.L. A review on battery thermal management in electric vehicle application. J. Power Sources 2017, 367, 90–105. [
+                          - link "Google Scholar" [ref=f52e2518] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=A+review+on+battery+thermal+management+in+electric+vehicle+application&author=Xia,+G.D.&author=Cao,+L.&author=Bi,+G.L.&publication_year=2017&journal=J.+Power+Sources&volume=367&pages=90%E2%80%93105&doi=10.1016/j.jpowsour.2017.09.046
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2519] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.jpowsour.2017.09.046
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2520] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/2e97d014a7ccfca9685ca429cddb6fe5
+                          - text: "]"
+                        - listitem [ref=f52e2521]:
+                          - text: Park, S.; Ahn, C. Optimal Cooling Controller Design for Battery Thermal Management System of Electric Vehicle. IEEE Trans. Transp. Electrif. 2025, 11, 1529–1540. [
+                          - link "Google Scholar" [ref=f52e2522] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Optimal+Cooling+Controller+Design+for+Battery+Thermal+Management+System+of+Electric+Vehicle&author=Park,+S.&author=Ahn,+C.&publication_year=2025&journal=IEEE+Trans.+Transp.+Electrif.&volume=11&pages=1529%E2%80%931540&doi=10.1109/TTE.2024.3403310
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2523] [cursor=pointer]:
+                            - /url: https://doi.org/10.1109/TTE.2024.3403310
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2524] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/7ed8a2005afdc0839d7ded95195fda1c
+                          - text: "]"
+                        - listitem [ref=f52e2525]:
+                          - text: Amini, M.R.; Kolmanovsky, I.; Sun, J. Hierarchical MPC for Robust Eco-Cooling of Connected and Automated Vehicles and Its Application to Electric Vehicle Battery Thermal Management. IEEE Trans. Control Syst. Technol. 2021, 29, 316–328. [
+                          - link "Google Scholar" [ref=f52e2526] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Hierarchical+MPC+for+Robust+Eco-Cooling+of+Connected+and+Automated+Vehicles+and+Its+Application+to+Electric+Vehicle+Battery+Thermal+Management&author=Amini,+M.R.&author=Kolmanovsky,+I.&author=Sun,+J.&publication_year=2021&journal=IEEE+Trans.+Control+Syst.+Technol.&volume=29&pages=316%E2%80%93328&doi=10.1109/TCST.2020.2975464
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2527] [cursor=pointer]:
+                            - /url: https://doi.org/10.1109/TCST.2020.2975464
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2528] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/c37093881fc0f66f10005bac578739b5
+                          - text: "]"
+                        - listitem [ref=f52e2529]:
+                          - text: Xie, Y.; Wang, C.; Hu, X.; Lin, X.; Zhang, Y.; Li, W. An MPC-Based Control Strategy for Electric Vehicle Battery Cooling Considering Energy Saving and Battery Lifespan. IEEE Trans. Veh. Technol. 2020, 69, 14657–14673. [
+                          - link "Google Scholar" [ref=f52e2530] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=An+MPC-Based+Control+Strategy+for+Electric+Vehicle+Battery+Cooling+Considering+Energy+Saving+and+Battery+Lifespan&author=Xie,+Y.&author=Wang,+C.&author=Hu,+X.&author=Lin,+X.&author=Zhang,+Y.&author=Li,+W.&publication_year=2020&journal=IEEE+Trans.+Veh.+Technol.&volume=69&pages=14657%E2%80%9314673&doi=10.1109/TVT.2020.3032989
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2531] [cursor=pointer]:
+                            - /url: https://doi.org/10.1109/TVT.2020.3032989
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2532] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/b65bddeb8457f60fc9a0d63767112216
+                          - text: "]"
+                        - listitem [ref=f52e2533]:
+                          - text: Fan, Y.; Zuo, X.; Zhan, D.; Zhao, J.; Zhang, G.; Wang, H.; Wang, K.; Yang, S.; Tan, X. A novel control strategy for active battery thermal management systems based on dynamic programming and a genetic algorithm. Appl. Therm. Eng. 2023, 233, 121113. [
+                          - link "Google Scholar" [ref=f52e2534] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=A+novel+control+strategy+for+active+battery+thermal+management+systems+based+on+dynamic+programming+and+a+genetic+algorithm&author=Fan,+Y.&author=Zuo,+X.&author=Zhan,+D.&author=Zhao,+J.&author=Zhang,+G.&author=Wang,+H.&author=Wang,+K.&author=Yang,+S.&author=Tan,+X.&publication_year=2023&journal=Appl.+Therm.+Eng.&volume=233&pages=121113&doi=10.1016/j.applthermaleng.2023.121113
+                          - text: "] ["
+                          - link "CrossRef" [ref=f52e2535] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.applthermaleng.2023.121113
+                          - text: "] ["
+                          - link "Scilit" [ref=f52e2536] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/2a77b07959d600041b45b3abdb2ed837
+                          - text: "]"
+                    - table [ref=f52e2538]:
+                      - rowgroup [ref=f52e2539]:
+                        - row [ref=f52e2540]:
+                          - cell
+                          - 'cell "Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content." [ref=f52e2541]'
+                    - generic [ref=f52e2543]:
+                      - text: © 2025 by the authors. Published by MDPI on behalf of the World Electric Vehicle Association. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (
+                      - link "https://creativecommons.org/licenses/by/4.0/" [ref=f52e2544] [cursor=pointer]:
+                        - /url: https://creativecommons.org/licenses/by/4.0/
+                      - text: ).
+                  - generic [ref=f52e2546]:
+                    - heading "Article Metrics" [level=2] [ref=f52e2547]
+                    - generic [ref=f52e2548]:
+                      - generic [ref=f52e2549]: Citations
+                      - list [ref=f52e2794]:
+                        - listitem [ref=f52e2795]:
+                          - link "Google Scholar" [ref=f52e2798] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Energy-Efficient+Battery+Thermal+Management+in+Electric+Vehicles+Using+Artificial-Neural-Network-Based+Model+Predictive+Control&volume=16&doi=10.3390%2Fwevj16050279&journal=World+Electric+Vehicle+Journal&publication_year=2025&author=Kiheon+Nam&author=Changsun+Ahn
+                      - generic [ref=f52e2801]:
+                        - generic [ref=f52e2802]:
+                          - paragraph [ref=f52e2803]: "18"
+                          - link "Scopus" [ref=f52e2806] [cursor=pointer]:
+                            - /url: https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105006592706&origin=inward
+                        - generic [ref=f52e2809]:
+                          - paragraph [ref=f52e2810]: "13"
+                          - link "Web of Science" [ref=f52e2813] [cursor=pointer]:
+                            - /url: https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=PARTNER_APP&SrcAuth=LinksAMR&KeyUT=WOS:001495476400001&DestLinkType=FullRecord&DestApp=ALL_WOS&UsrCustomerID=7e717b028bc90856e7c55c7029afc773
+                        - generic [ref=f52e2816]:
+                          - paragraph [ref=f52e2817]: "25"
+                          - button "Crossref" [ref=f52e2818] [cursor=pointer]
+                    - generic [ref=f52e2555]:
+                      - heading "Article Access Statistics" [level=3] [ref=f52e2556]
+                      - link "Journal Statistics" [ref=f52e2559] [cursor=pointer]:
+                        - /url: /journal/wevj/stats
+                    - status [ref=f52e2560]:
+                      - generic [ref=f52e2561]: Multiple requests from the same IP address are counted as one view.
+              - generic [ref=f52e2566]:
+                - 'link "Planning and Optimizing Charging Infrastructure and Scheduling in Smart Grids with PyPSA-LOPF: A Case Study at Cadi Ayyad University Previous" [ref=f52e2567] [cursor=pointer]':
+                  - /url: /2032-6653/16/5/278
+                  - generic [ref=f52e2568]: "Planning and Optimizing Charging Infrastructure and Scheduling in Smart Grids with PyPSA-LOPF: A Case Study at Cadi Ayyad University"
+                  - generic [ref=f52e2569]: Previous
+                - link "A Secure Data Collection Method Based on Deep Reinforcement Learning and Lightweight Authentication Next" [ref=f52e2571] [cursor=pointer]:
+                  - /url: /2032-6653/16/5/281
+                  - generic [ref=f52e2572]: A Secure Data Collection Method Based on Deep Reinforcement Learning and Lightweight Authentication
+                  - generic [ref=f52e2573]: Next
+            - generic [ref=f52e2825]:
+              - generic [ref=f52e2826]:
+                - generic [ref=f52e2827]:
+                  - link [ref=f52e2828] [cursor=pointer]:
+                    - /url: https://x.com/MDPIOpenAccess
+                    - img "X" [ref=f52e2829]
+                  - link [ref=f52e2830] [cursor=pointer]:
+                    - /url: https://www.facebook.com/MDPIOpenAccessPublishing
+                    - img "Facebook" [ref=f52e2831]
+                  - link [ref=f52e2832] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/mdpi
+                    - img "LinkedIn" [ref=f52e2833]
+                - generic [ref=f52e2834]: World Electr. Veh. J. - ISSN 2032-6653
+              - generic [ref=f52e2836]:
+                - link "Imprint" [ref=f52e2839] [cursor=pointer]:
+                  - /url: /journal/wevj/imprint
+                - button "RSS Download RSS feed" [ref=f52e2841] [cursor=pointer]:
+                  - generic [ref=f52e2842]:
+                    - text: RSS
+                    - generic [ref=f52e2843]: Download RSS feed
+                - link "Download Flyer" [ref=f52e2846] [cursor=pointer]:
+                  - /url: https://mdpi-res.com/journals/354/flyer.pdf
+      - contentinfo [ref=f52e2578]:
+        - generic [ref=f52e2579]:
+          - generic [ref=f52e2580]:
+            - generic [ref=f52e2581]:
+              - heading [level=3] [ref=f52e2583]:
+                - paragraph [ref=f52e2584]: Discover
+              - list [ref=f52e2585]:
+                - listitem [ref=f52e2586]:
+                  - link "Articles" [ref=f52e2587] [cursor=pointer]:
+                    - /url: /search
+                - listitem [ref=f52e2588]:
+                  - link "Journals" [ref=f52e2589] [cursor=pointer]:
+                    - /url: /about/journals
+                - listitem [ref=f52e2590]:
+                  - link "Research Awards" [ref=f52e2591] [cursor=pointer]:
+                    - /url: /awards
+                - listitem [ref=f52e2592]:
+                  - link "Open Access Policy" [ref=f52e2593] [cursor=pointer]:
+                    - /url: /openaccess
+            - generic [ref=f52e2594]:
+              - heading [level=3] [ref=f52e2596]:
+                - paragraph [ref=f52e2597]: Services
+              - list [ref=f52e2598]:
+                - listitem [ref=f52e2599]:
+                  - link "Author Services" [ref=f52e2600] [cursor=pointer]:
+                    - /url: /authors/services
+                - listitem [ref=f52e2601]:
+                  - link "Conferences" [ref=f52e2602] [cursor=pointer]:
+                    - /url: /partnerships/conferences
+                - listitem [ref=f52e2603]:
+                  - link "Societies" [ref=f52e2604] [cursor=pointer]:
+                    - /url: /societies
+                - listitem [ref=f52e2605]:
+                  - link "Products & Solutions" [ref=f52e2606] [cursor=pointer]:
+                    - /url: /about/products-solutions
+                - listitem [ref=f52e2607]:
+                  - link "Books" [ref=f52e2608] [cursor=pointer]:
+                    - /url: https://www.mdpi.com/books/
+            - generic [ref=f52e2609]:
+              - heading [level=3] [ref=f52e2611]:
+                - paragraph [ref=f52e2612]: Guidelines
+              - list [ref=f52e2613]:
+                - listitem [ref=f52e2614]:
+                  - link "For Authors" [ref=f52e2615] [cursor=pointer]:
+                    - /url: /authors
+                - listitem [ref=f52e2616]:
+                  - link "For Reviewers" [ref=f52e2617] [cursor=pointer]:
+                    - /url: /reviewers
+                - listitem [ref=f52e2618]:
+                  - link "For Editors" [ref=f52e2619] [cursor=pointer]:
+                    - /url: /editors
+                - listitem [ref=f52e2620]:
+                  - link "For Librarians" [ref=f52e2621] [cursor=pointer]:
+                    - /url: /librarians
+            - generic [ref=f52e2622]:
+              - heading [level=3] [ref=f52e2624]:
+                - paragraph [ref=f52e2625]: Company
+              - list [ref=f52e2626]:
+                - listitem [ref=f52e2627]:
+                  - link "About Us" [ref=f52e2628] [cursor=pointer]:
+                    - /url: /about
+                - listitem [ref=f52e2629]:
+                  - link "Careers" [ref=f52e2630] [cursor=pointer]:
+                    - /url: https://careers.mdpi.com/
+                - listitem [ref=f52e2631]:
+                  - link "Press Office" [ref=f52e2632] [cursor=pointer]:
+                    - /url: /about/press
+                - listitem [ref=f52e2633]:
+                  - link "Blog" [ref=f52e2634] [cursor=pointer]:
+                    - /url: https://blog.mdpi.com/
+            - generic [ref=f52e2635]:
+              - heading [level=3] [ref=f52e2637]:
+                - paragraph [ref=f52e2638]: Support
+              - list [ref=f52e2639]:
+                - listitem [ref=f52e2640]:
+                  - link "Pay an Invoice" [ref=f52e2641] [cursor=pointer]:
+                    - /url: /about/payment
+                - listitem [ref=f52e2642]:
+                  - link "Processing Charges" [ref=f52e2643] [cursor=pointer]:
+                    - /url: /apc
+                - listitem [ref=f52e2644]:
+                  - link "Discount Policy" [ref=f52e2645] [cursor=pointer]:
+                    - /url: /authors#Discounts_on_APCs
+                - listitem [ref=f52e2646]:
+                  - link "Contact Us" [ref=f52e2647] [cursor=pointer]:
+                    - /url: /support
+          - generic [ref=f52e2648]:
+            - link [ref=f52e2649] [cursor=pointer]:
+              - /url: /
+              - img "MDPI" [ref=f52e2650]
+            - generic [ref=f52e2651]:
+              - link [ref=f52e2652] [cursor=pointer]:
+                - /url: https://www.facebook.com/MDPIOpenAccessPublishing
+                - img "Facebook" [ref=f52e2653]
+              - link [ref=f52e2654] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/mdpi/
+                - img "LinkedIn" [ref=f52e2655]
+              - link [ref=f52e2656] [cursor=pointer]:
+                - /url: https://twitter.com/MDPIOpenAccess
+                - img "Twitter" [ref=f52e2657]
+              - link [ref=f52e2658] [cursor=pointer]:
+                - /url: https://www.youtube.com/@MDPIOA
+                - img "YouTube" [ref=f52e2659]
+          - generic [ref=f52e2660]:
+            - generic [ref=f52e2661]:
+              - text: © 2026
+              - link "MDPI" [ref=f52e2662] [cursor=pointer]:
+                - /url: /
+              - text: (Basel, Switzerland) unless otherwise stated.
+            - generic [ref=f52e2663]:
+              - link "Accessibility" [ref=f52e2664] [cursor=pointer]:
+                - /url: /accessibility
+              - link "Terms and Conditions" [ref=f52e2666] [cursor=pointer]:
+                - /url: /about/terms-and-conditions
+              - link "Terms of Use" [ref=f52e2668] [cursor=pointer]:
+                - /url: /about/termsofuse
+              - link "Legal Notice" [ref=f52e2670] [cursor=pointer]:
+                - /url: /about/legal-notice
+              - link "Privacy Policy" [ref=f52e2672] [cursor=pointer]:
+                - /url: /about/privacy
+              - button "Privacy Settings" [ref=f52e2674] [cursor=pointer]
+              - link "Disclaimer" [ref=f52e2676] [cursor=pointer]:
+                - /url: /disclaimer
+  - complementary [active]:
+    - dialog [ref=f52e2848]:
+      - generic [ref=f52e2850]:
+        - generic [ref=f52e2851]:
+          - heading [level=2]
+          - generic: We use cookies that are necessary to make our websites work. We may also use additional cookies to analyze, improve, and personalize our content and your digital experience. You can manage your cookie preferences using the "Privacy Settings" link. For more information, see our Privacy Policy.
+        - navigation "Header including language selection and external links" [ref=f52e2852]:
+          - link "Open Privacy Policy":
+            - /url: https://www.mdpi.com/about/privacy
+          - link "Open Imprint":
+            - /url: https://www.mdpi.com/about/terms-and-conditions
+      - generic [ref=f52e2853]:
+        - generic [ref=f52e2855]:
+          - button "More Information" [ref=f52e2856] [cursor=pointer]
+          - button "Deny" [ref=f52e2857] [cursor=pointer]
+          - button "Accept All" [ref=f52e2858] [cursor=pointer]
+        - link "Powered by Usercentrics Consent Management" [ref=f52e2860] [cursor=pointer]:
+          - /url: https://usercentrics.com/consent-management-platform-powered-by-usercentrics/?utm_source=banner_uc&utm_medium=referral&utm_content=v3
+  - button "Feedback" [ref=f52e2861] [cursor=pointer]

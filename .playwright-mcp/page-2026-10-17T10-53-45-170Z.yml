@@ -1,0 +1,68 @@
+- generic [ref=f13e3]:
+  - banner [ref=f13e4]:
+    - link "ScienceDirect home page" [ref=f13e6] [cursor=pointer]:
+      - /url: /
+      - img "Elsevier logo" [ref=f13e7]
+  - main [ref=f13e15]:
+    - generic [ref=f13e18]:
+      - generic [ref=f13e19]:
+        - heading "Are you a robot?" [level=1] [ref=f13e20]
+        - generic [ref=f13e21]:
+          - generic [ref=f13e22]: Please confirm you are a human by completing the captcha challenge below.
+          - main [ref=f13e24]:
+            - generic [ref=f13e25]:
+              - heading [level=2]
+              - paragraph
+          - list [ref=f13e30]:
+            - listitem [ref=f13e31]:
+              - strong [ref=f13e32]: "Reference number:"
+              - text: a4bec2cd486a7356
+            - listitem [ref=f13e33]:
+              - strong [ref=f13e34]: "IP Address:"
+              - text: 103.176.2.69
+            - listitem [ref=f13e35]:
+              - strong [ref=f13e36]: "User Agent:"
+              - text: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+            - listitem [ref=f13e37]:
+              - strong [ref=f13e38]: "Timestamp:"
+              - text: 2026-10-17 10:53:41 UTC
+      - img "problem providing content" [ref=f13e40]
+  - contentinfo [ref=f13e71]:
+    - link "Elsevier home page (opens in a new tab)" [ref=f13e73] [cursor=pointer]:
+      - /url: https://www.elsevier.com/
+      - img "Elsevier logo with wordmark" [ref=f13e74]
+    - generic [ref=f13e75]:
+      - list [ref=f13e77]:
+        - listitem [ref=f13e78]:
+          - link [ref=f13e79] [cursor=pointer]:
+            - /url: https://www.elsevier.com/solutions/sciencedirect
+            - generic [ref=f13e80]:
+              - text: About ScienceDirect
+              - img "Opens in new window" [ref=f13e81]
+        - listitem [ref=f13e83]:
+          - link "Remote access" [ref=f13e84] [cursor=pointer]:
+            - /url: https://www.sciencedirect.com/user/institution/login?targetURL=%2F
+        - listitem [ref=f13e86]:
+          - link [ref=f13e87] [cursor=pointer]:
+            - /url: https://service.elsevier.com/app/contact/supporthub/sciencedirect/
+            - generic [ref=f13e88]:
+              - text: Contact and support
+              - img "Opens in new window" [ref=f13e89]
+        - listitem [ref=f13e91]:
+          - link [ref=f13e92] [cursor=pointer]:
+            - /url: https://www.elsevier.com/legal/elsevier-website-terms-and-conditions
+            - generic [ref=f13e93]:
+              - text: Terms and conditions
+              - img "Opens in new window" [ref=f13e94]
+        - listitem [ref=f13e96]:
+          - link [ref=f13e97] [cursor=pointer]:
+            - /url: https://www.elsevier.com/legal/privacy-policy
+            - generic [ref=f13e98]:
+              - text: Privacy policy
+              - img "Opens in new window" [ref=f13e99]
+        - listitem [ref=f13e101]:
+          - button "Cookie settings" [ref=f13e102] [cursor=pointer]
+      - paragraph [ref=f13e103]: "All content on this site: Copyright © 2026 Elsevier B.V., its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply."
+    - link "RELX home page (opens in a new tab)" [ref=f13e105] [cursor=pointer]:
+      - /url: https://www.relx.com/
+      - img "RELX group home page" [ref=f13e106]

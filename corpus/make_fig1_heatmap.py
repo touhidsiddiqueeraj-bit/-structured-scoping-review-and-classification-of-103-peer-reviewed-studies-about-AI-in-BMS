@@ -41,7 +41,7 @@ FSHORT = {'State estimation (SOC)': 'State estimation (SOC)',
 
 M = np.zeros((len(FUNCS), len(COLS)))
 for r in corpus:
-    if r['method'] == 'Review / perspective':
+    if r['method'] == 'Review / perspective' or r.get('valid') == 'review synthesis':
         continue
     M[FUNCS.index(r['area']), COLS.index(GROUP[r['method']])] += 1
 

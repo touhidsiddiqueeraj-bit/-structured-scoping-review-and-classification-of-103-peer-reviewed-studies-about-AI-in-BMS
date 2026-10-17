@@ -28,10 +28,9 @@ B = [
     (['Records identified through CrossRef API queries', 'n = 3,000'], '#e3ebf5'),
     (['Records screened after duplicate removal', 'n = 1,550'], None),
     (['Relevance screening (battery AND ML terms in title)', 'n = 883'], None),
-    (['Venue and document-type screening', '(journal articles only; conference', 'abstracts, preprints excluded) n = 799'], None),
-    (['Function-quota candidate selection, including 6 landmark', 'seed studies (1 already captured by the searches, 5 injected)', 'n = 107 candidates'], None),
-    (['Full-text assessment and corpus curation', '19 exclusions offset by 15 targeted additions from', 'the screened pool (net \u22124) \u2192 n = 103 studies included'], '#e3ebf5'),
-    (['Integrated bibliometric synthesis and', 'qualitative critical review'], '#f7f7f7'),
+    (['Venue and document-type screening \u2192 TIER 1: eligible corpus,', 'rule-based, no quotas (every record included)', 'n = 799'], None),
+    (['TIER 2: full-text classification of a curated subset', 'with landmark studies deliberately force-included', 'n = 103 classified'], None),
+    (['Two-tier synthesis: measured bibliometrics (Tier 1) and', 'in-depth validation audit (Tier 2)'], '#f7f7f7'),
 ]
 for (y, (lines, fc)) in zip(YS, B):
     box(XL, y, W, H, lines, fc=fc or '#f0f4f9')
@@ -43,8 +42,7 @@ excl = [
     (0.795, 'Duplicates removed\nn = 1,450'),
     (0.645, 'Off-topic records excluded\nn = 667'),
     (0.495, 'Non-journal venues excluded\nn = 84'),
-    (0.345, 'Not selected under function quotas\nn = 692'),
-    (0.195, 'Excluded during curation n = 19;\ntargeted additions from the\nscreened pool n = +15 (net \u22124)'),
+    (0.345, 'Not carried into full-text coding\n(screened pool retained verbatim;\n6 landmark studies force-included;\nsee screening_log.csv)'),
 ]
 for y, t in excl:
     ax.text(XR + xw / 2, y + 0.035, t, ha='center', va='center', fontsize=7.6, color='#7a3b3b')
