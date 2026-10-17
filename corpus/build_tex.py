@@ -259,12 +259,23 @@ for kind, *rest in BLOCKS:
                     'analysis over headline counts. The complete search, screening, verification, and '
                     'figure-generation scripts ship inside the same deposit and regenerate every figure '
                     'and count in Section III; a development-form mirror is kept on GitHub.')
-        body.append('\\section*{Acknowledgment}')
-        body.append('The authors would like to acknowledge the use of writing-support and language-enhancement tools, '
-                    'including OpenAI ChatGPT, Grammarly, and QuillBot, during the preparation of this manuscript. '
-                    'These tools were used to assist with grammar correction, readability improvement, language refinement, '
-                    'and sentence restructuring. All technical content, analysis, interpretations, and research contributions '
-                    'are from the authors themselves. This work received no specific funding.')
+        body.append('\\section*{Acknowledgment and Declaration on AI Tools}')
+        body.append('This work received no specific funding, and the authors declare no competing interests. '
+                    'Author contributions: H.~T.~Siddiquee conceived the study, executed the search, screening, and '
+                    'verification pipeline, performed the full-text classification, coded the released labels, and '
+                    'drafted the manuscript; S.~S.~I.~Ariya and J.~I.~Chowdhury performed the blind 30-paper '
+                    're-coding of the reliability study (coders B and C, Section II-C) before any verification work, '
+                    'and contributed to corpus curation, verification of classifications and counts, and manuscript '
+                    'revision. During the preparation of this manuscript the authors used the following tools, each '
+                    'for a stated purpose: an AI language model (GLM, Z.ai) assisted in drafting and adapting the '
+                    'literature-pooling, analysis, and figure-generation scripts; OpenAI ChatGPT, Grammarly, and '
+                    'QuillBot were used for language editing (grammar, readability, and sentence restructuring). '
+                    'No AI tool decided study inclusion, and no AI tool assigned or altered any classification '
+                    'label: all screening decisions and all released labels were made by the authors (Section II-C '
+                    'documents who coded what, and the reliability files release the coding evidence). All included '
+                    'references were verified against the Crossref registry by direct DOI resolution, all counts and '
+                    'figures were regenerated programmatically from the released dataset, and the authors reviewed '
+                    'and take full responsibility for the content of the published article.')
 
 # ---------- bibliography ----------
 bib = ['\\begin{thebibliography}{%d}' % len(order)]

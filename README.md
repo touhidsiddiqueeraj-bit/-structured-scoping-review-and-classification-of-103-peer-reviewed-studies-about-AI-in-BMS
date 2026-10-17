@@ -15,8 +15,8 @@ Two manuscript forms are maintained from the same source blocks and carry the sa
 
 | Form | File | Notes |
 |---|---|---|
-| Condensed TTE submission | `ieee_submission/tex/mlbms.tex` → `mlbms.pdf` | 4 figures, 8 tables, 105 references; built by `corpus/build_tex.py --short` |
-| Extended manuscript | `ML-BMS-Review.docx` / `.pdf` | 34 pp., 10 sections, 8 figures, 11 tables, 118 Crossref-verified references; built by `build_docx.py` |
+| Condensed TTE submission | `ieee_submission/tex/mlbms.tex` → `mlbms.pdf` | 18 pp., 4 figures, 8 tables, 105 references; built by `corpus/build_tex.py --short` |
+| Extended manuscript | `ML-BMS-Review.docx` / `.pdf` | 40 pp., 10 sections, 8 figures, 13 tables, 119 Crossref-verified references; built by `build_docx.py` |
 
 Every DOI in the **103-study classified subset** and the **conference descriptive set** was resolved directly against the [Crossref registry](https://api.crossref.org); the **799-record eligible corpus** is assembled entirely from Crossref-registered records with the mapping listed per record in `screening_log.csv`. Every number, figure, and table in the manuscripts can be regenerated from the released datasets with the released code (all scripts are repository-relative and run from the repo root).
 
@@ -27,7 +27,9 @@ Every DOI in the **103-study classified subset** and the **conference descriptiv
 | Artifact | Description |
 |---|---|
 | [`ieee_submission/`](ieee_submission) | IEEE TTE submission package: IEEEtran source, compiled PDF, cover letter, submission figures |
-| [`ML-BMS-Review.pdf`](ML-BMS-Review.pdf) / [`.docx`](ML-BMS-Review.docx) | The extended manuscript (34 pp., 118 Crossref-verified references) |
+| [`ML-BMS-Review.pdf`](ML-BMS-Review.pdf) / [`.docx`](ML-BMS-Review.docx) | The extended manuscript (40 pp., 13 tables, 119 Crossref-verified references) |
+| [`response_to_reviewers.pdf`](response_to_reviewers.pdf) / [`.docx`](response_to_reviewers.docx) | Point-by-point response dossier for the TTE review round (TTE-Reg-2026-09-3162) |
+| [`cover_letter_TTE_v3.md`](cover_letter_TTE_v3.md) | Cover letter for the resubmission (supersedes v2) |
 | [`ML-BMS-Corpus.xlsx`](ML-BMS-Corpus.xlsx) | Human-readable workbook: **Papers** (103, clickable DOI links), **Summary** (corpus counts), **Conference sensitivity** (14, clickable DOI links) |
 | [`corpus/papers.csv`](corpus/papers.csv) | The 103-paper classified corpus (machine-readable; one row per study, 16 fields) |
 | [`corpus/eligible_corpus.json`](corpus/eligible_corpus.json) | The 799-record rule-based eligible corpus (Tier 1; measured bibliometrics source) |

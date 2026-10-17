@@ -86,7 +86,11 @@ BLOCKS = [
  "statistically significant under either definition, confounding is unadjusted (physics-informed work skews toward early-stage and simulation-heavy "
  "studies), and n = 22 is small. A label-noise sensitivity analysis built from the observed blind coder-versus-label disagreement (Section II-C) "
  "moves the overall strong-protocol share across 35\u201352 of the 88 papers (40\u201359% of the primary papers) and leaves the method-family contrast non-significant in 95% of "
- "scenario draws, so the subset's qualitative conclusions survive plausible coding error. The honest reading remains: a physics "
+ "scenario draws, so the subset's qualitative conclusions survive plausible coding error. The noise model is explicit and released "
+ "(sensitivity_label_noise.py): in each of 4,000 seeded Monte Carlo draws, a strong/non-strong label-flip rate is drawn from a Normal "
+ "distribution centered on the observed coder-versus-label bucket error rate (0.40 and 0.30 for the two coders; mean 0.35) with standard "
+ "deviation 0.02, truncated at zero, and the drawn rate then flips bucket labels at random across the 88 primary papers before both the "
+ "overall share and the Fisher test are recomputed. The honest reading remains: a physics "
  "prior does not *demonstrably* buy validation rigor \u2014 and settling the question requires the standardized protocols proposed in Section IX, "
  "not more subset cross-tabs."),
 

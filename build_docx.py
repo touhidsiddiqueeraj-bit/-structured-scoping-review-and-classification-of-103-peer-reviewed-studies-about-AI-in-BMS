@@ -31,6 +31,8 @@ TABLES = {'table1': paper_part3.TABLE1, 'TABLE2': paper_part3.TABLE2,
           'TABLE_FLEET': paper_part3.TABLE_FLEET,
           'TABLE_CONF': paper_part3.TABLE_CONF,
           'TABLE_LLM': paper_part3.TABLE_LLM,
+          'TABLE_STD': paper_part3.TABLE_STD,
+          'TABLE_POSITION': paper_part3.TABLE_POSITION,
           'TABLE_CHECKLIST': paper_part3.TABLE_CHECKLIST}
 TITLE = paper_part1.TITLE
 AUTHORS = paper_part1.AUTHOR_LINES

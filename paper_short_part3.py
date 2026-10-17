@@ -162,13 +162,24 @@ BLOCKS = [
 
 ('h2', '9.2 Position relative to prior reviews'),
 ('p',
- "The closest in scope among recent reviews is a 2026 performance-centric review of ML for EV powertrains with BMS and charging scope "
- "[[10.1007/s44163-025-00721-y]]; adjacent cross-functional surveys exist for degradation and estimation methods. This review is distinguished "
- "by what those studies do not attempt, and Table VII states the comparison: a pooled two-tier corpus with record-level screening provenance, "
- "a within-corpus measurement of validation protocol strength across functions, a standards-grounded gap analysis, and a released, re-run-able "
- "analysis pipeline. Where prior reviews ask \u201cwhich method works best for function X,\u201d this review asks \u201cwhich claims can actually be "
+ "The closest in scope among recent reviews is the performance-centric review of Prasanna et al. [[10.1007/s44163-025-00721-y]], which "
+ "systematically examines 240 peer-reviewed publications spanning the whole EV powertrain \u2014 battery management alongside charging systems, "
+ "motor control, and energy-consumption prediction \u2014 and aggregates reported performance metrics (RMSE, R\u00b2) into a quantitative "
+ "benchmarking of algorithm families, concluding that hybrid deep-learning architectures (LSTM-DDQN, CNN-BiGRU, transformer-based frameworks) "
+ "consistently achieve superior accuracy (R\u00b2 > 0.95, RMSE < 0.05). This review differs from that work in scope, unit of analysis, and "
+ "question asked. In scope, it is narrower and deeper \u2014 battery-management functions only \u2014 which permits function-level cuts such as the "
+ "standards mapping of Section IX-A and the per-function validation audit. In unit of analysis, it is protocol-centric rather than "
+ "performance-centric: instead of pooling reported accuracy figures, it codes how each study\u2019s validation protocol isolates (or fails to "
+ "isolate) its generalization claim. The two approaches are complementary, and the complementarity is pointed: an aggregation of self-reported "
+ "RMSE and R\u00b2 inherits, unmeasured, precisely the validation weaknesses this review quantifies \u2014 17 of 88 primary papers validate on "
+ "information-leaking splits, and headline accuracies concentrate on three shared benchmarks \u2014 so where Prasanna et al. answer *which "
+ "algorithm family performs best as reported*, this review asks *how much the reports can be trusted, and what a study must disclose for its "
+ "claims to be checkable*. Adjacent cross-functional surveys exist for degradation and estimation methods; Table VII states the comparison "
+ "axis by axis across all of them: a two-tier corpus with record-level screening provenance, a within-corpus measurement of validation "
+ "protocol strength across functions, a standards-grounded gap analysis, and a released, re-run-able analysis pipeline. Where prior reviews "
+ "ask \u201cwhich method works best for function X,\u201d this review asks \u201cwhich claims can actually be "
  "checked \u2014 and what would it cost the reader to trust them,\u201d which is the question a scoping review with a curated classified subset is "
- "positioned to answer."),
+ "positioned to answer, and the question that performance-centric aggregation cannot ask of itself."),
 
 ('tbl', 'TABLE_POSITION'),
 

@@ -54,14 +54,14 @@ BLOCKS = [
 
 ('h1', '9. Research Gaps and Future Directions'),
 ('p',
- "Cross-referencing the bibliometric analysis of Section 3 with the function-level reviews of Sections 4\u20138 yields six structural gaps, discussed in Sections 9.1\u20139.6, summarized in Table 10, previewed against the field's milestones in Fig. 8, and then operationalized into a concrete reporting checklist in Section 9.7."),
+ "Cross-referencing the bibliometric analysis of Section 3 with the function-level reviews of Sections 4\u20138 yields six structural gaps, discussed in Sections 9.1\u20139.6, summarized in Table 11, previewed against the field's milestones in Fig. 8, and then operationalized into a concrete reporting checklist in Section 9.9."),
 
 ('h2', '9.1 Validation and benchmarking standards'),
 ('p',
  "The corpus\u2019s validation data are unambiguous: 17 of the 88 primary papers use within-cell splits or unsupervised k-folds, and only 8 of the 88 demonstrate their systems online or on real fleets. Until cross-cell, cross-temperature, and cross-protocol holdout protocols become reporting norms, published accuracy figures will keep overstating deployable performance. The most valuable near-term contribution the community can make is standardized transfer protocols \u2014 train-on-chemistry-A/test-on-chemistry-B, train-on-lab/test-on-fleet \u2014 reported alongside headline accuracy, as already practiced by the transfer-learning and general-framework studies [[10.1016/j.apenergy.2024.125086]][[10.1109/tte.2025.3533540]]."),
 
 ('p',
- "A second standardization target is reporting itself. In our full-text reading of the corpus we did not routinely encounter disclosed split definitions, random seeds, or compute budgets; only the validation, data-source, and artifact items were systematically score-counted (Section 9.7), so this is a qualitative observation rather than a measured rate. Either way, such omissions make independent replication laborious and meta-analysis impossible (Section 5.6). A community-endorsed reporting checklist \u2014 dataset identity and version, split protocol, uncertainty quantification, and hardware context \u2014 would cost little and would let the synthesis literature do its job."),
+ "A second standardization target is reporting itself. In our full-text reading of the corpus we did not routinely encounter disclosed split definitions, random seeds, or compute budgets; only the validation, data-source, and artifact items were systematically score-counted (Section 9.9), so this is a qualitative observation rather than a measured rate. Either way, such omissions make independent replication laborious and meta-analysis impossible (Section 5.6). A community-endorsed reporting checklist \u2014 dataset identity and version, split protocol, uncertainty quantification, and hardware context \u2014 would cost little and would let the synthesis literature do its job."),
 
 ('h2', '9.2 Data sharing and benchmark concentration'),
 ('p',
@@ -74,9 +74,13 @@ BLOCKS = [
 ('p',
  "Only a handful of corpus works treat onboard compute, memory, or latency as first-class design constraints, notably the board-level RUL implementation [[10.1016/j.est.2022.104901]] and real-time feature-extraction studies [[10.1016/j.jpowsour.2025.236784]]. The gap is widening as models grow: transformer and PINN architectures trained on workstations must eventually run beside BMS microcontrollers. Quantization-aware training, neural architecture search under resource constraints, and hybrid designs that place heavy learners in the cloud and lightweight correction layers onboard are the natural research program here [[10.1016/j.ensm.2026.104983]]."),
 
-('h2', '9.4 Trust: uncertainty, interpretability, and certification'),
+('h2', '9.4 Trust, uncertainty, and safety standards'),
 ('p',
  "Estimates that guide protection and charging decisions need calibrated uncertainty and auditable reasoning. The corpus\u2019s uncertainty-aware [[10.1039/d2dd00067a]], explainability-driven [[10.1016/j.ress.2022.109046]], and Gaussian-process lineages [[10.1016/j.energy.2019.116467]] point the way, but certification-grade ML \u2014 models whose failure modes are enumerated and bounded \u2014 remains beyond the published state of the art. Hybrid physics\u2013data architectures are the most credible certification path because part of their behavior is analytically specified; making that argument rigorous is an open task for the PINN community."),
+('p',
+ "The safety standards invoked in the introduction \u2014 UN GTR 20 (electric-vehicle safety; its Amendment 1 on thermal propagation, endorsed for WP.29 adoption in late 2026 at this review\u2019s retrieval date, offers two compliance paths: a physical test, or a risk-management approach inspired by ISO 26262 and ISO 6469-1), GB 38031 (GB 38031-2020, in force through mid-2026, and the strengthened GB 38031-2025, effective July 2026, which replaces the fire/explosion-warning criterion with no-fire/no-explosion thermal-diffusion requirements and adds bottom-impact and fast-charge-cycle tests), ISO 26262:2018 (functional safety of road-vehicle E/E systems), ISO/PAS 8800:2024 (safety and artificial intelligence \u2014 the road-vehicle extension of ISO 26262 and ISO 21448 to learned components), and ISO 21448 (SOTIF) \u2014 do not prescribe estimation algorithms, but they define what a deployed estimator or controller must be able to evidence, and Table 10 translates the subset\u2019s gaps into those terms. The mapping is this review\u2019s synthesis at requirement level rather than clause level, and it is stated so that it can be checked against the standards texts themselves: the point is not legal advice but that a validation protocol reported in a paper corresponds, or does not, to evidence a safety case can use. The inference rule behind every \u2018supports a standards argument\u2019 statement in this section is explicit: a paper\u2019s evidence can support such an argument only if it demonstrates performance on at least one held-out integration unit (a cross-cell holdout or stronger isolation protocol, Section 2.5) and reports the environment in which that evidence was obtained; by construction, within-cell and k-fold evidence cannot support the argument, because the safety case is about unseen cells and unseen duty. Three consequences stand out for automotive deployment. Within-cell and k-fold validation (17 primary papers) cannot support an ISO 26262 argument, because the safety case is about unseen cells and unseen duty and the protocol never tests an unseen unit; a standards argument must therefore be *argued* from the isolation evidence, not *asserted* from headline accuracy. Thermal-propagation early-warning latency is a timing requirement, so fault-detection papers evaluated on curated laboratory windows under-report both the false-alarm rate and the detection-delay distribution that the GB 38031-2025 / GTR-20 escape window needs. And charging or thermal control strategies validated only in simulation lack the hardware-in-the-loop evidence base an automotive release process expects. The reporting checklist of Section 9.9 is deliberately aligned with this mapping \u2014 reporting an isolation argument and a validation environment is the minimum on which any standards conversation can start."),
+
+('tbl', 'TABLE_STD'),
 
 ('h2', '9.5 Foundation-model integration'),
 ('p',
@@ -88,9 +92,19 @@ BLOCKS = [
 
 ('tbl', 'TABLE_GAPS'),
 
-('h2', '9.7 A reporting checklist for machine-learning BMS studies'),
+('h2', '9.7 Position relative to prior reviews'),
 ('p',
- "The most concrete artifact this review can offer is procedural. Modeled on the CONSORT and PRISMA checklists that transformed reporting in clinical and review literature, Table 11 proposes a twelve-item BMS-ML reporting checklist: the minimum metadata a study should disclose for its accuracy claims to be comparable, reproducible, and poolable in future syntheses. None of the items is onerous. Items 4, 5, and 11 operationalize the validation-protocol classes that the corpus analysis measured directly (Section 3.4); the remaining items respond to reporting omissions observed qualitatively across Sections 3\u20138 \u2014 undisclosed splits, uncalibrated uncertainty, unnamed datasets, unquantified compute \u2014 but only the validation, data-source, and artifact items are score-measured in this corpus, and the checklist has not been applied as an audit to all 103 studies. We suggest journals adopt it as a submission checklist and that authors attach it to their released datasets."),
+ "Section 1.3 situated this review against the function-specific and method-specific reviews that dominate the field; the positioning deserves its own statement because reviewers and readers routinely ask what a new review adds when several exist. The closest in scope among recent cross-functional reviews is the performance-centric review of Prasanna et al. [[10.1007/s44163-025-00721-y]] (240 studies across the EV powertrain, aggregating reported RMSE and R\u00b2); adjacent cross-functional surveys exist for degradation and estimation methods. This review is distinguished by what those studies do not attempt, and Table 12 states the comparison axis by axis: a two-tier corpus with record-level screening provenance (799 eligible records released in full, 103 classified in depth); a within-corpus measurement of validation-protocol strength across functions, with per-paper assignments released and method-family contrasts tested rather than asserted; a requirement-level mapping onto UN GTR 20, GB 38031, and ISO 26262; and a released, re-runnable analysis pipeline behind every count and figure. Where prior reviews ask *which method works best for function X*, this review asks *which claims can actually be checked \u2014 and what it would cost the reader to trust them* \u2014 which is the question a scoping review with a curated classified subset is positioned to answer, and the question that performance-centric aggregation cannot ask of itself."),
+
+('tbl', 'TABLE_POSITION'),
+
+('h2', '9.8 Outlook: what the next revision cycle of this literature should produce'),
+('p',
+ "Concretely, and tied to the gaps above, the highest-value near-term work falls in six directions. (a) *Duty-cycle-aware validation*: public cross-cell benchmarks that pair cycling data with recorded EV drive profiles, so that cross-chemistry and cross-domain generalization can be tested against transportation duty rather than laboratory schedules. (b) *Federated fleet evidence*: privacy-preserving SOH/SOC studies over live fleets (about 2% of the eligible corpus today), with the 179-cell pipeline [[10.1038/s42256-021-00312-3]] as the template. (c) *Benchmark diversification*: multi-institution cycling campaigns two orders of magnitude larger than MATR/NASA/CALCE and released with DOI-backed artifacts, addressing the two-pole fragmentation of Section 3.4. (d) *Pack- and vehicle-level ML*: estimation validated at the integration level where UN GTR 20 and GB 38031 requirements bite, instead of cell-level evidence transplanted upward. (e) *Functionally safe learning*: ML estimators whose uncertainty handling and assurance arguments are specified against ISO 26262 safety goals and ISO/PAS 8800, with ISO 21448/SOTIF reasoning for capability limitations, making certifiable charging and thermal control reachable. And (f) *honest foundation-model integration*: retrieval-grounded LLM agents with published latency and calibration budgets, capable of the coordination role while estimation authority stays with calibrated numeric models \u2014 extending, not contradicting, the corpus\u2019s LLM estimator [[10.1016/j.ensm.2026.104983]]. A guardrail on all six directions: the BMS-ML-RC checklist of Section 9.9 is designed to be attached to a paper at submission, so that the next revision cycle of this literature arrives auditable by construction."),
+
+('h2', '9.9 A reporting checklist for machine-learning BMS studies'),
+('p',
+ "The most concrete artifact this review can offer is procedural. Modeled on the CONSORT and PRISMA checklists that transformed reporting in clinical and review literature, Table 13 proposes a twelve-item BMS-ML reporting checklist: the minimum metadata a study should disclose for its accuracy claims to be comparable, reproducible, and poolable in future syntheses. None of the items is onerous. Items 4, 5, and 11 operationalize the validation-protocol classes that the corpus analysis measured directly (Section 3.4); the remaining items respond to reporting omissions observed qualitatively across Sections 3\u20138 \u2014 undisclosed splits, uncalibrated uncertainty, unnamed datasets, unquantified compute \u2014 but only the validation, data-source, and artifact items are score-measured in this corpus, and the checklist has not been applied as an audit to all 103 studies. We suggest journals adopt it as a submission checklist and that authors attach it to their released datasets."),
 
 ('tbl', 'TABLE_CHECKLIST'),
 
@@ -98,7 +112,7 @@ BLOCKS = [
 
 ('h1', '10. Conclusion'),
 ('p',
- "This review has examined the state of AI-powered battery management through a verified corpus of 103 peer-reviewed studies spanning 2019\u20132026, classified uniformly across management functions, method families, chemistries, data sources, and validation practices. Three conclusions stand out. First, within the corpus the method families stratify cleanly by period: classical feature-based learners gave way to deep sequence models, which are now themselves being displaced at the research frontier by physics-informed hybrids, optimization-augmented learning, transfer-learning regimes, and \u2014 at the very edge of the window \u2014 foundation-model components. Second, the center of gravity of application remains estimation (state, health, lifetime), where learning systems report laboratory-regime success — on metrics that this review argues cannot be pooled across papers (Section 5.6); control functions (charging, thermal, balancing) remain demonstrably transformable but under-evidenced for deployment. Third, and most critically, the volume of published accuracy claims is not matched by validation rigor: online or fleet-level demonstration appears in fewer than one primary study in ten, benchmark concentration and private-data fragmentation distort the apparent state of the art, and the field\u2019s favored remedy \u2014 physics-informed architecture \u2014 does not demonstrably substitute for validation rigor: physics-informed papers use strong protocols no more often than purely data-driven peers (36% versus 52% under the protocol-only definition, p = 0.32; 59% versus 74% under the broader definition, p = 0.19 \u2014 not statistically significant under either)."),
+ "This review has examined machine learning in battery management on a two-tier evidence base: a rule-based eligible corpus of 799 journal articles from which field-level shares are measured within a documented capped retrieval, and an in-depth classified subset of 103 studies through which method, data, and validation practice are examined with a blind 30-paper reliability check and label-noise sensitivity ranges. Three conclusions stand out. First, within the classified subset the method families stratify cleanly by period: classical feature-based learners gave way to deep sequence models, which are now themselves being displaced at the research frontier by physics-informed hybrids, optimization-augmented learning, transfer-learning regimes, and \u2014 at the very edge of the window \u2014 foundation-model components. Second, the center of gravity of application remains estimation (state, health, lifetime): measured as shares of the eligible corpus, the SOC\u2013SOH\u2013prognostics union covers about half of eligible records, where learning systems report laboratory-regime success \u2014 on metrics that this review argues cannot be pooled across papers (Section 5.6) \u2014 while control functions (charging, thermal, balancing) remain demonstrably transformable but under-evidenced for deployment, and vehicle- and pack-level practice stays thin relative to the level at which UN GTR 20, GB 38031, and ISO 26262 pose their requirements (Section 9.4). Third, and most critically, the proliferation of published accuracy claims has outpaced the validation evidence behind them: online or fleet-level demonstration appears in fewer than one primary study in ten, 17 of 88 primary papers use isolation-weakened splits, benchmark concentration and private-data fragmentation distort the apparent state of the art, and the field\u2019s favored remedy \u2014 physics-informed architecture \u2014 does not demonstrably substitute for validation rigor: physics-informed papers use strong protocols no more often than purely data-driven peers (36% versus 52% under the protocol-only definition, p = 0.32; 59% versus 74% under the broader definition, p = 0.19 \u2014 not statistically significant under either, and treated here as an untested hypothesis rather than a settled result)."),
 
 ('p',
  "The near-term agenda follows directly: standardized cross-domain validation protocols; diversified and shareable fleet data; edge-deployable architectures designed under onboard constraints; calibrated uncertainty and interpretability as certification prerequisites; and a principled division of labor between foundation models, calibrated estimators, and physics-based safety envelopes. If the last five years were about discovering what machine learning can estimate about a battery, the next five will be decided by what it can be trusted to do \u2014 onboard, at fleet scale, across chemistries, and over full cell lifetimes."),
@@ -166,8 +180,44 @@ TABLE_DATASETS = {
  ],
 }
 
+TABLE_STD = {
+ 'caption': 'Table 10 Mapping BMS functions to requirements in UN GTR 20 (Amendment 1 thermal-propagation provisions), GB 38031-2020/2025, ISO 26262:2018 with ISO/PAS 8800:2024, and ISO 21448 (SOTIF): what deployed ML components must be able to evidence. The mapping is this review\u2019s synthesis at requirement level (not clause-level legal citation); the right-hand column gives the corresponding classified-subset primary-paper counts from Section 3.4.',
+ 'header': ['BMS function', 'What the standard demands of a deployed function', 'Current subset status'],
+ 'widths': [1.0, 2.1, 1.9],
+ 'rows': [
+  ['SOC estimation',
+   'ISO 26262:2018 treats estimation error that can enable overcharge/overdischarge as an E/E-system safety hazard to be handled through the safety lifecycle; ISO/PAS 8800:2024 extends this to learned elements (assurance argument over data, model, and known insufficiencies); UN GTR 20 / GB 38031-2025 treat overcharge as an abuse-protection requirement',
+   '3 of 13 SOC primary papers use a strong isolation protocol; none validate on real-vehicle data; 12 rest on laboratory-scale data'],
+  ['SOH / RUL prognosis',
+   'Capacity and power fade margins underpin thermal-propagation early warning and end-of-service decisions; degradation assumptions must hold across chemistry, duty, and environment (ISO 26262 hazard analysis; ISO 21448 for performance limitations)',
+   '20 of 32 SOH/RUL primary papers use a strong protocol; 4 use real-vehicle data; accuracy claims rest mostly on three public benchmarks (23 primary papers in the subset)'],
+  ['Fault detection',
+   'Thermal-propagation early warning must provide the escape window: GB 38031-2025 requires the warning signal but no fire/explosion beyond the triggered cell (superseding the GB 38031-2020 5-min criterion); the GTR 20 amendment proposes a \u22655-min advance warning before cabin hazards, via test or risk-management compliance path; coverage must be argued and audited (ISO/PAS 8800 assurance argument)',
+   '2 of 7 fault/safety primary papers validate online on fleet data; detection-latency and false-alarm distributions are rarely reported'],
+  ['Charging control',
+   'Overcharge, over-temperature, and thermal-cycling limits are hard constraints under GB 38031-2020/2025; adaptive strategies must be bounded by protection envelopes and argued in the safety case',
+   '0 of 8 charging primary papers use a strong protocol; 4 demonstrate on laboratory hardware, none online'],
+  ['Thermal management',
+   'Temperature-gradient and propagation-containment requirements after fast-charge or abuse (GB 38031-2025 thermal diffusion, bottom-impact, fast-charge-cycle tests); the cooling function must be verified on hardware',
+   '0 of 7 thermal primary papers use a strong protocol; 2 exercise laboratory hardware; no learned control loop is validated on hardware'],
+ ],
+}
+
+TABLE_POSITION = {
+ 'caption': 'Table 12 Position relative to prior reviews. \u201cPrasanna 2026\u201d denotes the 2026 performance-centric ML review of EV powertrains with BMS and charging scope (240 studies, aggregated reported RMSE/R\u00b2). The function-specific and method-specific reviews named in Section 1.3 cover single functions or methods, so none of them addresses the axes below; the comparison is per axis, not per review. This review differs most in the validation measurement (within a curated subset), standards linkage, and released record-level artifacts.',
+ 'header': ['Axis', 'This review', 'Prior cross-functional / powertrain reviews'],
+ 'widths': [0.9, 1.95, 2.15],
+ 'rows': [
+  ['Corpus', 'Two-tier: 799 rule-based eligible records + 103 classified subset', 'Fixed study lists without record-level selection provenance'],
+  ['Validation analysis', 'Protocol classes defined, per-paper assignments released, method-family contrast tested with sensitivity ranges; within-corpus measurement, not a field census', 'Narrative remarks on data scarcity; protocol strength not quantified'],
+  ['Standards linkage', 'Function-to-requirement mapping vs. UN GTR 20, GB 38031-2020/2025, ISO 26262:2018, ISO/PAS 8800:2024', 'Not addressed or addressed qualitatively'],
+  ['Recommendations', 'Twelve-item reporting checklist (BMS-ML-RC) + six research directions', 'General future-work statements'],
+  ['Reproducibility', 'Released papers.csv, screening provenance, codebook, and statistics scripts', 'No released record-level dataset'],
+ ],
+}
+
 TABLE_GAPS = {
- 'caption': 'Table 10 Structural research gaps and corresponding future directions',
+ 'caption': 'Table 11 Structural research gaps and corresponding future directions',
  'header': ['Gap', 'Evidence in corpus', 'Future direction'],
  'widths': [1.15, 2.55, 2.7],
  'rows': [
@@ -264,7 +314,7 @@ TABLE_LLM = {
 }
 
 TABLE_CHECKLIST = {
- 'caption': 'Table 11 Proposed BMS-ML reporting checklist (BMS-ML-RC), modeled on CONSORT/PRISMA reporting standards.',
+ 'caption': 'Table 13 Proposed BMS-ML reporting checklist (BMS-ML-RC), modeled on CONSORT/PRISMA reporting standards.',
  'header': ['#', 'Reporting item', 'What must be reported'],
  'widths': [0.35, 1.85, 4.3],
  'rows': [
