@@ -36,6 +36,7 @@ DATA = [
     'corpus/conference_sensitivity.csv',
     'corpus/conference_verified.json',
     'corpus/external_verified.json',
+    'corpus/standards_refs.json',
     'corpus/final_audit.json',
     'corpus/stats.json',
     'corpus/seeds.json',

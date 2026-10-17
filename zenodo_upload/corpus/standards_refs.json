@@ -1,0 +1,63 @@
+[
+ {
+  "doi": "std:unece-gtr20",
+  "authors": "United Nations Economic Commission for Europe",
+  "title_cr": "Global technical regulation No. 20: Electric vehicle safety (EVS)",
+  "journal": "UN Global Registry, ECE/TRANS/180/Add.20",
+  "year": 2018,
+  "volume": "", "issue": "", "page": "", "article_number": "",
+  "xref": "Established in the Global Registry on 13 June 2018",
+  "url": "https://unece.org/transport/standards/transport/vehicle-regulations-wp29/global-technical-regulations-gtrs",
+  "external": true
+ },
+ {
+  "doi": "std:unece-gtr20-amd1",
+  "authors": "UNECE Informal Working Group on Electric Vehicle Safety",
+  "title_cr": "GTR No. 20 Electric vehicle safety: Proposal for Amendment 1 (thermal-propagation requirements with two compliance options)",
+  "journal": "UN ECE document EVS-30-C01/Rev.4",
+  "year": 2025,
+  "volume": "", "issue": "", "page": "", "article_number": "",
+  "xref": "Proposal of 11 September 2025; listed for the WP.29 session of 17-20 November 2026",
+  "url": "https://unece.org/transport/standards/transport/vehicle-regulations-wp29/global-technical-regulations-gtrs",
+  "external": true
+ },
+ {
+  "doi": "std:gb38031-2025",
+  "authors": "State Administration for Market Regulation; Standardization Administration of China",
+  "title_cr": "Safety requirements for power batteries for electric vehicles",
+  "journal": "GB 38031-2025",
+  "year": 2025,
+  "volume": "", "issue": "", "page": "", "article_number": "",
+  "xref": "Published 28 March 2025; effective 1 July 2026 for new type approvals and 1 July 2027 for existing models; supersedes GB 38031-2020",
+  "external": true
+ },
+ {
+  "doi": "std:iso26262",
+  "authors": "International Organization for Standardization",
+  "title_cr": "Road vehicles \u2014 Functional safety",
+  "journal": "ISO 26262:2018",
+  "year": 2018,
+  "volume": "", "issue": "", "page": "", "article_number": "",
+  "external": true
+ },
+ {
+  "doi": "std:iso21448",
+  "authors": "International Organization for Standardization",
+  "title_cr": "Road vehicles \u2014 Safety of the intended functionality",
+  "journal": "ISO 21448:2022",
+  "year": 2022,
+  "volume": "", "issue": "", "page": "", "article_number": "",
+  "external": true
+ },
+ {
+  "doi": "std:isopas8800",
+  "authors": "International Organization for Standardization",
+  "title_cr": "Road vehicles \u2014 Safety and artificial intelligence",
+  "journal": "ISO/PAS 8800:2024",
+  "year": 2024,
+  "volume": "", "issue": "", "page": "", "article_number": "",
+  "xref": "Published December 2024",
+  "url": "https://www.iso.org/standard/83303.html",
+  "external": true
+ }
+]

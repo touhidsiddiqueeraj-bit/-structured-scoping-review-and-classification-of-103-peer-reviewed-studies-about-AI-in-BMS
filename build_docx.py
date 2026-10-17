@@ -19,9 +19,11 @@ import paper_part1, paper_part2, paper_part3
 CORPUS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corpus/papers_final.json')))
 CONF = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corpus/conference_verified.json')))
 EXT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corpus/external_verified.json')))
+STD_REFS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corpus/standards_refs.json')))
 BY_DOI = {r['doi']: r for r in CORPUS}
 BY_DOI.update({r['doi']: r for r in CONF})
 BY_DOI.update({r['doi']: r for r in EXT})
+BY_DOI.update({r['doi']: r for r in STD_REFS})
 
 BLOCKS = (paper_part1.BLOCKS + paper_part2.BLOCKS + paper_part3.BLOCKS)
 TABLES = {'table1': paper_part3.TABLE1, 'TABLE2': paper_part3.TABLE2,
@@ -89,7 +91,14 @@ def ref_text(doi):
         s += f', vol. {vol}'
     if pg:
         s += f', {pg}'
-    s += f', {yr}, doi: {doi}.'
+    if doi.startswith('std:'):
+        s += f', {yr}.'
+        if r.get('xref'):
+            s += ' ' + str(r['xref']).rstrip('.') + '.'
+        if r.get('url'):
+            s += f' [Online]. Available: {r["url"]}'
+    else:
+        s += f', {yr}, doi: {doi}.'
     return s
 
 # ---------- DOCX setup ----------

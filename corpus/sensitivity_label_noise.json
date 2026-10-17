@@ -1,23 +1,35 @@
 {
- "model": "label-noise scenarios: flip rate drawn as Normal(mean=observed coder-vs-label bucket error rate, sd=0.02), clipped at 0; 4000 draws; seed 7",
+ "model": "label-noise scenario envelope: flip rate drawn as Normal(mean=observed coder-vs-label bucket error rate, sd=0.02), clipped at 0; 4000 draws per scenario; seed 7. Scenario \"symmetric\" flips strong/non-strong labels at random in either direction (null-attenuating); scenario \"strong_to_weak\" flips strong labels to weak only (the direction of the observed coder disagreements).",
  "n_primary": 88,
  "observed_coder_vs_label_error_rates": [
-  0.4,
-  0.3
+  0.3667,
+  0.2667
  ],
+ "observed_disagreement_direction": {
+  "strong_label_weak_coder": 16,
+  "weak_label_strong_coder": 3
+ },
  "point_estimate_strong": 42,
- "strong_count_range_95pct": [
-  35,
-  52
- ],
- "strong_share_range_95pct": [
-  0.398,
-  0.591
- ],
- "strong_share_median": 0.489,
- "fisher_p_range": [
-  0.0,
-  1.0
- ],
- "fisher_p_below_0.05_frac": 0.051
+ "symmetric": {
+  "strong_count_range_95pct": [
+   35,
+   52
+  ],
+  "strong_share_range_95pct": [
+   0.398,
+   0.591
+  ],
+  "fisher_p_below_0.05_frac": 0.056
+ },
+ "strong_to_weak_only": {
+  "strong_count_range_95pct": [
+   22,
+   35
+  ],
+  "strong_share_range_95pct": [
+   0.25,
+   0.398
+  ],
+  "fisher_p_below_0.05_frac": 0.037
+ }
 }

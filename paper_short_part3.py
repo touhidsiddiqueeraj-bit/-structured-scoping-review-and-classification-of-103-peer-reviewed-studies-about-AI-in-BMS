@@ -31,15 +31,15 @@ TABLES = {
  ],
 },
  'TABLE_POSITION': {
- 'caption': "Position relative to prior reviews. \u201cPrasanna 2026\u201d denotes a 2026 performance-centric ML review of EV powertrains with BMS and charging scope. The function-specific and method-specific reviews named in Sections I\u2013II cover single functions or methods, so none of them addresses the axes below; here the comparison is per axis, not per review. This review differs most in the validation measurement (within a curated subset), standards linkage, and released record-level artifacts.",
+ 'caption': "Position relative to prior reviews. \u201cPrasanna 2026\u201d denotes a 2026 performance-centric ML review of EV powertrains with BMS and charging scope. The function-specific and method-specific reviews named in Sections I\u2013II cover single functions or methods, so none of them, to our knowledge, addresses the axes below; here the comparison is per axis, not per review. This review differs most in the validation measurement (within a curated subset), standards linkage, and released record-level artifacts.",
  'header': ['Axis', 'This review', 'Prior cross-functional / powertrain reviews'],
  'widths': [0.9, 1.95, 2.15],
  'rows': [
-  ['Corpus', 'Two-tier: 799 rule-based eligible records + 103 classified subset', 'Fixed study lists without record-level selection provenance'],
-  ['Validation analysis', 'Protocol classes defined, per-paper assignments released, method-family contrast tested with sensitivity ranges; within-corpus measurement, not a field census', 'Narrative remarks on data scarcity; protocol strength not quantified'],
+  ['Corpus', 'Two-tier: 799 rule-based eligible records + 103 classified subset', 'Fixed study lists; no record-level selection provenance in the works we examined'],
+  ['Validation analysis', 'Protocol classes defined, per-paper assignments released, method-family contrast tested with sensitivity ranges; within-corpus measurement, not a field census', 'Narrative remarks on data scarcity; protocol strength not quantified, to our knowledge'],
   ['Standards linkage', 'Function-to-requirement mapping vs. UN GTR 20, GB 38031-2020/2025, ISO 26262:2018, ISO/PAS 8800:2024', 'Not addressed or addressed qualitatively'],
   ['Recommendations', 'Twelve-item reporting checklist (BMS-ML-RC) + six research directions', 'General future-work statements'],
-  ['Reproducibility', 'Released papers.csv, screening provenance, codebook, and statistics scripts', 'No released record-level dataset'],
+  ['Reproducibility', 'Released papers.csv, screening provenance, codebook, and statistics scripts', 'No released record-level dataset that we could locate'],
  ],
 },
     'TABLE_CHECKLIST': {
@@ -99,9 +99,9 @@ BLOCKS = [
 
 ('h2', '8.3 Foundation models and LLM-based management'),
 ('p',
- "The classified subset's youngest theme is generative, and it arrives with a prior-art caveat: LLM-based battery state estimation already exists outside "
- "the screened venues \u2014 preprint and conference work from 2024 and a 2025 journal letter [[10.1109/tec.2025.3548400]] \u2014 so no study in "
- "this corpus can claim to be the first of its kind. Within the subset the published studies are of two distinct kinds: a domain-specific LLM "
+ "The classified subset's youngest theme is generative, and it arrives with a prior-art caveat: LLM-based battery state estimation already exists beyond this corpus: "
+ "a 2025 IEEE Transactions on Energy Conversion letter [[10.1109/tec.2025.3548400]] that this review's Crossref retrieval failed to "
+ "return \u2014 a recall miss, not a venue exclusion \u2014 so no study in this corpus can claim to be the first of its kind. Within the subset the published studies are of two distinct kinds: a domain-specific LLM "
  "for risk analysis of battery *energy-storage-system* incidents \u2014 station-side rather than onboard technology \u2014 "
  "[[10.1016/j.ress.2026.112416]], and HA-LLM, which crosses the estimation boundary by using field vehicle data to estimate SOH with "
  "uncertainty-aware control, coordinating vehicle and cloud [[10.1016/j.ensm.2026.104983]]. The honest framing of [[10.1016/j.ensm.2026.104983]] "
@@ -136,12 +136,12 @@ BLOCKS = [
 
 ('h2', '9.1 From corpus gaps to safety-standard requirements'),  # heading kept; body text uses subset wording
 ('p',
- "The standards invoked in Section I \u2014 UN GTR 20 (electric-vehicle safety; Amendment 1, endorsed for WP.29 adoption in late 2026 at this "
- "review's retrieval date, adds thermal-propagation provisions with two compliance paths: a physical test, or a risk-management approach "
- "inspired by ISO 26262 and ISO 6469-1), GB 38031 (GB 38031-2020, in force through mid-2026, and the strengthened GB 38031-2025, effective "
+ "The standards invoked in Section I \u2014 UN GTR No. 20 (electric-vehicle safety, established in the Global Registry in 2018 [[std:unece-gtr20]]; Amendment 1, proposed as document EVS-30-C01/Rev.4 in September 2025 [[std:unece-gtr20-amd1]] and listed for adoption at the November 2026 WP.29 session at this "
+ "review's retrieval date, adds thermal-propagation provisions with two compliance options: a physical propagation test or a documented risk-management approach "
+ "), GB 38031 (GB 38031-2020, now superseded, and the strengthened GB 38031-2025 [[std:gb38031-2025]], effective "
  "July 2026, which replaces the fire/explosion-warning criterion with no-fire/no-explosion thermal-diffusion requirements and adds bottom-"
- "impact and fast-charge-cycle tests), ISO 26262:2018 (functional safety of road-vehicle E/E systems), ISO/PAS 8800:2024 (safety and "
- "artificial intelligence \u2014 the road-vehicle extension of ISO 26262 and ISO 21448 to learned components), and ISO 21448 (SOTIF) \u2014 do "
+ "impact and fast-charge-cycle tests), ISO 26262:2018 (functional safety of road-vehicle E/E systems [[std:iso26262]]), ISO/PAS 8800:2024 (safety and "
+ "artificial intelligence \u2014 the road-vehicle extension of ISO 26262 and ISO 21448 to learned components [[std:isopas8800]]), and ISO 21448 (SOTIF [[std:iso21448]]) \u2014 do "
  "not prescribe estimation algorithms, but they define what a deployed estimator or controller must be able to evidence, and Table VI "
  "translates the subset's gaps into those terms. The mapping is this review's synthesis at requirement level rather than clause level, and it "
  "is stated so that it can be checked against the standards texts themselves: the point is not legal advice but that a validation protocol "
@@ -163,7 +163,7 @@ BLOCKS = [
 ('h2', '9.2 Position relative to prior reviews'),
 ('p',
  "The closest in scope among recent reviews is the performance-centric review of Prasanna et al. [[10.1007/s44163-025-00721-y]], which "
- "systematically examines 240 peer-reviewed publications spanning the whole EV powertrain \u2014 battery management alongside charging systems, "
+ "examines 240 peer-reviewed publications (from 361 initially retrieved records) spanning the whole EV powertrain \u2014 battery management alongside charging systems, "
  "motor control, and energy-consumption prediction \u2014 and aggregates reported performance metrics (RMSE, R\u00b2) into a quantitative "
  "benchmarking of algorithm families, concluding that hybrid deep-learning architectures (LSTM-DDQN, CNN-BiGRU, transformer-based frameworks) "
  "consistently achieve superior accuracy (R\u00b2 > 0.95, RMSE < 0.05). This review differs from that work in scope, unit of analysis, and "
@@ -171,7 +171,7 @@ BLOCKS = [
  "standards mapping of Section IX-A and the per-function validation audit. In unit of analysis, it is protocol-centric rather than "
  "performance-centric: instead of pooling reported accuracy figures, it codes how each study\u2019s validation protocol isolates (or fails to "
  "isolate) its generalization claim. The two approaches are complementary, and the complementarity is pointed: an aggregation of self-reported "
- "RMSE and R\u00b2 inherits, unmeasured, precisely the validation weaknesses this review quantifies \u2014 17 of 88 primary papers validate on "
+ "RMSE and R\u00b2 may inherit, unmeasured, the validation weaknesses this review quantifies within its own subset \u2014 there, 17 of 88 primary papers validate on "
  "information-leaking splits, and headline accuracies concentrate on three shared benchmarks \u2014 so where Prasanna et al. answer *which "
  "algorithm family performs best as reported*, this review asks *how much the reports can be trusted, and what a study must disclose for its "
  "claims to be checkable*. Adjacent cross-functional surveys exist for degradation and estimation methods; Table VII states the comparison "

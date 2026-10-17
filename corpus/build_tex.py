@@ -20,9 +20,11 @@ FIGDIR = f'{ROOT}/ieee_submission/tex/figs'
 CORPUS = json.load(open(f'{ROOT}/corpus/papers_final.json'))
 CONF = json.load(open(f'{ROOT}/corpus/conference_verified.json'))
 EXT = json.load(open(f'{ROOT}/corpus/external_verified.json'))
+STD_REFS = json.load(open(f'{ROOT}/corpus/standards_refs.json'))
 BY_DOI = {r['doi']: r for r in CORPUS}
 BY_DOI.update({r['doi']: r for r in CONF})
 BY_DOI.update({r['doi']: r for r in EXT})
+BY_DOI.update({r['doi']: r for r in STD_REFS})
 
 # Zenodo deposit DOI for the released dataset: set once, used wherever the
 # artifact is cited. Placeholder until the deposit is published.
@@ -149,7 +151,14 @@ def ref_text_latex(doi):
             s += f", p. {esc(pg)}"
     elif art:
         s += f", Art. no. {esc(art)}"
-    s += f", {yr}. doi: {doi}."
+    if doi.startswith('std:'):
+        s += f", {yr}."
+        if r.get('xref'):
+            s += " " + esc(str(r['xref'])).rstrip('.') + "."
+        if r.get('url'):
+            s += f" \\url{{{r['url']}}}"
+    else:
+        s += f", {yr}. doi: {doi}."
     return s
 
 # ---------- table -> LaTeX ----------
