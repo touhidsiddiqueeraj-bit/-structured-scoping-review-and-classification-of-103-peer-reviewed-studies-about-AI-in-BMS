@@ -118,3 +118,41 @@ hash-tracked log are released in `corpus/reliability/`.
 - PINN heat generation → `Physics-informed`; physics-constrained autoencoder SOH
   → `Physics-informed`; ECM+ML SOC from EIS → `Hybrid physics+ML`.
 - 80/20 split within one cell's discharge curve → `within-cell split`.
+
+
+## Baseline-comparison screen (added in revision; field 7)
+
+Motivation: BMS-ML-RC item 6 demands a classical baseline on identical data, but the
+original six coding fields never recorded whether studies actually provide one.
+
+Abstract-level values (coded from indexed abstracts; released codes in
+abstract_probe_codes.py):
+- `none` - no model-based or classical reference method named as a comparator
+- `mentioned` - such a baseline is named (EKF/UKF/Kalman family, observer,
+  equivalent-circuit or physics-based model, coulomb counting, or a classical
+  regressor such as GPR/SVR), without a stated same-data quantitative result
+- `stated_samedata` - the abstract states the comparison on the same data with a
+  quantitative result
+
+Bounds: a full text may compare baselines its abstract omits, so abstract-level
+codes are lower bounds on comparison practice and exact measures of comparison
+visibility. ScienceDirect-withheld abstracts cannot be screened (49 of the 88
+primary papers at the September 2026 retrieval).
+
+Full-text rubric for future work:
+- `none` - no model-based baseline
+- `weak` - baseline named, but comparison not on identical data or not quantitative
+- `fair` - same data, quantitative comparison against a model-based baseline
+
+## Recall audit and power analysis (added in revision)
+
+- `recall_audit.py` / `recall_audit.json`: capture rate of the 1,550-record
+  retrieval against the deposited reference lists of the 15 included reviews and
+  6 seeds; denominators restricted to title-gate-positive, DOI-bearing references
+  dated >= 2020; titles/years resolved by DOI where publishers deposit neither.
+- `power_analysis.py` / `power_analysis.json`: minimum-detectable-effect analysis
+  for the physics-informed vs other validation-stringency contrast (analytic
+  two-proportion power, validated against Fisher-exact Monte Carlo).
+- `abstract_probe.py` / `abstract_probe_raw.json`: seed-pinned 40-record sample of
+  the 799-record eligible pool plus the 88 primary papers, with abstracts fetched
+  from Crossref, OpenAlex, and Semantic Scholar (cached under raw_cache/).

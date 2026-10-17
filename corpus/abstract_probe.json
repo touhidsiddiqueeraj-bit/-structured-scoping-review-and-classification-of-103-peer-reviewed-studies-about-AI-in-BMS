@@ -1,0 +1,82 @@
+{
+ "seed": 42,
+ "probeA": {
+  "n_sample": 40,
+  "n_coded": 23,
+  "n_no_abstract": 17,
+  "availability_rate": 0.575,
+  "validation_evidence_codes": {
+   "isolation_stated": 0,
+   "evaluation_stated": 20,
+   "none_stated": 3
+  },
+  "record_types": {
+   "primary_ml": 16,
+   "primary_model_based": 2,
+   "review": 3,
+   "other": 2
+  },
+  "primary_like_records": 18,
+  "isolation_stated_share_of_primary_like": [
+   0.0,
+   17.6
+  ],
+  "missingness_note": "Elsevier-withheld abstracts dominate the missing 17; missingness is publisher-driven, not topic-driven"
+ },
+ "probeB": {
+  "n_primary": 88,
+  "n_screenable": 38,
+  "n_no_abstract": 49,
+  "n_uncodable_fragment": 1,
+  "availability_rate": 0.432,
+  "baseline_none": 32,
+  "baseline_mentioned": 2,
+  "baseline_stated_samedata": 4,
+  "any_baseline_share": [
+   7.4,
+   30.4
+  ],
+  "stated_samedata_share": [
+   4.2,
+   24.1
+  ],
+  "named_baselines_examples": [
+   "GPR/SVR (wevj 2021; geits 2024)",
+   "0.5C CCCV (renene 2020)",
+   "SVR (jpowsour 2021)",
+   "ECM/electrochemical model (est 2026)",
+   "rule-based controller (wevj 2025)"
+  ],
+  "bounds_note": "abstract-level screen: a full text may compare baselines the abstract does not mention, so these are lower bounds on comparison PRACTICE and exact measures of comparison VISIBILITY; ScienceDirect abstracts are withheld from Crossref/OpenAlex/Semantic Scholar, so 48 of 88 papers (55%) cannot be screened at all"
+ },
+ "notes": [],
+ "probeA_on_subset": {
+  "n_primary": 88,
+  "n_coded": 38,
+  "n_no_abstract": 49,
+  "n_uncodable_fragment": 1,
+  "availability_rate": 0.432,
+  "validation_evidence_codes": {
+   "isolation_stated": 5,
+   "evaluation_stated": 32,
+   "none_stated": 1
+  },
+  "isolation_stated_share": [
+   5.8,
+   27.3
+  ]
+ },
+ "probeA_contrast": {
+  "table_isolation_vs_rest": [
+   [
+    0,
+    18
+   ],
+   [
+    5,
+    33
+   ]
+  ],
+  "fisher_p_two_sided": 0.164
+ }
+}

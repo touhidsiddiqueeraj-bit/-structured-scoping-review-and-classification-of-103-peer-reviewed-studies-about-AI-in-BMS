@@ -1,6 +1,13 @@
 # Zenodo upload — step by step
 
 Package ready: `zenodo_upload.zip` (or the loose directory `zenodo_upload/`).
+
+> **Record correction (October 2026):** the already-published Zenodo record
+> 10.5281/zenodo.23436202 is registered with resource type *Preprint*.
+> The deposit is a dataset + code release; `zenodo_metadata.json` now carries
+> `upload_type: dataset`. Please apply the same one-click correction on the
+> live record: Zenodo -> the record -> Edit -> Change resource type -> Dataset
+> -> Save (a new version of the record is created; the DOI is preserved).
 Everything inside runs standalone — verified: the full regeneration pipeline
 (eligible corpus → stats → provenance logs → consistency checks → reliability
 selftest) was executed from the extracted zip in a clean directory.

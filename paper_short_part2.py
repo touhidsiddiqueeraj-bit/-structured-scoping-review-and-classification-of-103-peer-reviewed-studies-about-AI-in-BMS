@@ -7,7 +7,7 @@ BLOCKS = [
 ('h2', '3.1 Publication trend and method-family evolution'),
 ('p',
  "Two layers of trend evidence are reported. On the *measured* tier (eligible corpus, 799 records), the capped retrieval captures 55, 85, 139, and "
- "223 journal articles for 2020\u20132023, a documented retrieval hole totaling 56 in 2024 (Section II-A), then 126 in 2025 and \u2014 partial "
+ "223 journal articles for 2020\u20132023, 56 for 2024 \u2014 an observed count inside the capped retrieval, not an estimate of missing volume; the January\u2013May 2024 window is only partially covered (Section II-A) \u2014 then 126 in 2025 and \u2014 partial "
  "year, retrieval date September 2026 \u2014 114 in 2026, plus one further early-access record date-stamped 2027 by Crossref metadata and omitted "
  "from the year chart (Fig. 3, left panel). These are counts within a capped retrieval, not census totals, and "
  "they do not support absolute-growth claims (``the literature quadrupled'' would require an uncapped retrieval). A per-year external denominator "
@@ -24,7 +24,7 @@ BLOCKS = [
  "fall in 2024\u20132026 and it is the largest single family in 2026 (Table II gives the subset totals by year). Optimization-"
  "augmented learning (Bayesian optimization, surrogate-assisted and meta-heuristic schemes) peaks in 2024 (5 of its 11 papers); transfer learning "
  "accelerates in 2024\u20132025 (3 of its 5 papers); reinforcement learning appears as the dominant family in 1 paper and as an embedded component in at least "
- "one more [[10.1016/j.ress.2025.111392]][[10.1038/s41598-025-30602-4]]; the first foundation-model and LLM-based studies appear in 2025\u20132026 "
+ "one more [[10.1016/j.ress.2025.111392]][[10.1038/s41598-025-30602-4]]; the subset\u2019s first foundation-model and LLM-based studies appear in 2025\u20132026 "
  "(2 papers) [[10.1016/j.ress.2026.112416]][[10.1016/j.ensm.2026.104983]], with journal-published LLM-based battery estimation beginning "
  "earlier still, as a retrieval miss rather than a venue exclusion [[10.1109/tec.2025.3548400]]. These family shares describe the subset "
  "only; the subset is curated, small-denominator years carry wide sampling error, and the eligible pool's method-theme tags show no "
@@ -86,7 +86,7 @@ BLOCKS = [
  "earlier, broader definition that also counted experimental-hardware demonstration as strong validation, the contrast is 13 of 22 (59%) versus "
  "49 of 66 (74%), OR 0.50 (95% CI 0.19\u20131.36, p = 0.19). We report both and claim neither as a model-family effect: the difference is not "
  "statistically significant under either definition, confounding is unadjusted (physics-informed work skews toward early-stage and simulation-heavy "
- "studies), and n = 22 is small. A label-noise scenario envelope built from the observed blind coder-versus-label disagreement (Section II-C) "
+ "studies), and n = 22 is small. A minimum-detectable-effect analysis (released with the corpus) shows that 80% power at \u03b1 = 0.05 would require a gap of roughly 30\u201335 percentage points between the two families, while the observed 15-point gap is detectable with only about 20\u201325% power \u2014 so no detected difference does not mean no difference: meaningful effects in either direction remain compatible with these counts. A label-noise scenario envelope built from the observed blind coder-versus-label disagreement (Section II-C) "
  "moves the overall strong-protocol share across 35\u201352 of the 88 papers (40\u201359% of the primary papers) under symmetric random flipping and "
  "leaves the method-family contrast non-significant in 94% of scenario draws; because the observed disagreements are directional (16 of 19 "
  "have the coder defaulting to weak), a strong-to-weak-only scenario spans 22\u201335 papers (25\u201340%) with the contrast non-significant in 96% "

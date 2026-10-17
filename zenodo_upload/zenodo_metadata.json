@@ -1,8 +1,7 @@
 {
   "title": "Machine learning in battery management systems: a two-tier scoping review of 799 eligible studies with in-depth classification and validation audit",
   "upload_type": {
-    "publication_type": "article",
-    "main_type": "publication"
+    "main_type": "dataset"
   },
   "publication_date": "2026-10-17",
   "creators": [
@@ -19,7 +18,7 @@
       "affiliation": "Leading University, Sylhet, Bangladesh"
     }
   ],
-  "description": "Machine learning (ML) has become a load-bearing component of modern battery management systems (BMS), yet the validation practices behind the literature's accuracy claims are rarely examined at corpus scale. This deposit contains the complete evidence base and analysis pipeline of a two-tier structured scoping review: a rule-based eligible corpus of 799 peer-reviewed journal articles (2020-2026) with record-level screening provenance (corpus/screening_log.csv, all 1,550 title-gate decisions plus 5 forced-seed entries), an in-depth classified subset of 103 studies (corpus/papers.csv) with a per-paper validation-protocol audit (corpus/protocol_audit.csv), a conference descriptive set, the classification codebook (corpus/codebook.md), and a blind 30-paper inter-coder reliability study (locked coding sheets, per-field Cohen's kappa and Krippendorff's alpha, itemized disagreement table, corpus/reliability/). Every count, figure, and cross-tabulation in the manuscript regenerates from this deposit: extract it, enter the top directory, and run the commands in README.md. CC-BY-4.0.",
+  "description": "Machine learning (ML) has become a load-bearing component of modern battery management systems (BMS), yet the validation practices behind the literature's accuracy claims are rarely examined at corpus scale. This deposit contains the complete evidence base and analysis pipeline of a two-tier structured scoping review: a rule-based eligible corpus of 799 peer-reviewed journal articles (798 dated 2020-2026 plus one early-access record stamped 2027; the classified subset of 103 adds five individually verified seed studies, one dated 2019) with record-level screening provenance (corpus/screening_log.csv, all 1,550 title-gate decisions plus 5 forced-seed entries), an in-depth classified subset of 103 studies (corpus/papers.csv) with a per-paper validation-protocol audit (corpus/protocol_audit.csv), a conference descriptive set, the classification codebook (corpus/codebook.md), and a blind 30-paper inter-coder reliability study (locked coding sheets, per-field Cohen's kappa and Krippendorff's alpha, itemized disagreement table, corpus/reliability/), a recall audit against the included reviews' reference lists with cached API responses (corpus/recall_audit.py/.json, corpus/raw_cache/), a minimum-detectable-effect analysis (corpus/power_analysis.py/.json), and abstract-level representativeness and baseline-comparison probes (corpus/abstract_probe*.py/.json). Every count, figure, and cross-tabulation in the manuscript regenerates from this deposit: extract it, enter the top directory, and run the commands in README.md. CC-BY-4.0.",
   "access_right": "open",
   "license": "cc-by-4.0",
   "keywords": [

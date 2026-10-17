@@ -30,6 +30,12 @@ python3 corpus/inter_rater_reliability.py              # agreement (needs filled
   (`dispute_items.csv`), hash-tracked log.
 - `corpus/final_audit.json`, `conference_*`, `external_verified.json` -- Crossref
   verification audit trail for every reference.
+- `corpus/recall_audit.py/.json` + `corpus/raw_cache/` -- retrieval recall audit against
+  the included reviews' reference lists, with cached API responses.
+- `corpus/power_analysis.py/.json` -- minimum-detectable-effect analysis for the
+  physics-informed validation contrast.
+- `corpus/abstract_probe*.py/.json` -- seed-pinned 40-record pool sample and the
+  88-paper baseline-comparison screen, with released codes.
 - `figures/` -- manuscript figures regenerated from the released data.
 - `out/gold_labels_30.csv` -- withheld released labels used by the reliability script.
 

@@ -9,7 +9,7 @@ TABLES = {
     'TABLE_REP': FULL.TABLE3,
     'TABLE_LLM': FULL.TABLE_LLM,
     'TABLE_STD': {
- 'caption': "Mapping BMS functions to requirements in UN GTR 20 (Amendment 1 thermal-propagation provisions), GB 38031-2020/2025, ISO 26262:2018 with ISO/PAS 8800:2024, and ISO 21448 (SOTIF): what deployed ML components must be able to evidence. The mapping is this review's synthesis at requirement level (not clause-level legal citation); \u201csubset status\u201d gives the corresponding classified-subset primary-paper counts from Section III-C.",
+ 'caption': "Mapping BMS functions to requirements in UN GTR 20 (Amendment 1 thermal-propagation provisions), GB 38031-2020/2025, ISO 26262:2018 with ISO/PAS 8800:2024, and ISO 21448 (SOTIF): what deployed ML components must be able to evidence. Regulatory statuses are stated as of the September 2026 retrieval date, and a \u2018strong protocol\u2019 in the subset-status column follows the protocol-only definition of Section II-C (cross-cell, cross-chemistry, or cross-domain holdout, or online/real-vehicle demonstration). The mapping is this review's synthesis at requirement level (not clause-level legal citation); \u201csubset status\u201d gives the corresponding classified-subset primary-paper counts from Section III-C.",
  'header': ['BMS function', 'What the standard demands of a deployed function', 'Current subset status'],
  'widths': [1.0, 2.1, 1.9],
  'rows': [
@@ -20,7 +20,7 @@ TABLES = {
    'Capacity and power fade margins underpin thermal-propagation early warning and end-of-service decisions; degradation assumptions must hold across chemistry, duty, and environment (ISO 26262 hazard analysis; ISO 21448 for performance limitations)',
    '20 of 32 SOH/RUL primary papers use a strong protocol; 4 use real-vehicle data; accuracy claims rest mostly on three public benchmarks (23 primary papers in the subset)'],
   ['Fault detection',
-   'Thermal-propagation early warning must provide the escape window: GB 38031-2025 requires the warning signal but no fire/explosion beyond the triggered cell (superseding the GB 38031-2020 5-min criterion); the GTR 20 amendment proposes a \u22655-min advance warning before cabin hazards, via test or risk-management compliance path; coverage must be argued and audited (ISO/PAS 8800 assurance argument)',
+   'Thermal-propagation early warning must provide the escape window: GB 38031-2025 requires a thermal-propagation warning ahead of hazard and no fire or explosion of the pack beyond the triggered cell, superseding GB 38031-2020\u2019s five-minute pre-warning criterion; the GTR 20 Amendment 1 proposal (EVS-30-C01/Rev.4) carries a \u22655-min advance warning before cabin hazards, with test or risk-management compliance options; coverage must be argued and audited (ISO/PAS 8800 assurance argument)',
    '2 of 7 fault/safety primary papers validate online on fleet data; detection-latency and false-alarm distributions are rarely reported'],
   ['Charging control',
    'Overcharge, over-temperature, and thermal-cycling limits are hard constraints under GB 38031-2020/2025; adaptive strategies must be bounded by protection envelopes and argued in the safety case',
@@ -227,8 +227,8 @@ BLOCKS = [
  "proliferation of published accuracy claims is not matched by validation progress: only 8 of the 88 primary papers (8 of the 103 "
  "classified studies) demonstrate online or fleet operation, 17 of 88 "
  "primary papers use isolation-weakened splits, and 23 rest on three public benchmarks while 36 rest on private laboratory cells; the "
- "physics-informed validation contrast is directionally consistent under both reported definitions but not statistically established "
- "(protocol-only 36% versus 52%, p = 0.32; including-hardware 59% versus 74%, p = 0.19), so it should be treated as an untested hypothesis "
+ "physics-informed validation contrast is directionally consistent under both reported definitions, statistically unestablished and underpowered "
+ "(protocol-only 36% versus 52%, p = 0.32; including-hardware 59% versus 74%, p = 0.19), so it is reported as no detectable difference, with meaningful differences in either direction not excluded \u2014 an open hypothesis "
  "rather than a settled result. The near-term agenda follows directly: standardized cross-domain validation, diversified fleet data, pack- "
  "and vehicle-level ML aligned with the standards mapping of Section IX, calibrated uncertainty, and a strict division of labor between "
  "foundation models, calibrated estimators, and physics-based safety envelopes. If the last five years were about discovering what machine "

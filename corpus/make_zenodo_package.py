@@ -40,6 +40,10 @@ DATA = [
     'corpus/final_audit.json',
     'corpus/stats.json',
     'corpus/seeds.json',
+    'corpus/recall_audit.json',
+    'corpus/power_analysis.json',
+    'corpus/abstract_probe_raw.json',
+    'corpus/abstract_probe.json',
     'corpus/codebook.md',
     'corpus/coding_protocol.md',
     'corpus/reliability/coder_A_30.csv',
@@ -66,6 +70,10 @@ CODE = [
     'corpus/make_fig1.py',
     'corpus/make_fig1_heatmap.py',
     'corpus/make_fig7_saturation.py',
+    'corpus/recall_audit.py',
+    'corpus/power_analysis.py',
+    'corpus/abstract_probe.py',
+    'corpus/abstract_probe_codes.py',
 ]
 
 FIGURES = ['fig1_function_method_map.png', 'fig2_prisma.png',
@@ -90,6 +98,15 @@ def main():
         p = os.path.join(OUT, c)
         os.makedirs(os.path.dirname(p), exist_ok=True)
         open(p, 'w').write(text)
+    # cached Crossref/OpenAlex/SemanticScholar responses so the recall audit and
+    # abstract probes re-run offline, exactly as published
+    for sub in ('corpus/raw_cache', 'corpus/raw_cache/openalex', 'corpus/raw_cache/semanticscholar'):
+        src_dir = os.path.join(ROOT, sub)
+        if os.path.isdir(src_dir):
+            os.makedirs(os.path.join(OUT, sub), exist_ok=True)
+            for f in os.listdir(src_dir):
+                if f.endswith('.json'):
+                    shutil.copy2(os.path.join(src_dir, f), os.path.join(OUT, sub, f))
     os.makedirs(f'{OUT}/figures', exist_ok=True)
     for f in FIGURES:
         shutil.copy2(f'{ROOT}/figures/{f}', f'{OUT}/figures/{f}')
@@ -101,18 +118,24 @@ def main():
         'accuracy claims are rarely examined at corpus scale. This deposit contains '
         'the complete evidence base and analysis pipeline of a two-tier structured scoping '
         'review: a rule-based eligible corpus of 799 peer-reviewed journal articles '
-        '(2020-2026) with record-level screening provenance (corpus/screening_log.csv, '
+        '(798 dated 2020-2026 plus one early-access record stamped 2027; the classified '
+        'subset of 103 adds five individually verified seed studies, one dated 2019) '
+        'with record-level screening provenance (corpus/screening_log.csv, '
         'all 1,550 title-gate decisions plus 5 forced-seed entries), an in-depth classified subset of 103 studies '
         '(corpus/papers.csv) with a per-paper validation-protocol audit '
         '(corpus/protocol_audit.csv), a conference descriptive set, the classification '
         'codebook (corpus/codebook.md), and a blind 30-paper inter-coder reliability '
         'study (locked coding sheets, per-field Cohen\'s kappa and Krippendorff\'s alpha, '
-        'itemized disagreement table, corpus/reliability/). Every count, figure, and '
+        'itemized disagreement table, corpus/reliability/), a recall audit against the '
+        'included reviews\' reference lists with cached API responses (corpus/recall_audit.py/.json, '
+        'corpus/raw_cache/), a minimum-detectable-effect analysis (corpus/power_analysis.py/.json), '
+        'and abstract-level representativeness and baseline-comparison probes '
+        '(corpus/abstract_probe*.py/.json). Every count, figure, and '
         'cross-tabulation in the manuscript regenerates from this deposit: extract it, '
         'enter the top directory, and run the commands in README.md. CC-BY-4.0.')
     meta = {
         'title': TITLE,
-        'upload_type': {'publication_type': 'article', 'main_type': 'publication'},
+        'upload_type': {'main_type': 'dataset'},
         'publication_date': time.strftime('%Y-%m-%d'),
         'creators': CREATORS,
         'description': abstract,
@@ -167,6 +190,12 @@ def main():
         '  (`dispute_items.csv`), hash-tracked log.',
         '- `corpus/final_audit.json`, `conference_*`, `external_verified.json` -- Crossref',
         '  verification audit trail for every reference.',
+        '- `corpus/recall_audit.py/.json` + `corpus/raw_cache/` -- retrieval recall audit against',
+        '  the included reviews\' reference lists, with cached API responses.',
+        '- `corpus/power_analysis.py/.json` -- minimum-detectable-effect analysis for the',
+        '  physics-informed validation contrast.',
+        '- `corpus/abstract_probe*.py/.json` -- seed-pinned 40-record pool sample and the',
+        '  88-paper baseline-comparison screen, with released codes.',
         '- `figures/` -- manuscript figures regenerated from the released data.',
         '- `out/gold_labels_30.csv` -- withheld released labels used by the reliability script.',
         '',

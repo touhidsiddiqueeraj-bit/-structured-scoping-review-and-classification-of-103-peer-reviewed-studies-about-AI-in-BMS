@@ -1,0 +1,78 @@
+{
+ "alpha_two_sided": 0.05,
+ "method": "analytic two-proportion z-test power (validated against 4,000-draw Fisher-exact Monte Carlo at the reported points)",
+ "contrasts": {
+  "protocol_only": {
+   "observed": {
+    "strong_physics": 8,
+    "n_physics": 22,
+    "strong_other": 34,
+    "n_other": 66,
+    "p_physics": 0.3636,
+    "p_other": 0.5152,
+    "diff_pp": -15.2
+   },
+   "analytic_power_at_observed_difference": 0.245,
+   "mde_lower": {
+    "p_physics": 0.215,
+    "diff_pp": -30.0,
+    "odds_ratio": 0.26,
+    "analytic_power": 0.801
+   },
+   "mde_upper": {
+    "p_physics": 0.81,
+    "diff_pp": 29.5,
+    "odds_ratio": 4.01,
+    "analytic_power": 0.811
+   },
+   "fisher_mc_power_at_observed": 0.206,
+   "fisher_mc_power_at_mde_lower": 0.666,
+   "fisher_mc_power_at_mde_upper": 0.696
+  },
+  "broad": {
+   "observed": {
+    "strong_physics": 13,
+    "n_physics": 22,
+    "strong_other": 49,
+    "n_other": 66,
+    "p_physics": 0.5909,
+    "p_other": 0.7424,
+    "diff_pp": -15.2
+   },
+   "analytic_power_at_observed_difference": 0.251,
+   "mde_lower": {
+    "p_physics": 0.41,
+    "diff_pp": -33.2,
+    "odds_ratio": 0.24,
+    "analytic_power": 0.805
+   },
+   "mde_upper": {
+    "p_physics": 0.95,
+    "diff_pp": 20.8,
+    "odds_ratio": 6.59,
+    "analytic_power": 0.831
+   },
+   "fisher_mc_power_at_observed": 0.221,
+   "fisher_mc_power_at_mde_lower": 0.769,
+   "fisher_mc_power_at_mde_upper": 0.548
+  }
+ },
+ "wilson_cis": {
+  "physics_strong_8_of_22": [
+   19.7,
+   57.0
+  ],
+  "other_strong_34_of_66": [
+   39.7,
+   63.2
+  ],
+  "overall_strong_42_of_88": [
+   37.6,
+   58.0
+  ],
+  "online_8_of_88": [
+   4.7,
+   16.9
+  ]
+ }
+}

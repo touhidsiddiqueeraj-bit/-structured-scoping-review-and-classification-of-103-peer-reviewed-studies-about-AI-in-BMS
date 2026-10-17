@@ -1,0 +1,530 @@
+{
+ "retrieved_set_size": 1550,
+ "per_source": [
+  {
+   "doi": "10.1016/j.egyai.2025.100585",
+   "kind": "review",
+   "label": "Towards a smarter battery management system: A critical review on deep",
+   "n_refs": 150,
+   "refs_with_doi": 109,
+   "in_scope_2020plus": 62,
+   "captured": 14,
+   "of_which_eligible": 14,
+   "refs_pre2020": 29,
+   "refs_unresolvable": 22,
+   "refs_no_doi_in_scope": 7,
+   "refs_off_topic": 30
+  },
+  {
+   "doi": "10.20517/jmi.2024.84",
+   "kind": "review",
+   "label": "Advancements in the estimation of the state of charge of lithium-ion b",
+   "n_refs": 130,
+   "refs_with_doi": 129,
+   "in_scope_2020plus": 69,
+   "captured": 19,
+   "of_which_eligible": 19,
+   "refs_pre2020": 50,
+   "refs_unresolvable": 5,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 6
+  },
+  {
+   "doi": "10.1016/j.apenergy.2021.117346",
+   "kind": "review",
+   "label": "A review of non-probabilistic machine learning-based state of health e",
+   "n_refs": 169,
+   "refs_with_doi": 153,
+   "in_scope_2020plus": 42,
+   "captured": 6,
+   "of_which_eligible": 6,
+   "refs_pre2020": 116,
+   "refs_unresolvable": 4,
+   "refs_no_doi_in_scope": 4,
+   "refs_off_topic": 3
+  },
+  {
+   "doi": "10.3390/electronics10111309",
+   "kind": "review",
+   "label": "Machine Learning-Based Data-Driven Fault Detection/Diagnosis of Lithiu",
+   "n_refs": 67,
+   "refs_with_doi": 63,
+   "in_scope_2020plus": 13,
+   "captured": 3,
+   "of_which_eligible": 3,
+   "refs_pre2020": 40,
+   "refs_unresolvable": 0,
+   "refs_no_doi_in_scope": 2,
+   "refs_off_topic": 12
+  },
+  {
+   "doi": "10.1016/j.jechem.2023.03.026",
+   "kind": "review",
+   "label": "The development of machine learning-based remaining useful life predic",
+   "n_refs": 177,
+   "refs_with_doi": 148,
+   "in_scope_2020plus": 74,
+   "captured": 14,
+   "of_which_eligible": 14,
+   "refs_pre2020": 62,
+   "refs_unresolvable": 22,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 19
+  },
+  {
+   "doi": "10.3390/batteries10070220",
+   "kind": "review",
+   "label": "Exploring Lithium-Ion Battery Degradation: A Concise Review of Critica",
+   "n_refs": 177,
+   "refs_with_doi": 171,
+   "in_scope_2020plus": 39,
+   "captured": 6,
+   "of_which_eligible": 6,
+   "refs_pre2020": 83,
+   "refs_unresolvable": 0,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 55
+  },
+  {
+   "doi": "10.3390/batteries10120442",
+   "kind": "review",
+   "label": "A Comprehensive Review of Multiple Physical and Data-Driven Model Fusi",
+   "n_refs": 127,
+   "refs_with_doi": 126,
+   "in_scope_2020plus": 108,
+   "captured": 18,
+   "of_which_eligible": 18,
+   "refs_pre2020": 0,
+   "refs_unresolvable": 0,
+   "refs_no_doi_in_scope": 1,
+   "refs_off_topic": 18
+  },
+  {
+   "doi": "10.1016/j.etran.2023.100254",
+   "kind": "review",
+   "label": "Challenges and outlook for lithium-ion battery fault diagnosis methods",
+   "n_refs": 133,
+   "refs_with_doi": 124,
+   "in_scope_2020plus": 51,
+   "captured": 7,
+   "of_which_eligible": 7,
+   "refs_pre2020": 32,
+   "refs_unresolvable": 4,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 46
+  },
+  {
+   "doi": "10.1002/batt.202300046",
+   "kind": "review",
+   "label": "Machine Learning in Lithium\u2010Ion Battery Cell Production: A Comprehensi",
+   "n_refs": 101,
+   "refs_with_doi": 81,
+   "in_scope_2020plus": 28,
+   "captured": 4,
+   "of_which_eligible": 4,
+   "refs_pre2020": 27,
+   "refs_unresolvable": 3,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 43
+  },
+  {
+   "doi": "10.1016/j.est.2023.106688",
+   "kind": "review",
+   "label": "Machine learning assisted advanced battery thermal management system: ",
+   "n_refs": 113,
+   "refs_with_doi": 95,
+   "in_scope_2020plus": 37,
+   "captured": 4,
+   "of_which_eligible": 4,
+   "refs_pre2020": 21,
+   "refs_unresolvable": 3,
+   "refs_no_doi_in_scope": 2,
+   "refs_off_topic": 50
+  },
+  {
+   "doi": "10.1038/s42256-020-0156-7",
+   "kind": "review",
+   "label": "Predicting the state of charge and health of batteries using data-driv",
+   "n_refs": 118,
+   "refs_with_doi": 113,
+   "in_scope_2020plus": 0,
+   "captured": 0,
+   "of_which_eligible": 0,
+   "refs_pre2020": 116,
+   "refs_unresolvable": 0,
+   "refs_no_doi_in_scope": 1,
+   "refs_off_topic": 1
+  },
+  {
+   "doi": "10.1016/j.joule.2019.11.018",
+   "kind": "review",
+   "label": "Battery Lifetime Prognostics",
+   "n_refs": 205,
+   "refs_with_doi": 187,
+   "in_scope_2020plus": 0,
+   "captured": 0,
+   "of_which_eligible": 0,
+   "refs_pre2020": 196,
+   "refs_unresolvable": 9,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 0
+  },
+  {
+   "doi": "10.1016/j.est.2022.104664",
+   "kind": "review",
+   "label": "A review of lithium-ion battery state of charge estimation based on de",
+   "n_refs": 90,
+   "refs_with_doi": 78,
+   "in_scope_2020plus": 28,
+   "captured": 6,
+   "of_which_eligible": 6,
+   "refs_pre2020": 52,
+   "refs_unresolvable": 4,
+   "refs_no_doi_in_scope": 4,
+   "refs_off_topic": 2
+  },
+  {
+   "doi": "10.1016/j.rser.2023.113807",
+   "kind": "review",
+   "label": "Physics-informed deep learning for lithium-ion battery diagnostics usi",
+   "n_refs": 46,
+   "refs_with_doi": 38,
+   "in_scope_2020plus": 9,
+   "captured": 1,
+   "of_which_eligible": 1,
+   "refs_pre2020": 23,
+   "refs_unresolvable": 5,
+   "refs_no_doi_in_scope": 1,
+   "refs_off_topic": 8
+  },
+  {
+   "doi": "10.1002/aenm.202503067",
+   "kind": "review",
+   "label": "Interpretable Machine Learning for Battery Prognosis: Retrospect and P",
+   "n_refs": 170,
+   "refs_with_doi": 160,
+   "in_scope_2020plus": 88,
+   "captured": 10,
+   "of_which_eligible": 10,
+   "refs_pre2020": 19,
+   "refs_unresolvable": 11,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 52
+  },
+  {
+   "doi": "10.1038/s41560-019-0356-8",
+   "kind": "seed",
+   "label": "Data-driven prediction of battery cycle life before capacity degradati",
+   "n_refs": 66,
+   "refs_with_doi": 64,
+   "in_scope_2020plus": 0,
+   "captured": 0,
+   "of_which_eligible": 0,
+   "refs_pre2020": 65,
+   "refs_unresolvable": 0,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 1
+  },
+  {
+   "doi": "10.1038/s41586-020-1994-5",
+   "kind": "seed",
+   "label": "Closed-loop optimization of fast-charging protocols for batteries with",
+   "n_refs": 44,
+   "refs_with_doi": 31,
+   "in_scope_2020plus": 0,
+   "captured": 0,
+   "of_which_eligible": 0,
+   "refs_pre2020": 32,
+   "refs_unresolvable": 0,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 12
+  },
+  {
+   "doi": "10.1038/s42256-021-00312-3",
+   "kind": "seed",
+   "label": "Machine learning pipeline for battery state-of-health estimation",
+   "n_refs": 64,
+   "refs_with_doi": 51,
+   "in_scope_2020plus": 1,
+   "captured": 0,
+   "of_which_eligible": 0,
+   "refs_pre2020": 55,
+   "refs_unresolvable": 0,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 8
+  },
+  {
+   "doi": "10.1038/s41467-020-15235-7",
+   "kind": "seed",
+   "label": "Identifying degradation patterns of lithium ion batteries from impedan",
+   "n_refs": 38,
+   "refs_with_doi": 35,
+   "in_scope_2020plus": 0,
+   "captured": 0,
+   "of_which_eligible": 0,
+   "refs_pre2020": 37,
+   "refs_unresolvable": 0,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 1
+  },
+  {
+   "doi": "10.1038/s42256-020-0156-7",
+   "kind": "seed",
+   "label": "Predicting the state of charge and health of batteries using data-driv",
+   "n_refs": 118,
+   "refs_with_doi": 113,
+   "in_scope_2020plus": 0,
+   "captured": 0,
+   "of_which_eligible": 0,
+   "refs_pre2020": 116,
+   "refs_unresolvable": 0,
+   "refs_no_doi_in_scope": 1,
+   "refs_off_topic": 1
+  },
+  {
+   "doi": "10.1016/j.joule.2019.11.018",
+   "kind": "seed",
+   "label": "Battery Lifetime Prognostics",
+   "n_refs": 205,
+   "refs_with_doi": 187,
+   "in_scope_2020plus": 0,
+   "captured": 0,
+   "of_which_eligible": 0,
+   "refs_pre2020": 196,
+   "refs_unresolvable": 9,
+   "refs_no_doi_in_scope": 0,
+   "refs_off_topic": 0
+  }
+ ],
+ "summary_reviews": {
+  "n_sources": 15,
+  "refs_total": 1973,
+  "denominator_in_scope_2020plus_doi": 648,
+  "captured": 112,
+  "capture_rate": 0.1728,
+  "captured_of_which_eligible": 112,
+  "refs_pre2020": 866,
+  "refs_unresolvable": 92,
+  "refs_no_doi_in_scope": 22,
+  "refs_off_topic": 345
+ },
+ "summary_seeds": {
+  "n_sources": 6,
+  "refs_total": 535,
+  "denominator_in_scope_2020plus_doi": 1,
+  "captured": 0,
+  "capture_rate": 0.0,
+  "captured_of_which_eligible": 0,
+  "refs_pre2020": 501,
+  "refs_unresolvable": 9,
+  "refs_no_doi_in_scope": 1,
+  "refs_off_topic": 23
+ },
+ "summary_combined": {
+  "n_sources": 21,
+  "refs_total": 2508,
+  "denominator_in_scope_2020plus_doi": 649,
+  "captured": 112,
+  "captured_of_which_eligible": 112,
+  "refs_pre2020": 1367,
+  "refs_unresolvable": 101,
+  "refs_no_doi_in_scope": 23,
+  "refs_off_topic": 368,
+  "capture_rate": 0.1726
+ },
+ "unique_in_scope_2020plus_refs_with_doi": 586,
+ "unique_in_scope_captured": 96,
+ "unique_in_scope_capture_rate": 0.1638,
+ "unique_in_scope_of_which_eligible": 96,
+ "poh_doi_in_review_reference_lists": [],
+ "per_query_yields": [
+  {
+   "query": "bal",
+   "area": "Cell balancing & ECM",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "bmk",
+   "area": "Benchmarks & data",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "chg_bayes",
+   "area": "Charging control",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "chg_ml",
+   "area": "Charging control",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "chg_rl",
+   "area": "Charging control",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "ecm",
+   "area": "Other",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "flt_diag",
+   "area": "Fault & safety",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "flt_plate",
+   "area": "Fault & safety",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "rev_bms",
+   "area": "Cross-cutting",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "rul_dl",
+   "area": "Prognostics (RUL)",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "rul_early",
+   "area": "Prognostics (RUL)",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "rul_ml",
+   "area": "Prognostics (RUL)",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "second",
+   "area": "Second life",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "soc_dl",
+   "area": "State estimation (SOC)",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "soc_ml",
+   "area": "State estimation (SOC)",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "soh_feat",
+   "area": "Health estimation (SOH)",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "soh_gp",
+   "area": "Health estimation (SOH)",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "soh_ml",
+   "area": "Health estimation (SOH)",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "thm_est",
+   "area": "Thermal management",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "thm_mgr",
+   "area": "Thermal management",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "thm_run",
+   "area": "Thermal management",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "tl",
+   "area": "Transfer learning",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "twin",
+   "area": "Digital twins",
+   "passes": 5,
+   "records_after_filters": 100
+  },
+  {
+   "query": "interp",
+   "area": "Interpretability",
+   "passes": 5,
+   "records_after_filters": 99
+  },
+  {
+   "query": "llm",
+   "area": "Foundation models",
+   "passes": 5,
+   "records_after_filters": 99
+  },
+  {
+   "query": "gnn",
+   "area": "Graph networks",
+   "passes": 5,
+   "records_after_filters": 98
+  },
+  {
+   "query": "pinn",
+   "area": "Physics-informed",
+   "passes": 5,
+   "records_after_filters": 98
+  },
+  {
+   "query": "soc_hybrid",
+   "area": "State estimation (SOC)",
+   "passes": 5,
+   "records_after_filters": 98
+  },
+  {
+   "query": "flt_anom",
+   "area": "Fault & safety",
+   "passes": 5,
+   "records_after_filters": 91
+  },
+  {
+   "query": "cloud",
+   "area": "Cloud & fleet",
+   "passes": 5,
+   "records_after_filters": 90
+  }
+ ],
+ "query_design_caps": {
+  "rows_per_pass": 20,
+  "passes_per_query": 5,
+  "max_records_per_query_family": 100,
+  "query_pass_records_after_filters": 2973,
+  "unique_after_dedup": 1550
+ },
+ "method_note": "Capture rate = share of references cited by the 15 included reviews + 6 seeds that the 1,550-record query retrieval contains. Denominator restricted to references that pass the same battery-term AND ML-term title gate as the screening pipeline and are dated 2020 or later (the retrieval window); titles and years are taken from the deposited reference metadata where present and otherwise resolved by DOI (cached in raw_cache/). References pre-2020, unresolvable, without DOIs, or failing the title gate are counted separately in the summary blocks. This estimates retrieval recall against a review-curated ground truth, not against the true literature: the denominator is itself a citation-conditioned sample."
+}

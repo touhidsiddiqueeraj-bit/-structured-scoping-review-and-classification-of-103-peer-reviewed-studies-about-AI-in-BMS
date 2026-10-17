@@ -9,6 +9,8 @@ from docx import Document
 from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
 from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
@@ -300,13 +302,30 @@ for kind, *rest in BLOCKS:
         rich_cite(cp, caption, size=9)
     elif kind == 'tbl':
         add_table(TABLES[rest[0]])
+    elif kind == 'box':
+        title, rows = rest[0], rest[1]
+        t = doc.add_table(rows=1, cols=1)
+        t.style = 'Table Grid'
+        t.alignment = WD_TABLE_ALIGNMENT.CENTER
+        cell = t.cell(0, 0)
+        shd = OxmlElement('w:shd'); shd.set(qn('w:val'), 'clear'); shd.set(qn('w:fill'), 'F2F2F2')
+        cell._tc.get_or_add_tcPr().append(shd)
+        p0 = cell.paragraphs[0]
+        r = p0.add_run(title); r.bold = True; r.font.size = Pt(9.5); r.font.name = 'Times New Roman'
+        p0.paragraph_format.space_after = Pt(4)
+        for lead, txt in rows:
+            pp = cell.add_paragraph(); pp.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            pp.paragraph_format.space_after = Pt(3)
+            r1 = pp.add_run(lead + ' '); r1.bold = True; r1.font.size = Pt(9); r1.font.name = 'Times New Roman'
+            r2 = pp.add_run(txt); r2.font.size = Pt(9); r2.font.name = 'Times New Roman'
+        sp = doc.add_paragraph(); sp.paragraph_format.space_after = Pt(8)
     elif kind == 'decl':
         para('Declarations', size=10, bold=True, align=WD_ALIGN_PARAGRAPH.LEFT, space_after=6)
         decl = [
          ('Funding', 'The authors received no specific funding for this work.'),
          ('Conflicts of interest', 'The authors declare no competing interests.'),
          ('Author contributions', 'H.T.S. conceived the study, designed and executed the search, screening, and verification pipeline, performed the full-text classification and analysis, coded the released labels, and drafted the manuscript. S.S.I.A. and J.I.C. performed the blind 30-paper re-coding of the reliability study (coders B and C, Section 2.5) before any verification work, and contributed to corpus curation, verification of classifications and counts, and manuscript revision. All authors read and approved the final manuscript.'),
-         ('Data availability', 'The complete evidence base is deposited at Zenodo, DOI 10.5281/zenodo.23436202 (deposit of record; the GitHub repository of the same name is a development mirror). The deposit includes: the classified 103-study dataset (papers.csv, papers_final.json) with per-paper citation counts; the 799-record rule-based eligible pool (eligible_corpus.json, pool.csv) with per-record query-theme tags; the record-level screening log (screening_log.csv); the per-paper validation-protocol audit (protocol_audit.csv); the codebook and coding protocol (codebook.md, coding_protocol.md); the locked blind coder sheets, agreement report, itemized disagreements, and hash-tracked reliability log (corpus/reliability/); the conference sensitivity set with all 14 retrieved papers and the pre-stated inclusion rule (conference_sensitivity.csv); the withheld released labels for the reliability sample (gold_labels_30.csv); the label-noise sensitivity script and outputs (sensitivity_label_noise.py/.json); the Crossref verification audit trail (final_audit.json, external_verified.json, conference_verified.json); the seed-study register (seeds.json); and the screening statistics (stats.json).'),
+         ('Data availability', 'The complete evidence base is deposited at Zenodo, DOI 10.5281/zenodo.23436202 (deposit of record; the GitHub repository of the same name is a development mirror). The deposit includes: the classified 103-study dataset (papers.csv, papers_final.json) with per-paper citation counts; the 799-record rule-based eligible pool (eligible_corpus.json, pool.csv) with per-record query-theme tags; the record-level screening log (screening_log.csv); the per-paper validation-protocol audit (protocol_audit.csv); the codebook and coding protocol (codebook.md, coding_protocol.md); the locked blind coder sheets, agreement report, itemized disagreements, and hash-tracked reliability log (corpus/reliability/); the conference sensitivity set with all 14 retrieved papers and the pre-stated inclusion rule (conference_sensitivity.csv); the withheld released labels for the reliability sample (gold_labels_30.csv); the label-noise sensitivity script and outputs (sensitivity_label_noise.py/.json); the Crossref verification audit trail (final_audit.json, external_verified.json, conference_verified.json); the seed-study register (seeds.json); the screening statistics (stats.json); the recall audit with its cached Crossref responses (recall_audit.py, recall_audit.json, raw_cache/); the minimum-detectable-effect analysis (power_analysis.py, power_analysis.json); and the abstract-level probes with their codes and rubric (abstract_probe.py, abstract_probe_raw.json, abstract_probe_codes.py, abstract_probe.json). One registry-metadata note: the Crossref record for one reference (DOI 10.1016/j.jechem.2023.03.026) deposits two author names with the given and family fields transposed and the surname \u2018Store\u2019 for \u2018Stroe\u2019; the reference list normalizes them to the published forms (Vilsen, S. B.; Stroe, D. I.), and all other bibliographic metadata is reproduced exactly as deposited.'),
          ('Code availability', 'All search, screening, selection, verification, classification, reliability, sensitivity, statistics, figure-generation, and manuscript-build scripts are included in the same Zenodo deposit (DOI 10.5281/zenodo.23436202), so that every figure and every count in Sections 3 and 3.5 can be regenerated deterministically from the released data.'),
          ('Ethics approval', 'Not applicable. This study did not involve human participants or animals.'),
          ('Consent to participate / for publication', 'Not applicable.'),
