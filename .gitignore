@@ -13,3 +13,8 @@ out/
 
 # publisher full-text PDFs (copyrighted)
 10.1016/
+corpus/validation_recode/fulltexts/
+corpus/validation_recode/openalex_88_cache.json
+corpus/validation_recode/s2_fill_cache.json
+corpus/validation_recode/crossref_fill_cache.json
+corpus/validation_recode/unpaywall_cache.json

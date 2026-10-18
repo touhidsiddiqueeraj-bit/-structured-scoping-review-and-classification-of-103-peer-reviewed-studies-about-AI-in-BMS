@@ -29,8 +29,8 @@ BLOCKS = [
  "earlier still, as a retrieval miss rather than a venue exclusion [[10.1109/tec.2025.3548400]]. These family shares describe the subset "
  "only; the subset is curated, small-denominator years carry wide sampling error, and the eligible pool's method-theme tags show no "
  "monotonic physics-informed trend. Two qualifications matter: the families are not mutually exclusive (a PSO-tuned LSTM is both deep learning and optimization-"
- "augmented), so the composition understates method mixing; and physics-informed papers are, on average, validated no more stringently than others "
- "even under the most permissive definition of stringency \u2014 a point quantified, with its sensitivity ranges, in Section III-C."),
+ "augmented), so the composition understates method mixing; and physics-informed papers show no detectably different validation stringency from the others "
+ "even under the most permissive definition \u2014 a nominally lower strong-protocol rate that these counts are underpowered to resolve (Section III-C)."),
 
 ('fig', 'figures/fig3_method_evolution.png', 'Fig. 3 Two-tier trend evidence. Left: Tier 1 eligible-corpus records per year across the capped retrieval '
  '(the 2024 dip is the documented January\u2013May 2024 retrieval hole, not a decline in the field; one further record is date-stamped 2027 by '
@@ -79,7 +79,7 @@ BLOCKS = [
  "the remaining 29 studies establish hardware operation (20), simulation- or case-level evidence without a generalization protocol (9) \u2014 "
  "42+17+29 = 88. The complete per-paper protocol assignment is released in papers.csv (valid field) and tabulated as a supplement "
  "(protocol_audit.csv), so the 42-of-88 arithmetic above can be verified row by row. The 30-paper blind re-coding of Section II-C is an abstract-level "
- "inter-coder agreement check whose sample includes the 5 review-labelled papers — not an independent re-derivation of these assignments (their bucket agreement with the released labels is itself weak, Section II-C); the counts instead carry the scenario sensitivity that follows."),
+ "inter-coder agreement check whose sample includes the 5 review-labelled papers — not an independent re-derivation of these assignments (their bucket agreement with the released labels is itself weak, Section II-C); the counts instead carry the scenario sensitivity that follows. A post-freeze re-code of the validation field by the declared AI assistant (open-access full texts where retrievable, indexed abstracts otherwise) covers 46 of the 88 primaries and determinably codes 23: 10 of the 14 determinable strong labels are confirmed, four are contradicted (one full-text-verified within-cell split coded cross-cell in the released labels; one synthetic-data validation; two abstract-level evidence gaps), and two non-strong labels would be upgraded \u2014 bucket agreement 17 of 23 (74%), itemized and released with no label altered (corpus/validation_recode/)."),
 ('p',
  "Crossing validation practice with method family, the cautious reading is: 8 of the 22 physics-informed/hybrid primary papers (36%) use a strong "
  "protocol, against 34 of the 66 other primary papers (52%) \u2014 Fisher's exact p = 0.32, odds ratio 0.54 (95% CI 0.21\u20131.46). Under the "

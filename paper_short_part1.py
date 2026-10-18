@@ -66,12 +66,12 @@ BLOCKS = [
 
 ('h2', '1.3 Contribution of this paper'),
 ('p',
- "This paper makes four contributions: (i) a rule-based *eligible corpus* of 799 peer-reviewed journal articles (2020\u20132026), selected by uniform "
+ "This paper makes four contributions: (i) a rule-based *eligible corpus* of 799 records (798 dated 2020\u20132026 plus one early-access record stamped 2027), selected by uniform "
  "criteria applied to all screened Crossref records \u2014 no function quotas, year caps, or citation thresholds \u2014 so that field-level shares "
  "are measured, not curated, with the retrieval, screening, and tagging provenance of every record released; (ii) an in-depth *classified subset* of "
  "103 studies from that corpus, coded along the six classification fields (function, method family, chemistry, data source, validation practice, and "
  "coded finding/limitation summaries) with the "
- "classification dataset, codebook, per-paper protocol audit, and a 30-paper blind inter-coder reliability study released together with a "
+ "classification dataset, codebook, per-paper protocol audit, and a blind, abstract-level 30-paper re-coding by two co-author coders released together with a "
  "label-noise sensitivity analysis of the headline counts; (iii) a two-tier synthesis \u2014 measured bibliometrics from the eligible corpus "
  "(Section III) plus function-by-function critical review of the classified subset (Sections IV\u2013VIII) \u2014 with a BMS-function-to-safety-"
  "standard mapping and a gap-driven research agenda including a twelve-item reporting checklist (Section IX); and (iv) a transportation-"
@@ -109,7 +109,7 @@ BLOCKS = [
  "112 of the 649 in-scope-looking, 2020-onward, DOI-bearing references they cite (17.3% counted per-source; 96 of 586 unique references, "
  "16.4%). Retrieval recall is therefore bounded and now quantified: theme frequencies, per-family shares, and \u2018earliest\u2019 claims in this "
  "review are scoped to this retrieval and the subset it fed, and the LLM-estimator recall miss disclosed in the cross-cutting section is cited "
- "by none of those reviews either (audit released as recall_audit.py/.json with cached responses)."),
+ "by none of those reviews either (audit released as recall_audit.py/.json with cached responses). A released retrieval-depth pilot quantifies what the cap withholds: re-running six of the 30 query families with cursor paging to ten times the per-pass depth, under the original windows and sort orders, yields 1,500 title-gated records absent from the 1,550 (1,406 venue-eligible) \u2014 implying an all-family net gain on the order of 5,000 eligible records at the original design\u2019s observed overlap factor. The cap, not the registry, is the binding constraint; lifting it is the pipeline\u2019s single highest-leverage upgrade, and the corpus is read as a capped sample throughout."),
 
 ('h2', '2.2 Screening and rule-based selection'),
 ('p',
@@ -178,8 +178,8 @@ BLOCKS = [
  "(Sections IV\u2013VIII). The methodology's limitations are acknowledged: Crossref coverage excludes influential conference papers; title-level "
  "screening can miss relevant work; citation-ordered retrieval privileges established English-language venues; the per-year retrieval window has one "
  "documented hole (Section II-A); the Tier-2 subset is curated rather than sampled, so validation-practice rates are subset statistics that do not "
- "automatically generalize to the eligible corpus or the field; and reliability is documented on a 30-paper blind re-coding subset rather than "
- "measured corpus-wide (three of five fields above threshold, two below, with the resulting sensitivity ranges reported). DOI resolution, moreover, "
+ "automatically generalize to the eligible corpus or the field; and reliability is documented on a blind, abstract-level 30-paper re-coding subset (two co-author coders) rather than "
+ "measured corpus-wide (three of five fields above threshold, two below, with the resulting sensitivity ranges reported); the strong/weak taxonomy is itself design-only \u2014 it codes the split architecture, not how many cells were held out, whether tuning touched the test set, or whether preprocessing was fit before splitting \u2014 so a strong code certifies the design of a validation, not its execution. DOI resolution, moreover, "
  "verifies that a record exists, not that its venue is topically sensible: one classified-subset study (a physics-informed SOC network, "
  "[[10.1109/jrfid.2022.3211841]]) appears in an RFID-special-issue journal \u2014 we flag it here rather than dropping it, and the released audit "
  "file (final_audit.json) records each reference's Crossref-resolved title and venue at retrieval time so that misattributions of this kind are "

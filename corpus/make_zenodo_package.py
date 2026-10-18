@@ -46,6 +46,13 @@ DATA = [
     'corpus/power_analysis.json',
     'corpus/abstract_probe_raw.json',
     'corpus/abstract_probe.json',
+    'corpus/retrieval_depth_pilot.json',
+    'corpus/validation_recode/evidence_88.json',
+    'corpus/validation_recode/coder_D_validation.csv',
+    'corpus/validation_recode/validation_recode.json',
+    'corpus/validation_recode/fulltext_fetch_log.json',
+    'osf_registration/OSF_REGISTRATION_DRAFT.md',
+    'osf_registration/OSF_REGISTRATION_STEPS.md',
     'corpus/codebook.md',
     'corpus/coding_protocol.md',
     'corpus/reliability/coder_A_30.csv',
@@ -77,6 +84,8 @@ CODE = [
     'corpus/power_analysis.py',
     'corpus/abstract_probe.py',
     'corpus/abstract_probe_codes.py',
+    'corpus/retrieval_depth_pilot.py',
+    'corpus/validation_recode/validation_recode.py',
 ]
 
 FIGURES = ['fig1_function_method_map.png', 'fig2_prisma.png',
@@ -132,8 +141,12 @@ def main():
         'itemized disagreement table, corpus/reliability/), a recall audit against the '
         'included reviews\' reference lists with cached API responses (corpus/recall_audit.py/.json, '
         'corpus/raw_cache/), a minimum-detectable-effect analysis (corpus/power_analysis.py/.json), '
-        'and abstract-level representativeness and baseline-comparison probes '
-        '(corpus/abstract_probe*.py/.json). Every count, figure, and '
+        'abstract-level representativeness and baseline-comparison probes '
+        '(corpus/abstract_probe*.py/.json), a retrieval-depth pilot quantifying what the '
+        'capped top-20-per-pass retrieval withholds (corpus/retrieval_depth_pilot.py/.json), '
+        'an independent post-freeze re-code of the validation field with its evidence '
+        'sheet, coder sheet, and itemized discrepancies (corpus/validation_recode/), and '
+        'the retrospective OSF registration package (osf_registration/). Every count, figure, and '
         'cross-tabulation in the manuscript regenerates from this deposit: extract it, '
         'enter the top directory, and run the commands in README.md. CC-BY-4.0.')
     meta = {

@@ -16,7 +16,7 @@ Two manuscript forms are maintained from the same source blocks and carry the sa
 | Form | File | Notes |
 |---|---|---|
 | Condensed TTE submission | `ieee_submission/tex/mlbms.tex` → `mlbms.pdf` | 19 pp., 4 figures, 8 tables, 111 references (incl. six standards documents); built by `corpus/build_tex.py --short` |
-| Extended manuscript | `ML-BMS-Review.docx` / `.pdf` | 43 pp., 10 sections, 8 figures, 13 tables, 1 box, 125 references (119 Crossref-verified + six standards documents); built by `build_docx.py` |
+| Extended manuscript | `ML-BMS-Review.docx` / `.pdf` | 45 pp., 10 sections, 8 figures, 13 tables, 1 box, 125 references (119 Crossref-verified + six standards documents); built by `build_docx.py` |
 
 Every DOI in the **103-study classified subset** and the **conference descriptive set** was resolved directly against the [Crossref registry](https://api.crossref.org); the **799-record eligible corpus** is assembled entirely from Crossref-registered records with the mapping listed per record in `screening_log.csv`. Every number, figure, and table in the manuscripts can be regenerated from the released datasets with the released code (all scripts are repository-relative and run from the repo root).
 
@@ -27,9 +27,12 @@ Every DOI in the **103-study classified subset** and the **conference descriptiv
 | Artifact | Description |
 |---|---|
 | [`ieee_submission/`](ieee_submission) | IEEE TTE submission package: IEEEtran source, compiled PDF, cover letter, submission figures |
-| [`ML-BMS-Review.pdf`](ML-BMS-Review.pdf) / [`.docx`](ML-BMS-Review.docx) | The extended manuscript (43 pp., 13 tables, 1 box, 125 references incl. six standards documents) |
+| [`ML-BMS-Review.pdf`](ML-BMS-Review.pdf) / [`.docx`](ML-BMS-Review.docx) | The extended manuscript (45 pp., 13 tables, 1 box, 125 references incl. six standards documents) |
 | [`Supplementary_Material.pdf`](Supplementary_Material.pdf) / [`.docx`](Supplementary_Material.docx) | Supplementary Material (4 pp.): interpretation rules (S1), label-noise scenario envelope (S2), MDE analysis (S3), recall-audit construction (S4), abstract-level probes (S5); built by `build_supplement.py` |
-| [`response_to_reviewers.pdf`](response_to_reviewers.pdf) / [`.docx`](response_to_reviewers.docx) | Point-by-point response dossier for the TTE review round (TTE-Reg-2026-09-3162) |
+| [`response_to_reviewers.pdf`](response_to_reviewers.pdf) / [`.docx`](response_to_reviewers.docx) | Point-by-point response dossier for the TTE review round (TTE-Reg-2026-09-3162), sections A–M |
+| [`corpus/validation_recode/`](corpus/validation_recode) | Independent post-freeze re-code of the validation field (coder D): evidence sheet, coder sheet, comparison script, and itemized discrepancies (10 of 14 determinable strong labels confirmed; bucket agreement 17/23, κ = 0.47) |
+| [`corpus/retrieval_depth_pilot.py`](corpus/retrieval_depth_pilot.py) / [`.json`](corpus/retrieval_depth_pilot.json) | Retrieval-depth pilot: six query families cursor-paged to depth 200 yield 1,500 title-gated records absent from the 1,550 (1,406 venue-eligible); the top-20 cap, not the registry, is the binding constraint |
+| [`osf_registration/`](osf_registration) | Retrospective OSF registration package: ready-to-file registration draft of the as-conducted protocol + filing checklist (author action, ~10 min) |
 | [`cover_letter_TTE_v3.md`](cover_letter_TTE_v3.md) | Cover letter for the resubmission (supersedes v2) |
 | [`ML-BMS-Corpus.xlsx`](ML-BMS-Corpus.xlsx) | Human-readable workbook: **Papers** (103, clickable DOI links), **Summary** (corpus counts), **Conference sensitivity** (14, clickable DOI links) |
 | [`corpus/papers.csv`](corpus/papers.csv) | The 103-paper classified corpus (machine-readable; one row per study, 16 fields) |

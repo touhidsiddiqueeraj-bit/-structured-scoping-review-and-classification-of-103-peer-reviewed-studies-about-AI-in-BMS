@@ -1,0 +1,823 @@
+{
+ "10.1002/advs.202402608": {
+  "doi": "10.1002/advs.202402608",
+  "abstract": "Abstract Achieving precise estimates of battery cycle life is a formidable challenge due to the nonlinear nature of battery degradation. This study explores an approach using machine learning (ML) methods to predict the cycle life of lithium\u2010metal\u2010based rechargeable batteries with high mass loading LiNi 0.8 Mn 0.1 Co 0.1 O 2 electrode, which exhibits more complicated and electrochemical profile during battery operating conditions than typically studied LiFePO\u2084/graphite based rechargeable batteries. Extracting diverse features from discharge, charge, and relaxation processes, the intricacies of cell behavior without relying on specific degradation mechanisms are navigated. The best\u2010performing ML model, after feature selection, achieves an R 2 of 0.89, showcasing the application of ML in accurately forecasting cycle life. Feature importance analysis unveils the logarithm of the minimum value of discharge capacity difference between 100 and 10 cycle (Log(|min(\u0394 DQ 100\u201310 (V))|)) as the most important feature. Despite the inherent challenges, this model demonstrates a remarkable 6.6% test error on unseen data, underscoring its robustness and potential for transformative advancements in battery management systems. This study contributes to the successful application of ML in the realm of cycle life prediction for lithium\u2010metal\u2010based rechargeable batteries with practically high energy density design.",
+  "abstract_source": "probe:crossref",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/advs.202402608",
+  "oa_landing": "https://doi.org/10.1002/advs.202402608",
+  "title": "Data\u2010Driven Cycle Life Prediction of Lithium Metal\u2010Based Rechargeable Battery Based on Discharge/Charge Capacity and Relaxation Features",
+  "oa_pdf_alts": [
+   "https://mdr.nims.go.jp/filesets/2b5fec37-e6bd-47d8-a498-aef41b642805/download"
+  ]
+ },
+ "10.1002/anie.202214037": {
+  "doi": "10.1002/anie.202214037",
+  "abstract": "Abstract The development of emerging rechargeable batteries is often hindered by limited chemical understanding composing of entangled patterns in an enormous space. Herein, we propose an interpretable hybrid machine learning framework to untangle intractable degradation chemistries of conversion\u2010type batteries. Rather than being a black box, this framework not only demonstrates an ability to accurately forecast lithium\u2010sulfur batteries (with a test mean absolute error of 8.9 % for the end\u2010of\u2010life prediction) but also generate useful physical understandings that illuminate future battery design and optimization. The framework also enables the discovery of a previously unknown performance indicator, the ratio of electrolyte amount to high\u2010voltage\u2010region capacity at the first discharge, for lithium\u2010sulfur batteries complying practical merits. The present data\u2010driven approach is readily applicable to other energy storage systems due to its versatility and flexibility in modules and inputs.",
+  "abstract_source": "probe:crossref",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Untangling Degradation Chemistries of Lithium\u2010Sulfur Batteries Through Interpretable Hybrid Machine Learning"
+ },
+ "10.1007/s00521-022-07291-5": {
+  "doi": "10.1007/s00521-022-07291-5",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "A physics-informed dynamic deep autoencoder for accurate state-of-health prediction of lithium-ion battery"
+ },
+ "10.1016/j.apenergy.2021.116897": {
+  "doi": "10.1016/j.apenergy.2021.116897",
+  "abstract": "Abstract For accelerating the technology development and facilitating the reliable operation of lithium-ion batteries, accurate prediction for battery cycle life and remaining useful life (RUL) are both critical. However, diverse aging mechanisms, significant device variability and random working conditions have remained challenges. A reasonable description and an effective prediction algorithm are indispensable for achieving accurate prediction results. In this paper, battery terminal voltage, current and temperature curves from several charge cycles and especially their difference between these cycles are first utilized for description of battery cycle life and RUL. Moreover, a hybrid convolutional neural network (CNN), which is based on a fusion of three-dimensional CNN and two-dimensional CNN, is designed for their predictions. The battery charge voltage, current and temperature and their curves are first fused for considering the strong relationships between them. And the features hidden in the curves are extracted and modelled automatically. Furthermore, a feature attention algorithm and a multi-scale cycle attention algorithm are proposed to estimate the relationships between different features and cycles respectively for further heightening the prediction performance. Experiments and comparisons are conducted. The results show that the proposed method is an accurate method for different applications. It achieved 1.1% test error for battery cycle life early prediction of different batteries under different charge policies, and 3.6% for RUL prediction.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "A machine-learning prediction method of lithium-ion battery life based on charge process for different applications"
+ },
+ "10.1016/j.apenergy.2024.123248": {
+  "doi": "10.1016/j.apenergy.2024.123248",
+  "oa_status": "green",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.2139/ssrn.4637705",
+  "title": "Multi-source domain transfer learning with small sample learning for thermal runaway diagnosis of lithium-ion battery",
+  "abstract": "Data-driven thermal runaway diagnosis based on small amounts of thermal runaway data often struggles to produce satisfactory accuracy. However, in actual application scenarios, obtaining real thermal runaway data has a high cost. To this end, we propose a diagnostic method for multi-source domain transfer learning with few-shot learning (MDTL-FSL), which combines the ideas of small sample learning and adversarial learning. Use multiple different but related thermal runaway case data to obtain common diagnostic knowledge to achieve thermal runaway diagnosis. First of all, in order to avoid negative migration of the algorithm model caused by large differences in data distribution between multi-source domains, a data distribution difference measurement method under segmented pressure differences is proposed. This measurement method is simple and effective from multi-source domains. Select the source domain with a small difference in data distribution from the target domain. Secondly, the adversarial learning idea is integrated into multi-source domain transfer learning to learn temporal invariant features. Then, due to the small number of samples in each source domain in the multi-source domain under the thermal runaway scenario, a source domain reorganization mechanism was designed to find the decision boundary based on meta-learning ideas to achieve small-sample learning in the multi-source domain. Finally, we used cells produced by different battery manufacturers to trigger thermal runaway. By comparison and verification with other data-driven algorithms, the results show that the MDTL-FSL model proposed in this article has higher accuracy. At the same time, we use batteries of different types and capacities to trigger thermal runaway under different working conditions. The MDTL-FSL algorithm can issue early warnings before thermal runaway occurs, thereby effectively ensuring the safe operation of the energy storage system.",
+  "abstract_source": "webfetch:colab.ws",
+  "evidence_note": "transfer across manufacturers/cell types/capacities; triggered thermal-runaway experiments"
+ },
+ "10.1016/j.apenergy.2024.123508": {
+  "doi": "10.1016/j.apenergy.2024.123508",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "State of charge estimation of lithium-ion battery based on GA-LSTM and improved IAKF"
+ },
+ "10.1016/j.apenergy.2024.124077": {
+  "doi": "10.1016/j.apenergy.2024.124077",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Refined lithium-ion battery state of health estimation with charging segment adjustment",
+  "abstract": "Accurately monitoring the state of health (SOH) of lithium-ion batteries (LIBs) is crucial for battery management systems (BMS), yet there lack of the possibility to fully use the random charging segments with any length. To this end, a residual convolution and transformer network (R-TNet) is proposed to enable an accurate LIB SOH estimation with the sparse dimension of feature in random segments, where the start and end voltage, the Ampere-hour (Ah) throughput, temperature, and current rate of a charging segment are required for the estimation task. Through the cross-attention mechanism of R-TNet, the operation condition and the position of the partial voltage can be integrated to enable the LIBs SOH estimation within a charging segment. To extend the flexibility with arbitrary charging behaviors, an ElasticNet-based feature transfer strategy is designed to use any charging length. 121 cells with different chemistries and cycling conditions are used to validate the performance of the proposed method. The results of the proposed method show that the root mean square error (RMSE) of SOH estimation can reach 1.6% even for a 50 mV voltage segment.",
+  "abstract_source": "webfetch:colab.ws",
+  "evidence_note": "121 cells with different chemistries and cycling conditions; split not stated in abstract"
+ },
+ "10.1016/j.apenergy.2024.124713": {
+  "doi": "10.1016/j.apenergy.2024.124713",
+  "oa_status": "green",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "http://dx.doi.org/10.2139/ssrn.4915450",
+  "title": "Lithium-ion battery remaining useful life prediction based on interpretable deep learning and network parameter optimization"
+ },
+ "10.1016/j.apenergy.2024.125086": {
+  "doi": "10.1016/j.apenergy.2024.125086",
+  "abstract": "Accurate State of Health (SOH) estimation is crucial for safe, efficient, and optimal operation of lithium-ion batteries (LIBs), yet it remains challenging in real-world applications. In this regard, this paper presents a novel approach to estimating the SOH of lithium-ion batteries using a convolutional neural network (CNN) model enhanced with 3D histogram feature extraction and transfer learning . Unlike traditional models, our method is uniquely capable of handling varying lengths of input time series data with the varying sliding window, making it highly adaptable to real-world scenarios where data may be irregular or incomplete. The integration of transfer learning further enhances the model\u2019s adaptability, allowing it to efficiently generalize across different battery types and operational conditions with minimal retraining. Experimental results demonstrate the model\u2019s accuracy and robustness, with significant improvements over existing methods in terms of estimation accuracy, computational efficiency, and adaptability to new data. This research offers a practical and scalable solution for battery health monitoring, supporting the advancement of reliable and efficient battery management systems .",
+  "abstract_source": "probe:openalex",
+  "oa_status": "hybrid",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.apenergy.2024.125086",
+  "title": "A general framework for lithium-ion battery state of health estimation: From laboratory tests to machine learning with transferability across domains"
+ },
+ "10.1016/j.apenergy.2025.125314": {
+  "doi": "10.1016/j.apenergy.2025.125314",
+  "abstract": "Predicting the remaining useful life (RUL) of fast-charging lithium-ion batteries using early-stage lifecycle data is remains challenging due to limited run-to-failure data and lack of knowledge on battery degradation mechanisms. To address this issue, a generic Physics-Informed Machine Learning (PIML) framework is developed. The PIML framework consists of two parallel branches: a physics-informed (PI) branch and a data-driven branch. The PI branch is a neural network stacked by the linear projection layers with embedded physics knowledge, while the data-driven branch is a task-specific machine-learning model. In addition, a three-step training strategy is introduced, including (1) Training the data-driven branch, (2) Training the PI branch for aligning physical consistency without updating the hyperparameters in the data-driven branch, and (3) Fine-tuning both branches simultaneously to achieve optimal performance. To validate this framework, a physics-based model that represents the growth of solid electrolyte interphase (SEI) and a dilated convolutional neural network are implemented in the PI and data-driven branches, respectively. The solid electrolyte interphase-informed dilated convolutional neural network (SEI-DCN) model is demonstrated on the Stanford\u2013MIT\u2013Toyota-battery dataset. Using only four lifecycle data, the SEI-DCN model achieves very high prediction accuracy compared to standard dilated CNNs and other state-of-the-art models under various testing conditions and lifetime ranges. Moreover, the framework is generalizable to different physics-based battery degradation models. \u2022 Novel dual-branch parallel PIML framework to merge varied knowledge on battery degradation. \u2022 The new learning strategy ensures that PIML is lower bounded by the performance of data-driven models with imprecise knowledge. \u2022 Building SEI-informed DCNN validated on the fast-charging lithium-ion batteries and outperformed the SOTA model. \u2022 SEI-informed DCNN preserves SOTA prediction accuracy on completely new data with different operation conditions and life spans of the training set. \u2022 Investigation of the adaptability of the proposed framework for knowledge replacement across various SEI models.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "hybrid",
+  "is_oa": true,
+  "oa_pdf_url": "https://ut3-toulouseinp.hal.science/hal-05482347v1/document",
+  "oa_landing": "https://doi.org/10.1016/j.apenergy.2025.125314",
+  "title": "A generic physics-informed machine learning framework for battery remaining useful life prediction using small early-stage lifecycle data",
+  "oa_pdf_source": "unpaywall"
+ },
+ "10.1016/j.apenergy.2026.127394": {
+  "doi": "10.1016/j.apenergy.2026.127394",
+  "oa_status": "green",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.2139/ssrn.5346047",
+  "title": "Internal temperature sensing for lithium-ion battery under ultrahigh-rate discharge conditions using physics-informed neural network"
+ },
+ "10.1016/j.applthermaleng.2022.118503": {
+  "doi": "10.1016/j.applthermaleng.2022.118503",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Multi-objective optimization design and experimental investigation for a parallel liquid cooling-based Lithium-ion battery module under fast charging"
+ },
+ "10.1016/j.applthermaleng.2023.120482": {
+  "doi": "10.1016/j.applthermaleng.2023.120482",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Temperature prediction of lithium-ion battery based on artificial neural network model"
+ },
+ "10.1016/j.applthermaleng.2024.123826": {
+  "doi": "10.1016/j.applthermaleng.2024.123826",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Machine learning assisted multi-objective design optimization for battery thermal management system"
+ },
+ "10.1016/j.conengprac.2022.105202": {
+  "doi": "10.1016/j.conengprac.2022.105202",
+  "abstract": "Battery manufacturing plays a direct and pivotal role in determining battery performance, which, in turn, significantly affects the applications of battery-related energy storage systems. As a complicated process that involves chemical, mechanical and electrical operations, effective battery property predictions and reliable analysis of strongly-coupled battery manufacturing parameters or variables become the key but challenging issues for wider battery applications. In this paper, an interpretable machine learning framework that could effectively predict battery product properties and explain dynamic effects, as well as interactions of manufacturing parameters is proposed. Due to the data-driven nature, this framework can be easily adopted by engineers as no specific battery manufacturing mechanism knowledge is required. Reliable battery manufacturing dataset particularly for coating (one key stage) collected from a real battery manufacturing chain is adopted to evaluate the proposed framework. Illustrative results demonstrate that three types of battery capacities including cell capacity, gravimetric capacity, and volumetric capacity can be accurately predicted with R2 over 0.98 at the battery early-manufacturing stage. Besides, information regarding how the variations of coating mass, thickness, and porosity affect these battery capacities is effectively identified, while interactions of these coating parameters can be also quantified. The developed framework makes the data-driven model become more interpretable and opens a promising way to quantify the interactions of battery manufacturing parameters and explain how the variations of these parameters affect final battery properties. This could assist engineers to obtain critical insights to understand the underlying complicated battery material and manufacturing behavior, further benefiting smart control of battery manufacturing.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "hybrid",
+  "is_oa": true,
+  "oa_pdf_url": "https://www.sciencedirect.com/science/article/pii/S0967066122000879/pdf",
+  "oa_landing": "https://doi.org/10.1016/j.conengprac.2022.105202",
+  "title": "Interpretable machine learning for battery capacities prediction and coating parameters analysis"
+ },
+ "10.1016/j.egyai.2022.100188": {
+  "doi": "10.1016/j.egyai.2022.100188",
+  "abstract": "The potential of acoustic signatures to be used for State-of-Charge (SoC) estimation is demonstrated using artificial neural network regression models. This approach represents a streamlined method of processing the entire acoustic waveform instead of performing manual, and often arbitrary, waveform peak selection. For applications where computational economy is prioritised, simple metrics of statistical significance are used to formally identify the most informative waveform features. These alone can be exploited for SoC inference. It is further shown that signal portions representing both early and late interfacial reflections can correlate highly with the SoC and be of predictive value, challenging the more common peak selection methods which focus on the latter. Although later echoes represent greater through-thickness coverage, and are intuitively more information-rich, their presence is not guaranteed. Holistic waveform treatment offers a more robust approach to correlating acoustic signatures to electrochemical states. It is further demonstrated that transformation into the frequency domain can reduce the dimensionality of the problem significantly, while also improving the estimation accuracy. Most importantly, it is shown that acoustic signatures can be used as sole model inputs to produce highly accurate SoC estimates, without any complementary voltage information. This makes the method suitable for applications where redundancy and diversification of SoC estimation approaches is needed. Data is obtained experimentally from a 210 mAh LiCoO2/graphite pouch cell. Mean estimation errors as low as 0.75% are achieved on a SoC scale of 0\u2013100%.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.egyai.2022.100188",
+  "title": "Battery state-of-charge estimation using machine learning analysis of ultrasonic signatures"
+ },
+ "10.1016/j.enconman.2025.120170": {
+  "doi": "10.1016/j.enconman.2025.120170",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Charging strategies optimization for lithium-ion battery: Heterogeneous ensemble surrogate model-assisted advanced multi-objective optimization algorithm"
+ },
+ "10.1016/j.energy.2019.116467": {
+  "doi": "10.1016/j.energy.2019.116467",
+  "abstract": "Abstract The state of health for lithium battery is necessary to ensure the reliability and safety for battery energy storage system. Accurate prediction battery state of health plays an extremely important role in guaranteeing safety and minimizing maintenance costs. However, the complex physicochemical characteristics of battery degradation cannot be obtained directly. Here a novel Gaussian process regression model based on the partial incremental capacity curve is proposed. First, an advanced Gaussian filter method is applied to obtain the smoothing incremental capacity curves. The health indexes are then extracted from the partial incremental capacity curves as the input features of the proposed model. Additionally, the mean and the covariance function of the proposed method are applied to predict battery state of health and the model uncertainty, respectively. Four aging datasets from NASA data repository are employed for demonstrating the predictive capability and efficacy of the degradation model using the proposed method. Besides, different initial health conditions of the tested batteries are used to verify the robustness and reliability of the proposed method. Results show that the proposed method can provide accurate and robust state of health estimation.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "State of health estimation for Li-Ion battery using incremental capacity analysis and Gaussian process regression"
+ },
+ "10.1016/j.energy.2020.117664": {
+  "doi": "10.1016/j.energy.2020.117664",
+  "abstract": "For lithium iron phosphate battery, the ambient temperature and the flat open circuit voltage - state-of-charge (SOC) curve are two of the major issues that influence the accuracy of SOC estimation, which is critical for driving range estimation of electric vehicles and optimal charge control of batteries. To address these problems, this paper proposes a long short-term memory (LSTM) \u2013 recurrent neural network to model the sophisticated battery behaviors under varying temperatures and estimate battery SOC from voltage, current, and temperature variables. An unscented Kalman filter (UKF) is incorporated to filter out the noises and further reduce the estimation errors. The proposed method is evaluated using data collected from the dynamic stress test, federal urban driving schedule, and US06 test. Experimental results show that the proposed method can well learn the influence of ambient temperature and estimate battery SOC under varying temperatures from 0\u00b0C to 50\u00b0C, with root mean square errors less than 1.1% and mean average errors less than 1%. Moreover, the proposed method also provides a satisfying SOC estimation under other temperatures which have no data trained before.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "State-of-charge estimation of lithium-ion batteries using LSTM and UKF"
+ },
+ "10.1016/j.energy.2020.118000": {
+  "doi": "10.1016/j.energy.2020.118000",
+  "abstract": "Abstract Since a battery pack consists of hundreds of cells in series and parallel, inconsistencies between cells make it difficult to create an explicit model to simulate its behaviors effectively. Therefore, the widely used and sophisticated model-based methods (such as Kalman filters) are difficult to apply to SOC (state of charge) estimation of battery packs. In this paper, a data-driven method based on Gaussian process regression (GPR) is proposed to provide a feasible solution. Its superiority includes the ability to approximate nonlinearity accurately, nonparametric modeling, and probabilistic predictions. First, a feature extraction strategy, including data preprocessing, correlation analysis, and principal component analysis, is employed to obtain a compacted input set with a high correlation with SOC. Second, the squared exponential kernel function is used, and the automatic relevance determination is applied to optimize the weights of features. Third, besides the regular GPR model, an autoregressive GPR model is also constructed to further improve estimation accuracy and confidence. The experimental results verify that the autoregressive model has better SOC estimation performance than the regular model, and its estimation error under different dynamic cycles, temperatures, aging conditions, and even extreme conditions is lower than 3.9%, and the confidence interval is also much narrower.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Data-driven state of charge estimation for lithium-ion battery packs based on Gaussian process regression"
+ },
+ "10.1016/j.energy.2020.118866": {
+  "doi": "10.1016/j.energy.2020.118866",
+  "abstract": "Abstract For the safe operation of the electric vehicle, it is critical to quickly detect the safety state and accurately identify the fault degree in battery packs. This article proposes a novel intelligent fault diagnosis method for Lithium-ion batteries based on the support vector machine, which can identify the fault state and degree timely and efficiently. Due to the noise signal\u2019s existence, firstly, the discrete cosine filtering method is adopted, and the truncated frequency is optimized based on the characteristic of white noise to achieve reasonable denoising. Secondly, since the covariance matrix (CM) of filtered data is sensitive to the current fluctuation, a modified covariance matrix (MCM) is proposed to reduce the influence of current variation on the condition indicators. Thirdly, to ensure the accuracy and robustness of Support Vector Machine (SVM), the grid search method is proposed to optimize the kernel function parameter and penalty factor. Finally, the MCM and CM are respectively introduced into the model as the condition indicators, and the results show that the former has high accuracy and timeliness. In summary, the proposed intelligent fault diagnosis method is feasible. It provides the theoretical basis for future fault hierarchical management strategy of the battery system.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "An Intelligent Fault Diagnosis Method for Lithium Battery Systems Based on Grid Search Support Vector Machine"
+ },
+ "10.1016/j.energy.2021.120205": {
+  "doi": "10.1016/j.energy.2021.120205",
+  "abstract": "ABSTRACT Accurately predicting the lifetime of lithium-ion batteries in early cycles is crucial for ensuring the safety and reliability, and accelerating the battery development cycle. However, most of existing studies presented poor prediction results for early prediction, due to the nonlinear battery capacity fade with negligible variation in early cycles. In this paper, to achieve an accurate early-cycle prediction of battery lifetime, a comprehensive machine learning (ML) based framework containing three modules, the feature extraction, feature selection, and machine learning based prediction, is proposed. First, by analysing the evolution pattern of various informative parameters, forty-two features are manually crafted based on the first-100-cycle charge-discharge raw data. Second, to manage feature irrelevancy and redundancy, four typical feature selection methods are adopted to generate an optimal lower-dimensional feature subset. Finally, the selected features are fed into six representative ML models to effectively predict the battery lifetime. Numerical experiments and paired t-test are conducted to statistically evaluate the performance of the proposed framework. Results show that the wrapper-based feature selection method outperforms other methods, and significantly improves the prediction performance of subsequent ML models. Both before and after wrapper feature selection, the elastic net, Gaussian process regression, and support vector machine present better performance than other complex ML prediction models. The support vector machine model combined with wrapper feature selection statistically presents the best result for battery lifetime prediction, with a root-of-mean-square-error of 115 cycles, and a R2 of 0.90. Finally, when compared with an existing work, the root-of-mean-square-error is substantially decreased from 173 to 115 cycles, by using the proposed framework.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Early prediction of battery lifetime via a machine learning based framework"
+ },
+ "10.1016/j.energy.2021.121236": {
+  "doi": "10.1016/j.energy.2021.121236",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "A method for state-of-charge estimation of lithium-ion batteries based on PSO-LSTM"
+ },
+ "10.1016/j.energy.2022.126331": {
+  "doi": "10.1016/j.energy.2022.126331",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "A module-level charging optimization method of lithium-ion battery considering temperature gradient effect of liquid cooling and charging time"
+ },
+ "10.1016/j.energy.2023.126855": {
+  "doi": "10.1016/j.energy.2023.126855",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Lithium-ion battery health estimation with real-world data for electric vehicles",
+  "abstract": "Complex environments and variable working conditions lead to irreversible attenuation of battery pack capacity in electric vehicles (EVs). Online capacity estimation is of great importance for battery pack management and maintenance. This work proposes a state-of-health (SOH) attenuation model considering driving mileage and seasonal temperature for battery health estimation. Firstly, a variable forgetting factor recursive least square (VFFRLS) algorithm is proposed for battery model parameter identification. It adaptively adjusts the forgetting factor according to current fluctuations. Then, an extended Kalman-particle filter (EPF) algorithm is proposed for online capacity estimation. In addition, a battery pack SOH attenuation model is constructed considering seasonal temperature and driving mileage. Finally, the performance of the proposed model and algorithm is verified with nine months of actual vehicle data. The experimental results show that the proposed parameter identification and capacity estimation algorithm can accurately estimate the model parameters and capacity. The average capacity of the battery module decreases with the total mileage. The compensation of monthly driving mileage and ambient temperature factors effectively improves the accuracy of SOH model.",
+  "abstract_source": "webfetch:colab.ws",
+  "evidence_note": "verified with nine months of actual vehicle data"
+ },
+ "10.1016/j.energy.2023.127033": {
+  "doi": "10.1016/j.energy.2023.127033",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Data-driven lithium-ion batteries capacity estimation based on deep transfer learning using partial segment of charging/discharging data",
+  "abstract": "Accurate estimation of lithium-ion battery capacity is crucial for ensuring its safety and reliability. While data-driven modelling is a common approach for capacity estimation, obtaining cycling data during charging/discharging processes can be challenging. Collecting cycling data under various charging/discharging protocols is often unrealistic, and the collected data can be fragmented due to the random nature of working conditions in practice. To address these issues, we propose a deep transfer learning method that uses partial segments of charging/discharging data for battery capacity estimation. The proposed method utilizes capacity increment features of partial charging/discharging segments that is designed to satisfy practical scenarios. A deep transfer convolutional neural network (DTCNN) is trained with both source and target data, and a fine-tuning strategy is employed to effectively eliminate distribution discrepancies between different battery types or charging/discharging protocols, leading the improved estimation accuracy. Experimental results demonstrate that the proposed method accurately estimates the lithium-ion battery capacity, with values of RMSE, MAPE, and MD-MAPE of only 0.0220, 0.0247, and 0.0194, respectively, when using partial segments.",
+  "abstract_source": "webfetch:colab.ws",
+  "evidence_note": "transfer across battery types / charge-discharge protocols; split not stated in abstract"
+ },
+ "10.1016/j.energy.2023.128461": {
+  "doi": "10.1016/j.energy.2023.128461",
+  "abstract": "Estimating the state of charge (SOC) of batteries is fundamental for the proper management and safe operation of numerous systems, including electric vehicles, smart energy grids, and portable electronics. While there is no practical method for direct measurement of SOC, several estimation approaches have been developed, including a growing number of machine-learning-based techniques. Machine learning methods are intrinsically data-driven but can also benefit from a-priori knowledge embedded in a model. In this work, we first demonstrate, through exploratory data analysis, that it is possible to discriminate between different SOC from electrochemical impedance spectroscopy (EIS) measurements. Then we propose a SOC estimation approach based on EIS and an equivalent circuit model to provide a compact way to describe the frequency domain and time-domain behavior of the impedance of a battery. We experimentally validated this approach by applying it to a dataset consisting of EIS measurements performed on four lithium-ion cylindrical cells at different SOC values. The proposed approach allows for very efficient model training and produces a low-dimensional SOC classification model that achieves above 93% accuracy. The resulting low-dimensional classification model is suitable for embedding into battery-powered systems and for online SOC estimation.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "hybrid",
+  "is_oa": true,
+  "oa_pdf_url": "https://qmro.qmul.ac.uk/xmlui/bitstream/123456789/96144/3/Battery%20SOC%20estimation%20from%20EIS%20data%20based%20on%20machine%20learning%20and%20equivalent%20circuit%20model%2c%20published%202023.pdf",
+  "oa_landing": "https://doi.org/10.1016/j.energy.2023.128461",
+  "title": "Battery SOC estimation from EIS data based on machine learning and equivalent circuit model",
+  "oa_pdf_source": "unpaywall"
+ },
+ "10.1016/j.energy.2024.133418": {
+  "doi": "10.1016/j.energy.2024.133418",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "State of health estimation of lithium-ion battery during fast charging process based on BiLSTM-Transformer"
+ },
+ "10.1016/j.energy.2025.136618": {
+  "doi": "10.1016/j.energy.2025.136618",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Real-time prediction of battery remaining useful life using hybrid-fusion deep neural networks"
+ },
+ "10.1016/j.energy.2025.139753": {
+  "doi": "10.1016/j.energy.2025.139753",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Physical informed neural network for SOH estimation of lithium-ion battery with electrochemical mechanism"
+ },
+ "10.1016/j.ensm.2022.05.007": {
+  "doi": "10.1016/j.ensm.2022.05.007",
+  "abstract": "Accurate degradation trajectory and future life are the key information of a new generation of intelligent battery and electrochemical energy storage systems. It is very challenging to obtain accurate predictions against uncertain application conditions by using only a few known historical data. In this article, we extend the widely studied remaining useful life (RUL) prediction to the prediction of charge and discharge capacity trajectories under both fixed and random future operating conditions. This is achieved by developing a general deep learning framework cored by recurrent neural network (RNN) which integrates future current plan and few early capacity-voltage data as inputs. As a case study, we have experimented with 77 commercial batteries cycled under fixed and random operating conditions. We demonstrate that the median root mean square error (RMSE) of prediction can be within 2.4% for NMC/graphite batteries and 2.3% for LFP/graphite batteries by using 3.8% of the whole life data only. Compared with the existing methods, the proposed framework predicts more accurately and has a very balanced performance for both fixed and random future conditions. This work highlights the promise of actively forecasting the future of batteries based on RNN.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Battery degradation prediction against uncertain future conditions with recurrent neural network enabled deep learning"
+ },
+ "10.1016/j.ensm.2022.06.053": {
+  "doi": "10.1016/j.ensm.2022.06.053",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Flexible battery state of health and state of charge estimation using partial charging data and deep learning"
+ },
+ "10.1016/j.ensm.2022.12.034": {
+  "doi": "10.1016/j.ensm.2022.12.034",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Machine learning-based fast charging of lithium-ion battery by perceiving and regulating internal microscopic states"
+ },
+ "10.1016/j.ensm.2023.02.035": {
+  "doi": "10.1016/j.ensm.2023.02.035",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Cloud-based in-situ battery life prediction and classification using machine learning",
+  "abstract": "In-situ battery life prediction and classification can advance lithium-ion battery prognostics and health management. A novel physical features-driven moving-window battery life prognostics method is developed in this paper, which can be used to predict the battery remaining useful life (RUL) and knee-point, and for the first time to classify the battery life in real-time. The relationship between the physical features and battery life is captured by using machine learning. The proposed methodology is validated based on experimental data of more than 100 cell samples. The results show that the method predicts accurate RUL and knee-point, with the root mean squared error and mean absolute percentage error being, respectively, low to 55 cycles and 3.55%. The battery life is also classified accurately based on the data of only one single cycle, with the sorting accuracy up to 91.84%, facilitating fast and efficient sorting/screening of retired batteries in the future.",
+  "abstract_source": "webfetch:colab.ws",
+  "evidence_note": "validated on experimental data of 100+ cell samples; split not stated in abstract"
+ },
+ "10.1016/j.ensm.2026.104983": {
+  "doi": "10.1016/j.ensm.2026.104983",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "HA-LLM: A domain knowledge-enhanced large language model for vehicle-cloud collaborative battery health awareness"
+ },
+ "10.1016/j.est.2022.104901": {
+  "doi": "10.1016/j.est.2022.104901",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Lithium-ion battery capacity and remaining useful life prediction using board learning system and long short-term memory neural network"
+ },
+ "10.1016/j.est.2022.106295": {
+  "doi": "10.1016/j.est.2022.106295",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Accelerated state of health estimation of second life lithium-ion batteries via electrochemical impedance spectroscopy tests and machine learning techniques",
+  "abstract": "Estimating the state of health (SoH) of lithium-ion (Li-ion) batteries is a challenging task due to cross coupling and dependency between ageing mechanisms. An accurate estimation is particularly essential for second-life batteries to facilitate their successful implementation in the new application. By adopting the electrochemical impedance spectroscopy (EIS) test and a machine learning (ML) approach, the accelerated SoH estimation problem is studied here. For this purpose, 325 experiments for 30 Li-ion cells were conducted at various SoH, temperature, and state of charge. First an optimised Gaussian process regression model is developed and validated for SoH estimation. Then the sensitivity of the model is evaluated relative to measurement noise. Finally, the model's robustness is quantified through a case study involving cells that have been characterised with different physical test equipment. The results demonstrate that the model can predict the SoH of Li-ion cells with an error about 1.1 % and is reasonably robust to the various testing conditions of the battery.",
+  "abstract_source": "webfetch:colab.ws",
+  "evidence_note": "robustness via case study on cells characterised with different physical test equipment"
+ },
+ "10.1016/j.est.2023.106931": {
+  "doi": "10.1016/j.est.2023.106931",
+  "oa_status": "hybrid",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.est.2023.106931",
+  "title": "Rethinking lithium-ion battery management: Eliminating routine cell balancing enhances hazardous fault detection"
+ },
+ "10.1016/j.est.2023.107203": {
+  "doi": "10.1016/j.est.2023.107203",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Digital twin-long short-term memory (LSTM) neural network based real-time temperature prediction and degradation model analysis for lithium-ion battery"
+ },
+ "10.1016/j.est.2023.107575": {
+  "doi": "10.1016/j.est.2023.107575",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "A multi-fault diagnosis method for lithium-ion battery pack using curvilinear Manhattan distance evaluation and voltage difference analysis"
+ },
+ "10.1016/j.est.2024.111755": {
+  "doi": "10.1016/j.est.2024.111755",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "A fast balance optimization approach for charging enhancement of lithium-ion battery packs through deep reinforcement learning"
+ },
+ "10.1016/j.est.2024.111877": {
+  "doi": "10.1016/j.est.2024.111877",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Improved deep learning based state of charge estimation of lithium ion battery for electrified transportation"
+ },
+ "10.1016/j.est.2024.112046": {
+  "doi": "10.1016/j.est.2024.112046",
+  "oa_status": "green",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.2139/ssrn.4703050",
+  "title": "Optimization charging method of lithium-ion battery based on multi-objective BBO algorithm"
+ },
+ "10.1016/j.est.2024.113257": {
+  "doi": "10.1016/j.est.2024.113257",
+  "abstract": "Equivalent Circuit Models (ECMs) are widely used in Battery Management Systems (BMSs) for their computational efficiency, yet they often lack precision in predicting battery internal states. In contrast, Physics-Based Models (PBMs) offer detailed insights into battery behavior but are computationally intensive. The advent of cloud computing provides a promising solution to improve battery state estimation by means of a PBM-based battery digital twin. However, tracking the variation of PBM parameters during battery life is a non-trivial problem. This work proposes an approach based on a neural network, which leverages the existing BMS capability to estimate ECM parameters online by correlating them to critical electrochemical parameters of a Pseudo-Two-Dimensional PBM. The neural network is trained and validated on a synthetic dataset generated using a Pseudo-Two-Dimensional PBM to explore various degrees of battery degradation. The achieved error on electrolyte transport properties estimation is below 1 % for 99.9 % of the tested cases. Errors on electrode solid phase diffusivity are below 1 % for 94.1 % and 97.4 % of cases for negative and positive electrodes, respectively. Similarly, errors below 5 % are achieved for 93.4 % of cases in negative electrode intercalation kinetics and 90.5 % in positive electrode intercalation kinetics. Therefore, this methodology represents a practical solution to leverage Equivalent Circuit Models and Physics-Based Models synergistically, thereby enhancing battery state estimation capabilities using cloud computing approaches.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "hybrid",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.est.2024.113257",
+  "title": "Estimation of lithium-ion battery electrochemical properties from equivalent circuit model parameters using machine learning"
+ },
+ "10.1016/j.est.2024.113502": {
+  "doi": "10.1016/j.est.2024.113502",
+  "abstract": "Data-driven methods have gained extensive attention in estimating the state of health (SOH) of lithium-ion batteries. Accurate SOH estimation requires degradation-relevant features and alignment of statistical distributions between training and testing datasets. However, current research often overlooks these needs and relies on arbitrary voltage segment selection. To address these challenges, this paper introduces an innovative approach leveraging spatio-temporal degradation dynamics via graph convolutional networks (GCNs). Our method systematically selects discharge voltage segments using the Matrix Profile anomaly detection algorithm, eliminating the need for manual selection and preventing information loss. These selected segments form a fundamental structure integrated into the GCN-based SOH estimation model, capturing inter-cycle dynamics and mitigating statistical distribution incongruities between offline training and online testing data. Validation with a widely accepted open-source dataset demonstrates that our method achieves precise SOH estimation, with a root mean squared error of less than 1%.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "green",
+  "is_oa": true,
+  "oa_pdf_url": "https://arxiv.org/pdf/2409.00141",
+  "oa_landing": "http://arxiv.org/abs/2409.00141",
+  "title": "Graph neural network-based lithium-ion battery state of health estimation using partial discharging curve"
+ },
+ "10.1016/j.est.2024.114281": {
+  "doi": "10.1016/j.est.2024.114281",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "State of charge estimation of lithium ion battery for electric vehicle using cutting edge machine learning algorithms: A review"
+ },
+ "10.1016/j.est.2025.118415": {
+  "doi": "10.1016/j.est.2025.118415",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Remaining useful life prediction for lithium-ion battery based on hybrid machine learning with Wiener process"
+ },
+ "10.1016/j.est.2026.123023": {
+  "doi": "10.1016/j.est.2026.123023",
+  "abstract": "Accurate battery State-of-Power (SOP) estimation is essential for ensuring the safety, reliability, and performance of lithium-ion battery-powered systems. Traditional estimation approaches based on lookup tables or equivalent circuit models (ECMs) face challenges under dynamic conditions, while electrochemical models (EMs) offer insight into underlying chemical processes but are computationally intensive and tricky to parameterize. This work proposes a novel SOP estimation framework that combines a long short-term memory (LSTM) neural network with a numerical binary search algorithm. The LSTM-based battery model is trained using multi-temperature drive cycle data and optimized through cross-validation to achieve low voltage prediction error. The binary search algorithm utilizes the LSTM model to apply power pulses iteratively, estimating the maximum power that can be delivered without violating voltage and current constraints. The proposed method is extensively validated across a wide range of temperatures, state-of-charge (SOC) levels, and power durations, demonstrating at least a 3x improvement in accuracy and robustness compared to ECM and EM approaches. Finally, real-time deployment of the algorithm on a Jetson Nano platform confirms its computational efficiency and practical viability via hardware-in-the-loop (HIL) testing. The results position this framework as a strong candidate for next-generation battery management systems (BMS) in electric vehicles and other applications.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "hybrid",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.est.2026.123023",
+  "title": "Battery state-of-power estimation: A machine learning battery model with numerical searching approach"
+ },
+ "10.1016/j.eswa.2023.120444": {
+  "doi": "10.1016/j.eswa.2023.120444",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Digital twin for electric vehicle battery management with incremental learning"
+ },
+ "10.1016/j.etran.2024.100337": {
+  "doi": "10.1016/j.etran.2024.100337",
+  "oa_status": "bronze",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.etran.2024.100337",
+  "title": "Prediction of thermal runaway for a lithium-ion battery through multiphysics-informed DeepONet with virtual data"
+ },
+ "10.1016/j.etran.2025.100418": {
+  "doi": "10.1016/j.etran.2025.100418",
+  "oa_status": "green",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://research.rug.nl/en/publications/72337271-05e8-4113-93ec-5aa5312c7ac9",
+  "title": "A multi-scenario data-driven approach for anomaly detection in electric vehicle battery systems"
+ },
+ "10.1016/j.geits.2024.100169": {
+  "doi": "10.1016/j.geits.2024.100169",
+  "abstract": "The estimation of State of Health (SOH) for battery packs used in Electric Vehicles (EVs) is a complex task with significant importance, accompanied by several challenges. This study introduces a data-fusion model approach to estimate the SOH of battery packs. The approach utilizes dual Gaussian Process Regressions (GPRs) to construct a data-driven and non-parametric aging model based on charging-based Aging Features (AFs). To enhance the accuracy of the aging model, a noise model is established to replace the random noise. Subsequently, the state-space representation of the aging model is incorporated. Additionally, the Particle Filter (PF) is introduced to track the unknown state in the aging model, thereby developing the data-fusion-model for SOH estimation. The performance of the proposed method is validated through aging experiments conducted on battery packs. The simulation results demonstrate that the data-fusion model approach achieves accurate SOH estimation, with maximum errors less than 1.5%. Compared to conventional techniques such as GPR and Support Vector Regression (SVR), the proposed method exhibits higher estimation accuracy and robustness.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": "https://pure.coventry.ac.uk/ws/files/102862323/Ruan2024VoR.pdf",
+  "oa_landing": "https://doi.org/10.1016/j.geits.2024.100169",
+  "title": "A data-fusion-model method for state of health estimation of Li-ion battery packs based on partial charging curve",
+  "oa_pdf_source": "unpaywall"
+ },
+ "10.1016/j.heliyon.2024.e35183": {
+  "doi": "10.1016/j.heliyon.2024.e35183",
+  "abstract": "The battery's performance heavily influences the safety, dependability, and operational efficiency of electric vehicles (EVs). This paper introduces an innovative hybrid deep learning architecture that dramatically enhances the estimation of the state of charge (SoC) of lithium-ion (Li-ion) batteries, crucial for efficient EV operation. Our model uniquely integrates a convolutional neural network (CNN) with bidirectional long short-term memory (Bi-LSTM), optimized through evolutionary intelligence, enabling an advanced level of precision in SoC estimation. A novel aspect of this work is the application of the Group Learning Algorithm (GLA) to tune the hyperparameters of the CNN-Bi-LSTM network meticulously. This approach not only refines the model's accuracy but also significantly enhances its efficiency by optimizing each parameter to best capture and integrate both spatial and temporal information from the battery data. This is in stark contrast to conventional models that typically focus on either spatial or temporal data, but not both effectively. The model's robustness is further demonstrated through its training across six diverse datasets that represent a range of EV discharge profiles, including the Highway Fuel Economy Test (HWFET), the US06 test, the Beijing Dynamic Stress Test (BJDST), the dynamic stress test (DST), the federal urban driving schedule (FUDS), and the urban development driving schedule (UDDS). These tests are crucial for ensuring that the model can perform under various real-world conditions. Experimentally, our hybrid model not only surpasses the performance of existing LSTM and CNN frameworks in tracking SoC estimation but also achieves an impressively quick convergence to true SoC values, maintaining an average root mean square error (RMSE) of less than 1 %. Furthermore, the experimental outcomes suggest that this new deep learning methodology outstrips conventional approaches in both convergence speed and estimation accuracy, thus promising to significantly enhance battery life and overall EV efficiency.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.heliyon.2024.e35183",
+  "title": "Efficient state of charge estimation of lithium-ion batteries in electric vehicles using evolutionary intelligence-assisted GLA\u2013CNN\u2013Bi-LSTM deep learning model"
+ },
+ "10.1016/j.isci.2025.112235": {
+  "doi": "10.1016/j.isci.2025.112235",
+  "abstract": ") of 0.97. By integrating local and global analysis, this approach significantly enhances battery aging detection under fast-charging conditions, demonstrating strong potential for battery health management systems.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.isci.2025.112235",
+  "title": "Battery state of health estimation under fast charging via deep transfer learning"
+ },
+ "10.1016/j.jclepro.2021.128265": {
+  "doi": "10.1016/j.jclepro.2021.128265",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Early prediction of remaining useful life for Lithium-ion batteries based on a hybrid machine learning method"
+ },
+ "10.1016/j.jechem.2022.11.036": {
+  "doi": "10.1016/j.jechem.2022.11.036",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Physics-informed neural network approach for heat generation rate estimation of lithium-ion battery under various driving conditions"
+ },
+ "10.1016/j.jechem.2025.04.025": {
+  "doi": "10.1016/j.jechem.2025.04.025",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Deep learning-driven detection of lithium-plating-type defects for battery manufacturing via formation and capacity grading data"
+ },
+ "10.1016/j.jechem.2025.08.093": {
+  "doi": "10.1016/j.jechem.2025.08.093",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "A generalizable physics-informed neural network for lithium-ion battery SOH estimation utilizing partial charging segments"
+ },
+ "10.1016/j.jpowsour.2019.227281": {
+  "doi": "10.1016/j.jpowsour.2019.227281",
+  "abstract": "Abstract Accurate state of health estimation and end of life prediction is critical for safe and reliable operation of lithium-ion batteries. This paper proposes a deep Gaussian process algorithm for lithium-ion battery health monitoring. The proposed algorithm uses Gaussian processes to model mapping between the layers, and matrix-variate Gaussian distribution to model correlation between nodes of a given layer. Deep architecture of the proposed algorithm enables capacity estimation using the partial charge-discharge time-series data, in the form of voltage, temperature and current, eliminating need for input feature extraction. The algorithm also estimates statistical correlation between capacity and the elapsed time from the first cycle, which enables end of life prediction. Hidden layer output of the proposed algorithm correlates strongly with the battery internal states, enabling on-board diagnosis of battery degradation mechanisms. The paper demonstrates effectiveness of the proposed algorithm using aging dataset of batteries cycled at different C-rates, temperatures and usage profiles. The proposed algorithm predicts capacity and end of life with coefficient of determinant greater than 0.9 and mean absolute error less than 0.1, demonstrating high prediction accuracy of the proposed approach.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Deep Gaussian process regression for lithium-ion battery health prognosis and degradation mode diagnosis"
+ },
+ "10.1016/j.jpowsour.2020.229108": {
+  "doi": "10.1016/j.jpowsour.2020.229108",
+  "abstract": "Abstract State-of-charge (SOC) estimation in a lithium-ion battery (LIB) is a crucial task of the battery management system (BMS) in battery electric vehicle (BEV) applications. In this work, we propose a modeling framework for SOC estimation using different machine learning (ML) methods, i.e. support vector regressor (SVR), artificial neural network (ANN), and long-short term memory (LSTM) network. The necessary training data have been developed using Matlab/Simulink automotive simulations of BEV, integrated with an electrochemical Comsol Multiphysics model of LIBs. The developed multi-physics model of BEV and LIBs operation allows to investigate the effect of driving conditions on the electrochemical and degradation (i.e., the solid electrolyte interphase \u2013 SEI \u2013 formation and decomposition) processes occurring inside batteries of different chemistries adopted in the Tesla S and Nissan Leaf BEVs. Our study remarks also the importance of taking into account the different components of BEV in the development of informative datasets, which are required for the implementation of learning algorithms for SOC evaluation. Thus, the proposed work establishes a basis for the generation of realistic training data based on simulations of BEV and LIBs dynamic response, which allows a more precise SOC estimation based on data-driven approaches.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "bronze",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.jpowsour.2020.229108",
+  "title": "Data driven estimation of electric vehicle battery state-of-charge informed by automotive simulations and multi-physics modeling"
+ },
+ "10.1016/j.jpowsour.2021.229727": {
+  "doi": "10.1016/j.jpowsour.2021.229727",
+  "abstract": "Abstract In this paper, the coupling system of liquid-cooled battery thermal management system (BTMS) and heat pump air conditioning system (HPACS) for battery electric vehicles (BEV) is designed and analyzed. The performances of liquid-cooled BTMS are concerned and analyzed from the perspective of air conditioning based experimental data. Besides, an automatic calibration model of the liquid-cooled BTMS based HPACS is established to predict cooling capacity and system coefficient of performance (COP) of the BTMS by support vector regression (SVR). To better obtain three hyper parameters (the penalty coefficient C , the RBF kernel function parameter \u03b3 , and the insensitive loss coefficient e ) of SVR model, particle swarm optimization (PSO) algorithm is introduced to optimize above three parameters. It is found that compared to SVR model, the correlation coefficient (R) of cooling capacity and system COP for the proposed PSO-SVR model in this paper is improved 2.1% and 2.8% respectively, the mean squared error (MSE) of and cooling capacity and system COP is reduced 87.8% and 82.9% respectively, which indicated that PSO-SVR model can be used as a new method to fit the complex nonlinear relationship among the system COP, cooling capacity and other influencing factors of the liquid-cooled BTMS based HPACS.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Performance analysis on liquid-cooled battery thermal management for electric vehicles based on machine learning"
+ },
+ "10.1016/j.jpowsour.2024.235015": {
+  "doi": "10.1016/j.jpowsour.2024.235015",
+  "oa_status": "bronze",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.jpowsour.2024.235015",
+  "title": "Advancing battery safety: Integrating multiphysics and machine learning for thermal runaway prediction in lithium-ion battery module"
+ },
+ "10.1016/j.jpowsour.2024.235609": {
+  "doi": "10.1016/j.jpowsour.2024.235609",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Novel state of charge estimation method of containerized Lithium\u2013Ion battery energy storage system based on deep learning"
+ },
+ "10.1016/j.jpowsour.2025.236784": {
+  "doi": "10.1016/j.jpowsour.2025.236784",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Battery health features extraction and state of health estimation based on real-time online vehicle driving data"
+ },
+ "10.1016/j.measurement.2025.118985": {
+  "doi": "10.1016/j.measurement.2025.118985",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Lithium-ion battery state estimation based on adaptive physics-informed neural network of electrochemical model"
+ },
+ "10.1016/j.renene.2019.08.077": {
+  "doi": "10.1016/j.renene.2019.08.077",
+  "abstract": "Abstract This paper proposes an adaptive multistage constant current\u2013constant voltage (MCCCV) strategy for charging electric vehicles in different situations. First, a high-fidelity thermoelectric-aging coupling model based on a resistor\u2013capacitor pair electrical model, a thermal network model, and a semiempirical aging model is constructed. Second, an adaptive MCCCV charging strategy involving optimization of the charging current using particle swarm optimization is developed. It can satisfy the preference of users for reducing the charging time or the battery degradation. Finally, three charging strategies based on the Pareto boundary curve of the battery charging time\u2013state of health are developed: a fast-charging strategy for motorway driving, a minimum-aging charging strategy for family use, and a balanced charging strategy for daily use. Additionally, according to the Pareto boundary, the effects of key factors on the optimization of the charging strategy are analyzed and compared. The results show that the balanced charging strategy is 3.60% better than the 0.5C constant current\u2013constant voltage (CCCV) charging strategy recommended by the battery manufacturer with regard to aging loss. Moreover, the charging time is reduced by 37%. Compared with the traditional CCCV charging strategy, the proposed adaptive MCCCV charging strategy has good application prospects with regard to both the charging time and the battery degradation.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Optimized charging of lithium-ion battery for electric vehicles: Adaptive multistage constant current\u2013constant voltage charging strategy"
+ },
+ "10.1016/j.ress.2022.108947": {
+  "doi": "10.1016/j.ress.2022.108947",
+  "oa_status": "bronze",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.ress.2022.108947",
+  "title": "Prediction of state of health and remaining useful life of lithium-ion battery using graph convolutional network with dual attention mechanisms"
+ },
+ "10.1016/j.ress.2022.109046": {
+  "doi": "10.1016/j.ress.2022.109046",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Explainability-driven model improvement for SOH estimation of lithium-ion battery"
+ },
+ "10.1016/j.ress.2025.111392": {
+  "doi": "10.1016/j.ress.2025.111392",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Remaining useful life prediction of lithium battery based on deep reinforcement learning fusion network"
+ },
+ "10.1016/j.ress.2026.112416": {
+  "doi": "10.1016/j.ress.2026.112416",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Domain-specific large language model-driven risk analysis of battery energy storage systems"
+ },
+ "10.1016/j.ymssp.2022.109347": {
+  "doi": "10.1016/j.ymssp.2022.109347",
+  "abstract": ",",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "bronze",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1016/j.ymssp.2022.109347",
+  "title": "Battery health management using physics-informed machine learning: Online degradation modeling and remaining useful life prediction"
+ },
+ "10.1038/s41467-020-15235-7": {
+  "doi": "10.1038/s41467-020-15235-7",
+  "abstract": "Abstract Forecasting the state of health and remaining useful life of Li-ion batteries is an unsolved challenge that limits technologies such as consumer electronics and electric vehicles. Here, we build an accurate battery forecasting system by combining electrochemical impedance spectroscopy (EIS)\u2014a real-time, non-invasive and information-rich measurement that is hitherto underused in battery diagnosis\u2014with Gaussian process machine learning. Over 20,000 EIS spectra of commercial Li-ion batteries are collected at different states of health, states of charge and temperatures\u2014the largest dataset to our knowledge of its kind. Our Gaussian process model takes the entire spectrum as input, without further feature engineering, and automatically determines which spectral features predict degradation. Our model accurately predicts the remaining useful life, even without complete knowledge of past operating conditions of the battery. Our results demonstrate the value of EIS signals in battery management systems.",
+  "abstract_source": "probe:crossref",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": "https://www.nature.com/articles/s41467-020-15235-7.pdf",
+  "oa_landing": "https://doi.org/10.1038/s41467-020-15235-7",
+  "title": "Identifying degradation patterns of lithium ion batteries from impedance spectroscopy using machine learning",
+  "oa_pdf_alts": [
+   "https://www.repository.cam.ac.uk/bitstreams/aaec5195-c713-496e-bb5c-784a64f130ed/download"
+  ]
+ },
+ "10.1038/s41467-023-38458-w": {
+  "doi": "10.1038/s41467-023-38458-w",
+  "abstract": "Abstract State of health is a critical state which evaluates the degradation level of batteries. However, it cannot be measured directly but requires estimation. While accurate state of health estimation has progressed markedly, the time- and resource-consuming degradation experiments to generate target battery labels hinder the development of state of health estimation methods. In this article, we design a deep-learning framework to enable the estimation of battery state of health in the absence of target battery labels. This framework integrates a swarm of deep neural networks equipped with domain adaptation to produce accurate estimation. We employ 65 commercial batteries from 5 different manufacturers to generate 71,588 samples for cross-validation. The validation results indicate that the proposed framework can ensure absolute errors of less than 3% for 89.4% of samples (less than 5% for 98.9% of samples), with a maximum absolute error of less than 8.87% in the absence of target labels. This work emphasizes the power of deep learning in precluding degradation experiments and highlights the promise of rapid development of battery management algorithms for new-generation batteries using only previous experimental data.",
+  "abstract_source": "probe:crossref",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": "https://www.nature.com/articles/s41467-023-38458-w.pdf",
+  "oa_landing": "https://doi.org/10.1038/s41467-023-38458-w",
+  "title": "Deep learning to estimate lithium-ion battery state of health without additional degradation experiments",
+  "oa_pdf_alts": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC10183024/pdf/41467_2023_Article_38458.pdf"
+  ]
+ },
+ "10.1038/s41560-019-0356-8": {
+  "doi": "10.1038/s41560-019-0356-8",
+  "oa_status": "green",
+  "is_oa": true,
+  "oa_pdf_url": "https://www.osti.gov/servlets/purl/1526566",
+  "oa_landing": "https://www.osti.gov/biblio/1526566",
+  "title": "Data-driven prediction of battery cycle life before capacity degradation"
+ },
+ "10.1038/s41586-020-1994-5": {
+  "doi": "10.1038/s41586-020-1994-5",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Closed-loop optimization of fast-charging protocols for batteries with machine learning"
+ },
+ "10.1038/s41598-025-30602-4": {
+  "doi": "10.1038/s41598-025-30602-4",
+  "abstract": "Abstract Although Data-driven methods are becoming widely applied for estimating the state of health (SOH) of lithium-ion batteries, they often suffer from a lack of interpretability and generalization capabilities. To address these limitations, this research proposes a hybrid methodology that combines Long Short-Term Memory (LSTM) networks and Reinforcement Learning (RL) using Proximal Policy Optimization (PPO) to enhance both SOH prediction accuracy and model interpretability. The proposed methodology begins by training an LSTM model on key battery features for two different operational profiles, thereby capturing the temporal dependencies present in battery degradation. To improve interpretability and adaptive learning, a hybrid model is then introduced, where a PPO agent corrects the LSTM predictions based on a reward function designed to account for physical and monotonic degradation constraints of the SOH. Additionally, two models are trained separately for comparison: a pure RL-based model and an LSTM-based model, which enables comparison between data-driven and control-driven learning. The models are initially trained and validated on the NASA battery dataset and further evaluated on a separate real-world dataset of CALCE CS2 battery cells to assess robustness. Experimental results demonstrated that the hybrid model significantly enhances the robustness and accuracy of SOH prediction, outperforming both standalone LSTM and RL models. Statistical metrics, such as Mean Absolute Error (MAE) and Root Mean Square Error (RMSE), were reduced while $${R}^{2}$$ score has increased significantly. At the same time, interpretable results are improved through an RL feedback mechanism grounded in physical behavior.",
+  "abstract_source": "probe:crossref",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": "https://www.nature.com/articles/s41598-025-30602-4.pdf",
+  "oa_landing": "https://doi.org/10.1038/s41598-025-30602-4",
+  "title": "Physics-informed hybrid reinforcement learning for estimating lithium-ion battery state of health"
+ },
+ "10.1038/s41598-025-92262-8": {
+  "doi": "10.1038/s41598-025-92262-8",
+  "abstract": "Lithium-ion batteries are widely used in many fields, and accurate prediction of their remaining useful life (RUL) was crucial for effective battery management and safety assurance. In order to solve the problem of reduced RUL prediction accuracy caused by the local capacity regeneration phenomenon during battery capacity degradation, this paper proposed a novel RUL prediction method, which combined complete ensemble empirical mode decomposition with adaptive noise (CEEMDAN) technique with an innovative hybrid prediction strategy that integrated the support vector regression (SVR) and the long short-term memory (LSTM) networks. First, CEEMDAN was used to decompose the battery capacity data into high-frequency and low-frequency components, thereby reducing the impact of capacity regeneration. Subsequently, the SVR model predicted the low-frequency component that characterized the main degradation trend, and the high-frequency component that contained capacity regeneration features was predicted using an LSTM network optimized by the sparrow search algorithm (SSA). Finally, the final RUL prediction was obtained by combining the predictions of the two models. Experimental results on NASA public datasets showed that the proposed hybrid method significantly outperformed existing methods: the RMSE of the methods proposed in this paper were all less than 0.0086 Ah, the MAE were all less than 0.0060 Ah, the R 2 values were all higher than 0.96, and the RUL prediction errors were controlled within one cycle. This method gave full play to the complementary advantages of SVR and LSTM and provided an accurate and reliable solution for RUL prediction of lithium-ion batteries.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": null,
+  "oa_landing": "https://doi.org/10.1038/s41598-025-92262-8",
+  "title": "A hybrid approach for lithium-ion battery remaining useful life prediction using signal decomposition and machine learning"
+ },
+ "10.1038/s42256-021-00312-3": {
+  "doi": "10.1038/s42256-021-00312-3",
+  "abstract": "Lithium-ion batteries are ubiquitous in applications ranging from portable electronics to electric vehicles. Irrespective of the application, reliable real-time estimation of battery state of health (SOH) by on-board computers is crucial to the safe operation of the battery, ultimately safeguarding asset integrity. In this Article, we design and evaluate a machine learning pipeline for estimation of battery capacity fade\u2014a metric of battery health\u2014on 179 cells cycled under various conditions. The pipeline estimates battery SOH with an associated confidence interval by using two parametric and two non-parametric algorithms. Using segments of charge voltage and current curves, the pipeline engineers 30 features, performs automatic feature selection and calibrates the algorithms. When deployed on cells operated under the fast-charging protocol, the best model achieves a root-mean-squared error of 0.45%. This work provides insights into the design of scalable data-driven models for battery SOH estimation, emphasizing the value of confidence bounds around the prediction. The pipeline methodology combines experimental data with machine learning modelling and could be applied to other critical components that require real-time estimation of SOH. Rechargeable lithium-ion batteries play a crucial role in many modern-day applications, including portable electronics and electric vehicles, but they degrade over time. To ensure safe operation, a battery\u2019s \u2018state of health\u2019 should be monitored in real time, and this machine learning pipeline, tested on a variety of charging conditions, can provide such an online estimation of battery state of health.",
+  "abstract_source": "probe:semanticscholar",
+  "oa_status": "green",
+  "is_oa": true,
+  "oa_pdf_url": "http://eprints.gla.ac.uk/267970/1/267970.pdf",
+  "oa_landing": "http://eprints.gla.ac.uk/267970/1/267970.pdf",
+  "title": "Machine learning pipeline for battery state-of-health estimation",
+  "oa_pdf_alts": [
+   "https://ir.cwi.nl/pub/30741/30741.pdf"
+  ]
+ },
+ "10.1039/d2dd00067a": {
+  "doi": "10.1039/d2dd00067a",
+  "abstract": "Enhancing lifetime is a vital aspect in battery design and development. Lifetime evaluation requires prolonged cycling experiments. Early prediction of battery cell ageing can accelerate the development timeline as well as optimal charging schedule planning, and battery cell and pack production towards an extended lifetime. We demonstrate that an autoregressive model can be trained with limited data for early prediction capacity. Our approach robustly models the capacity degradation over the entire lifetime and outperforms previous approaches in accuracy for EOL (end of life) prediction. Our model captures the uncertainty in the prediction, allowing appropriate and reliable deployment. Explainability analysis of the proposed deep model provides cognizance of the interplay between multiple cell degradation mechanisms. Finally, we show that the model aligns with existing chemical insights into the rationale for early EOL despite not being trained for this or having received prior chemical knowledge.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "diamond",
+  "is_oa": true,
+  "oa_pdf_url": "https://pubs.rsc.org/en/content/articlepdf/2023/dd/d2dd00067a",
+  "oa_landing": "https://doi.org/10.1039/d2dd00067a",
+  "title": "Uncertainty-aware and explainable machine learning for early prediction of battery degradation trajectory",
+  "oa_pdf_alts": [
+   "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/61bc78f502c21411c728eea7/original/uncertainty-aware-and-explainable-machine-learning-for-early-prediction-of-battery-degradation.pdf",
+   "https://curis.ku.dk/ws/files/365812974/d2dd00067a.pdf"
+  ]
+ },
+ "10.1109/access.2021.3068776": {
+  "doi": "10.1109/access.2021.3068776",
+  "abstract": "Lithium-Ion battery packs are an essential component for electric vehicles (EVs). These packs are configured from hundreds of series and parallel connected cells to provide the necessary power and energy for the vehicle. An accurate, adaptable battery management system (BMS) is essential to monitor and control such a large number of cells. Series and parallel connected cells also experience different production and operational conditions, which makes it challenging for the BMS to ensure the safe operation of each individual cell. The main functions of the BMS include battery state estimation, cell balancing, thermal management, and fault diagnosis. Robust estimation of the state of charge (SOC) is crucial for providing the driver with an accurate indication of the remaining range. This paper presents the state of art of battery pack SOC estimation methods along with the impact of cell inconsistency on pack performance and SOC estimation. Cell balancing methods, which are necessary due to cell inconsistencies, are discussed as well. Four categories of pack SOC estimation methods are presented, including individual cell, lumped cell, reference cell, and mean cell and difference estimation methods. The SOC estimation methods are compared in terms of algorithm type, computational load, and engineering effort to help practitioners decide which method best fits their application.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/9312710/09386065.pdf",
+  "oa_landing": "https://doi.org/10.1109/access.2021.3068776",
+  "title": "Lithium-Ion Battery Pack Robust State of Charge Estimation, Cell Inconsistency, and Balancing: Review"
+ },
+ "10.1109/jrfid.2022.3211841": {
+  "doi": "10.1109/jrfid.2022.3211841",
+  "abstract": "As a typical machine learning algorithm, neural networks (NNs) has been designed and developed for battery management system (BMS) with artificial intelligence. State of charge (SOC) estimation of lithium-ion battery (LIB) is the basis of BMS so as to widely employ NNs, and recurrent neural network (RNN) is usually selected to describe the time-series characteristics of LIB. However, RNN is a data-driven statistic black box, which cannot reveal electrochemical principle and learn inner Knowledge of LIB. This paper introduces fractionalorder gradients for RNN to improve its backpropagation process, so that network updates weights instructed by the fractionalorder characteristics of LIB. Our work provides two backpropagation patterns with fractional-order gradient descent and momentum for RNN, respectively, both resulting in a physicsinformed RNN for SOC estimation of LIB. The proposed physicsinformed RNN can conduct training in which the gradients and the loss of network is informed by the physical fractional-order laws of LIB. Experimental results under operation conditions of federal urban driving schedule (FUDS) are presented with satisfying SOC estimation accuracy. Furtherly, physics-informed RNN proposed in this paper is not limited to SOC estimation, but also other state estimation or even fault prognosis for LIB.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Physics-Informed Recurrent Neural Network With Fractional-Order Gradients for State-of-Charge Estimation of Lithium-Ion Battery"
+ },
+ "10.1109/tpel.2021.3117788": {
+  "doi": "10.1109/tpel.2021.3117788",
+  "abstract": "Lithium-ion batteries are the main energy source of devices, and the estimation of their state-of-health (SOH) has become a hot point in prognostics and health management. However, many existing methods assume that training and testing data follow the same distribution. The model based on dataset under one working condition may be ineffective for the dataset under another working condition due to the distribution discrepancy. Thus, this article proposes a novel battery health prognostic model based on transfer learning. First, a novel transfer learning-based prognostic model, called deep domain adversarial network, is developed for SOH estimation of Lithium-ion batteries. Second, an unsupervised feature alignment metric is proposed, where maximum mean discrepancy and correlation alignment are considered simultaneously. Moreover, a generative adversarial learning is developed to guide the feature generator to provide the domain-invariant features. Finally, a novel feature generator, called dense bidirectional gated recurrent unit, is proposed to extract discriminate features from sensor signals. The effectiveness of DDAN for SOH estimation is verified on a battery dataset. The experimental results indicate that DDAN can effectively predict SOH of Lithium-ion battery, and significantly improve the performance of feature learning and knowledge transferring.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "State-of-Health Estimation for Lithium-Ion Batteries Using Domain Adversarial Transfer Learning"
+ },
+ "10.1109/tpel.2021.3134701": {
+  "doi": "10.1109/tpel.2021.3134701",
+  "abstract": "The rapid development of battery technology has promoted the deployment of electric vehicles (EVs). To ensure the healthy and sustainable development of EVs, it is urgent to solve the problems of battery safety monitoring, residual value assessment, and predictive maintenance, which heavily depends on the accurate state-of-health (SOH) estimation of batteries. However, many published methods are unsuitable for actual vehicle conditions. To this end, a data-driven method based on the random partial charging process and sparse Gaussian process regression (GPR) is proposed in this article. First, the random capacity increment sequences (\u25b3Q) at different voltage segments are extracted from the partial charging process. The average value and standard deviation of\u25b3Qare used as features to indicate battery health. Second, correlation analysis is conducted for three types of batteries, and high correlations between the features and battery SOH are verified at different temperatures and discharging current rates. Third, by using the proposed features as inputs, sparse GPR models are constructed to estimate the SOH. Compared with other data-driven methods, the sparse GPR has the highest estimation accuracy, and its average maximum absolute errors are only 2.88%, 2.52%, and 1.51% for three different types of batteries, respectively.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Data-Driven Battery State of Health Estimation Based on Random Partial Charging Data"
+ },
+ "10.1109/tte.2020.3028784": {
+  "doi": "10.1109/tte.2020.3028784",
+  "abstract": "Accurate state-of-health estimation can give valuable guidelines for improving the reliability and safety of energy storage system. In this article, a novel battery degradation tracking method is proposed through the fusion of significant health features with Gaussian process regression (GPR). First, an advanced filter method is used to smooth differential thermal voltammetry (DTV) curves. Thereafter, considering the relationship between battery degradation and DTV curves, some health factors are extracted from DTV curves. In this article, these health factors involve different dimensions of the DTV curve, including peak position, peak, and valley values. Third, a correlation analysis method is employed to select four high-quality features from health factors, which are fed into GPR to learn and establish a battery degradation model. Finally, the estimation accuracy, robustness, and reliability of the proposed model are verified using four batteries with different aging test conditions and health levels. The results demonstrate that the proposed model can provide accurate battery health status forecasting.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Lithium Battery State-of-Health Estimation via Differential Thermal Voltammetry With Gaussian Process Regression"
+ },
+ "10.1109/tte.2023.3311813": {
+  "doi": "10.1109/tte.2023.3311813",
+  "abstract": "Search for the minimum charging time without damaging the batteries is one of the most crucial challenges in electric vehicles. Optimization using electrochemical models achieves this goal by solving a large-scale constrained optimal control problem. However, the high dimensionality of possible charging protocols, high computational complexity, and uncertainty in model identification have become the major obstacles limiting model-based methods. As an alternative, data-driven solutions using battery test data can be employed, but they are expensive in terms of test time, equipment, and cost of cells. With the aim of reducing the test time and cost of cells, this paper proposes a data-driven fast-charging optimization scheme using Bayesian optimization with fast convergence. In particular, this paper focuses on a hybrid Bayesian optimization algorithm by combining mesh grid adaptive search. The proposed algorithm can explicitly deal with battery safety constraints and achieve competitive performance with an affordable computational and test overhead. The proposed algorithm is model-free by regarding battery fast-charging control as a black-box optimization problem. Different search strategies and acquisition functions are evaluated on multiple constant charge protocols. Results verify the effectiveness of the proposed algorithm in terms of a minimum charging time and fast convergence speed.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Data-Driven Fast Charging Optimization for Lithium-Ion Battery Using Bayesian Optimization With Fast Convergence"
+ },
+ "10.1109/tte.2025.3533540": {
+  "doi": "10.1109/tte.2025.3533540",
+  "abstract": "Lithium-ion batteries are utilized as energy storage units in mobile devices, electric vehicles, and other fields. To ensure the safety and reliability of batteries, the prediction of the batteries\u2019 state of health (SOH) is one of the key technologies. This article proposes a transfer learning-based lithium-ion battery SOH estimation method using explainable electrochemical impedance spectroscopy (EIS). EIS has advantages such as explainability, rapid response, and noninvasiveness. Benefiting these, the physical parameters are extracted as the battery aging features by fitting an equivalent circuit model with the EIS measurement. To increase the representational power of the model and capture the complex sequential styles, a spatiotemporal long short-term memory (LSTM) network model is built to extract the time series features. Finally, the battery degradation features are fit through a fully connected layer. To improve the model\u2019s generalization, a transfer learning strategy is added to estimate the SOH of the target cell by fine-tuning the initial model parameters on different temperatures and different types of cells. The proposed method, TL-ST-LSTM, has been validated on two public datasets, with an overall root-mean-square error (RMSE) error controlled within 1.9%. Compared to the spatiotemporal LSTM (ST-LSTM) method without transfer learning, the accuracy has been improved by over 80%. In addition, it also demonstrates an improvement in accuracy compared to existing transfer learning methods, such as TL-CNN and TL-LSTM.",
+  "abstract_source": "probe:openalex",
+  "oa_status": "closed",
+  "is_oa": false,
+  "oa_pdf_url": null,
+  "oa_landing": null,
+  "title": "Transfer Learning-Based Lithium-Ion Battery State of Health Estimation With Electrochemical Impedance Spectroscopy"
+ },
+ "10.3390/wevj12010038": {
+  "doi": "10.3390/wevj12010038",
+  "abstract": "The durability and reliability of battery management systems in electric vehicles to forecast the state of charge (SoC) is a tedious task. As the process of battery degradation is usually non-linear, it is extremely cumbersome work to predict SoC estimation with substantially less degradation. This paper presents the SoC estimation of lithium-ion battery systems using six machine learning algorithms for electric vehicles application. The employed algorithms are artificial neural network (ANN), support vector machine (SVM), linear regression (LR), Gaussian process regression (GPR), ensemble bagging (EBa), and ensemble boosting (EBo). Error analysis of the model is carried out to optimize the battery\u2019s performance parameter. Finally, all six algorithms are compared using performance indices. ANN and GPR are found to be the best methods based on MSE and RMSE of (0.0004, 0.00170) and (0.023, 0.04118), respectively.",
+  "abstract_source": "probe:crossref",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": "https://www.mdpi.com/2032-6653/12/1/38/pdf?version=1615176015",
+  "oa_landing": "https://doi.org/10.3390/wevj12010038",
+  "title": "State of Charge Estimation of Lithium-Ion Battery for Electric Vehicles Using Machine Learning Algorithms"
+ },
+ "10.3390/wevj16050279": {
+  "doi": "10.3390/wevj16050279",
+  "abstract": "This study presents a Model Predictive Control (MPC) strategy for the Battery Thermal Management System (BTMS) in electric vehicles (EVs) to optimize energy efficiency while maintaining battery temperature within the optimal range. Due to the complexity of BTMS dynamics, a high-fidelity model was developed using MATLAB/Simscape (2021a), and an artificial neural network (ANN)-based model was designed to achieve high accuracy with reduced computational load. To mitigate oscillatory control inputs observed in conventional MPC, an infinity-horizon MPC framework was introduced, incorporating a value function that accounts for system behavior beyond the prediction horizon. The proposed controller was evaluated using a simulation environment against a conventional rule-based controller under varying ambient temperatures. Results demonstrated significant energy savings, including a 78.9% reduction in low-temperature conditions, a 36% reduction in moderate temperatures, and a 27.8% reduction in high-temperature environments. Additionally, the controller effectively stabilized actuator operation, improving system longevity. These findings highlight the potential of ANN-assisted MPC for enhancing BTMS performance while minimizing energy consumption in EVs.",
+  "abstract_source": "probe:crossref",
+  "oa_status": "gold",
+  "is_oa": true,
+  "oa_pdf_url": "https://www.mdpi.com/2032-6653/16/5/279/pdf?version=1747473702",
+  "oa_landing": "https://doi.org/10.3390/wevj16050279",
+  "title": "Energy-Efficient Battery Thermal Management in Electric Vehicles Using Artificial-Neural-Network-Based Model Predictive Control"
+ }
+}

@@ -1,0 +1,843 @@
+{
+ "method": "independent re-code of the validation field by coder D (AI research assistant), from open-access full texts where retrievable (7) and indexed abstracts otherwise; codes assigned from an evidence worksheet before comparison with released labels; `not reported` used where the evidence states no protocol",
+ "n_primary": 88,
+ "n_coded": 46,
+ "n_determinable": 23,
+ "evidence_tiers": {
+  "fulltext": 7,
+  "abstract": 39
+ },
+ "strong_labels": {
+  "n": 42,
+  "with_evidence": 31,
+  "determinable": 14,
+  "confirmed_strong": 10,
+  "contradicted": 4,
+  "contradicted_items": [
+   "10.1016/j.egyai.2022.100188",
+   "10.1016/j.est.2026.123023",
+   "10.1016/j.est.2024.113257",
+   "10.1016/j.est.2024.113502"
+  ],
+  "not_determinable": 17,
+  "no_evidence": 11
+ },
+ "nonstrong_upgrades": {
+  "n_coded_nonstrong": 15,
+  "n_determinable": 9,
+  "upgrades": [
+   "10.1016/j.energy.2020.117664",
+   "10.1038/s41598-025-30602-4"
+  ]
+ },
+ "bucket_agreement_determinable": {
+  "n": 23,
+  "agree": 17,
+  "pct": 73.9,
+  "kappa": 0.473,
+  "wilson_ci": [
+   53.5,
+   87.5
+  ]
+ },
+ "fallback_semantics": {
+  "n": 46,
+  "agree": 23,
+  "pct": 50.0,
+  "kappa": 0.143
+ },
+ "per_paper": [
+  {
+   "doi": "10.1038/s42256-021-00312-3",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "cross-cell holdout",
+   "evidence_tier": "fulltext",
+   "coder_note": "data partition by cell groups; 4 Group III test cells; cell-batch cross-validation"
+  },
+  {
+   "doi": "10.1016/j.energy.2020.117664",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "cross-domain holdout",
+   "evidence_tier": "abstract",
+   "coder_note": "SOC estimated at temperatures unseen in training (0-50C varying-temperature training)"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35183",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "training across six drive-cycle datasets; test split unstated"
+  },
+  {
+   "doi": "10.1016/j.apenergy.2024.123508",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.energy.2021.121236",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.est.2024.111877",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.3390/wevj12010038",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "six algorithms compared; split unstated"
+  },
+  {
+   "doi": "10.1016/j.jpowsour.2024.235609",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.apenergy.2021.116897",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "test error stated; split unstated"
+  },
+  {
+   "doi": "10.1109/access.2021.3068776",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "review synthesis",
+   "evidence_tier": "fulltext",
+   "coder_note": "titled and structured as a review of pack SOC estimation and balancing"
+  },
+  {
+   "doi": "10.1016/j.est.2024.114281",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.energy.2019.116467",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "NASA datasets; robustness across initial conditions; split unstated"
+  },
+  {
+   "doi": "10.1016/j.energy.2024.133418",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.energy.2020.118000",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "errors across dynamic cycles/temperatures/aging stated; split unstated"
+  },
+  {
+   "doi": "10.1016/j.apenergy.2024.124077",
+   "released_code": "online/real-vehicle",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "121 cells different chemistries used to validate; split unstated"
+  },
+  {
+   "doi": "10.1016/j.geits.2024.100169",
+   "released_code": "online/real-vehicle",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "cross-cell holdout",
+   "evidence_tier": "fulltext",
+   "coder_note": "one pack (LBP1) forms training data; method validated on other packs' aging experiments"
+  },
+  {
+   "doi": "10.1109/tpel.2021.3134701",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "three battery types with per-type models; split unstated"
+  },
+  {
+   "doi": "10.1016/j.isci.2025.112235",
+   "released_code": "cross-chemistry holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "abstract text too thin to code (R2 0.97 only)"
+  },
+  {
+   "doi": "10.1016/j.apenergy.2024.125086",
+   "released_code": "cross-domain holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "cross-domain holdout",
+   "evidence_tier": "abstract",
+   "coder_note": "transfer across battery types and operating conditions with minimal retraining"
+  },
+  {
+   "doi": "10.1016/j.ensm.2022.06.053",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.jpowsour.2025.236784",
+   "released_code": "online/real-vehicle",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.jpowsour.2019.227281",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "aging datasets at different C-rates/temps; split unstated"
+  },
+  {
+   "doi": "10.1109/tte.2020.3028784",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "four batteries with different aging conditions; split unstated"
+  },
+  {
+   "doi": "10.1016/j.energy.2021.120205",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "numerical experiments + paired t-test; split unstated"
+  },
+  {
+   "doi": "10.1016/j.apenergy.2025.125314",
+   "released_code": "cross-chemistry holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "Stanford-MIT-Toyota dataset; split unstated in abstract"
+  },
+  {
+   "doi": "10.1016/j.est.2022.104901",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.apenergy.2024.124713",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1038/s41598-025-92262-8",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "NASA public datasets; split unstated"
+  },
+  {
+   "doi": "10.1016/j.energy.2025.136618",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.ress.2022.108947",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.ress.2025.111392",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.jclepro.2021.128265",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1002/advs.202402608",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "test error on 'unseen data' stated but unit of isolation (cells vs segments) not stated"
+  },
+  {
+   "doi": "10.1016/j.ymssp.2022.109347",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "no usable abstract retrieved"
+  },
+  {
+   "doi": "10.1016/j.est.2025.118415",
+   "released_code": "cross-validation",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.enconman.2025.120170",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.renene.2019.08.077",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "simulation",
+   "evidence_tier": "abstract",
+   "coder_note": "model-based (thermoelectric-aging coupling) optimization study; strategies compared in model"
+  },
+  {
+   "doi": "10.1109/tte.2023.3311813",
+   "released_code": "simulation plus hardware spot-check",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "experimental hardware",
+   "evidence_tier": "abstract",
+   "coder_note": "Bayesian-optimization charging trials on real cells across constant-charge protocols"
+  },
+  {
+   "doi": "10.1016/j.ensm.2022.12.034",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1038/s41598-025-30602-4",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "cross-domain holdout",
+   "evidence_tier": "fulltext",
+   "coder_note": "trained/validated on NASA dataset; further evaluated on separate CALCE CS2 cells"
+  },
+  {
+   "doi": "10.1016/j.applthermaleng.2022.118503",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.est.2024.111755",
+   "released_code": "simulation",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.est.2024.112046",
+   "released_code": "simulation",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.energy.2023.127033",
+   "released_code": "cross-chemistry holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "cross-domain holdout",
+   "evidence_tier": "abstract",
+   "coder_note": "deep transfer across battery types and charging/discharging protocols; fine-tuned target evaluation"
+  },
+  {
+   "doi": "10.1016/j.jpowsour.2024.235015",
+   "released_code": "simulation plus hardware spot-check",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.jpowsour.2021.229727",
+   "released_code": "simulation plus hardware spot-check",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "experimental hardware",
+   "evidence_tier": "abstract",
+   "coder_note": "PSO-SVR on experimental BTMS/HPACS data; split unstated"
+  },
+  {
+   "doi": "10.1016/j.etran.2024.100337",
+   "released_code": "cross-validation",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.energy.2023.126855",
+   "released_code": "online/real-vehicle",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "online/real-vehicle",
+   "evidence_tier": "abstract",
+   "coder_note": "online capacity estimation verified on nine months of actual vehicle data"
+  },
+  {
+   "doi": "10.1016/j.apenergy.2024.123248",
+   "released_code": "cross-domain holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "cross-domain holdout",
+   "evidence_tier": "abstract",
+   "coder_note": "multi-source domain transfer across manufacturers/cell types/capacities; target-domain thermal-runaway diagnosis"
+  },
+  {
+   "doi": "10.1016/j.energy.2020.118866",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "no protocol statement in abstract"
+  },
+  {
+   "doi": "10.1016/j.etran.2025.100418",
+   "released_code": "online/real-vehicle",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.jpowsour.2020.229108",
+   "released_code": "simulation plus hardware spot-check",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "simulation",
+   "evidence_tier": "abstract",
+   "coder_note": "training data generated by Matlab/Simulink + Comsol multiphysics simulations"
+  },
+  {
+   "doi": "10.1016/j.jechem.2025.04.025",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.est.2023.107575",
+   "released_code": "online/real-vehicle",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.est.2023.106931",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1038/s41467-023-38458-w",
+   "released_code": "cross-chemistry holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "cross-domain holdout",
+   "evidence_tier": "fulltext",
+   "coder_note": "65 cells from 5 manufacturers; domain adaptation; evaluation in absence of target labels (cross-manufacturer/cathode)"
+  },
+  {
+   "doi": "10.1016/j.ensm.2022.05.007",
+   "released_code": "cross-chemistry holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "77 cells fixed+random conditions; split unstated"
+  },
+  {
+   "doi": "10.1016/j.energy.2023.128461",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "EIS on four cylindrical cells; split unstated"
+  },
+  {
+   "doi": "10.1016/j.jechem.2025.08.093",
+   "released_code": "cross-chemistry holdout",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.applthermaleng.2023.120482",
+   "released_code": "cross-validation",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.jechem.2022.11.036",
+   "released_code": "cross-validation",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1109/tpel.2021.3117788",
+   "released_code": "cross-domain holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "cross-domain holdout",
+   "evidence_tier": "abstract",
+   "coder_note": "deep domain adversarial network for cross-working-condition SOH transfer; knowledge-transfer evaluation"
+  },
+  {
+   "doi": "10.1016/j.measurement.2025.118985",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.energy.2025.139753",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.conengprac.2022.105202",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "real manufacturing-chain data; split unstated"
+  },
+  {
+   "doi": "10.1016/j.egyai.2022.100188",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "experimental hardware",
+   "evidence_tier": "abstract",
+   "coder_note": "ultrasonic bench experiments; split unstated"
+  },
+  {
+   "doi": "10.1016/j.ress.2026.112416",
+   "released_code": "case study",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1002/anie.202214037",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "test MAPE stated; split unstated"
+  },
+  {
+   "doi": "10.1016/j.est.2026.123023",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "cross-validation",
+   "evidence_tier": "abstract",
+   "coder_note": "LSTM optimized through cross-validation; Jetson Nano HIL deployment; no cell isolation stated"
+  },
+  {
+   "doi": "10.1007/s00521-022-07291-5",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1109/jrfid.2022.3211841",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "experimental hardware",
+   "evidence_tier": "abstract",
+   "coder_note": "FUDS bench experiments; split unstated"
+  },
+  {
+   "doi": "10.1016/j.ensm.2026.104983",
+   "released_code": "online/real-vehicle",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.apenergy.2026.127394",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1038/s41560-019-0356-8",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1038/s41586-020-1994-5",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1038/s41467-020-15235-7",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "cross-cell holdout",
+   "evidence_tier": "fulltext",
+   "coder_note": "trained on cells 25C01-25C04; tested on the other four cells 25C05-25C08"
+  },
+  {
+   "doi": "10.1016/j.energy.2022.126331",
+   "released_code": "simulation",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.3390/wevj16050279",
+   "released_code": "simulation",
+   "released_strong": "no",
+   "coded": true,
+   "coder_code": "simulation",
+   "evidence_tier": "abstract",
+   "coder_note": "MATLAB/Simscape model; evaluated in simulation environment"
+  },
+  {
+   "doi": "10.1016/j.est.2024.113257",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "simulation",
+   "evidence_tier": "abstract",
+   "coder_note": "trained and validated on synthetic P2D-generated dataset"
+  },
+  {
+   "doi": "10.1016/j.applthermaleng.2024.123826",
+   "released_code": "cross-validation",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.ress.2022.109046",
+   "released_code": "within-cell split",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.ensm.2023.02.035",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "100+ cell samples; split unstated"
+  },
+  {
+   "doi": "10.1016/j.est.2022.106295",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "robustness case study on cells characterised with different test equipment; main split unstated"
+  },
+  {
+   "doi": "10.1016/j.eswa.2023.120444",
+   "released_code": "online/real-vehicle",
+   "released_strong": "yes",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  },
+  {
+   "doi": "10.1016/j.est.2024.113502",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "within-cell split",
+   "evidence_tier": "fulltext",
+   "coder_note": "trained on initial 70% cycles (101 to EOL); remaining 30% cycles of same cells reserved for online testing"
+  },
+  {
+   "doi": "10.1109/tte.2025.3533540",
+   "released_code": "cross-chemistry holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "cross-cell holdout",
+   "evidence_tier": "abstract",
+   "coder_note": "transfer to target cells with fine-tuning across temperatures and cell types; two public datasets"
+  },
+  {
+   "doi": "10.1039/d2dd00067a",
+   "released_code": "cross-cell holdout",
+   "released_strong": "yes",
+   "coded": true,
+   "coder_code": "not reported",
+   "evidence_tier": "abstract",
+   "coder_note": "EOL accuracy stated; split unstated"
+  },
+  {
+   "doi": "10.1016/j.est.2023.107203",
+   "released_code": "experimental hardware",
+   "released_strong": "no",
+   "coded": false,
+   "coder_code": null,
+   "evidence_tier": "none-retrievable",
+   "coder_note": ""
+  }
+ ]
+}
