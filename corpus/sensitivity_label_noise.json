@@ -1,9 +1,14 @@
 {
- "model": "label-noise scenario envelope: flip rate drawn as Normal(mean=observed coder-vs-label bucket error rate, sd=0.02), clipped at 0; 4000 draws per scenario; seed 7. Scenario \"symmetric\" flips strong/non-strong labels at random in either direction (null-attenuating); scenario \"strong_to_weak\" flips strong labels to weak only (the direction of the observed coder disagreements).",
+ "model": "label-noise scenario envelope, not an error model: flip rate drawn as Normal(mean, sd=0.02), clipped at 0; 4000 draws per scenario; seed 7. Scenario \"symmetric\" flips strong/non-strong labels at random in either direction (null-attenuating), with the rate centered on the coders' overall bucket error rate vs the released labels. Scenario \"strong_to_weak\" flips strong labels to weak only, with the rate centered on the strong-label-specific recode rate (each coder recoded 8 of the 13 strong-labelled sample papers weak). Because the coders worked from abstracts under a declared \"weak if unreported\" fallback, that rate is an upper bound on plausible label error, so \"strong_to_weak\" is a worst-case bound, not an estimate.",
  "n_primary": 88,
  "observed_coder_vs_label_error_rates": [
   0.3667,
   0.2667
+ ],
+ "strong_labelled_sample_rows": 13,
+ "strong_specific_recode_rates": [
+  0.6154,
+  0.6154
  ],
  "observed_disagreement_direction": {
   "strong_label_weak_coder": 16,
@@ -21,15 +26,17 @@
   ],
   "fisher_p_below_0.05_frac": 0.056
  },
- "strong_to_weak_only": {
+ "strong_to_weak_worst_case_bound": {
+  "point_estimate_strong_at_observed_rate": 16.2,
+  "point_estimate_share_at_observed_rate": 0.184,
   "strong_count_range_95pct": [
-   22,
-   35
+   10,
+   23
   ],
   "strong_share_range_95pct": [
-   0.25,
-   0.398
+   0.114,
+   0.261
   ],
-  "fisher_p_below_0.05_frac": 0.037
+  "fisher_p_below_0.05_frac": 0.024
  }
 }

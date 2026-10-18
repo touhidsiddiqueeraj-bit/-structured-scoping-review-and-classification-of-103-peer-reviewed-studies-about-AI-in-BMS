@@ -17,7 +17,7 @@ BLOCKS = [
  "2020\u20132023, dip at the retrieval hole, and remain high in 2025\u20132026, and the tagged composition of those records shifts toward estimation "
  "and hybrid methods (next paragraph)." ),
 ('p',
- "On the *classified subset*, the defining finding is the compositional shift in method families (Fig. 3, right panel; Table I). Classical "
+ "On the *classified subset*, the compositional shift in method families (Fig. 3, right panel; Table I) is a within-subset sequence, not a measured field trend. Classical "
  "ML \u2014 Gaussian process regression, support vector machines, ensembles, shallow networks on engineered features \u2014 contributes 12 of the 23 "
  "subset papers published from 2019 through 2021, while physics-informed and hybrid model\u2013data learning rises year by year (1, 2, 3, 3, 4, 4, and 5 "
  "primary papers in 2020\u20132026) \u2014 the only family with a monotonically non-decreasing trajectory within the subset \u2014 so that 13 of its 22 primary papers "
@@ -78,8 +78,8 @@ BLOCKS = [
  "cross-validation (5) leak trajectory information between train and test, producing optimistic errors that do not survive cell-to-cell variability; "
  "the remaining 29 studies establish hardware operation (20), simulation- or case-level evidence without a generalization protocol (9) \u2014 "
  "42+17+29 = 88. The complete per-paper protocol assignment is released in papers.csv (valid field) and tabulated as a supplement "
- "(protocol_audit.csv), so the 42-of-88 arithmetic above can be verified row by row, and the 30-paper blind re-coding of Section II-C re-derived 25 of these "
- "primary-paper assignments (plus 5 review-labelled papers) independently."),
+ "(protocol_audit.csv), so the 42-of-88 arithmetic above can be verified row by row. The 30-paper blind re-coding of Section II-C is an abstract-level "
+ "inter-coder agreement check whose sample includes the 5 review-labelled papers — not an independent re-derivation of these assignments (their bucket agreement with the released labels is itself weak, Section II-C); the counts instead carry the scenario sensitivity that follows."),
 ('p',
  "Crossing validation practice with method family, the cautious reading is: 8 of the 22 physics-informed/hybrid primary papers (36%) use a strong "
  "protocol, against 34 of the 66 other primary papers (52%) \u2014 Fisher's exact p = 0.32, odds ratio 0.54 (95% CI 0.21\u20131.46). Under the "
@@ -88,12 +88,12 @@ BLOCKS = [
  "statistically significant under either definition, confounding is unadjusted (physics-informed work skews toward early-stage and simulation-heavy "
  "studies), and n = 22 is small. A minimum-detectable-effect analysis (released with the corpus) shows that 80% power at \u03b1 = 0.05 would require a gap of roughly 30\u201335 percentage points between the two families, while the observed 15-point gap is detectable with only about 20\u201325% power \u2014 so no detected difference does not mean no difference: meaningful effects in either direction remain compatible with these counts. A label-noise scenario envelope built from the observed blind coder-versus-label disagreement (Section II-C) "
  "moves the overall strong-protocol share across 35\u201352 of the 88 papers (40\u201359% of the primary papers) under symmetric random flipping and "
- "leaves the method-family contrast non-significant in 94% of scenario draws; because the observed disagreements are directional (16 of 19 "
- "have the coder defaulting to weak), a strong-to-weak-only scenario spans 22\u201335 papers (25\u201340%) with the contrast non-significant in 96% "
- "of draws, so the subset's qualitative conclusions survive plausible coding error in either direction. The noise model is explicit and released "
+ "leaves the method-family contrast non-significant in 94% of scenario draws; the observed disagreements are directional and concentrated on strong labels (16 of 19 "
+ "have the coder defaulting to weak, and each coder recoded 8 of the 13 strong-labelled sample papers weak), so a strong-to-weak scenario \u2014 reported as a worst-case bound, because the abstract-level coders defaulted to weak wherever a protocol was not stated \u2014 falls to about 16 papers (18%) at the observed recode rate, with an envelope of 10\u201323 papers (11\u201326%) and the contrast non-significant in 98% "
+ "of draws. The method-family contrast is thus robust to plausible coding error in either direction, while the strong-protocol level itself is not pinned by these counts — the worst-case bound says how low it could sit if abstract-level recoding were taken at face value, not where it sits. The noise model is explicit and released "
  "(sensitivity_label_noise.py): in each of 4,000 seeded Monte Carlo draws, a strong/non-strong label-flip rate is drawn from a Normal "
- "distribution centered on the observed coder-versus-label bucket error rate (0.37 and 0.27 for the two coders; mean 0.32) with standard "
- "deviation 0.02, truncated at zero, and the drawn rate then flips bucket labels across the 88 primary papers before both the "
+ "distribution with standard deviation 0.02, truncated at zero — centered on the coders’ overall bucket error rate (0.37 and 0.27; mean 0.32) for the symmetric scenario, and on the strong-label-specific recode rate (0.62) for the strong-to-weak "
+ "scenario — and the drawn rate then flips bucket labels across the 88 primary papers before both the "
  "overall share and the Fisher test are recomputed. The honest reading remains: a physics "
  "prior does not *demonstrably* buy validation rigor \u2014 and settling the question requires the standardized protocols proposed in Section IX, "
  "not more subset cross-tabs."),

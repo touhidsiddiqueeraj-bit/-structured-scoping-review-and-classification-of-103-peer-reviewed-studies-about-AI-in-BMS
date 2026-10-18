@@ -12,7 +12,7 @@ The manuscript links every BMS machine-learning function to the requirement an e
 
 ## What the evidence base is
 
-A rule-based eligible corpus of 799 peer-reviewed journal articles (2020–2026) carries the measured bibliometrics; a curated 103-study classified subset carries the in-depth coding, with a 30-paper blind inter-coder reliability study, a per-paper protocol audit, and a label-noise sensitivity analysis with an explicitly stated Monte Carlo noise model. All screening provenance and analysis code are released in a Zenodo deposit (DOI: 10.5281/zenodo.23436202); every count in the paper can be regenerated from the deposit.
+A rule-based eligible corpus of 799 peer-reviewed journal articles (798 dated 2020–2026 plus one early-access record stamped 2027) carries the measured bibliometrics; a curated 103-study classified subset (98 from the pool plus 5 individually retrieved seeds) carries the in-depth coding, with a 30-paper blind inter-coder reliability study, a per-paper protocol audit, and a label-noise sensitivity analysis with an explicitly stated Monte Carlo noise model. All screening provenance and analysis code are released in a Zenodo deposit (DOI: 10.5281/zenodo.23436202); every count in the paper can be regenerated from the deposit.
 
 ## Statement on scope and claims
 

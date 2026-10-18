@@ -9,7 +9,7 @@ TABLES = {
     'TABLE_REP': FULL.TABLE3,
     'TABLE_LLM': FULL.TABLE_LLM,
     'TABLE_STD': {
- 'caption': "Mapping BMS functions to requirements in UN GTR 20 (Amendment 1 thermal-propagation provisions), GB 38031-2020/2025, ISO 26262:2018 with ISO/PAS 8800:2024, and ISO 21448 (SOTIF): what deployed ML components must be able to evidence. Regulatory statuses are stated as of the September 2026 retrieval date, and a \u2018strong protocol\u2019 in the subset-status column follows the protocol-only definition of Section II-C (cross-cell, cross-chemistry, or cross-domain holdout, or online/real-vehicle demonstration). The mapping is this review's synthesis at requirement level (not clause-level legal citation); \u201csubset status\u201d gives the corresponding classified-subset primary-paper counts from Section III-C.",
+ 'caption': "Mapping BMS functions to requirements in UN GTR 20 (Amendment 1 thermal-propagation provisions), GB 38031-2020/2025, ISO 26262:2018 with ISO/PAS 8800:2024, and ISO 21448 (SOTIF): what deployed ML components must be able to evidence. Regulatory statuses are stated as of 18 October 2026, and a \u2018strong protocol\u2019 in the subset-status column follows the protocol-only definition of Section II-C (cross-cell, cross-chemistry, or cross-domain holdout, or online/real-vehicle demonstration). The mapping is this review's synthesis at requirement level (not clause-level legal citation); \u201csubset status\u201d gives the corresponding classified-subset primary-paper counts from Section III-C.",
  'header': ['BMS function', 'What the standard demands of a deployed function', 'Current subset status'],
  'widths': [1.0, 2.1, 1.9],
  'rows': [
@@ -20,7 +20,7 @@ TABLES = {
    'Capacity and power fade margins underpin thermal-propagation early warning and end-of-service decisions; degradation assumptions must hold across chemistry, duty, and environment (ISO 26262 hazard analysis; ISO 21448 for performance limitations)',
    '20 of 32 SOH/RUL primary papers use a strong protocol; 4 use real-vehicle data; accuracy claims rest mostly on three public benchmarks (23 primary papers in the subset)'],
   ['Fault detection',
-   'Thermal-propagation early warning must provide the escape window: GB 38031-2025 requires a thermal-propagation warning ahead of hazard and no fire or explosion of the pack beyond the triggered cell, superseding GB 38031-2020\u2019s five-minute pre-warning criterion; the GTR 20 Amendment 1 proposal (EVS-30-C01/Rev.4) carries a \u22655-min advance warning before cabin hazards, with test or risk-management compliance options; coverage must be argued and audited (ISO/PAS 8800 assurance argument)',
+   'Thermal-propagation containment and early warning must both be evidenced: GB 38031-2025 requires that after single-cell thermal runaway the pack or system neither fire nor explode over a two-hour observation window, that a thermal-event alarm still be issued, and that smoke not harm occupants — superseding GB 38031-2020’s five-minute pre-fire alarm; the GTR 20 Amendment 1 proposal (ECE/TRANS/WP.29/GRSP/2026/4) carries a ≥5-min advance warning before cabin hazards, with test or risk-management compliance options; coverage must be argued and audited (ISO/PAS 8800 assurance argument)',
    '2 of 7 fault/safety primary papers validate online on fleet data; detection-latency and false-alarm distributions are rarely reported'],
   ['Charging control',
    'Overcharge, over-temperature, and thermal-cycling limits are hard constraints under GB 38031-2020/2025; adaptive strategies must be bounded by protection envelopes and argued in the safety case',
@@ -136,7 +136,7 @@ BLOCKS = [
 
 ('h2', '9.1 From corpus gaps to safety-standard requirements'),  # heading kept; body text uses subset wording
 ('p',
- "The standards invoked in Section I \u2014 UN GTR No. 20 (electric-vehicle safety, established in the Global Registry in 2018 [[std:unece-gtr20]]; Amendment 1, proposed as document EVS-30-C01/Rev.4 in September 2025 [[std:unece-gtr20-amd1]] and listed for adoption at the November 2026 WP.29 session at this "
+ "The standards invoked in Section I \u2014 UN GTR No. 20 (electric-vehicle safety, established in the Global Registry in 2018 [[std:unece-gtr20]]; Amendment 1, submitted by the European Commission on behalf of the Informal Working Group on Electric Vehicle Safety as formal document ECE/TRANS/WP.29/GRSP/2026/4 (status report ECE/TRANS/WP.29/GRSP/2026/3) [[std:unece-gtr20-amd1]], considered at the 79th GRSP session in June 2026 and, at this review\u2019s 18 October 2026 finalization, pending before WP.29 with adoption listed for its 17\u201320 November 2026 session "
  "review's retrieval date, adds thermal-propagation provisions with two compliance options: a physical propagation test or a documented risk-management approach "
  "), GB 38031 (GB 38031-2020, now superseded, and the strengthened GB 38031-2025 [[std:gb38031-2025]], effective "
  "July 2026, which replaces the fire/explosion-warning criterion with no-fire/no-explosion thermal-diffusion requirements and adds bottom-"
@@ -219,17 +219,18 @@ BLOCKS = [
  "This review has examined machine learning in battery management on a two-tier evidence base: a rule-based eligible corpus of 799 journal "
  "articles from which field-level shares are measured within a documented capped retrieval, and an in-depth classified subset of 103 studies "
  "through which method, data, and validation practice are examined with a 30-paper blind reliability check and label-noise sensitivity "
- "ranges. Three conclusions stand out. First, within the classified subset, method families have shifted from classical feature-based "
- "learners to deep sequence models and now physics-informed hybrids, with LLM-based studies appearing from 2025\u20132026 \u2014 though "
- "LLM-based battery estimation began in other venues. Second, the center of gravity is estimation at cell level: measured as shares of the "
- "eligible corpus, the SOC\u2013SOH\u2013prognostics union covers about half of eligible records, whereas vehicle- and pack-level "
- "practice remains thin \u2014 precisely the level at which UN GTR 20, GB 38031, and ISO 26262 pose their requirements. Third, the "
- "proliferation of published accuracy claims is not matched by validation progress: only 8 of the 88 primary papers (8 of the 103 "
- "classified studies) demonstrate online or fleet operation, 17 of 88 "
+ "ranges. Three conclusions stand out. First, and most critically, the proliferation of published accuracy claims is not matched by validation "
+ "progress: only 8 of the 88 primary papers (8 of the 103 classified studies) demonstrate online or fleet operation, 17 of 88 "
  "primary papers use isolation-weakened splits, and 23 rest on three public benchmarks while 36 rest on private laboratory cells; the "
  "physics-informed validation contrast is directionally consistent under both reported definitions, statistically unestablished and underpowered "
  "(protocol-only 36% versus 52%, p = 0.32; including-hardware 59% versus 74%, p = 0.19), so it is reported as no detectable difference, with meaningful differences in either direction not excluded \u2014 an open hypothesis "
- "rather than a settled result. The near-term agenda follows directly: standardized cross-domain validation, diversified fleet data, pack- "
+ "rather than a settled result. Second, the center of gravity is estimation at cell level: measured as shares of the "
+ "eligible corpus, the SOC\u2013SOH\u2013prognostics union tags 366 of 799 records (46% \u2014 about half), whereas vehicle- and pack-level "
+ "practice remains thin \u2014 precisely the level at which UN GTR 20, GB 38031, and ISO 26262 pose their requirements. Third, within the classified subset, method families have shifted from classical feature-based "
+ "learners to deep sequence models and now physics-informed hybrids, with LLM-based studies appearing from 2025\u20132026 \u2014 though "
+ "LLM-based battery estimation began in other venues; this is a within-subset sequence that the eligible pool\u2019s method-theme tags do not "
+ "mirror, so no field-level family rise is measurable at either tier. "
+ "The near-term agenda follows directly: standardized cross-domain validation, diversified fleet data, pack- "
  "and vehicle-level ML aligned with the standards mapping of Section IX, calibrated uncertainty, and a strict division of labor between "
  "foundation models, calibrated estimators, and physics-based safety envelopes. If the last five years were about discovering what machine "
  "learning can estimate about a battery, the next five will be decided by what it can be trusted to do \u2014 onboard, at fleet scale, across "

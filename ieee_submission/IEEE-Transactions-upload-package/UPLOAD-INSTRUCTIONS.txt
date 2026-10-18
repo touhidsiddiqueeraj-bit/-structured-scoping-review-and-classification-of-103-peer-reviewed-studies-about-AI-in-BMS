@@ -8,10 +8,10 @@ Authors: H.T. Siddiquee, S.S.I. Ariya, J.I. Chowdhury (Leading University, Sylhe
 VENUE COMPLIANCE
 ----------------
 Review Paper: 12-page limit including references and appendix.
-CURRENT PDF IS 18 PAGES -- it exceeds the Review Paper limit. The overlength is
+CURRENT PDF IS 19 PAGES -- it exceeds the Review Paper limit. The overlength is
 the direct cost of the reviewer-requested additions (positioning section,
 standards mapping, reliability detail, noise model). Either condense further
-before upload (the extended 40-page manuscript stays on GitHub/Zenodo) or
+before upload (the extended 44-page manuscript stays on GitHub/Zenodo) or
 expect overlength charges from page 9 per IEEE policy. A new-submission cover
 letter (cover_letter.pdf, from cover_letter_TTE_v3.md) and the point-by-point
 response dossier (response_to_reviewers.pdf at the repo root) accompany this
@@ -47,3 +47,12 @@ NOTES
   (see repository README); the PDF rebuilds with `tectonic mlbms.tex` and the
   LaTeX source regenerates from paper_short_part{1,2,3}.py via
   `python3 corpus/build_tex.py --short`.
+
+PRE-SUBMISSION STATUS CHECK (dated items)
+-----------------------------------------
+The manuscript date-stamps regulatory statuses as of 18 October 2026. The UN
+GTR No. 20 Amendment 1 proposal (ECE/TRANS/WP.29/GRSP/2026/4) stood pending
+before WP.29 with adoption listed for the 17-20 November 2026 session. If this
+submission goes in AFTER that session, re-check the WP.29 status
+(unece.org/trans/wp29) and update the status line in mlbms.tex Section IX
+(and Table STD caption + the extended version's 9.4) before upload.

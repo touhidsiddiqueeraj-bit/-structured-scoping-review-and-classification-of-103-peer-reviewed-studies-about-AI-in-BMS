@@ -5,15 +5,19 @@ Scenarios (both seeded, 4000 draws each, seed 7):
   symmetric      - a drawn flip rate is applied to strong/non-strong bucket
                    labels at random, in either direction. This is a scenario
                    envelope, not an error model: symmetric random flipping
-                   mechanically attenuates contrasts toward the null.
-  strong_to_weak - the drawn rate flips strong labels to weak only. This
-                   matches the direction actually observed in the reliability
-                   study: coders defaulted to weak codes when protocols were
-                   not stated, so their disagreements with the released
-                   labels are overwhelmingly strong-label/weak-recoding.
+                   mechanically attenuates contrasts toward the null. The
+                   rate is centered on the coders' OVERALL bucket error rate
+                   against the released labels.
+  strong_to_weak - the drawn rate flips strong labels to weak only, centered
+                   on the STRONG-LABEL-SPECIFIC recode rate: the share of
+                   strong-labelled sample papers that each coder recoded
+                   weak. Because the coders worked from abstracts under a
+                   declared "weak if unreported" fallback, that rate is an
+                   upper bound on plausible label error, so this scenario is
+                   reported as a worst-case bound, not an estimate.
 
-The flip rate is drawn as Normal(mean of the two coders' observed
-coder-vs-label bucket error rates, sd=0.02), clipped at zero.
+The flip rate is drawn as Normal(mean, sd=0.02), clipped at zero, with the
+mean set per scenario as described above.
 
 Outputs corpus/sensitivity_label_noise.json. Run from repo root:
     python3 corpus/sensitivity_label_noise.py
@@ -36,19 +40,28 @@ def bucket_of(row):
     return 1 if (row.get('valid') or '').strip() in PROTO else 0
 
 gold = {r['doi'].lower(): r for r in csv.DictReader(open(f'{ROOT}/out/gold_labels_30.csv'))}
-rates = []
+n_strong_sample = sum(1 for r in gold.values() if r['valid'] in PROTO)
+rates = []            # per-coder overall bucket error rate (symmetric scenario)
+strong_rates = []     # per-coder strong->weak rate among strong-labelled rows
 direction = {'strong_label_weak_coder': 0, 'weak_label_strong_coder': 0}
 for coder in ('coder_B_30.csv', 'coder_C_30.csv'):
     rows = {r['doi'].lower(): r for r in csv.DictReader(open(f'{ROOT}/corpus/reliability/{coder}'))}
     n_err = 0
+    s2w = 0
     for d in gold:
         gb = int(gold[d]['valid'] in PROTO)
         cb = bucket_of(rows[d])
         if gb != cb:
             n_err += 1
-            direction['strong_label_weak_coder' if gb == 1 else 'weak_label_strong_coder'] += 1
+            if gb == 1:
+                s2w += 1
+                direction['strong_label_weak_coder'] += 1
+            else:
+                direction['weak_label_strong_coder'] += 1
     rates.append(n_err / len(gold))
-e = sum(rates) / len(rates)  # observed coder-vs-label error rate
+    strong_rates.append(s2w / n_strong_sample)
+e = sum(rates) / len(rates)                    # overall coder-vs-label error rate
+e_dir = sum(strong_rates) / len(strong_rates)  # strong-label-specific recode rate
 
 def fisher(labels):
     a = sum(1 for i in range(len(labels)) if labels[i] and in_pi[i])
@@ -73,10 +86,10 @@ for _ in range(N):
     pvals.append(fisher(s))
 shares.sort(); pvals.sort(); strong_counts.sort()
 
-# ---- scenario 2: strong -> weak only (observed disagreement direction) ----
+# ---- scenario 2: strong -> weak only (worst-case bound at the strong-specific rate) ----
 shares2, strong_counts2, pvals2 = [], [], []
 for _ in range(N):
-    fr = max(0.0, random.gauss(e, 0.02))
+    fr = max(0.0, random.gauss(e_dir, 0.02))
     s = list(buckets)
     for i in range(len(s)):
         if s[i] == 1 and random.random() < fr:
@@ -87,14 +100,21 @@ for _ in range(N):
 shares2.sort(); pvals2.sort(); strong_counts2.sort()
 
 out = {
-    'model': ('label-noise scenario envelope: flip rate drawn as Normal(mean=observed '
-              'coder-vs-label bucket error rate, sd=0.02), clipped at 0; 4000 draws per '
-              'scenario; seed 7. Scenario "symmetric" flips strong/non-strong labels at '
-              'random in either direction (null-attenuating); scenario "strong_to_weak" '
-              'flips strong labels to weak only (the direction of the observed coder '
-              'disagreements).'),
+    'model': ('label-noise scenario envelope, not an error model: flip rate drawn as '
+              'Normal(mean, sd=0.02), clipped at 0; 4000 draws per scenario; seed 7. '
+              'Scenario "symmetric" flips strong/non-strong labels at random in either '
+              'direction (null-attenuating), with the rate centered on the coders\' '
+              'overall bucket error rate vs the released labels. Scenario '
+              '"strong_to_weak" flips strong labels to weak only, with the rate '
+              'centered on the strong-label-specific recode rate (each coder recoded '
+              '8 of the 13 strong-labelled sample papers weak). Because the coders '
+              'worked from abstracts under a declared "weak if unreported" fallback, '
+              'that rate is an upper bound on plausible label error, so '
+              '"strong_to_weak" is a worst-case bound, not an estimate.'),
     'n_primary': len(prim),
     'observed_coder_vs_label_error_rates': [round(r, 4) for r in rates],
+    'strong_labelled_sample_rows': n_strong_sample,
+    'strong_specific_recode_rates': [round(r, 4) for r in strong_rates],
     'observed_disagreement_direction': direction,
     'point_estimate_strong': sum(buckets),
     'symmetric': {
@@ -102,7 +122,9 @@ out = {
         'strong_share_range_95pct': [round(shares[int(0.025 * N)], 3), round(shares[int(0.975 * N)], 3)],
         'fisher_p_below_0.05_frac': round(sum(1 for p in pvals if p < 0.05) / N, 3),
     },
-    'strong_to_weak_only': {
+    'strong_to_weak_worst_case_bound': {
+        'point_estimate_strong_at_observed_rate': round(sum(buckets) * (1 - e_dir), 1),
+        'point_estimate_share_at_observed_rate': round(sum(buckets) * (1 - e_dir) / len(prim), 3),
         'strong_count_range_95pct': [strong_counts2[int(0.025 * N)], strong_counts2[int(0.975 * N)]],
         'strong_share_range_95pct': [round(shares2[int(0.025 * N)], 3), round(shares2[int(0.975 * N)], 3)],
         'fisher_p_below_0.05_frac': round(sum(1 for p in pvals2 if p < 0.05) / N, 3),

@@ -12,13 +12,13 @@
  },
  {
   "doi": "std:unece-gtr20-amd1",
-  "authors": "UNECE Informal Working Group on Electric Vehicle Safety",
-  "title_cr": "GTR No. 20 Electric vehicle safety: Proposal for Amendment 1 (thermal-propagation requirements with two compliance options)",
-  "journal": "UN ECE document EVS-30-C01/Rev.4",
-  "year": 2025,
+  "authors": "European Commission (on behalf of the UNECE Informal Working Group on Electric Vehicle Safety)",
+  "title_cr": "Proposal for Amendment 1 to UN Global Technical Regulation No. 20 (Electric vehicle safety): thermal-propagation requirements with two compliance options",
+  "journal": "UN ECE working document ECE/TRANS/WP.29/GRSP/2026/4",
+  "year": 2026,
   "volume": "", "issue": "", "page": "", "article_number": "",
-  "xref": "Proposal of 11 September 2025; listed for the WP.29 session of 17-20 November 2026",
-  "url": "https://unece.org/transport/standards/transport/vehicle-regulations-wp29/global-technical-regulations-gtrs",
+  "xref": "Considered at the 79th GRSP session (June 2026); working group status report in ECE/TRANS/WP.29/GRSP/2026/3; pending before WP.29 as of 18 October 2026, with adoption listed for the 17-20 November 2026 session",
+  "url": "https://unece.org/transport/events/wp29grsp-working-party-passive-safety-79th-session",
   "external": true
  },
  {

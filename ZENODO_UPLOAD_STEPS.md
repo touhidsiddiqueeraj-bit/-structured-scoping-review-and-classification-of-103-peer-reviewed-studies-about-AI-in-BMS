@@ -61,3 +61,15 @@ but publishing once with the placeholder in README and versioning later is also 
       forced-seed entries).
 - [ ] deposit published → copy DOI → set `ZENODO_DOI` → rebuild PDF → attach to
       ScholarOne/Editorial Manager as the data link.
+
+## Live-record description must be re-synced (round-4 QA, 18 October 2026)
+
+The **published** Zenodo record (10.5281/zenodo.23436202) still carries the
+original upload description, which reads "a rule-based eligible corpus of 799
+peer-reviewed journal articles (2019-2026)" - factually wrong for the 799 (the
+pool holds 798 records dated 2020-2026 plus one early-access record stamped
+2027; the 2019 seed sits in the 103-study classified subset, not in the pool).
+Before submission, edit the record in the authors' Zenodo account and replace
+the description with the current `zenodo_upload/zenodo_metadata.json`
+description (it also fixes the resource type to Dataset - see the note above).
+The local metadata is already correct; only the live record needs the edit.

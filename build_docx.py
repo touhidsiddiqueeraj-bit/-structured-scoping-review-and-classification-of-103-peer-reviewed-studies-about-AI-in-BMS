@@ -101,7 +101,19 @@ def ref_text(doi):
             s += f' [Online]. Available: {r["url"]}'
     else:
         s += f', {yr}, doi: {doi}.'
+    if doi in REF_NOTES:
+        s += ' ' + REF_NOTES[doi]
     return s
+
+# One-line disclosure notes appended to specific reference entries (reviewer request):
+# the RFID-journal entry is a battery SOC estimation study published in an
+# identification-technology venue; the note states why it is retained.
+REF_NOTES = {
+    '10.1109/jrfid.2022.3211841': (
+        'Note: lithium-ion battery state-of-charge estimation study published in an '
+        'identification-technology venue (IEEE Journal of Radio Frequency Identification); '
+        'retained on DOI-verified method content, venue notwithstanding.'),
+}
 
 # ---------- DOCX setup ----------
 doc = Document()
@@ -271,7 +283,7 @@ para('Abstract', size=10, bold=True, align=WD_ALIGN_PARAGRAPH.LEFT, space_after=
 for a in ABSTRACT:
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     p.paragraph_format.space_after = Pt(8)
-    r = p.add_run(a); r.font.size = Pt(10); r.font.name = 'Times New Roman'
+    add_runs(p, a, size=10)  # honors *italic* markers (was: literal asterisks)
 para('Keywords: ' + KEYWORDS, size=10, italic=True, align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=12)
 
 fig_count = 0
