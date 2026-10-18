@@ -1,0 +1,31 @@
+doi,area,method,chem,data,valid
+10.1016/j.ensm.2022.12.034,Charging control,Deep learning,NMC,self-lab,experimental hardware
+10.1016/j.ress.2025.111392,Prognostics (RUL),Reinforcement learning,NMC,NASA,within-cell split
+10.1038/s41467-020-15235-7,Cross-cutting,Shallow ML,NMC,EIS-lab,cross-cell holdout
+10.3390/batteries10120442,Cross-cutting,Physics-informed,various,review,review synthesis
+10.1109/tte.2023.3311813,Charging control,Bayesian optimization,NMC,simulation,simulation plus hardware spot-check
+10.1002/anie.202214037,Cross-cutting,Shallow ML,Li-S,self-lab,cross-cell holdout
+10.1016/j.conengprac.2022.105202,Cross-cutting,Shallow ML,NMC,self-lab,cross-cell holdout
+10.1016/j.energy.2025.139753,Health estimation (SOH),Physics-informed,NMC,EIS-lab,cross-cell holdout
+10.1016/j.jechem.2025.04.025,Fault & safety,Deep learning,NMC,self-lab,cross-cell holdout
+10.1016/j.jechem.2023.03.026,Prognostics (RUL),Review / perspective,various,review,review synthesis
+10.1016/j.applthermaleng.2023.120482,Thermal management,Shallow ML,NMC,self-lab,cross-validation
+10.1016/j.est.2023.106931,Cell balancing & ECM,Shallow ML,NMC,self-lab,experimental hardware
+10.1016/j.ress.2022.109046,Cross-cutting,Shallow ML,NMC,CALCE,within-cell split
+10.1002/batt.202300046,Cross-cutting,Shallow ML,various,review,review synthesis
+10.1016/j.renene.2019.08.077,Charging control,Optimization-augmented control,NMC,self-lab,experimental hardware
+10.3390/wevj16050279,Thermal management,Deep learning,NMC,simulation,simulation
+10.1038/s41467-023-38458-w,Health estimation (SOH),Deep learning,mixed,Severson-MATR,cross-chemistry holdout
+10.1016/j.energy.2023.128461,State estimation (SOC),Hybrid physics+ML,NMC,EIS-lab,cross-cell holdout
+10.3390/electronics10111309,Fault & safety,Review / perspective,various,review,review synthesis
+10.1016/j.jpowsour.2024.235609,State estimation (SOC),Deep learning,LFP,self-lab,experimental hardware
+10.1016/j.est.2024.113257,Cell balancing & ECM,Shallow ML,NMC,self-lab,cross-cell holdout
+10.1016/j.apenergy.2024.124713,Prognostics (RUL),Deep learning,NMC,NASA,within-cell split
+10.1016/j.jpowsour.2025.236784,Health estimation (SOH),Shallow ML,LFP,real-vehicle,online/real-vehicle
+10.1109/tte.2025.3533540,Cross-cutting,Transfer learning,mixed,EIS-lab,cross-chemistry holdout
+10.1016/j.est.2023.107575,Fault & safety,Shallow ML,LFP,real-vehicle,online/real-vehicle
+10.1016/j.jpowsour.2021.229727,Thermal management,Deep learning,NMC,simulation,simulation plus hardware spot-check
+10.1038/s42256-021-00312-3,Health estimation (SOH),Shallow ML,mixed,self-lab,cross-cell holdout
+10.1016/j.egyai.2025.100585,State estimation (SOC),Review / perspective,various,review,review synthesis
+10.1016/j.energy.2021.120205,Prognostics (RUL),Shallow ML,NMC,self-lab,cross-cell holdout
+10.1109/access.2021.3068776,State estimation (SOC),Filter-based hybrid,LFP,self-lab,experimental hardware
