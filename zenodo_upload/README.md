@@ -37,6 +37,8 @@ python3 corpus/inter_rater_reliability.py              # agreement (needs filled
 - `corpus/abstract_probe*.py/.json` -- seed-pinned 40-record pool sample and the
   88-paper baseline-comparison screen, with released codes.
 - `figures/` -- manuscript figures regenerated from the released data.
+- `Supplementary_Material.pdf` / `.docx` -- the paper's Supplementary Material (S1-S5:
+  interpretation rules, label-noise scenarios, MDE analysis, recall audit, probes).
 - `out/gold_labels_30.csv` -- withheld released labels used by the reliability script.
 
 ## Citation

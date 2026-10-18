@@ -24,6 +24,8 @@ CREATORS = [
 ]
 
 DATA = [
+    'Supplementary_Material.pdf',
+    'Supplementary_Material.docx',
     'corpus/papers.csv',
     'corpus/papers_final.json',
     'corpus/eligible_corpus.json',
@@ -56,6 +58,7 @@ DATA = [
 ]
 
 CODE = [
+    'build_supplement.py',
     'corpus/rule_selection.py',
     'corpus/build_stats.py',
     'corpus/consistency_check.py',
@@ -197,6 +200,8 @@ def main():
         '- `corpus/abstract_probe*.py/.json` -- seed-pinned 40-record pool sample and the',
         '  88-paper baseline-comparison screen, with released codes.',
         '- `figures/` -- manuscript figures regenerated from the released data.',
+'- `Supplementary_Material.pdf` / `.docx` -- the paper\'s Supplementary Material (S1-S5:',
+'  interpretation rules, label-noise scenarios, MDE analysis, recall audit, probes).',
         '- `out/gold_labels_30.csv` -- withheld released labels used by the reliability script.',
         '',
         '## Citation',

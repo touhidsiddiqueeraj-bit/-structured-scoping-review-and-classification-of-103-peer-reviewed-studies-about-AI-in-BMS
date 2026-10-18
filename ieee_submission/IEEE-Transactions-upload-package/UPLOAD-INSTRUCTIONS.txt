@@ -11,11 +11,15 @@ Review Paper: 12-page limit including references and appendix.
 CURRENT PDF IS 19 PAGES -- it exceeds the Review Paper limit. The overlength is
 the direct cost of the reviewer-requested additions (positioning section,
 standards mapping, reliability detail, noise model). Either condense further
-before upload (the extended 44-page manuscript stays on GitHub/Zenodo) or
+before upload (the extended 43-page manuscript and its 4-page Supplementary Material stay on GitHub/Zenodo) or
 expect overlength charges from page 9 per IEEE policy. A new-submission cover
 letter (cover_letter.pdf, from cover_letter_TTE_v3.md) and the point-by-point
-response dossier (response_to_reviewers.pdf at the repo root) accompany this
-package for the resubmission after TTE-Reg-2026-09-3162 was rejected.
+response dossier (response_to_reviewers.pdf at the repo root, now 14 pp with
+sections A-L) accompany this package for the resubmission after
+TTE-Reg-2026-09-3162 was rejected. The extended 43-page manuscript and its
+4-page Supplementary Material (robustness material: interpretation rules,
+label-noise scenarios, MDE analysis, recall audit, abstract-level probes)
+stay on GitHub/Zenodo and are referenced from the main text.
 Portal: ieee.atyponrex.com/journal/tte-ieee
 
 SCHOLARONE UPLOAD ORDER
