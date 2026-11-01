@@ -88,6 +88,9 @@ def alpha_field_across(sheets, f):
     return 1 - D_o / D_e if D_e > 0 else float('nan')
 
 def score_round(coders, label, report_path, bucket_pair=None):
+    # drop never-coded (blank) sheets: they carry no judgments (judge F14)
+    coders = {c: s for c, s in coders.items()
+              if any((s.get(d, {}).get(f, '') or '').strip() for d in dois for f in FIELDS)}
     gold_map = {f: {d: gold[d].get(f, '') for d in dois} for f in FIELDS}
     report = []
     print(f'\n[{label}] papers: {len(dois)} | coders found: {", ".join(coders) or "NONE"}')

@@ -160,12 +160,12 @@ TABLE3 = {
    'Early-life cycle prediction (public MATR dataset; about 9% median test error) [[10.1038/s41560-019-0356-8]]; physics-informed early-cycle RUL (multiple datasets; small-data prognosis) [[10.1016/j.apenergy.2025.125314]]; deep-RL prognostic model fusion (public NASA dataset; adaptive model selection) [[10.1016/j.ress.2025.111392]]'],
   ['Charging control', 'Bayesian optimization; mechanism-aware control',
    'Closed-loop Bayesian protocol optimization (hardware prototype; 224 candidates in 16 days vs >500 days of exhaustive search) [[10.1038/s41586-020-1994-5]]; plating-perceiving fast charging (hardware prototype; plating-free protocols) [[10.1016/j.ensm.2022.12.034]]; ensemble-surrogate charging optimization (laboratory cells; multi-objective strategies) [[10.1016/j.enconman.2025.120170]]'],
-  ['Thermal management', 'ANN surrogate; physics-informed; optimization',
-   'ANN temperature prediction (laboratory cells; low-error thermal model) [[10.1016/j.applthermaleng.2023.120482]]; PINN heat-generation estimation (simulation; embedded thermal physics) [[10.1016/j.jechem.2022.11.036]]; ML-assisted BTMS design (simulation; multi-objective cooling design) [[10.1016/j.applthermaleng.2024.123826]]'],
+  ['Thermal management', 'artificial neural network (ANN) surrogate; physics-informed; optimization',
+   'ANN temperature prediction (laboratory cells; low-error thermal model) [[10.1016/j.applthermaleng.2023.120482]]; PINN heat-generation estimation (simulation; embedded thermal physics) [[10.1016/j.jechem.2022.11.036]]; ML-assisted battery thermal management system (BTMS) design (simulation; multi-objective cooling design) [[10.1016/j.applthermaleng.2024.123826]]'],
   ['Fault & safety', 'Shallow ML; multiphysics + ML; transfer learning',
    'SVM fault diagnosis (hardware prototype; sensor and connection faults) [[10.1016/j.energy.2020.118866]]; multiphysics-ML runaway prediction (simulation and hardware; module-level hazard) [[10.1016/j.jpowsour.2024.235015]]; cross-fleet runaway-diagnosis transfer (fleet data; small-sample diagnosis) [[10.1016/j.apenergy.2024.123248]]'],
   ['Cross-cutting', 'Physics-informed; XAI; digital twin; LLM',
-   'EIS diagnostics PINN review (multiple studies; paradigm synthesis) [[10.1016/j.rser.2023.113807]]; uncertainty-aware early-life prediction (public MATR dataset; calibrated forecasts) [[10.1039/d2dd00067a]]; LLM-based SOH estimation with uncertainty-aware fallback (field data; subset\u2019s earliest LLM estimator \u2014 an earlier journal study was missed by the retrieval, Section 8.4) [[10.1016/j.ensm.2026.104983]]'],
+   'EIS diagnostics PINN review (multiple studies; paradigm synthesis) [[10.1016/j.rser.2023.113807]]; uncertainty-aware early-life prediction (public MATR dataset; calibrated forecasts) [[10.1039/d2dd00067a]]; LLM-based SOH estimation with uncertainty-aware fallback (field data; subset\u2019s earliest LLM estimator \u2014 an earlier journal study was missed by the retrieval; see the foundation-models section) [[10.1016/j.ensm.2026.104983]]'],
  ],
 }
 
@@ -238,7 +238,7 @@ TABLE_GAPS = {
 
 
 TABLE_METH = {
- 'caption': 'Table 2 Method families: representative techniques, strengths, and limitations. Counts are the 88 primary-application papers; the three review-type syntheses coded under a method family plus the 12 method-family reviews are accounted for in the function-by-year composition table.',
+ 'caption': 'Table 2 Method families: representative techniques, strengths, and limitations. Counts are the 88 primary-application papers; the three review-type syntheses coded under a method family plus the 12 method-family reviews are accounted for in the function-by-year composition table. Abbreviations: SVM, support vector machine; SVR, support vector regression; LSTM, long short-term memory; GRU, gated recurrent unit; CNN, convolutional neural network.',
  'header': ['Method family', 'Papers', 'Representative techniques', 'Strengths', 'Limitations'],
  'widths': [1.15, 0.5, 1.8, 1.55, 1.5],
  'rows': [
@@ -273,7 +273,7 @@ TABLE_VALID = {
 
 
 TABLE_FLEET = {
- 'caption': 'Table 6 Cross-tabulation of fleet-data use against online validation (103 classified papers). Fleet-data use describes the primary data source; online validation describes the validation protocol; their overlap is 8 of 10 fleet-data papers. A laboratory-data online demonstration was recoded to experimental hardware after full-text re-check (per the codebook’s absorbing rule: each paper is credited with the strongest protocol its full text reports for its headline claim, and a stronger claim unsupported at full-text re-check absorbs into the weaker class that is evidenced — Box 2). The right-hand column pools the environment-only validation categories defined with the classification framework.',
+ 'caption': 'Table 6 Cross-tabulation of fleet-data use against online validation (103 classified papers). Fleet-data use describes the primary data source; online validation describes the validation protocol; their overlap is 8 of 10 fleet-data papers. A laboratory-data online demonstration was recoded to experimental hardware after full-text re-check (per the codebook’s absorbing rule: each paper is credited with the strongest protocol its full text reports for its headline claim, and a stronger claim unsupported at full-text re-check absorbs into the weaker class that is evidenced). The right-hand column pools the environment-only validation categories defined with the classification framework.',
  'header': ['', 'Online / real-vehicle validation', 'All other validation protocols', 'Total papers'],
  'rows': [
   ['Real-vehicle / fleet data', '8', '2 (cross-domain holdout; case study)', '10'],
@@ -310,7 +310,7 @@ TABLE_LLM = {
  'header': ['Dimension', 'Classical / deep ML estimators (established practice)', 'Published LLM studies (2025\u20132026)', 'Required guardrail (this review)'],
  'widths': [1.0, 1.9, 1.8, 1.8],
  'rows': [
-  ['Role in the stack', 'Calibrated numeric estimation and detection', 'Stationary-BESS incident risk analysis [[10.1016/j.ress.2026.112416]]; LLM-based SOH estimation with uncertainty-aware control on field vehicle data [[10.1016/j.ensm.2026.104983]]', 'Estimation should belong to calibrated ML; the LLM SOH estimator of [[10.1016/j.ensm.2026.104983]] is the earliest in the classified subset \u2014 an earlier journal-published LLM estimator, missed by this review\u2019s retrieval, is [[10.1109/tec.2025.3548400]] (Section 8.4) \u2014 and must show calibrated intervals before any actuation-adjacent role'],
+  ['Role in the stack', 'Calibrated numeric estimation and detection', 'Stationary-BESS incident risk analysis [[10.1016/j.ress.2026.112416]]; LLM-based SOH estimation with uncertainty-aware control on field vehicle data [[10.1016/j.ensm.2026.104983]]', 'Estimation should belong to calibrated ML; the LLM SOH estimator of [[10.1016/j.ensm.2026.104983]] is the earliest in the classified subset \u2014 an earlier journal-published LLM estimator, missed by this review\u2019s retrieval, is [[10.1109/tec.2025.3548400]] (the foundation-models section) \u2014 and must show calibrated intervals before any actuation-adjacent role'],
   ['Grounding', 'Trained on domain cycling data', 'Domain-tuned corpora and knowledge-enhanced prompting', 'Retrieval over verified corpora with source citations; no ungrounded recall'],
   ['Dominant failure mode', 'Bounded numeric error under distribution shift', 'Open-ended hallucinated text', 'Outputs restricted to structured, checkable forms; never free text into protection logic'],
   ['Uncertainty', 'Gaussian-process / conformal intervals in a subset of studies', 'Not reported for incident risk analysis [[10.1016/j.ress.2026.112416]]; Monte-Carlo uncertainty estimates with selective physics-estimator substitution demonstrated in the SOH estimator [[10.1016/j.ensm.2026.104983]]', 'Calibrated intervals mandatory before any actuation-adjacent role'],

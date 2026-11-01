@@ -16,16 +16,16 @@ doi,area,method_family,data_source,validation_coded,strong_protocol_only,strong_
 10.1016/j.egyai.2022.100188,Cross-cutting,Shallow ML,self-lab,cross-cell holdout,yes,yes,primary
 10.1109/jrfid.2022.3211841,Cross-cutting,Physics-informed,NASA,within-cell split,no,no,primary
 10.1007/s00521-022-07291-5,Cross-cutting,Physics-informed,CALCE,within-cell split,no,no,primary
-10.1002/batt.202300046,Cross-cutting,Shallow ML,review,review synthesis,no,no,primary
+10.1002/batt.202300046,Cross-cutting,Shallow ML,review,review synthesis,no,no,review-synthesis
 10.1039/d2dd00067a,Cross-cutting,Shallow ML,Severson-MATR,cross-cell holdout,yes,yes,primary
 10.1016/j.ensm.2023.02.035,Cross-cutting,Deep learning,Severson-MATR,cross-cell holdout,yes,yes,primary
 10.1016/j.eswa.2023.120444,Cross-cutting,Deep learning,real-vehicle,online/real-vehicle,yes,yes,primary
 10.1016/j.est.2022.106295,Cross-cutting,Shallow ML,EIS-lab,cross-cell holdout,yes,yes,primary
 10.1016/j.est.2023.107203,Cross-cutting,Hybrid physics+ML,self-lab,experimental hardware,no,yes,primary
 10.1016/j.ress.2022.109046,Cross-cutting,Shallow ML,CALCE,within-cell split,no,no,primary
-10.1016/j.rser.2023.113807,Cross-cutting,Physics-informed,review,review synthesis,no,no,primary
+10.1016/j.rser.2023.113807,Cross-cutting,Physics-informed,review,review synthesis,no,no,review-synthesis
 10.3390/batteries10070220,Cross-cutting,Review / perspective,review,review synthesis,no,no,--
-10.3390/batteries10120442,Cross-cutting,Physics-informed,review,review synthesis,no,no,primary
+10.3390/batteries10120442,Cross-cutting,Physics-informed,review,review synthesis,no,no,review-synthesis
 10.1016/j.est.2024.113502,Cross-cutting,Graph neural network,Severson-MATR,cross-cell holdout,yes,yes,primary
 10.1002/aenm.202503067,Cross-cutting,Review / perspective,review,review synthesis,no,no,--
 10.1109/tte.2025.3533540,Cross-cutting,Transfer learning,EIS-lab,cross-chemistry holdout,yes,yes,primary

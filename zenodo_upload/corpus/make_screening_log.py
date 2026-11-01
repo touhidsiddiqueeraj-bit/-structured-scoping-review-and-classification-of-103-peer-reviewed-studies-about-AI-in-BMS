@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Record-level screening provenance: one row per record retrieved (883+ refs),
 with stage statuses, function tags, and exclusion reasons. Reviewer fix:
-makes the selection process verifiable (TTE R3: 'record-level screening table')."""
+makes the selection process verifiable row by row."""
 import os
 import csv, json
 import pool

@@ -54,7 +54,7 @@ print('data counts:', dict(Counter(r['data'] for r in C).most_common()))
 # 7. citations source
 print('\ntotal cites:', sum(r['cites'] for r in C))
 
-# 7. TTE-revision checks: two-tier corpus, protocol audit, review labels, Fisher
+# 7. Two-tier corpus checks: protocol audit, review labels, Fisher
 import json as _json
 from math import sqrt as _sqrt, exp as _exp, log as _log
 

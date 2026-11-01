@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Condensed TTE-submission text (12-page limit): part 2."""
+"""Condensed submission-manuscript text: part 2."""
 
 BLOCKS = [
 ('h1', '3. Corpus Overview and Five-Year Evolution'),
@@ -24,12 +24,9 @@ BLOCKS = [
  "fall in 2024\u20132026 and it is the largest single family in 2026 (Table II gives the subset totals by year). Optimization-"
  "augmented learning (Bayesian optimization, surrogate-assisted and meta-heuristic schemes) peaks in 2024 (5 of its 11 papers); transfer learning "
  "accelerates in 2024\u20132025 (3 of its 5 papers); reinforcement learning appears as the dominant family in 1 paper and as an embedded component in at least "
- "one more [[10.1016/j.ress.2025.111392]][[10.1038/s41598-025-30602-4]]; the subset\u2019s first foundation-model and LLM-based studies appear in 2025\u20132026 "
- "(2 papers) [[10.1016/j.ress.2026.112416]][[10.1016/j.ensm.2026.104983]], with journal-published LLM-based battery estimation beginning "
- "earlier still, as a retrieval miss rather than a venue exclusion [[10.1109/tec.2025.3548400]]. These family shares describe the subset "
+ "one more [[10.1016/j.ress.2025.111392]][[10.1038/s41598-025-30602-4]]; the subset\u2019s first foundation-model and LLM-based studies appear in 2026 (2 papers) [[10.1016/j.ress.2026.112416]][[10.1016/j.ensm.2026.104983]], with journal-published LLM-based battery estimation beginning in 2025 outside this retrieval, as a retrieval miss rather than a venue exclusion [[10.1109/tec.2025.3548400]]. These family shares describe the subset "
  "only; the subset is curated, small-denominator years carry wide sampling error, and the eligible pool's method-theme tags show no "
- "monotonic physics-informed trend. Two qualifications matter: the families are not mutually exclusive (a PSO-tuned LSTM is both deep learning and optimization-"
- "augmented), so the composition understates method mixing; and physics-informed papers show no detectably different validation stringency from the others "
+ "monotonic physics-informed trend. Two qualifications matter: the families are not mutually exclusive (a particle swarm optimization (PSO)-tuned long short-term memory (LSTM) is both deep learning and optimization-augmented), so the composition understates method mixing; and physics-informed papers show no detectably different validation stringency from the others "
  "even under the most permissive definition \u2014 a nominally lower strong-protocol rate that these counts are underpowered to resolve (Section III-C)."),
 
 ('fig', 'figures/fig3_method_evolution.png', 'Fig. 3 Two-tier trend evidence. Left: Tier 1 eligible-corpus records per year across the capped retrieval '
@@ -58,10 +55,7 @@ BLOCKS = [
  "the classified literature is predominantly cell-level and laboratory-scale, one integration level below the pack- and vehicle-level questions that "
  "UN GTR 20, GB 38031, and ISO 26262 pose. Second, venue concentration is marked: in the eligible corpus the Journal of Energy Storage (103 records), "
  "Energy (61), and Batteries (45) lead, and the same two energy-storage journals head the classified subset (Journal of Energy Storage with 15 papers and Energy with 13, Applied Energy "
- "third at 9) \u2014 energy-storage venues, not transportation-electrification venues, absorb the field's output. The thin representation of cell "
- "balancing is also telling: balancing remains dominated by classical control practice, and the subset's most-cited balancing-related result is the "
- "demonstration that routine balancing can be dispensed with in well-managed packs, reducing hazardous lithium-plating side reactions "
- "[[10.1016/j.est.2023.106931]]."),
+ "third at 9) \u2014 energy-storage venues, not transportation-electrification venues, absorb the field's output. The thin representation of cell balancing is also telling: balancing remains dominated by classical control practice, and its most visible result in this subset is a single contrarian study reporting that routine balancing can be dispensed with in well-managed packs, reducing hazardous lithium-plating side reactions [[10.1016/j.est.2023.106931]] — reproduced here as one study's claim, not an established result."),
 
 ('tbl', 'TABLE2'),
 
@@ -79,7 +73,7 @@ BLOCKS = [
  "the remaining 29 studies establish hardware operation (20), simulation- or case-level evidence without a generalization protocol (9) \u2014 "
  "42+17+29 = 88. The complete per-paper protocol assignment is released in papers.csv (valid field) and tabulated as a supplement "
  "(protocol_audit.csv), so the 42-of-88 arithmetic above can be verified row by row. The 30-paper blind re-coding of Section II-C is an abstract-level "
- "inter-coder agreement check whose sample includes the 5 review-labelled papers — not an independent re-derivation of these assignments (their bucket agreement with the released labels is itself weak, and the revised-codebook round 2 lifts the coders' mutual bucket agreement to 28 of 30 papers, \u03ba = 0.83, while remaining an agreement measure rather than a re-derivation, Section II-C); the counts instead carry the scenario sensitivity that follows. An independent re-coding of the validation field by the declared AI assistant, performed after the label set was frozen (open-access full texts where retrievable, indexed abstracts otherwise) covers 46 of the 88 primaries and determinably codes 23: 10 of the 14 determinable strong labels are confirmed, four are contradicted (one full-text-verified within-cell split coded cross-cell in the released labels; one synthetic-data validation; two abstract-level evidence gaps), and two non-strong labels would be upgraded \u2014 bucket agreement 17 of 23 (74%), itemized and released with no label altered (corpus/validation_recode/)."),
+ "inter-coder agreement check whose sample includes the 5 review-labelled papers — not an independent re-derivation of these assignments (their bucket agreement with the released labels is itself weak, and the revised-codebook round 2 lifts the coders' mutual bucket agreement to 28 of 30 papers, \u03ba = 0.83, while remaining an agreement measure rather than a re-derivation, Section II-C); the counts instead carry the scenario sensitivity that follows. A released supplementary note re-derives the sensitivity envelope and the round-2 reliability numbers, keyed to the section numbering of both manuscripts. A released supplementary note re-derives the sensitivity envelope and the round-2 reliability numbers, keyed to the section numbering of both manuscripts. A released supplementary note re-derives the sensitivity envelope and the round-2 reliability numbers, keyed to the section numbering of both manuscripts. An independent re-coding of the validation field by the AI research assistant (coder D), performed after the label set was frozen (open-access full texts where retrievable, indexed abstracts otherwise) covers 46 of the 88 primaries and determinably codes 23: 10 of the 14 determinable strong labels are confirmed, four are contradicted (one full-text-verified within-cell split coded cross-cell in the released labels; one synthetic-data validation; two abstract-level evidence gaps), and two non-strong labels would be upgraded \u2014 bucket agreement 17 of 23 (74%), itemized and released with no label altered (corpus/validation_recode/)."),
 ('p',
  "The full cross-tabulation of method family by validation class makes the pattern concrete (Table I gives the family totals). Classical learning "
  "accounts for 28 primary papers and uses a strong isolation protocol in 19 of them (68%); deep learning follows at 9 of 19 (47%); physics-informed "
@@ -105,7 +99,7 @@ BLOCKS = [
  "the record-level data."),
 ('p',
  "Crossing validation practice with method family, the cautious reading is: 8 of the 22 physics-informed/hybrid primary papers (36%) use a strong "
- "protocol, against 34 of the 66 other primary papers (52%) \u2014 Fisher's exact p = 0.32, odds ratio 0.54 (95% CI 0.21\u20131.46). Under the "
+ "protocol, against 34 of the 66 other primary papers (52%) \u2014 Fisher's exact p = 0.32, odds ratio 0.54 with a 95% confidence interval (CI) of 0.21\u20131.46. Under the "
  "broader definition that also counts experimental-hardware demonstration as strong validation, the contrast is 13 of 22 (59%) versus "
  "49 of 66 (74%), OR 0.50 (95% CI 0.19\u20131.36, p = 0.19). We report both and claim neither as a model-family effect: the difference is not "
  "statistically significant under either definition, confounding is unadjusted (physics-informed work skews toward early-stage and simulation-heavy "
@@ -141,8 +135,7 @@ BLOCKS = [
 ('p',
  "SOC estimation is the most mature BMS function, and the classified subset shows how machine learning entered it. The early pattern pairs learning with "
  "classical estimation: Gaussian process regression for pack-level SOC with native uncertainty quantification [[10.1016/j.energy.2020.118000]], and "
- "\u2014 most influentially \u2014 recurrent networks embedded in unscented Kalman filters, where the LSTM supplies a learned observation model and "
- "the filter recursive correction [[10.1016/j.energy.2020.117664]]. A second generation tuned network structure itself: particle-swarm-optimized LSTM "
+ "\u2014 most influentially \u2014 recurrent networks embedded in unscented Kalman filters (UKFs), where the LSTM supplies a learned observation model and the filter supplies the recursive correction [[10.1016/j.energy.2020.117664]]. A second generation tuned network structure itself: particle-swarm-optimized LSTM "
  "improved accuracy and noise robustness [[10.1016/j.energy.2021.121236]], and evolutionary-assisted CNN\u2013BiLSTM hybrids report sub-1% drive-cycle "
  "errors [[10.1016/j.heliyon.2024.e35183]]. Simulation-informed training pipelines substitute automotive-accurate simulated data for exhaustive cell "
  "testing [[10.1016/j.jpowsour.2020.229108]], comparative benchmarks on standard drive cycles weigh ML regression families [[10.3390/wevj12010038]], "
@@ -153,13 +146,11 @@ BLOCKS = [
  "[[10.1016/j.est.2024.111877]]."),
 ('p',
  "The most substantive recent shift is toward hybrid schemes in which a filter, an equivalent-circuit model, or a physics prior constrains the "
- "learner: GA-optimized LSTM coupled with improved adaptive Kalman filtering reaches low error under measurement noise that breaks pure-network "
- "estimators [[10.1016/j.apenergy.2024.123508]]; equivalent-circuit-informed ML on impedance features estimates SOC across temperatures "
+ "learner: a genetic algorithm (GA)-optimized LSTM coupled with improved adaptive Kalman filtering reaches low error under measurement noise that breaks pure-network estimators [[10.1016/j.apenergy.2024.123508]]; equivalent-circuit-informed ML on impedance features estimates SOC across temperatures "
  "[[10.1016/j.energy.2023.128461]]; and physics-informed recurrent structures embed battery dynamics directly into the training objective "
  "[[10.1109/jrfid.2022.3211841]]. These schemes trade engineering complexity for extrapolation behavior \u2014 the property that matters most onboard. "
  "Yet 11 of the 13 subset SOC primary papers rest on the authors' own laboratory cells and one on laboratory impedance measurements, 9 of the 13 on a "
- "single cathode chemistry (NMC), and the thirteenth \u2014 the cluster's only operation-scale demonstration, a simulated stationary containerized "
- "storage system rather than a vehicle \u2014 is [[10.1016/j.jpowsour.2024.235609]]; benchmark heterogeneity makes cross-paper comparison nearly "
+ "single cathode chemistry (NMC), and the thirteenth is a simulation-based EV study [[10.1016/j.jpowsour.2020.229108]]; the cluster's only operation-scale demonstration, a stationary containerized storage system rather than a vehicle [[10.1016/j.jpowsour.2024.235609]], is itself coded on laboratory data under the released labels, with its re-reading as field-stationary data logged among the codebook patch candidates; benchmark heterogeneity makes cross-paper comparison nearly "
  "meaningless "
  "[[10.1016/j.egyai.2025.100585]][[10.20517/jmi.2024.84]]. Within the subset's own reporting, accuracy on laboratory cells no longer appears to be the binding constraint in this cluster; "
  "guaranteed accuracy on arbitrary packs over full cell aging, which the onboard estimator would need, is not demonstrated anywhere in the subset."),
@@ -168,10 +159,7 @@ BLOCKS = [
 ('p',
  "SOH estimation and RUL prediction form the largest functional block of the classified subset (32 primary papers: 19 SOH, 13 RUL). The founding pattern is "
  "classical: extract health-sensitive features from partial charge or discharge curves, then regress with Gaussian process or similar shallow models "
- "\u2014 incremental-capacity analysis with explicit uncertainty bounds [[10.1016/j.energy.2019.116467]], differential thermal voltammetry "
- "[[10.1109/tte.2020.3028784]], and Gaussian-process classification of impedance spectra that identifies degradation modes "
- "[[10.1038/s41467-020-15235-7]], and deep Gaussian processes coupling prognosis with degradation-mode identification "
- "[[10.1016/j.jpowsour.2019.227281]]. Measurement relaxations followed: random partial charging data proved sufficient for accurate SOH "
+ "\u2014 incremental-capacity analysis with explicit uncertainty bounds [[10.1016/j.energy.2019.116467]], differential thermal voltammetry [[10.1109/tte.2020.3028784]]; Gaussian-process classification of impedance spectra that identifies degradation modes [[10.1038/s41467-020-15235-7]]; and deep Gaussian processes coupling prognosis with degradation-mode identification [[10.1016/j.jpowsour.2019.227281]]. Measurement relaxations followed: random partial charging data proved sufficient for accurate SOH "
  "[[10.1109/tpel.2021.3134701]], and charging-segment adjustment refined features for vehicle-level use [[10.1016/j.apenergy.2024.124077]]. The "
  "landmark systematization is Roman et al.'s 179-cell pipeline showing that relaxed charge-curve features support accurate SOH estimation across a "
  "heterogeneous commercial fleet [[10.1038/s42256-021-00312-3]]."),
@@ -225,7 +213,7 @@ BLOCKS = [
 ('p',
  "Thermal management (7 primary papers) divides by purpose. For estimation, ANN models predict cell temperature across operating conditions "
  "[[10.1016/j.applthermaleng.2023.120482]] and internal-temperature sensing extends to ultrahigh-rate discharge where surface measurement fails "
- "[[10.1016/j.apenergy.2026.127394]]. For design, ML surrogates amortize expensive CFD evaluation across optimization loops "
+ "[[10.1016/j.apenergy.2026.127394]]. For design, ML surrogates amortize expensive computational fluid dynamics (CFD) evaluation across optimization loops "
  "[[10.1016/j.jpowsour.2021.229727]][[10.1016/j.applthermaleng.2024.123826]], with experimentally validated parallel-liquid-cooling designs closing "
  "the loop [[10.1016/j.applthermaleng.2022.118503]]. For control, ANN controllers demonstrate parasitic-load reductions in simulation "
  "[[10.3390/wevj16050279]] \u2014 but no subset paper closes this loop on hardware, leaving thermal control where charging control was five years ago. "

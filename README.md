@@ -1,7 +1,7 @@
 # Machine learning in battery management systems: a two-tier scoping review of 799 eligible studies with in-depth classification and validation audit
 
 [![Paper](https://img.shields.io/badge/manuscript-ML--BMS--Review.pdf-blue)](ML-BMS-Review.pdf)
-[![Submission](https://img.shields.io/badge/IEEE--TTE--submission-tex%2Fmlbms.pdf-blue)](ieee_submission/tex/mlbms.pdf)
+[![Manuscript](https://img.shields.io/badge/manuscript-tex%2Fmlbms.pdf-blue)](ieee_submission/tex/mlbms.pdf)
 [![Corpus](https://img.shields.io/badge/dataset-799%20eligible%20%2B%20103%20classified-green)](ML-BMS-Corpus.xlsx)
 [![Verification](https://img.shields.io/badge/metadata-Crossref%20DOI--resolved-orange)](#verification-methodology)
 
@@ -26,14 +26,12 @@ Every DOI in the **103-study classified subset** and the **conference descriptiv
 
 | Artifact | Description |
 |---|---|
-| [`ieee_submission/`](ieee_submission) | IEEE TTE submission package: IEEEtran source, compiled PDF, cover letter, submission figures |
+| [`ieee_submission/`](ieee_submission) | IEEE Transactions-style manuscript source (IEEEtran LaTeX), compiled PDF, and submission figures |
 | [`ML-BMS-Review.pdf`](ML-BMS-Review.pdf) / [`.docx`](ML-BMS-Review.docx) | The extended manuscript (45 pp., 13 tables, 1 box, 125 references incl. six standards documents) |
 | [`Supplementary_Material.pdf`](Supplementary_Material.pdf) / [`.docx`](Supplementary_Material.docx) | Supplementary Material (4 pp.): interpretation rules (S1), label-noise scenario envelope (S2), MDE analysis (S3), recall-audit construction (S4), abstract-level probes (S5); built by `build_supplement.py` |
-| [`response_to_reviewers.pdf`](response_to_reviewers.pdf) / [`.docx`](response_to_reviewers.docx) | Point-by-point response dossier for the TTE review round (TTE-Reg-2026-09-3162), sections A–M |
 | [`corpus/validation_recode/`](corpus/validation_recode) | Independent post-freeze re-code of the validation field (coder D): evidence sheet, coder sheet, comparison script, and itemized discrepancies (10 of 14 determinable strong labels confirmed; bucket agreement 17/23, κ = 0.47) |
 | [`corpus/retrieval_depth_pilot.py`](corpus/retrieval_depth_pilot.py) / [`.json`](corpus/retrieval_depth_pilot.json) | Retrieval-depth pilot: six query families cursor-paged to depth 200 yield 1,500 title-gated records absent from the 1,550 (1,406 venue-eligible); the top-20 cap, not the registry, is the binding constraint |
 | [`osf_registration/`](osf_registration) | Retrospective OSF registration package: ready-to-file registration draft of the as-conducted protocol + filing checklist (author action, ~10 min) |
-| [`cover_letter_TTE_v3.md`](cover_letter_TTE_v3.md) | Cover letter for the resubmission (supersedes v2) |
 | [`ML-BMS-Corpus.xlsx`](ML-BMS-Corpus.xlsx) | Human-readable workbook: **Papers** (103, clickable DOI links), **Summary** (corpus counts), **Conference sensitivity** (14, clickable DOI links) |
 | [`corpus/papers.csv`](corpus/papers.csv) | The 103-paper classified corpus (machine-readable; one row per study, 16 fields) |
 | [`corpus/eligible_corpus.json`](corpus/eligible_corpus.json) | The 799-record rule-based eligible corpus (Tier 1; measured bibliometrics source) |
@@ -61,10 +59,10 @@ Every DOI in the **103-study classified subset** and the **conference descriptiv
 
 - **Two-tier evidence base.** Field-level bibliometrics are *measured* on a rule-based eligible corpus (799 records, 2020–2026 plus one Crossref-dated 2027 early-access record; no function quotas); in-depth classification and the validation audit live on the curated 103-study subset, with reconciliation checks between tiers (`consistency_check.py`).
 - **Validation gap, quantified and tested.** Strong protocols (cross-cell / cross-chemistry / cross-domain holdout, online or fleet) cover 42 of 88 primary-application papers (48%; symmetric label-noise scenarios span 40–59%, and a strong-to-weak worst-case bound — built from the abstract-level coders’ recode rate on strong labels — takes the share as low as 18% at that rate); 17 use within-cell or unsupervised k-fold splits that leak trajectory information; 23 papers rest on three public benchmarks (MATR/NASA/CALCE) and 36 on private laboratory cells — a two-pole data-fragmentation pattern.
-- **Inter-coder reliability, measured in two rounds.** Two co-author coders blind-re-coded a 30-paper stratified sample. Round 1 (independent evidence, mostly abstract-level): κ = 0.92 (function), 0.88 (method), 0.88 (data) pass; chemistry κ = 0.55 and validation κ = 0.48 fail the ≥ 0.66 threshold — traced to abstract-only evidence access. Round 2 (pre-registered codebook v1.1 repair; shared evidence base of 10 full texts, 1 preprint, the released code repository of one SOH study, and 19 abstract-only papers): all five fields pass at the 0.80 strong level — function κ = 0.96, method 1.00, chemistry 1.00, data 0.96, validation 0.92 — and the count-bearing strong/non-strong bucket rises from 25/30 (83%, κ = 0.52) to 28/30 (93%, κ = 0.83). Round 2 measures rule-application agreement (judgment-level independence on a shared evidence base), so the rounds are complementary, not interchangeable. Sheets, dispute tables for both rounds, and the hash-tracked log are released; five full-text-surfaced candidate label corrections are itemized, unapplied, for author adjudication.
+- **Inter-coder reliability, measured in two rounds.** Two co-author coders blind-re-coded a 30-paper stratified sample. Round 1 (independent evidence, mostly abstract-level): κ = 0.92 (function), 0.88 (method), 0.88 (data) pass; chemistry κ = 0.55 and validation κ = 0.48 fail the ≥ 0.66 threshold — traced to abstract-only evidence access. Round 2 (pre-declared codebook v1.1 revision; shared evidence base of 10 full texts, 1 preprint, the released code repository of one SOH study, and 19 abstract-only papers): all five fields pass at the 0.80 strong level — function κ = 0.96, method 1.00, chemistry 1.00, data 0.96, validation 0.92 — and the count-bearing strong/non-strong bucket rises from 25/30 (83%, κ = 0.52) to 28/30 (93%, κ = 0.83). Round 2 measures rule-application agreement on a shared evidence base (its sheets were produced in a single session), so the rounds are complementary, not interchangeable. Sheets, dispute tables for both rounds, and the hash-tracked log are released; five full-text-surfaced candidate label corrections are itemized, unapplied, for author adjudication.
 - **Physics-informed validation contrast is exploratory, not settled.** 36% vs 52% strong-protocol share (Fisher p = 0.32, OR 0.54, 95% CI 0.21–1.46); under the broader definition 59% vs 74%, OR 0.50, 95% CI 0.19–1.36, p = 0.19 — non-significant under both definitions, unadjusted confounding declared, and the family contrast stays non-significant in 95% of label-noise scenario draws.
 - **Transportation-electrification cut + standards mapping.** Measured shares for vehicle/fleet-level work (≈2% of eligible records), a BMS-function-to-requirement map for UN GTR 20 / GB 38031-2020/2025 / ISO 26262:2018 / ISO/PAS 8800:2024 / ISO 21448 (SOTIF), and a positioning table against prior reviews.
-- **Foundation-model guardrails.** An LLM-based SOH **estimator** among the subset's 2025–2026 entries is analyzed with its prior-art caveat stated (LLM-based battery estimation exists earlier outside the screened venues); Table V (Table 9 in the extended version) maps grounding, hallucination, uncertainty, latency, and safety-authority requirements — LLM components must never hold direct cell-level protection authority.
+- **Foundation-model guardrails.** An LLM-based SOH **estimator** among the subset's 2026 entries is analyzed with its prior-art caveat stated (LLM-based battery estimation exists earlier outside the screened venues); Table V (Table 9 in the extended version) maps grounding, hallucination, uncertainty, latency, and safety-authority requirements — LLM components must never hold direct cell-level protection authority.
 - **A reporting checklist.** Section IX-D (§9.7 in the extended version) proposes **BMS-ML-RC**, a 12-item CONSORT/PRISMA-style reporting checklist (Table VIII / Table 11) for future machine-learning BMS studies.
 
 ## Figures
@@ -134,7 +132,7 @@ python3 corpus/make_figs.py           # Figs. 2b/3-6 + Fig. 8 timeline
 python3 corpus/make_fig7_saturation.py# Fig. 4/7 benchmark reuse
 
 # 7. Manuscripts (citations [[doi]] -> numbered [n], tables, references)
-python3 corpus/build_tex.py --short   # -> ieee_submission/tex/mlbms.tex (TTE submission)
+python3 corpus/build_tex.py --short   # -> ieee_submission/tex/mlbms.tex (submission manuscript)
 cd ieee_submission/tex && tectonic mlbms.tex
 python3 build_docx.py                 # -> ML-BMS-Review.docx (extended)
 soffice --headless --convert-to pdf ML-BMS-Review.docx   # -> ML-BMS-Review.pdf
@@ -156,12 +154,12 @@ python3 corpus/final_audit.py
 
 ```
 .
-├── ieee_submission/               # IEEE TTE submission (tex + PDF + cover letter + figures)
+├── ieee_submission/               # submission manuscript (IEEEtran tex + PDF + figures)
 ├── ML-BMS-Review.docx / .pdf      # extended manuscript
 ├── ML-BMS-Corpus.xlsx             # Papers + Summary + Conference sensitivity
 ├── figures/                       # Figs. 1-8 (300 dpi PNG)
 ├── paper_part1.py / _2 / _3       # extended-manuscript text as structured blocks ([[doi]] citations)
-├── paper_short_part1.py / _2 / _3 # condensed TTE-submission text (same block format)
+├── paper_short_part1.py / _2 / _3 # condensed submission-manuscript text (same block format)
 ├── build_docx.py                  # DOCX builder: citation resolution, tables, references
 ├── corpus/
 │   ├── fetch_crossref.sh, queries.txt, raw/     # search stage (cached responses)
@@ -206,4 +204,4 @@ If this corpus or checklist is useful, please cite the manuscript:
 
 ## Provenance and AI disclosure
 
-The bibliographic corpus is machine-curated and human-verified: classification fields were coded by the lead author with conservative coding from full texts, and their reliability is documented through a two-round 30-paper blind inter-coder re-coding study (round 1: three of five fields above the κ ≥ 0.66 threshold, two below; round 2, under the pre-registered codebook v1.1 repair and a shared evidence base: all five fields at the 0.80 strong level; label-noise sensitivity ranges on every headline validation count — see manuscript §2.5/§II-C). Writing-support and language-enhancement tools (ChatGPT, Grammarly, QuillBot) were used for grammar, readability, and restructuring; all technical content, analysis, interpretations, and research contributions are the authors' own (see the Acknowledgment section of the manuscript).
+The bibliographic corpus is machine-curated and human-verified: classification fields were coded by the lead author with conservative coding from full texts, and their reliability is documented through a two-round 30-paper blind inter-coder re-coding study (round 1: three of five fields above the κ ≥ 0.66 threshold, two below; round 2, under the pre-declared codebook v1.1 revision and a shared evidence base: all five fields at the 0.80 strong level; label-noise sensitivity ranges on every headline validation count — see manuscript §2.5/§II-C). Writing-support and language-enhancement tools (ChatGPT, Grammarly, QuillBot) were used for grammar, readability, and restructuring; all technical content, analysis, interpretations, and research contributions are the authors' own (see the Acknowledgment section of the manuscript).

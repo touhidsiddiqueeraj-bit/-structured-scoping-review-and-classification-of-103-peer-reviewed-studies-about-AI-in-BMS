@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Rule-based selection applied to ALL venue-screened eligible records.
 
-Reviewer fix (TTE rejection, R1#1/R2#1/R3): the original function-quota step
+Design note: the original function-quota step
 partly wrote the corpus distributions. This script applies rule-based
 inclusion criteria uniformly to the full venue-screened pool:
 

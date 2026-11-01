@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Condensed TTE-submission text (12-page limit): part 3."""
+"""Condensed submission-manuscript text: part 3."""
 import paper_part3 as FULL
 
 TABLES = {
@@ -18,7 +18,7 @@ TABLES = {
    '3 of 13 SOC primary papers use a strong isolation protocol; none validate on real-vehicle data; 12 rest on laboratory-scale data'],
   ['SOH / RUL prognosis',
    'Capacity and power fade margins underpin thermal-propagation early warning and end-of-service decisions; degradation assumptions must hold across chemistry, duty, and environment (ISO 26262 hazard analysis; ISO 21448 for performance limitations)',
-   '20 of 32 SOH/RUL primary papers use a strong protocol; 4 use real-vehicle data; accuracy claims rest mostly on three public benchmarks (23 primary papers in the subset)'],
+   '20 of 32 SOH/RUL primary papers use a strong protocol; 4 use real-vehicle data; accuracy claims rest mostly on three public benchmarks (16 of the 32 SOH/RUL primary papers; 23 across the whole subset)'],
   ['Fault detection',
    'Thermal-propagation containment and early warning must both be evidenced: GB 38031-2025 requires that after single-cell thermal runaway the pack or system neither fire nor explode over a two-hour observation window, that a thermal-event alarm still be issued, and that smoke not harm occupants — superseding GB 38031-2020’s five-minute pre-fire alarm; the GTR 20 Amendment 1 proposal (ECE/TRANS/WP.29/GRSP/2026/4) carries a ≥5-min advance warning before cabin hazards, with test or risk-management compliance options; coverage must be argued and audited (ISO/PAS 8800 assurance argument)',
    '2 of 7 fault/safety primary papers validate online on fleet data; detection-latency and false-alarm distributions are rarely reported'],
@@ -141,7 +141,7 @@ BLOCKS = [
  "), GB 38031 (GB 38031-2020, now superseded, and the strengthened GB 38031-2025 [[std:gb38031-2025]], effective "
  "July 2026, which replaces the fire/explosion-warning criterion with no-fire/no-explosion thermal-diffusion requirements and adds bottom-"
  "impact and fast-charge-cycle tests), ISO 26262:2018 (functional safety of road-vehicle E/E systems [[std:iso26262]]), ISO/PAS 8800:2024 (safety and "
- "artificial intelligence \u2014 the road-vehicle extension of ISO 26262 and ISO 21448 to learned components [[std:isopas8800]]), and ISO 21448 (SOTIF [[std:iso21448]]) \u2014 do "
+ "artificial intelligence \u2014 the road-vehicle extension of ISO 26262 and ISO 21448 to learned components [[std:isopas8800]]), and ISO 21448 (safety of the intended functionality, SOTIF [[std:iso21448]]) \u2014 do "
  "not prescribe estimation algorithms, but they define what a deployed estimator or controller must be able to evidence, and Table VI "
  "translates the subset's gaps into those terms. The mapping is this review's synthesis at requirement level rather than clause level, and it "
  "is stated so that it can be checked against the standards texts themselves: the point is not legal advice but that a validation protocol "
@@ -164,7 +164,7 @@ BLOCKS = [
 ('p',
  "The closest in scope among recent reviews is the performance-centric review of Prasanna et al. [[10.1007/s44163-025-00721-y]], which "
  "examines 240 peer-reviewed publications (from 361 initially retrieved records) spanning the whole EV powertrain \u2014 battery management alongside charging systems, "
- "motor control, and energy-consumption prediction \u2014 and aggregates reported performance metrics (RMSE, R\u00b2) into a quantitative "
+ "motor control, and energy-consumption prediction \u2014 and aggregates reported performance metrics (root-mean-square error, RMSE, and R\u00b2) into a quantitative "
  "benchmarking of algorithm families, concluding that hybrid deep-learning architectures (LSTM-DDQN, CNN-BiGRU, transformer-based frameworks) "
  "consistently achieve superior accuracy (R\u00b2 > 0.95, RMSE < 0.05). This review differs from that work in scope, unit of analysis, and "
  "question asked. In scope, it is narrower and deeper \u2014 battery-management functions only \u2014 which permits function-level cuts such as the "
@@ -218,8 +218,7 @@ BLOCKS = [
 ('p',
  "This review has examined machine learning in battery management on a two-tier evidence base: a rule-based eligible corpus of 799 records "
  "from which field-level shares are measured within a documented capped retrieval, and an in-depth classified subset of 103 studies "
- "through which method, data, and validation practice are examined with a blind, two-round 30-paper re-coding by two co-author coders "
- "(all five fields at strong agreement in the revised-codebook round) and label-noise sensitivity ranges. Three conclusions stand out. First, and most critically, the proliferation of published accuracy claims is not matched by validation "
+ "through which method, data, and validation practice are examined with a two-round 30-paper re-coding protocol — blind abstract-level round: three of five fields κ ≥ 0.88; revised-codebook rule-application round on a shared evidence base: κ = 0.92–1.00 — and label-noise sensitivity ranges. Three conclusions stand out. First, and most critically, the proliferation of published accuracy claims is not matched by validation "
  "progress: only 8 of the 88 primary papers (8 of the 103 classified studies) demonstrate online or fleet operation, 17 of 88 "
  "primary papers use isolation-weakened splits, and 23 rest on three public benchmarks while 36 rest on private laboratory cells; the "
  "physics-informed validation contrast is directionally consistent under both reported definitions, statistically unestablished and underpowered "
@@ -228,8 +227,7 @@ BLOCKS = [
  "SOC\u2013SOH\u2013prognostics query-theme union tags 366 of 799 records (46%) \u2014 a property of the capped retrieval and its query families, "
  "not a field-level share \u2014 whereas vehicle- and pack-level practice remains thin \u2014 precisely the level at which UN GTR 20, GB 38031, "
  "and ISO 26262 pose their requirements. Third, within the classified subset, method families have shifted from classical feature-based "
- "learners to deep sequence models and now physics-informed hybrids, with LLM-based studies appearing from 2025\u20132026 \u2014 though "
- "LLM-based battery estimation began in other venues; this is a within-subset sequence that the eligible pool\u2019s method-theme tags do not "
+ "learners to deep sequence models and now physics-informed hybrids, with LLM-based studies appearing from 2026 — though LLM-based battery estimation began in other venues in 2025; this is a within-subset sequence that the eligible pool\u2019s method-theme tags do not "
  "mirror, so no field-level family rise is measurable at either tier. "
  "The near-term agenda follows directly: standardized cross-domain validation, diversified fleet data, pack- "
  "and vehicle-level ML aligned with the standards mapping of Section IX, calibrated uncertainty, and a strict division of labor between "

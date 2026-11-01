@@ -61,7 +61,7 @@ para('This supplement consolidates the robustness material that supports the mai
      'the complete evidence base and analysis pipeline are deposited at Zenodo, DOI '
      '10.5281/zenodo.23436202, with the GitHub repository of the same name as a development '
      'mirror. The main text carries one-sentence summaries of each item with pointers here, so '
-     'the supplement can be read alongside Sections 2.2, 2.3, and 3.4 of the paper.')
+     'the supplement can be read alongside Sections 2.2, 2.3, and 3.4 of the extended review (Sections II-A, II-C, and III-C of the condensed submission manuscript).')
 
 # ------------------------------------------------------------------ S1
 h1('S1. Interpretation rules for every quantitative claim in the paper')
@@ -85,7 +85,7 @@ para('*Rule 4 (non-significance is not equivalence).* The physics-informed versu
 para('*Rule 5 (curation conditions the subset).* Tier-2 selection is quota- and '
      'citation-ranking-driven (main text, Section 2.3), so distributions inside the 103 partly '
      'reflect those choices and are reported as corpus composition.')
-artifacts('Invoked at: main text Sections 2.2, 2.3, 2.6, 3.2\u20133.4, and the Figure 5 caption. '
+artifacts('Invoked at: extended-review Sections 2.2, 2.3, 2.6, 3.2\u20133.4, and the Figure 5 caption (condensed-manuscript Sections II-A, II-C, and III-A\u2013C). '
           'Released artifacts: selection.json, screening_log.csv, pool.csv, recall_audit.json.')
 
 # ------------------------------------------------------------------ S2
@@ -205,7 +205,7 @@ para('*Result.* None of the 18 primary-looking pool records states an isolation 
      'enough protocol information to code validation strength at pool scale, in either tier, so '
      'the 48% strong-protocol share cannot be promoted from a curated-subset statistic to a field '
      'estimate without full-text access \u2014 and the scarcity of protocol statements in '
-     'abstracts is itself part of what the reporting checklist of main-text Section 9.9 responds '
+     'abstracts is itself part of what the reporting checklist of extended-review Section 9.9 (Section IX-D of the condensed manuscript) responds '
      'to.')
 h2('S5.2 Baseline-comparison screen: do ML studies benchmark against model-based methods?')
 para('*Question.* The review had audited validation protocols but not whether ML studies compare '

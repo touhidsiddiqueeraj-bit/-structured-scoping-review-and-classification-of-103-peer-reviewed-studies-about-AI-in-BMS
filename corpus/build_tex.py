@@ -289,9 +289,7 @@ for kind, *rest in BLOCKS:
                     'for a stated purpose: an AI language model (GLM, Z.ai) assisted in drafting and adapting the '
                     'literature-pooling, analysis, and figure-generation scripts; OpenAI ChatGPT, Grammarly, and '
                     'QuillBot were used for language editing (grammar, readability, and sentence restructuring). '
-                    'No AI tool decided study inclusion, and no AI tool assigned or altered any classification '
-                    'label: all screening decisions and all released labels were made by the authors (Section II-C '
-                    'documents who coded what, and the reliability files release the coding evidence). All included '
+                    'No AI tool decided study inclusion, and no AI tool assigned or altered any released classification label: all screening decisions and all released labels were made by the authors; after the label set was frozen, the AI research assistant (coder D) independently re-coded the validation field as a disclosed robustness audit (Section III-C), and no AI-assigned code altered any released label. Section II-C documents who coded what, and the reliability files release the coding evidence. All included '
                     'references were verified against the Crossref registry by direct DOI resolution, all counts and '
                     'figures were regenerated programmatically from the released dataset, and the authors reviewed '
                     'and take full responsibility for the content of the published article.')
@@ -330,7 +328,7 @@ tex = r'''\documentclass[journal]{IEEEtran}
 \title{''' + esc(TITLE).replace('--', '--') + r'''}
 
 \author{''' + authors_tex + r'''%
-\thanks{Manuscript received September 2026. (Corresponding author: Hussain Touhid Siddiquee.)}%
+\thanks{Manuscript received November 2026. (Corresponding author: Hussain Touhid Siddiquee.)}%
 \thanks{The authors are with Leading University, Sylhet, Bangladesh. The complete evidentiary
 record of this review---classified corpus, screening provenance log, protocol audit, codebook,
 and the blind inter-coder reliability study, together with the full analysis pipeline---is

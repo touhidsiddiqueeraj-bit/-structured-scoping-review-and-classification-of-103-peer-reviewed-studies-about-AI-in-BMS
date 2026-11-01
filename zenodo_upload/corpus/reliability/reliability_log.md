@@ -264,3 +264,25 @@ unchanged; `agreement_report_fulltext.csv` is the recomputed version and the
 two table cells above reflect it. The round-1 report now regenerates
 byte-identically from the deposit (corrected values 0.303/0.295 plus the
 bucket row). This closes the gold-state item flagged above.
+
+
+## Judge-audit hygiene pass (2026-11-02)
+
+Released-artifact sync from the judge audit (no released label changed):
+- `dispute_items.csv`: added `valid_gold_now` column carrying the current
+  canonical gold (papers_final.json) beside the round-1-time gold; the single
+  divergent cell is jpowsour.2024.235609 (round-1 `online/real-vehicle` vs
+  current `experimental hardware`), reconciled at merge as recorded above.
+- `protocol_audit.csv` + `make_protocol_audit.py`: the three review-type
+  syntheses (batt.202300046, rser.2023.113807, batteries10120442) now carry
+  `review-synthesis` instead of `primary`, aligning the file with the
+  88 primary / 12 review / 3 synthesis definition used by the manuscripts.
+- `coder_B_30.csv` / `coder_C_30.csv`: completion-marker row removed
+  (the loader had always filtered it).
+- `agreement_report.csv` (regenerated): coder-A placeholder rows dropped -
+  coder A never coded (blank sheet), so its vs-gold kappas (0.0) were
+  artifacts of a never-coded sheet, not agreement statistics. B/C rows and
+  the BC pair rows are byte-identical to the previous run.
+- Round-2 sheets unchanged (hash-tracked above); the manuscripts now carry
+  the single-session/same-sample framing and bootstrap CIs for the round-1
+  kappas (judge faults F02/F16).

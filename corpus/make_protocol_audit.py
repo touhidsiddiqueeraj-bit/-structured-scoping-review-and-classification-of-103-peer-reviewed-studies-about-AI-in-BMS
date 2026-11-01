@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Per-paper validation-protocol audit table (TTE R1 #2 fix):
+"""Per-paper validation-protocol audit table:
 every classified paper mapped to its protocol class and strong flags,
-so the 43-of-91 strong-protocol arithmetic is checkable row by row."""
+so the strong-protocol arithmetic is checkable row by row."""
 import os
 import csv, json
 
@@ -15,7 +15,7 @@ ENV_STRONG = PROTO_STRONG + ('experimental hardware',)
 rows = []
 for r in sorted(C, key=lambda r: (r['area'], r['year'], r['journal'])):
     v = r['valid']
-    primary = '--' if r['method'] == 'Review / perspective' else 'primary'
+    primary = '--' if r['method'] == 'Review / perspective' else ('review-synthesis' if r['data'] == 'review' else 'primary')
     rows.append({
         'doi': r['doi'], 'area': r['area'], 'method_family': r['method'],
         'data_source': r['data'], 'validation_coded': v,

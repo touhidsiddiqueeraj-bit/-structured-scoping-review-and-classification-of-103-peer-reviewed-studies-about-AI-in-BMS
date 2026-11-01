@@ -1,9 +1,7 @@
 # Independent Re-coding Protocol — Second and Third Coders
 
 Purpose: this document tells coders 2 and 3 exactly what to do to produce the
-independent reliability evidence that the review currently lacks (TTE review:
-"the classification procedure is too subjective … without independent double
-coding and an agreement measure"). Follow it literally; do not discuss codes
+independent reliability evidence that the review currently lacks. Follow it literally; do not discuss codes
 with other coders until your sheet is locked (Step 5).
 
 ## 0. What you will and will not see
