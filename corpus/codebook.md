@@ -112,6 +112,48 @@ released labels):
 Full sheets, the itemized disagreement table (`dispute_items.csv`), and the
 hash-tracked log are released in `corpus/reliability/`.
 
+**Round 2 executed 2026-11-01** (full-text re-coding of the same 30-paper
+sample under the v1.1 patch below, per `coding_protocol.md` §6; shared
+evidence base, see `reliability_log.md`): B-C κ = 0.96 (`area`), 1.00
+(`method`), 1.00 (`chem`), 0.96 (`data`), 0.92 (`valid`) — all five fields
+pass the 0.66 threshold at the 0.80 strong level; strong/non-strong
+validation bucket 28/30 (93%). Released labels unchanged; vs-gold deltas are
+itemized in `corpus/reliability/dispute_items_fulltext.csv` as candidate
+corrections for the lead author.
+
+## Codebook v1.1 patch (2026-11-01)
+
+Applied per the 2026-10-17 dispute-session outcomes (reliability_log.md,
+"Dispute session", item 2) ahead of the round-2 re-coding, as prescribed by
+`coding_protocol.md` §6 ("below .66 triggers codebook repair and one re-coded
+subset"). The v1.0 vocabulary above remains the vocabulary of the released
+labels (unchanged); v1.1 governs re-coding rounds only and adds:
+
+1. `method` — new code `Not ML (physics/classical)`: the headline method
+   contains no learned component (round-2 scope: est.2023.106931,
+   est.2023.107575).
+2. `area` — new code `Production & quality`: manufacturing/quality functions
+   (coating, formation, grading QC) that are not in-battery management
+   functions (conengprac.2022.105202, jechem.2025.04.025, batt.202300046).
+3. `data` — `real-vehicle` is restricted to vehicle/fleet-derived field data;
+   new code `field-stationary` for stationary-storage field data
+   (jpowsour.2024.235609). Tie-break: a study that creates its own EIS
+   dataset is coded `EIS-lab` (impedance is the defining observation);
+   `self-lab` is reserved for own non-EIS cycling (s41467-020-15235-7).
+4. `valid` — new code `not reported`: no train/test protocol described in the
+   accessible text. Unreported protocols are no longer forced into
+   `within-cell split` / `cross-validation (k-fold)` weak-code fallbacks (the
+   two coders' divergent fallbacks drove the round-1 κ_valid = 0.48 failure).
+   `not reported` counts as non-strong in the strong/non-strong bucket.
+   Review-type papers keep `review synthesis`.
+5. Reviews — fixed reading for cross-function reviews: `area` = the single
+   domain function if the review synthesizes one function's literature, else
+   the domain function under rule 2 for production reviews, else
+   `Cross-cutting`; `method` = `Review / perspective` (the contribution is the
+   synthesis; the dominant reviewed technique family is recorded in the sheet
+   comment). κ on `area`/`method` for review-type papers is interpreted with
+   this rule.
+
 ## Boundary examples (abridged)
 - PSO-tuned LSTM SOC with UKF wrapper → `Filter-based hybrid` (not meta-heuristic).
 - Domain-adversarial training for SOH → `Transfer learning`.
