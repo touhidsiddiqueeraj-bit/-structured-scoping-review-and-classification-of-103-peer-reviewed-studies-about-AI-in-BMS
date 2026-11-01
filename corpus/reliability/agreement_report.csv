@@ -34,3 +34,4 @@ all,alpha,method,,krippendorff_alpha,0.882
 all,alpha,chem,,krippendorff_alpha,0.551
 all,alpha,data,,krippendorff_alpha,0.879
 all,alpha,valid,,krippendorff_alpha,0.46
+BC,pair,valid_strong_bucket,83.3,bucket_agreement,25/30
