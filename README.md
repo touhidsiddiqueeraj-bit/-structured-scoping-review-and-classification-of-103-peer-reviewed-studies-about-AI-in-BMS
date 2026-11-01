@@ -15,7 +15,7 @@ Two manuscript forms are maintained from the same source blocks and carry the sa
 
 | Form | File | Notes |
 |---|---|---|
-| Condensed TTE submission | `ieee_submission/tex/mlbms.tex` → `mlbms.pdf` | 19 pp., 4 figures, 8 tables, 111 references (incl. six standards documents); built by `corpus/build_tex.py --short` |
+| Condensed submission manuscript | `ieee_submission/tex/mlbms.tex` → `mlbms.pdf` | 20 pp., 4 figures, 8 tables, 111 references (incl. six standards documents); built by `corpus/build_tex.py --short` |
 | Extended manuscript | `ML-BMS-Review.docx` / `.pdf` | 45 pp., 10 sections, 8 figures, 13 tables, 1 box, 125 references (119 Crossref-verified + six standards documents); built by `build_docx.py` |
 
 Every DOI in the **103-study classified subset** and the **conference descriptive set** was resolved directly against the [Crossref registry](https://api.crossref.org); the **799-record eligible corpus** is assembled entirely from Crossref-registered records with the mapping listed per record in `screening_log.csv`. Every number, figure, and table in the manuscripts can be regenerated from the released datasets with the released code (all scripts are repository-relative and run from the repo root).

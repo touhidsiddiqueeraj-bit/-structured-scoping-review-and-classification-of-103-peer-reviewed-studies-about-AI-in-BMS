@@ -104,8 +104,8 @@ BLOCKS = [
  "return \u2014 a recall miss, not a venue exclusion \u2014 so no study in this corpus can claim to be the first of its kind. Within the subset the published studies are of two distinct kinds: a domain-specific LLM "
  "for risk analysis of battery *energy-storage-system* incidents \u2014 station-side rather than onboard technology \u2014 "
  "[[10.1016/j.ress.2026.112416]], and HA-LLM, which crosses the estimation boundary by using field vehicle data to estimate SOH with "
- "uncertainty-aware control, coordinating vehicle and cloud [[10.1016/j.ensm.2026.104983]]. The honest framing of [[10.1016/j.ensm.2026.104983]] "
- "matters for everything that follows: LLM-based estimation is no longer hypothetical \u2014 what remains normative is the claim that before any "
+ "uncertainty-aware control, coordinating vehicle and cloud [[10.1016/j.ensm.2026.104983]]. The status of [[10.1016/j.ensm.2026.104983]] "
+ "should be stated precisely for what follows: LLM-based estimation is no longer hypothetical \u2014 what remains normative is the claim that before any "
  "LLM-based estimator feeds actuation, it must publish calibrated intervals, structured outputs, and a latency budget, and it must not hold "
  "direct cell-level protection authority; that role belongs to physics-based envelopes and calibrated numeric estimators. Table V makes this "
  "division of labor explicit; its right-hand column is guidance proposed here, not claims about the published studies."),
@@ -136,8 +136,8 @@ BLOCKS = [
 
 ('h2', '9.1 From corpus gaps to safety-standard requirements'),  # heading kept; body text uses subset wording
 ('p',
- "The standards invoked in Section I \u2014 UN GTR No. 20 (electric-vehicle safety, established in the Global Registry in 2018 [[std:unece-gtr20]]; Amendment 1, submitted by the European Commission on behalf of the Informal Working Group on Electric Vehicle Safety as formal document ECE/TRANS/WP.29/GRSP/2026/4 (status report ECE/TRANS/WP.29/GRSP/2026/3) [[std:unece-gtr20-amd1]], considered at the 79th GRSP session in June 2026 and, at this review\u2019s 18 October 2026 finalization, pending before WP.29 with adoption listed for its 17\u201320 November 2026 session "
- "review's retrieval date, adds thermal-propagation provisions with two compliance options: a physical propagation test or a documented risk-management approach "
+ "The standards invoked in Section I \u2014 UN GTR No. 20 (electric-vehicle safety, established in the Global Registry in 2018 [[std:unece-gtr20]]; Amendment 1, submitted by the European Commission on behalf of the Informal Working Group on Electric Vehicle Safety as formal document ECE/TRANS/WP.29/GRSP/2026/4 (status report ECE/TRANS/WP.29/GRSP/2026/3) [[std:unece-gtr20-amd1]], considered at the 79th GRSP session in June 2026 and, at this review\u2019s 18 October 2026 finalization, pending before WP.29 with adoption listed for its 17\u201320 November 2026 session; it adds "
+ "thermal-propagation provisions with two compliance options \u2014 a physical propagation test or a documented risk-management approach \u2014 "
  "), GB 38031 (GB 38031-2020, now superseded, and the strengthened GB 38031-2025 [[std:gb38031-2025]], effective "
  "July 2026, which replaces the fire/explosion-warning criterion with no-fire/no-explosion thermal-diffusion requirements and adds bottom-"
  "impact and fast-charge-cycle tests), ISO 26262:2018 (functional safety of road-vehicle E/E systems [[std:iso26262]]), ISO/PAS 8800:2024 (safety and "
@@ -183,7 +183,7 @@ BLOCKS = [
 
 ('tbl', 'TABLE_POSITION'),
 
-('h2', '9.3 Outlook: what the next revision cycle of this literature should produce'),
+('h2', '9.3 Outlook: what the next research cycle should produce'),
 ('p',
  "Concretely, and tied to the gaps above, the highest-value near-term work falls in six directions. (a) *Duty-cycle-aware validation*: public "
  "cross-cell benchmarks that pair cycling data with recorded EV drive profiles, so that cross-chemistry and cross-domain generalization can be "
@@ -196,8 +196,8 @@ BLOCKS = [
  "capability limitations, making certifiable charging and thermal control reachable; and (f) *honest foundation-model integration*: "
  "retrieval-grounded LLM agents with published latency and calibration budgets, capable of the coordination role while estimation authority "
  "stays with calibrated numeric models \u2014 extending, not contradicting, the corpus's LLM estimator [[10.1016/j.ensm.2026.104983]]. A "
- "guardrail on all six directions: the BMS-ML-RC checklist below is designed to be attached to a paper at submission, so the next revision "
- "cycle of this literature arrives auditable by construction."),
+ "guardrail on all six directions: the BMS-ML-RC checklist below is designed to be attached to a paper at submission, so that the next generation of "
+ "BMS-ML studies arrives auditable by construction."),
 
 ('h2', '9.4 A reporting checklist for machine-learning BMS studies'),
 ('p',
@@ -219,7 +219,7 @@ BLOCKS = [
  "This review has examined machine learning in battery management on a two-tier evidence base: a rule-based eligible corpus of 799 records "
  "from which field-level shares are measured within a documented capped retrieval, and an in-depth classified subset of 103 studies "
  "through which method, data, and validation practice are examined with a blind, two-round 30-paper re-coding by two co-author coders "
- "(all five fields at strong agreement in the repaired-codebook round) and label-noise sensitivity ranges. Three conclusions stand out. First, and most critically, the proliferation of published accuracy claims is not matched by validation "
+ "(all five fields at strong agreement in the revised-codebook round) and label-noise sensitivity ranges. Three conclusions stand out. First, and most critically, the proliferation of published accuracy claims is not matched by validation "
  "progress: only 8 of the 88 primary papers (8 of the 103 classified studies) demonstrate online or fleet operation, 17 of 88 "
  "primary papers use isolation-weakened splits, and 23 rest on three public benchmarks while 36 rest on private laboratory cells; the "
  "physics-informed validation contrast is directionally consistent under both reported definitions, statistically unestablished and underpowered "

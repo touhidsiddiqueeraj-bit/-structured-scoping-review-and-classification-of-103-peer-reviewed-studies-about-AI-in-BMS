@@ -79,11 +79,34 @@ BLOCKS = [
  "the remaining 29 studies establish hardware operation (20), simulation- or case-level evidence without a generalization protocol (9) \u2014 "
  "42+17+29 = 88. The complete per-paper protocol assignment is released in papers.csv (valid field) and tabulated as a supplement "
  "(protocol_audit.csv), so the 42-of-88 arithmetic above can be verified row by row. The 30-paper blind re-coding of Section II-C is an abstract-level "
- "inter-coder agreement check whose sample includes the 5 review-labelled papers — not an independent re-derivation of these assignments (their bucket agreement with the released labels is itself weak, and the repaired-codebook round 2 lifts the coders' mutual bucket agreement to 28 of 30 papers, \u03ba = 0.83, while remaining an agreement measure rather than a re-derivation, Section II-C); the counts instead carry the scenario sensitivity that follows. A post-freeze re-code of the validation field by the declared AI assistant (open-access full texts where retrievable, indexed abstracts otherwise) covers 46 of the 88 primaries and determinably codes 23: 10 of the 14 determinable strong labels are confirmed, four are contradicted (one full-text-verified within-cell split coded cross-cell in the released labels; one synthetic-data validation; two abstract-level evidence gaps), and two non-strong labels would be upgraded \u2014 bucket agreement 17 of 23 (74%), itemized and released with no label altered (corpus/validation_recode/)."),
+ "inter-coder agreement check whose sample includes the 5 review-labelled papers — not an independent re-derivation of these assignments (their bucket agreement with the released labels is itself weak, and the revised-codebook round 2 lifts the coders' mutual bucket agreement to 28 of 30 papers, \u03ba = 0.83, while remaining an agreement measure rather than a re-derivation, Section II-C); the counts instead carry the scenario sensitivity that follows. An independent re-coding of the validation field by the declared AI assistant, performed after the label set was frozen (open-access full texts where retrievable, indexed abstracts otherwise) covers 46 of the 88 primaries and determinably codes 23: 10 of the 14 determinable strong labels are confirmed, four are contradicted (one full-text-verified within-cell split coded cross-cell in the released labels; one synthetic-data validation; two abstract-level evidence gaps), and two non-strong labels would be upgraded \u2014 bucket agreement 17 of 23 (74%), itemized and released with no label altered (corpus/validation_recode/)."),
+('p',
+ "The full cross-tabulation of method family by validation class makes the pattern concrete (Table I gives the family totals). Classical learning "
+ "accounts for 28 primary papers and uses a strong isolation protocol in 19 of them (68%); deep learning follows at 9 of 19 (47%); physics-informed "
+ "and hybrid schemes at 8 of 22 (36%); and optimization-augmented learning \u2014 Bayesian optimization, surrogate-assisted, and meta-heuristic schemes \u2014 "
+ "at 0 of 11. The optimization-augmented cluster is instead validated by physical demonstration: six of its papers exercise experimental hardware, "
+ "three rest on simulation, one combines simulation with hardware spot-checks, and one uses k-fold cross-validation. The single "
+ "reinforcement-learning paper is validated within-cell, and the two foundation-model papers split between one online demonstration and one case "
+ "study. Transfer learning is the mirror image: all five of its papers validate on isolation protocols (three cross-chemistry, two cross-domain), "
+ "because its research object is generalization, so its experiments test it. The audit thus exposes a two-culture split in validation practice: the "
+ "families whose outputs are estimates are exercised on held-out isolation, while the family that actuates the battery is exercised on physical "
+ "demonstration. The split is consequential for deployment, because the charging and thermal clusters \u2014 where learned strategies act directly on "
+ "the pack \u2014 carry no strong isolation protocol at all: 0 of 8 and 0 of 7 primary papers, respectively (Table VI), with demonstration- or "
+ "simulation-based evidence throughout."),
+('p',
+ "Data sources and chemistry stratify the same evidence by function. The SOC cluster's 13 primaries rest almost entirely on the authors' own "
+ "laboratory data \u2014 12 private-laboratory sources (own cells or laboratory impedance) and one simulation \u2014 with no public-benchmark and no "
+ "real-vehicle source. The SOH/RUL complex of 32 primaries mixes 16 public-benchmark with 11 private-laboratory sources, alongside 4 real-vehicle "
+ "sources and 1 mixed-source study. Charging (8) splits evenly between private cells and simulation (4 and 4); thermal (7) is simulation-dominated "
+ "(5 of 7, the other 2 on laboratory hardware); and fault and safety is the only cluster whose modal primary source is real-vehicle data (3 of 7). "
+ "Chemistry concentrates correspondingly: NMC cells dominate 54 of the 88 primary papers (61%), and the thermal-management primaries are NMC in all "
+ "seven cases, so heat-generation and thermal-runaway evidence for other chemistries is thin in this subset. Both matrices can be re-derived from "
+ "papers.csv, which carries the method, chemistry, data, and validation fields for every classified paper, so each count above is checkable against "
+ "the record-level data."),
 ('p',
  "Crossing validation practice with method family, the cautious reading is: 8 of the 22 physics-informed/hybrid primary papers (36%) use a strong "
  "protocol, against 34 of the 66 other primary papers (52%) \u2014 Fisher's exact p = 0.32, odds ratio 0.54 (95% CI 0.21\u20131.46). Under the "
- "earlier, broader definition that also counted experimental-hardware demonstration as strong validation, the contrast is 13 of 22 (59%) versus "
+ "broader definition that also counts experimental-hardware demonstration as strong validation, the contrast is 13 of 22 (59%) versus "
  "49 of 66 (74%), OR 0.50 (95% CI 0.19\u20131.36, p = 0.19). We report both and claim neither as a model-family effect: the difference is not "
  "statistically significant under either definition, confounding is unadjusted (physics-informed work skews toward early-stage and simulation-heavy "
  "studies), and n = 22 is small. A minimum-detectable-effect analysis (released with the corpus) shows that 80% power at \u03b1 = 0.05 would require a gap of roughly 30\u201335 percentage points between the two families, while the observed 15-point gap is detectable with only about 20\u201325% power \u2014 so no detected difference does not mean no difference: meaningful effects in either direction remain compatible with these counts. A label-noise scenario envelope built from the observed blind coder-versus-label disagreement (Section II-C) "
@@ -94,7 +117,7 @@ BLOCKS = [
  "(sensitivity_label_noise.py): in each of 4,000 seeded Monte Carlo draws, a strong/non-strong label-flip rate is drawn from a Normal "
  "distribution with standard deviation 0.02, truncated at zero — centered on the coders’ overall bucket error rate (0.37 and 0.27; mean 0.32) for the symmetric scenario, and on the strong-label-specific recode rate (0.62) for the strong-to-weak "
  "scenario — and the drawn rate then flips bucket labels across the 88 primary papers before both the "
- "overall share and the Fisher test are recomputed. The honest reading remains: a physics "
+ "overall share and the Fisher test are recomputed. The defensible reading is therefore: a physics "
  "prior does not *demonstrably* buy validation rigor \u2014 and settling the question requires the standardized protocols proposed in Section IX, "
  "not more subset cross-tabs."),
 

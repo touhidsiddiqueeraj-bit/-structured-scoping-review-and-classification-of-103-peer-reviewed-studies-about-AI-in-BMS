@@ -118,8 +118,8 @@ check('P6 pilot script released', os.path.exists('corpus/retrieval_depth_pilot.p
 check('P7 long 1.4 records', 'eligible corpus of 799 Crossref-verified records' in L1)
 check('P7 long 1.4 two-round re-coding', 'blind, two-round 30-paper re-coding by two co-author coders under released codebooks' in L1)
 check('P7 long conclusion records', 'eligible corpus of 799 records from which field-level shares' in L3)
-check('P7 long conclusion two-round', 'blind, two-round 30-paper re-coding by two co-author coders (all five fields at strong agreement in the repaired-codebook round' in L3)
-check('P7 long abstract two-round', 'after the pre-registered codebook repair, passes all five fields at strong agreement (validation \u03ba = 0.92)' in L1)
+check('P7 long conclusion two-round', 'blind, two-round 30-paper re-coding by two co-author coders (all five fields at strong agreement in the revised-codebook round' in L3)
+check('P7 long abstract two-round', 'after the pre-declared codebook revision, passes all five fields at strong agreement (validation \u03ba = 0.92)' in L1)
 check('P7 short contributions records', '799 records (798 dated 2020\\u20132026 plus one early-access record stamped 2027)' in S1)
 check('P7 short conclusion two-round', 'blind, two-round 30-paper re-coding by two co-author coders' in S3)
 check('P7 no stale abstract-level qualifiers at old spots',
@@ -175,7 +175,7 @@ check('R2C deposited gold carries corrected jpowsour valid', 'experimental hardw
 check('R2C codebook v1.1 patch section', '## Codebook v1.1 patch (2026-11-01)' in open('corpus/codebook.md', encoding='utf-8').read())
 
 # ---------------- R2-D: extended manuscript (joined text) ----------------
-check('R2D 2.5 round-2 paragraph present', 'a second round was designed to measure, on the repair path the protocol pre-registers' in LJ)
+check('R2D 2.5 round-2 paragraph present', 'a second round was designed to measure, on the second stage the protocol pre-declares' in LJ)
 check('R2D 2.5 all five fields numbers', 'management function \u03ba = 0.96, method family 1.00, chemistry 1.00, primary data source 0.96, and validation protocol 0.92' in LJ)
 check('R2D 2.5 alpha range correct (0.92-1.00)', 'Krippendorff \u03b1 0.92\u20131.00 across the five fields' in LJ and '\u03b1 0.96\u20131.00' not in LJ)
 check('R2D 2.5 bucket rise', 'rising from 25 of 30 papers (83%, \u03ba = 0.52) to 28 of 30 (93%, \u03ba = 0.83)' in LJ)
@@ -187,32 +187,32 @@ check('R2D 2.5 vs-gold capping', 'ten papers carry v1.1-only codes' in LJ and 's
 check('R2D 2.5 five candidate corrections', 'five candidate label corrections' in LJ and 'Severson-dataset papers whose released chemistry records NMC where the dataset itself is LFP' in LJ and 'differ from its own released code repository on all five fields' in LJ)
 check('R2D 2.5 no-independent-dual-coding reworded', 'No fully independent full-text dual coding proved achievable' in LJ and 'No full-text dual coding was performed' not in LJ)
 check('R2D 2.5 post-freeze clause reworded', 'audits the frozen labels from the evidence side rather than measuring coder agreement' in LJ)
-check('R2D limitations two-round', 'round 1 (independent evidence, mostly abstract-level access) passed three of five fields, and round 2 (repaired codebook, shared evidence base, 19 of 30 papers still abstract-only) passed all five at the strong level' in LJ)
+check('R2D limitations two-round', 'round 1 (independent evidence, mostly abstract-level access) passed three of five fields, and round 2 (revised codebook, shared evidence base, 19 of 30 papers still abstract-only) passed all five at the strong level' in LJ)
 check('R2D 3.4 round-2 bucket clause', 'lifts the coders\u2019 mutual bucket agreement to 28 of 30 papers (93%, \u03ba = 0.83)' in LJ)
 check('R2D 3.4 four further corrections', 'four further candidate label corrections' in LJ and 'dispute_items_fulltext.csv' in LJ)
-check('R2D conclusion cross-checked clause', 'cross-checked by a repaired-codebook re-coding round in which the two coders agree on the strong/non-strong bucket for 28 of 30 papers' in LJ)
+check('R2D conclusion cross-checked clause', 'cross-checked by a revised-codebook re-coding round in which the two coders agree on the strong/non-strong bucket for 28 of 30 papers' in LJ)
 
 # ---------------- R2-E: condensed manuscript (joined text) ----------------
-check('R2E contributions two-round', 'blind, two-round 30-paper re-coding by two co-author coders (all five fields at strong agreement in the repaired-codebook round)' in SJ)
-check('R2E II-C round-2 passage', 'pre-registered repair path for below-threshold fields' in SJ and 'governs re-coding rounds only' in SJ)
+check('R2E contributions two-round', 'blind, two-round 30-paper re-coding by two co-author coders (all five fields at strong agreement in the revised-codebook round)' in SJ)
+check('R2E II-C round-2 passage', 'codebook revision, then one re-coded subset' in SJ and 'was then executed as pre-declared' in SJ)
 check('R2E II-C all five numbers', 'management function \u03ba = 0.96, method family 1.00, chemistry 1.00, primary data source 0.96, validation protocol 0.92' in SJ)
 check('R2E II-C bucket rise', 'rising from 25 of 30 papers (83%, \u03ba = 0.52) to 28 of 30 (93%, \u03ba = 0.83)' in SJ)
 check('R2E II-C shared-evidence caveat', 'independence at the judgment level, not the evidence level' in SJ)
-check('R2E II-C chemistry rule candidate kept', 'chemistry inference-rule candidate remains logged, not codified' in SJ)
+check('R2E II-C chemistry rule candidate kept', 'chemistry inference-rule candidate remains logged but not codified' in SJ)
 check('R2E II-C five corrections', 'five candidate label corrections' in SJ and 'queued for author adjudication' in SJ)
 check('R2E round-1 bucket kappa corrected to 0.52', '\u03ba = 0.52 at the sample\'s prevalence' in SJ and '\u03ba = 0.51' not in SJ)
-check('R2E limitations two-round', 'three of five fields above threshold in round 1, all five at the strong level in the repaired-codebook round 2' in SJ)
+check('R2E limitations two-round', 'three of five fields above threshold in round 1, all five at the strong level in the revised-codebook round 2' in SJ)
 check('R2E III lifts clause', 'lifts the coders\' mutual bucket agreement to 28 of 30 papers, \u03ba = 0.83' in SJ)
-check('R2E conclusion two-round', 'blind, two-round 30-paper re-coding by two co-author coders' in SJ and '(all five fields at strong agreement in the repaired-codebook round)' in SJ)
+check('R2E conclusion two-round', 'blind, two-round 30-paper re-coding by two co-author coders' in SJ and '(all five fields at strong agreement in the revised-codebook round)' in SJ)
 
 # ---------------- R2-F: PDFs ----------------
 check('R2F long PDF round-2 paragraph', 'second round was designed to measure' in long_pdf)
 check('R2F long PDF five-field numbers', 'method family 1.00, chemistry 1.00' in long_pdf)
 check('R2F long PDF bucket rise', 'to 28 of 30 (93%, \u03ba = 0.83)' in long_pdf)
 check('R2F long PDF adjudication queue', 'queued for author adjudication' in long_pdf)
-check('R2F long PDF abstract two-round', 'after the pre-registered codebook repair, passes all five fields at strong agreement' in long_pdf)
+check('R2F long PDF abstract two-round', 'after the pre-declared codebook revision, passes all five fields at strong agreement' in long_pdf)
 check('R2F long PDF alpha range', '0.92\u20131.00 across the five fields' in long_pdf)
-check('R2F short PDF round-2 passage', ('repair path for below- threshold fields' in short_pdf) or ('repair path for belowthreshold fields' in short_pdf))
+check('R2F short PDF round-2 passage', ('codebook revision, then one re-coded subset' in short_pdf) or ('codebook revision, then one re-coded sub- set' in short_pdf) or ('codebook revision, then one re- coded subset' in short_pdf))
 check('R2F short PDF five-field numbers', 'validation protocol 0.92' in short_pdf)
 check('R2F short PDF bucket rise', '28 of 30 (93%, \u03ba = 0.83)' in short_pdf)
 check('R2F supplement round-2 note', 'Why round 2 does not move this envelope' in supp_pdf)
@@ -224,11 +224,28 @@ check('R2G README contents row updated', 'round 2 full-text re-coding under code
 check('R2G README AI disclosure two-round', 'two-round 30-paper blind inter-coder re-coding study' in rd)
 check('R2G README round-1 kappa 0.51 gone', '\u03ba = 0.51)' not in rd)
 
+
+# ---------------- R2-H: fresh-submission cleanup + technical depth ----------------
+check('R2H no earlier-draft reference (short)', 'an earlier draft' not in SJ and 'an earlier draft' not in S1)
+check('R2H no repair language (short)', all(k not in SJ for k in ('repair path', 'codebook repair', 'repaired', 'it must be reported straight', 'The honest reading remains', 'The honest framing of', 'the short version is that')))
+check('R2H no repair language (long)', all(k not in LJ for k in ('repair path', 'codebook repair', 'repaired', 'next revision cycle')))
+check('R2H abstract section self-reference removed', 'Section III-B' not in paper_short_part1.ABSTRACT[0])
+check('R2H short 9.1 GTR garble fixed', "review's retrieval date" not in SJ and 'November 2026 session; it adds' in SJ)
+check('R2H outlook de-versioned', 'what the next research cycle should produce' in S3 and 'what the next research cycle should produce' in L3)
+check('R2H two-culture split (short)', 'two-culture split in validation practice' in SJ and 'at 0 of 11' in SJ)
+check('R2H two-culture split (long)', 'two-culture split in validation practice' in LJ and 'at 0 of 11' in LJ)
+check('R2H family-class matrix numbers (short)', 'uses a strong isolation protocol in 19 of them (68%)' in SJ and 'all five of its papers validate on isolation protocols' in SJ)
+check('R2H function-data stratification (short)', 'fault and safety is the only cluster whose modal primary source is real-vehicle data (3 of 7)' in SJ and 'NMC cells dominate 54 of the 88 primary papers (61%)' in SJ)
+check('R2H function-data stratification (long)', 'NMC cells dominate 54 of the 88 primary papers (61%)' in LJ)
+check('R2H leakage mechanism sentence (short)', 'Both leaking definitions share one mechanism' in SJ)
+check('R2H misattribution fix (short)', 'so that misattributions of this kind are not hidden' in SJ)
+check('R2H PDF two-culture present', 'two-culture split' in short_pdf and 'two-culture split' in long_pdf)
+
 # ---------------- global sanity ----------------
 r = subprocess.run([sys.executable, 'corpus/consistency_check.py'], capture_output=True, text=True)
 check('consistency_check.py passes', r.returncode == 0 and 'FAIL' not in r.stdout.upper())
 check('long PDF 46 pp', len(PdfReader('ML-BMS-Review.pdf').pages) == 46)
-check('short PDF 19 pp', len(PdfReader('ieee_submission/tex/mlbms.pdf').pages) == 19)
+check('short PDF 20 pp', len(PdfReader('ieee_submission/tex/mlbms.pdf').pages) == 20)
 check('supplement PDF 4 pp', len(PdfReader('Supplementary_Material.pdf').pages) == 4)
 check('no stale "abstract-level 30-paper re-coding by two co-author coders" as sole descriptor in PDFs',
       'blind, abstract-level 30-paper re-coding by two co-author coders' not in long_pdf

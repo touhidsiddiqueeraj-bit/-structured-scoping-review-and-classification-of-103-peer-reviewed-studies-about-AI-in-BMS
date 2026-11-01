@@ -9,7 +9,7 @@ AUTHOR_LINES = [("Hussain Touhid Siddiquee", "Leading University, Sylhet, Bangla
                 ("Jasimul Islam Chowdhury", "Leading University, Sylhet, Bangladesh")]
 
 ABSTRACT = [
- "Machine learning (ML) has moved from a promising addition to battery research to a load-bearing component of battery management systems (BMS), but the validation practices behind the accuracy claims are rarely examined. A structured scoping review with a two-tier evidence base is presented: an *eligible corpus* of 799 peer-reviewed journal articles admitted by uniform rule-based criteria from a capped 30-query Crossref retrieval (798 dated 2020\u20132026 plus one early-access record stamped 2027), and an in-depth *classified subset* of 103 studies \u2014 98 from that pool plus five individually verified seed studies, one dated 2019 \u2014 coded by function, method family, chemistry, data source, and validation practice. Union-share bibliometrics across the eligible corpus locate the center of gravity of the screened literature in health estimation (SOH), state estimation (SOC), and prognostics (RUL) \u2014 query-tag shares, read for ordering rather than exact rates, with their union share reported in Section III-B \u2014 with charging control, cell balancing, and vehicle- or fleet-level work relatively under-served for a transportation-electrification readership. Within the classified subset, three weaknesses recur. Only 8 of 88 primary-application papers evaluate online or on real vehicles; 17 of 88 rely on within-cell or k-fold splits that can leak trajectory information; and the largest single data source is private laboratory cells (36 of 88), a reproducibility constraint at least as limiting as the benchmark concentration (23 papers on three datasets). Validation practice shows no detectable difference between physics-informed/hybrid and purely data-driven papers under either definition of stringency \u2014 an underpowered contrast in which meaningful differences in either direction cannot be excluded \u2014 and symmetric and strong-to-weak label-noise scenarios bracket the strong-protocol share between 11% and 59%, the strong-to-weak floor a worst-case bound rather than an estimate. A post-hoc recall audit against the included reviews\u2019 reference lists bounds what the capped retrieval misses. The paper closes with a requirement-level mapping of BMS functions onto UN GTR 20, GB 38031, and ISO 26262, a positioning against prior reviews, and a twelve-item reporting checklist; all data and code are released.",
+ "Machine learning (ML) has moved from a promising addition to battery research to a load-bearing component of battery management systems (BMS), but the validation practices behind the accuracy claims are rarely examined. This paper presents a structured scoping review with a two-tier evidence base: an *eligible corpus* of 799 peer-reviewed journal articles admitted by uniform rule-based criteria from a capped 30-query Crossref retrieval (798 dated 2020\u20132026 plus one early-access record stamped 2027), and an in-depth *classified subset* of 103 studies \u2014 98 from that pool plus five individually verified seed studies, one dated 2019 \u2014 coded by function, method family, chemistry, data source, and validation practice. Union-share bibliometrics across the eligible corpus locate the center of gravity of the screened literature in health estimation (SOH), state estimation (SOC), and prognostics (RUL) \u2014 query-tag shares, read for ordering rather than exact rates \u2014 with charging control, cell balancing, and vehicle- or fleet-level work comparatively under-served for a transportation-electrification readership. Within the classified subset, three weaknesses recur. Only 8 of 88 primary-application papers evaluate online or on real vehicles; 17 of 88 rely on within-cell or k-fold splits that can leak trajectory information; and the largest single data source is private laboratory cells (36 of 88), a reproducibility constraint at least as limiting as the benchmark concentration (23 papers on three datasets). Validation practice shows no detectable difference between physics-informed/hybrid and purely data-driven papers under either definition of stringency \u2014 an underpowered contrast in which meaningful differences in either direction cannot be excluded \u2014 and symmetric and strong-to-weak label-noise scenarios bracket the strong-protocol share between 11% and 59%; the strong-to-weak floor is a worst-case bound rather than an estimate. A post-hoc recall audit against the included reviews\u2019 reference lists bounds what the capped retrieval misses. The paper closes with a requirement-level mapping of BMS functions onto UN GTR 20, GB 38031, and ISO 26262, a positioning against prior reviews, and a twelve-item reporting checklist; all data and code are released.",
 ]
 
 KEYWORDS = ("machine learning; battery management systems; lithium-ion batteries; state of charge; "
@@ -60,7 +60,7 @@ BLOCKS = [
  "degradation-method surveys [[10.3390/batteries10070220]] and EV-powertrain ML reviews with BMS scope [[10.1007/s44163-025-00721-y]]. What is missing "
  "is a cross-functional account of the field's trajectory: which method families are used for which tasks, on which data, validated how \u2014 and, "
  "among existing cross-functional surveys, none to our knowledge quantifies validation practice at all. Table VII in Section IX positions this review against its "
- "closest competitors and states the added value explicitly; the short version is that prior reviews synthesize *what is claimed*, while this review "
+ "closest competitors and states the added value explicitly; in brief, prior reviews synthesize *what is claimed*, while this review "
  "additionally measures \u2014 within a 103-study classified subset \u2014 how those claims are validated, ties both to three safety standards, and "
  "releases the record-level dataset to make every count auditable."),
 
@@ -71,7 +71,7 @@ BLOCKS = [
  "are measured, not curated, with the retrieval, screening, and tagging provenance of every record released; (ii) an in-depth *classified subset* of "
  "103 studies from that corpus, coded along the six classification fields (function, method family, chemistry, data source, validation practice, and "
  "coded finding/limitation summaries) with the "
- "classification dataset, codebooks, per-paper protocol audit, and a blind, two-round 30-paper re-coding by two co-author coders (all five fields at strong agreement in the repaired-codebook round) released together with a "
+ "classification dataset, codebooks, per-paper protocol audit, and a blind, two-round 30-paper re-coding by two co-author coders (all five fields at strong agreement in the revised-codebook round) released together with a "
  "label-noise sensitivity analysis of the headline counts; (iii) a two-tier synthesis \u2014 measured bibliometrics from the eligible corpus "
  "(Section III) plus function-by-function critical review of the classified subset (Sections IV\u2013VIII) \u2014 with a BMS-function-to-safety-"
  "standard mapping and a gap-driven research agenda including a twelve-item reporting checklist (Section IX); and (iv) a transportation-"
@@ -117,8 +117,7 @@ BLOCKS = [
  "records and excluded 667 (predominantly adjacent-field papers that surfaced through loose matching); the gate is a mechanical keyword rule, and its "
  "term lists are released (tagging_terms.json) together with all 1,555 screening-log rows (the 1,550 retrieved records plus the five individually retrieved seeds; screening_log.csv). Venue and document-type screening "
  "removed 84 records \u2014 conference abstracts and proceedings series, preprint servers, and non-scholarly venues \u2014 leaving 799 eligible "
- "records. Selection then proceeds in two tiers, replacing the single-quota design that an earlier draft of this review used. *Tier 1 (eligible "
- "corpus).* Every one of the 799 eligible records is included, subject only to venue screening; no function quotas, year caps, or citation thresholds "
+ "records. Selection proceeds in two tiers. *Tier 1 (eligible corpus).* Every one of the 799 eligible records is included, subject only to venue screening; no function quotas, year caps, or citation thresholds "
  "are applied. Every one of the 799 eligible records carries a Crossref-registered DOI, and every record carried forward to Tier 2 full-text coding "
  "was individually DOI-resolved. Function tagging at this tier is inherited from retrieval: each record carries the area of every query theme that "
  "returned it (query list released), so a record can hold several tags; 202 of 799 records "
@@ -147,7 +146,9 @@ BLOCKS = [
  "used consistently: an *eligible record* is one of the 799 Tier-1 studies; a *classifiable paper* is one of the 103 Tier-2 studies; and a "
  "*primary-application paper* is one of the 88 classified papers whose contribution is a primary application \u2014 the 12 method-coded reviews and "
  "3 review-type syntheses coded under their dominant method family are excluded from every rate that uses this denominator (Table II counts them "
- "per function; papers.csv identifies each one). Validation practice is coded against four definitions used throughout this paper: (1) *within-cell split* \u2014 train and test "
+ "per function; papers.csv identifies each one)."),
+('p',
+ "Validation practice is coded against four definitions used throughout this paper: (1) *within-cell split* \u2014 train and test "
  "segments drawn from the same cycling trajectory; (2) *unsupervised k-fold cross-validation* \u2014 folds assigned over samples of the same "
  "trajectories without cell isolation; (3) *cross-cell holdout* \u2014 every test cell held out entirely from training (with cross-chemistry and "
  "cross-domain holdout extending this isolation across chemistry or application); and (4) *online or real-vehicle/fleet validation* \u2014 the "
@@ -155,9 +156,11 @@ BLOCKS = [
  "the four remaining coded environments (experimental hardware, simulation plus hardware spot-check, simulation-only, case study) characterize where "
  "a study was exercised but say nothing about train\u2013test isolation, and they are reported separately \u2014 never mixed into strong-protocol "
  "percentages. Borderline assignments, the absorbing rule for ambiguous cases (a study is credited with the *strongest* protocol it reports for its "
- "headline claim), and the decision tree with examples are given in the released codebook. Classification was performed by the lead author with "
+ "headline claim), and the decision tree with examples are given in the released codebook. Both leaking definitions share one mechanism: samples adjacent in time on the same trajectory are strongly correlated, so a split that places segments of one cell on both sides of the train\u2013test boundary lets a model score well by memorizing cell-specific trajectory structure rather than by learning the cross-cell dynamics that onboard use on an unseen pack would require."),
+('p',
+ "Classification was performed by the lead author with "
  "conservative coding from full texts; to probe the reliability of that coding, two co-author coders (the second and third authors, not involved in "
- "the primary coding) later blind-re-coded a 30-paper stratified random sample (drawn by function and year band, seed-pinned and reproducible) "
+ "the primary coding) blind-re-coded a 30-paper stratified random sample (drawn by function and year band, seed-pinned and reproducible) "
  "under the released codebook, without access to the released labels, to the population statistics, or to each other. The blinding was procedural "
  "rather than external: the coders are authors of this study \u2014 their later author-contribution roles included verification of classifications "
  "and counts \u2014 but their coding sheets were locked and hash-tracked at completion, with a filed blinding memo documenting what each coder had "
@@ -165,34 +168,36 @@ BLOCKS = [
  "fields: management function (\u03ba = 0.92, Krippendorff \u03b1 = 0.92), method family (\u03ba = 0.88, \u03b1 = 0.88), and primary data source "
  "(\u03ba = 0.88, \u03b1 = 0.88). Two fields fell below the \u03ba \u2265 0.66 threshold: chemistry (\u03ba = 0.55) and validation protocol "
  "(\u03ba = 0.48). Part of the shortfall is an evidence-access artifact: the two coders had full-text (or preprint) access to only 7 and 2 of the 30 sample papers, "
- "respectively, so 23 and 28 were coded from abstracts alone \u2014 and these two fields are precisely those least often stated at abstract level. But it must be reported straight that the "
- "aggregation Section III's counts rest on does not escape this: on strong-protocol versus non-strong, the two coders agree on 25 of 30 papers "
- "(raw agreement 83%, \u03ba = 0.52 at the sample's prevalence \u2014 below the 0.66 threshold the paper itself applies). The released labels are "
+ "respectively, so 23 and 28 were coded from abstracts alone \u2014 and these two fields are precisely those least often stated at abstract level. The consequence extends to the "
+ "aggregation underlying Section III's counts: on strong-protocol versus non-strong, the two coders agree on only 25 of 30 papers "
+ "(raw agreement 83%, \u03ba = 0.52 at the sample's prevalence \u2014 below the 0.66 threshold applied throughout this paper). The released labels are "
  "therefore treated as one plausible coding, and all headline validation counts in Section III carry a scenario sensitivity analysis built from the "
  "observed coder-versus-label disagreement in this sample: the central strong-protocol estimate (48% of the 88 primary papers) spans 40\u201359% under the symmetric scenario, and a strong-to-weak worst-case bound (Section III-C) places it as low as 18% at the observed abstract-level recode rate "
  "\u2014 so the strong-protocol level is a bounded range rather than a pinned estimate, and no qualitative conclusion below depends on where in these ranges the truth lies (Section III-C). Coder access "
  "constraints, training, and the complete per-paper, per-field disagreement table are released together with both locked coding sheets and the "
- "hash-tracked log. The pre-registered repair path for below-threshold fields \u2014 codebook repair, then one re-coded subset \u2014 was then "
- "executed. The dispute session's v1.1 patch (a not-ML method code, a production-and-quality area code, a field-stationary data code with a "
- "self-lab/EIS-lab tie-break, the dedicated ``not reported'' validation code replacing the divergent weak-code fallbacks that had driven the "
- "\u03ba = 0.48 failure, and a fixed reading for cross-function reviews) governs re-coding rounds only; the chemistry inference-rule candidate "
- "remains logged, not codified. Full texts were then sought for all 30 sample papers (10 obtained, plus 1 accepted-manuscript preprint and the "
- "released code repository of one SOH study; 19 remain abstract-only behind paywalls), and both coders re-coded the sample from that shared "
- "evidence base \u2014 independence at the judgment level, not the evidence level, so round 2 measures agreement of rule application and the two "
- "rounds are complementary, not interchangeable. All five fields then pass the 0.66 threshold at the 0.80 strong level \u2014 management "
+ "hash-tracked log. The protocol's second stage for the below-threshold fields \u2014 codebook revision, then one re-coded subset \u2014 was then executed as "
+ "pre-declared. The codebook was revised to v1.1, codifying a not-ML method code, a production-and-quality area code, a field-stationary data "
+ "code with a self-lab/EIS-lab tie-break, the dedicated ``not reported'' validation code replacing the divergent weak-code fallbacks that had "
+ "driven the low round-1 agreement on this field, and a fixed reading for cross-function reviews; the chemistry inference-rule candidate "
+ "remains logged but not codified. Full texts were then sought for all 30 sample papers (10 obtained, plus one accepted-manuscript preprint and "
+ "the released code repository of one SOH study; 19 remain abstract-only behind paywalls), and both coders re-coded the same sample from that "
+ "shared evidence base, with independence at the judgment level, not the evidence level, so the second round measures agreement of "
+ "rule application, and the two rounds are complementary rather than interchangeable. All five fields then pass the 0.66 threshold at the 0.80 strong level \u2014 management "
  "function \u03ba = 0.96, method family 1.00, chemistry 1.00, primary data source 0.96, validation protocol 0.92 \u2014 with the "
  "strong/non-strong bucket rising from 25 of 30 papers (83%, \u03ba = 0.52) to 28 of 30 (93%, \u03ba = 0.83). Four residual disagreement cells "
  "are released with the sheets; the full-text reads surfaced five candidate label corrections (among them two Severson-dataset papers whose "
  "released chemistry records NMC where the dataset itself is LFP, and one study whose released labels differ from its own released code "
- "repository on all five fields), itemized with evidence, left unapplied, and queued for author adjudication. The synthesis proceeds on two tracks: measured bibliometrics from the eligible corpus and cross-tabulations from the "
+ "repository on all five fields), itemized with evidence, left unapplied, and queued for author adjudication."),
+('p',
+ "The synthesis proceeds on two tracks: measured bibliometrics from the eligible corpus and cross-tabulations from the "
  "classified subset, both generated programmatically from the released datasets (Section III), and qualitative function-by-function critique "
  "(Sections IV\u2013VIII). The methodology's limitations are acknowledged: Crossref coverage excludes influential conference papers; title-level "
  "screening can miss relevant work; citation-ordered retrieval privileges established English-language venues; the per-year retrieval window has one "
  "documented hole (Section II-A); the Tier-2 subset is curated rather than sampled, so validation-practice rates are subset statistics that do not "
- "automatically generalize to the eligible corpus or the field; and reliability is documented on a blind, two-round 30-paper re-coding subset (two co-author coders \u2014 three of five fields above threshold in round 1, all five at the strong level in the repaired-codebook round 2, which measures rule-application agreement on a shared evidence base rather than independent full-text dual coding) rather than "
+ "automatically generalize to the eligible corpus or the field; and reliability is documented on a blind, two-round 30-paper re-coding subset (two co-author coders \u2014 three of five fields above threshold in round 1, all five at the strong level in the revised-codebook round 2, which measures rule-application agreement on a shared evidence base rather than independent full-text dual coding) rather than "
  "measured corpus-wide, with the resulting sensitivity ranges reported; the strong/weak taxonomy is itself design-only \u2014 it codes the split architecture, not how many cells were held out, whether tuning touched the test set, or whether preprocessing was fit before splitting \u2014 so a strong code certifies the design of a validation, not its execution. DOI resolution, moreover, "
  "verifies that a record exists, not that its venue is topically sensible: one classified-subset study (a physics-informed SOC network, "
  "[[10.1109/jrfid.2022.3211841]]) appears in an RFID-special-issue journal \u2014 we flag it here rather than dropping it, and the released audit "
- "file (final_audit.json) records each reference's Crossref-resolved title and venue at retrieval time so that misattributions of this kind are "
+ "file (final_audit.json) records each reference's Crossref-resolved title and venue at retrieval time so that misattributions of this kind are not "
  "hidden. These are the reasons this paper describes itself as a scoping review with bibliometric classification rather than a meta-analysis."),
 ]

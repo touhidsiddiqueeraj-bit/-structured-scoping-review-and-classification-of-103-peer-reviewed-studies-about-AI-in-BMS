@@ -126,7 +126,7 @@ para('*Results.* Under the symmetric scenario the strong-protocol count spans 35
      'detectable difference and remains underpowered in the sense quantified in S3 \u2014 and the '
      'worst-case bound says only how low the strong-protocol count could sit if abstract-level '
      'recoding were taken at face value, not where it sits.')
-para('*Why round 2 does not move this envelope.* The round-2 re-coding under the repaired codebook '
+para('*Why round 2 does not move this envelope.* The round-2 re-coding under the revised codebook '
      '(Section 2.5) lifts between-coder agreement on the strong/non-strong bucket to 28 of 30 '
      '(\u03ba = 0.83), but its coder-versus-label comparison is mechanically capped \u2014 the '
      'v1.1-only codes (not-ML, production-and-quality, field-stationary, not-reported) cannot '
