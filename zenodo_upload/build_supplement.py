@@ -91,8 +91,10 @@ artifacts('Invoked at: main text Sections 2.2, 2.3, 2.6, 3.2\u20133.4, and the F
 # ------------------------------------------------------------------ S2
 h1('S2. Label-noise scenario envelope for the validation counts')
 para('The strong/weak validation counts of the main text rest on a single full-text coding by the '
-     'lead author (the reliability study of Section 2.5 measures abstract-level reproducibility, '
-     'not full-text agreement). To quantify how much those counts depend on the labels, a '
+     'lead author (the two-round reliability study of Section 2.5 measures abstract-level '
+     'reproducibility in round 1 and rule-application agreement on a shared evidence base in '
+     'round 2 — neither is an independent full-text dual coding of the labels). To quantify how '
+     'much those counts depend on the labels, a '
      'label-noise scenario analysis perturbs them directly. The analysis is a scenario envelope, '
      'not an error model.')
 para('*Design.* In each of 4,000 seeded Monte Carlo draws (seed 7), a label-flip rate is drawn '
@@ -124,10 +126,20 @@ para('*Results.* Under the symmetric scenario the strong-protocol count spans 35
      'detectable difference and remains underpowered in the sense quantified in S3 \u2014 and the '
      'worst-case bound says only how low the strong-protocol count could sit if abstract-level '
      'recoding were taken at face value, not where it sits.')
+para('*Why round 2 does not move this envelope.* The round-2 re-coding under the repaired codebook '
+     '(Section 2.5) lifts between-coder agreement on the strong/non-strong bucket to 28 of 30 '
+     '(\u03ba = 0.83), but its coder-versus-label comparison is mechanically capped \u2014 the '
+     'v1.1-only codes (not-ML, production-and-quality, field-stationary, not-reported) cannot '
+     'match the v1.0 released-label vocabulary by construction, and broader chemistry classes '
+     'cannot match released specifics \u2014 so it yields no clean recode rate to replace the '
+     'round-1 rates above. The envelope therefore remains built on the round-1 independent-evidence '
+     'disagreement structure; what round 2 bounds is rule ambiguity (which the v1.1 repair '
+     'largely removed), not label error.')
 artifacts('Released artifacts: sensitivity_label_noise.py and sensitivity_label_noise.json; '
           'gold_labels_30.csv (the 30-sample labels); coder_B_30.csv, coder_C_30.csv, '
           'agreement_report.csv, dispute_items.csv, and the hash-tracked reliability log under '
-          'corpus/reliability/.')
+          'corpus/reliability/; round 2: coder_B_30_fulltext.csv, coder_C_30_fulltext.csv, '
+          'agreement_report_fulltext.csv, dispute_items_fulltext.csv.')
 
 # ------------------------------------------------------------------ S3
 h1('S3. Minimum-detectable-effect analysis of the method-family contrast')

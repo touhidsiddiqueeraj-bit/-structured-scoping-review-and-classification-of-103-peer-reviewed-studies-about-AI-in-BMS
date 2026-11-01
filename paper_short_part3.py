@@ -218,8 +218,8 @@ BLOCKS = [
 ('p',
  "This review has examined machine learning in battery management on a two-tier evidence base: a rule-based eligible corpus of 799 records "
  "from which field-level shares are measured within a documented capped retrieval, and an in-depth classified subset of 103 studies "
- "through which method, data, and validation practice are examined with a blind, abstract-level 30-paper re-coding by two co-author coders "
- "and label-noise sensitivity ranges. Three conclusions stand out. First, and most critically, the proliferation of published accuracy claims is not matched by validation "
+ "through which method, data, and validation practice are examined with a blind, two-round 30-paper re-coding by two co-author coders "
+ "(all five fields at strong agreement in the repaired-codebook round) and label-noise sensitivity ranges. Three conclusions stand out. First, and most critically, the proliferation of published accuracy claims is not matched by validation "
  "progress: only 8 of the 88 primary papers (8 of the 103 classified studies) demonstrate online or fleet operation, 17 of 88 "
  "primary papers use isolation-weakened splits, and 23 rest on three public benchmarks while 36 rest on private laboratory cells; the "
  "physics-informed validation contrast is directionally consistent under both reported definitions, statistically unestablished and underpowered "

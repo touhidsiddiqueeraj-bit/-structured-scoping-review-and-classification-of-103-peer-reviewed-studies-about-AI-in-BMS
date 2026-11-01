@@ -18,7 +18,7 @@ Output: corpus/retrieval_depth_pilot.json
 """
 import json, os, time, urllib.request, urllib.parse, csv, re
 
-REPO = ''
+REPO = '/home/z/my-project/repo'
 HERE = os.path.join(REPO, 'corpus')
 OUT = os.path.join(HERE, 'retrieval_depth_pilot.json')
 MAILTO = 'touhidsiddiqueeraj-bit@users.noreply.github.com'

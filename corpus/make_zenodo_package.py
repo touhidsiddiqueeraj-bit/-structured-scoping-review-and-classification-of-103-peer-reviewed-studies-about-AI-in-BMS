@@ -58,8 +58,12 @@ DATA = [
     'corpus/reliability/coder_A_30.csv',
     'corpus/reliability/coder_B_30.csv',
     'corpus/reliability/coder_C_30.csv',
+    'corpus/reliability/coder_B_30_fulltext.csv',
+    'corpus/reliability/coder_C_30_fulltext.csv',
     'corpus/reliability/agreement_report.csv',
+    'corpus/reliability/agreement_report_fulltext.csv',
     'corpus/reliability/dispute_items.csv',
+    'corpus/reliability/dispute_items_fulltext.csv',
     'corpus/reliability/reliability_log.md',
     'out/gold_labels_30.csv',
 ]
