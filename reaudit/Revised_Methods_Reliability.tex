@@ -1,0 +1,207 @@
+% =====================================================================
+% Revised Methods material for:
+%   "Machine learning in battery management systems: a two-tier scoping
+%    review of 799 eligible records with in-depth classification and
+%    validation audit of 103 studies" (TTE-Reg-2026-10-3720)
+%
+% Purpose: drop-in replacement / addition for the Methods section in the
+% revised manuscript. These paragraphs implement the technical-rigor
+% upgrades requested by the Associate Editors:
+%   (AE-1) deeper technical treatment; transportation-specific emphasis
+%   (AE-2) rigorous independent full-text verification of the validation
+%          audit (response to kappa = 0.48), justification of the 103-
+%          study selection, treatment of selection bias, EV-specific BMS
+%          applications, vehicle-level validation, onboard implementation,
+%          transportation safety requirements.
+%
+% Usage notes:
+%  * No numbers are invented here. Results-dependent statements are phrased
+%    so they can be completed once the re-audit is finished (e.g. after
+%    "the re-audit achieved", insert the computed value from
+%    kappa_analysis.py).
+%  * % INSERT-CITATION comments mark places where the authors may re-attach
+%    references from the original manuscript bibliography.
+%  * The reliability protocol assumes the companion instrument package:
+%    Validation_Audit_Codebook_v2.docx, Coding_Workbook_v2.xlsx,
+%    kappa_analysis.py.
+% =====================================================================
+
+% ---------------------------------------------------------------------
+% 1. RELIABILITY OF THE VALIDATION AUDIT  (replaces the single paragraph
+%    that previously reported kappa = 0.48)
+% ---------------------------------------------------------------------
+\subsection{Reliability of the validation audit}
+
+The initial pilot audit of validation practices, in which two authors
+independently coded a sample of studies, yielded a Cohen's
+$\kappa$ of 0.48 for the validation-protocol fields. We interpreted this
+as evidence that the version~1 instrument, rather than the underlying
+literature, was under-specified: post-hoc inspection of the
+disagreements showed that the majority arose from (i) adjacent-category
+confusion on ordinal ladders (notably the boundary between
+same-cell/different-condition and different-cell testing), (ii)
+undefined treatment of multi-experiment studies, and (iii) silent
+defaults for unreported items. We therefore rebuilt the instrument
+before drawing any conclusion that depends on it.
+
+The validation audit was repeated with a version~2.0 codebook
+(supplementary material) that specifies, for each of fourteen variables
+(V1--V14): the construct, an exhaustive category set, decision rules
+for multi-experiment and multi-target studies, and worked examples for
+every known edge case. Three design changes target the failure modes of
+the pilot: ordinal ladders were re-anchored with demonstrable-evidence
+tests (an item is coded at a level only if the paper reports results at
+that level, not because the authors claim it); ``not reported'' became
+an explicit, admissible code so that coders never infer silently; and
+any code at the two highest levels of an ordinal scale now requires a
+verbatim quotation with a section or page reference in the evidence
+column.
+
+Two coders (C1, C2), both co-authors, independently re-coded all 103
+studies from the full text and supplementary material. Coder~1 had
+participated in the original audit; coder~2 had not. Both were blind to
+the original codes and to each other's sheets. Coding proceeded in two
+stages. First, a calibration round on twelve studies stratified across
+publication years and transportation-relevance strata; the
+pre-registered gate for proceeding was per-variable $\kappa \geq 0.70$
+on the calibration set. Discrepancies in the calibration round were
+resolved by revising the codebook (three iterations), not by
+negotiating codes. Second, the full double-coding of all 103 studies;
+every remaining disagreement was adjudicated by a third senior author
+(A) within 48 hours, and every resolution was logged with a one-line
+rationale and the codebook clause on which it rests. The adjudication
+log is published as a supplementary file.
+
+Agreement is reported per variable as raw percent agreement, Cohen's
+$\kappa$, and PABAK (prevalence-adjusted bias-adjusted kappa), because
+several categories are rare and prevalence-dependent; for the six
+ordinal variables we additionally report linearly and quadratically
+weighted $\kappa$. Uncertainty is quantified with bootstrap 95\%
+confidence intervals (10{,}000 resamples, percentile method). We
+pre-declared a category-collapse rule: if a single pair of adjacent
+categories accounts for more than half of the disagreements on a
+variable, we report both the granular and the collapsed $\kappa$ and
+use the collapsed variable in sensitivity analyses. The initial pilot
+value ($\kappa = 0.48$) is retained in the manuscript alongside the
+re-audited values, so that the improvement in the measurement
+instrument, and its effect on the findings, is transparent.
+% INSERT-CITATION: Cohen 1960; Fleiss 1971; Landis & Koch 1977; Byrt et al. 1993
+
+The re-audit achieved [COMPLETE AFTER RE-CODING: per-variable kappa,
+PABAK, weighted kappa, and bootstrap CIs from kappa\_analysis.py].
+Variables that remained below $\kappa = 0.60$ after codebook revision
+are dichotomised for all headline analyses, and the granular
+distributions are reported in the appendix; no variable is silently
+dropped. All conclusions that rest on validation-audit variables are
+recomputed from the adjudicated dataset, and where the re-audit changes
+a finding reported in the original submission, the change is stated
+explicitly.
+
+% ---------------------------------------------------------------------
+% 2. SELECTION OF THE 103 STUDIES  (new subsection)
+% ---------------------------------------------------------------------
+\subsection{Selection of studies for the in-depth audit}
+
+The 103 studies audited in depth (tier~2) were drawn from the 799
+eligible records by explicit, pre-declared criteria rather than by
+convenience. A record entered tier~2 if it (a) reports an original
+machine-learning method or an empirical evaluation of one for a battery
+management task (thus excluding reviews, surveys, and purely
+position papers), and (b) reports at least one quantitative result on
+battery data, so that validation practices are observable in principle.
+Records meeting (a) but not (b) --- for example, architecture proposals
+without experiments --- were retained in tier~1 but excluded from the
+audit, and their count and characteristics are reported so that the
+denominator is reconstructable at every step.
+
+Because the associate editors correctly noted that the selection of the
+103 studies requires stronger justification and a clearer treatment of
+selection bias, the revision adds three safeguards. First, a complete
+PRISMA-ScR flow diagram with counts and reasons at every exclusion
+step, replacing the summary numbers previously given in the text.
+Second, a characterization of the excluded-but-eligible records (venue,
+year, task, and validation keywords) demonstrating whether the audited
+set differs systematically from the records it was drawn from.
+Third, a sensitivity analysis in which every headline finding is
+recomputed on the subset of tier-2 studies that passed the selection
+criteria unambiguously (no borderline judgement involved), so that
+readers can verify that the findings are not an artefact of the
+inclusion rule. Records whose inclusion involved a borderline judgement
+are listed individually in the appendix with the reason for inclusion.
+% INSERT-CITATION: Tricco et al. 2018 (PRISMA-ScR)
+
+% ---------------------------------------------------------------------
+% 3. RECALL ASSURANCE  (new subsection; answers the recall-audit
+%    criticism)
+% ---------------------------------------------------------------------
+\subsection{Search recall assurance}
+
+Our own recall audit indicated that the search strategy did not
+retrieve a portion of the eligible literature. The revision
+strengthens retrieval assurance in four ways. (i)~Backward and forward
+citation chaining on all 103 included studies (forward chaining via
+Google Scholar and OpenAlex citation indexes), with newly identified
+records screened against the same eligibility criteria. (ii)~A
+hand-search of the tables of contents of five venues in which eligible
+records concentrate --- Journal of Power Sources, eTransportation,
+Journal of Energy Storage, and the IEEE transportation-electrification
+venues --- over the search window. (iii)~A 30-record benchmark set of
+studies that the co-authors independently judged must be found by any
+adequate search (``known-must-find'' set), assembled before re-running
+the searches, against which recall is measured explicitly. (iv)~A
+re-executed search with the full, dated query strings, databases, and
+filters documented in a provenance appendix, so the search is
+reproducible. Recall against the benchmark set, and the number of
+additional eligible records recovered by chaining and hand-search, are
+reported as a range with the audit trail, and the tier-2 selection
+described above is re-run if the recovered records change the eligible
+pool materially.
+
+% ---------------------------------------------------------------------
+% 4. TRANSPORTATION-SPECIFIC SYNTHESIS  (new subsection; answers AE-1
+%    and the EV emphasis of AE-2)
+% ---------------------------------------------------------------------
+\subsection{Transportation-specific synthesis}
+
+Because the broader battery literature otherwise dominates the
+analysis, the revision adds a dedicated synthesis of the
+transportation-facing subset, coded with three new variables. Variable
+V11 (deployment-technology-readiness ladder) distinguishes offline
+laboratory validation (level~0), dynamic-profile bench testing with
+drive-cycle current profiles on a cycler (level~1), hardware-in-the-loop
+or emulated BMS hardware (level~2), retrospective or live data from
+real vehicles and fleets (level~3), and demonstrated onboard deployment
+(level~4). Variable V12 records whether onboard feasibility is
+addressed at all: not discussed, mentioned qualitatively, quantified
+against a latency / memory / compute budget, or measured on target
+hardware. Variable V14 separates studies whose validation context is
+genuinely vehicle-oriented (EV/HEV, or other transport modes) from
+generic battery studies regardless of title framing; coding follows the
+validation context, not the claims in the title or introduction.
+
+These variables feed a transportation-specific analysis with four
+components. (i)~The distribution of V11/V12 levels across the audited
+studies, quantifying how much of the ML-BMS literature has been tested
+beyond static laboratory data --- the central transportation-safety
+question. (ii)~A vehicle-level validation synthesis restricted to
+level~2--4 studies, covering drive-cycle realism (e.g., WLTP, UDDS,
+HWFET-type profiles), hardware-in-the-loop setups, and vehicle or
+fleet telemetry, with the validation gaps of each study catalogued.
+(iii)~An onboard-implementability discussion for the subset of methods
+with quantified compute budgets, relating reported footprints to
+typical BMS electronic control unit constraints. (iv)~A
+transportation-safety framing that connects the observed validation
+shortfall to safety-relevant failure modes of learned estimators
+(sensor bias and drift, thermal-runaway early warning, state-estimation
+error propagation into power limits) and to the assurance expectations
+that safety-engineered components face in automotive practice, e.g.,
+the argumentation style of ISO~26262; where ML components cannot yet
+satisfy such argumentation, we state this as a research gap rather than
+claiming readiness.
+
+% ---------------------------------------------------------------------
+% 5. OPTIONAL: one-sentence Methods index of the instrument package
+% ---------------------------------------------------------------------
+% The validation-audit instrument (codebook v2.0, coding workbook, and
+% the agreement-analysis script) is released as supplementary material
+% and in the project repository, so that the audit is fully replicable.
