@@ -79,12 +79,12 @@ check('U1g no 1,450 in any manuscript source',
 
 # ---------------- U2: 2.2 -> 9.8 pointer ----------------
 check('U2a extended 2.2 points to 9.8 direction (g)', '(Section 9.8, direction (g))' in L1)
-check('U2b extended 9.8 contains v2 re-retrieval direction (g)',
-      'seventh, methodological direction' in EXT and 'v2 re-retrieval of this corpus with cursor paging' in EXT)
+check('U2b extended 9.8 contains v2 re-retrieval direction (g) [round-11: (g) now labeled]',
+      'registry-deep re-retrieval' in EXT and 'falls in seven directions' in EXT and 'v2 re-retrieval of this corpus with cursor paging' in EXT)
 check('U2c extended guardrail now seven directions', 'guardrail on all seven directions' in EXT)
 check('U2d condensed II-A points to IX-C (g)', 'Section IX-C, direction (g)' in S1)
-check('U2e condensed IX-C contains direction (g)',
-      'seventh, methodological direction' in COND and 'guardrail on all seven directions' in COND)
+check('U2e condensed IX-C contains direction (g) [round-11: (g) now labeled]',
+      'registry-deep re-retrieval' in COND and 'falls in seven directions' in COND and 'guardrail on all seven directions' in COND)
 
 # ---------------- U3: Fig. 1 scope ----------------
 check('U3a no "entire corpus" claim', 'entire corpus' not in EXT and 'entire corpus' not in COND)
@@ -177,11 +177,15 @@ check('U10d S6 + S7 present in supplement pdf',
 check('B1 extended pdf exists', os.path.exists('ML-BMS-Review.pdf'))
 et = subprocess.run(['pdftotext', 'ML-BMS-Review.pdf', '-'], capture_output=True, text=True).stdout
 etn = norm(et)
-check('B2 extended pdf carries new text (direction g, S6/S7 pointers)',
-      'seventh, methodological direction' in etn and 'Supplementary Material S6' in etn)
+check('B2 extended pdf carries new text (direction g, S6/S7 pointers) [round-11 wording]',
+      'registry-deep re-retrieval' in etn and 'Supplementary Material S6' in etn)
 check('B3 extended pdf free of removed strings',
       'venue notwithstanding' not in etn and '1,450' not in etn and '54 of the 103' not in etn)
 ct = subprocess.run(['pdftotext', 'ieee_submission/tex/mlbms.pdf', '-'], capture_output=True, text=True).stdout
+# strip running headers / bare page numbers so sentences split across page
+# boundaries still match (round-11: guardrail sentence straddles pp. 15-16)
+ct = re.sub(r'IEEE TRANSACTIONS ON TRANSPORTATION ELECTRIFICATION\s*\d*', ' ', ct)
+ct = re.sub(r'\n\s*\d+\s*\n', ' ', ct)
 ctn = norm(ct)
 check('B4 condensed pdf carries direction (g) + S6/S7 pointers',
       'guardrail on all seven directions' in ctn and 'supplement, S6' in ctn and 'supplement, S7' in ctn)

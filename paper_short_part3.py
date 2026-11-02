@@ -18,7 +18,7 @@ TABLES = {
    '3 of 13 SOC primary papers use a strong isolation protocol; none validate on real-vehicle data; 12 rest on laboratory-scale data'],
   ['SOH / RUL prognosis',
    'Capacity and power fade margins underpin thermal-propagation early warning and end-of-service decisions; degradation assumptions must hold across chemistry, duty, and environment (ISO 26262 hazard analysis; ISO 21448 for performance limitations)',
-   '20 of 32 SOH/RUL primary papers use a strong protocol; 4 use real-vehicle data; accuracy claims rest mostly on three public benchmarks (16 of the 32 SOH/RUL primary papers; 23 across the whole subset)'],
+   '20 of 32 SOH/RUL primary papers use a strong protocol; 4 use real-vehicle data; 16 of the 32 rest on the three public benchmarks and 11 on private laboratory cells (23 benchmark papers across the whole subset)'],
   ['Fault detection',
    'Thermal-propagation containment and early warning must both be evidenced: GB 38031-2025 requires that after single-cell thermal runaway the pack or system neither fire nor explode over a two-hour observation window, that a thermal-event alarm still be issued, and that smoke not harm occupants — superseding GB 38031-2020’s five-minute pre-fire alarm; the GTR 20 Amendment 1 proposal (ECE/TRANS/WP.29/GRSP/2026/4) carries a ≥5-min advance warning before cabin hazards, with test or risk-management compliance options; coverage must be argued and audited (ISO/PAS 8800 assurance argument)',
    '2 of 7 fault/safety primary papers validate online on fleet data; detection-latency and false-alarm distributions are rarely reported'],
@@ -38,7 +38,7 @@ TABLES = {
   ['Corpus', 'Two-tier: 799 rule-based eligible records + 103 classified subset', 'Fixed study lists; no record-level selection provenance in the works we examined'],
   ['Validation analysis', 'Protocol classes defined, per-paper assignments released, method-family contrast tested with sensitivity ranges; within-corpus measurement, not a field census', 'Narrative remarks on data scarcity; protocol strength not quantified, to our knowledge'],
   ['Standards linkage', 'Function-to-requirement mapping vs. UN GTR 20, GB 38031-2020/2025, ISO 26262:2018, ISO/PAS 8800:2024', 'Not addressed or addressed qualitatively'],
-  ['Recommendations', 'Twelve-item reporting checklist (BMS-ML-RC) + six research directions', 'General future-work statements'],
+  ['Recommendations', 'Twelve-item reporting checklist (BMS-ML-RC) + seven research directions', 'General future-work statements'],
   ['Reproducibility', 'Released papers.csv, screening provenance, codebook, and statistics scripts', 'No released record-level dataset that we could locate'],
  ],
 },
@@ -118,7 +118,7 @@ BLOCKS = [
  "practice: 17 of the 88 primary papers use within-cell or unsupervised k-fold validation, and only 8 of the 88 primary papers (every online "
  "demonstration in the subset is a primary application) evaluate online or on fleets; standardized cross-cell, cross-chemistry, and lab-to-fleet transfer protocols should become reporting norms, as already practiced by the "
  "transfer-learning and general-framework studies [[10.1016/j.apenergy.2024.125086]][[10.1109/tte.2025.3533540]]. (2) Two-pole data "
- "fragmentation: the three public benchmarks sustain 23 primary papers and 36 rest on private laboratory cells that are rarely released; "
+ "fragmentation: the three public benchmarks sustain 23 primary papers and 42 rest on private laboratory cells (36 own-cell cycling, 6 laboratory impedance) that are rarely released; "
  "federated learning over fleets, anonymized fleet-data releases, and multi-institution cycling campaigns \u2014 in the spirit of the 179-cell "
  "pipeline [[10.1038/s42256-021-00312-3]] \u2014 would diversify the evidence base, and papers should at minimum disclose split definitions, "
  "seeds, and compute budgets. (3) Edge deployment: only isolated works treat onboard compute, memory, and latency as first-class constraints "
@@ -186,7 +186,7 @@ BLOCKS = [
 
 ('h2', '9.3 Outlook: what the next research cycle should produce'),
 ('p',
- "Concretely, and tied to the gaps above, the highest-value near-term work falls in six directions. (a) *Duty-cycle-aware validation*: public "
+ "Concretely, and tied to the gaps above, the highest-value near-term work falls in seven directions. (a) *Duty-cycle-aware validation*: public "
  "cross-cell benchmarks that pair cycling data with recorded EV drive profiles, so that cross-chemistry and cross-domain generalization can be "
  "tested against transportation duty rather than laboratory schedules; (b) *federated fleet evidence*: privacy-preserving SOH/SOC studies over "
  "live fleets (\u22482% of the eligible corpus today), with the 179-cell pipeline as the template; (c) *benchmark diversification*: "
@@ -196,8 +196,7 @@ BLOCKS = [
  "uncertainty handling and assurance arguments are specified against ISO 26262 safety goals and ISO/PAS 8800, with ISO 21448/SOTIF reasoning for "
  "capability limitations, making certifiable charging and thermal control reachable; and (f) *honest foundation-model integration*: "
  "retrieval-grounded LLM agents with published latency and calibration budgets, capable of the coordination role while estimation authority "
- "stays with calibrated numeric models \u2014 extending, not contradicting, the corpus's LLM estimator [[10.1016/j.ensm.2026.104983]]. A "
- "seventh, methodological direction concerns the evidence base itself: a v2 re-retrieval of this corpus with cursor paging \u2014 the upgrade the "
+ "stays with calibrated numeric models \u2014 extending, not contradicting, the corpus's LLM estimator [[10.1016/j.ensm.2026.104983]]. And (g) *registry-deep re-retrieval*, a methodological direction concerning the evidence base itself: a v2 re-retrieval of this corpus with cursor paging \u2014 the upgrade the "
  "retrieval-depth pilot of Section II-A measures as this pipeline\u2019s single highest-leverage methodological step, worth on the order of 5,000 "
  "additional eligible records \u2014 so that the next synthesis can measure field-level shares over a registry-deep sample rather than a "
  "top-20-per-pass cap. A guardrail on all seven directions: the BMS-ML-RC checklist below is designed to be attached to a paper at submission, so that the next generation of "
