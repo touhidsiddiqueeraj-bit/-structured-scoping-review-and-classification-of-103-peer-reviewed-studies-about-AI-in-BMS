@@ -10,9 +10,52 @@ import os
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 import paper_part1  # for the title
+import paper_part3  # for TABLE_CONF (S6)
+
+def add_table(spec):
+    """Render a table spec (header/widths/rows) from paper_part3 into the supplement.
+    [[doi]] placeholders are rendered as raw DOIs (the supplement is self-contained
+    and does not carry its own numbered reference list)."""
+    rows = []
+    for r in spec['rows']:
+        rows.append([re.sub(r'\[\[([^\]]+)\]\]', r'doi: \1', str(c)) for c in r])
+    tbl = doc.add_table(rows=1 + len(rows), cols=len(spec['header']))
+    tbl.style = 'Table Grid'
+    tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl.autofit = False
+    tblPr = tbl._tbl.tblPr
+    layout = OxmlElement('w:tblLayout')
+    layout.set(qn('w:type'), 'fixed')
+    tblPr.append(layout)
+    widths = spec.get('widths')
+    if widths:
+        grid = tbl._tbl.find(qn('w:tblGrid'))
+        for gc, w in zip(grid.findall(qn('w:gridCol')), widths):
+            gc.set(qn('w:w'), str(int(w * 1440)))
+    for j, h in enumerate(spec['header']):
+        cell = tbl.rows[0].cells[j]
+        cell.text = ''
+        p = cell.paragraphs[0]
+        r = p.add_run(h)
+        r.bold = True
+        r.font.size = Pt(8.5)
+        r.font.name = 'Times New Roman'
+    for i, row in enumerate(rows):
+        for j, c in enumerate(row):
+            cell = tbl.rows[i + 1].cells[j]
+            cell.text = ''
+            p = cell.paragraphs[0]
+            r = p.add_run(c)
+            r.font.size = Pt(8.5)
+            r.font.name = 'Times New Roman'
+    doc.add_paragraph()
 
 OUT = os.path.join(HERE, 'Supplementary_Material.docx')
 
@@ -56,12 +99,13 @@ para(paper_part1.TITLE, size=11, italic=True, align=WD_ALIGN_PARAGRAPH.CENTER, s
 para('This supplement consolidates the robustness material that supports the main text: the '
      'interpretation rules that govern every quantitative claim (S1), the label-noise scenario '
      'envelope for the validation counts (S2), the minimum-detectable-effect analysis of the '
-     'method-family contrast (S3), the construction and limits of the recall audit (S4), and the '
-     'two abstract-level probes (S5). Every section states the released artifacts it derives from; '
+     'method-family contrast (S3), the construction and limits of the recall audit (S4), the '
+     'two abstract-level probes (S5), the descriptive conference-venue probe (S6), and the '
+     'per-paper evidence of the validation audit (S7). Every section states the released artifacts it derives from; '
      'the complete evidence base and analysis pipeline are deposited at Zenodo, DOI '
      '10.5281/zenodo.23436202, with the GitHub repository of the same name as a development '
      'mirror. The main text carries one-sentence summaries of each item with pointers here, so '
-     'the supplement can be read alongside Sections 2.2, 2.3, and 3.4 of the extended review (Sections II-A, II-C, and III-C of the condensed submission manuscript).')
+     'the supplement can be read alongside Sections 2.2\u20132.3, 2.5\u20132.6, and 3.4 of the extended review (Sections II-A\u2013II-C and III-A\u2013III-C of the condensed submission manuscript).')
 
 # ------------------------------------------------------------------ S1
 h1('S1. Interpretation rules for every quantitative claim in the paper')
@@ -228,6 +272,102 @@ para('*Result.* Of the 38 abstract-screenable primary papers, 32 (84%) name no m
      'is, four times in five, unstated.')
 artifacts('Released artifacts: abstract_probe.py, abstract_probe_raw.json, '
           'abstract_probe_codes.py, abstract_probe.json; rubric in codebook.md.')
+
+# ------------------------------------------------------------------ S6
+h1('S6. Conference-venue probe (descriptive): does the journal-only corpus understate validation practice?')
+para('Because the corpus excludes conference proceedings \u2014 a major venue for control-oriented '
+     'BMS work \u2014 the validation findings of extended-review Section 3.4 (condensed Section '
+     'III-C) could in principle be an artifact of venue selection: if conference papers '
+     'systematically demonstrate more hardware and hardware-in-the-loop validation than journals, '
+     'the journal-only sample would understate the field\u2019s actual practice. To probe this, we '
+     'curated a sensitivity set of 14 battery papers from six control and '
+     'transportation-electrification venues (ACC, ECC, CCDC, APEC, VPPC, ITEC), retrieved by '
+     'venue-scoped Crossref queries, restricted to proceedings articles, ranked by citation '
+     'count, and verified by the same DOI-resolution procedure as the main corpus (released in '
+     'full as conference_sensitivity.csv). Two scope boundaries are stated before the counts. '
+     'First, the venue set does not include CDC or IFAC proceedings, themselves major control '
+     'venues, so the check probes part of the conference literature rather than censusing it. '
+     'Second, the set\u2019s retrieval window (2019\u20132025) starts one year earlier than the main '
+     'pool\u2019s 2020\u20132026 window, because the venue-scoped queries carried no lower year bound: '
+     'three of the 14 papers are dated 2019, and excluding them leaves 11 papers of which 6 are '
+     'learning-based, with unchanged hardware (2), public-dataset (2), and simulation (1) counts '
+     'among the learning-based papers \u2014 only the not-stated class shrinks, from three papers '
+     'to one. The comparison is descriptive and abstract-level throughout \u2014 indexed abstracts '
+     'versus the full-text coding of the main corpus \u2014 so it is reported as a labelled '
+     'descriptive check rather than a validated sensitivity analysis, and none of its counts '
+     'enter the headline statistics of the main text. A pre-stated inclusion rule was then '
+     'applied mechanically to all retrieved proceedings papers (the table below lists all 14 '
+     'with the rule\u2019s outcome): a paper enters the learning-path comparison only if machine '
+     'learning is a substantive component of its contribution. Under this rule 8 of the 14 '
+     'qualify; the remainder are conventional model-based estimators (Kalman-filter variants, '
+     'multiple-model adaptive estimation, batch least squares), an EKF-critique, and one '
+     'overview, and all 14 are released so that the rule can be audited rather than trusted. '
+     'Validation practice was classified conservatively from the indexed abstracts into four '
+     'classes: hardware/experimental stated, public dataset, simulation-level, and not stated.')
+para(paper_part3.TABLE_CONF['caption'].replace('Table 7 ', 'Table S1 '))
+add_table(paper_part3.TABLE_CONF)
+para('The comparison finds no evidence of a venue gap in stated validation evidence, and with '
+     'eight abstracts on one side it cannot rule one out. Of the 8 learning-based conference '
+     'papers, 2 state hardware or experimental validation in their indexed abstracts, 2 rest on '
+     'public datasets, 1 describes simulation-level validation, and 3 state no validation basis '
+     'at all, alongside 20 of the 88 primary-application journal papers with '
+     'experimental-hardware demonstrations; at this scale the difference in stated-evidence '
+     'rates between the two paths is not interpretable, so no percentages are read off it. Two '
+     'caveats bound whatever reading is put on these counts: conference abstracts are frequently '
+     'truncated in bibliographic indexes, so the comparison measures stated evidence rather '
+     'than underlying practice; and the sensitivity set is a curated sample, not a census. The '
+     'comparison therefore remains descriptive \u2014 eight truncated abstracts cannot carry an '
+     'inference about venue populations \u2014 so the venue question stays open on this evidence, '
+     'and the reporting standards proposed in extended-review Section 9.9 (condensed Section '
+     'IX-D) apply to journal and conference venues alike.')
+artifacts('Released artifacts: conference_sensitivity.csv, conference_verified.json, and the '
+          'venue-scoped retrieval scripts; cited proceedings papers are listed by DOI in Table S1.')
+
+# ------------------------------------------------------------------ S7
+h1('S7. Validation audit: per-paper evidence for the challenged and upgraded labels')
+para('This section carries the per-paper mechanics behind the audit summary of extended-review '
+     'Sections 2.5 and 3.4 (condensed Sections II-C and III-C), so that the main text states '
+     'results only. Three layers are involved: the round-1 blind re-coding (abstract-level '
+     'agreement), the round-2 re-coding under codebook v1.1 (rule-application agreement on a '
+     'shared evidence base), and the post-freeze evidence-side re-code by the AI research '
+     'assistant declared in the AI-use statement (coder D), which audits the frozen labels from '
+     'the evidence side rather than measuring coder agreement.')
+h2('S7.1 Coder D re-code: the four challenged strong labels and two upgrades')
+para('After the label set was frozen, coder D attempted the validation field of all 88 primary '
+     'papers, covering 46 with retrievable evidence (7 full texts, 39 abstracts) and '
+     'determinably coding 23, from locked evidence sheets and before consulting the released '
+     'per-paper labels, applying the codebook\u2019s absorbing rule and a dedicated '
+     '\u2018not reported\u2019 code. Of the 14 determinable strong labels, 10 are confirmed and 4 '
+     'are contradicted: (i) the graph-network SOH study (doi 10.1016/j.est.2024.113502) is '
+     'verified, from its accepted manuscript, to train on the first 70% of each cell\u2019s cycles '
+     'and reserve the remaining 30% of the same cells for testing \u2014 a within-cell split, '
+     'coded cross-cell in the released labels; (ii) the ECM-to-electrochemical-parameter study '
+     '(doi 10.1016/j.est.2024.113257) states validation on a synthetic dataset generated by a '
+     'pseudo-two-dimensional model (coded cross-cell in the released labels); and (iii\u2013iv) two '
+     'further strong labels (doi 10.1016/j.egyai.2022.100188 and doi 10.1016/j.est.2026.123023) '
+     'could not be confirmed from abstract-level evidence, their full texts being paywalled. '
+     'Two determinable non-strong labels would be upgraded: the varying-temperature SOC study '
+     '(doi 10.1016/j.energy.2020.117664), whose abstract states estimation at temperatures '
+     'unseen in training (the codebook\u2019s cross-domain clause), and the physics-informed RL '
+     'study (doi 10.1038/s41598-025-30602-4), which reports a NASA-to-CALCE transfer as a '
+     'robustness check (an absorbing-rule judgment call). Bucket agreement on the determinable '
+     'subset is 17 of 23 (74%, \u03ba = 0.47, Wilson 95% CI 53.5\u201387.5%). No released label was '
+     'altered: the four challenges and two upgrades are itemized with the evidence that '
+     'motivated them, the 42-of-88 count remains the lead author\u2019s single full-text coding '
+     'with its strongest challenges on record rather than latent, and the two label corrections '
+     'the itemization supports are left as flagged author decisions rather than silent edits.')
+h2('S7.2 Round-2 full-text re-coding: five candidate label corrections')
+para('The round-2 full-text re-coding reaches the same synthetic-data reading of the '
+     'ECM-to-electrochemical-parameter study (doi 10.1016/j.est.2024.113257) by an independent '
+     'route and itemizes four further candidate label corrections \u2014 two Severson-dataset '
+     'papers whose released chemistry records NMC where the dataset itself is LFP, one LCO '
+     'chemistry record, and one study whose released labels disagree with its own released code '
+     'repository \u2014 again left unapplied, with the evidence released. Together with S7.1 these '
+     'constitute the complete discrepancy record against the frozen labels.')
+artifacts('Released artifacts: corpus/validation_recode/ (validation_recode.json with the '
+          'per-paper coder-D evidence), coder_B_30_fulltext.csv, coder_C_30_fulltext.csv, '
+          'dispute_items_fulltext.csv, agreement_report_fulltext.csv, and the hash-tracked '
+          'reliability log under corpus/reliability/.')
 
 # ------------------------------------------------------------------ close
 para('All scripts run from the repository root against the released data and reproduce their '

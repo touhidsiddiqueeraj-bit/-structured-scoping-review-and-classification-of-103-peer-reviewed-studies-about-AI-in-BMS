@@ -70,7 +70,7 @@ BLOCKS = [
 
 ('h2', '8.1 Physics-informed learning, interpretability, and uncertainty'),
 ('p',
- "Physics-informed and hybrid model\u2013data learning is the classified subset's fastest-growing methodological theme (22 primary-application "
+ "Physics-informed and hybrid model\u2013data learning is the classified subset's most consistently rising methodological theme (22 primary-application "
  "papers across all functions; Table I) \u2014 in state estimation [[10.1109/jrfid.2022.3211841]][[10.1016/j.measurement.2025.118985]], heat-generation estimation "
  "[[10.1016/j.jechem.2022.11.036]], prognostics [[10.1016/j.ymssp.2022.109347]], and impedance-based diagnostics \u2014 consolidated by a physics-informed EIS-diagnostics review "
  "[[10.1016/j.rser.2023.113807]] \u2014 with physics-constrained autoencoders improving health prediction over purely learned counterparts "
@@ -131,8 +131,9 @@ BLOCKS = [
  "should be formalized with grounding and latency guarantees. (6) Under-served functions: balancing is nearly untouched beyond pack-level "
  "insight [[10.1016/j.est.2023.106931]], charging needs certifiable adaptive protocols, and thermal management remains simulation-dominated "
  "[[10.1016/j.est.2023.106688]]; these are control problems where errors act on the battery, so closing them requires the safety-case machinery "
- "of gap 4 as much as new algorithms. Two follow-on subsections turn these gaps outward \u2014 first to what the automotive safety standards "
- "actually demand of these functions, then to how the emerging 2027\u20132030 research directions map onto them."),
+ "of gap 4 as much as new algorithms. Three follow-on subsections turn these gaps outward \u2014 to what the automotive safety standards "
+ "demand of these functions (IX-A), how this review is positioned relative to prior reviews (IX-B), and what the next "
+ "research cycle should produce (IX-C)."),
 
 ('h2', '9.1 From corpus gaps to safety-standard requirements'),  # heading kept; body text uses subset wording
 ('p',
@@ -196,7 +197,10 @@ BLOCKS = [
  "capability limitations, making certifiable charging and thermal control reachable; and (f) *honest foundation-model integration*: "
  "retrieval-grounded LLM agents with published latency and calibration budgets, capable of the coordination role while estimation authority "
  "stays with calibrated numeric models \u2014 extending, not contradicting, the corpus's LLM estimator [[10.1016/j.ensm.2026.104983]]. A "
- "guardrail on all six directions: the BMS-ML-RC checklist below is designed to be attached to a paper at submission, so that the next generation of "
+ "seventh, methodological direction concerns the evidence base itself: a v2 re-retrieval of this corpus with cursor paging \u2014 the upgrade the "
+ "retrieval-depth pilot of Section II-A measures as this pipeline\u2019s single highest-leverage methodological step, worth on the order of 5,000 "
+ "additional eligible records \u2014 so that the next synthesis can measure field-level shares over a registry-deep sample rather than a "
+ "top-20-per-pass cap. A guardrail on all seven directions: the BMS-ML-RC checklist below is designed to be attached to a paper at submission, so that the next generation of "
  "BMS-ML studies arrives auditable by construction."),
 
 ('h2', '9.4 A reporting checklist for machine-learning BMS studies'),
@@ -207,7 +211,7 @@ BLOCKS = [
  "operationalize the validation-protocol classes defined in Section II-C and measured in the classified subset; items 1\u20133 and 6\u201310 "
  "respond to the reporting omissions observed across Sections III\u2013VIII; item 12 is the artifact-availability norm this paper itself "
  "follows. What the checklist is and is not: it is a proposal grounded in the classified subset's measured weaknesses, not a community-"
- "validated instrument \u2014 no Delphi or expert-consensus process was run for it, only three items are score-measured in this corpus, and it "
+ "validated instrument \u2014 no Delphi or expert-consensus process was run for it, only the validation-protocol, data-source, and baseline-comparison items are score-measured in this corpus, and it "
  "has not been applied as an audit to all 103 studies. The review's own reporting follows the PRISMA-ScR flow structure (Fig. 2), but the "
  "protocol was not prospectively registered; where this section says a practice *should* be reported, that is a recommendation supported by "
  "the evidence above, and we suggest journals consider it as a submission checklist."),
@@ -220,7 +224,7 @@ BLOCKS = [
  "from which field-level shares are measured within a documented capped retrieval, and an in-depth classified subset of 103 studies "
  "through which method, data, and validation practice are examined with a two-round 30-paper re-coding protocol — blind abstract-level round: three of five fields κ ≥ 0.88; revised-codebook rule-application round on a shared evidence base: κ = 0.92–1.00 — and label-noise sensitivity ranges. Three conclusions stand out. First, and most critically, the proliferation of published accuracy claims is not matched by validation "
  "progress: only 8 of the 88 primary papers (8 of the 103 classified studies) demonstrate online or fleet operation, 17 of 88 "
- "primary papers use isolation-weakened splits, and 23 rest on three public benchmarks while 36 rest on private laboratory cells; the "
+ "primary papers use isolation-weakened splits, and 23 rest on three public benchmarks while 42 rest on private laboratory data (36 own-cell, 6 laboratory impedance); the "
  "physics-informed validation contrast is directionally consistent under both reported definitions, statistically unestablished and underpowered "
  "(protocol-only 36% versus 52%, p = 0.32; including-hardware 59% versus 74%, p = 0.19), so it is reported as no detectable difference, with meaningful differences in either direction not excluded \u2014 an open hypothesis "
  "rather than a settled result. Second, the retrieval\u2019s center of gravity is estimation at cell level: the "

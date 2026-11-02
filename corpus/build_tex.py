@@ -163,13 +163,10 @@ def ref_text_latex(doi):
         s += " " + esc(REF_NOTES[doi])
     return s
 
-# One-line disclosure notes appended to specific reference entries (reviewer request).
-REF_NOTES = {
-    '10.1109/jrfid.2022.3211841': (
-        'Note: lithium-ion battery state-of-charge estimation study published in an '
-        'identification-technology venue (IEEE Journal of Radio Frequency Identification); '
-        'retained on DOI-verified method content, venue notwithstanding.'),
-}
+# One-line disclosure notes appended to specific reference entries.
+# (The former per-reference venue note for the IEEE J. RFID SOC study was removed;
+# the venue screen is document-type-based and the rule is stated in Section II-B.)
+REF_NOTES = {}
 
 # ---------- table -> LaTeX ----------
 def table_latex(key):

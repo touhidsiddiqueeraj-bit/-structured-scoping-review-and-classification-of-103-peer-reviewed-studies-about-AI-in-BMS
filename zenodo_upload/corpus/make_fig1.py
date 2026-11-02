@@ -2,7 +2,9 @@
 """Fig 2: PRISMA-style study-selection flowchart (matches Section 2.3).
 
 Funnel (verified against screening_log.csv and selection2.json):
-  3,000 retrieved -> 1,550 deduplicated (1,450 duplicates removed)
+  3,000 retrieved -> 2,973 after document-type/year/title filters
+  (27 removed) -> 1,550 unique after DOI deduplication (1,423 duplicates
+  removed)
   -> 883 title-gate retained (667 excluded)
   -> 799 venue-eligible (84 excluded) = rule-based Tier-1 pool, no quotas
   -> stratified draw of 107 (functions x years, citation-ranked within strata)
@@ -21,7 +23,7 @@ OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                    'figures', 'fig2_prisma.png')
 
 plt.rcParams.update({'font.family': 'serif', 'font.serif': ['DejaVu Serif'], 'font.size': 8})
-fig, ax = plt.subplots(figsize=(6.4, 5.2))
+fig, ax = plt.subplots(figsize=(6.4, 5.8))
 
 def box(x, y, w, h, lines, bold_first=True, fc='#f0f4f9'):
     b = FancyBboxPatch((x, y), w, h, boxstyle='round,pad=0.008', fc=fc, ec='#3b6ea5', lw=0.9)
@@ -39,15 +41,16 @@ def arrow(x, y1, y2):
 W = 0.63
 XL = 0.03
 # (y, height, lines, facecolor) — multi-line boxes get extra height so that
-# per-line spacing stays >= ~7pt at 7.2pt font (axes height ~4.2 in)
+# per-line spacing stays >= ~7pt at 7.2pt font (axes height ~4.7 in)
 BOXES = [
-    (0.945, 0.085, ['Records identified through Crossref API queries', 'n = 3,000'], '#e3ebf5'),
-    (0.812, 0.085, ['Records screened after duplicate removal', 'n = 1,550'], None),
-    (0.679, 0.085, ['Relevance screening (battery AND ML terms in title)', 'n = 883'], None),
-    (0.546, 0.085, ['Venue and document-type screening:', 'Tier-1 eligible pool \u2014 rule-based,', 'no quotas  n = 799'], None),
-    (0.368, 0.130, ['Stratified selection from the pool:', '107 drawn balancing functions and years', '(citation-ranked within strata)', '+ 5 landmark seeds retrieved individually', 'n = 112 candidates'], None),
-    (0.205, 0.115, ['Full-text curation: \u2212 19 (corrigenda, misindexed,', 'scope mismatches, quota trims)', '+ 10 targeted additions', 'n = 103 classified (98 pool + 5 seeds)'], None),
-    (0.072, 0.085, ['Released evidence base: Tier-1 pool (799,', 'quota-free tag baselines) + classified', 'subset (103; full-text coding)'], '#f7f7f7'),
+    (0.955, 0.085, ['Records identified through Crossref API queries', 'n = 3,000'], '#e3ebf5'),
+    (0.830, 0.085, ['Records after document-type, year, and', 'title-completeness filters  n = 2,973'], None),
+    (0.705, 0.085, ['Records after DOI-based deduplication', 'n = 1,550 unique'], None),
+    (0.580, 0.085, ['Relevance screening (battery AND ML terms in title)', 'n = 883'], None),
+    (0.455, 0.085, ['Venue and document-type screening:', 'Tier-1 eligible pool \u2014 rule-based,', 'no quotas  n = 799'], None),
+    (0.290, 0.130, ['Stratified selection from the pool:', '107 drawn balancing functions and years', '(citation-ranked within strata)', '+ 5 landmark seeds retrieved individually', 'n = 112 candidates'], None),
+    (0.140, 0.115, ['Full-text curation: \u2212 19 (corrigenda, misindexed,', 'scope mismatches, quota trims)', '+ 10 targeted additions', 'n = 103 classified (98 pool + 5 seeds)'], None),
+    (0.030, 0.085, ['Released evidence base: Tier-1 pool (799,', 'quota-free tag baselines) + classified', 'subset (103; full-text coding)'], '#f7f7f7'),
 ]
 for (y, h, lines, fc) in BOXES:
     box(XL, y, W, h, lines, fc=fc or '#f0f4f9')
@@ -56,11 +59,11 @@ for (y1, _, _, _), (y2, h2, _, _) in zip(BOXES[:-1], BOXES[1:]):
 
 XR, xw = 0.71, 0.28
 excl = [
-    (0.812, 'Duplicates removed\nn = 1,450'),
-    (0.679, 'Off-topic records excluded\nn = 667'),
-    (0.546, 'Non-journal venues\nexcluded  n = 84'),
-    (0.368, '701 eligible records not\ncarried into full-text coding\n(retained verbatim in the\nreleased Tier-1 pool)'),
-    (0.205, '19 excluded; 10 added\nfor under-represented\nthemes (net \u2212 9)'),
+    (0.760, 'Filters removed 27;\nDOI deduplication\nremoved 1,423'),
+    (0.580, 'Off-topic records excluded\nn = 667'),
+    (0.455, 'Non-journal venues\nexcluded  n = 84'),
+    (0.290, '701 eligible records not\ncarried into full-text coding\n(retained verbatim in the\nreleased Tier-1 pool)'),
+    (0.140, '19 excluded; 10 added\nfor under-represented\nthemes (net \u2212 9)'),
 ]
 for y, t in excl:
     ax.text(XR + xw / 2, y + 0.035, t, ha='center', va='center', fontsize=6.4, color='#7a3b3b')
